@@ -10,7 +10,7 @@ tags:
   - swiftui
 ---
 
-The Youtube algorithm thinks I need to watch more MVVM videos, and it turns out it's probably right. A day or two ago in an [MVVM](https://devendevour.wordpress.com/?p=410) post using a super simple example, I stored the view model as a property of the view using the @ObservedObject wrapper, as I created it.
+The Youtube algorithm thinks I need to watch more MVVM videos, and it turns out it's probably right. A day or two ago in an [MVVM](/simple-mvvm/) post using a super simple example, I stored the view model as a property of the view using the @ObservedObject wrapper, as I created it.
 
 struct ContentView: View {
     @ObservedObject var light = LightViewModel()

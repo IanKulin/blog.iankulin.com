@@ -11,7 +11,7 @@ tags:
   - tip
 ---
 
-So, I might have found a slightly better method for sharing code in posts that I complained about the [other day](https://devendevour.wordpress.com/?p=858). GitHub has a thing called [Gists](https://gist.github.com/). It's like a tiny repository you can paste a code snippet into (or upload a source file). Once that's done, you can just paste the URL of the Gist into [Wordpress](https://wordpress.com/support/gist/) - it recognises it and does this:
+So, I might have found a slightly better method for sharing code in posts that I complained about the [other day](/wordpress-code-blocks/). GitHub has a thing called [Gists](https://gist.github.com/). It's like a tiny repository you can paste a code snippet into (or upload a source file). Once that's done, you can just paste the URL of the Gist into [Wordpress](https://wordpress.com/support/gist/) - it recognises it and does this:
 
 ```swift
 ForEach(0..<3) { number in

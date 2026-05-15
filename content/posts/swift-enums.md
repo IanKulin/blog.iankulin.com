@@ -11,7 +11,7 @@ tags:
   - swift-language
 ---
 
-I've started on the refactoring for [Rock, paper, scissors](https://devendevour.wordpress.com/?p=735). One of the things I didn't like was using Ints to signal which shape (I'm calling the rock, or paper, or scissors hand shape a _shape_) was being handed around. The Int I was using was also the index into an array of the emoji's - so if I did an off-by-one I was risking an out of bounds on the array.
+I've started on the refactoring for [Rock, paper, scissors](/rock-paper-scissors-1/). One of the things I didn't like was using Ints to signal which shape (I'm calling the rock, or paper, or scissors hand shape a _shape_) was being handed around. The Int I was using was also the index into an array of the emoji's - so if I did an off-by-one I was risking an out of bounds on the array.
 
 I'm pleased with this solution:
 

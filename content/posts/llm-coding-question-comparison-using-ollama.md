@@ -25,7 +25,7 @@ So what follows is my completely unscientific testing of the models I've downloa
 
 > _Thinking about Docker, what's the difference between \[CMD\] and \[EntryPoint\]?_
 
-This seems like a fairly specific bit of knowledge someone might want to know about, I know the answer, and the first page of google results are mostly good so there should be sufficient training data. I've put both terms in square brackets as a red herring, and same with the camelcase for ENTRYPOINT. I also didn't specify that these are both usually defined in the dockerfile. I've had a go at the same question, and [published it here last week](https://devendevour.wordpress.com/?p=4632).
+This seems like a fairly specific bit of knowledge someone might want to know about, I know the answer, and the first page of google results are mostly good so there should be sufficient training data. I've put both terms in square brackets as a red herring, and same with the camelcase for ENTRYPOINT. I also didn't specify that these are both usually defined in the dockerfile. I've had a go at the same question, and [published it here last week](/dockerfile-cmd-vs-entrypoint/).
 
 ### The results
 

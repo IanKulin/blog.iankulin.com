@@ -10,7 +10,7 @@ tags:
   - swiftui
 ---
 
-When I was forced by a deadline into delivering this project, I noted in its [post](https://devendevour.wordpress.com/?p=735) that there was a number of improvements to make:
+When I was forced by a deadline into delivering this project, I noted in its [post](/rock-paper-scissors-1/) that there was a number of improvements to make:
 
 > 1.  _The rock paper scissors could be some better data structure than an array and some ints._
 > 2.  _I don’t love the try to win, try to lose aspect, but the client specified it_

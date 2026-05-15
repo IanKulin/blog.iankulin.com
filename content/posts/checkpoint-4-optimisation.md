@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-The [Checkpoint 4](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-4) task was to find an integer square root of numbers up to 10000. My [first pass solution](https://devendevour.wordpress.com/?p=119) was:
+The [Checkpoint 4](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-4) task was to find an integer square root of numbers up to 10000. My [first pass solution](/checkpoint-4/) was:
 
 ```
 func calculateIntSqrt(_ number:Int) throws -> Int  {

@@ -14,7 +14,7 @@ tags:
 
 ![](/images/img_2778.png)
 
-A couple of times ([Protocols](https://devendevour.wordpress.com/?p=455) & [Named Loops](https://devendevour.wordpress.com/?p=487)) in the past few days I've needed to write and run a couple of tiny C or C++ snippets, and I've acutely felt the lack of Swift Playgrounds for it. It occurred to me that Playgrounds has been instrumental in my enjoyment of learning Swift - it's just a bit magic to grab the closest device and noodle out an idea or to make sure I've understood a new concept.
+A couple of times ([Protocols](/protocols/) & [Named Loops](/named-loops/)) in the past few days I've needed to write and run a couple of tiny C or C++ snippets, and I've acutely felt the lack of Swift Playgrounds for it. It occurred to me that Playgrounds has been instrumental in my enjoyment of learning Swift - it's just a bit magic to grab the closest device and noodle out an idea or to make sure I've understood a new concept.
 
 ![](/images/15152540.jpg)
 
