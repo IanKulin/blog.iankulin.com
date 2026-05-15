@@ -1,0 +1,7 @@
+services:
+  devendevour.iankulin.com:
+    build: .
+    container_name: devendevour.iankulin.com
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,40 @@
+baseURL = "https://devendevour.iankulin.com"
+title = "dev.endevour"
+theme = "hugo-theme-console"
+locale = "en-AU"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+[pagination]
+  pagerSize = 20
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  author = "ian"
+  description = "iOS dev - web dev - homelab"
+
+  [[params.navlinks]]
+  name = "about/"
+  url = "/about/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "/posts/"
+
+  [[params.navlinks]]
+  name = "tags/"
+  url = "/tags/"
+
+  [[params.navlinks]]
+  name = "glossary/"
+  url = "/glossary/"
+
+  [[params.navlinks]]
+  name = "web-dev-links/"
+  url = "/web-development-links/"
