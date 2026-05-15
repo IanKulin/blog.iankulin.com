@@ -12,6 +12,9 @@ buildFuture = false
 [markup.goldmark.renderer]
   unsafe = true
 
+[permalinks]
+  posts = "/:slug/"
+
 [taxonomies]
   tag = "tags"
 
