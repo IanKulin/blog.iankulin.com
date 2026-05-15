@@ -54,7 +54,7 @@ struct ContentView: View {
 
 If we click on the share link, it looks like this:
 
-![](/images/simulator-screen-shot-iphone-14-pro-2022-12-05-at-21.10.20.png)
+![](/images/simulator-screen-shot-iphone-14-pro-2022-12-05-at-21.10.20.jpg)
 
 The little thumbnail and the word "View" at the top of the share sheet is from the preview parameter in our call.
 
@@ -75,4 +75,4 @@ If we go back and and try again to share the ticket, we've now got the options t
 
 If the user chooses OK, then it will be saved to photos:
 
-![](/images/screen-shot-2022-12-07-at-8.42.04-pm.png)
+![](/images/screen-shot-2022-12-07-at-8.42.04-pm.jpg)

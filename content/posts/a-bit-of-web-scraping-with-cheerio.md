@@ -21,7 +21,7 @@ The player does contain the full list of episodes (about 600) including a number
 
 So the list must be in the HTML - let's have a look. This is a big file (4000 lines formatted) with a lot of divs and jQuery, but here's our <ul> with the list of episodes.
 
-![](/images/screen-shot-2025-01-05-at-10.49.48-am.png)
+![](/images/screen-shot-2025-01-05-at-10.49.48-am.jpg)
 
 The list is nicely named with a unique class (which I've highlighted above), so this is going to be a simple job, and therefore a good demo.
 

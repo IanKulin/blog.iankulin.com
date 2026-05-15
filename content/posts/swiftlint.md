@@ -16,7 +16,7 @@ tags:
   - xcode14
 ---
 
-![](/images/screenshot-2022-10-04-at-08-30-59-code-complete-mcconnell-steve-amazon.com_.au-books.png)
+![](/images/screenshot-2022-10-04-at-08-30-59-code-complete-mcconnell-steve-amazon.com_.au-books.jpg)
 
 I was watching a [Tim Ruscica](https://www.techwithtim.net/) [video](https://www.youtube.com/watch?v=wJNikDr-aNM) about the things that highly effective developers do, and it called to mind a book I read years ago called [Code Complete](https://www.amazon.com.au/Code-Complete-Steve-McConnell/dp/0735619670). It is the only book I ever owned that I immediately purchased the new edition when it came out. It was about the meta stuff around programming that is the difference between coding and developing. In particular, it got me invested in source control and testing.
 
@@ -26,7 +26,7 @@ Linters are tools to enforce (or at least suggest) rules to improve your code th
 
 I installed it by downloading and running the [.pkg](https://github.com/realm/SwiftLint/releases/download/0.49.1/SwiftLint.pkg). Then in any Xcode projects you want to use it in, you go into _Build Phases_ for the current _Scheme_ in your project and add a new script that runs SwiftLint on the files in the project's folder. There's a good step by step [here](https://medium.com/developerinsider/how-to-use-swiftlint-with-xcode-to-enforce-swift-style-and-conventions-368e49e910) by Vineet Choudhary. You should end up with something like this:
 
-![](/images/screen-shot-2022-10-04-at-8.39.34-am.png)
+![](/images/screen-shot-2022-10-04-at-8.39.34-am.jpg)
 
 Now when you Command-B to build your project, the linter will run and (especially the first time) add some extra warnings and errors.
 

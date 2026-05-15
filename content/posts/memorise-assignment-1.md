@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-![](/images/screen-shot-2022-07-23-at-7.33.03-pm.png)
+![](/images/screen-shot-2022-07-23-at-7.33.03-pm.jpg)
 
 A small milestone achieved - I've completed the first assignment from the CS193p lecture series - some minor changes to the app being built in the lectures. There was a couple of things I was unhappy with:
 

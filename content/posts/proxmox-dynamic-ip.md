@@ -22,7 +22,7 @@ Today once I'd finished installing Proxmox, I couldn't SSH into it
 
 I knew I had the right IP address since it shows that on the console at the end of the boot process. Looking in my router, it said 192.168.100.2 was connected, but by wifi on the SSID I use for IOT devices.
 
-![](/images/screen-shot-2023-03-12-at-4.01.09-pm.png)
+![](/images/screen-shot-2023-03-12-at-4.01.09-pm.jpg)
 
 That ESP device name is a giveaway - it's one of my wifi light bulbs. A quick `ip addr` on the new Proxmox via the console shows it is convinced that it is 192.168.100.2 I can ping 8.8.8.8 from it, but DNS is not working. My conclusion is that I've got two devices with the same IP on my network.
 

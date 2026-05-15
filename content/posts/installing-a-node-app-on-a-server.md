@@ -12,7 +12,7 @@ tags:
   - web-dev
 ---
 
-![](/images/clu_create_an_image_where_a_cute_little_girl_stands_in_a_whimsi_45944303-8475-48ed-9b8d-d291b525138d.png)
+![](/images/clu_create_an_image_where_a_cute_little_girl_stands_in_a_whimsi_45944303-8475-48ed-9b8d-d291b525138d.jpg)
 
 Before I write a fancy Ansible playbook to automatically set up the Nginx/Node combo on my web servers, it might be worth going through how to deploy a Node app so it can run on a server without you being logged in.
 

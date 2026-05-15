@@ -22,7 +22,7 @@ When I'd asked ChatGPT to to review the mdserver code, it had suggested that I s
 
 Once that's done, you can just right click on the collection and have it run all of those.
 
-![](/images/screen-shot-2023-10-22-at-12.19.59-pm.png)
+![](/images/screen-shot-2023-10-22-at-12.19.59-pm.jpg)
 
 An extra benefit of Bruno is that all these requests are stored as JSON-like, version-controllable text. I store them in my project and commit them along with the rest of my code.
 

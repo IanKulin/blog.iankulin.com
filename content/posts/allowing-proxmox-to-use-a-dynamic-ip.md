@@ -39,7 +39,7 @@ iface vmbr0 inet static
 
 `iface` is short for interface, and is followed by the interface name. These are the same names you see when you type in `ip addr` to see the IP addresses.
 
-![](/images/edit.png)
+![](/images/edit.jpg)
 
 So this is the bit we are interested in:
 

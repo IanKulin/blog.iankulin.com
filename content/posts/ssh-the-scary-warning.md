@@ -11,7 +11,7 @@ tags:
   - ssh
 ---
 
-![](/images/screen-shot-2023-01-28-at-8.41.11-pm.png)
+![](/images/screen-shot-2023-01-28-at-8.41.11-pm.jpg)
 
 The first time you connect to a new server with ssh, it asks you something like:
 

@@ -43,4 +43,4 @@ deb http://security.debian.org/debian-security bullseye-security main contrib
 
 Then you'll be good to go.
 
-![](/images/screen-shot-2023-02-07-at-8.41.15-pm.png)
+![](/images/screen-shot-2023-02-07-at-8.41.15-pm.jpg)

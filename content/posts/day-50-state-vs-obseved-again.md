@@ -19,7 +19,7 @@ Half way through my #100Days and this mystery is still not solved for me. I imag
 
 So I should be able to do that with @StateObject and @ObservedObject then just diff the code and see right?
 
-![](/images/screen-shot-2022-10-26-at-6.26.19-pm.png)
+![](/images/screen-shot-2022-10-26-at-6.26.19-pm.jpg)
 
 Obviously, I'm not comprehending all of this, but it looks like the main difference is this extra Wrapper struct in the ObservedObject:
 

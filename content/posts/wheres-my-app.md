@@ -15,7 +15,7 @@ The iOS apps I've been making, can only run in the simulator or on my tethered d
 
 First of all, you are currently building debug versions of your app. We need to create a new _Scheme_ for the release build. In Xcode use the menus to go to Product | Scheme | New Scheme...
 
-![](/images/screen-shot-2022-10-03-at-1.51.03-pm.png)
+![](/images/screen-shot-2022-10-03-at-1.51.03-pm.jpg)
 
 Give it a sensible name - maybe `<app name> Release` or similar. Then Product | Scheme | Edit Scheme and on the Info tab, change it to a _Release_ build.
 

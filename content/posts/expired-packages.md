@@ -9,7 +9,7 @@ tags:
   - web-dev
 ---
 
-![](/images/pucker_a_large_pile_of_garbage_containg_binary_code_slowly_rott_55771f9e-3781-42e7-90f0-e6943b12ae8e-1.png)
+![](/images/pucker_a_large_pile_of_garbage_containg_binary_code_slowly_rott_55771f9e-3781-42e7-90f0-e6943b12ae8e-1.jpg)
 
 At several points in the [Complete Web Developer](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/) course, deprecated packages have been used, with the slide before the video explaining what's happening, and giving a work around, or sometimes - as is the case for the bit I'm just starting - exhorting the benefits of dropping you into a non-working mess and having you figure it out yourself.
 
@@ -23,7 +23,7 @@ I got it going eventually, but only by starting with a new create-react app with
 
 Straight out of that experience, Andrei advises that the next section uses a deprecated api, that he's persisting with because he wants to teach REST apis. In order to make it work, we need to downgrade the react-scripts version which he assures will not cause any problems. Naturally there is a list of critical warnings, and the server can't start because of a heap of errors.
 
-![](/images/screen-shot-2023-01-23-at-11.14.08-am.png)
+![](/images/screen-shot-2023-01-23-at-11.14.08-am.jpg)
 
 ```
 Starting the development server...

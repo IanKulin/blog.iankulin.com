@@ -9,7 +9,7 @@ tags:
   - twitter
 ---
 
-![Twitter logo bird bleeding - stable diffusion](/images/twitter-logo-bird-bleeding.png)
+![Twitter logo bird bleeding - stable diffusion](/images/twitter-logo-bird-bleeding.jpg)
 
 One of [Sean Allen's](https://www.youtube.com/c/SeanAllen/videos) many pieces of excellent advice was to follow a few Swift/iOS dev people on Twitter. I took that advice, and it is now a source of joy to flick through every couple of days and get a feel for what's happening, and to discover new things. It's how I learned [iOS Dev Weekly](https://iosdevweekly.com/) existed, and discovered [Meng To](https://designcode.io/instructor/meng), and put faces/ideas to Swift and iOS people that's I'd heard mentioned or interviewed in podcasts such as [Erica Sadun](https://ericasadun.com/) and [Sarun W.](https://sarunw.com/)
 

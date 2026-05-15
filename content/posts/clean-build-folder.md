@@ -19,7 +19,7 @@ Eventually I figured out my error - when I'd turned off the CodeGen in the data 
 
 So I'd just need to change the CodeGen setting to manual, and I should be able to build it - but no, same error. I deleted the generated files out of the Project Navigator and tried the build again. Now I was getting a different error, about a class not found. The weird thing was, the file the error was coming from didn't seem to exist in my project directory. It was one of the data classes that I thought I deleted. By clicking around XCode, I found I could right click and ask to see the file in finder, only to discover it was deep in the XCode subfolders in the Library.
 
-![](/images/screen-shot-2022-11-15-at-8.00.49-pm.png)
+![](/images/screen-shot-2022-11-15-at-8.00.49-pm.jpg)
 
 My first instinct was to delete it, but then I remembered seeing "Clean Build Folder" in the Project menu. I ran that, then did a fresh build (which took longer than usual) and lo and behold, all good.
 

@@ -8,7 +8,7 @@ tags:
   - posts
 ---
 
-![futuristic machine making copies of people - midjourney](/images/pucker_futuristic_machine_making_copies_of_people_f1076d37-add2-4592-952b-ac8ac30c7a5c.png)
+![futuristic machine making copies of people - midjourney](/images/pucker_futuristic_machine_making_copies_of_people_f1076d37-add2-4592-952b-ac8ac30c7a5c.jpg)
 
 First lesson with classes today. First of all I was pleased to see they exists since we've just been plucking objects out of thing air like:`}`
 

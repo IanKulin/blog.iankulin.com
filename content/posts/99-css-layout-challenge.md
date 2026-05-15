@@ -14,7 +14,7 @@ In the [Zero To Mastery](https://zerotomastery.io/) [Complete Web Developer](htt
 
 Frustratingly, both for writing this, and while I was trying to build the page, I'm unable to screenshot the example of the page I was supposed to be building, and instead had to keep opening the video and seeking the two second flash of the completed project, and eventually being reduced to photographing my laptop screen like a boomer relative sending me a meme:
 
-![](/images/img_3601.png)
+![](/images/img_3601.jpg)
 
 What you can't see in that image (because it was never shown for this version) is a foooter bar containing a piece of centred text.
 

@@ -14,7 +14,7 @@ So with that in mind, I dropped $18 on the "[The Complete Web Developer in 2023:
 
 They recommend, and their examples are using, the [Sublime Text](https://www.sublimetext.com/) editor, which has an even simpler (and therefore cooler) look than VS Code, but I was already impressed with VSCode so I've been using that, and gotta say, love it. Things just keep working how I expect, and a fair bit of that is due to good plugins.
 
-![](/images/screen-shot-2022-12-10-at-2.55.24-pm.png)
+![](/images/screen-shot-2022-12-10-at-2.55.24-pm.jpg)
 
 This [ZTM](https://zerotomastery.io/) course is a bit different to what I've been getting from the 100 Days of SwiftUI, but like that, it starts of by saying you need to do the things to be accountable or you'll likely drop out along the way. That's a fair point, and I thought about adding it to my posting, but really it's more of a side project so I'm not sure you would see that here.
 

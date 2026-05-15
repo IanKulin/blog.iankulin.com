@@ -12,7 +12,7 @@ tags:
   - linux
 ---
 
-![](/images/quangpham2576_realistic_red_hen_that_is_serving_a_plate_of_soft_b56bccf5-82c1-4bf9-9936-edd7606ab70a.png)
+![](/images/quangpham2576_realistic_red_hen_that_is_serving_a_plate_of_soft_b56bccf5-82c1-4bf9-9936-edd7606ab70a.jpg)
 
 It's bothered me for a while that all these VM's are pulling down a lot of the same updates. As well as needlessly using some bandwidth, I'm hammering the update servers (that I don't pay for) with the same requests over and over. I did briefly consider running my own mirror, but that's not simple, plus I'd then be mirroring a heap of files in a complete repository that I'd never use. What I really needed was some sort of cache so once I'll pulled down an update, it would hang around for a few days being available to other machines on the local network. Luckily, that exact thing exists - [APT Cacher NG](https://www.unix-ag.uni-kl.de/~bloch/acng/html/index.html).
 
@@ -42,7 +42,7 @@ I said no, but then to enable it, I had to (after the installation) edit the con
 
 With that done, and the service restarted, we're now serving proxies at localhost:3142, and also a little web page with some advice.
 
-![](/images/screen-shot-2023-08-20-at-2.37.46-pm.png)
+![](/images/screen-shot-2023-08-20-at-2.37.46-pm.jpg)
 
 ### Installing the client
 
@@ -56,7 +56,7 @@ Note that the ip address will be different on yours, just copy it off the little
 
 The `hosts: local` in the pkaybook refers to the `local: children` group in my hosts ini file.
 
-![](/images/screen-shot-2023-08-20-at-3.14.24-pm.png)
+![](/images/screen-shot-2023-08-20-at-3.14.24-pm.jpg)
 
 ### Statistics
 

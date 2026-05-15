@@ -12,7 +12,7 @@ tags:
   - swift-language
 ---
 
-![](/images/protocoldroid-swe.png)
+![](/images/protocoldroid-swe.jpg)
 
 The evolution of structs into class-like things that can hold properties _and_ methods in Swift raised in my mind "what about inheritance?" - but no: structs in Swift can not use inheritance.
 

@@ -13,9 +13,9 @@ Way back on Day 47 I wrote a little habit tracking app. It was the challenge at 
 
 I feel I've got enough Core Data skills now to write a small real app. This will be for teachers to record the reward tickets they issue for students. Two entities, Tickets and Students.
 
-![](/images/img_2792.png)
+![](/images/img_2792.jpg)
 
-![](/images/img_2793.png)
+![](/images/img_2793.jpg)
 
 School staff need to be able to search for a student, and add a ticket for them. The tickets are for behaviours in particular categories and sub-categories, and can have a text description.
 

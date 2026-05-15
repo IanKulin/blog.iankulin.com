@@ -10,7 +10,7 @@ tags:
   - web-dev
 ---
 
-![Russian dolls](/images/tomins_russian_dolls_inside_out._vector_style_for_storyboard._a57e3973-3942-47ad-9f07-813694c9cecb.png)
+![Russian dolls](/images/tomins_russian_dolls_inside_out._vector_style_for_storyboard._a57e3973-3942-47ad-9f07-813694c9cecb.jpg)
 
 If you clone an old node project and `npm install` it, you'll most likely get a bunch of errors and warning messages. If you just decide to yolo it and run the project, you'll get a bunch more.
 
@@ -70,7 +70,7 @@ If you want code bases to be completely reproducible, then we also need to lock 
 
 Running `npm install` causes `npm` to look at both of those files to work out what packages to download. It creates the `node_modules` folder and puts all those packages in there so we can `require` them. When I tried that with this four year old project, this is the first of three pages of error messages I got.
 
-![Screenshot full of warning messages for deprecated code](/images/screen-shot-2023-08-06-at-6.54.03-pm.png)
+![Screenshot full of warning messages for deprecated code](/images/screen-shot-2023-08-06-at-6.54.03-pm.jpg)
 
 Most of the rest were errors from bcrypt - and you don't really want to run old cryptology code.
 

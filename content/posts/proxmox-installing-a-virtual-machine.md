@@ -40,7 +40,7 @@ Here's where we choose the image, I'm going with the Unbuntu I downloaded earlie
 
 The System page - I'm just leaving all the defaults and hitting `next`.
 
-![](/images/screen-shot-2023-01-28-at-3.18.24-pm.png)
+![](/images/screen-shot-2023-01-28-at-3.18.24-pm.jpg)
 
 On the Disks page, we go have a decision to make: how much drive space does this VM get. You'll remember from our discussion about thin provisioning that we can allocate more disk than we have, but it's not a good idea. The final decision about this is something you need to make considering the purpose of this VM and the space you've got available to you. You might need to google around for recommendations. It's pretty easy to increase the disk size after your VM is created, but more difficult to reduce it.
 

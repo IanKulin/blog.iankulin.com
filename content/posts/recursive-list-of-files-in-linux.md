@@ -12,7 +12,7 @@ tags:
   - regex
 ---
 
-![](/images/macro094_recursive_feedback_loops_7129c6ad-a42c-4698-b3d7-bf340201b6ac.png)
+![](/images/macro094_recursive_feedback_loops_7129c6ad-a42c-4698-b3d7-bf340201b6ac.jpg)
 
 I've spent a few hours over the weekend migrating a media library from an external USB drive to the NAS, and in the process reorganised it, and in many cases bulk changed file names. I've also added a heap of metadata.
 

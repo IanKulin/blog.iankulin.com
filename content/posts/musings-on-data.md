@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-![Thinking about data - drawing. Stable Diffusion](/images/thinking-about-data-drawing.png)
+![Thinking about data - drawing. Stable Diffusion](/images/thinking-about-data-drawing.jpg)
 
 I've been feeling my enthusiasm for the online courses I started waning a little, additionally, I have enough progress under my belt that I could actually start working on some of the projects in my "App Ideas" notebook. I'm not sure if starting on them is a smart idea, or just a way of procrastinating. One thing most of those apps have in common, and that I haven't substantively learned yet is persisting data. Their data requirements vary from a sort of specialised todo list only required on that device, to relational data that needs to be live synced across devices including macOS and needs to support rolling back transactions to resolve conflicts.
 

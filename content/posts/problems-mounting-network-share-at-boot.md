@@ -11,7 +11,7 @@ tags:
   - possibly-useful
 ---
 
-![](/images/pucker_pretty_woman_putting_boots_on_comic_style_4590f478-67f8-4f8d-8e42-e38b9e059f37.png)
+![](/images/pucker_pretty_woman_putting_boots_on_comic_style_4590f478-67f8-4f8d-8e42-e38b9e059f37.jpg)
 
 I had Jellyfin working nicely in an LXC container in Proxmox, but could not get Tailscale working in the container. Since this is going to be an important part of accessing my media away from home, I decided it was probably worth the extra bulk to run JellyFin in a VM.
 

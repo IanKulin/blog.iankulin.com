@@ -10,7 +10,7 @@ tags:
   - storage
 ---
 
-![](/images/pucker_32gb_usb_drive_with_tiny_construction_workers_around_it_f4862ea6-8d0d-48f9-a2bb-7284240f151d.png)
+![](/images/pucker_32gb_usb_drive_with_tiny_construction_workers_around_it_f4862ea6-8d0d-48f9-a2bb-7284240f151d.jpg)
 
 Many modern Linux distros will auto-mount USB drives - they just pop up in the graphical file manager as users would expect. When you're running server, older, or smaller versions, that's probably not going to be the case, and you'll have to do it old school.
 

@@ -11,7 +11,7 @@ tags:
   - ram
 ---
 
-![](/images/swellingcomputerbrain_73513374.png)
+![](/images/swellingcomputerbrain_73513374.jpg)
 
 The hardware engineering of these corporate world mini-PCs is really nice. I swapped out the RAM today to bump my main machine up to 32GB from 16GB. It was a straightforward task - no screwdrivers, no drama.
 

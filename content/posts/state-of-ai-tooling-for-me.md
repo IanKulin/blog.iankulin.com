@@ -92,7 +92,7 @@ Good Coding Practices
 
 Small files, good architecture, clear names, good project organisation. Small amount of up to date documentation that describes the shape and why of things. I like to keep the 'sprints' small. So I'm going from one working app state to another. I also frequently refactor - probably more than in my own handcoding.
 
-![](/images/screenshot-2025-07-07-at-14.17.04.png)
+![](/images/screenshot-2025-07-07-at-14.17.04.jpg)
 
 CLAUDE.md
 

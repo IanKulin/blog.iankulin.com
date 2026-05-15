@@ -12,7 +12,7 @@ tags:
   - zfs
 ---
 
-![](/images/shawnjooste_hero_image_welcome_playful_colorful_tech_company_co_5e8971cb-4cb0-4aa8-938a-610467b485c6.png)
+![](/images/shawnjooste_hero_image_welcome_playful_colorful_tech_company_co_5e8971cb-4cb0-4aa8-938a-610467b485c6.jpg)
 
 Now I've added NVME drives to my nodes, plus added an external NMVE RAID, I've got quite the collection of storage options. For one of my nodes, it looks like this:
 
@@ -32,7 +32,7 @@ It's really the live VM hard disks that need a decision. So I need to do some me
 Jim Salter - one of the ZFS kings on the [2.5 Admins](https://2.5admins.com/) podcast has an [article on drive speed testing](https://arstechnica.com/gadgets/2020/02/how-fast-are-your-disks-find-out-the-open-source-way-with-fio/) that's worth reading even just for the good descriptions of different drives and the range of workloads to consider.
 
 [![Article headline: How fast are your disks? Find out the open source way,
-with fio.](/images/screen-shot-2023-07-23-at-4.42.31-pm.png)](https://arstechnica.com/gadgets/2020/02/how-fast-are-your-disks-find-out-the-open-source-way-with-fio/)
+with fio.](/images/screen-shot-2023-07-23-at-4.42.31-pm.jpg)](https://arstechnica.com/gadgets/2020/02/how-fast-are-your-disks-find-out-the-open-source-way-with-fio/)
 
 He ends up recommending three tests using `fio`.
 

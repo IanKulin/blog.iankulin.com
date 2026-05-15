@@ -12,7 +12,7 @@ tags:
   - tailscale
 ---
 
-![](/images/alaviles_experience_the_gold_standard_in_local_desktop_virtuali_f1a1d3a4-d7b1-489f-be57-41388033eea1.png)
+![](/images/alaviles_experience_the_gold_standard_in_local_desktop_virtuali_f1a1d3a4-d7b1-489f-be57-41388033eea1.jpg)
 
 I'm normally a x.1 release type of sysadmin, but the increasing temptation of installing Proxmox 8.0 while I've got some time off, and the fact that I've got a cluster, so I can just move the VM's around all adds up to thinking I'll do that today.
 
@@ -34,7 +34,7 @@ A small hitch with this is that the RAM in `pve-prod1` cost me $100, and I didn'
 
 You can see from this, I tried shutting it down and restarting - thinking that the memory use might climb up slowly as the app was used, but it just went straight back to 15GB. In a way, I approve of a VM using the memory I've given it - presumably it is caching or something. Jellyfin should certainly be able to run on a machine with much less memory, so I suppose I'll stop it, back it up, and try it in a smaller VM.
 
-![](/images/screen-shot-2023-07-04-at-7.42.58-am.png)
+![](/images/screen-shot-2023-07-04-at-7.42.58-am.jpg)
 
 Yep, that works fine. And I can't notice any difference in the app performance. So I stopped it, backed it up, and restored onto prod2. And immediately bumped into a couple of problems when I tried to start it.
 
@@ -58,7 +58,7 @@ Moving the docker host over was straightforward and only took five minutes of do
 
 I try and keep my hosts very clean, so wiping them and starting over is no biggie, but since this node has been up I have installed a chron job for [temperature logging](/linux-shell-script-for-temperature-logging/). I've documented that in a blog post so I'll be able to recreate it, but this sort of thing is the reason I'm interested in [Ansible](/getting-started-with-ansible/). Another project while I've got some time will be to recreate that on the new machine with Ansible so it's trivial to restore in future. I pulled the temperature log file down though - because who doesn't like eighty thousand data points.
 
-![](/images/temp1.png)
+![](/images/temp1.jpg)
 
 There is a [published process to upgrade Proxmox](https://pve.proxmox.com/wiki/Upgrade_from_7_to_8) from 7.x to 8, so I briefly considered it, but fresh installs are generally less likely to lead to drama, especially this early in the major release cycle. Plus, I keep my installs clean to allow it - this is a freedom allowed by my sysadmin discipline along with the investment in redundant hardware so there's zero time pressure while I'm doing it.
 
@@ -90,7 +90,7 @@ My install process for Proxmox goes something like this:
 -   Then I [install Tailscale](https://tailscale.com/kb/1031/install-linux/)
 -   Last of all, add my NAS to the storage. I use NFS. The only trick here is to go into the dropdown of what type of content is on that storage, and select everything
 
-![](/images/screen-shot-2023-07-04-at-12.17.35-pm.png)
+![](/images/screen-shot-2023-07-04-at-12.17.35-pm.jpg)
 
 And that's it. Nice new Proxmox. I'll leave my production VM's on pve-prod2 for a week, and move all of my dev work over to this machine so it gets some exercise before I upgrade the other machines.
 

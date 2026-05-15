@@ -11,7 +11,7 @@ tags:
   - vim
 ---
 
-![](/images/mikemol_female_oracle_database_administrator_seething_over_a_de_41a485b2-af77-47db-9db0-73dfa14e4ad0.png)
+![](/images/mikemol_female_oracle_database_administrator_seething_over_a_de_41a485b2-af77-47db-9db0-73dfa14e4ad0.jpg)
 
 > _Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X._
 > 

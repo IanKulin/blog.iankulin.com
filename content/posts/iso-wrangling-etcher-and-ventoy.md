@@ -11,7 +11,7 @@ tags:
   - ventoy
 ---
 
-![](/images/santanica_photo_of_personalized_usb_drive_with_cmyk_paint_blots_1b77f141-0e68-46aa-af6b-cb9d1d07a9b6.png)
+![](/images/santanica_photo_of_personalized_usb_drive_with_cmyk_paint_blots_1b77f141-0e68-46aa-af6b-cb9d1d07a9b6.jpg)
 
 If you fiddle around with computers, and especially with Linux drives, you'll often find yourself with an ISO file you need to boot a device from. These can't just be copied onto an existing USB or SD card - they need to be bootable, so you'll need a special program to write the ISO to the storage device.
 

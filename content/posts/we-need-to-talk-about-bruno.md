@@ -22,7 +22,7 @@ I've [mentioned before](/how-to-deploy-a-node-js-app/) that I was using Insomnia
 
 Sadly that was prophetic. I saw [@wtpisaac@vmst.io](https://vmst.io/@wtpisaac) [mention this exact thing](https://vmst.io/@wtpisaac/111150369449470670) had happened.
 
-![](/images/screen-shot-2023-10-01-at-5.43.52-pm.png)
+![](/images/screen-shot-2023-10-01-at-5.43.52-pm.jpg)
 
 The following day when I opened up Insomnia, it asked to upgrade and I said no, and was able to write and save a handful of new calls to test the API I was building. Sadly, I closed it, and of course on the next run, it demanded an account be created. I skipped that, and it presented me with a "sandbox" and all my saved requests were gone.
 

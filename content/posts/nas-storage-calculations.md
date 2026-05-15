@@ -45,7 +45,7 @@ I'll run through the thinking of each of the options I've considered.
 
 ### DS412+
 
-![](/images/screen-shot-2023-03-10-at-5.14.28-pm.png)
+![](/images/screen-shot-2023-03-10-at-5.14.28-pm.jpg)
 
 I had a couple of Synologys with more bays than this in my eBay watchlist, but as you add drives, you add power consumption and heat, so I think realistically at the 12TB point, 4 bays is the most you could justify. There's a bit of a price step up as well when you go to five bays and leave the serious home user segment of the market.
 

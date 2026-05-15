@@ -10,7 +10,7 @@ tags:
   - ssd
 ---
 
-![](/images/lionovich_computer_cries_because_of_dead_ssd_6149b1c0-005e-41d2-a912-eb864a307555.png)
+![](/images/lionovich_computer_cries_because_of_dead_ssd_6149b1c0-005e-41d2-a912-eb864a307555.jpg)
 
 I didn't understand why the default Proxmox install sets up the storage the way it does - with the available disk split up into an LVM and an LVM thin storage - so I've been reading this excellent [Proxmox Storage Guide](https://blog.programster.org/proxmox-storage-guide) by Programster (spoiler - the LVM thin makes VM snapshots easier).
 
@@ -27,7 +27,7 @@ I'm no expert, but 100% "wearout" sounds bad, or maybe these figures go the othe
 
 There's a button to look at the S.M.A.R.T (Self-Monitoring, Analysis and Reporting Technology backronym) attributes, so let's have a look at this suspicious no-name drive.
 
-![](/images/screen-shot-2023-04-19-at-7.27.43-pm.png)
+![](/images/screen-shot-2023-04-19-at-7.27.43-pm.jpg)
 
 Well, some of this is comprehensible. The Power\_On\_Hours is saying it's been on for about one and a half years worth of hours. Since it's been power cycled over a thousand times, that all sort of matches a corporate desk machine that's been in use for five or six years. These values look like the sort of data you get from running the `smartctl -a /dev/sda` command. I've snipped this output because it is huge, but the middle part is very similar to the table above, and there was nothing scary it it,
 

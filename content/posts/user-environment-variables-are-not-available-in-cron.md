@@ -13,7 +13,7 @@ tags:
   - shell
 ---
 
-![](/images/screen-shot-2024-07-02-at-4.13.13-pm.png)
+![](/images/screen-shot-2024-07-02-at-4.13.13-pm.jpg)
 
 I'm used to using the `docker-compose.yaml` or `dockerfile` to set environment variables for containers running my apps, but ran into an issue recently where the variable seemed to be set some of the time, but at others it didn't appear to exist.
 

@@ -9,7 +9,7 @@ tags:
   - posts
 ---
 
-[![](/images/screen-shot-2022-08-21-at-9.47.54-am.png)](https://www.hackingwithswift.com/100/swiftui)
+[![](/images/screen-shot-2022-08-21-at-9.47.54-am.jpg)](https://www.hackingwithswift.com/100/swiftui)
 
 Paul Hudson's 100 Days of Swift UI course is free - the videos are on YouTube, all the reading and tasks are available on his website for free. Although I assumed he made his living from the prodigious number of Swift books he's written, he doesn't push them in the course (except for his free book [Swift UI by Example](https://www.hackingwithswift.com/quick-start/swiftui)).
 

@@ -20,7 +20,7 @@ The discussion that follows is essentially just a re-hash of the video above, so
 
 Here's the situation we start with. A "feature" branch was created at the point in time that the most recent commit on the master branch was "m2". A couple of commits have been made to the feature branch, but meanwhile a further commit has been made on the master branch:
 
-![](/images/screen-shot-2022-09-24-at-7.00.08-pm.png)
+![](/images/screen-shot-2022-09-24-at-7.00.08-pm.jpg)
 
 So, what are the options now? (this is just a rehash of the video above in my words, so if you already watched that, you may leave :- ) I'm going to use "master" in my discussions here since that's what Manuel uses, but if you're new to git and you've only ever seen "main" - they are just different names for the default branch, "main" is the current (and slightly better) preference for that name.
 

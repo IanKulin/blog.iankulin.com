@@ -11,7 +11,7 @@ tags:
   - webdev
 ---
 
-![](/images/moneycoachjen_76363_woman_representing_money_2f84bb41-99db-4cb8-bc07-78e759e8b1f9.png)
+![](/images/moneycoachjen_76363_woman_representing_money_2f84bb41-99db-4cb8-bc07-78e759e8b1f9.jpg)
 
 I'm focused on React frontend skills these holidays, and [working through Mosh's React 18](https://codewithmosh.com/p/ultimate-react-part1) course. The exercise today (which I think I nailed, although I spent more than the recommended hour on) was a small app to track expenses. Like most of Mosh's exercises it was great because it exercised all the understandings up to that point - so it's a good starting React project. It used Zod for the form validation which is completely new to me, but looks great.
 

@@ -12,7 +12,7 @@ tags:
   - web-dev
 ---
 
-![](/images/starliu_building_trust_with_ai_challenges_and_solutions_a519169f-8b94-4b34-88d9-e2e635bc5996.png)
+![](/images/starliu_building_trust_with_ai_challenges_and_solutions_a519169f-8b94-4b34-88d9-e2e635bc5996.jpg)
 
 When you've successfully got Nginx running in a Docker container, AND got your [domain correctly pointing](/adding-a-domain-name-to-a-vps/) at your nascent website, you're then going to want to set it up for encrypted, and therefore trusted, browsing with SSL.
 
@@ -37,7 +37,7 @@ nginx: [emerg] cannot load certificate "/etc/nginx/conf.d/fullchain.pem": PEM_re
 
 That's a reasonably descriptive error - let's look in the `fullchain.pem` file (it's just text like an SSH key file) and see if there's anything suspicious.
 
-![](/images/screen-shot-2023-04-21-at-1.46.32-pm.png)
+![](/images/screen-shot-2023-04-21-at-1.46.32-pm.jpg)
 
 Well there's a problem. These beginning and ends should be on their own lines - I probably could have done that when I concatenated them, but no problem, it's easily fixed in the text editor by counting in five dashes and hitting enter.
 

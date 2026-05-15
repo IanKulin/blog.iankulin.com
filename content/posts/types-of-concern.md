@@ -10,7 +10,7 @@ tags:
   - web-dev
 ---
 
-![medieval manuscript drawing of a peasant holding a MacBook - midjourney](/images/pucker_medieval_manuscript_drawing_of_a_peasant_holding_a_macbo_534a8a13-44b2-44cc-8916-5e246609e39d.png)
+![medieval manuscript drawing of a peasant holding a MacBook - midjourney](/images/pucker_medieval_manuscript_drawing_of_a_peasant_holding_a_macbo_534a8a13-44b2-44cc-8916-5e246609e39d.jpg)
 
 I am still struggling with the dynamic typing of JS. I guess the benefit of such an approach is needing less characters - which makes sense in a scripting language like bash, but in real programming it opens us up to a whole class of avoidable errors.
 

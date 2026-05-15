@@ -11,7 +11,7 @@ tags:
   - synology
 ---
 
-![](/images/hddlockedup_50825865.png)
+![](/images/hddlockedup_50825865.jpg)
 
 The Synology operating system DSM (I'm on DSM 7.1.1) is Linux, but its highly customised for the purpose of making running a complicated Linux NAS doable for less technical users.
 
@@ -41,7 +41,7 @@ Lot's of times, you could just ignore that warning, you can still probably do wh
 
 Again, there's a setting in the web interface to create home directories for the users. We're in the _Control Panel_ again, but this time look for _User & Group_.
 
-![](/images/screen-shot-2023-03-25-at-6.20.35-pm.png)
+![](/images/screen-shot-2023-03-25-at-6.20.35-pm.jpg)
 
 Tick the box for _Enable user home service_, and hit _Apply_.
 

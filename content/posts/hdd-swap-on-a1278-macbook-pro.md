@@ -14,7 +14,7 @@ tags:
   - repairs
 ---
 
-![](/images/dexxx3d_computer_repair_shop__a_lot_of_computer_laptop_for_repa_7ee46d83-216e-4f67-81af-ee3c7037e6e7.png)
+![](/images/dexxx3d_computer_repair_shop__a_lot_of_computer_laptop_for_repa_7ee46d83-216e-4f67-81af-ee3c7037e6e7.jpg)
 
 My MacBook died, I guess about three years ago. It was randomly difficult for a week or so, but then just behaving as if it had no hard drive at all. It's been in a drawer ever since waiting for me to replace the hard drive and see if I could sell it, which I never quite got to.
 

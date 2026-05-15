@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-![](/images/padlock.png)
+![](/images/padlock.jpg)
 
 Unix, and therefore Linux, was built from the ground up as a multi-user system. Thanks to this, great security is baked in, for example every file has permission attributes for it's owner, the group the owner is a member of, and then everyone. For example, it might be a good idea if I can read, write and execute my own files, but the other members of my group can just read them, and any other user on the system has none of those rights.
 

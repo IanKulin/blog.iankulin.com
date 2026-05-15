@@ -23,6 +23,6 @@ In a terminal window, on your development machine:
 
 The first argument is the file to copy, and the second is the ssh accessible machine you are copying to with the path after the colon.
 
-![](/images/screen-shot-2022-11-26-at-7.57.13-am.png)
+![](/images/screen-shot-2022-11-26-at-7.57.13-am.jpg)
 
 ![](/images/screen-shot-2022-11-26-at-7.56.32-am.png)

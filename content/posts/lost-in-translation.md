@@ -10,7 +10,7 @@ tags:
   - web-dev
 ---
 
-![](/images/pucker_two_female_robots_having_a_confusing_conversation_2d32f035-3a1e-4e9f-a335-f7c395190925.png)
+![](/images/pucker_two_female_robots_having_a_confusing_conversation_2d32f035-3a1e-4e9f-a335-f7c395190925.jpg)
 
 We're in a pretty good place now (compared to a few years ago) in terms of being able to rely on JavaScript behaving the same on different platforms. There's still some differences (mostly in when things are implemented) but overall, not to bad once you decide to no longer support Internet Explorer.
 

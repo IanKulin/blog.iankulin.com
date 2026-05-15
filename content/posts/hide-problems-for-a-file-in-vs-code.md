@@ -10,11 +10,11 @@ tags:
   - web-dev
 ---
 
-![Two white bread guys clicking away on a screen wall](/images/apollon_young_man_touching_a_transparent_wall_hiding_code_for_a_524e38cd-fa31-45a3-ab96-dc9b9ed25caa.png)
+![Two white bread guys clicking away on a screen wall](/images/apollon_young_man_touching_a_transparent_wall_hiding_code_for_a_524e38cd-fa31-45a3-ab96-dc9b9ed25caa.jpg)
 
 I'm interested in trying out [Pico CSS](https://picocss.com/) - a lightweight CSS library, but when I tossed it into my project, the linter found and reported 29 problems. One of my processes is to just keep that problems tab clear as I work, so I'd like that to go away.
 
-![Screenshot of VS Code showing 29 problems detected.](/images/screen-shot-2023-07-20-at-6.54.06-am.png)
+![Screenshot of VS Code showing 29 problems detected.](/images/screen-shot-2023-07-20-at-6.54.06-am.jpg)
 
 It's possible, but only by 'excluding' the file from your project - it won't show up in the file view either. That's fine with me, I never want to deal with the file so we'll do that, although it might confuse me in seven years if I come back to this project, so I'll drop a link in my .git\_ignore as a clue for future me (excluding the file in VS Code doesn't affect git finding it).
 

@@ -13,7 +13,7 @@ tags:
 
 This always makes me laugh:
 
-![Screenshot of terminal output full of lines saying "Failed password for root"](/images/screen-shot-2023-08-03-at-8.01.20-pm.png)
+![Screenshot of terminal output full of lines saying "Failed password for root"](/images/screen-shot-2023-08-03-at-8.01.20-pm.jpg)
 
 It's like half the traffic on the internet is [bots](/chinese-hackers-want-to-steal-my-hello-world-container/) trying random passwords on root accounts over ssh. This is on an Ubuntu VPS on BinaryLane that had only been spun up five minutes or so. Looks like about one attempt every 10 seconds.
 

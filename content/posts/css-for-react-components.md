@@ -13,7 +13,7 @@ tags:
   - webdev
 ---
 
-![](/images/screen-shot-2023-12-27-at-3.30.32-pm.png)
+![](/images/screen-shot-2023-12-27-at-3.30.32-pm.jpg)
 *Subscribe to my UX design course 😉*
 
 If you think back to HTML as being a document with headings and paragraphs and other semantic bits, it made a lot of sense to have the styles (expressed as CSS) separate to the document. This allows us to change the styles without touching the document - perhaps the user wanted a dark theme, needed the text bigger for accessibility, or perhaps the document was being consumed in some other way - for example a screen reader - so the styles were superfluous.

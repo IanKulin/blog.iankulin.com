@@ -12,7 +12,7 @@ tags:
   - xcode14
 ---
 
-![cartoon worm on a book - Stable Diffusion](/images/cartoon-worm-on-a-book.png)
+![cartoon worm on a book - Stable Diffusion](/images/cartoon-worm-on-a-book.jpg)
 
 Another set of challenges for a [#100DaysofSwiftUI](https://www.hackingwithswift.com/100/swiftui) tutorial app. Project 11 was a book tracking app - the big new thing was using CoreData. Here's the [challenges for it](https://www.hackingwithswift.com/books/ios-swiftui/bookworm-wrap-up).
 
@@ -45,7 +45,7 @@ Section {
 
 Straightforward, with use of the ternary operator.
 
-![](/images/screen-shot-2022-11-04-at-6.17.12-pm.png)
+![](/images/screen-shot-2022-11-04-at-6.17.12-pm.jpg)
 
 [![](/images/github-mark-120px-plus-1.png)](https://github.com/IanKulin/Bookworm/commit/cc81d29a799e7bb97e9813c4ad17e66a64361e6a)
 

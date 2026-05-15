@@ -12,6 +12,6 @@ tags:
 
 I was looking for some more podcasts with Swift fundamentals content when I came across [this](https://github.com/vsouza/awesome-ios) great community built awesome list.
 
-[![](/images/screen-shot-2022-07-11-at-8.45.25-am.png)](https://github.com/vsouza/awesome-ios)
+[![](/images/screen-shot-2022-07-11-at-8.45.25-am.jpg)](https://github.com/vsouza/awesome-ios)
 
 There's a few podcasts on the list I have not come across, so I'll check them out.

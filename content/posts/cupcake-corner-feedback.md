@@ -11,7 +11,7 @@ tags:
   - xcode14
 ---
 
-![cute cupcake, cartoon drawing - Stable Diffusion](/images/cute-cupcake-cartoon-drawing.png)
+![cute cupcake, cartoon drawing - Stable Diffusion](/images/cute-cupcake-cartoon-drawing.jpg)
 
 As usual, here's my thoughts comparing my attempts at the challenges to Paul's. Usually he's better!
 
@@ -49,4 +49,4 @@ Paul left the CodingKey enum in - no problem with that, but I can't see that it'
 
 You know how I was complaining that the class.struct.propertyname things were the main downside of the class wrapping a struct approach? Next Paul pulls a rabbit out of his hat with _@dynamicMemberLookup_ combined with _keyPaths_. I'm not going to explain how these work, but the effect is that we can eliminate the struct name from our names so _order.data.street_ is just _order.street_ but it is still referencing our struct property wrapped in the class.
 
-![](/images/screen-shot-2022-10-29-at-9.16.01-pm.png)
+![](/images/screen-shot-2022-10-29-at-9.16.01-pm.jpg)

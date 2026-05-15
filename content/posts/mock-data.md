@@ -14,7 +14,7 @@ One of the things we need during app development is some data to play with. It w
 
 It occurred to me someone probably already solved this problem, and a quick search confirmed there are hundreds of web based test data generating sites. They provide data in all sorts of formats as downloads or via APIs. Somewhat at random, I selected [Mockaroo](https://www.mockaroo.com/).
 
-[![](/images/screen-shot-2022-11-26-at-5.56.38-am.png)](https://www.mockaroo.com/)
+[![](/images/screen-shot-2022-11-26-at-5.56.38-am.jpg)](https://www.mockaroo.com/)
 
 In addition to letting you specify the fields, you control the type of data to go in them. They have a heap of options of specific formats such as ISBN's, airport codes and so on. The whole thing took a couple of minutes to setup.
 

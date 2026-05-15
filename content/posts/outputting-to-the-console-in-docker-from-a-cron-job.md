@@ -11,7 +11,7 @@ tags:
   - stdout
 ---
 
-![](/images/screen-shot-2024-07-02-at-3.48.02-pm.png)
+![](/images/screen-shot-2024-07-02-at-3.48.02-pm.jpg)
 
 If you're googling this exact title, you're probably bumping your head against the same things I was today. I was debugging a completely different project, and needed to print to the console, from a `cron` job, in a Docker container. Turns out this isn't as straightforward as I thought.
 

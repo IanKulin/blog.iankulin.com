@@ -18,8 +18,8 @@ When you app is being built, it looks for the file "Credits.rtf" in the app bund
 
 After you've created the "Credits.rtf" file, you need to drop it into the folder for your project where the source files go. Then in Xcode, add it to your project in that inner folder:
 
-![](/images/screen-shot-2022-10-03-at-1.15.45-pm.png)
+![](/images/screen-shot-2022-10-03-at-1.15.45-pm.jpg)
 
 Then when you rebuild the app, it will show in your about dialog.
 
-![](/images/screen-shot-2022-10-03-at-1.16.33-pm.png)
+![](/images/screen-shot-2022-10-03-at-1.16.33-pm.jpg)

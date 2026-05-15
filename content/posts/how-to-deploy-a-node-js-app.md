@@ -18,7 +18,7 @@ tags:
   - web-dev
 ---
 
-![](/images/naresh_create_a_github_account_and_a_new_repository._install_gi_c8bce4b2-201f-422b-815c-bb6286fb000a.png)
+![](/images/naresh_create_a_github_account_and_a_new_repository._install_gi_c8bce4b2-201f-422b-815c-bb6286fb000a.jpg)
 
 This is one of those things that is simple once you know it. I had my [tiny Node service working](/using-node-js-to-return-a-static-file/) on my MacBook, but how do I run it on the server?
 
@@ -54,7 +54,7 @@ I've got this tiny source file, and the text file I want to serve. All the depen
 
 I `scp`'d those from my laptop to a directory on the folder:
 
-![](/images/screen-shot-2023-06-26-at-8.41.19-pm.png)
+![](/images/screen-shot-2023-06-26-at-8.41.19-pm.jpg)
 
 Once they are there, I need to install the packages from the package.json, so we do that with:
 
@@ -66,7 +66,7 @@ That installed 59 packages (presumably Express plus 58 of it's dependencies). Th
 
 and it worked!
 
-![](/images/screen-shot-2023-06-26-at-8.55.34-pm.png)
+![](/images/screen-shot-2023-06-26-at-8.55.34-pm.jpg)
 
 ### Insomnia
 

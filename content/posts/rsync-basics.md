@@ -10,7 +10,7 @@ tags:
   - rsync
 ---
 
-![](/images/computerdatasynchronisation_31637620.png)
+![](/images/computerdatasynchronisation_31637620.jpg)
 
 I've started down the path of improved storage management, including embracing the [3-2-1](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) mantra. I've settled on a RAID6 NAS for local, mirrored to an off-site NAS, and an offline local USB drive.
 
@@ -40,7 +40,7 @@ Okay, that's not impressive, I could have done the same thing with `cp` to copy 
 
 Let's try that by editing `file1.txt`, and adding a new `file0.txt`
 
-![](/images/screen-shot-2023-03-25-at-1.18.57-pm.png)
+![](/images/screen-shot-2023-03-25-at-1.18.57-pm.jpg)
 
 You might be thinking that perhaps rsync really is just copying all the files again. We can add a couple more flags to get rsync to tell us what is getting copied (`-v` for verbose, and `-i` which gives some output explaining how it decided a file needed copied.
 
@@ -58,7 +58,7 @@ The optimisation in rsync extends further than just copying the files that have 
 
 So that covers copying most of the changes in the source, but what about if a local file is deleted, does that propagate to the destination and delete the file there? Naturally, there is also an option for this; simply add `--del` to the end of the command:
 
-![](/images/screen-shot-2023-03-25-at-3.35.49-pm.png)
+![](/images/screen-shot-2023-03-25-at-3.35.49-pm.jpg)
 
 ### Remote hosts
 
@@ -80,7 +80,7 @@ rsync -avi localdir/ ian@192.168.100.33:remotedir --del
 
 Before I've run this, I've sshed in and created the directory `remotedir` on the target machine, but then it's simple as
 
-![](/images/screen-shot-2023-03-25-at-5.06.01-pm.png)
+![](/images/screen-shot-2023-03-25-at-5.06.01-pm.jpg)
 
 ### Reading
 

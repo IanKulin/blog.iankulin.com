@@ -15,7 +15,7 @@ tags:
   - web-dev
 ---
 
-[![](/images/screen-shot-2024-08-10-at-8.59.01-pm.png)](https://unsplash.com/photos/calahorra-tower-torre-de-la-calahorra-in-cordoba-spain-a-fortified-gate-built-during-the-late-12th-century-by-the-almohads-to-protect-the-nearby-roman-bridge-in-the-historic-center-of-cordoba-andalusia-spain-ECsukeqrDoo)
+[![](/images/screen-shot-2024-08-10-at-8.59.01-pm.jpg)](https://unsplash.com/photos/calahorra-tower-torre-de-la-calahorra-in-cordoba-spain-a-fortified-gate-built-during-the-late-12th-century-by-the-almohads-to-protect-the-nearby-roman-bridge-in-the-historic-center-of-cordoba-andalusia-spain-ECsukeqrDoo)
 
 Pretty much every serious web app needs to include a way for users to log in securely and to be served their content. Since there's a lot of complexity in this, it's highly advisable to use good libraries to support this. In a future post we're going to use those libraries, but first I want to explain what's happening at the lower level and tease out some of the concepts as we build a secure system from the ground up.
 

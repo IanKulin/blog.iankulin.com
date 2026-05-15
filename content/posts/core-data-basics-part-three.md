@@ -14,7 +14,7 @@ If you're just stumbling across this, perhaps have a look at Part 1 where I layo
 
 I should also mention I figured out some of this with help from [this video](https://www.youtube.com/watch?v=xgPlJXTfiNA) from [Jonathan Rasmusson](https://www.youtube.com/channel/UCxnCA5FBYRCFgIZWD0CKCVg/about).
 
-![](/images/screen-shot-2022-11-21-at-6.41.46-am.png)
+![](/images/screen-shot-2022-11-21-at-6.41.46-am.jpg)
 
 First step is another Paul hack. If you look in the `Garden+CoreDataProperties.swift` file where the Garden properties are defined, you'll see that the `plants` variable has the type `?NSSet` which is not straightforward to work with. We'd prefer it to be an array of Plant so we can easily turn it into a list in SwiftUI ways.
 

@@ -69,7 +69,7 @@ The idea solution would be that the SyntaxHighlighter code block had a few more 
 
 I do note that when code is copied out from Xcode it includes the font and colour information (I guess as rich text?). If I copy the code above and pasted it into word and change the background colour, it looks like this:
 
-![](/images/screen-shot-2022-09-18-at-7.43.31-am.png)
+![](/images/screen-shot-2022-09-18-at-7.43.31-am.jpg)
 
 So that raises the prospect of pasting it into a different Wordpress block that displays rich text, but if there is such a thing, I can't see how to access it.
 
@@ -101,6 +101,6 @@ The HTML source is not pretty, but I can't see why this couldn't work if I wrote
 
 Other people have solved this problem. I notice Paul Hudson has exactly the presentation I'd like on his pages:
 
-![](/images/screen-shot-2022-09-18-at-8.11.37-am.png)
+![](/images/screen-shot-2022-09-18-at-8.11.37-am.jpg)
 
 His HTML for this (correctly) leaves the work for the CSS. I had a quick look, and other than knowing it was written by [BootStrap](https://getbootstrap.com/), it was mostly incomprehensible to me. Better HTML and CSS is on my list of coding goals, but my current level of knowledge is stuck on 1996 HTML. I'd be happy to chuck up a page with some blinking text, a visitor counter and an under construction gif for any clients looking for that.

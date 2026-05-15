@@ -47,7 +47,7 @@ ENTRYPOINT ["echo", "Hello World from ENTRYPOINT"]
 CMD ["& Hello World from CMD"]
 ```
 
-![](/images/screen-shot-2024-07-03-at-1.55.45-pm.png)
+![](/images/screen-shot-2024-07-03-at-1.55.45-pm.jpg)
 
 Naturally, only the CMD is overridden if we pass in extra values.
 

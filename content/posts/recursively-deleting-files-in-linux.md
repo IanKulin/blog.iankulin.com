@@ -10,7 +10,7 @@ tags:
   - linux
 ---
 
-![](/images/nitchos_movie_scene_still_gravity_mixed_with_melancholia_univer_e6f94fb5-1e41-4b98-a749-3d6693a5ee6c.png)
+![](/images/nitchos_movie_scene_still_gravity_mixed_with_melancholia_univer_e6f94fb5-1e41-4b98-a749-3d6693a5ee6c.jpg)
 
 I've been using this rsync command to backup files from my NAS to a USB drive. The --excludes are to avoid copying over some junk hidden files - some created by MacOS and some by Synology.
 

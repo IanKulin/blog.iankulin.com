@@ -61,7 +61,7 @@ btnItem.addEventListener("click", addNewItem)
 
 Since we're using hard coded strings, an anticipatable error would be misspelling the id either in the HTML or JavaScript. If that happens, getElementByID will return null. I would have thought we should be testing for this, or at least asserting it, but I don't see either happening in the code I've seen. There is a console.assert(), but of course it's not removed for production builds by a compiler.
 
-![](/images/screen-shot-2022-12-26-at-8.59.27-am.png)
+![](/images/screen-shot-2022-12-26-at-8.59.27-am.jpg)
 
 `[addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)` does what it says on the box. You need to tell it which event (another string) and pass it the name of the handler function. It's not specified here, but the handlers can have access to an [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event) object which turns out to be handy. Here's the two handlers referenced in the code above:
 

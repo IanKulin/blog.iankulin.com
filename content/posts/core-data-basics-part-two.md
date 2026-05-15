@@ -23,7 +23,7 @@ The "Sample Data" button creates the gardens to display. The list above displays
 
 The first thing we need to do is to create the data model. This is the description of our data structures - _Garden_ and _Plant_ which in the previous version were structs. In this version they will become classes, but we don't just write the classes, we define them in an XCode _data model_.
 
-![](/images/screen-shot-2022-11-20-at-4.48.49-pm.png)
+![](/images/screen-shot-2022-11-20-at-4.48.49-pm.jpg)
 
 There's slightly different language. Instead of structs we have _Entities_ for Garden and Plant, and instead of properties they have _Attributes_.
 
@@ -31,7 +31,7 @@ While we're editing the data model, there's another couple of little jobs to do 
 
 We are going to get XCode to explicitly generate the Managed Object code for our entities, and add it to our project so we can edit it - Editor | Create NSManagedObject. Select both entities and XCode will generate four files and add them to the project navigator. – Each entity has a file with an empty class definition, and a file with an extension containing the @NSManaged property definitions and the fetchRequest method.
 
-![](/images/screen-shot-2022-11-20-at-5.56.58-pm.png)
+![](/images/screen-shot-2022-11-20-at-5.56.58-pm.jpg)
 
 Since the properties are (a slightly different to Swift version of) optionals, this file is a good place to make any computed properties to return safely unwrapped versions.
 

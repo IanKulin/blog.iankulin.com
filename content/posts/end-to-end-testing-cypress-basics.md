@@ -279,7 +279,7 @@ First of all I start my app - so however you normally do this. For me, it's drop
 
 Once that's going we can start Cypress. Since the first terminal is running my node app, we need to spawn another terminal to run Cypress in. This is a simple matter in VSCode - just hit that + button I've circled in the screen shot below. You can swap between the different terminals you have open by clicking on them in the list underneath that + button.
 
-![](/images/screenshot-2025-04-15-at-16.02.23.png)
+![](/images/screenshot-2025-04-15-at-16.02.23.jpg)
 
 We start Cypress in the new terminal with `npx cypress open` but the magic does not happen in the terminal, this thing pops up:
 
@@ -295,7 +295,7 @@ I'm in a Chrome mood today, so next we see this:
 
 I've only got one test file - `home.cy.js`, so I click that. The tests are listed down the left side of the browser, and my app in an iFrame to the right. As the tests are running, I can see the app flicking through each step. In a couple of seconds the seventeen tests that comprise many page manipulations and assertions are finished and I can see the results.
 
-![](/images/screenshot-2025-04-15-at-17.14.27.png)
+![](/images/screenshot-2025-04-15-at-17.14.27.jpg)
 
 If we click on a test, the details for it open up, and a screenshot of the application state at the time of that test is displayed.
 
@@ -307,7 +307,7 @@ The most common debugging problem I've run into is when I didn't write the selec
 
 So, how does a failed test look. I can create that in this test suit just by running the tests again. It won't be able to delete orders or customers it deleted in the earlier run.
 
-![](/images/screenshot-2025-04-15-at-17.24.56.png)
+![](/images/screenshot-2025-04-15-at-17.24.56.jpg)
 
 So, at the start of this 'delete order' test, I'm checking if the order exists, and it doesn't (because we didn't reset after deleting it last time). We can see from the error message that Cypress waited 4 seconds in case it was a timing issue. It's displayed the test case where the failure has occurred. This along with the before and after snapshots of the app around each test make locating problems a breeze.
 

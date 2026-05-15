@@ -13,7 +13,7 @@ tags:
 
 I've started work on trying to recreate a [UI provided by a designer](/design-help/), and in the process needed to identify some colours from a PNG image. I found this great website for this exact purpose.
 
-![](/images/screen-shot-2022-09-30-at-4.36.17-am.png)
+![](/images/screen-shot-2022-09-30-at-4.36.17-am.jpg)
 
 The site is ImageColorPicker. To use it, you "upload" your image (actually the image is not going anywhere - it's all done in-browser). Then click on any area you want to identify the colour of.
 

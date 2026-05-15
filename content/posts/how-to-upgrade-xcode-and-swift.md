@@ -23,6 +23,6 @@ Your current XCode version can, of course be found in the _XCode | About_ dialog
 
 Or for a bit more accuracy, try `xcrun swift -version` at the command line. I got a few errors, then the version 5.6.1
 
-![](/images/screen-shot-2022-09-17-at-8.55.13-am.png)
+![](/images/screen-shot-2022-09-17-at-8.55.13-am.jpg)
 
 I won't bang on about the [changes for XCode](https://www.youtube.com/watch?v=tYBZ8AVH0Q0) or [Swift](https://www.swift.org/blog/swift-5.7-released/) since that's already been done well elsewhere, and the Swift changes are mostly beyond my expertise level.

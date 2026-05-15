@@ -12,7 +12,7 @@ tags:
   - ssh
 ---
 
-![](/images/pucker_side_view_of_a_female_knight_walking_up_to_a_castle_door_645ac316-6393-4e33-8199-36bf31d88b53.png)
+![](/images/pucker_side_view_of_a_female_knight_walking_up_to_a_castle_door_645ac316-6393-4e33-8199-36bf31d88b53.jpg)
 
 Due to [potential brute force attacks](/chinese-hackers-want-to-steal-my-hello-world-container/), it's a good idea to turn off password access via shh and instead rely on ssh keys. In this post, I'll run through that process.
 

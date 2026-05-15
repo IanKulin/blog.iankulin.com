@@ -13,7 +13,7 @@ I usually have a few days of blog posts written in advance so I can schedule one
 
 And of course, there's the psychological weight of my streak!
 
-![](/images/screen-shot-2022-09-07-at-7.45.40-pm.png)
+![](/images/screen-shot-2022-09-07-at-7.45.40-pm.jpg)
 
 I'm bushed from work tonight, and probably would not have done any programming work beyond watching a related YouTube, but I'd run out of scheduled posts, and had a half started project as the next thing to do.
 

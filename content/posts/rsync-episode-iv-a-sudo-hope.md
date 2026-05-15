@@ -12,7 +12,7 @@ tags:
   - rsync
 ---
 
-![](/images/imperialofficersworkingatl_62923535.png)
+![](/images/imperialofficersworkingatl_62923535.jpg)
 
 With all those earlier rsync bumps out of the way, I was ready to try my first rsync backup at the command line to sync my movies directory on the NAS to a (NTFS formatted) USB drive plugged into the same NAS. This is to be one of the simplest since there's no remote server involved, just copying from mount point directory to another - so no drama with remote permissions.
 

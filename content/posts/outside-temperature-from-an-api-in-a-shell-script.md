@@ -15,7 +15,7 @@ tags:
   - posts
 ---
 
-![](/images/challengereality_a_highly_detailed_ultra_high_resolution_hologr_1509798a-548d-4528-bcc7-cb1f2bb30a0e.png)
+![](/images/challengereality_a_highly_detailed_ultra_high_resolution_hologr_1509798a-548d-4528-bcc7-cb1f2bb30a0e.jpg)
 
 I'm interested in [collecting some internal temperature data](/linux-shell-script-for-temperature-logging/) from my servers to look at the effect of adding an NMVe drive. Last week we had a couple of warm days immediately followed by a couple of cool ones. I imagine a 20° ambient temperature change could effect the server temperatures, so I thought it would be good to add that to my temperature logs.
 
@@ -211,15 +211,15 @@ Since I'm interested in only running the `modprobe` if `drivetemp` is _not_ foun
 
 After that, all the temperature data is collected, then written out to a log fie for later processing.
 
-![](/images/screen-shot-2023-04-25-at-9.00.47-pm.png)
+![](/images/screen-shot-2023-04-25-at-9.00.47-pm.jpg)
 
 ### The Results
 
 Here's 24 hours of the five minute temperature logs. For each server I averaged the three different temperatures (PCH, CPU core, and SSD drive) and graphed them along with the outside temperature from OpenWeather. `pve-prod1` is the only one doing any real work here. It hosts my Jellyfin media server on a VM, and another VM with a collection of utilities such as Uptime Kuma. The Y axis is degrees centigrade.
 
-![](/images/20230427-server-temps.png)
+![](/images/20230427-server-temps.jpg)
 
-![](/images/img_4315.png)
+![](/images/img_4315.jpg)
 
 The spike in `pve-dev`1 at 2100 was caused by me stress testing one core to 100% load for ten minutes. I think I can see `pve-prod2` (which sits directly on top of `pve-dev1`) warming up a little as well. But strangely, and perhaps I'm imagining it, it seems like `pve-prod1` (which sits on top of the stack) was a bit cooler in that time?
 

@@ -12,7 +12,7 @@ tags:
   - service
 ---
 
-![](/images/mlguy_synthetic_woman_is_installing_her_robotic_arm_ac961357-5997-4b2a-9b50-6f91ae9a4bf7.png)
+![](/images/mlguy_synthetic_woman_is_installing_her_robotic_arm_ac961357-5997-4b2a-9b50-6f91ae9a4bf7.jpg)
 
 Having written my little monitoring endpoint in Go, it needs pushed out to all my servers and VM's. Clearly this is a job for Ansible which I've already [dabbled my toes in](/ansible-with-secrets/). Before we get onto doing that though, we need to have a think about how to make it a service.
 

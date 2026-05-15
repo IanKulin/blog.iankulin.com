@@ -11,7 +11,7 @@ tags:
   - xcode14
 ---
 
-![Hedy Lamarr standing in front of a drawing, Kuvshinov Ilya - Stable Diffusion](/images/hedylamarrstandinginfront_52901467.png)
+![Hedy Lamarr standing in front of a drawing, Kuvshinov Ilya - Stable Diffusion](/images/hedylamarrstandinginfront_52901467.jpg)
 
 Here's the summary of my learning from comparing [my efforts](/project-9-drawing/) with Paul's solutions to the Project Nine challenges from [Day 46](https://www.hackingwithswift.com/books/ios-swiftui/drawing-wrap-up) of his [100 Days of SwiftUI course](https://www.hackingwithswift.com/100/swiftui).
 

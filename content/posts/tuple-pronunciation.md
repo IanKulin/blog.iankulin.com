@@ -14,4 +14,4 @@ Another advantage of the videos, that hadn't occurred to me when I [mentioned it
 
 Apparently, tuple is pronounced two-pull, and not with the tup to rhyme with cup as I'd always imagined. Google has confirmed, so it's not just a UK thing.
 
-![](/images/screen-shot-2022-07-09-at-12.06.59-pm.png)
+![](/images/screen-shot-2022-07-09-at-12.06.59-pm.jpg)

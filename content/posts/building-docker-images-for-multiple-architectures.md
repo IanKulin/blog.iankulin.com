@@ -68,7 +68,7 @@ This was somewhat less successful. I think the story of the building for other a
 
 In any case, this may still work, but at the time of writing, the `NPM install` had been running overnight . If this speed turns out to be typical, it's a good reason to look at outsourcing your Docker builds to GitHub actions.
 
-![](/images/screen-shot-2023-10-30-at-7.03.18-am.png)
+![](/images/screen-shot-2023-10-30-at-7.03.18-am.jpg)
 
 With all eight cores pegged at 100% on an M1 MacBook:
 

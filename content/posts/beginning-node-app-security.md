@@ -14,7 +14,7 @@ tags:
   - web-dev
 ---
 
-![](/images/sciacqualani_digital_paint_illustration_of_padlock_in_a_cyber_w_6a902b1c-29a3-4f98-9f6b-411d9594550c.png)
+![](/images/sciacqualani_digital_paint_illustration_of_padlock_in_a_cyber_w_6a902b1c-29a3-4f98-9f6b-411d9594550c.jpg)
 
 Since I'm using Tailscale to painlessly manage all my networking on the homeserver here and my remotes, I've had the luxury of being a bit casual about the security of my internal apps and self hosted dev tools. I'm currently iterating on a web app that requires public access, and is therefore up on a VPS and exposed to all the evils of the open internet.
 

@@ -10,7 +10,7 @@ tags:
   - homelab
 ---
 
-![](/images/screen-shot-2023-11-20-at-8.08.37-pm.png)
+![](/images/screen-shot-2023-11-20-at-8.08.37-pm.jpg)
 
 (edit: - I've [had a rethink about](/gogs-gitea-forgejo/) my source hosting)
 
@@ -69,7 +69,7 @@ If you go ahead and create a repository in Gogs, it will give you the commands t
 
 So let's do that:
 
-![](/images/screen-shot-2023-11-20-at-9.21.38-pm.png)
+![](/images/screen-shot-2023-11-20-at-9.21.38-pm.jpg)
 
 The back in our repo on Gogs:
 

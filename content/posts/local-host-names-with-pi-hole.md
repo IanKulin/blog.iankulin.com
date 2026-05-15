@@ -10,7 +10,7 @@ tags:
   - pi-hole
 ---
 
-![](/images/screen-shot-2023-02-04-at-5.46.22-pm.png)
+![](/images/screen-shot-2023-02-04-at-5.46.22-pm.jpg)
 
 I run an instance of Pi-hole as a network-wide advert and surveillance blocker. It also has a setting to block individual domain which I use to force myself to really consider if 30 minutes of [Reddit](https://old.reddit.com/r/homelab/) is a good idea when I should probably just be going to bed.
 

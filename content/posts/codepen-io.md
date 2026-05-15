@@ -11,7 +11,7 @@ tags:
 
 I quite often leave a link to a GitHub repo to share my source in these posts, and on a few recent ones, a link to a live version of a page on my github.io. In a recent installment of [CWD](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/), Andrei shared some previous students' solutions, and some were hosted on CodePen.io which I hadn't seen before.
 
-![](/images/screen-shot-2022-12-28-at-10.20.02-am.png)
+![](/images/screen-shot-2022-12-28-at-10.20.02-am.jpg)
 
 It's a cute concept, you can enter HTML, CSS & JS and see a live view of the page below. It looks super extensible - there's mentions of SCSS, Typescript and preprocessors for JS in the settings.
 

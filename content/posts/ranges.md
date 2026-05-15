@@ -29,4 +29,4 @@ versus
 
 And that's been answered in in one of the Day 34 articles. It sounds like older versions of Swift might not have allowed the second version.
 
-[![](/images/screen-shot-2022-09-18-at-6.51.32-pm.png)](https://www.hackingwithswift.com/guide/ios-swiftui/3/2/key-points)
+[![](/images/screen-shot-2022-09-18-at-6.51.32-pm.jpg)](https://www.hackingwithswift.com/guide/ios-swiftui/3/2/key-points)

@@ -11,7 +11,7 @@ tags:
   - swift5-7
 ---
 
-![encryption machine, comic 27970 - Stable Diffusion](/images/encryption-machine-comic-27970-.png)
+![encryption machine, comic 27970 - Stable Diffusion](/images/encryption-machine-comic-27970-.jpg)
 
 If we mark a type with the protocol _Codable_, we're specifying that this type has the capability of having it's properties encoded to some format, and decoded back again.
 

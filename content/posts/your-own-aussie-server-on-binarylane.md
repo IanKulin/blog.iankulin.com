@@ -17,7 +17,7 @@ I could of course use one of the international options, but one of the main apps
 
 I was having another look recently and discovered that [Mammoth](https://www.mammoth.com.au/) (who are reputable Australian VPS providers) have a service branded "[binary lane](https://www.binarylane.com.au/)" that is aimed at developers needing to quickly stand up test servers that are at this low end price point.
 
-[![](/images/screen-shot-2023-01-28-at-12.49.14-pm.png)](https://www.binarylane.com.au/)
+[![](/images/screen-shot-2023-01-28-at-12.49.14-pm.jpg)](https://www.binarylane.com.au/)
 
 I mean, "ex GST" is a bit sly, but still, this is definitely in the starting price category I'm interested in. Naturally the prices scale up as your needs do.
 
@@ -25,7 +25,7 @@ I started hitting buttons to make an account, and true to the advertising, I was
 
 It has a nice panel interface in their web site with a console and some vital statistics and information.
 
-![](/images/screen-shot-2023-01-28-at-1.09.06-pm.png)
+![](/images/screen-shot-2023-01-28-at-1.09.06-pm.jpg)
 
 Although convenient, the webpage console has a tiny lag I find unsettling, so as soon as I had the basics sorted out I switched to ssh from my MacBook terminal.
 

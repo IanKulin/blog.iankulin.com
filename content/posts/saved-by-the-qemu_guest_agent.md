@@ -11,7 +11,7 @@ tags:
   - vm
 ---
 
-![](/images/pucker_photo_of_female_cyborg_holding_a_small_child_in_her_arms_ac9cb085-3dd4-444b-8a0c-6dafc5b48418.png)
+![](/images/pucker_photo_of_female_cyborg_holding_a_small_child_in_her_arms_ac9cb085-3dd4-444b-8a0c-6dafc5b48418.jpg)
 
 Literally an hour after I wrote the post [about installing the qemu guest agent](/proxmox-qemu-guest-agent/) in a VM and explaining how it can be used to inject root level commands into a VM, I had use of it due to a mistake.
 

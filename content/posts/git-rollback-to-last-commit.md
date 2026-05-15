@@ -9,7 +9,7 @@ tags:
   - possibly-useful
 ---
 
-![girl turning around, cartoon, colorful - Stable Diffusion](/images/girl-turning-around-out.png)
+![girl turning around, cartoon, colorful - Stable Diffusion](/images/girl-turning-around-out.jpg)
 
 I'm on [Project 12](https://www.hackingwithswift.com/books/ios-swiftui/dynamically-filtering-fetchrequest-with-swiftui) of the [#100Days](https://www.hackingwithswift.com/100/swiftui) course, and like a number of earlier "projects" it's not really a project, but a series of type-along tutorials. Often these have the same format - there's a base amount of code to provide the setup, then this base is used to try each of the tutorial techniques. At the end of each technique, you delete all the new code you've done back to the original setup, and you're ready for the next one.
 

@@ -18,7 +18,7 @@ With that idea firmly in mind, I' wanted an i5 to be better than an i3, and an i
 
 Luckily, there are some handy CPU comparison sites like [versus.com](http://versus.com). I was looking at it tonight to try and decide if my new i5 6500T is better than my i7 6700T. Whichever one is best will get a RAM upgrade, and be the boss node in my cluster and run all my self-hosted services.
 
-![](/images/screen-shot-2023-03-21-at-8.45.04-pm.png)
+![](/images/screen-shot-2023-03-21-at-8.45.04-pm.jpg)
 
 Spoiler alert - it turns out the i7 is not 2 better than the i5, they are almost identical except the i7 has double the threads (because Hyperthreading?) - a not insignificant different for a machine that's running several VM's
 

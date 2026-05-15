@@ -11,7 +11,7 @@ tags:
   - posts
 ---
 
-[![](/images/screen-shot-2022-08-08-at-8.43.44-pm.png)](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-7)
+[![](/images/screen-shot-2022-08-08-at-8.43.44-pm.jpg)](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-7)
 
 /\*
 Your challenge is this: make a class hierarchy 

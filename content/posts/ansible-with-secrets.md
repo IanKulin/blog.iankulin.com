@@ -13,7 +13,7 @@ tags:
   - ssh
 ---
 
-![Two men standing in front of a giant vault door](/images/danbearpig_construction_process_photos_of_an_enormous_hyper-sec_4bbf6350-647d-4e32-971b-cd2041cb52a9_webp.png)
+![Two men standing in front of a giant vault door](/images/danbearpig_construction_process_photos_of_an_enormous_hyper-sec_4bbf6350-647d-4e32-971b-cd2041cb52a9_webp.jpg)
 
 We wrote a nice [little Ansible playbook](/first-ansible-playbook/) the other day to install nginx on our web servers and ensure it was running. We were able to store the usernames in the `hosts` inventory file using the a`nsible_ssh_user` variable. Then, we ran the playbook with the command:
 
@@ -77,7 +77,7 @@ Then in the inventory file, we can substitute the usernames and passwords with o
 
 Now, when the playbook runs, it will substitute the real values into the `host` inventory file for us. Let's check that.
 
-![](/images/screen-shot-2023-07-06-at-12.03.09-pm.png)
+![](/images/screen-shot-2023-07-06-at-12.03.09-pm.jpg)
 
 Bingo bongo. But we haven't actually solved our security problem yet. The ssh passwords are still dangerously stored in plaintext in our file system. What we have done is learned how to have variables in an external file, pull that into the playbook and have the values substituted in. Now we need the next step - keeping those passwords safe.
 

@@ -14,7 +14,7 @@ tags:
   - tailscale
 ---
 
-[![](/images/wmrbmf5.png)](https://i.imgur.com/WmRbmf5.png)
+[![](/images/wmrbmf5.jpg)](https://i.imgur.com/WmRbmf5.png)
 
 I've picked up an new TP-Link WAP with Omada, so I wanted to spin up an Ubuntu 20.04 LXC to run the controller software in, and ended up spending a couple of hours figuring out why things where not working.
 

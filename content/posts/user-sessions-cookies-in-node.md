@@ -75,7 +75,7 @@ On the first request from a browser it hasn't seen before, express-session is ge
 
 Thanks to the magic of browser development tools, we can have a look in the request header from the browser and see the cookie with it's session ID contents:
 
-![](/images/screen-shot-2024-01-26-at-9.42.43-am.png)
+![](/images/screen-shot-2024-01-26-at-9.42.43-am.jpg)
 
 It's also possible to go and find the cookie your browser has stored. Again, this is easiest in the developer tools - look under 'Storage':
 

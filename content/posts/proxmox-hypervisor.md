@@ -12,7 +12,7 @@ tags:
 
 I [mentioned a while ago](/pi-server/) that the price of the [Raspberry Pi4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/) was getting such that it's smarter to purchase one of the little business workstations instead. Depsite having little need for such a thing, I went ahead and bought an [HP Elitedesk 800 G1](https://support.hp.com/au-en/document/c04266271) "mini" PC. It has 8GB RAM (which is the max for the Pi4) as well as a 128GB SDD, the processor is an Intel i5.
 
-![](/images/screen-shot-2023-01-26-at-10.54.25-am.png)
+![](/images/screen-shot-2023-01-26-at-10.54.25-am.jpg)
 
 This compares pretty well with the 8GB Pi4 which only has a fraction of the storage (on an SD card) at around $400. One area where the Pi would have an edge might be in power consumption - I expect it would be a bit less. One possible catch for young players is that the HP has a 'display port' rather than HDMI for the screen connection, so pick up a $5 adapter if you're getting one. The metal case and nice finishing on the HP actually looks really great in my office compared with my Pi 3b+ dev server that's sort of hanging on the end of a cat5 cable.
 
@@ -47,4 +47,4 @@ Other points were:
 
 Apart from that, I pretty much just followed all the instructions and used the defaults (I used a made up email address, and `local` as my hostname), and I was soon up and running. The only other thing I did was go into my router settings to reserve the IP address that the Proxmox machine had picked up from the DHCP server to prevent (the low chance of) it changing in the future.
 
-![](/images/screen-shot-2023-01-26-at-1.29.27-pm-copy.png)
+![](/images/screen-shot-2023-01-26-at-1.29.27-pm-copy.jpg)

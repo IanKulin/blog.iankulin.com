@@ -12,7 +12,7 @@ tags:
   - yaml
 ---
 
-![](/images/biomage_biomechanical_cyborg_computer_hacker_keyboard_protrudin_3d895c1b-0776-4f6e-b1a6-733b5622ea5d.png)
+![](/images/biomage_biomechanical_cyborg_computer_hacker_keyboard_protrudin_3d895c1b-0776-4f6e-b1a6-733b5622ea5d.jpg)
 
 In the [previous post](https://devendevour.wordpress.com/?p=3210), we looked at getting up and running with Ansible, including using the ad-hoc mode to send commands to our servers. We had a inventory file called hosts that had groups of server IP addresses and a simple `ansible.cfg` file that pointed to our inventory file.
 
@@ -68,7 +68,7 @@ ansible-playbook web_installs.yaml --ask-become-pass
 
 The `--ask-become-pass` piece of this command is telling Ansible to ask us for the password for this user so it can have sudo privileges to install things. We could have just added the password in the hosts file like we have the user name, but that would be quite insecure. Especially when we push our code up to github. Scanning pubic github commits for passwords and API keys is a popular pastime.
 
-![](/images/screen-shot-2023-07-04-at-2.38.19-pm.png)
+![](/images/screen-shot-2023-07-04-at-2.38.19-pm.jpg)
 
 After asking me for the password, Ansible has correctly identified the two servers and gathered facts from them. The facts are a lot of information that's then stored in variables that we can then use in our playbooks. For example this playbook is assuming a Linux distro that uses the apt package manager. If we wanted to check for that, one of the facts variables would contain the distro name and we could use that to conditionally use apt or some other package manager.
 
@@ -82,7 +82,7 @@ Well done Ansible.
 
 In regard to those yellow messages where Ansible found that NGINX wasn't installed, so it went ahead and installed them, you might be thinking "if we run the playbook again, shouldn't they be green?".
 
-![](/images/screen-shot-2023-07-04-at-2.50.42-pm.png)
+![](/images/screen-shot-2023-07-04-at-2.50.42-pm.jpg)
 
 So that's our first playbook done. We've only learned the commands for installing packages and working with services, but Ansible can do pretty much anything. Certainly anything you can do by sshing in and running a script of some kind. I don't think I want to go any further with trying to show the range of things that can be accomplished (although it is tempting to now install a web page into our servers) - it makes more sense for you to just find what you need as you need it.
 

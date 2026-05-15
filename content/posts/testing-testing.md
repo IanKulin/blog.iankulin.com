@@ -15,7 +15,7 @@ tags:
 
 I have unit testing in my [list of goals](https://devendevour.wordpress.com/goals/), and if I'm going to throw this [space trimming](https://devendevour.wordpress.com/?p=1064) macOS utility up on the web, now might be a good time to figure out how to add unit tests to a project, how to write them, and how to run them. XCode is well set up for this, so it's really no drama to do.
 
-![](/images/screen-shot-2022-10-03-at-9.09.32-pm.png)
+![](/images/screen-shot-2022-10-03-at-9.09.32-pm.jpg)
 
 Although I haven't worried with any unit testing up to this point in my iOS/Swift learning, in my previous programming work I did a lot of work with the large calculations involved in translating GPS coordinates and robotic positioning models where errors would be bad - so I've written a lot of tests over the years. I've also definitely felt the confidence you can dramatically refactor code with when you know the code has a robust test suite. I'm a big fan.
 

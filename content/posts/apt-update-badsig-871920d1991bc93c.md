@@ -13,7 +13,7 @@ tags:
   - ubuntu
 ---
 
-![](/images/thdgown_there_was_a_huge_dragon_guarding_the_treasure_in_the_wo_5bbc5295-9c5c-4e04-805a-912552832900.png)
+![](/images/thdgown_there_was_a_huge_dragon_guarding_the_treasure_in_the_wo_5bbc5295-9c5c-4e04-805a-912552832900.jpg)
 
 I have an ansible script that runs each weekend which basically does an `apt update && apt upgrade -Y` on every Debian based instance. This weekend it failed on one Ubuntu host. When I went it to try it manually, this was the output:
 
@@ -42,7 +42,7 @@ The first [google result](https://ubuntuforums.org/showthread.php?t=2484710) men
 
 In any case, adding the conf back to force the server to use the cache made the error reappear - so it's definitely related to the cache. With any type of cache, when there's a problem related to it, deleting the contents is usually a "plan A" response. Assuming there's some mechanism in [Apt Cacher NG](https://wiki.debian.org/AptCacherNg) to do this, I went to the little stats/config webpage it serves up.
 
-![](/images/screen-shot-2023-10-08-at-8.41.44-am.png)
+![](/images/screen-shot-2023-10-08-at-8.41.44-am.jpg)
 
 Well "Force the download of index files" sounds promising, let's try that.
 
@@ -50,7 +50,7 @@ I ticked the box for Force the download of index files (even having fresh ones),
 
 The cache files for `aptcacher-ng` are in `/var/cache/apt-cacher-ng/` each distro has a directory in there.
 
-![](/images/screen-shot-2023-10-08-at-9.08.48-am.png)
+![](/images/screen-shot-2023-10-08-at-9.08.48-am.jpg)
 
 Guessing the Ubuntu repository cache is probably stored in `uburep`, I deleted that with `rm -R /var/cache/apt-cacher-ng/uburep`. When I retried the `apt update`, it worked perfectly, and I could see that the `/var/cache/apt-cacher-ng/uburep` directory had re-appeared.
 

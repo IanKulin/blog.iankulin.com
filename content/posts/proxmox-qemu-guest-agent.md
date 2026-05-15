@@ -11,7 +11,7 @@ tags:
   - vm
 ---
 
-![](/images/pucker_large_stone_wall_with_a_crack_of_sunlight_shining_throug_b2b090d2-7855-4170-9c5c-a899b205668d.png)
+![](/images/pucker_large_stone_wall_with_a_crack_of_sunlight_shining_throug_b2b090d2-7855-4170-9c5c-a899b205668d.jpg)
 
 One of the strengths of having virtual machines (VMs) running inside a hypervisor like Proxmox is how they are isolated from each other and their host. This is a strength - if there is a problem with a particular VM nothing else should be affected by it.
 
@@ -53,6 +53,6 @@ If you want to double check everything is working, you can `ssh` into the VM, an
 
 Or, we can look from the host. If you select the shell of the node - remember mine was called `pve`, you have a console for the root node that owns all the virtual machines. We can run qm with [all sorts of options](https://qemu.readthedocs.io/en/latest/interop/qemu-ga-ref.html) to accomplish different things. One of the most interesting is `qm guest exec` which allows us to run whatever we'd like, as root, on the guest vm.
 
-![](/images/screen-shot-2023-01-29-at-12.13.17-pm.png)
+![](/images/screen-shot-2023-01-29-at-12.13.17-pm.jpg)
 
 The number 101 in `qm guest exec 101 -- hostname` is the Proxmox id for the server we want to access - it's shown in the server view in the top left, and the text after `--` is the command to execute. What's returned is some JSON with the exit code and the output. This should be a chilling reminder that anyone with access to the proxmox account will also have root access to all your VM's running the daemon.

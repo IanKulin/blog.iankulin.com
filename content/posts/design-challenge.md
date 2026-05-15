@@ -14,7 +14,7 @@ tags:
 
 So, I've been working on translating the [UI design](/design-help/) created by the external designer into SwiftUI, and have done all of the easy bits:
 
-![](/images/screen-shot-2022-10-03-at-8.19.43-am.png)
+![](/images/screen-shot-2022-10-03-at-8.19.43-am.jpg)
 
 The rounded rectangles for things like the question display/number input are just ZStacks of roundedrects filled, then stroked:
 

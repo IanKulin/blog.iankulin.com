@@ -83,7 +83,7 @@ Once you know the name of the nameservers you can query them with the domain nam
 
 This is done with `dig @<name-server> <domain-name> <record-type>` for example `dig @b.iana-servers.net example.com A`
 
-![](/images/screen-shot-2024-11-16-at-8.33.21-am.png)
+![](/images/screen-shot-2024-11-16-at-8.33.21-am.jpg)
 
 In this case there is a single A record pointing the domain to 93.184.215.14 We need to note all of these to reproduce them in the domain settings in your new registrar. Again this is going to be different for each one, but if you've ever pointed a domain anywhere, you'll know how to do it on yours.
 

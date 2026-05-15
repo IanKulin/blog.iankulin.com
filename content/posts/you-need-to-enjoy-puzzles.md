@@ -12,7 +12,7 @@ tags:
   - xcode14
 ---
 
-![frustrated worker, painting - Stable Diffusion](/images/frustration.png)
+![frustrated worker, painting - Stable Diffusion](/images/frustration.jpg)
 
 I'm writing the Habits [list based app](/list-apps/) from #100Days and had a working MVP, then for some reason, decided to refactor by changing the subview I'd written as a function, into a struct. Some time later, I discovered that my list items were not updating correctly, so detective time.
 

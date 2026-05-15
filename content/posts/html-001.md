@@ -97,4 +97,4 @@ You can see `<img>` is one of those unpaired tags - there's no closing tag. If t
 
 Our web page now looks like this:
 
-![](/images/screen-shot-2022-12-14-at-8.51.41-pm.png)
+![](/images/screen-shot-2022-12-14-at-8.51.41-pm.jpg)

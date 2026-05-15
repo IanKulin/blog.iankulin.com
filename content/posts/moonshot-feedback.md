@@ -12,7 +12,7 @@ tags:
   - xcode14
 ---
 
-![Girl with a headset in a space command center, Kuvshinov Ilya, Mitsumayo - Stable Diffusion](/images/girl-with-a-headset-in-a-space-command-center-kuvshinov-ilya-mitsumayo.png)
+![Girl with a headset in a space command center, Kuvshinov Ilya, Mitsumayo - Stable Diffusion](/images/girl-with-a-headset-in-a-space-command-center-kuvshinov-ilya-mitsumayo.jpg)
 
 I've watched Paul's solution to the [Moonshot challenges](https://www.hackingwithswift.com/books/ios-swiftui/moonshot-wrap-up) (the solutions are one of the perks of being a Hacking With Swift subscriber). When I'm solo learning like this its one of the few ways I can get any feedback on my coding, so I highly value it, and usually write one of these posts as a way to ensure I reflect on it.
 

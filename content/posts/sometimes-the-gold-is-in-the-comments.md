@@ -18,7 +18,7 @@ I guess I should really have twigged that I'd never heard of @ObjectBinding, but
 
 Checking out the comments, it all becomes clear.
 
-![](/images/screen-shot-2022-08-14-at-8.26.59-pm.png)
+![](/images/screen-shot-2022-08-14-at-8.26.59-pm.jpg)
 
 Sadly, it's a page down in the comments, when it'd be great to be pinned to the top.
 

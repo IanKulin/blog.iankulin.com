@@ -14,7 +14,7 @@ tags:
   - web-dev
 ---
 
-![](/images/marinashideroff_abstract_monitoring_internet_station_surrounded_9f91ec3e-e8c0-4567-bee6-0315eb2375f0.png)
+![](/images/marinashideroff_abstract_monitoring_internet_station_surrounded_9f91ec3e-e8c0-4567-bee6-0315eb2375f0.jpg)
 
 Bruno is a great open source Postman/Insomnia replacement, and I've been using it for basic tests of my node servers using the built in asserts and loving it. This is pretty great, and I gather it's also possible to go beyond this and [write tests in JS in Bruno](https://docs.usebruno.com/testing/introduction.html). I believe it also has the hooks needed to build it into your CI/CD systems.
 

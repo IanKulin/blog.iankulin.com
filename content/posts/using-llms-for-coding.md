@@ -18,7 +18,7 @@ tags:
 
 [![Ghost in the Shell
 © Manga Entertainment 1996
-](/images/ghost-in-the-shell_07.png)](https://madmuseum.org/events/ghost-shell)
+](/images/ghost-in-the-shell_07.jpg)](https://madmuseum.org/events/ghost-shell)
 
 This post looks at the context for some of my thinking about AI for supporting software development, and where I've landed on it for the time being.
 

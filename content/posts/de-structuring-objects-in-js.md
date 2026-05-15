@@ -9,7 +9,7 @@ tags:
   - web-dev
 ---
 
-![robot repair shop wth several humanoid robots in state of disrepair, cinematic lighting, dust in the air - midjourney](/images/pucker_robot_repair_shop_wth_several_humanoid_robots_in_state_o_c5ef7630-fb2a-4dec-acd5-dfb9b9f478ac.png)
+![robot repair shop wth several humanoid robots in state of disrepair, cinematic lighting, dust in the air - midjourney](/images/pucker_robot_repair_shop_wth_several_humanoid_robots_in_state_o_c5ef7630-fb2a-4dec-acd5-dfb9b9f478ac.jpg)
 
 I've worked through my first React tutorial app, and obviously that's a lot - I'm struct by how messy mixing HTML, JS and React is.
 

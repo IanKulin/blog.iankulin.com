@@ -15,8 +15,8 @@ This doesn't have much to do with Swift, although it's possible to run [Swift on
 
 A recent addition is to run [Pi-hole](https://pi-hole.net/) - a DNS sink to block advertisements on all devices on my network. It was a painless addition, and I enjoy looking at the stats as well as ads being blocked at the network level instead of depending on browser addons.
 
-![](/images/screen-shot-2022-12-02-at-7.17.04-pm.png)
+![](/images/screen-shot-2022-12-02-at-7.17.04-pm.jpg)
 
 I'm not sure that I'll stick with Raspberry Pi. With the current shortage, it probably makes more sense to repurpose an old laptop, or buy a refurb mini pc which for a similar $400 price tag would be substantially more powerful. One con of that approach is you can spend several weekends getting everything running linux properly, whereas with the Pis that's all done for you. Another is the idle power consumption would be much higher than my slow Pi 3Bs.
 
-![](/images/screen-shot-2022-12-02-at-8.02.59-pm-1.png)
+![](/images/screen-shot-2022-12-02-at-8.02.59-pm-1.jpg)

@@ -37,17 +37,17 @@ Because of [semantic versioning](https://semver.org/), I'm confident this is not
 
 I jump into the Proxmox web gui and make a backup of the container.
 
-![](/images/screen-shot-2024-03-24-at-8.47.06-am.png)
+![](/images/screen-shot-2024-03-24-at-8.47.06-am.jpg)
 
 #### Docker Compose
 
 I ssh in to look at the image tag in the docker-compose.yml file. The reason I'm interested in this is that if the compose is set to `codeberg.org/forgejo/forgejo:1.21.1` then it will be locked into that patch version, but it says `codeberg.org/forgejo/forgejo:1.21` so we're good.
 
-![](/images/screen-shot-2024-03-24-at-8.48.38-am.png)
+![](/images/screen-shot-2024-03-24-at-8.48.38-am.jpg)
 
 Now I take the service down from the CLI with `sudo docker compose down`, then pull the new image with `sudo docker pull codeberg.org/forgejo/forgejo:1.21`
 
-![](/images/screen-shot-2024-03-24-at-9.24.21-am.png)
+![](/images/screen-shot-2024-03-24-at-9.24.21-am.jpg)
 
 The to start it again, it's just a `docker compose up -d` and we're live again.
 

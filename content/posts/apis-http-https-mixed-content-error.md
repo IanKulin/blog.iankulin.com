@@ -10,7 +10,7 @@ tags:
   - web-dev
 ---
 
-<img src="/images/screen-shot-2023-01-16-at-4.45.53-pm.png alt="Mixed Content: The page at '<URL>' was loaded over HTTPS, but requested an insecure resource '
+<img src="/images/screen-shot-2023-01-16-at-4.45.53-pm.jpg alt="Mixed Content: The page at '<URL>' was loaded over HTTPS, but requested an insecure resource '
 
 Ran into a little bump today - I was calling a [cool API](http://open-notify.org/Open-Notify-API/ISS-Location-Now/) that gives the current location of the International Space Station. In a classic case of "it worked on my machine" it worked perfectly in the [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code on my laptop, but when I pushed it up to my GitHub space, it didn't work - throwing the error:
 

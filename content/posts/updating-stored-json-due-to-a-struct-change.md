@@ -13,7 +13,7 @@ tags:
   - swift
 ---
 
-![Jason Modern Art - Stable Diffusion](/images/jason-modern-art.png)
+![Jason Modern Art - Stable Diffusion](/images/jason-modern-art.jpg)
 
 I mentioned yesterday "_I could use a renamed old version of my struct to load the existing data, and convert it across to the new model._". Since I've been testing the app on my phone, and using plausible data, it was going to be painful enough to lose it that I thought I should go through those steps.
 
@@ -81,4 +81,4 @@ It's made my init() a bit messy, normally I'd move that out - maybe have a separ
 
 If it works correctly, I should get the debug message and the data will still be there on the first run, then on a second run the message should not appear (since the new struct version will have been written to the file.
 
-![](/images/screen-shot-2022-10-22-at-7.41.44-pm.png)
+![](/images/screen-shot-2022-10-22-at-7.41.44-pm.jpg)

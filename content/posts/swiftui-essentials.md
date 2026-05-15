@@ -11,7 +11,7 @@ tags:
   - wwdc
 ---
 
-![](/images/screen-shot-2022-07-23-at-4.12.38-pm.png)
+![](/images/screen-shot-2022-07-23-at-4.12.38-pm.jpg)
 
 I hadn't fully gotten my head around what's going on with the declarative nature of SwiftUI, until I'd watched this video
 

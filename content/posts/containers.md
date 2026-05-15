@@ -10,7 +10,7 @@ tags:
   - devops
 ---
 
-![](/images/troop_team_of_4_programmers_productively_working_standing_with__cb8656e7-ffd0-41df-b5bb-778ff18fd910.png)
+![](/images/troop_team_of_4_programmers_productively_working_standing_with__cb8656e7-ffd0-41df-b5bb-778ff18fd910.jpg)
 
 There's a few things that really strike me as significant improvements to life since I was commercially developing 20 years ago:
 

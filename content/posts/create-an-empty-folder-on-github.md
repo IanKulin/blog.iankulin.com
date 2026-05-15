@@ -14,4 +14,4 @@ You can't, but you can create a folder by adding a file through the web interfac
 
 I learned this from Zack West [here](https://www.alpharithms.com/how-to-create-a-folder-in-github-repos-463022/), where there is also a better explanation with pictures.
 
-![](/images/screen-shot-2022-07-11-at-11.11.39-am.png)
+![](/images/screen-shot-2022-07-11-at-11.11.39-am.jpg)

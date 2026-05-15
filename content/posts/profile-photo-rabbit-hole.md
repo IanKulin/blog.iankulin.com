@@ -11,7 +11,7 @@ tags:
   - swift5-7
 ---
 
-![down the rabbit hole, children's book illustration - stable diffusion](/images/down-the-rabbit-hole-childrens-book-illustration.png)
+![down the rabbit hole, children's book illustration - stable diffusion](/images/down-the-rabbit-hole-childrens-book-illustration.jpg)
 
 I'm on [day 60 of #100Days](https://www.hackingwithswift.com/guide/ios-swiftui/5/3/challenge), and have just wasted most of an evening's coding time going down a rabit hole I didn't need to. The app for this challenge is called "FriendFace" and is pretty straightforward: download a heap of JSON which is an array of users. Show it in a list that can be clicked through to see the details of that user.
 

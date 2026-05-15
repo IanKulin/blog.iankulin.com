@@ -14,7 +14,7 @@ tags:
   - node
 ---
 
-![](/images/ak_writer_the_lost_whale_story_e5979736-74f1-4404-9dd1-8c6c1047c244.png)
+![](/images/ak_writer_the_lost_whale_story_e5979736-74f1-4404-9dd1-8c6c1047c244.jpg)
 
 Having successfully set up and tested my node.js api handling app behind nginx on a development VM in the homelab, I decided to move it to my VPS so I could start using it for real. I had a bit of trouble finding the nginx.conf files on the VPS, until I remembered I was running nginx in a docker container on this machine!
 

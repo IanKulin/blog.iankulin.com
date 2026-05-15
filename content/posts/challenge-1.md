@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-![](/images/screen-shot-2022-08-22-at-8.54.26-am.png)
+![](/images/screen-shot-2022-08-22-at-8.54.26-am.jpg)
 
 I'm up to Challenge 1 of 100 Days of SwiftUI ([Day 19](https://www.hackingwithswift.com/100/swiftui/19)) which is to make your own simple (no MVVM) version of the app built in the previous three days. It's about as simple as can be whilst still feeling like a real app. Something I hadn't done before was limiting the keyboard to numbers or adding a toolbar to close it, so that was nice.
 

@@ -16,7 +16,7 @@ A smart thing to do after setting up a server on the internet, is to set up SSH 
 
 When I was writing [the post about looking for the sudo attempt](/sudo-incident-reports-where-do-they-go/) 'report', you might have noticed some sshd timeouts:
 
-![](/images/screen-shot-2023-01-28-at-12.08.21-pm.png)
+![](/images/screen-shot-2023-01-28-at-12.08.21-pm.jpg)
 
 That's what's going on there. SSH has a timeout value of about a minute. I'd also guess those kex\_exchange\_identification messages are suspicious as well. I thought I'd google one of the IP addreses:
 
@@ -24,4 +24,4 @@ That's what's going on there. SSH has a timeout value of about a minute. I'd als
 
 Oh, so it's China, and multiple people are reporting SSH brute force attacks:
 
-![](/images/screen-shot-2023-01-28-at-12.20.35-pm.png)
+![](/images/screen-shot-2023-01-28-at-12.20.35-pm.jpg)

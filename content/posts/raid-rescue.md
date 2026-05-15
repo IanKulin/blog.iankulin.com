@@ -19,7 +19,7 @@ I still had one of the RAID drives that hadn't been wiped, so in theory it shoul
 
 A few screws, and a drive swap later and I'm looking at this:
 
-![](/images/screen-shot-2023-03-31-at-4.35.40-pm-copy.png)
+![](/images/screen-shot-2023-03-31-at-4.35.40-pm-copy.jpg)
 
 There must be a tiny bit of storage in the Synology, so it knows I've been fiddling around. I hit _Recover_, and it did the ten minute thing that I assume is it downloading and installing the new DSM.
 

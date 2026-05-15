@@ -10,7 +10,7 @@ tags:
   - linux
 ---
 
-![](/images/pino_path_in_the_middle_of_tall_wheat_stalks_sunset_cartoon_sty_dc2ca25c-dec8-4e9b-b204-6236bc3e8b08.png)
+![](/images/pino_path_in_the_middle_of_tall_wheat_stalks_sunset_cartoon_sty_dc2ca25c-dec8-4e9b-b204-6236bc3e8b08.jpg)
 
 In Linux (and MS-DOS I guess) the period signifies the current directory, so if I have a file in the current directory called `test.txt`, I can refer to it as `test.txt` or `./test.txt`
 
@@ -23,7 +23,7 @@ test
 
 I mostly see this in references to files in HTML and have often wondered why. Here it is being used in a Udemy course I'm following.
 
-![](/images/screen-shot-2023-04-19-at-10.49.00-am.png)
+![](/images/screen-shot-2023-04-19-at-10.49.00-am.jpg)
 
 It's one of those things that's difficult to Google, so these days my reflex is to ask ChatGPT such questions.
 

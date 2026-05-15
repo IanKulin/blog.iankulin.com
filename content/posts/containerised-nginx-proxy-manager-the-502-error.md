@@ -84,6 +84,6 @@ networks:
 
 Note that I haven't exposed any ports to the host here; We're not going to need them since we'll access this container direct from the NPM container via the internal Docker network docker created for us. That little network even contains a DNS server, so we don't even need to worry about the container's IP addresses, we can just use their names.
 
-![](/images/screen-shot-2024-08-24-at-9.52.54-am.png)
+![](/images/screen-shot-2024-08-24-at-9.52.54-am.jpg)
 
 So any web requests to "example.com" arriving at our host go to NPM (since I've exposed ports 80 & 443 - see the top compose file). Then using the proxy I've added above, they are forwarded to the container named "nginx-example.com" which is a DNS record inside the Docker network that Docker created for us, and which both the NPM, and my service, containers are members of.

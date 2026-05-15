@@ -17,7 +17,7 @@ I think the purple warnings are problems detected at runtime - I've heard of thr
 
 The error was on two lines in my model where I'd called a method to update the model from a button press in a sub-view function.
 
-![](/images/screen-shot-2022-10-17-at-5.16.18-am.png)
+![](/images/screen-shot-2022-10-17-at-5.16.18-am.jpg)
 
 After poking around to try and work it out, I found [this clear blog post from Donny Wals](https://www.donnywals.com/xcode-14-publishing-changes-from-within-view-updates-is-not-allowed-this-will-cause-undefined-behavior/) and it turns out it's possibly a bug in XCode 14. My situation fitted the description - calling the method from a button in a list, and the temporary workaround of adding a modifier to the button eliminated the warning.
 

@@ -14,7 +14,7 @@ tags:
   - proxmox
 ---
 
-![](/images/es047_illustration_of_a_workflow_with_only_four_text_boxes_with_b026526e-30b7-45c7-9491-080adc1594ce.png)
+![](/images/es047_illustration_of_a_workflow_with_only_four_text_boxes_with_b026526e-30b7-45c7-9491-080adc1594ce.jpg)
 
 I've developed a bit of a workflow for setting up a new service of some type on the homelab. Installing it is the obvious thing, but I also have a few quality of life things I do to make it a full production-quality part of my installation. I thought it might be helpful to run through those things using a recent example of adding [audiobookshelf](https://www.audiobookshelf.org/).
 
@@ -149,4 +149,4 @@ This backup is of the LXC container with all the audiobookshelf config and code 
 
 And that's it. Now my audiobookshelf is running in an LXC container, serving the books off my NAS. The service is monitored for health, and there's a backup plan in place. I can kick back and catch up on some technical reading.
 
-![](/images/img_7018.png)
+![](/images/img_7018.jpg)

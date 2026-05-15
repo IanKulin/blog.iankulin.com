@@ -13,7 +13,7 @@ tags:
   - ssl
 ---
 
-![](/images/dangling_pointer._a_central_neural_network_bathed_in_teal_and_m_9563eacf-6a8a-481d-a9e5-7fa72cabb4ea.png)
+![](/images/dangling_pointer._a_central_neural_network_bathed_in_teal_and_m_9563eacf-6a8a-481d-a9e5-7fa72cabb4ea.jpg)
 
 I've got a domain that's not currently used, so I'm going to set it up as a virtual host under NGINX. This server is already serving two domains set up with Certbot for SSL. Is it going to be possible to add another site and have Certbot manage the certificates for it after I've run Certbot once?
 

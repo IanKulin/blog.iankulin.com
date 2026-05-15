@@ -9,7 +9,7 @@ tags:
   - posts
 ---
 
-![](/images/screen-shot-2022-08-23-at-8.26.59-am.png)
+![](/images/screen-shot-2022-08-23-at-8.26.59-am.jpg)
 
 Another 100 Days project - the second tutorial one. This was once again a "V" design pattern (put everything in the view) and as I kept growing it, especially in the challenges, I had a growing sense of unease.
 

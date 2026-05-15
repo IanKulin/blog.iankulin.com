@@ -14,7 +14,7 @@ For the Calculator project, I needed to know the exact RGB values for the colour
 
 It's called Digital Color Meter and just shows the RGB values for anything on the screen under the cursor.
 
-![](/images/screen-shot-2023-01-08-at-2.26.12-pm.png)
+![](/images/screen-shot-2023-01-08-at-2.26.12-pm.jpg)
 
 In order to copy the values, hit `Command|L` to freeze the current colour, then copy them from the Colour menu. Also in that menu you can choose to have the values shown as hex.
 

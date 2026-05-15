@@ -10,7 +10,7 @@ tags:
   - homelab
 ---
 
-![](/images/containersfallingoffaship_87726525.png)
+![](/images/containersfallingoffaship_87726525.jpg)
 
 I'm still loving the Docker "just works" magic, despite their [terrible PR skills](https://www.theregister.com/2023/03/17/docker_free_teams_plan/), but sometimes I start a container, then the `docker ps -a` shows it exited almost immediately. Clearly I've made a mistake, but there's no stdout error message to tell me what I've done wrong, where is it.
 
@@ -20,7 +20,7 @@ Let's look at an example from today. I'm testing [Filebrowser](https://filebrows
 
 The first sign of a problem is that the container is not running after I've launched it.
 
-![](/images/screen-shot-2023-04-02-at-1.42.09-pm.png)
+![](/images/screen-shot-2023-04-02-at-1.42.09-pm.jpg)
 
 To cat the log for the exited container is simple. Note that the (randomly provided) name for the container is `eager_haslett` so to see the log we enter:
 

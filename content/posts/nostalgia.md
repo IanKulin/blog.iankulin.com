@@ -22,4 +22,4 @@ It couldn't conceivably serve any useful purpose, but I do have a small hankerin
 
 I do wish I had a few screenshots from over the years - you never know what you're going to enjoy looking back on. For example, I've spent hundreds of hours over the last few years in various versions of the Wordpress editor and never thought to record that.
 
-![](/images/screen-shot-2023-03-12-at-1.28.53-pm.png)
+![](/images/screen-shot-2023-03-12-at-1.28.53-pm.jpg)

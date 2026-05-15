@@ -19,7 +19,7 @@ I had a need to write some html/css, and some C++ in the last couple of days, so
 
 Same positive experience when I created a .cpp file, and VSC wanted me to take Microsoft's advice about a bunch of extensions, and correctly suggested I build with Mac's clang compiler.
 
-![](/images/screen-shot-2022-08-11-at-3.40.15-pm.png)
+![](/images/screen-shot-2022-08-11-at-3.40.15-pm.jpg)
 
 So many things just work how you expect them to. Within seconds I was trying out breakpoints, compiling and managing the git commits. I even tried the Swift extension.
 

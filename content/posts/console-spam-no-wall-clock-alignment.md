@@ -10,7 +10,7 @@ tags:
   - xcode14
 ---
 
-![](/images/screen-shot-2022-11-12-at-8.02.28-pm.png)
+![](/images/screen-shot-2022-11-12-at-8.02.28-pm.jpg)
 
 When I was working on the Day 60 app, I noticed I kept getting a message in the console "`No wall clock alignment provided at SwiftUI/ResolvableStringAttribute.swift:86`" every time I went into the detail view. Via elimination by commenting bits out, I've narrowed it down to a date formatting call. Here is the code to reproduce it in Xcode Version 14.0.1, Swift 5.7.0.127.4
 
@@ -30,4 +30,4 @@ Googling the error only produces a single result - a [reddit](https://www.reddit
 
 Since it can be reproduced with such a tiny code snippet, and it occurs in every simulator I tried it on, it may be easy to reproduce, and therefore fix. So without really knowing the exact guidelines, but with encouragement from [Apple](https://developer.apple.com/bug-reporting/), I filed my first Radar.
 
-![](/images/screen-shot-2022-11-12-at-8.18.29-pm.png)
+![](/images/screen-shot-2022-11-12-at-8.18.29-pm.jpg)

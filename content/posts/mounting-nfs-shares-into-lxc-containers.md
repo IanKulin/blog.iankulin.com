@@ -10,7 +10,7 @@ tags:
   - linux
 ---
 
-![](/images/adalion_metcalfes_law_a_computer_connected_to_two_computers_con_9b3dd611-2c9e-4948-a3df-2dd121f0492b.png)
+![](/images/adalion_metcalfes_law_a_computer_connected_to_two_computers_con_9b3dd611-2c9e-4948-a3df-2dd121f0492b.jpg)
 
 I'm playing with [Syncthing](https://syncthing.net/) with the idea that it might be a good replacement for Dropbox. There wasn't a Docker container listed in the install options, so I thought this might be a good app to run in an LXC.
 

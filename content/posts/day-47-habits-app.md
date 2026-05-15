@@ -13,7 +13,7 @@ tags:
   - xcode14
 ---
 
-![pretty! woman holding a bag of trash, Artstation - Stable Diffusion](/images/tgirl-3.png)
+![pretty! woman holding a bag of trash, Artstation - Stable Diffusion](/images/tgirl-3.jpg)
 
 I've been mucking around with the Habits app too long - it's started to look like procrastination. It already meets the [specification](https://www.hackingwithswift.com/100/swiftui/47), so I'm calling it an MVP and moving on.
 

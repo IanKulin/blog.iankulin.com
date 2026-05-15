@@ -12,7 +12,7 @@ tags:
   - zfs
 ---
 
-![](/images/bitlord_imagine_a_futuristic_ai-inspired_structure_in_the_backg_b80936d4-6746-423f-a620-f8167c2fc802.png)
+![](/images/bitlord_imagine_a_futuristic_ai-inspired_structure_in_the_backg_b80936d4-6746-423f-a620-f8167c2fc802.jpg)
 
 I'm a keen listener of the [2.5 Admins](https://2.5admins.com/) podcast in which there's frequent enumeration of the advantages of [ZFS](https://itsfoss.com/what-is-zfs/) as a file system. So much so, that I've had occasional twinges or regret about the money I spent on the Synology - although it has been boringly reliable and does everything I need.
 
@@ -46,7 +46,7 @@ In the zpool, we can create _datasets_ where we can actually put some data. You 
 
 To create the ZFS pool in Proxmox, again select the node, then select ZFS in the list under _Disks_. At the top is a button for _Create ZFS_. Select the wiped drives, chose your RAID and give it a name. By tradition the pools are usually called 'tank' - if you look at a few tutorials you'll see that all over the place.
 
-![](/images/screen-shot-2023-07-04-at-8.26.42-pm.png)
+![](/images/screen-shot-2023-07-04-at-8.26.42-pm.jpg)
 
 Once that was done, tank appeared as storage in the list under my node. I moved the drives of these dev guests across to it so the zpool would have something to do. I did notice that this process would rush through, then pause for a few seconds - something I haven't noticed when moving guest droves between the NAS and internal SSDs. Early reviews of Samsung pm981 NVME SSD [noted a sustained write dropoff](https://www.tomshardware.com/reviews/samsung-pm981-980-nvme-ssd,5323.html), so this might be something to come back and have a look at later.
 

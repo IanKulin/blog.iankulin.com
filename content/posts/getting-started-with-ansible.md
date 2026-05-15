@@ -12,13 +12,13 @@ tags:
   - idempotence
 ---
 
-![](/images/cyberpunk_24_k_hyper_realistic_a_thousand_details_hyper_detaile_841f4769-e869-497f-a804-c9fade21e150.png)
+![](/images/cyberpunk_24_k_hyper_realistic_a_thousand_details_hyper_detaile_841f4769-e869-497f-a804-c9fade21e150.jpg)
 
 Ansible is a system for executing commands on remote systems. It allows a declarative approach - so if you run a playbook (the system configuration files are called playbooks) that says a system has a Docker container running Jellyfin, Ansible will check if that's true, and if not, make it so. Ansible is best used when you have a large number of systems to maintain, but even with a small number, it serves to document systems as well as to automate their creation.
 
 Since, with Ansible, system configurations can be completely described, it's a step in the journey to "infrastructure as code" and allows infrastructure to be version controlled, and lends itself to Git-Ops where you push a change to a playbook file, and it's executed to make that description of the configuration reality on your servers. The list of servers is stored in a file called the inventory.
 
-[![](/images/screen-shot-2023-07-02-at-11.28.10-am.png)](https://www.youtube.com/watch?v=wgQ3rHFTM4E)
+[![](/images/screen-shot-2023-07-02-at-11.28.10-am.jpg)](https://www.youtube.com/watch?v=wgQ3rHFTM4E)
 
 I've considered implementing it a couple of times, but put it off as soon as I started looking at these complicated yaml files. Jeff Geerling's ["Ansible for DevOps"](https://www.ansiblefordevops.com/) seemed like the perfect place to start, but then he uses Vagrant and VirtualBox in his early examples, and Vagrant's integration with Ansible means things are not being done in a standard way and I couldn't follow along without mirroring his setup. I don't want to run VM's on my laptop, I want to use my homelab VMs or a VPS - both of which I think would be a more common setup.
 
@@ -76,7 +76,7 @@ Finally, we're at the point we can run something. Let's try this command to find
 ansible -i hosts all -u ian -a "hostname"
 ```
 
-![](/images/screen-shot-2023-07-03-at-7.41.00-am.png)
+![](/images/screen-shot-2023-07-03-at-7.41.00-am.jpg)
 
 Let's break down all those arguments:
 
@@ -114,11 +114,11 @@ ansible -i hosts all -u ian -m file -a "path=test state=directory"
 
 The `-m` tells Ansible with module to use, and our arguments after the `-a` flag tell Ansible that the state we want to achieve is a directory named `test`. Let's run that and have a look at the output:
 
-![](/images/screen-shot-2023-07-03-at-9.03.12-am.png)
+![](/images/screen-shot-2023-07-03-at-9.03.12-am.jpg)
 
 That makes sense, each one is CHANGED because we needed to create the directory. Let's run it again and see what happens.
 
-![](/images/screen-shot-2023-07-03-at-9.03.25-am.png)
+![](/images/screen-shot-2023-07-03-at-9.03.25-am.jpg)
 
 This time, since the directory is there, there's no need to change it. Ansible checks for the directories existence before it bothers to create it - because it is idempotent.
 
@@ -133,7 +133,7 @@ inventory = hosts
 
 Now we can eliminate that from our command line input.
 
-![](/images/screen-shot-2023-07-03-at-9.14.25-am.png)
+![](/images/screen-shot-2023-07-03-at-9.14.25-am.jpg)
 
 I'd also like to get rid of the `-u ian` from each command. That's not stored in the .cfg file. Since it's likely that your nodes will have different user names in a real situation, they can be stored in the inventory file.
 

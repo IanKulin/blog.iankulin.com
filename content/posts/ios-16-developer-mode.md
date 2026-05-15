@@ -12,7 +12,7 @@ tags:
 
 I updated my iPhone to iOS16 this morning, and tonight when I went to run one of my apps, it complained that it needed Developer mode. This is a new, probably wise, way to avoid dodgy apps being loaded on a phone. I don't know exactly how you'd do that, but then I'm not a black hatted cyber terrorist.
 
-![](/images/img_3319.png)
+![](/images/img_3319.jpg)
 
 I had to google the setting, it's in "Privacy and Security" down the bottom, and requires a reboot. When you open the phone there's another dialog and you need to reauth.
 
@@ -20,4 +20,4 @@ I had to google the setting, it's in "Privacy and Security" down the bottom, and
 
 ![](/images/img_3321.png)
 
-![](/images/img_3322.png)
+![](/images/img_3322.jpg)

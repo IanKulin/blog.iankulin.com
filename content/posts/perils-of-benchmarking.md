@@ -17,7 +17,7 @@ I've been containerising my websites, with their servers to make deployment simp
 
 I had a vague feeling that there was a performance vs size compromise involved, and during some googling found this [github repo](https://github.com/nerkn/nginx-busybox-apache/tree/main) where nerkn has bench-marked busy-box vs apache vs nginx with, to me (because of my choice above), alarming results.
 
-![](/images/screen-shot-2024-11-16-at-10.37.19-am.png)
+![](/images/screen-shot-2024-11-16-at-10.37.19-am.jpg)
 
 If NGINX is doing twice the throughput, and is two orders of magnitude quicker, then busy-box is not going to be a good choice for me.
 

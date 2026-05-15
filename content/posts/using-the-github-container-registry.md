@@ -61,7 +61,7 @@ Once that's done, you can push images just as you are used to with DockerHub, wi
 docker push ghcr.io/<github user name>/<container name>:<tag>
 ```
 
-![](/images/screen-shot-2024-10-06-at-12.08.50-pm.png)
+![](/images/screen-shot-2024-10-06-at-12.08.50-pm.jpg)
 
 If you head to GitHub, and go into "Packages" instead of "Repositories", your container will be there.
 

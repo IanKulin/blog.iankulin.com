@@ -69,7 +69,7 @@ The big challenge - and you can see from the screenshots above, still ongoing - 
 
 I'm loving a browser developer tools to help with this. Both browsers have a "responsive mode" that allows you to resize the view to simulate phone like sizes without fiddling with your browser size all the time, and to still be able to see the tools. Dock your tools to the side, and look for the little phone/tablet button to get into responsive mode.
 
-![](/images/screen-shot-2023-01-08-at-8.31.49-am.png)
+![](/images/screen-shot-2023-01-08-at-8.31.49-am.jpg)
 
 One other thing I learned is that in Safari on iOS double clicking on a web page zooms it in a little. That's a great feature I guess, but a pain if you just want to enter a number like 99 on a web calculator. The solution turned out to be setting the CSS property `[touch-action](https://developer.mozilla.org/en-US/docs/Web/CSS/touch-action)` on the buttons to `manipulation`.
 

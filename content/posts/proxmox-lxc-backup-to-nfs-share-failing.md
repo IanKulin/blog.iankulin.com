@@ -12,7 +12,7 @@ tags:
   - synology
 ---
 
-![](/images/goodatsportz_filing_cabinet_on_fire_overflowing_with_more_flami_d6bd199d-5932-46a7-969b-0165748f83fb.png)
+![](/images/goodatsportz_filing_cabinet_on_fire_overflowing_with_more_flami_d6bd199d-5932-46a7-969b-0165748f83fb.jpg)
 
 I was doing updates on all my nodes and VM's today, and backing up the VMs that aren't already on a backup schedule. On my dev machine I have a Debian LXC container that I mostly just use for trying out Linux commands and playing around. I used to have a backup of it that I used a lot - after playing around I like to set it back to a fresh install plus my ssh keys - but I lost it somehow when moving the VM to new metal.
 

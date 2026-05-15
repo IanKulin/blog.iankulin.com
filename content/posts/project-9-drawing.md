@@ -12,7 +12,7 @@ tags:
   - xcode14
 ---
 
-![Screenshot of Xcode and the preview showing some fancy graphics](/images/screen-shot-2022-10-16-at-12.17.46-pm.png)
+![Screenshot of Xcode and the preview showing some fancy graphics](/images/screen-shot-2022-10-16-at-12.17.46-pm.jpg)
 
 These few days of [#100DaysOfSwiftUI](https://www.hackingwithswift.com/100/swiftui/43) we made some pretty shapes by playing around with some of the SwiftUI systems for drawing on the screen, including paths, shapes, transformations, ImagePaint, drawingGroup() to use Metal rendering, blurs, blend modes and using animatableData for animating - which I think is the solution to an animation problem in my TimesTable app I hadn't been able to solve yet.
 

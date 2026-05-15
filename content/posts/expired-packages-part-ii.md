@@ -33,7 +33,7 @@ The first is how the hell is installing react-scripts@2.1.3 a good idea, when th
 
 The second is that is that the currently installed version of nth-check seems like it is 2.1.1 which is the current version, and certainly >2.0.1 which is the complaint. My basis for this claim is this encouraging part of package-lock.json:
 
-![](/images/screen-shot-2023-01-23-at-1.39.10-pm.png)
+![](/images/screen-shot-2023-01-23-at-1.39.10-pm.jpg)
 
 But if I check the installed version using `npm list nth-check`, I get this bad news:
 
@@ -68,12 +68,12 @@ There's another install script `npm ci` which is supposed to use the `package-lo
 
 I went back to googling, focusing on the react-scripts (which is basically responsible for building the template React app) and found [this issue](https://github.com/facebook/create-react-app/issues/11174) on github.
 
-[![](/images/screen-shot-2023-01-24-at-11.19.20-am.png)](https://github.com/facebook/create-react-app/issues/11174)
+[![](/images/screen-shot-2023-01-24-at-11.19.20-am.jpg)](https://github.com/facebook/create-react-app/issues/11174)
 
 Basically, it's claimed to be a problem in how `npm audit` works, and can't be a real vulnerability since it's just a tool being used during dev. That still doesn't answer why they don't just update their code to use the newer version on `nth-check`, but in any case, it can be safely ignored.
 
 For people using CI tools that depend on an error free build, the react-scripts can be moved to a different section of the `packages.json` file and an argument passed to npm audit to ignore those dependencies.
 
-![](/images/screen-shot-2023-01-24-at-11.15.54-am.png)
+![](/images/screen-shot-2023-01-24-at-11.15.54-am.jpg)
 
 So, what have I learned from this? I should have done more looking for answers for the exact error, instead of logically coming up with solutions and then searching for and pursuing them. But also, I have a clear idea of what `packages.json` and `package-lock.json` do now!

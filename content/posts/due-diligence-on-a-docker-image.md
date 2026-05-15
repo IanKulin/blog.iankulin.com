@@ -16,13 +16,13 @@ tags:
 
 I need a survey tool, and a quick search turned up [LimeSurvey](https://www.limesurvey.org/), there's a 'community edition' so naturally I plan to self-host it. I scrolled down to the 'installation' section of the [manual](https://manual.limesurvey.org/Installation_-_LimeSurvey_CE/en) which has a big list of PHP dependencies.
 
-![](/images/screen-shot-2024-03-29-at-7.20.31-am.png)
+![](/images/screen-shot-2024-03-29-at-7.20.31-am.jpg)
 
 Ain't nobody got the time for that in 2024, I scroll further looking for the docker-compose but there isn't one. Huh. No official Docker image.
 
 Making my own docker image will be a little bit more work than just the pain of installing it manually and writing the Ansible playbook, but almost certainly someone else will have done that for us, so pop over to Docker Hub to have a look.
 
-![](/images/screen-shot-2024-03-29-at-7.38.06-am.png)
+![](/images/screen-shot-2024-03-29-at-7.38.06-am.jpg)
 
 We're going to want the 'trusted content' right?
 

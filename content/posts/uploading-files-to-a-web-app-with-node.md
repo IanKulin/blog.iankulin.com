@@ -11,7 +11,7 @@ tags:
   - web-dev
 ---
 
-![](/images/screen-shot-2024-08-18-at-3.09.38-pm.png)
+![](/images/screen-shot-2024-08-18-at-3.09.38-pm.jpg)
 
 My default approach to web apps at the moment is Node/Express SSR. I needed to have users be able to upload files this week, and as usual there's an express middleware that makes it trivial. This post just steps through using [multer](https://github.com/expressjs/multer) to make it simple to enable file uploads on your website.
 
@@ -64,7 +64,7 @@ To start our server, we need to enter this in the terminal:
 node server.js
 ```
 
-![](/images/screen-shot-2024-08-18-at-2.11.02-pm.png)
+![](/images/screen-shot-2024-08-18-at-2.11.02-pm.jpg)
 
 Now if you visit the web address [http://127.0.0.1:3000](http://127.0.0.1:3000) in your web browser, you should see the message "hello world".
 

@@ -10,7 +10,7 @@ tags:
   - xcode14
 ---
 
-![](/images/cartoon-worm-on-a-book-2.png)
+![](/images/cartoon-worm-on-a-book-2.jpg)
 
 I did so well on this one that it's not going to make a very interesting post. My first two challenge solutions were pretty much character for character the same - so not much to report.
 

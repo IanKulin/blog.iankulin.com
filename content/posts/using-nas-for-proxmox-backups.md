@@ -14,7 +14,7 @@ tags:
   - synology
 ---
 
-![](/images/pisskatt_wrapped_eth_cryptocurrency_coins_wrapped_8k_2fe1bfde-8bed-4851-ac42-6dc00e4ef98f.png)
+![](/images/pisskatt_wrapped_eth_cryptocurrency_coins_wrapped_8k_2fe1bfde-8bed-4851-ac42-6dc00e4ef98f.jpg)
 
 [A few weeks ago](/moving-a-vm-between-two-proxmox-hosts/), I was very excited to be able to take a snapshot of a virtual machine, copy it across the network from that Proxmox node, copy it back across the network to a different Proxmox node, start it there, and have it up and running, without it noticing it was actually on different hardware.
 

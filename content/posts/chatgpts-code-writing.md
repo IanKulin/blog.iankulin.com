@@ -12,7 +12,7 @@ tags:
   - xcode14-1
 ---
 
-![room full of monkeys typing at computers - stable diffusion](/images/22.png)
+![room full of monkeys typing at computers - stable diffusion](/images/22.jpg)
 
 This week, the internet has been all about [ChatGPT](https://chat.openai.com/chat), the rather remarkable natural language AI with a very large model. If you're a twitter user, you were probably amazed, but now eventually tired of seeing examples of it's output. I'll add to that with an example of a SwifUI CoreData based todo app it wrote for me from a single sentence prompt below. Rather than look at other people's examples you should definitely go and play with it yourself - it is very impressive. Along with the image based AI's it's made 2022 into a historical year for AI.
 
@@ -167,6 +167,6 @@ struct ContentView: View {
 
 I went on to ask it to change this to core data for persistence, but as I wanted the app to be more and more complex, it needed me to fix more and more problems, and became less fun.
 
-![](/images/screen-shot-2022-12-10-at-2.47.12-pm.png)
+![](/images/screen-shot-2022-12-10-at-2.47.12-pm.jpg)
 
-![](/images/screen-shot-2022-12-10-at-2.47.16-pm.png)
+![](/images/screen-shot-2022-12-10-at-2.47.16-pm.jpg)

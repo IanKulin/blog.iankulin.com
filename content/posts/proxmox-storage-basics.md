@@ -22,7 +22,7 @@ Looking at my node, `pve`, it has two storage items. Both are 'local' which mean
 
 Since I only have local storage, you might be wondering why the installer set me up with two. Let's click on the first one `local (pve)` and look at the summary for it.
 
-![](/images/screen-shot-2023-01-26-at-8.14.04-pm.png)
+![](/images/screen-shot-2023-01-26-at-8.14.04-pm.jpg)
 
 So we can see in the summary at the right, that the type of this storage is 'Directory'. Meaning that this is just a directory in the host (internally, Proxmox is just a specialised Linux distribution - in theory we could drop in to bash and look at this directory).
 

@@ -11,7 +11,7 @@ tags:
   - posts
 ---
 
-![](/images/tanjian1998_an_ai_humanoid_pushing_a_shopping_cart_with_that_ha_5eceff04-704f-403d-af6d-46fd9ba57909.png)
+![](/images/tanjian1998_an_ai_humanoid_pushing_a_shopping_cart_with_that_ha_5eceff04-704f-403d-af6d-46fd9ba57909.jpg)
 
 I am loving running a local Gogs instance - it's nice pushing my git repos to a totally private hub that I know is backed up with all my other self-hosted infrastructure.
 

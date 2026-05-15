@@ -18,7 +18,7 @@ tags:
 
 I picked up a Synology DS216j NAS from eBay to use for storage for the rapidly growing home lab. The eventual plan is that as well as my VM backups, it will host the media library, and eventually (when this has all proved itself reasonably bullet-proof) my current DropBox contents. That won't all fit on the 2x2TB drives that the DS216j came with, and I have a pair of 8TBs on hand, but I wanted to set it up and checked it all worked.
 
-![](/images/screen-shot-2023-02-18-at-3.15.25-pm.png)
+![](/images/screen-shot-2023-02-18-at-3.15.25-pm.jpg)
 
 Configuration of the NAS was a 'follow the prompts' exercise for the most part. The Synology OS is a Linux port called DSM, but it's intended to be an appliance so all the interactions are through the web client. I'm using RAID 1 since the plan is that the production segment of the homelab will all be high-ish available. There's a few options to install extras (such as Tailscale), but these little 'j' models don't run an x86 processor, so no docker etc.
 

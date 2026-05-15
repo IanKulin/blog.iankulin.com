@@ -117,7 +117,7 @@ Usually the tag will be a version number, or perhaps `:latest`. The build comman
 
 `docker build -t iankulin/mdserver:latest` .
 
-![](/images/screen-shot-2023-10-28-at-12.27.51-pm.png)
+![](/images/screen-shot-2023-10-28-at-12.27.51-pm.jpg)
 
 This will load the .dockerignore then step through the Dockerfile to build our image. The image is stored away by Docker - we don't need to worry about where. You can get the list at the command line with `docker images`, or if you're running Docker Desktop, on the 'images' tab.
 

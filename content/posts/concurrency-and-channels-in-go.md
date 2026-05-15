@@ -56,7 +56,7 @@ func main() {
 
 Yay! Our first baby Goroutine. Sadly, this program will exit before the worker ever reports, so let's add an infinite loop after we've launched the Goroutine. And we'll do something in the loop so you can see that there things are happening concurrently in our program.
 
-![](/images/screen-shot-2023-11-23-at-8.46.11-pm.png)
+![](/images/screen-shot-2023-11-23-at-8.46.11-pm.jpg)
 
 ### Collisions
 
@@ -105,7 +105,7 @@ On the other end of our portal/channel (I wish they'd just called them portals -
 
 If we run this code, it works, sort of.
 
-![](/images/screen-shot-2023-11-24-at-4.51.21-pm.png)
+![](/images/screen-shot-2023-11-24-at-4.51.21-pm.jpg)
 
 If you look at the output at the bottom, you can see that extracting the string out of our channel is a blocking operation. The program is waiting there until it gets a value. That's no use - we could have done that without mucking about with channels.
 
@@ -131,7 +131,7 @@ func main() {
 
 This version of the program will work exactly how we want. The worker goroutine will execute independently of the main loop which runs permanently, but then when the worker goroutine has something to say, it uses the channel to pass it back to the main routine which deals with it at the first opportunity.
 
-![](/images/screen-shot-2023-11-24-at-6.04.35-pm.png)
+![](/images/screen-shot-2023-11-24-at-6.04.35-pm.jpg)
 
 Even though this is all working how we'd like, there is bit of programming craftsmanship needed. You may already know `make()` from using it for slices. When we're using it we're allocating some resources - so now we have the responsibility to release them.
 

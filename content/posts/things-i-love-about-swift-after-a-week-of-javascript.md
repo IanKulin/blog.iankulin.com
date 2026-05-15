@@ -10,7 +10,7 @@ tags:
   - swift-language
 ---
 
-![Swift logo punching the JavaScript logo - Stable Diffusion](/images/swift-logo-punching-the-javascript-logo.png)
+![Swift logo punching the JavaScript logo - Stable Diffusion](/images/swift-logo-punching-the-javascript-logo.jpg)
 
 So, a week into JavaScript, what am I missing? The techie in me wants to say things like Automatic Reference Counting, but actually, at my junior level, I don't run into memory management issues on the day-to-day, so what really do I miss?
 

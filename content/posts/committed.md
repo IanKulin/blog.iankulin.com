@@ -12,7 +12,7 @@ tags:
 
 I quite like logging into GitHub and seeing my commit history as the graph with the green dots. Once I get up to a year it would be a great thing to have on a T-Shirt.
 
-![](/images/screen-shot-2022-12-03-at-7.36.29-pm.png)
+![](/images/screen-shot-2022-12-03-at-7.36.29-pm.jpg)
 
 I'd expect to be seeing the busy weekends, but Tuesday nights seem to be oddly productive. It could just be a start of the week energy thing - I have some other community obligations on a couple of Monday nights a month.
 

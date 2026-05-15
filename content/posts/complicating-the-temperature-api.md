@@ -15,7 +15,7 @@ tags:
   - web-dev
 ---
 
-![](/images/gandalfthebeard_personal_dashboard_with_share_prices_photograph_bda71695-3d15-4521-9df1-8170f5906d8b.png)
+![](/images/gandalfthebeard_personal_dashboard_with_share_prices_photograph_bda71695-3d15-4521-9df1-8170f5906d8b.jpg)
 
 I've been slammed with other work, so my web dev learning has fallen well behind. Luckily, the YouTube procrastination algorithm noticed this and suggested I watch a video from [CodeWithCon](https://www.youtube.com/@codewithcon) titled [Learn Backend in 10 MINUTES](https://www.youtube.com/watch?v=KNa-wMpry00&list=PLkJHe6eU_tzeoe7vKUEa4MrS74CpVEwdI&index=3&t=305s).
 

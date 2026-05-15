@@ -9,7 +9,7 @@ tags:
   - web-dev
 ---
 
-![young woman looking back over her shoulder, Impressionist painting - Stable diffusion](/images/young-woman-looking-back-over-her-shoulder-impressionist-painting.png)
+![young woman looking back over her shoulder, Impressionist painting - Stable diffusion](/images/young-woman-looking-back-over-her-shoulder-impressionist-painting.jpg)
 
 I was listening to a JavaScript podcast today ([JavaScript Jabber](https://www.youtube.com/watch?v=O0fvMJcca3A)) and in one of the discussions a point was made about how HTML, CSS and JavaScript have all had to maintain considerable legacy behaviors that compile-able languages do not have to. For instance, when Swift underwent some substantial changes from Swift 2 to Swift 3 - some code broke for developers and needed reworking because things had changed or been removed. Nothing broke for users - they could either still use their previously compiled applications, or they were delivered new ones from the app store.
 

@@ -11,7 +11,7 @@ tags:
   - ticket-app
 ---
 
-![superman crashing into a train, cartoon - Stable Diffusion](/images/superman-crashing-into-a-train-cartoon-2.png)
+![superman crashing into a train, cartoon - Stable Diffusion](/images/superman-crashing-into-a-train-cartoon-2.jpg)
 
 A [couple of days ago](/project-based-learning/) I was lauding the learning benefits of writing your own projects over completing tutorial projects - since your own projects push your boundaries further. Of course, its also the case that the project requirements might so completely exceed your current ability that it grinds to a halt. That's the case with my [behaviour ticket app](/tickets-on-myself/).
 

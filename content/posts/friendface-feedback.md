@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-![](/images/screen-shot-2022-11-12-at-4.38.24-pm.png)
+![](/images/screen-shot-2022-11-12-at-4.38.24-pm.jpg)
 
 After each app, I use my HackingWithSwift+ membership to view Paul's version of the app as a way to judge my performance. Yesterday's app was "[FriendFace](https://www.hackingwithswift.com/guide/ios-swiftui/5/3/challenge)" - download some JSON of a number of people (including their friends) and display it.
 

@@ -9,7 +9,7 @@ tags:
   - web-dev
 ---
 
-[![](/images/screen-shot-2022-12-11-at-8.31.15-pm.png)](https://zerotomastery.io/courses/coding-bootcamp/)
+[![](/images/screen-shot-2022-12-11-at-8.31.15-pm.jpg)](https://zerotomastery.io/courses/coding-bootcamp/)
 
 I started my first Udemy a few days ago. I was watching one of those "[How I'd learn to code if I started over](https://www.youtube.com/watch?v=cYNVVspXUdA)" YouTubes, mainly because I'd like to know enough JavaScript to write little REST API's on Node.js, but also because I'm starting to think web development makes more sense for a couple of the applications I've got on my (ever growing) list of app ideas.
 

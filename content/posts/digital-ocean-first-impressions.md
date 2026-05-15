@@ -11,7 +11,7 @@ tags:
   - vps
 ---
 
-![](/images/peacenode.eth_an_1970s_advert_for_blockchain_deep_sea_ocean_com_78fb2b2f-24c1-4d4f-a703-3f22bada628f_webp.png)
+![](/images/peacenode.eth_an_1970s_advert_for_blockchain_deep_sea_ocean_com_78fb2b2f-24c1-4d4f-a703-3f22bada628f_webp.jpg)
 
 I've been thinking about the time it takes me to provision a guest VM in Proxmox. I seem to remember on [BinaryLane](https://www.binarylane.com.au/) it was seconds rather than minutes. This seemed to be a good excuse to use the free credit I've heard about for [Linode](https://www.linode.com/lp/free-credit-100/?promo=sitelin100-02162023&promo_value=100&promo_length=60&utm_source=google&utm_medium=cpc&utm_campaign=11178784684_109179223363&utm_term=g_kwd-2629795801_e_linode&utm_content=466889596558&locationid=1000676&device=c_c&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk9lQtzb_l17rAJmoU1KzhTUcWc6TF6C8KBTZU3j6tJ3d1qLWqqiRgxoC6qUQAvD_BwE) or Digital Ocean hundreds of times in podcast adverts, so I claimed the [$200 credit for being a Late Night Linux listener](http://do.co/lnl) at Digital Ocean. They extracted $5 out of me in the process, so I guess they are in front on that transaction. $200 would run a little VM for a couple of years at their rates, but of course it's limited to two months, at the end of which I will have an account sitting there, with my credit card already recorded - so all the friction is gone if I need an internet facing machine for some purpose - which is clearly their dastardly plan
 

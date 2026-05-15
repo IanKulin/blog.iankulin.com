@@ -159,7 +159,7 @@ If you make these changes in VS Code, it will probably pop up and ask you if it 
 
 You might be wondering where we get the extension id's from (like `dbaeumer.vscode-eslint`) The easiest way to to right click on one in the extension list and select "Copy Extension ID". It's also listed on the extension web page.
 
-![](/images/screenshot-2026-01-10-at-15.23.47.png)
+![](/images/screenshot-2026-01-10-at-15.23.47.jpg)
 
 ### Finally
 

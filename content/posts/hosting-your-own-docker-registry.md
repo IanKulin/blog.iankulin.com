@@ -58,7 +58,7 @@ So basically, this image contains a small Linux distro, and all it does is run a
 sudo docker build -t hello-docker .
 ```
 
-![](/images/screen-shot-2024-03-23-at-1.37.15-pm.png)
+![](/images/screen-shot-2024-03-23-at-1.37.15-pm.jpg)
 
 If you want to run it to check my docker skills, use
 

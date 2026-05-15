@@ -11,7 +11,7 @@ tags:
   - web-dev
 ---
 
-![](/images/pawann_seamless_computers_data_storage_databases_processors_on_28c2c788-6e8e-4dfd-a58f-8a468dd647e0.png)
+![](/images/pawann_seamless_computers_data_storage_databases_processors_on_28c2c788-6e8e-4dfd-a58f-8a468dd647e0.jpg)
 
 Some of my first university programming was writing [CICS](https://en.wikipedia.org/wiki/CICS) COBOL transactions against IBM's [DB2](https://en.wikipedia.org/wiki/IBM_Db2) relational database. My commercial work after uni was mostly written in Clipper which was a sort of compiled version of [dBase](https://en.wikipedia.org/wiki/DBase) and used the same data file format. The minimal web work I did in the before times relied on [MySQL](https://en.wikipedia.org/wiki/MySQL).
 

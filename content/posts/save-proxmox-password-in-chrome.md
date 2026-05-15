@@ -25,15 +25,15 @@ Seems like a certificate thing. [These peeps](https://forum.proxmox.com/threads/
 
 A while ago, I wrote a post about [using scp to copy files over ssh](/copying-a-file-via-ssh/), and you should totally know how to do that, but my daily drive for secure file copying is now [filezilla](https://filezilla-project.org/). Once you have a bundle of servers in VM's and containers that you revisit and move stuff around all the time, its just a big productivity step-up to have that list of hosts and credentials a tap away, plus having the visual arrangement of nested folders works for my brain somehow.
 
-![](/images/screen-shot-2023-02-04-at-7.14.40-am-1.png)
+![](/images/screen-shot-2023-02-04-at-7.14.40-am-1.jpg)
 
 On Mac, certificates need to live in the KeyChain, so you just drag the file into the certificates page. But it won't be trusted, so you need to go in and manually do that. Where it says "Use System Defaults" change it to "Always Trust".
 
-![](/images/screen-shot-2023-02-04-at-7.19.54-am-1.png)
+![](/images/screen-shot-2023-02-04-at-7.19.54-am-1.jpg)
 
 It was annoying at this stage to find that Chrome was still saying it was insecure - even though it had changed to saying the certificate was valid.
 
-![](/images/screen-shot-2023-02-04-at-7.20.50-am.png)
+![](/images/screen-shot-2023-02-04-at-7.20.50-am.jpg)
 
 Looking at the settings for the site in Chrome, there's an option for "Insecure Content" I try changing that to "Allow", but really I'm guessing by this stage.
 

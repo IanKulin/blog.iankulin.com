@@ -17,6 +17,6 @@ Strangely, git does not have any simple way of doing this. Neither does GitHub -
 
 To access their VSCode, change the .com in the repo url to .dev. For example, instead of https://github.**com**/twostraws/HackingWithSwift/tree/main/SwiftUI/project2, go to https://github.**dev**/twostraws/HackingWithSwift/tree/main/SwiftUI/project`2`
 
-![](/images/screen-shot-2022-08-22-at-6.50.16-pm.png)
+![](/images/screen-shot-2022-08-22-at-6.50.16-pm.jpg)
 
 Once that's done, right click on the directory to download it.

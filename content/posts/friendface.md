@@ -15,7 +15,7 @@ The [Day 60 Milestone](https://www.hackingwithswift.com/guide/ios-swiftui/5/3/ch
 
 1) Download the JSON and have a look at the structure. Firefox has a simple JSON viewer built in, so it was straightforward to see this is an array of users, which along with some (mostly string) properties contains an array of tag strings, and another array of friends.
 
-![](/images/screen-shot-2022-11-12-at-3.23.28-pm.png)
+![](/images/screen-shot-2022-11-12-at-3.23.28-pm.jpg)
 
 2) Build the structs for these.
 

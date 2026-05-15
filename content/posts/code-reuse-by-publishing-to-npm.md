@@ -82,4 +82,4 @@ npm install @iankulin/is-even
 
 Again, because I'm using ESM, I've added `"type": "module",` to my package.json. And some test code in my `index.js`
 
-![](/images/screen-shot-2024-08-31-at-5.38.38-pm.png)
+![](/images/screen-shot-2024-08-31-at-5.38.38-pm.jpg)

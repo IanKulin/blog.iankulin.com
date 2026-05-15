@@ -8,9 +8,9 @@ tags:
   - web-dev
 ---
 
-![1950's man and woman sitting back to back both reading large books outside by swimming pool - midjourney](/images/pucker_1950s_man_and_woman_sitting_back_to_back_both_reading_la_2e94f56b-03c4-4b85-90ef-409f825e77ed.png)
+![1950's man and woman sitting back to back both reading large books outside by swimming pool - midjourney](/images/pucker_1950s_man_and_woman_sitting_back_to_back_both_reading_la_2e94f56b-03c4-4b85-90ef-409f825e77ed.jpg)
 
-![1950's man and woman sitting back to back both reading large books outside by swimming pool - midjourney](/images/pucker_1950s_man_and_woman_sitting_back_to_back_both_reading_la_f12252b9-78dd-4ad1-bd76-bd85654cdaa1.png)
+![1950's man and woman sitting back to back both reading large books outside by swimming pool - midjourney](/images/pucker_1950s_man_and_woman_sitting_back_to_back_both_reading_la_f12252b9-78dd-4ad1-bd76-bd85654cdaa1.jpg)
 
 There is no shortage of places to reference material to help when developing web apps, including a gazillion tutorials and blog posts (like mine) of various quality, and more importantly - based on the state of play at the time they were written, which could be any time in the last twenty years. I keep bumping up against this - great, clear explanations addressing whatever I was googling, but which turn out to use out of date bits.
 

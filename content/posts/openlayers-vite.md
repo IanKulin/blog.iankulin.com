@@ -11,7 +11,7 @@ tags:
   - web-dev
 ---
 
-![drawing of a nymph who is looking through a hole in a brick wall to a beautiful garden - MidJourney](/images/pucker_drawing_of_a_nymph_who_is_looking_through_a_hole_in_a_br_173a47fc-4d46-481f-ae16-7d93381c8296.png)
+![drawing of a nymph who is looking through a hole in a brick wall to a beautiful garden - MidJourney](/images/pucker_drawing_of_a_nymph_who_is_looking_through_a_hole_in_a_br_173a47fc-4d46-481f-ae16-7d93381c8296.jpg)
 
 In Randy Pausch's [last lecture](https://www.youtube.com/watch?v=ji5_MqicxSo) he talks about the benefit of brick walls in our lives - they tell us how much we really want something. Software development is full of these brick walls - things we want to do, but there's a barrier to achieving it. Will we persevere and accomplish the thing, give up, or some other compromise.
 
@@ -45,7 +45,7 @@ img {
 
 The container (that holds the map and this image of the ISS) has `position:relative` this all works on the first try, and my ISS png is positioned perfectly in the centre of the map at it's correct location, and it changes correctly as the window is resized.
 
-![](/images/screen-shot-2023-01-17-at-6.25.04-pm.png)
+![](/images/screen-shot-2023-01-17-at-6.25.04-pm.jpg)
 
 #### Wall 3 - Vite
 

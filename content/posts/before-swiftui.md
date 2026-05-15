@@ -10,7 +10,7 @@ tags:
   - video
 ---
 
-![](/images/screen-shot-2022-09-10-at-9.28.24-am.png)
+![](/images/screen-shot-2022-09-10-at-9.28.24-am.jpg)
 
 I'm on Day 26 of 100 Days, and didn't grok the dates on my first read through, so I've read a couple of other explanations and sat down with a coffee and thought I'd see what YouTube had for me on the subject. I seen a few great [iOS Academy](https://www.youtube.com/c/iOSAcademy/videos) videos, so [this one](https://www.youtube.com/watch?v=HSFTzcYzuEQ) seemed like a good choice.
 

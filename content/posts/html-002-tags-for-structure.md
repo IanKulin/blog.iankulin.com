@@ -8,7 +8,7 @@ tags:
   - posts
 ---
 
-![Young woman at a computer writing html, Impressionistic - Stable Diffusion](/images/young-woman-at-a-computer-writing-html-impressionistic.png)
+![Young woman at a computer writing html, Impressionistic - Stable Diffusion](/images/young-woman-at-a-computer-writing-html-impressionistic.jpg)
 
 I briefly mentioned [earlier](/html-001/) that our HTML tags should flag WHAT this part of the document is rather than how to display it (we'll look at how to use CSS for making the content look how we want later). This idea is called semantic HTML. This post will look at some of the tags (often called [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp)) we use to convey knowledge of what part of each document an element is.
 

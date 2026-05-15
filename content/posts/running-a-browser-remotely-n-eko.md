@@ -30,7 +30,7 @@ The only thing in there that took a bit of sorting out was the last line - the N
 
 In that configuration, when I went to log in, it would take ages, then say _peer disconnected_. In the logs, there was an error `WRN read message error error="websocket: close 1005 (no status)"`. Some googling took me to a GitHub issue about it. When n.eko starts, it autodetects the external IP and expects connections from there. This will also be an issue for my remote site, since it's on a Tailnet that won't match it's external IP. The solution is to add the `NEKO_NAT1TO1` environment variable in your docker-compose.yaml and set it to a single IP address with no quotes - being the IP address you'll connect to it on.
 
-![](/images/screen-shot-2023-04-23-at-5.08.42-pm.png)
+![](/images/screen-shot-2023-04-23-at-5.08.42-pm.jpg)
 
 Edits:
 

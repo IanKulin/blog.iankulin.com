@@ -14,13 +14,13 @@ tags:
   - web-dev
 ---
 
-![](/images/pauchi0195_unfinished_robotic_bodies_female_scientist_rebel_bio_b9b95c92-d4af-4600-9c5b-e0974f6c2b18.png)
+![](/images/pauchi0195_unfinished_robotic_bodies_female_scientist_rebel_bio_b9b95c92-d4af-4600-9c5b-e0974f6c2b18.jpg)
 
 If you work or study in tech, I always feel a good getting-to-know-you question is "what courses or tutorials did you start, but not finish?"
 
 My Udemy doesn't look _too_ bad:
 
-![](/images/screen-shot-2023-12-29-at-1.30.02-pm.png)
+![](/images/screen-shot-2023-12-29-at-1.30.02-pm.jpg)
 
 The ZTM course was good, but I got stuck on an AI API exercise. I think it's a common sticking point for students since Andrei includes a little rant about how it definitely does work - but I downloaded his repo with the solution and it was having the same errors I was and I gave up in frustration. I probably should have just skipped that one.
 

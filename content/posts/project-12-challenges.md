@@ -12,7 +12,7 @@ tags:
   - xcode14
 ---
 
-![taylor swift with ed sheeran and adel, watercolor painting - Stable Diffusion](/images/adelandco.png)
+![taylor swift with ed sheeran and adel, watercolor painting - Stable Diffusion](/images/adelandco.jpg)
 
 Project 12 was a series of code tutorials around developing CoreData concepts rather than a real app, but the [challenges](https://www.hackingwithswift.com/books/ios-swiftui/core-data-wrap-up) are based on a very small app that uses a subview to allow dynamic (ie changeable at runtime) filtering of a list of data. The reason this would be tricky is that the @FetchRequest is a property of a view - and therefore mutable. The trick is to have a subview to build that part of the view, and to pass parameters into it which build the fetchrequest using an underscore.
 

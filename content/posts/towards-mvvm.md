@@ -11,7 +11,7 @@ tags:
   - video
 ---
 
-![young woman swimming in spaghetti, by Hokusai  - Stable Diffusion](/images/young-woman-swimming-in-spaghetti-by-hokusai-.png)
+![young woman swimming in spaghetti, by Hokusai  - Stable Diffusion](/images/young-woman-swimming-in-spaghetti-by-hokusai-.jpg)
 
 On one of the more mediocre [episodes of Fireside Swift](https://firesideswift.fireside.fm/96), McSwiftface and Zach talk about the [SOLID principles](https://en.wikipedia.org/wiki/SOLID) of class design, although I don't hold the principles as the article of religious fervour that many interviewers apparently do, they are a useful touchstone for considering class quality. OOP had been in swing (in a commercial way) for a few years by then - I was writing in Delphi and C++. The spaghetti code era was a long way behind us and the idea of separation of responsibilities was well established.
 

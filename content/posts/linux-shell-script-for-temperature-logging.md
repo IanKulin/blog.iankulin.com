@@ -11,13 +11,13 @@ tags:
   - scripting
 ---
 
-![](/images/jimmy_e_a_computer_melting_on_an_office_desk_in_the_style_of_da_337547b0-ed21-46d5-8857-15d6dc8f6134.png)
+![](/images/jimmy_e_a_computer_melting_on_an_office_desk_in_the_style_of_da_337547b0-ed21-46d5-8857-15d6dc8f6134.jpg)
 
 A potential solution to my concern about the either perfect, or nearly dead, SSD would be to add a NVMe disk to the M.2 slot in the HP Elitedesk 800 G2's. I'd use those to boot from and run Proxmox, then the existing SSD's on each node in the cluster would just be part of the CephFS pool that has some redundancy built into it and hosts the VMs that are not using the NAS for their storage.
 
 These 'gumstick' NVMe drives are remarkably good value in the smaller sizes at the moment, with Samsung 250GB NVMe's costing less than a pack of cigarettes in Australia.
 
-![](/images/screen-shot-2023-04-20-at-7.02.57-pm.png)
+![](/images/screen-shot-2023-04-20-at-7.02.57-pm.jpg)
 
 A small concern I've got about that, and about the (very cute looking) way I've just got the computers all stacked on top of each other, is about the internal temperatures. I noticed SSD temperatures in the SMART data I was looking the other day, and I've seen CPU temperatures somewhere, so this data is available. So I set out on a quest to log some of it so I could do a before and after (NMVe installation) look at the temperatures.
 
@@ -49,7 +49,7 @@ The third value, for the SSD temperature didn't appear until added by running `m
 
 That's the three values I want to log sorted then, but how to go about it? [That first article](http://www.pyroelectro.com/tutorials/cron-automation/check.html) I mentioned had a shell script using printf() to output some values to a log file, then the script was triggered by a cron job. Two things I've never done before, so let's dive in. Here's the finished code.
 
-![](/images/screen-shot-2023-04-20-at-8.32.11-pm.png)
+![](/images/screen-shot-2023-04-20-at-8.32.11-pm.jpg)
 
 I wrote MS-DOS batch files in the 1980s so this wasn't completely alien to me. A few points were:
 
@@ -103,4 +103,4 @@ Next thing you know, the log file is slowly growing at `/var/log/temps.csv`.
 
 Obviously I'm going to graph this, and also obviously, I'm going to run a CPU stress test in a VM in the middle of the data collection.
 
-![](/images/temp-chart.png)
+![](/images/temp-chart.jpg)

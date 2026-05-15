@@ -16,7 +16,7 @@ One of the things [ZTM](https://zerotomastery.io/) do with their courses is to h
 
 As always when interacting with a community to get help, you need to have done your homework, and to have taken care to supply enough context that someone actually can answer it.
 
-![](/images/screen-shot-2023-01-18-at-4.43.55-pm.png)
+![](/images/screen-shot-2023-01-18-at-4.43.55-pm.jpg)
 
 Here's the CodePen of exactly centering an image on a div.
 

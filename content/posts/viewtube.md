@@ -11,7 +11,7 @@ tags:
   - viewtube
 ---
 
-![](/images/screen-shot-2023-11-18-at-5.17.47-pm.png)
+![](/images/screen-shot-2023-11-18-at-5.17.47-pm.jpg)
 
 Whenever I encounter one of those "What are you self-hosting?" threads, I know I'm about to waste an hour looking at, and often trying out, software I probably don't really need, and that was the case with [this post](https://lemmy.world/post/8385160) on the [lemmy.world Selfhosted](https://lemmy.world/c/selfhost@lemmy.ml) community.
 

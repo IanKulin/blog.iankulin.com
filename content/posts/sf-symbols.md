@@ -33,6 +33,6 @@ The `systemName` parameter signifies the image is this type, and `"globe"` is th
 
 That's where "SF Symbols" comes in. This is [an app](https://developer.apple.com/sf-symbols/) containing a collection of over 4000 (in version 4) symbols that work well with the default San Francisco font, that can be scaled and in many cases coloured. These symbols are a kind of standard that (increasingly) users will recognise - so this also supports good user interfaces.
 
-![](/images/screen-shot-2022-07-17-at-6.50.30-am.png)
+![](/images/screen-shot-2022-07-17-at-6.50.30-am.jpg)
 
 It's straightforward to search for symbols and to view them in the colour combinations you're using in your app (if that particular symbol supports it).

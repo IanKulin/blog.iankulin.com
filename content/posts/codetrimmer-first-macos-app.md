@@ -18,11 +18,11 @@ Coincidentally, I'd been thinking about how often I paste some code from Xcode i
 
 Sounds like a job for a tiny MacOS app - my first! Here it is in action. You copy your code from Xcode, and paste it into the app:
 
-![](/images/screen-shot-2022-10-03-at-11.43.38-am.png)
+![](/images/screen-shot-2022-10-03-at-11.43.38-am.jpg)
 
 Then press the "Strip Spaces" button to get:
 
-![](/images/screen-shot-2022-10-03-at-11.43.43-am.png)
+![](/images/screen-shot-2022-10-03-at-11.43.43-am.jpg)
 
 I've got a few little niceties to add/tidy up, but it was a breeze converting my SwiftUI iOS development skills to MacOS - literally ticking a box.
 
