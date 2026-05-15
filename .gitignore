@@ -4,3 +4,6 @@ temp/
 public/
 resources/
 scripts/output/
+scripts/node_modules/
+scripts/pack*
+
