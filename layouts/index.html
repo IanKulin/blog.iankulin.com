@@ -1,23 +1,11 @@
-{{ define "main" }}
-<h1>{{ .Site.Title }}</h1>
-<p>{{ .Site.Params.description }}</p>
-<br/>
-
-<h1>Latest posts</h1>
-
-<div class="posts-list">
-{{ with .Site.GetPage "/posts" }}
-    {{ range first 10 (sort .Pages "Date" "desc") }}
-        {{ if not .Params.private }}
-            <div class="post">
-                <p>
-                    <div class="date">{{ .Date | time.Format ":date_medium" }}</div>
-                    <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                    {{ .Summary }}
-                </p>
-            </div>
-        {{ end }}
-    {{ end }}
-{{ end }}
-</div>
-{{ end }}
+{{ define "main" -}}
+<main class="main layout__main">
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+  {{ $pages = where $pages "Params.private" "!=" true -}}
+  {{ $paginator := .Paginate $pages -}}
+  {{ range $paginator.Pages -}}
+    {{ .Render "summary" }}
+  {{ end -}}
+  {{ partial "pagination-lite.html" . }}
+</main>
+{{ end -}}
