@@ -1,16 +1,17 @@
 baseURL = "https://devendevour.iankulin.com"
-title = "dev.endevour"
-theme = "hugo-theme-console"
-locale = "en-AU"
+title   = "dev.endevour"
+theme   = "zen"
+locale  = "en-AU"
+
 enableRobotsTXT = true
-buildDrafts = false
-buildFuture = false
+buildDrafts     = false
+buildFuture     = false
 
 [pagination]
   pagerSize = 20
 
 [markup.goldmark.renderer]
-  unsafe = true
+  unsafe = true          # posts contain raw HTML from the WordPress migration
 
 [permalinks]
   posts = "/:slug/"
@@ -19,25 +20,38 @@ buildFuture = false
   tag = "tags"
 
 [params]
-  author = "ian"
-  description = "iOS dev - web dev - homelab"
+  logo         = false
+  description  = "iOS dev - web dev - homelab"
+  dateformat   = "2 January, 2006"
+  submitted    = true
+  mainSections = ["posts"]
+  poweredby    = false
+  feedlinks    = true
 
-  [[params.navlinks]]
-  name = "about/"
-  url = "/about/"
+  [params.author]
+    name = "ian"
 
-  [[params.navlinks]]
-  name = "posts/"
-  url = "/posts/"
+[[menu.main]]
+name   = "about/"
+url    = "/about/"
+weight = 1
 
-  [[params.navlinks]]
-  name = "tags/"
-  url = "/tags/"
+[[menu.main]]
+name   = "posts/"
+url    = "/posts/"
+weight = 2
 
-  [[params.navlinks]]
-  name = "glossary/"
-  url = "/glossary/"
+[[menu.main]]
+name   = "tags/"
+url    = "/tags/"
+weight = 3
 
-  [[params.navlinks]]
-  name = "web-dev-links/"
-  url = "/web-development-links/"
+[[menu.main]]
+name   = "glossary/"
+url    = "/glossary/"
+weight = 4
+
+[[menu.main]]
+name   = "web-dev-links/"
+url    = "/web-development-links/"
+weight = 5

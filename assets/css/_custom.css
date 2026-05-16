@@ -1,0 +1,5 @@
+/* Site custom styles and colours. This file loads last. */
+
+:root {
+  --max-line-width: none;
+}

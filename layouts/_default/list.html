@@ -1,22 +1,13 @@
-{{ define "main" }}
-<h1>{{ .Page.Title }}</h1>
-<br/>
-{{ .Content }}
-
-{{ $paginator := .Paginate (sort .Pages "Date" "desc") }}
-<div class="posts-list">
-{{ range $paginator.Pages }}
-    {{ if not .Params.private }}
-        <div class="post">
-            <p>
-                <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
-                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-                {{ .Summary }}
-            </p>
-        </div>
-    {{ end }}
-{{ end }}
-</div>
-
-{{ template "_internal/pagination.html" . }}
-{{ end }}
+{{ define "main" -}}
+<main class="main layout__main">
+  <header>
+    <h1 class="title">{{ .Title }}</h1>
+  </header>
+  {{ .Content }}
+  {{ $paginator := .Paginate (where .Pages "Params.private" "!=" true) -}}
+  {{ range $paginator.Pages -}}
+    {{ .Render "summary" }}
+  {{ end -}}
+  {{ partial "pagination-lite.html" . }}
+</main>
+{{ end -}}
