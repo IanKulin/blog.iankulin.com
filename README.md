@@ -1,6 +1,6 @@
-# dev.endevour
+# blog.iankulin.com
 
-Hugo static site for [devendevour.iankulin.com](https://devendevour.iankulin.com). Theme: [hugo-theme-console](https://github.com/mrmierzejewski/hugo-theme-console).
+Hugo static site for [blog.iankulin.com](https://blog.iankulin.com). Theme: [hugo-theme-console](https://github.com/mrmierzejewski/hugo-theme-console).
 
 ## Development
 
@@ -27,7 +27,7 @@ Every post needs YAML frontmatter at the top:
 ```yaml
 ---
 title: "My Post Title"
-date: '2025-05-15'
+date: "2025-05-15"
 slug: my-post-title
 draft: true
 tags:
@@ -37,14 +37,14 @@ tags:
 
 Fields:
 
-| Field | Required | Notes |
-|---|---|---|
-| `title` | Yes | Display title; wrap in double quotes and escape internal `"` as `\"` |
-| `date` | Yes | ISO date string, e.g. `'2025-05-15'` |
-| `slug` | Yes | URL path segment; match the filename |
-| `tags` | Yes | Lowercase, hyphenated |
-| `draft` | No | Set `true` until ready to publish, then remove |
-| `aliases` | No | Old URLs to redirect here — used for migrated WordPress posts, e.g. `/2022/09/21/my-post-title/` |
+| Field     | Required | Notes                                                                                            |
+| --------- | -------- | ------------------------------------------------------------------------------------------------ |
+| `title`   | Yes      | Display title; wrap in double quotes and escape internal `"` as `\"`                             |
+| `date`    | Yes      | ISO date string, e.g. `'2025-05-15'`                                                             |
+| `slug`    | Yes      | URL path segment; match the filename                                                             |
+| `tags`    | Yes      | Lowercase, hyphenated                                                                            |
+| `draft`   | No       | Set `true` until ready to publish, then remove                                                   |
+| `aliases` | No       | Old URLs to redirect here — used for migrated WordPress posts, e.g. `/2022/09/21/my-post-title/` |
 
 Images go in `static/images/` and are referenced in the post body as `/images/filename.jpg`.
 
@@ -56,13 +56,13 @@ Deviations from hugo-theme-console defaults, grouped by location.
 
 ### `hugo.toml`
 
-| Setting | Value | Theme default |
-|---|---|---|
-| `params.navlinks` | about/, posts/, tags/, | none |
-| `taxonomies` | tags only | tags + categories |
-| `pagination.pagerSize` | 20 | 10 |
-| `permalinks.posts` | `/:slug/` | `/:year/:month/:day/:slug/` |
-| `markup.goldmark.renderer.unsafe` | `true` | `false` |
+| Setting                           | Value                  | Theme default               |
+| --------------------------------- | ---------------------- | --------------------------- |
+| `params.navlinks`                 | about/, posts/, tags/, | none                        |
+| `taxonomies`                      | tags only              | tags + categories           |
+| `pagination.pagerSize`            | 20                     | 10                          |
+| `permalinks.posts`                | `/:slug/`              | `/:year/:month/:day/:slug/` |
+| `markup.goldmark.renderer.unsafe` | `true`                 | `false`                     |
 
 ### Layout overrides (`layouts/`)
 
@@ -76,14 +76,14 @@ Deviations from hugo-theme-console defaults, grouped by location.
 
 ## Deployment
 
-The Docker image is published to `ghcr.io/iankulin/devendevour.iankulin.com`.
+The Docker image is published to `ghcr.io/iankulin/blog.iankulin.com`.
 
 ### Building and pushing the image
 
 ```bash
 # One-shot: build for AMD64 and push to GHCR
 docker buildx build --builder multiarch-builder --platform linux/amd64 \
-  -t ghcr.io/iankulin/devendevour.iankulin.com:latest \
+  -t ghcr.io/iankulin/blog.iankulin.com:latest \
   --push .
 ```
 
@@ -98,8 +98,8 @@ docker compose up -d --build
 To test with a local URL (links will resolve to `localhost:8080`):
 
 ```bash
-docker build --build-arg BASE_URL=http://localhost:8080 -t devendevour-local .
-docker run -p 8080:80 devendevour-local
+docker build --build-arg BASE_URL=http://localhost:8080 -t blog-local .
+docker run -p 8080:80 blog-local
 ```
 
 ### One-off Hugo build (no Docker)

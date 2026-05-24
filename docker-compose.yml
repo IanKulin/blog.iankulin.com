@@ -1,8 +1,8 @@
 services:
-  devendevour.iankulin.com:
+  blog.iankulin.com:
     build: .
-    image: ghcr.io/iankulin/devendevour.iankulin.com:latest
-    container_name: devendevour.iankulin.com
+    image: ghcr.io/iankulin/blog.iankulin.com:latest
+    container_name: blog.iankulin.com
     ports:
       - "8080:80"
     restart: unless-stopped

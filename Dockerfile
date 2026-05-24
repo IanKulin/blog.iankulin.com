@@ -1,5 +1,5 @@
 FROM hugomods/hugo:latest AS builder
-ARG BASE_URL=https://devendevour.iankulin.com
+ARG BASE_URL=https://blog.iankulin.com
 WORKDIR /src
 COPY . .
 RUN hugo --minify --baseURL "${BASE_URL}"

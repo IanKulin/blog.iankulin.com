@@ -13,7 +13,7 @@ tags:
   - xcode14
 ---
 
-I have unit testing in my [list of goals](https://devendevour.wordpress.com/goals/), and if I'm going to throw this [space trimming](/codetrimmer-first-macos-app/) macOS utility up on the web, now might be a good time to figure out how to add unit tests to a project, how to write them, and how to run them. XCode is well set up for this, so it's really no drama to do.
+I have unit testing in my goals, and if I'm going to throw this [space trimming](/codetrimmer-first-macos-app/) macOS utility up on the web, now might be a good time to figure out how to add unit tests to a project, how to write them, and how to run them. XCode is well set up for this, so it's really no drama to do.
 
 ![](/images/screen-shot-2022-10-03-at-9.09.32-pm.jpg)
 

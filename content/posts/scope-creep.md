@@ -14,7 +14,7 @@ tags:
 
 In project management, and especially in programming "scope creep" refers to the common situation where what's required to regard a project as finished keeps growing. Most commonly, in the form of extra features required to be added to an application. I've especially seen this when clients see early versions of applications and it prompts them to request things that were not in the original specification.
 
-My iOS development learning journey has been experiencing some of this as well. I started out with only four clear [goals](https://devendevour.wordpress.com/goals/):
+My iOS development learning journey has been experiencing some of this as well. I started out with only four clear goals:
 
 -   Complete the Standford CS193p course
 -   Complete Hacking with SwiftUI

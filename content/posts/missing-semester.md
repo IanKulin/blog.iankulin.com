@@ -13,4 +13,4 @@ On my git odyssey yesterday, I came across which is an MIT class for CS about pr
 
 [![](/images/screen-shot-2022-08-01-at-8.50.12-pm.jpg)](https://missing.csail.mit.edu/)
 
-Videos of the lectures, and all the course notes and assignments are freely made available. I've only watched the first lecture about the shell, and their git lecture. Both were excellent, so I'll add this series to by [Goals](https://devendevour.wordpress.com/goals/).
+Videos of the lectures, and all the course notes and assignments are freely made available. I've only watched the first lecture about the shell, and their git lecture. Both were excellent, so I'll add this series to my goals.
