@@ -18,7 +18,7 @@ tags:
 
 Backing up a VM is pretty simple, you just click on the node, choose _Backup_ and click the _Backup Now_ button. The ease, and completeness of backing up a VM is one of the main reasons I'm using Proxmox for my systems.
 
-![](/images/screen-shot-2023-04-07-at-12.02.59-pm.png)
+<a href="/images/screen-shot-2023-04-07-at-12.02.59-pm.png"><img src="/images/screen-shot-2023-04-07-at-12.02.59-pm.png" width="800" alt=""></a>
 
 By default, VM backups are saved to the "local drive" - actually the `/var/lib/vz` directory. This would not be useful if the physical machine dies, but also it's not convenient to restore to a different machine. Ideally you'd have a central place to store these files that was accessible to all the Proxmox nodes.
 
@@ -36,7 +36,7 @@ It's not much harder from the Proxmox end. Although the storage you add will app
 
 Go into _Storage_, select _Add_ and choose _NFS_.
 
-![](/images/screen-shot-2023-04-07-at-2.00.04-pm.png)
+<a href="/images/screen-shot-2023-04-07-at-2.00.04-pm.png"><img src="/images/screen-shot-2023-04-07-at-2.00.04-pm.png" width="800" alt=""></a>
 
 Then enter an ID (this will be the name of the storage in Proxmox) and the IP address. If you wait half a second, then you can click the dropdown for all the folders that are shared from that IP address.
 

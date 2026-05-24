@@ -60,7 +60,7 @@ In general, I think I should be doing this in packages.json, but the nth-check i
 
 After fruitlessly googling around and asking in a couple of discords, I check with ChatGPT to see what she thought.
 
-![](/images/screen-shot-2023-01-24-at-10.14.51-am.png)
+<a href="/images/screen-shot-2023-01-24-at-10.14.51-am.png"><img src="/images/screen-shot-2023-01-24-at-10.14.51-am.png" width="828" alt=""></a>
 
 Well, I'd done all that, and a couple of humans had already told me not to jigger with `package-lock.json`, so that was my next stop - I edited it to add the caret and tried `npm install` - it just changes it back, which make sense.
 

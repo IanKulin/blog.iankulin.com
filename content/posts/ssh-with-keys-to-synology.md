@@ -45,4 +45,4 @@ Tick the box for _Enable user home service_, and hit _Apply_.
 
 Now you'll be able to copy the keys as usual with ssh-copy-id.
 
-![](/images/screen-shot-2023-03-25-at-7.25.59-pm.png)
+<a href="/images/screen-shot-2023-03-25-at-7.25.59-pm.png"><img src="/images/screen-shot-2023-03-25-at-7.25.59-pm.png" width="1000" alt=""></a>

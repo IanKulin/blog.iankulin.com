@@ -14,7 +14,7 @@ tags:
   - web-dev
 ---
 
-![](/images/combined.png)
+<img src="/images/combined.png" width="512" alt="">
 
 One of the many cool things about GitHub is [GitHub Pages](https://pages.github.com) - the free web hosting Microsoft gives you while they vacuum up [your code for CoPilot](https://docs.github.com/en/copilot/overview-of-github-copilot/about-github-copilot-individual) training. Each repository you keep there can have pages at `<your-github-username>.github.io/<repo-name>`
 
@@ -32,11 +32,11 @@ That's all the GitHub set up we need. Now whenever I push my project to the `mai
 
 Now we need to make a couple of changes to our project to get this to work. The first is to tell Vite the "base directory" for the project which needs to be the repo name you've used on GutHub.
 
-![](/images/screen-shot-2023-12-31-at-4.04.50-pm.png)
+<a href="/images/screen-shot-2023-12-31-at-4.04.50-pm.png"><img src="/images/screen-shot-2023-12-31-at-4.04.50-pm.png" width="900" alt=""></a>
 
 This is written into the `index.html` that is built as part of this process. If it's not there, then any browser accessing your `index.html` on gh-pages won't be able to find your JavaScript, and the user will be left looking at a blank white page instead of your amazing app.
 
-![](/images/screen-shot-2023-12-31-at-4.11.06-pm.png)
+<a href="/images/screen-shot-2023-12-31-at-4.11.06-pm.png"><img src="/images/screen-shot-2023-12-31-at-4.11.06-pm.png" width="900" alt=""></a>
 
 My process from this point, is to build the project with `npm run build`. By default, this creates a `/dist` directory in your project (which is already added to `.gitignore`) and puts the project artifacts (the HTML, JavaScript, CSS and any images) into it. I then manually copy the artifacts over to the `/docs` directory of the project and push it up to GitHub to be published - which takes two or three minutes.
 
@@ -48,8 +48,8 @@ import { defineConfig } from 'vite'import react from '@vitejs/plugin-react'// ht
 
 Once all that's working, and you've pushed your changes and waited a minute or two, your project should be live to the world on `github.io`
 
-![](/images/screen-shot-2023-12-31-at-4.45.26-pm.png)
+<a href="/images/screen-shot-2023-12-31-at-4.45.26-pm.png"><img src="/images/screen-shot-2023-12-31-at-4.45.26-pm.png" width="900" alt=""></a>
 
 If you want users browsing your repo to find the live version, it's worth editing your repository about settings to point to it.
 
-![](/images/screen-shot-2023-12-31-at-4.47.30-pm.png)
+<a href="/images/screen-shot-2023-12-31-at-4.47.30-pm.png"><img src="/images/screen-shot-2023-12-31-at-4.47.30-pm.png" width="900" alt=""></a>

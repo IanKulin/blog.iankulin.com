@@ -26,7 +26,7 @@ In practice this means that I can install and run a number of different operatin
 
 But one of the missing features from ESXi is central management, and I want to play with my toys, and anyway, all the cool kids are using [Proxmox](https://www.proxmox.com/en/proxmox-ve).
 
-![](/images/screen-shot-2023-01-26-at-12.25.13-pm.png)
+<a href="/images/screen-shot-2023-01-26-at-12.25.13-pm.png"><img src="/images/screen-shot-2023-01-26-at-12.25.13-pm.png" width="1000" alt=""></a>
 
 Like a couple of others on this list, Proxmox is built on Linux, and is a great choice for a home server setup. It is available for commercial use with different ([paid](https://www.proxmox.com/en/proxmox-ve/pricing)) tiers of support.
 

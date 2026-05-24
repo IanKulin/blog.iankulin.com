@@ -24,7 +24,7 @@ This mini guide is just a start. I'll step through to the point where you have a
 
 ### Prerequisites
 
-![](/images/screen-shot-2023-07-02-at-11.16.33-am.png)
+<a href="/images/screen-shot-2023-07-02-at-11.16.33-am.png"><img src="/images/screen-shot-2023-07-02-at-11.16.33-am.png" width="118" alt=""></a>
 
 For this to be helpful to you, you probably need to have been mucking about running Linux servers. You know how to ssh into them and have set up key pairs to allow that without typing your password each time. You can write a bash script (but don't want to), You know how to install software with apt/yum/pip/homebrew etc. You should go and install it now. Note that you also need python (preferably 3) on the host.
 
@@ -162,7 +162,7 @@ ansible all -a "hostname"
 
 So much neater! Additionally, since our nodes are in groups now, we can specify the group if we don't want to execute the command on all nodes.
 
-![](/images/screen-shot-2023-07-03-at-9.38.41-am.png)
+<a href="/images/screen-shot-2023-07-03-at-9.38.41-am.png"><img src="/images/screen-shot-2023-07-03-at-9.38.41-am.png" width="472" alt=""></a>
 
 That's probably as far as I want to go in this post. We've got our heads around some early Ansible concepts, learned how to use the Ad-Hoc commands to do things to our nodes, learned a big word that won't ever come up again except in coding interviews, and seen how to set up the ansible.cfg and inventory files.
 

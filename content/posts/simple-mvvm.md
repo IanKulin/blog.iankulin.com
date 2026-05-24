@@ -19,7 +19,7 @@ Model <-> View Model <-> View
 
 The _Model_ is platform independent - we should be able to pluck it out and add it to a different application running on a different platform without any trouble. Any business rules will be part of the Model along with the data. For example, if it's a rule that every customer has a sales contact, this can be enforced in the Model.
 
-![](/images/screen-shot-2022-08-06-at-4.20.38-pm.png)
+<a href="/images/screen-shot-2022-08-06-at-4.20.38-pm.png"><img src="/images/screen-shot-2022-08-06-at-4.20.38-pm.png" width="85" alt=""></a>
 
 The Model (or Models - an app could have more than one) does not know anything about the _View_ or the _View Model_. In a SwiftUI app, we'll almost always have the model in its own file.
 

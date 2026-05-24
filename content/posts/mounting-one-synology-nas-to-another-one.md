@@ -31,16 +31,16 @@ On the flipside, Synology's whole reason for existing is to make things easier a
 
 I'll start out on NAS2 (the empty one). Using FileStation, I'll create a share, then inside that, I'll create a `nas1` directory - this will be the mount point. In the root of the share, `Open Tools | Mount Remote Folder`. I'm using SMB/CIFS for my share so I'll chose CIFS option, but obviously if you're using NFS, use that instead.
 
-![](/images/screen-shot-2023-03-17-at-5.03.08-pm.png)
+<a href="/images/screen-shot-2023-03-17-at-5.03.08-pm.png"><img src="/images/screen-shot-2023-03-17-at-5.03.08-pm.png" width="1008" alt=""></a>
 
 Since underneath it's actually running the `mount` for us, or doing whatever their equivalent of editing `/etc/fstab` is, it needs all the same information.
 
-![](/images/screen-shot-2023-03-17-at-5.04.45-pm.png)
+<a href="/images/screen-shot-2023-03-17-at-5.04.45-pm.png"><img src="/images/screen-shot-2023-03-17-at-5.04.45-pm.png" width="1007" alt=""></a>
 
 Once you press `Mount`, the other (remote) NAS will appear in FileStation under `Remote Folder`. The it was just a matter of `right click | copy` on the NAS1 then `paste` into the NAS2 share.
 
-![](/images/screen-shot-2023-03-17-at-5.05.43-pm.png)
+<a href="/images/screen-shot-2023-03-17-at-5.05.43-pm.png"><img src="/images/screen-shot-2023-03-17-at-5.05.43-pm.png" width="1009" alt=""></a>
 
 According to [these guys](https://datarecovery.com/rd/does-hard-drive-rpm-affect-lifespan/), the theoretical max transfer rate of a 5400RPM drive (which is what I'm running in both NASs) is 75MB/s. NAS1 that I'm copying from is RAID1, so I assume if the OS is smart enough it could pull data from both disks at once, but I don't really understand what happens with the writes when that data hits the RAID6. In any case, it was maxing out at around 70MB/s. Although most of the time it was anywhere between 30 and 70.
 
-![](/images/screen-shot-2023-03-17-at-5.55.58-pm.png)
+<a href="/images/screen-shot-2023-03-17-at-5.55.58-pm.png"><img src="/images/screen-shot-2023-03-17-at-5.55.58-pm.png" width="1008" alt=""></a>

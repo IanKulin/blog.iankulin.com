@@ -40,7 +40,7 @@ Instead what I did was install the [Cline](https://cline.bot/) add-on in VS Code
 
 If you haven't seen an agentic tool powered by Claude Sonnet doing this stuff, prepare to be amazed. Tool use by AI's is definitely the future, and probably not just for code. It still does sometimes get stuck in a rabbit hole - I find if it hasn't solved it's own problems after a couple of helpful interventions from me, it's probably not going to (I guess it's poisoned it's own context too much) and it's easier to kill it and give it a different (often more focused) prompt on a fresh start. I just used git for my rollback on those occasions though I understand others (perhaps Cursor?) have 'checkpoints' built into the tool.
 
-![](/images/do-all-the-things-meme-template-full-e9a85cb2.webp)
+<img src="/images/do-all-the-things-meme-template-full-e9a85cb2.webp" width="800" alt="">
 
 A feature of Cline is that it shows you the token use and dollar amount as it's working. I burned through USD20 of Anthropic tokens in about 4 days of coding all the things. I would just open up a project I use in VS Code, and have the Forgejo issues for it on the other screen, and copy them across to Cline one at a time.
 
@@ -54,7 +54,7 @@ I topped up the Anthropic money, but also gave Cline my OpenAI, Deep Seek and Ge
 
 You can see all these cost details right in Cline as you are switching between the models.
 
-![](/images/screenshot-2025-07-07-at-15.43.54.png)
+<img src="/images/screenshot-2025-07-07-at-15.43.54.png" width="841" alt="">
 
 ### Claude Code
 

@@ -21,7 +21,7 @@ I was looking at this ugly code in a React app:
 
 Since I don't need any of those CSS properties to change at any stage, I could just convert it to pure HTML/CSS right? Well no:
 
-![](/images/screen-shot-2023-01-09-at-4.26.54-pm.png)
+<a href="/images/screen-shot-2023-01-09-at-4.26.54-pm.png"><img src="/images/screen-shot-2023-01-09-at-4.26.54-pm.png" width="826" alt=""></a>
 
 The newbie trap I've fallen for here is that although that `<div style= tag` looks like HTML, it's actually not. It's not a template that will be filled out in the build step, it's React code that will be used to mutate the virtual DOM.
 

@@ -15,9 +15,9 @@ tags:
 
 I've been mucking around with the Habits app too long - it's started to look like procrastination. It already meets the [specification](https://www.hackingwithswift.com/100/swiftui/47), so I'm calling it an MVP and moving on.
 
-[![](/images/github-mark-32px.png)](https://github.com/IanKulin/Habitual)
+<a href="https://github.com/IanKulin/Habitual"><img src="/images/github-mark-32px.png" width="32" alt=""></a>
 
-![](/images/img_3110.png)
+<img src="/images/img_3110.png" width="266" alt="">
 
 This is the first app of mine I've loaded onto my phone and started using, and there are a couple of things I'd like to do with it. It currently just lets you specify how many days between an activity repeating - so if you say you should go to the gym every second day, and you complete that activity on Monday, "Gym" will make it's way to the top of the list on Wednesday. While it's waiting in the list for Wednesday to come around, it will show the "Due" time as being exactly 48 hours after you last pressed "done" on it. But if the habit you want is to go to the gym after work at 6:00pm that's when you want it to be due. I'd like that.
 

@@ -20,7 +20,7 @@ It works pretty much as described above - all of the machines on the LAN have th
 
 I decided an unprivileged LXC container would be the perfect base for this service. I created one from the Debian 12 image with 1MB RAM but a largish 30GB drive. I don't really have any feel for how big the cache will get under normal use so I erred on the large side. It's not doing any computationally expensive work, so one CPU is plenty.
 
-![](/images/screen-shot-2023-08-20-at-10.42.06-am.png)
+<a href="/images/screen-shot-2023-08-20-at-10.42.06-am.png"><img src="/images/screen-shot-2023-08-20-at-10.42.06-am.png" width="900" alt=""></a>
 
 Then we just install it, and start and enable it as a service.
 
@@ -32,7 +32,7 @@ systemctl enable apt-cacher-ng
 
 During the install, it asked me about https:
 
-![](/images/screen-shot-2023-08-20-at-10.46.32-am.png)
+<a href="/images/screen-shot-2023-08-20-at-10.46.32-am.png"><img src="/images/screen-shot-2023-08-20-at-10.46.32-am.png" width="900" alt=""></a>
 
 I said no, but then to enable it, I had to (after the installation) edit the config file at `/etc/apt-cacher-ng/acng.conf` to uncomment the line
 
@@ -50,7 +50,7 @@ The two bits of information I've put red boxes around are the things we need to 
 
 Note that the ip address will be different on yours, just copy it off the little web page. Since I've got a heap of machines to do this do, I made the `conf` file once and pushed out out with Ansible.
 
-![](/images/screen-shot-2023-08-20-at-3.00.26-pm.png)
+<a href="/images/screen-shot-2023-08-20-at-3.00.26-pm.png"><img src="/images/screen-shot-2023-08-20-at-3.00.26-pm.png" width="900" alt=""></a>
 
 The `hosts: local` in the pkaybook refers to the `local: children` group in my hosts ini file.
 

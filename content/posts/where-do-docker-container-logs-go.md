@@ -14,7 +14,7 @@ I'm still loving the Docker "just works" magic, despite their [terrible PR skill
 
 Let's look at an example from today. I'm testing [Filebrowser](https://filebrowser.org/) on a dev machine before I deploy it to the remote backup machine I'm assembling. And instead of following the [official instructions](https://filebrowser.org/installation), I'm following a [blog post](https://bobcares.com/blog/filebrowser-installation-in-docker/) which has a few more details, but unfortunately also a small error.
 
-![](/images/screen-shot-2023-04-02-at-1.35.16-pm.png)
+<a href="/images/screen-shot-2023-04-02-at-1.35.16-pm.png"><img src="/images/screen-shot-2023-04-02-at-1.35.16-pm.png" width="800" alt=""></a>
 
 The first sign of a problem is that the container is not running after I've launched it.
 

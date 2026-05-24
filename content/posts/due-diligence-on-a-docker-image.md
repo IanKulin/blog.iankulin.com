@@ -11,7 +11,7 @@ tags:
   - security
 ---
 
-[![](/images/brett-jordan-elldklrxmoa-unsplash.jpg)](https://unsplash.com/photos/gray-figure-ELLDKLrXMoA)
+<a href="https://unsplash.com/photos/gray-figure-ELLDKLrXMoA"><img src="/images/brett-jordan-elldklrxmoa-unsplash.jpg" width="640" alt=""></a>
 *Photo by [Brett Jordan](https://unsplash.com/@brett_jordan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash) on [Unsplash](https://unsplash.com/photos/gray-figure-ELLDKLrXMoA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash)*
 
 I need a survey tool, and a quick search turned up [LimeSurvey](https://www.limesurvey.org/), there's a 'community edition' so naturally I plan to self-host it. I scrolled down to the 'installation' section of the [manual](https://manual.limesurvey.org/Installation_-_LimeSurvey_CE/en) which has a big list of PHP dependencies.
@@ -51,22 +51,22 @@ Let's apply some of these rules-of-thumb to my LimeSurvey container needs.
 
 When Docker Hub says something is "trusted content" they've already done some of my work for me. And when I click through to [eucm/limesurvey](https://hub.docker.com/r/eucm/limesurvey) it says that the developer (eucm) is a "[Sponsored OSS](https://docs.docker.com/trusted-content/dsos-program/#:~:text=The%20Docker-Sponsored%20Open%20Source,Insights%20and%20analytics)" which means a human at Docker thinks this developer group are legit. These are all encouraging factors.
 
-![](/images/screen-shot-2024-03-29-at-9.47.41-am.png)
+<a href="/images/screen-shot-2024-03-29-at-9.47.41-am.png"><img src="/images/screen-shot-2024-03-29-at-9.47.41-am.png" width="1000" alt=""></a>
 
 What's less encouraging is "Pulls 635" which does not seem a lot, and "Updated over 3 years ago". Also I've got no reason to think this is an official image - eucm doesn't seem to have any connection to the LimeSurvey developers. Let's look at the other images.
 
-![](/images/screen-shot-2024-03-29-at-10.25.21-am.png)
+<a href="/images/screen-shot-2024-03-29-at-10.25.21-am.png"><img src="/images/screen-shot-2024-03-29-at-10.25.21-am.png" width="1000" alt=""></a>
 
 There's more further down but all with about 100K pulls or less. Of these four, we've already eliminated the top one, and we can probably eliminate the bottom one based on it's age - although it's always interesting to see an image with so many pulls and no updates since that sometimes happens when a project changes hands or gets relisted under a different owner.
 
 Either of the other two (acspri/limesurvey & martialblog/limesurvey) are worth investigating - there's nothing much to tell them apart in this view since they both have about the same number of stars (the number next to the pulls number). I'll start at the top.
 
-![](/images/screen-shot-2024-03-29-at-11.34.52-am.png)
+<a href="/images/screen-shot-2024-03-29-at-11.34.52-am.png"><img src="/images/screen-shot-2024-03-29-at-11.34.52-am.png" width="1000" alt=""></a>
 
 It's promising to have a good readme, including a docker-compose example, but there's no github link, and I really want a peek at the dockerfile. If I click through to the developer, they seem to be the [Australia Consortium for Social and Political Research Inc](https://www.acspri.org.au) - which it makes sense why they would be interested in a survey tool. Additionally, they seem to have an [official link to the project](https://www.acspri.org.au/limesurvey). They do have an active GitHub account, but it doesn't include a repository for this which seems, odd.
 
 However, there is this repo [adamzammit / limesurvey-docker](https://github.com/adamzammit/limesurvey-docker) which appears to get pushed to it's own [dockerhub](https://hub.docker.com/r/adamzammit/limesurvey) as well as the ACSPRI one. There is a note on the adamzamit dockerhub saying this used to be the acspri but has been moved here - that would be more convincing if the note was on the acspri dockerhub. The github looks legit, and there was nothing suspicious (to my inexpert view) in the dockerfile.
 
-![](/images/screen-shot-2024-03-30-at-11.33.52-am.png)
+<a href="/images/screen-shot-2024-03-30-at-11.33.52-am.png"><img src="/images/screen-shot-2024-03-30-at-11.33.52-am.png" width="900" alt=""></a>
 
 The [martialblog/limesurvey](https://hub.docker.com/u/martialblog) one also looks good - recently updated, lots of pulls, a comprehensive readme, and a github link right at the top. The only criteria it doesn't meet is "trusted organisation" but the link to an active github goes part of the way. I'd be happy to use this container for the purpose I've got in mind.

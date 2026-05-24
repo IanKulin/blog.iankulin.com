@@ -15,7 +15,7 @@ tags:
 
 I've mentioned using NGINX as an [interface between the internet and a service](/nginx-in-front-of-a-node-js-app/) a while ago. This works by all incoming traffic coming to NGINX, and NGINX determining which service that traffic should go (from the NGINX config files) then acting as a middleman. This functionality is generally referred to as a 'reverse proxy'.
 
-![Terrible drawing of NGINX proxying requests off to different services.](/images/nginx.png)
+<img src="/images/nginx.png" width="959" alt="Terrible drawing of NGINX proxying requests off to different services.">
 
 This is nice for a few reasons:
 
@@ -67,7 +67,7 @@ These config files are powerful, and in the usual trade-off somewhat complicated
 
 There is a great project, [NGINX Proxy Manager](https://nginxproxymanager.com/) that throws a nice web GUI on this process. On top of that, it makes the process of obtaining [Let's Encrypt](/certbot-lets-encrypt-are-great/) SSL certificates even easier than CertBot.
 
-![Terrible drawing of NGINX Proxy Manager proxying requests off to different service, and obtaining SSL certificates for them.](/images/npm.png)
+<img src="/images/npm.png" width="946" alt="Terrible drawing of NGINX Proxy Manager proxying requests off to different service, and obtaining SSL certificates for them.">
 
 NGINX Proxy Manager is available as a docker image, and is trivial to set up if you're used to docker. Once that's done, the process of adding the proxies is simple enough that you probably don't need any instructions.
 

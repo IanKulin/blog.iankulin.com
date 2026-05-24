@@ -19,9 +19,9 @@ I've been playing with the idea of picking up an old i3/i5 Thinkpad - these are 
 
 This weekend at my parents house, I've been going through the cupboard secure wiping a couple of the discarded laptops, and found a fancy looking HP Mini 110-1131dx.
 
-[![](/images/9563377_ra.jpg)](https://www.notebookcheck.net/HP-Mini-110-Series.24414.0.html)
+<a href="https://www.notebookcheck.net/HP-Mini-110-Series.24414.0.html"><img src="/images/9563377_ra.jpg" width="500" alt=""></a>
 
-[![](/images/9563377cv3a.jpg)](https://www.notebookcheck.net/HP-Mini-110-Series.24414.0.html)
+<a href="https://www.notebookcheck.net/HP-Mini-110-Series.24414.0.html"><img src="/images/9563377cv3a.jpg" width="500" alt=""></a>
 
 This was a netbook, quite a cute little thing, and like most HP hardware - well made and popular enough that I should be able to googlesolve any issues I encounter. The Atom N270 that mousepowers it is a single core 32bit baby, but there's also a moderate graphics accelerator chip - the [GMA 950](https://www.notebookcheck.net/Intel-Graphics-Media-Accelerator-950.2177.0.html).
 
@@ -31,7 +31,7 @@ Mint or Ubuntu would probably be my first choices for a desktop distro, but give
 
 As with most modern distros, the install was a painless experience - booting from the USB and following prompts. The UI was pleasant and crisp, and I especially liked the background on the desktop with some live statistics.
 
-[![](/images/86942_antix-3-small.jpg)](https://www.linuxinsider.com/story/antix-linux-not-pretty-but-highly-functional-86942.html)
+<a href="https://www.linuxinsider.com/story/antix-linux-not-pretty-but-highly-functional-86942.html"><img src="/images/86942_antix-3-small.jpg" width="620" alt=""></a>
 
 From the base install, the wireless would not work properly. On the HP 100, there's a little momentary switch on the front left of the keyboard with an indicator light. It was correctly indicating that the wireless was disabled (by glowing orange) and if I flicked it, I could see in the settings the bluetooth was going off and on, but not the wireless.
 
@@ -39,7 +39,7 @@ From the base install, the wireless would not work properly. On the HP 100, ther
 
 Again, a painless install experience. The ISO was about twice the size at 2.7GB and the install took a lot longer, although much of it was familiar to me from the numerous Debian and Ubuntu server installs I've done. Once it was installed and booted, the desktop seemed a bit chunky and dated compared to the flatter antiX, and although slower it was very usable.
 
-![](/images/img_4846b.jpg)
+<img src="/images/img_4846b.jpg" width="1000" alt="">
 
 The wifi didn't work, although the indicator was blue suggesting it was turned on. In the menu was an option to check for needed propitiatory drivers, and when I plugged into the Ethernet and ran this, it decided there was a Broadcom chipset wifi that it knew the drivers for. I allowed it to fetch and install them, and the wireless came to life.
 

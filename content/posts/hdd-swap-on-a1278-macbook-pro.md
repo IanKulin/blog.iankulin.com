@@ -26,9 +26,9 @@ Lay it upside down and remove the screws with a tiny (I guess #00) Philips screw
 
 If you've got the laptop turned around so you can read the writing, then the long screws are the three top right ones. If you lay them out in the order you remove them, you won't have to remember that.
 
-![](/images/img_5087.jpg)
+<img src="/images/img_5087.jpg" width="1008" alt="">
 
-![](/images/img_5088.jpg)
+<img src="/images/img_5088.jpg" width="1008" alt="">
 
 Pick the cover up from the back and it just lifts off.
 
@@ -36,22 +36,22 @@ Pick the cover up from the back and it just lifts off.
 
 The HDD is in the bottom right corner there. It's locked in with that black plastic retainer you can see above the drive. Use your little Philips screwdriver to undo the two screws holding it in place (they don't come right out), then lift out the retainer and put it down somewhere carefully - you will need to put it back the right way later.
 
-![](/images/img_5069.jpg)
+<img src="/images/img_5069.jpg" width="1008" alt="">
 
-![](/images/img_5072.jpg)
+<img src="/images/img_5072.jpg" width="1008" alt="">
 
 That plastic tab is for lifting the far side of the drive out. Only lift it far enough to loosen the remove the SATA plug from the drive, then lift the whole drive out.
 
-![](/images/img_5073.jpg)
+<img src="/images/img_5073.jpg" width="1008" alt="">
 
-![](/images/img_5075.jpg)
+<img src="/images/img_5075.jpg" width="1008" alt="">
 
 Once it's unplugged, the drive will lift away from the bottom.
 
 There are four little lug things screwed into the mounting screw holes on the drive. You'll need to remove them and shift them over to the new drive. They nestle into the little round shock mounts at the case edge. You need a tiny torx driver for those lugs. I'm not sure what size, but the driver I bought for taking Nokia 5110's apart fits perfectly.
 
-![](/images/img_5081.jpg)
+<img src="/images/img_5081.jpg" width="1008" alt="">
 
 Re-installation is just the opposite of taking it all apart. Be gentle with the SATA connector. I tried moving that sticky tab over to the new drive, but it wasn't interested in re-sticking. So I McGyvered a bit of packing tape.
 
-![](/images/img_5085.jpg)
+<img src="/images/img_5085.jpg" width="1008" alt="">

@@ -148,7 +148,7 @@ function listItemClick(event) {
 
 That works nicely. We've separated our concerns, and .completed items are clearly and satisfyingly crossed out.
 
-![](/images/screen-shot-2022-12-26-at-2.30.59-pm.png)
+<a href="/images/screen-shot-2022-12-26-at-2.30.59-pm.png"><img src="/images/screen-shot-2022-12-26-at-2.30.59-pm.png" width="543" alt=""></a>
 
 In fact, even this can be slightly improved on. There is a .toggle() method for turning a class off and on for an element, so we can eliminate some code by using that. As well as being simpler, we've removed the possibility of a classname typo the three times we use it. So:
 

@@ -71,22 +71,22 @@ I've moved to using NGINX Proxy Manager (NPM) rather than raw NGINX since it mak
 
 We now specify the user names and passwords in the gui (instead of faffing around installing apache2-utils and running it to build the `.htpasswd` file. This is done by creating an access list:
 
-![](/images/screen-shot-2024-10-27-at-11.43.16-am.png)
+<a href="/images/screen-shot-2024-10-27-at-11.43.16-am.png"><img src="/images/screen-shot-2024-10-27-at-11.43.16-am.png" width="900" alt=""></a>
 
 Then in the Authorization tab, adding your users:
 
-![](/images/screen-shot-2024-10-27-at-11.42.44-am.png)
+<a href="/images/screen-shot-2024-10-27-at-11.42.44-am.png"><img src="/images/screen-shot-2024-10-27-at-11.42.44-am.png" width="900" alt=""></a>
 
 Once that's saved, we apply it to the proxy record:
 
-![](/images/screen-shot-2024-10-27-at-11.47.38-am.png)
+<a href="/images/screen-shot-2024-10-27-at-11.47.38-am.png"><img src="/images/screen-shot-2024-10-27-at-11.47.38-am.png" width="900" alt=""></a>
 
 But then how do we set the x-username header? Since there's an advanced tab, you may think it's in there, and that looks promising till you read the warning below the text box.
 
-![](/images/screen-shot-2024-10-27-at-11.52.24-am.png)
+<a href="/images/screen-shot-2024-10-27-at-11.52.24-am.png"><img src="/images/screen-shot-2024-10-27-at-11.52.24-am.png" width="839" alt=""></a>
 
 Setting a header is exactly what we want to do, so let's head to the "locations" tab.
 
-![](/images/screen-shot-2024-10-27-at-11.55.04-am.png)
+<a href="/images/screen-shot-2024-10-27-at-11.55.04-am.png"><img src="/images/screen-shot-2024-10-27-at-11.55.04-am.png" width="674" alt=""></a>
 
 We just use the root path "/" for our path so it applies to every request, proxy those requests to our app, and set the header in the text box (which appears when you click the gear button).

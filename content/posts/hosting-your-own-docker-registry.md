@@ -13,8 +13,8 @@ tags:
   - registry
 ---
 
-[![Photo by Tri Eptaroka Mardianam on Unsplash
-](/images/tri-eptaroka-mardiana-hp4zin1_kdk-unsplash.jpg)](https://unsplash.com/photos/architectural-photography-of-cargo-containers-stack-hP4ZiN1_kdk?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)
+<a href="https://unsplash.com/photos/architectural-photography-of-cargo-containers-stack-hP4ZiN1_kdk?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"><img src="/images/tri-eptaroka-mardiana-hp4zin1_kdk-unsplash.jpg" width="640" alt="Photo by Tri Eptaroka Mardianam on Unsplash
+"></a>
 
 The Docker [Personal (ie free tier) plan](https://docs.docker.com/subscription/core-subscription/details/) currently allows one private repository, but even if you want to pay for the next level where you can have unlimited repositories, you may still want to host your own private registry - it's going to be quicker inside your network, and you won't run up against Docker's pull/push limits if you are hammering it with your CI/CD system.
 

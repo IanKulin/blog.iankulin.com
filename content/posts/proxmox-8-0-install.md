@@ -14,7 +14,7 @@ tags:
 
 I'm normally a x.1 release type of sysadmin, but the increasing temptation of installing Proxmox 8.0 while I've got some time off, and the fact that I've got a cluster, so I can just move the VM's around all adds up to thinking I'll do that today.
 
-![](/images/cluster-2.png)
+<img src="/images/cluster-2.png" width="328" alt="">
 
 Here's how my system works. It consists of three HP-800 mini G2's. `pve-prod1` is a bit fancier - i7 6700T and 32GB, the other two are i5 6500T and 16GB. The production VM's use the local SSD but backups go to the NAS. All the machines are currently running Proxmox 7.4. They are not clustered in the proper sense - I don't need high availability, and I don't want to run them all the time. `pve-prod1` runs 24/7 and I just power up `pve-dev1` when I'm working on something.
 
@@ -22,7 +22,7 @@ The intention is that although I'm not on high availability, I can quickly come 
 
 ### Migration plan
 
-![](/images/migration-1.png)
+<img src="/images/migration-1.png" width="273" alt="">
 
 Currently `pve-prod1` is only running two guests, jellyfin, and a docker host with a collection of smallish services. The plan is to move those to `pve-prod2`, check everything is working, then install the new Proxmox 8 onto `pve-prod1`. Apart from giving me the opportunity to do that, it's a good test of the plan for recovering from a `pve-prod1` failure. I'll live off it for a few days to ensure that it's a viable process.
 

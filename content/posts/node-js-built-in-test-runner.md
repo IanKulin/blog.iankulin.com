@@ -61,7 +61,7 @@ describe("isEven", () => {
 
 Then to run them, just `node --test` and we'll get a nice summary
 
-![](/images/screenshot-2025-03-07-at-20.15.43.png)
+<img src="/images/screenshot-2025-03-07-at-20.15.43.png" width="800" alt="">
 
 Of course there are a heap of other [assertions](https://nodejs.org/api/assert.html), as well as stuff to set-up and tear-down and to [mock things such as times](https://nodejs.org/en/learn/test-runner/mocking). What I've shown here is very much a getting started, but it also deals with about 80% of my testing needs.
 

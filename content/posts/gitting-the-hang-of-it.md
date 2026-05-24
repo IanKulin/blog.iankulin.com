@@ -10,7 +10,7 @@ tags:
   - possibly-useful
 ---
 
-[![](/images/git_2x.png)](https://xkcd.com/1597/)
+<a href="https://xkcd.com/1597/"><img src="/images/git_2x.png" width="253" alt=""></a>
 
 I spent most of the day learning about, and practicing with git. I'll list some of the resources at the bottom, but for the moment, this is my understandings / cheat sheet for git. Since this could conceivably turn up in someone's google search, and slightly less conceivably be of some use, I will come back and edit it if there's something bad/wrong here. Comments would be great if you think that's the case.
 

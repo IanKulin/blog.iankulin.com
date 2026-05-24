@@ -15,7 +15,7 @@ I'm focused on React frontend skills these holidays, and [working through Mosh's
 
 ### The Specification
 
-![](/images/screen-shot-2023-12-31-at-6.02.08-am.png)
+<a href="/images/screen-shot-2023-12-31-at-6.02.08-am.png"><img src="/images/screen-shot-2023-12-31-at-6.02.08-am.png" width="900" alt=""></a>
 
 This is an app for tracking expenses. Expenses can be in one of three _categories_, they also must have a _description_ and an _amount_. There's a form for entering a new expense with a submit button. The form fields are validated before the expense item is added.
 

@@ -16,7 +16,7 @@ Before I write a fancy Ansible playbook to automatically set up the Nginx/Node c
 
 Until now, I've been running my tests on my laptop, or in a server logged in as myself - sometimes detaching from tmux. But we need a bit more professional set up than that. The process will look something like this:
 
-![](/images/hqdefault.jpg)
+<img src="/images/hqdefault.jpg" width="150" alt="">
 
 -   Install Node and npm (I'm assuming we've done that since I've covered the playbook for it before).
 -   Copy the app files over

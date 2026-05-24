@@ -38,6 +38,6 @@ Out of an abundance of caution, I decided to copy the system sudoers file to the
 
 So here I am, logged in as ian, with no sudo, needing to edit or delete a protected file, and with no root login. Luckily, it's a VM running the qemu user agent, so I can access it from Proxmox.
 
-![](/images/screen-shot-2023-01-29-at-2.04.37-pm.png)
+<a href="/images/screen-shot-2023-01-29-at-2.04.37-pm.png"><img src="/images/screen-shot-2023-01-29-at-2.04.37-pm.png" width="895" alt=""></a>
 
 Saved by over-engineering! Thank you open source contributors.

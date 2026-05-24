@@ -11,7 +11,7 @@ tags:
   - proxmox
 ---
 
-![](/images/s-l640.jpg)
+<img src="/images/s-l640.jpg" width="264" alt="">
 
 So, the very small datacentre has undergone a major hardware upgrade today. The HP 800 G1 is joined by an HP 800 G2. Four core i7 vs the old two core i5. Double the RAM to 16GB, four times the disk. The old machine will become a dev/play machine - still virtualised, and the new machine will run the production apps, mostly in Docker containers.
 
@@ -25,7 +25,7 @@ In theory this should be entirely possible. So let's give it a go.
 
 In the Proxmox web interface, you can execute a backup on a VM. There's three flavours with `STOP` being the most reliable as it actually stops the VM to grab it's copy. On this system I can easily afford to stop everything for ten minutes so I'll actually be shutting down my VM and doing this sort of back up. We do this by clicking on the VM, then selecting backup. At the top is a backup button.
 
-![](/images/screen-shot-2023-02-06-at-8.35.38-pm.png)
+<a href="/images/screen-shot-2023-02-06-at-8.35.38-pm.png"><img src="/images/screen-shot-2023-02-06-at-8.35.38-pm.png" width="800" alt=""></a>
 
 Once you've done your backup it appears in a couple of places in the web interface - in this backup screen associated with the VM, but also if you select the `local` disk then backup.
 
@@ -35,7 +35,7 @@ So that's my VM nicely backed up into a single tarball, now I want to download i
 
 The first problem is to find where these files are stored. Thanks to u/walalauw's answer in [this reddit thread](https://old.reddit.com/r/Proxmox/comments/jj6eqz/downloading_backups/), it sounds like they are at `/var/lib/vz/dump` I head there in FileZilla, and find:
 
-![](/images/screen-shot-2023-02-06-at-7.54.09-pm.png)
+<a href="/images/screen-shot-2023-02-06-at-7.54.09-pm.png"><img src="/images/screen-shot-2023-02-06-at-7.54.09-pm.png" width="826" alt=""></a>
 
 You only need the `.zst` file, but neat freaks can grab the the `.notes` as well. It contains the text you wrote for the backup - in the previous screenshot you can see I'd written "Ready to move" for this one.
 

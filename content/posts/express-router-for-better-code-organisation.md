@@ -131,7 +131,7 @@ You can pretty much see from this code how this works. Any routes that begin wit
 
 You might have noticed how we're organising the routes - there's a "routes" folder and they're dropped in there. That's not a requirement, but it's a common convention.
 
-![](/images/screenshot-2025-04-04-at-20.42.50.png)
+<img src="/images/screenshot-2025-04-04-at-20.42.50.png" width="800" alt="">
 
 Let's have a look at one of the route files:
 

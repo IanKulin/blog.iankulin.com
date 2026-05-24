@@ -10,7 +10,7 @@ tags:
   - progress
 ---
 
-[![](/images/getty_492816326_104863.jpg)](https://www.inc.com/lolly-daskal/7-reasons-why-you-need-to-embrace-procrastination.html)
+<a href="https://www.inc.com/lolly-daskal/7-reasons-why-you-need-to-embrace-procrastination.html"><img src="/images/getty_492816326_104863.jpg" width="441" alt=""></a>
 
 In project management, and especially in programming "scope creep" refers to the common situation where what's required to regard a project as finished keeps growing. Most commonly, in the form of extra features required to be added to an application. I've especially seen this when clients see early versions of applications and it prompts them to request things that were not in the original specification.
 

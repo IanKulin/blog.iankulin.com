@@ -78,6 +78,6 @@ This operating system you're installing now _doesn't know_ it's inside a virtual
 
 While you are killing time waiting for your new OS to install, if you haven't used noVNC before, it's worth noticing the little slide in options on the left edge there.
 
-![](/images/screen-shot-2023-01-28-at-6.45.34-pm.png)
+<a href="/images/screen-shot-2023-01-28-at-6.45.34-pm.png"><img src="/images/screen-shot-2023-01-28-at-6.45.34-pm.png" width="974" alt=""></a>
 
 I most commonly use it to force this window fullscreen, but in the "Extra Keys" button might be handy if you're running a Windows OS and want the Windows key. I don't love this console window - I'd rather SSH in and use my terminal, but it's a handy tool that's always going to work if the VM is running.

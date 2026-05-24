@@ -14,11 +14,11 @@ If you've got a script, or some code to work on, and it's on a VM somewhere, you
 
 Or....
 
-![VS Code connected to a remote server over SSH](/images/screen-shot-2023-08-13-at-3.50.15-pm.png)
+<a href="/images/screen-shot-2023-08-13-at-3.50.15-pm.png"><img src="/images/screen-shot-2023-08-13-at-3.50.15-pm.png" width="900" alt="VS Code connected to a remote server over SSH"></a>
 
 This magic - of editing a files on a remote server over SSH is achieved by using a Microsoft plugin for VS Code - "[Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)"
 
-[![](/images/untitled.png)](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+<a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh"><img src="/images/untitled.png" width="900" alt=""></a>
 
 How the plugin works is that it installs a copy of [VS Code Server](https://code.visualstudio.com/docs/remote/vscode-server) on the remote machine, then connects to it over SSH.
 
@@ -29,12 +29,12 @@ The experience is pretty great, once it's installed (which I'll run through belo
 -   You need to be able to SSH into the remote machine, preferably with keys if you want a smooth experience. I've [talked about this](/ssh-key-login-on-vps/) before if that's new to you.
 -   Install the [Remote-SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) plugin
 
-![](/images/screen-shot-2023-08-13-at-3.29.05-pm.png)
+<a href="/images/screen-shot-2023-08-13-at-3.29.05-pm.png"><img src="/images/screen-shot-2023-08-13-at-3.29.05-pm.png" width="825" alt=""></a>
 
 -   Once that's done, there will be a "Remote Explorer" icon over on the left edge of the VS Code window. If you click on that, the explorer area will show a list of machines you've configured. There's a + to add a new one.
 -   If you click on that, it will ask you to enter the SSH command to access a machine.
 
-![](/images/screen-shot-2023-08-13-at-3.31.49-pm.png)
+<a href="/images/screen-shot-2023-08-13-at-3.31.49-pm.png"><img src="/images/screen-shot-2023-08-13-at-3.31.49-pm.png" width="900" alt=""></a>
 
 When you hit enter on that, it will ask you where to save the config file - I just chose the top one since that's where I usually go to edit `known_hosts` etc.
 
@@ -42,10 +42,10 @@ You can get back to this config file later by clicking on the gear icon next to 
 
 -   With that all set up, just click on the "Connect in New Window" icon next to the server you want to work on.
 
-![](/images/screen-shot-2023-08-13-at-4.59.30-pm.png)
+<a href="/images/screen-shot-2023-08-13-at-4.59.30-pm.png"><img src="/images/screen-shot-2023-08-13-at-4.59.30-pm.png" width="900" alt=""></a>
 
 -   Once the connection is established, new VS Code window will open up, with the files in the remote directory loaded ready for work. The status of the connection is shown in the bottom left corner of the window.
 
-![](/images/screen-shot-2023-08-13-at-5.04.18-pm.png)
+<a href="/images/screen-shot-2023-08-13-at-5.04.18-pm.png"><img src="/images/screen-shot-2023-08-13-at-5.04.18-pm.png" width="900" alt=""></a>
 
 If anything here didn't make sense, there's a [good tutorial on the Visual Studio Code website](https://code.visualstudio.com/docs/remote/ssh-tutorial), or if you're more of a video person, this overenthusiastic guy has a [good quick summary](https://www.youtube.com/watch?v=7kum46SFIaY).

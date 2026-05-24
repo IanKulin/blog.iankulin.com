@@ -28,7 +28,7 @@ Let's look at a few different approaches to managing styles for our components i
 
 Most times when I'm writing vanilla JS, if I'm not leveraging off [Pico](https://picocss.com/) or [Bootstrap](https://getbootstrap.com/) I have a single site-wide `styles.css` file. Obviously this is going to be an option for a React app too. We'd just link it from the index.html in the root of our folder. Job's a goodun.
 
-![](/images/screen-shot-2023-12-27-at-3.27.51-pm.png)
+<a href="/images/screen-shot-2023-12-27-at-3.27.51-pm.png"><img src="/images/screen-shot-2023-12-27-at-3.27.51-pm.png" width="1000" alt=""></a>
 
 The most common downside of this approach, that I come across, is that I change the rest of the HTML through the various iterations, but never clean up the CSS. So I get left with bits of CSS that I'm not sure if they are being used somewhere - so I'm not brave enough to delete them because my UX testing is not good enough, so those fragments just end up sitting around forever.
 
@@ -62,7 +62,7 @@ I guess the default (since it's generated like this in the create-app step) way 
 
 The component CSS file is just imported at the top of the component file.
 
-![](/images/screen-shot-2023-12-27-at-3.59.14-pm.png)
+<a href="/images/screen-shot-2023-12-27-at-3.59.14-pm.png"><img src="/images/screen-shot-2023-12-27-at-3.59.14-pm.png" width="1000" alt=""></a>
 
 If you build an app with the CSS in component.css files like this, all the CSS is combined into a single CSS file by the bundler. This raises the possibility of naming conflicts leading the hard to track down problems later. To avoid this I tend to use the component name as a class name and use that to tightly scope the CSS to avoid it bleeding out into other elements.
 

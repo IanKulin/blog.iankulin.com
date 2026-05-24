@@ -13,7 +13,7 @@ tags:
   - versioning
 ---
 
-![](/images/screen-shot-2024-04-28-at-1.08.21-pm.png)
+<a href="/images/screen-shot-2024-04-28-at-1.08.21-pm.png"><img src="/images/screen-shot-2024-04-28-at-1.08.21-pm.png" width="900" alt=""></a>
 
 It's not that long ago that [I wrote about](/my-web-app-update-process/) doing routine upgrades on containerised web apps using Forgejo as an example as I upgraded Forgejo (my git repository manager) between patch versions of 1.21, then a few days later, they dropped 7.0.0
 

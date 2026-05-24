@@ -10,7 +10,7 @@ tags:
   - swift-language
 ---
 
-![](/images/rustmemelovetriangle_297886754.jpg)
+<img src="/images/rustmemelovetriangle_297886754.jpg" width="375" alt="">
 
 It's been exciting to see some of the modern language features in Swift - it's a real joy to work in when I think back to my C++ days which was some of the last commercial programming I did.
 

@@ -22,7 +22,7 @@ Both of these things are easily catered for with containers started with docker 
 
 I've been doing monitoring by running an app ([vitals-glimpse](https://github.com/IanKulin/vitals-glimpse)) on all my services [that exposes some very basic metrics](/simple-api-endpoint-in-go/) as an API endpoint. Then a couple of instances of UptimeKuma (one on fly.io, for monitoring outside services and one inside the homelab network) monitor all those, and check an okay flag for _up_ vs _down_. If something changes status, I get an [ntfy](https://ntfy.sh/) message on my watch.
 
-![](/images/screen-shot-2024-10-20-at-4.15.57-pm.png)
+<a href="/images/screen-shot-2024-10-20-at-4.15.57-pm.png"><img src="/images/screen-shot-2024-10-20-at-4.15.57-pm.png" width="900" alt=""></a>
 
 This is a great setup, and I'll be keeping it, but I have [Graphana](https://grafana.com/) envy, so I need to be grabbing those values and saving them in a time series database. There's not much thought needed to be put into which database, it's [InfluxDB](https://www.influxdata.com/). As for pulling in all the data, there's probably a highly configurable open source solution for this, or, I could just write my own and call it [glimpse-scan](https://github.com/IanKulin/glimpse-scan).
 
@@ -65,7 +65,7 @@ services:
 
 Even if you don't need your containers to depend on one another, it might still be a good idea to add health checks like this since it makes the `docker ps` information a bit more helpful.
 
-![](/images/screen-shot-2024-10-20-at-4.41.53-pm.png)
+<a href="/images/screen-shot-2024-10-20-at-4.41.53-pm.png"><img src="/images/screen-shot-2024-10-20-at-4.41.53-pm.png" width="1000" alt=""></a>
 
 ## depends\_on
 
@@ -92,8 +92,8 @@ The next step is to tell the other container (in our example, the glimpse-scan a
 
 And, compose it up (remember the two lots of code above are together in a single `docker-compose.yml` file).
 
-![](/images/screen-shot-2024-10-20-at-4.46.43-pm.png)
+<a href="/images/screen-shot-2024-10-20-at-4.46.43-pm.png"><img src="/images/screen-shot-2024-10-20-at-4.46.43-pm.png" width="906" alt=""></a>
 
-![](/images/screen-shot-2024-10-20-at-4.46.47-pm.png)
+<a href="/images/screen-shot-2024-10-20-at-4.46.47-pm.png"><img src="/images/screen-shot-2024-10-20-at-4.46.47-pm.png" width="900" alt=""></a>
 
-![](/images/screen-shot-2024-10-20-at-4.46.52-pm.png)
+<a href="/images/screen-shot-2024-10-20-at-4.46.52-pm.png"><img src="/images/screen-shot-2024-10-20-at-4.46.52-pm.png" width="900" alt=""></a>

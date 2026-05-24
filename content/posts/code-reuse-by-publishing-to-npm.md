@@ -41,7 +41,7 @@ npm init --scope=iankulin
 
 You'll get asked the questions in a similar way as init-ing a regular node project. `index.js` is fine for your file name. You'll end up with something that looks like this in your package.json. Note that I've added `"type": "module"`, since I'm all about the ESM this week.
 
-![](/images/screen-shot-2024-08-31-at-5.07.11-pm.png)
+<a href="/images/screen-shot-2024-08-31-at-5.07.11-pm.png"><img src="/images/screen-shot-2024-08-31-at-5.07.11-pm.png" width="907" alt=""></a>
 
 Now we'd better write some code. Here's my `index.js`
 
@@ -67,7 +67,7 @@ npm publish --access public
 
 And the exciting moment - we can see our package on npm, just like a real coder.
 
-![](/images/screen-shot-2024-08-31-at-5.22.48-pm.png)
+<a href="/images/screen-shot-2024-08-31-at-5.22.48-pm.png"><img src="/images/screen-shot-2024-08-31-at-5.22.48-pm.png" width="900" alt=""></a>
 
 ### Use your package
 

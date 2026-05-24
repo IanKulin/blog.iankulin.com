@@ -22,15 +22,15 @@ Before we dive in and look at a playbook, I should probably say a couple of thin
 
 Here's the files we currently have in our working directory:
 
-![](/images/screen-shot-2023-07-04-at-2.11.16-pm.png)
+<a href="/images/screen-shot-2023-07-04-at-2.11.16-pm.png"><img src="/images/screen-shot-2023-07-04-at-2.11.16-pm.png" width="1000" alt=""></a>
 
-![](/images/screen-shot-2023-07-04-at-2.11.02-pm.png)
+<a href="/images/screen-shot-2023-07-04-at-2.11.02-pm.png"><img src="/images/screen-shot-2023-07-04-at-2.11.02-pm.png" width="1000" alt=""></a>
 
 The config file just specifies our inventory file, and the inventory file (named `hosts`) lists the servers in groups, and provides some _variables_ for the servers.
 
 Our web servers are going to need something to serve web pages. Let's write a playbook to ensure they have NGINX installed. If you don't know what [NGINX](https://www.nginx.com/) is, don't worry about it, it's a web server.
 
-![](/images/screen-shot-2023-07-04-at-2.38.27-pm.png)
+<a href="/images/screen-shot-2023-07-04-at-2.38.27-pm.png"><img src="/images/screen-shot-2023-07-04-at-2.38.27-pm.png" width="1000" alt=""></a>
 
 `- name:` - YAML files are hierarchical. Ansible YAML files are a collection of _plays_. This file only has one play, named "nginx for all web servers". All the plays will be at the top level like this starting with a single hyphen in column 1. Names are great; pick good ones and you won't need much in the way of comments. These names also appear in the output, helping anyone using the playbook to understand what's happening.
 

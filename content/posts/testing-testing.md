@@ -21,7 +21,7 @@ Although I haven't worried with any unit testing up to this point in my iOS/Swif
 
 #### Adding Tests to Existing Project
 
-![](/images/screen-shot-2022-10-03-at-9.28.39-pm.png)
+<a href="/images/screen-shot-2022-10-03-at-9.28.39-pm.png"><img src="/images/screen-shot-2022-10-03-at-9.28.39-pm.png" width="239" alt=""></a>
 
 In Xcode, with your project open, you need to add the _testing target_. `File | New | Target...` then scroll down to find the _Unit Testing Bundle_. When you add that, you'll see a new folder in the Project Navigator, and a new source file - both with the name `<app name>Tests`.
 

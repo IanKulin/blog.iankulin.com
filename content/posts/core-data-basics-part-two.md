@@ -17,7 +17,7 @@ Once again I need to acknowledge Paul Hudson's 100 Days of SwiftUI for most of m
 
 Just to remind you, here's what our working app should look like by the end of this post.
 
-![](/images/simulator-screen-shot-iphone-14-pro-2022-11-19-at-19.40.30-1.png)
+<img src="/images/simulator-screen-shot-iphone-14-pro-2022-11-19-at-19.40.30-1.png" width="433" alt="">
 
 The "Sample Data" button creates the gardens to display. The list above displays them.
 

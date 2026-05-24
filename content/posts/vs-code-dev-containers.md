@@ -19,7 +19,7 @@ One of the things I've done a bit in Visual Studio Code is using it's ability to
 
 This is straightforward in VS Code - You install the [remote ssh extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) locally, then choose `Remote-SSH: Connect to Host` in the command palette. A few seconds later, it appears that you're working locally, but actually you are working in a remote session on the server your VS Code instance is SSH'd into (a small indicator in the bottom left is the tell). You need to clone your project from git since you're working in the server's file system, and there's some complexity with extensions since you're sort of working in a new VS Code instance, but apart from that it feels the same as working locally.
 
-![Remote SSH VS Code architecture from https://code.visualstudio.com/docs/remote/ssh](/images/architecture-ssh.png)
+<img src="/images/architecture-ssh.png" width="968" alt="Remote SSH VS Code architecture from https://code.visualstudio.com/docs/remote/ssh">
 
 The official docs for [Remote Development using SSH are here.](https://code.visualstudio.com/docs/remote/ssh)
 
@@ -33,7 +33,7 @@ But what if you don't have the ability to spin up an environment on your homelab
 
 Working in a Dev Container is basically the same as remoting into another server with VS Code, but in this case the other server is a container spun up in Docker.
 
-![VS Code Dev Container architecture. From https://code.visualstudio.com/docs/devcontainers/containers](/images/architecture-containers.png)
+<img src="/images/architecture-containers.png" width="968" alt="VS Code Dev Container architecture. From https://code.visualstudio.com/docs/devcontainers/containers">
 
 There's a couple of important differences from working on a remote server:
 
@@ -116,7 +116,7 @@ The big clue that you're in the dev container now is the blue message in the bot
 
 ### Extensions
 
-![](/images/screenshot-2026-01-09-at-18.05.45.png)
+<img src="/images/screenshot-2026-01-09-at-18.05.45.png" width="427" alt="">
 
 If you have a look at your VS Code extensions while working in this dev container, you'll see that some are still installed, but others are now greyed out. Some extensions only effect the UI ("UI Extensions" - listed under "Local - Installed") so they live in the local VS Code, others have functionality that needs to run in the workspace environment so they ("Workspace extensions") need to live in the VS Code server part.
 

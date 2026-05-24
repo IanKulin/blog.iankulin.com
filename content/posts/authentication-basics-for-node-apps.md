@@ -96,7 +96,7 @@ There's no simple way to test the server code above since regular browsers don't
 
 All of these tools allow you to specify the URL, the type of request, and any header or body to go with it. They can make the call to the server and show the results.
 
-![](/images/brunoexample.png)
+<img src="/images/brunoexample.png" width="1000" alt="">
 
 ### Setting a Cookie
 

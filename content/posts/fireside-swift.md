@@ -13,7 +13,7 @@ tags:
 
 One of the ways I keep engaged in a topic is to listen to podcasts about it. Currently [Fireside Swift](https://podcasts.apple.com/au/podcast/fireside-swift/id1269435221) is one of the Swift/SwiftUI/iOS Development podcasts that I have in the rotation.
 
-![](/images/firesideswift.jpg)
+<img src="/images/firesideswift.jpg" width="283" alt="">
 
 The blurb for the show is:
 

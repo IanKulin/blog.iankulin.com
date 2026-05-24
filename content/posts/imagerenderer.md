@@ -45,7 +45,7 @@ struct TicketView: View {
 
 Here it is, with a couple of buttons underneath:
 
-![](/images/simulator-screen-shot-iphone-14-pro-2022-12-05-at-19.56.18.png)
+<img src="/images/simulator-screen-shot-iphone-14-pro-2022-12-05-at-19.56.18.png" width="209" alt="">
 
 I've assigned the view to a property of my content view, then displayed it along with the buttons. The first button saves the image to an @State and the second one displays it if it exists.
 
@@ -102,4 +102,4 @@ Button("Save Image") {
 
 Then it can just be inserted in the view same as any bitmap image by hitting the Toggle Image button.
 
-![](/images/simulator-screen-shot-iphone-14-pro-2022-12-05-at-20.01.49.png)
+<img src="/images/simulator-screen-shot-iphone-14-pro-2022-12-05-at-20.01.49.png" width="472" alt="">

@@ -18,7 +18,7 @@ It's a very Apple-thinking thing to be learning about making beautiful and intui
 
 An _implicit_ animation in SwiftUI is when you add a ._animation_() modifier to a view. It needs to be bound to the value that's changing so the framework knows to animate when that value changes, and the nature of the change.
 
-![](/images/screen-shot-2022-09-18-at-10.21.30-am.png)
+<a href="/images/screen-shot-2022-09-18-at-10.21.30-am.png"><img src="/images/screen-shot-2022-09-18-at-10.21.30-am.png" width="956" alt=""></a>
 
 https://videopress.com/v/ItGiKMzz?resizeToParent=true&cover=true&preloadContent=metadata&useAverageColor=true
 

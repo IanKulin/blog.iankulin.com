@@ -24,11 +24,11 @@ My routine setup now is that everything runs in docker. There's a directory unde
 
 In the data directory, I want to have sub-directories for each virtual host, then inside them a `public` directory which will hold the files to be served. This will allow me to keep config or other files for each virtual host in the directory above `public` which should not be accessible. That seems like a good arrangement so I can manage each virtual host in git and pull the sites down from a repository into their directory without things like the `.gitignore` being exposed to the world.
 
-![](/images/screen-shot-2024-04-20-at-8.15.14-pm.png)
+<a href="/images/screen-shot-2024-04-20-at-8.15.14-pm.png"><img src="/images/screen-shot-2024-04-20-at-8.15.14-pm.png" width="900" alt=""></a>
 
 I'm running Tailscale on this VM, so it can be referred to by any of the addresses `100.124.218.26`, `192.168.100.35` or `ct357-sws`. These are going to be stand- ins for the different virtual host names. The index.html files you can see are all different; I've edited them so each one just outputs the name of the directory it is being served from. eg:
 
-![](/images/screen-shot-2024-04-20-at-9.20.26-pm.png)
+<a href="/images/screen-shot-2024-04-20-at-9.20.26-pm.png"><img src="/images/screen-shot-2024-04-20-at-9.20.26-pm.png" width="900" alt=""></a>
 
 ### Docker
 

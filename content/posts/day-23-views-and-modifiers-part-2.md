@@ -11,7 +11,7 @@ tags:
   - swiftui
 ---
 
-![](/images/psm_v10_d562_the_hindoo_earth-2.jpg)
+<img src="/images/psm_v10_d562_the_hindoo_earth-2.jpg" width="484" alt="">
 
 Although "immutable" the view structs can contain some control statements such as if/then and for loops. So this is quite legal, and useful.
 

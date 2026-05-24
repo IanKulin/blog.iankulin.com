@@ -12,7 +12,7 @@ tags:
   - xcode14
 ---
 
-![](/images/screen-shot-2022-10-09-at-2.00.26-pm.png)
+<a href="/images/screen-shot-2022-10-09-at-2.00.26-pm.png"><img src="/images/screen-shot-2022-10-09-at-2.00.26-pm.png" width="269" alt=""></a>
 
 Another few coding challenges at the end of a tutorial app in the [100 Days of SwiftUI](https://www.hackingwithswift.com/books/ios-swiftui/moonshot-wrap-up) course. The app is a sort of information app - composed of navigation views going down into more detail about the Apollo space missions. The most exciting revelation for me was how straightforward it is to pull JSON into your apps data structures.
 

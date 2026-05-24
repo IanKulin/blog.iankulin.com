@@ -75,13 +75,13 @@ This app is a simple demo I wrote for an earlier blog post about using the Expre
 
 The Customer and Order detail views have delete links, and a deletion of a customer should cascade to delete that customer's orders.
 
-![](/images/screenshot-2025-04-15-at-11.50.32-1.png)
+<img src="/images/screenshot-2025-04-15-at-11.50.32-1.png" width="946" alt="">
 
-![](/images/screenshot-2025-04-15-at-11.50.22-1.png)
+<img src="/images/screenshot-2025-04-15-at-11.50.22-1.png" width="999" alt="">
 
 ![](/images/screenshot-2025-04-15-at-10.22.34-2.png)
 
-![](/images/screenshot-2025-04-12-at-13.12.28-1.png)
+<img src="/images/screenshot-2025-04-12-at-13.12.28-1.png" width="861" alt="">
 
 ### Installing Cypress
 
@@ -283,11 +283,11 @@ Once that's going we can start Cypress. Since the first terminal is running my n
 
 We start Cypress in the new terminal with `npx cypress open` but the magic does not happen in the terminal, this thing pops up:
 
-![](/images/screenshot-2025-04-15-at-16.09.06.png)
+<img src="/images/screenshot-2025-04-15-at-16.09.06.png" width="900" alt="">
 
 We're doing E2E testing, so select that.
 
-![](/images/screenshot-2025-04-15-at-16.09.16.png)
+<img src="/images/screenshot-2025-04-15-at-16.09.16.png" width="900" alt="">
 
 I'm in a Chrome mood today, so next we see this:
 
@@ -299,11 +299,11 @@ I've only got one test file - `home.cy.js`, so I click that. The tests are liste
 
 If we click on a test, the details for it open up, and a screenshot of the application state at the time of that test is displayed.
 
-![](/images/screenshot-2025-04-15-at-17.16.52.png)
+<img src="/images/screenshot-2025-04-15-at-17.16.52.png" width="900" alt="">
 
 The most common debugging problem I've run into is when I didn't write the selection correctly (and didn't use a data- attribute). These are easily checked in this view by hovering over the one we're interested in - the element that Cypress used in this step will be highlighted.
 
-![](/images/screenshot-2025-04-15-at-17.20.34.png)
+<img src="/images/screenshot-2025-04-15-at-17.20.34.png" width="900" alt="">
 
 So, how does a failed test look. I can create that in this test suit just by running the tests again. It won't be able to delete orders or customers it deleted in the earlier run.
 

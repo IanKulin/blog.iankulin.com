@@ -20,7 +20,7 @@ When I was writing [the post about looking for the sudo attempt](/sudo-incident-
 
 That's what's going on there. SSH has a timeout value of about a minute. I'd also guess those kex\_exchange\_identification messages are suspicious as well. I thought I'd google one of the IP addreses:
 
-![](/images/screen-shot-2023-01-28-at-12.18.14-pm.png)
+<a href="/images/screen-shot-2023-01-28-at-12.18.14-pm.png"><img src="/images/screen-shot-2023-01-28-at-12.18.14-pm.png" width="895" alt=""></a>
 
 Oh, so it's China, and multiple people are reporting SSH brute force attacks:
 

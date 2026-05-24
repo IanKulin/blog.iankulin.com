@@ -21,9 +21,9 @@ My first idea for using `eval()`was to write a calculator. Pressing the buttons 
 
 To ensure I'm growing my CSS skills, I also decided to steal the design of the iPhone calculator. That's the first one below. The second is my current web app version.
 
-![](/images/img_3911.png)
+<img src="/images/img_3911.png" width="577" alt="">
 
-![](/images/img_02a92dbcfb55-1.jpeg)
+<img src="/images/img_02a92dbcfb55-1.jpeg" width="577" alt="">
 
 Since the calculator display is used for two asynchronous purposes - showing the calculation string as it's being built, and showing a calculation result when we press equals, I've kept a state variable `inputState` which is true when we're building the string, and false when we're displaying a result. `btnAddClick()` is attached to all the buttons used to build the string - `0123456789()-+/*`
 

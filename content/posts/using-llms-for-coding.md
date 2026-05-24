@@ -40,7 +40,7 @@ It's not all rainbows and unicorns though - there's a few valid points that AI s
 
 ### I, for one, welcome our new robot overlords
 
-![](/images/hailants-1.jpg)
+<img src="/images/hailants-1.jpg" width="512" alt="">
 
 In an industry particularly known for excessive hype-cycles, it's important to critically examine what we're doing, but for the moment, I've landed on the position that these are good tools for me to use. Here's my thinking.
 

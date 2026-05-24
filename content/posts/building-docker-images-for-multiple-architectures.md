@@ -30,7 +30,7 @@ docker push iankulin/mdserver:latest
 
 So I'd build two different versions, and use the tags to separate them. In the registry it'd look like this:
 
-![](/images/screen-shot-2023-10-29-at-3.36.45-pm.png)
+<a href="/images/screen-shot-2023-10-29-at-3.36.45-pm.png"><img src="/images/screen-shot-2023-10-29-at-3.36.45-pm.png" width="900" alt=""></a>
 
 But the big official images, for instance Node, have a long list of architectures associated with each tag - these are [multi-platform images](https://docs.docker.com/build/building/multi-platform/).
 
@@ -50,7 +50,7 @@ docker buildx build --push \
 
 Then 113 seconds later (thank you Apple silicon), this showed up in my Docker Hub:
 
-![](/images/screen-shot-2023-10-29-at-3.47.50-pm.png)
+<a href="/images/screen-shot-2023-10-29-at-3.47.50-pm.png"><img src="/images/screen-shot-2023-10-29-at-3.47.50-pm.png" width="900" alt=""></a>
 
 Lovely!
 
@@ -70,4 +70,4 @@ In any case, this may still work, but at the time of writing, the `NPM install` 
 
 With all eight cores pegged at 100% on an M1 MacBook:
 
-![](/images/screen-shot-2023-10-30-at-7.05.19-am.png)
+<a href="/images/screen-shot-2023-10-30-at-7.05.19-am.png"><img src="/images/screen-shot-2023-10-30-at-7.05.19-am.png" width="1000" alt=""></a>

@@ -24,4 +24,4 @@ All I need to do at the Porkbun end is go into Domain Management, and open up th
 
 And that's enough that a few minutes later, typing the domain address into a web browser pulls up the test page from the Nginx web server running in a container on my VPS.
 
-![](/images/screen-shot-2023-04-21-at-9.35.48-am.png)
+<a href="/images/screen-shot-2023-04-21-at-9.35.48-am.png"><img src="/images/screen-shot-2023-04-21-at-9.35.48-am.png" width="1000" alt=""></a>

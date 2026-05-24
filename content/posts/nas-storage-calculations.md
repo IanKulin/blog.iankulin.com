@@ -61,7 +61,7 @@ This second-hand (about ten years old) unit was on "buy now" for $416, the four 
 
 Thinking about likely points of failure with the eleven year old NAS (if I used the DS412j) made me wonder if a unit failure might be higher on the probability list than a second-hand drive failure. The answer is who knows? - probably both events are quite unlikely. However I have some redundancy built in to the drives, but a single point of failure in the NAS unit. It made me wonder what a new 4 bay Synology costs, and the answer is not much more.
 
-![](/images/27459.jpg)
+<img src="/images/27459.jpg" width="229" alt="">
 
 This DS420j is again 4 bays, and like the older 4 nay unit it's hot-swapable. This means that in the event of a drive failure, you can leave the NAS running, remove the faulty drive and insert a new one. The unit will then (slowly) rebuild the RAID array, but while you are removing a drive and rebuilding the RAID the system is still fully operational.
 
@@ -73,7 +73,7 @@ Apart from the peace of mind of running a newer unit, there's a big difference i
 
 RAID 6 - where I'm installing 4 x 6TB drives, and only ending up with 12TB of usable space is very conservative - and I was doing that because I was using the second hand drives. What if I bought cheap, but still brand name HDDs, but only three of them and configured as RAID 5 so I'd still get 12TB of usable disk, and a single drive can fail without affecting my data?
 
-![](/images/screen-shot-2023-03-10-at-5.40.03-pm.png)
+<a href="/images/screen-shot-2023-03-10-at-5.40.03-pm.png"><img src="/images/screen-shot-2023-03-10-at-5.40.03-pm.png" width="239" alt=""></a>
 
 There are no three bay Synologys, so I'd use the same NAS as above - the DS420j. I can buy three Seagate Skyhawk 6TB disks for $660, so the total comes to $1100 or $92/TB - quite a bit more than four of the older drives in RAID6. With less drives spinning, we can probably assume a total power consumption of around 15W - 1.25W/TB
 

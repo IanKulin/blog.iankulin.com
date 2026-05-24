@@ -12,7 +12,7 @@ tags:
   - volumes
 ---
 
-[![](/images/friedman-moe-lost-6.jpg)](https://placesjournal.org/article/all-is-lost-notes-on-broken-world-design/)
+<a href="https://placesjournal.org/article/all-is-lost-notes-on-broken-world-design/"><img src="/images/friedman-moe-lost-6.jpg" width="600" alt=""></a>
 
 When I started with Docker, the docs seemed to suggest that using Docker volumes was a good thing. With a Docker volume, you just create the volume and Docker manages the rest. You don't have to worry about where it is, or really ever think about it.
 
@@ -39,7 +39,7 @@ I don't love this for a couple of reasons. The first is that I don't know how to
 
 For example, here's my Jellyfin directory. The Jellyfin docker container needs two 'volumes' - config and cache:
 
-![](/images/screen-shot-2024-07-21-at-2.57.34-pm.png)
+<a href="/images/screen-shot-2024-07-21-at-2.57.34-pm.png"><img src="/images/screen-shot-2024-07-21-at-2.57.34-pm.png" width="907" alt=""></a>
 
 So if I ever needed to move this somewhere, I could `docker compose down`, then `rsync` the whole directory somewhere, then `docker compose up` `-d`, and I'd be in business.
 
@@ -80,7 +80,7 @@ As long as the container is stopped when you access the files, I can't see why w
 
 To find the actual location of the data in the host system, use the docker inspect command on the running container. You'll get a bunch of JSON. About a third up from the bottom of that there'll be a section called "Mounts" that will have the real location for each volume. (if you're looking at a "Mounts" section that doesn't have the "Source" line, scroll down a bit).
 
-![](/images/screen-shot-2024-07-21-at-3.27.33-pm.png)
+<a href="/images/screen-shot-2024-07-21-at-3.27.33-pm.png"><img src="/images/screen-shot-2024-07-21-at-3.27.33-pm.png" width="1000" alt=""></a>
 
 ### Copying
 

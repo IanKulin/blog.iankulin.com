@@ -14,7 +14,7 @@ tags:
   - web-dev
 ---
 
-![](/images/img_7071-1.png)
+<img src="/images/img_7071-1.png" width="640" alt="">
 
 I've been really pleased with [Gogs](/tags/gogs/) - it's lightweight, was simple to spin up, and has worked perfectly. But then this morning on Mastodon, there's a [post from @Codeberg.org](https://mastodon.social/@Codeberg@social.anoxinon.de/111471407276450348) describing a security vulnerability in their Git hosting project Forgejo. This issue also apparently affects Gitea and Gogs - what's up with that?
 

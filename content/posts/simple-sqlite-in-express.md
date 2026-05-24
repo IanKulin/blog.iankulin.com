@@ -95,7 +95,7 @@ So this code processes a request to our server - something like `http://localhos
 
 And when run in Bruno:
 
-![](/images/screen-shot-2023-12-16-at-10.24.54-am.png)
+<a href="/images/screen-shot-2023-12-16-at-10.24.54-am.png"><img src="/images/screen-shot-2023-12-16-at-10.24.54-am.png" width="1000" alt=""></a>
 
 #### Read
 
@@ -107,7 +107,7 @@ There's a couple of reads we can do, one where all the data is returned, and one
 
 Which looks like this in Bruno:
 
-![](/images/screen-shot-2023-12-16-at-10.35.56-am.png)
+<a href="/images/screen-shot-2023-12-16-at-10.35.56-am.png"><img src="/images/screen-shot-2023-12-16-at-10.35.56-am.png" width="1000" alt=""></a>
 
 Or if we just want one in particular, we'll pass the id in the URL.
 
@@ -115,7 +115,7 @@ Or if we just want one in particular, we'll pass the id in the URL.
 // endpoint to get a single user from the users table in the database// expects an id in the URLapp.get('/user/:id', (req, res) => {  const id = req.params.id;  const sql = `SELECT rowid, * FROM users WHERE rowid = ${id}`;  db.get(sql, (err, row) => {    if (err) {      res.status(500).send(err.message);    } else {      res.status(200).send(row);    }  });});
 ```
 
-![](/images/screen-shot-2023-12-16-at-10.55.25-am.png)
+<a href="/images/screen-shot-2023-12-16-at-10.55.25-am.png"><img src="/images/screen-shot-2023-12-16-at-10.55.25-am.png" width="1000" alt=""></a>
 
 #### Update
 

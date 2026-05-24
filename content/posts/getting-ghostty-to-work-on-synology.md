@@ -51,17 +51,17 @@ I downloaded [iTerm2](https://iterm2.com/index.html) as a likely competitor to G
 
 If you open your terminal, and type `echo $TERM` it will tell you the `TERM` value. This is used by the shell to know how to interpret the inputs it's receiving (for example, what to do when the user wants to `clear` the screen). Unless you are using Ghostty, it will almost certainly be set to `xterm-256color`
 
-![](/images/screenshot-2025-07-26-at-12.03.36.png)
+<img src="/images/screenshot-2025-07-26-at-12.03.36.png" width="808" alt="">
 
 In Ghostty, it will say `xterm-ghostty`
 
-![](/images/screenshot-2025-07-26-at-12.04.55.png)
+<img src="/images/screenshot-2025-07-26-at-12.04.55.png" width="772" alt="">
 
 The reason I don't have this same problem with Ghostty on my MacBook or the Debian base hosts is that those operating systems have the Ghostty 'terminfo' entries in them, whereas apparently Synology does not (or not yet anyway).
 
 But that does that explain why iTerm2 works on Synology. Let's look at it's TERM value.
 
-![](/images/screenshot-2025-07-26-at-12.12.45.png)
+<img src="/images/screenshot-2025-07-26-at-12.12.45.png" width="882" alt="">
 
 Ah, so it's just claiming to be xterm-256color the same as the mac terminal emulator - which all hosts will know since it's an ancient thing. (xterm is the terminal from the X-Windows systems of the 1980's).
 

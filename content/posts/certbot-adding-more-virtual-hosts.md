@@ -19,7 +19,7 @@ When I googled around to find out, I didn't find anything - which is usually a s
 
 Since I already had Certbot installed, I just ran `sudo certbot --nginx`
 
-![](/images/screen-shot-2023-09-03-at-10.03.19-am.png)
+<a href="/images/screen-shot-2023-09-03-at-10.03.19-am.png"><img src="/images/screen-shot-2023-09-03-at-10.03.19-am.png" width="900" alt=""></a>
 
 It's probably worth explaining at this point that Certbot does not obtain separate certificates for each domain (which is what I'd been doing when I was doing this manually), but instead grabs a single certificate that includes all the domains, and stores it under the the first domain - in the case above, for agnet.
 

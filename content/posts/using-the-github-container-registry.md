@@ -33,11 +33,11 @@ Generating the PATs is done in:
 
 If you have MFA set up (you should) it will ask for that. Then give it a 'Note' and the permissions you want for "Packages" - Container images are stored in the "Packages" section of GitHub (where it's also possible to store other artifacts such as your private NPM packages). In the example below we've asked for Read/Write/Delete access.
 
-![](/images/screen-shot-2024-10-06-at-11.49.54-am.png)
+<a href="/images/screen-shot-2024-10-06-at-11.49.54-am.png"><img src="/images/screen-shot-2024-10-06-at-11.49.54-am.png" width="900" alt=""></a>
 
 Once that's completed, you'll be shown a list of your existing PATs, plus the new one you've just generated. This is the only time it will ever be displayed in GitHub, so you need to copy it out to where you need it.
 
-![](/images/screen-shot-2024-10-06-at-11.50.11-am.png)
+<a href="/images/screen-shot-2024-10-06-at-11.50.11-am.png"><img src="/images/screen-shot-2024-10-06-at-11.50.11-am.png" width="900" alt=""></a>
 
 ## Logging in
 
@@ -65,7 +65,7 @@ docker push ghcr.io/<github user name>/<container name>:<tag>
 
 If you head to GitHub, and go into "Packages" instead of "Repositories", your container will be there.
 
-![](/images/screen-shot-2024-10-06-at-12.24.10-pm.png)
+<a href="/images/screen-shot-2024-10-06-at-12.24.10-pm.png"><img src="/images/screen-shot-2024-10-06-at-12.24.10-pm.png" width="900" alt=""></a>
 
 ## Pulling
 
@@ -75,4 +75,4 @@ Pulling the container is going to be even simpler, log in to the registry with t
 docker pull ghcr.io/<github user name>/<container name>:<tag>
 ```
 
-![](/images/screen-shot-2024-10-06-at-12.29.33-pm.png)
+<a href="/images/screen-shot-2024-10-06-at-12.29.33-pm.png"><img src="/images/screen-shot-2024-10-06-at-12.29.33-pm.png" width="900" alt=""></a>

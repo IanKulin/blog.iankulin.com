@@ -37,7 +37,7 @@ Section {
 .disabled(title.isEmpty || author.isEmpty || genre.isEmpty)
 ```
 
-[![](/images/github-mark-120px-plus.png)](https://github.com/IanKulin/Bookworm/commit/989942b228f96540f1f46e04e91e4816f9072a38)
+<a href="https://github.com/IanKulin/Bookworm/commit/989942b228f96540f1f46e04e91e4816f9072a38"><img src="/images/github-mark-120px-plus.png" width="34" alt=""></a>
 
 > _Modify `ContentView` so that books rated as 1 star are highlighted somehow, such as having their name shown in red._
 
@@ -45,7 +45,7 @@ Straightforward, with use of the ternary operator.
 
 ![](/images/screen-shot-2022-11-04-at-6.17.12-pm.jpg)
 
-[![](/images/github-mark-120px-plus-1.png)](https://github.com/IanKulin/Bookworm/commit/cc81d29a799e7bb97e9813c4ad17e66a64361e6a)
+<a href="https://github.com/IanKulin/Bookworm/commit/cc81d29a799e7bb97e9813c4ad17e66a64361e6a"><img src="/images/github-mark-120px-plus-1.png" width="35" alt=""></a>
 
 > _Add a new “date” attribute to the Book entity, assigning `Date.now` to it so it gets the current date and time, then format that nicely somewhere in `DetailView`._
 
@@ -67,4 +67,4 @@ Text(book.review ?? "No review")
     .padding()
 ```
 
-[![](/images/github-mark-120px-plus-2.png)](https://github.com/IanKulin/Bookworm/commit/9ec21d4d827b1ae1799c34d65b9d2366e5c4ce36)
+<a href="https://github.com/IanKulin/Bookworm/commit/9ec21d4d827b1ae1799c34d65b9d2366e5c4ce36"><img src="/images/github-mark-120px-plus-2.png" width="36" alt=""></a>

@@ -28,7 +28,7 @@ The following day when I opened up Insomnia, it asked to upgrade and I said no, 
 
 Luckily, Isaac also suggests a solution - [Bruno](https://www.usebruno.com/). This is a 1K star FOSS project by [helloanoop](https://github.com/helloanoop). There are Mac, Windows and Linux clients, as well as a CLI and VSCode plugins. One of it's selling points (apart from it's not Postman or Insomnia) is that the collections of requests are saved in very simple human readable text (a language called _bru_) so it's straightforward and sensible to commit them to source control along with your code.
 
-![](/images/screen-shot-2023-10-01-at-6.14.09-pm.png)
+<a href="/images/screen-shot-2023-10-01-at-6.14.09-pm.png"><img src="/images/screen-shot-2023-10-01-at-6.14.09-pm.png" width="900" alt=""></a>
 
 This video from Anoop (with a very clickbait-y title) does a good job of explaining his project.
 

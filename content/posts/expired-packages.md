@@ -17,7 +17,7 @@ A recent example of this was the particles.js library. The card preceding the vi
 
 I got it going eventually, but only by starting with a new create-react app with the particles template then slowly adding back my previous code from git a bit at a time and fixing errors as they came up. The whole process from watching the video to having the project working as per the video was probably four or five hours. Was this a good investment of learning time? Probably not.
 
-![](/images/img_3996.jpg)
+<img src="/images/img_3996.jpg" width="600" alt="">
 
 Straight out of that experience, Andrei advises that the next section uses a deprecated api, that he's persisting with because he wants to teach REST apis. In order to make it work, we need to downgrade the react-scripts version which he assures will not cause any problems. Naturally there is a list of critical warnings, and the server can't start because of a heap of errors.
 

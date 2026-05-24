@@ -46,7 +46,7 @@ docker save -o jellyfin.tar jellyfin/jellyfin
 
 Only because it actually is a zipped up file. You can probably guess what's going to be in it:
 
-![](/images/screen-shot-2024-11-16-at-8.02.28-pm.png)
+<a href="/images/screen-shot-2024-11-16-at-8.02.28-pm.png"><img src="/images/screen-shot-2024-11-16-at-8.02.28-pm.png" width="1000" alt=""></a>
 
 Yep - a folder of layer binaries named with their sha256s, and a manifest file saying how to put it together.
 

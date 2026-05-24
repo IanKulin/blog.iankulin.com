@@ -18,7 +18,7 @@ When you've successfully got Nginx running in a Docker container, AND got your [
 
 A couple of posts ago, I [mentioned](/adding-a-domain-name-to-a-vps/) that it was simpler to let Porkbun be the authoritative nameserver for a domain. Part of the reason for that is that if we do that, Porkbun had a button you can press which connects to LetsEncrypt and generates the certificates for you. This usually takes an hour or so, then you'll be able to download the bundle from that same page.
 
-![](/images/screen-shot-2023-04-21-at-2.30.58-pm.png)
+<a href="/images/screen-shot-2023-04-21-at-2.30.58-pm.png"><img src="/images/screen-shot-2023-04-21-at-2.30.58-pm.png" width="913" alt=""></a>
 
 In order for the SSL to work, we're going to have to make a couple of files available to Nginx - `fullchain.pem` and `private.key.pem`. So there's our first gotcha - we don't have a `fullchain.pem`, so we have to build it. To do this, we just combine the domain certificate and the intermediate certificate. On the mac, I did this:
 
@@ -102,7 +102,7 @@ This is mostly pretty decodable just by looking at it, but there's a couple of t
 
 So now that's in place, and I've got a skeleton of an index.html file stored at `/home/ian/iankulin.com/www` I just enter `sudo docker compose up -d` in the directory where my `docker-compose.yaml` file is, and I should be able to navigate to `http**s**://iankulin.com` and get a webpage with a padlock in the corner.
 
-![](/images/screen-shot-2023-04-21-at-1.48.00-pm.png)
+<a href="/images/screen-shot-2023-04-21-at-1.48.00-pm.png"><img src="/images/screen-shot-2023-04-21-at-1.48.00-pm.png" width="859" alt=""></a>
 
 ### Success
 

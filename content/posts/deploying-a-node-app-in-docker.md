@@ -13,7 +13,7 @@ tags:
   - web-dev
 ---
 
-[![](/images/cargo_ship_puerto_cortes.jpg)](https://en.wikipedia.org/wiki/Cargo_ship#/media/File:Cargo_Ship_Puerto_Cortes.jpg)
+<a href="https://en.wikipedia.org/wiki/Cargo_ship#/media/File:Cargo_Ship_Puerto_Cortes.jpg"><img src="/images/cargo_ship_puerto_cortes.jpg" width="900" alt=""></a>
 
 When I wrote the install instructions for mdserver (little Markdown server Node app) on it's [github page](https://github.com/IanKulin/mdserver) it was something like:
 
@@ -121,7 +121,7 @@ Usually the tag will be a version number, or perhaps `:latest`. The build comman
 
 This will load the .dockerignore then step through the Dockerfile to build our image. The image is stored away by Docker - we don't need to worry about where. You can get the list at the command line with `docker images`, or if you're running Docker Desktop, on the 'images' tab.
 
-![](/images/screen-shot-2023-10-28-at-12.36.22-pm.png)
+<a href="/images/screen-shot-2023-10-28-at-12.36.22-pm.png"><img src="/images/screen-shot-2023-10-28-at-12.36.22-pm.png" width="900" alt=""></a>
 
 I have skipped quite a bit of detail about the build step and options. For example I sometimes use the `--platform` flag to specify `linux/amd64` if I'm testing on one of my homelab VMs rather than `linux/arm64` if I'm running the container on the mac. Also, we don't have to just build from the local machine, it's just as straightforward to build from your GitHub repo as part of a CI/CD system. I'm not planning to go into any of that today, except I will force it to build for x86 since it is my plan to test on the homelab VM's.
 
@@ -135,13 +135,13 @@ In order to push an image to a registry, we need to be signed in to it. As I'm u
 
 `docker push iankulin/mdserver:latest`
 
-![](/images/screen-shot-2023-10-28-at-2.12.15-pm.png)
+<a href="/images/screen-shot-2023-10-28-at-2.12.15-pm.png"><img src="/images/screen-shot-2023-10-28-at-2.12.15-pm.png" width="900" alt=""></a>
 
 In this output, you can see some of the efficiencies of the layers - docker recognises (from the UUIDs) that the Alpine and Node layers are ones that I pulled down from it when I was creating the image locally, so it doesn't send them back to Docker Hub.
 
 If we go to Docker Hub and search for mdserver, we should be able to find it now available to the public.
 
-![](/images/screen-shot-2023-10-28-at-2.10.44-pm.png)
+<a href="/images/screen-shot-2023-10-28-at-2.10.44-pm.png"><img src="/images/screen-shot-2023-10-28-at-2.10.44-pm.png" width="900" alt=""></a>
 
 ### Using the image
 

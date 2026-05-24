@@ -11,7 +11,7 @@ tags:
   - swift-language
 ---
 
-![](/images/img_2768.png)
+<img src="/images/img_2768.png" width="133" alt="">
 
 Here’s a neat thing I haven’t seen before. Other languages I’ve worked in haven’t had a neat way to break out of a set of nested loops to a particular loop. It’s not an issue that comes up a lot, but when it has I’ve solved it by creating a continue flag and having that as the first condition of each loop.  
   

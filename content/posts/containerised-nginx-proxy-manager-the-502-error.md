@@ -13,7 +13,7 @@ tags:
   - possibly-useful
 ---
 
-![](/images/screen-shot-2024-08-24-at-6.46.49-am.png)
+<a href="/images/screen-shot-2024-08-24-at-6.46.49-am.png"><img src="/images/screen-shot-2024-08-24-at-6.46.49-am.png" width="695" alt=""></a>
 
 If you're used to running NGINX Proxy Manager in front of your web apps, and switch to running it in a container, you're going to need to learn a little about Docker networks to get everything connected. If you just do your regular setup, and direct the proxy for an address to `127.0.0.1:<some port>`, it won't exist, and you'll visit your page to find the "502 Bad Gateway openresty" message.
 
@@ -25,7 +25,7 @@ The fix for this is pretty simple, but first let's look at the exception.
 
 Usually the very first proxy I add in NPM is to it's own admin interface on port 81. Since this _is_ inside the NPM container, the setup looks exactly the same as if you were running on the host, and may well be why you were lulled into a false sense of familiarity.
 
-![](/images/screen-shot-2024-08-24-at-9.14.55-am.png)
+<a href="/images/screen-shot-2024-08-24-at-9.14.55-am.png"><img src="/images/screen-shot-2024-08-24-at-9.14.55-am.png" width="900" alt=""></a>
 
 This is a little bit confusing, since we can also manually access NPM from `http://127.0.0.1:81` on the host if we've exposed port 81 in our compose file, but it's actually a different route. In fact, we could hide port 81 from the host, and the setting above will still work.
 
@@ -47,11 +47,11 @@ services:
 
 So if we try to access port 81 from the host, it won't be answering.
 
-![](/images/screen-shot-2024-08-24-at-9.25.39-am.png)
+<a href="/images/screen-shot-2024-08-24-at-9.25.39-am.png"><img src="/images/screen-shot-2024-08-24-at-9.25.39-am.png" width="1000" alt=""></a>
 
 But inside the container, 127.0.0.1 refers to itself, so if we open a shell into the container, the URL http://127.0.0.1:81 refers to something that exists, from there.
 
-![](/images/screen-shot-2024-08-24-at-9.30.49-am.png)
+<a href="/images/screen-shot-2024-08-24-at-9.30.49-am.png"><img src="/images/screen-shot-2024-08-24-at-9.30.49-am.png" width="1000" alt=""></a>
 
 ### Getting Out
 
@@ -61,7 +61,7 @@ Turns out this is simple thanks to the magic of Docker networks.
 
 You can get a fair way with Docker without really thinking or knowing about [Docker networks](https://docs.docker.com/engine/network/), and I'm really only covering the very basics here - you should probably invest some time in learning about this sometime. Meanwhile, lets run the `docker network ls` command and see what networks we've got.
 
-![](/images/screen-shot-2024-08-24-at-9.41.33-am.png)
+<a href="/images/screen-shot-2024-08-24-at-9.41.33-am.png"><img src="/images/screen-shot-2024-08-24-at-9.41.33-am.png" width="1000" alt=""></a>
 
 That network `nginx-proxy-manager_default` is the one we're interested in. Its name is just the container name with "\_default" added on the end. What we need to do is just make sure the second container is included in that same network. That's a matter of declaring the external network with that name, and including it in our service definition. I'm going to use an NGINX server in my example, but it could be anything. Here's the compose for the second container.
 

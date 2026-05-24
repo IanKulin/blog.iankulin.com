@@ -28,7 +28,7 @@ mount.nfs: access denied by server while mounting 192.168.100.32:/volume1/syncth
 
 This is just part of the security nature of the LXC containter getting in our way. We can edit the `.conf` for the container, or just change it in the container options via the web GUI and restart the container.
 
-![](/images/screen-shot-2023-04-18-at-7.19.41-pm.png)
+<a href="/images/screen-shot-2023-04-18-at-7.19.41-pm.png"><img src="/images/screen-shot-2023-04-18-at-7.19.41-pm.png" width="800" alt=""></a>
 
 ![](/images/screen-shot-2023-04-18-at-7.49.05-pm.png)
 

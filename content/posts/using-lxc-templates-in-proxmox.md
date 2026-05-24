@@ -48,7 +48,7 @@ Once this is all done, we are ready to convert this container into a template. S
 
 The process of using our new template is called cloning. Right click on the template in Proxmox, and choose clone. You'll be presented with a dialogue to give it a number, choose a host name, select the clone type (you want a 'full clone') and where this container's storage will be.
 
-![](/images/screen-shot-2023-12-03-at-12.43.10-pm.png)
+<a href="/images/screen-shot-2023-12-03-at-12.43.10-pm.png"><img src="/images/screen-shot-2023-12-03-at-12.43.10-pm.png" width="1000" alt=""></a>
 
 A few seconds later the new LXC container will be in your server view and can be started.
 

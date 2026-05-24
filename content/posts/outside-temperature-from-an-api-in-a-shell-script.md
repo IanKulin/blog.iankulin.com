@@ -25,7 +25,7 @@ OpenWeather have a [simple API](https://openweathermap.org/current) (including o
 
 Even thought the API would allow it, it seems wasteful, and greedy (since I'm not paying for it), to pull the same data three times (for each of the three servers), so to complicate things (and learn some interesting stuff) I decided to poll the OpenWeather API once every five minutes from my VPS, process that current weather JSON down to just the temperature I was after, then expose that as a http endpoint. Then each of my servers would poll the VPS to get that outside temp as part of their logging.
 
-![](/images/20230425-weather.drawio-1.png)
+<img src="/images/20230425-weather.drawio-1.png" width="435" alt="">
 
 This will all extend involve some scripting that I haven't encountered yet.
 
@@ -153,7 +153,7 @@ You might be wondering why I didn't just use `awk` again - I could have, but `cu
 
 The `printf` just outputs the two values - temperature and timestamp as plain text with a comma between them into a text file that's in the root of the Nginx webserver.
 
-![](/images/screen-shot-2023-04-25-at-8.06.34-pm.png)
+<a href="/images/screen-shot-2023-04-25-at-8.06.34-pm.png"><img src="/images/screen-shot-2023-04-25-at-8.06.34-pm.png" width="794" alt=""></a>
 
 Now that's in place, I just edited `/etc/crontab` to have the new script run every five minutes to update the file with the temperature and timestamp.
 

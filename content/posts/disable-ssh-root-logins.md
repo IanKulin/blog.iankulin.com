@@ -60,6 +60,6 @@ which does exactly that.
 
 I'd love to know what passwords these bots are trying. I was thinking it wouldn't be all that hard to write something that would face the password login process and run it on port 22 to see. I asked ChatGPT about this, but goodie-goddie that it is, all I got was a warning about ethics and some ssh security tips.
 
-![](/images/screen-shot-2023-08-04-at-6.04.02-pm.png)
+<a href="/images/screen-shot-2023-08-04-at-6.04.02-pm.png"><img src="/images/screen-shot-2023-08-04-at-6.04.02-pm.png" width="800" alt=""></a>
 
 I'm not the first person to [think of this](https://www.darkreading.com/endpoint/a-common-password-list-accounts-for-nearly-all-cyberattacks), so I might come back to this idea later. If I was running brute force ssh I guess I'd use one of the common password lists from one of the big leaks, so it might not be that exciting. It would also be interesting to see what the first command they tried to run is as well.

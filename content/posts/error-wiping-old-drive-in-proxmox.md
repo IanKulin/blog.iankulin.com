@@ -12,7 +12,7 @@ tags:
   - proxmox
 ---
 
-![Error: disk/partition '/dev/sda3' has a holder (500)](/images/screen-shot-2023-07-22-at-12.19.42-pm-copy.png)
+<a href="/images/screen-shot-2023-07-22-at-12.19.42-pm-copy.png"><img src="/images/screen-shot-2023-07-22-at-12.19.42-pm-copy.png" width="568" alt="Error: disk/partition '/dev/sda3' has a holder (500)"></a>
 
 When I popped in an NVME drive and freshly installed Proxmox to it, I assumed I'd just be able to wipe the SDD that had previously been the boot drive to set it up as a ZFS pool. However, when I tried to do the wipe, I was greeted with the error:
 
@@ -28,7 +28,7 @@ Since I didn't want to cancel the installation, I went ahead and told it okay. O
 
 When I Googled around for the "has a holder" error, there were several unanswered requests for help for this, several speculative answers, and [one that worked](https://www.reddit.com/r/Proxmox/comments/xff5ri/how_do_i_wipe_an_old_drive/).
 
-![](/images/66d29d7d-bc29-4747-b92a-7fc7c790227f_text.gif)
+<img src="/images/66d29d7d-bc29-4747-b92a-7fc7c790227f_text.gif" width="400" alt="">
 
 You need to use `fdisk` to remove each partition. Take a note of the drive name - I could see in the Proxmox GUI that mine was sda, so the command to run was:
 
@@ -40,4 +40,4 @@ You probably need to have a [read-up on](https://www.howtogeek.com/106873/how-to
 
 That gave an error saying the third partition was still in use by the kernel, so I followed the advice to reboot, then I was able to wipe the drive in the Proxmox web GUI.
 
-![](/images/screen-shot-2023-07-22-at-12.30.09-pm.png)
+<a href="/images/screen-shot-2023-07-22-at-12.30.09-pm.png"><img src="/images/screen-shot-2023-07-22-at-12.30.09-pm.png" width="800" alt=""></a>

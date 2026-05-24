@@ -75,13 +75,13 @@ List {
 }
 ```
 
-![](/images/screen-shot-2022-10-08-at-3.06.30-pm.png)
+<a href="/images/screen-shot-2022-10-08-at-3.06.30-pm.png"><img src="/images/screen-shot-2022-10-08-at-3.06.30-pm.png" width="283" alt=""></a>
 
 The numbers in the brackets are what I think their array indexes should be. If what I understand Paul to be saying, if I now try to delete _Per 2,_ its offset in the list would be 1 (the second item in the list), but the remove call to the array is going to delete the expense at index 1, which is actually _Bus 2_. But actually, it just deletes the correct one:
 
-![](/images/screen-shot-2022-10-08-at-3.14.51-pm.png)
+<a href="/images/screen-shot-2022-10-08-at-3.14.51-pm.png"><img src="/images/screen-shot-2022-10-08-at-3.14.51-pm.png" width="736" alt=""></a>
 
-![](/images/screen-shot-2022-10-08-at-3.14.56-pm.png)
+<a href="/images/screen-shot-2022-10-08-at-3.14.56-pm.png"><img src="/images/screen-shot-2022-10-08-at-3.14.56-pm.png" width="734" alt=""></a>
 
 Perplexed, now that I'm thinking carefully about it. I did some print statement debugging:
 

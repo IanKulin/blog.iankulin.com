@@ -12,7 +12,7 @@ tags:
   - web-dev
 ---
 
-![](/images/screen-shot-2023-10-22-at-12.11.09-pm.png)
+<a href="/images/screen-shot-2023-10-22-at-12.11.09-pm.png"><img src="/images/screen-shot-2023-10-22-at-12.11.09-pm.png" width="900" alt=""></a>
 
 I mentioned [Bruno](https://www.usebruno.com/) the other day. Although it's still very much under development, it is shaping up as a great Postman/Insomnia replacement.
 
@@ -26,4 +26,4 @@ Once that's done, you can just right click on the collection and have it run all
 
 An extra benefit of Bruno is that all these requests are stored as JSON-like, version-controllable text. I store them in my project and commit them along with the rest of my code.
 
-![](/images/screen-shot-2023-10-22-at-12.25.43-pm.png)
+<a href="/images/screen-shot-2023-10-22-at-12.25.43-pm.png"><img src="/images/screen-shot-2023-10-22-at-12.25.43-pm.png" width="900" alt=""></a>

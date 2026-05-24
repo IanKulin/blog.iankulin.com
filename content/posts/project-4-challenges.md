@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-![](/images/screen-shot-2022-09-13-at-7.22.43-pm.png)
+<a href="/images/screen-shot-2022-09-13-at-7.22.43-pm.png"><img src="/images/screen-shot-2022-09-13-at-7.22.43-pm.png" width="197" alt=""></a>
 
 I've completed the Project 4 challenges (source) of the 100 Days of SwiftUI, no biggie - the increase in difficulty between each step of Paul's bootcamp is small enough that it's never too stressful, but large enough you feel like you're progressing all the time.
 

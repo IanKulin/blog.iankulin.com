@@ -13,7 +13,7 @@ tags:
   - possibly-useful
 ---
 
-[![](/images/big.jpg)](https://unccelearn.org/course/view.php?id=128&page=overview&lang=en)
+<a href="https://unccelearn.org/course/view.php?id=128&page=overview&lang=en"><img src="/images/big.jpg" width="900" alt=""></a>
 
 When I set up my first Docker container (I think for [Uptime Kuma](/uptime-kuma-nfty/)), I had read around and understood there were two choices for persistent; _bind mounts_ (where the data inside the container is effectively a symlink to a location on the local file system) or _name volumes_ where Docker abstracted that away a bit, so you didn't have to worry where it was - I sort of understood Docker 'managed' it.
 
@@ -38,11 +38,11 @@ The only real concession to usability along the way is that there's a `--volumes
 
 Let's run through those steps with an example. I'm going to set up [Uptime Kuma](https://uptime.kuma.pet/) in Docker. I'll use the [suggested compose file](https://github.com/louislam/uptime-kuma/blob/master/docker/docker-compose.yml) which creates a named volume `uptime-kuma`. I tested that's up and running on port 3001 - when I visited there, it wanted me to create an admin account.
 
-![](/images/screen-shot-2023-10-28-at-9.55.47-am.png)
+<a href="/images/screen-shot-2023-10-28-at-9.55.47-am.png"><img src="/images/screen-shot-2023-10-28-at-9.55.47-am.png" width="900" alt=""></a>
 
 For demo purposes, I created the admin user `ian` and set up Uptime Kuma to monitor Google for us.
 
-![](/images/screen-shot-2023-10-28-at-10.39.40-am.png)
+<a href="/images/screen-shot-2023-10-28-at-10.39.40-am.png"><img src="/images/screen-shot-2023-10-28-at-10.39.40-am.png" width="900" alt=""></a>
 
 If you started the app from a docker compose file, you can just look in there to see what the internal data directories that are being mounted to are:
 
@@ -92,7 +92,7 @@ The highlighted bits are the pieces I changed for our demo - the name of our con
 
 Now if we look in the directory where we ran that command, there should be a `backup.tar` file.
 
-![](/images/screen-shot-2023-10-28-at-10.34.38-am.png)
+<a href="/images/screen-shot-2023-10-28-at-10.34.38-am.png"><img src="/images/screen-shot-2023-10-28-at-10.34.38-am.png" width="900" alt=""></a>
 
 Now, for the purposes of this demo, I'll copy the backup.tar (and my compose file) over to another VM and we'll see if we can recreate this install.
 
@@ -106,7 +106,7 @@ sudo docker run --rm --volumes-from uptime-kuma -v $(pwd):/backup ubuntu bash -c
 
 Once again, I've highlighted the bits I've changed from the [instructions](https://docs.docker.com/storage/volumes/#back-up-restore-or-migrate-data-volumes). It's important to note I've changed the destination directory. We backed up from `/app/data` but we're just restoring to `/app` - the un-taring will copy the backed up data into the existing data directory. That's a trick for young players - when I blindly followed the official instructions, I ended up with an `/app/data/data` directory with the backed info which was, or course, ignored, and only discoverable buy `exec`\-ing into the container to see what was happening.
 
-![](/images/screen-shot-2023-10-28-at-11.34.08-am.png)
+<a href="/images/screen-shot-2023-10-28-at-11.34.08-am.png"><img src="/images/screen-shot-2023-10-28-at-11.34.08-am.png" width="900" alt=""></a>
 
 ### Why not just copy the local file system version?
 

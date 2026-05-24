@@ -11,7 +11,7 @@ tags:
   - sean-allen
 ---
 
-![](/images/screenshot-2022-07-17-at-07-44-36-swift-over-coffee-on-apple-podcasts.png)
+<img src="/images/screenshot-2022-07-17-at-07-44-36-swift-over-coffee-on-apple-podcasts.png" width="118" alt="">
 
 One of the iOS development podcasts in my current rotation is "Swift Over Coffee", it's blurb is:
 

@@ -14,7 +14,7 @@ tags:
   - webdev
 ---
 
-![](/images/0-eawgkaegdkhvqwcg.png)
+<img src="/images/0-eawgkaegdkhvqwcg.png" width="1000" alt="">
 
 HTMX is an interesting project to me, and I've used it a bit in my large collection of 70% completed side projects, but haven't really discussed it here. The plan for this post is to talk briefly about what it is exactly, then convert a simple 'conventional' (HTML/CSS/Javascript) app to htmx and think about some the differences.
 

@@ -18,7 +18,7 @@ I'd like to check that I haven't missed any files, but a side by side listing of
 
 Before I go over my trial and error, and eventual solution, here's how I've set up my test data for the examples. I thought I'd better start with something simple and small for testing commands.
 
-![](/images/screen-shot-2023-03-06-at-5.02.17-pm.png)
+<a href="/images/screen-shot-2023-03-06-at-5.02.17-pm.png"><img src="/images/screen-shot-2023-03-06-at-5.02.17-pm.png" width="495" alt=""></a>
 
 This is actually the output of the `tree` command on a `test` directory I've created in my home directory. (I had to install it - `sudo apt install tree`).
 

@@ -141,7 +141,7 @@ To load our new Firefox extension to try it out, go to the url [about:debugging#
 
 Now the extension should be working for normal browser mode, to enable it in incognito, you'll need to head into the Firefox menu "Add-ons and themes" ([about:addons](addons)) then open the "Manage" menu for the extension and turn on "Run in Private Windows".
 
-![](/images/screenshot-2025-06-22-at-08.27.38.png)
+<img src="/images/screenshot-2025-06-22-at-08.27.38.png" width="913" alt="">
 
 ### Publishing
 

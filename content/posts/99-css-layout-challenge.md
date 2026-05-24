@@ -20,7 +20,7 @@ What you can't see in that image (because it was never shown for this version) i
 
 The starting point was some html with a a handful of elements, and some unnecessarily complicated css colours.
 
-![](/images/screen-shot-2022-12-20-at-8.06.13-am-1.png)
+<a href="/images/screen-shot-2022-12-20-at-8.06.13-am-1.png"><img src="/images/screen-shot-2022-12-20-at-8.06.13-am-1.png" width="800" alt=""></a>
 
 ```
 <!DOCTYPE html>

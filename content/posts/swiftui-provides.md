@@ -11,7 +11,7 @@ tags:
   - swiftui
 ---
 
-![](/images/img_3476.png)
+<img src="/images/img_3476.png" width="284" alt="">
 
 A few hours after I speculated about pausing work on the tickets app because outputting the tickets was too far out of my expertise, a helpful instance of the [Baader–Meinhof phenomenon](https://en.wikipedia.org/wiki/Frequency_illusion) threw up some help in the form of this tweet from [@FloWritesCode](https://twitter.com/flowritescode). It turns out this was an addition in iOS16 announced at WWDC that makes this straightforward.
 

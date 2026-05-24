@@ -13,7 +13,7 @@ I have an [Ansible playbook](/ansible-with-secrets/) I run each weekend to do al
 
 This weekend, three instances (two remote, one local) timed out with "unreachable".
 
-![](/images/screen-shot-2023-09-30-at-2.53.24-pm.png)
+<a href="/images/screen-shot-2023-09-30-at-2.53.24-pm.png"><img src="/images/screen-shot-2023-09-30-at-2.53.24-pm.png" width="900" alt=""></a>
 
 Since Ansible is effectively ssh-ing in, I guess try that from the terminal.
 
@@ -21,7 +21,7 @@ Since Ansible is effectively ssh-ing in, I guess try that from the terminal.
 
 `vm100-dockhost` is the "magic DNS" name for this machine. One of the cool things Tailscale does is to allow these sorts of names. I use them so much, I've forgotten all their IP addressees. When I look it up and try with the local IP address for this machine, it works fine.
 
-![](/images/itcrowd.jpg)
+<img src="/images/itcrowd.jpg" width="872" alt="">
 
 Since it seems like a Tailscale problem, I tried turning it off and on again with `sudo tailscale down` and `sudo tailscale up`. When it came up, it printed the URL to re-authenticate - so something's happened...
 
@@ -41,10 +41,10 @@ If a key has expired, it is possible to remotely reauthorise it from your [machi
 
 If you want to avoid the problem of Tailscale keys expiring on remote systems, it's possible to turn it off so they never expire. This option is in the menu for each machine on the [machines admin page](https://login.tailscale.com/admin/machines).
 
-![](/images/screen-shot-2023-10-01-at-4.38.33-pm.png)
+<a href="/images/screen-shot-2023-10-01-at-4.38.33-pm.png"><img src="/images/screen-shot-2023-10-01-at-4.38.33-pm.png" width="900" alt=""></a>
 
 I guess another way of avoiding this problem, if it's possible, would be to visit your remote sites every six months and do the force update to reset the expiry. For my setup of the remote backup sites that's a reasonable plan.
 
 One slightly annoying thing is that it's not easy to see the expiry date of each Tailscale instance. I would have thought it would appear on that machines admin page, or in the CLI with `tailscale status`. When I was searching for an answer, I see that there is an [open github issue](https://github.com/tailscale/tailscale/issues/4854) for it, and there's been an update to the JSON version of the `tailscale status` command that includes the key expiry date.
 
-![](/images/screen-shot-2023-10-01-at-5.33.54-pm.png)
+<a href="/images/screen-shot-2023-10-01-at-5.33.54-pm.png"><img src="/images/screen-shot-2023-10-01-at-5.33.54-pm.png" width="900" alt=""></a>

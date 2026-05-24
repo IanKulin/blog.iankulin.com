@@ -18,7 +18,7 @@ Having figured out how to use the GitHub package registry, I was a bit inspired 
 
 Here's the setup. I dump the static (html, css, js etc) files for the website into a 'www' sub-directory.
 
-![](/images/screen-shot-2024-10-19-at-6.55.02-pm.png)
+<a href="/images/screen-shot-2024-10-19-at-6.55.02-pm.png"><img src="/images/screen-shot-2024-10-19-at-6.55.02-pm.png" width="1000" alt=""></a>
 
 The dockerfile pulls in BusyBox then copies those files into the container. Note these are in the container, it's not going to be bound to an external directory (where we could change them), the container carries its website files with it. Any change to the website content will require a container rebuild.
 
@@ -50,7 +50,7 @@ Then if we run it, and go to http://localhost, there's our website.
 docker run --name httpd-example.com -p 80:80 ghcr.io/iankulin/example.com:latest
 ```
 
-![](/images/screen-shot-2024-10-19-at-7.15.11-pm.png)
+<a href="/images/screen-shot-2024-10-19-at-7.15.11-pm.png"><img src="/images/screen-shot-2024-10-19-at-7.15.11-pm.png" width="900" alt=""></a>
 
 ### With NGINX Proxy Manager
 
@@ -90,12 +90,12 @@ Working with the registry is well covered in my previous post, so I won't go int
 
 On the host where the website is to run, I just make a directory for it and drop the `docker-compose.yml` in. Then `docker compose up -d`
 
-![](/images/screen-shot-2024-10-19-at-7.46.31-pm.png)
+<a href="/images/screen-shot-2024-10-19-at-7.46.31-pm.png"><img src="/images/screen-shot-2024-10-19-at-7.46.31-pm.png" width="900" alt=""></a>
 
 Since we're running in the Nginx Proxy Manager docker network, when we specify the host name for the new web site for NPM to proxy to, it's just the container name we gave it.
 
-![](/images/screen-shot-2024-10-19-at-8.06.44-pm.png)
+<a href="/images/screen-shot-2024-10-19-at-8.06.44-pm.png"><img src="/images/screen-shot-2024-10-19-at-8.06.44-pm.png" width="900" alt=""></a>
 
 Then the DNS settings for your domain need to be pointed to this host. Once that's propagated, you'll be able to request the SSL certificate in NPM and your website is live.
 
-![](/images/screen-shot-2024-10-19-at-8.11.23-pm.png)
+<a href="/images/screen-shot-2024-10-19-at-8.11.23-pm.png"><img src="/images/screen-shot-2024-10-19-at-8.11.23-pm.png" width="886" alt=""></a>

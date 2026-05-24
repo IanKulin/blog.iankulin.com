@@ -12,7 +12,7 @@ tags:
   - tls
 ---
 
-![](/images/certbot.png)
+<img src="/images/certbot.png" width="847" alt="">
 
 I've been managing SSL certificates for my domains purchased from [PorkBun](https://porkbun.com/) by going there every 90 days downloading the certificates, [joining them together](/installing-ssl-certificates-with-nginx-on-docker/) to make the `fullchain.pem` then `scp`\-ing them to my servers. That's been sort of manageable, but less than ideal.
 
@@ -30,7 +30,7 @@ This makes this whole process amazingly painless. There's really no excuse for n
 
 I'm running NGINX on Ubuntu LTS on my VPS's, so installation was a snap (pun intended). I just followed the [instructions](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal) which involved installing the snap, adding a symlink to ensure it was in my path, then running the bot passing it a flag to say I was using NGINX.
 
-![](/images/screen-shot-2023-09-02-at-4.35.25-pm.png)
+<a href="/images/screen-shot-2023-09-02-at-4.35.25-pm.png"><img src="/images/screen-shot-2023-09-02-at-4.35.25-pm.png" width="900" alt=""></a>
 
 It asks you a couple of questions, intelligently (by reading all the nginx conf files) then downloads the certificates and edits the nginx site conf files to use them. It also adds a systemd timer command to automate checking to see if they need renewed every couple of hours.
 

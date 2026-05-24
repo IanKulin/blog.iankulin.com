@@ -14,7 +14,7 @@ tags:
 
 Now I've added NVME drives to my nodes, plus added an external NMVE RAID, I've got quite the collection of storage options. For one of my nodes, it looks like this:
 
-![Screenshot of Proxmox GUI showing 5 storage options](/images/screen-shot-2023-07-23-at-1.20.34-pm.png)
+<a href="/images/screen-shot-2023-07-23-at-1.20.34-pm.png"><img src="/images/screen-shot-2023-07-23-at-1.20.34-pm.png" width="979" alt="Screenshot of Proxmox GUI showing 5 storage options"></a>
 
 -   The 256GB NVME the OS is installed to
 -   The 512GB SSD, currently running ZFS

@@ -31,7 +31,7 @@ This seems like a fairly specific bit of knowledge someone might want to know ab
 
 According to me, I am the winner.
 
-![](/images/2309065-t2sarahconnor2.jpg)
+<img src="/images/2309065-t2sarahconnor2.jpg" width="640" alt="">
 
 ![](/images/screen-shot-2024-07-03-at-2.37.43-pm.png)
 
@@ -49,7 +49,7 @@ _dolphin-mistral_'s claim to fame is that it's uncensored. So if you ask it how 
 
 I tried two versions of _llama3_. To explain the difference, we need to go into an explanation of how large language models work, which I don't know, so I'm just going to hallucinate it for you:
 
-![](/images/input.jpg)
+<img src="/images/input.jpg" width="800" alt="">
 
 If you vacuum up heaps of input (the training data), then filter out all the cruft ('the', 'a', 'not)', then put it into a special multidimensional database so that similar things are near each other (eg 'rose' is near 'flower', 'red' and 'titanic' and a long way from 'bulldozer' and 'antidisestablishmentarianism') and the database also includes how far away from each other those things are, then it is very, very, big. Too big to put on my MacBook.
 

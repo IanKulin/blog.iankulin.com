@@ -11,8 +11,8 @@ tags:
   - ssh
 ---
 
-[![Photo by Nick Fewings Unsplash
-](/images/nick-fewings-4vrzua4uxsy-unsplash.jpg)](https://unsplash.com/photos/brown-bell-on-white-concrete-wall-4VRzuA4UxSY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash)
+<a href="https://unsplash.com/photos/brown-bell-on-white-concrete-wall-4VRzuA4UxSY?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash"><img src="/images/nick-fewings-4vrzua4uxsy-unsplash.jpg" width="400" alt="Photo by Nick Fewings Unsplash
+"></a>
 
 My VPS's are usually locked down so just ports 80 & 443 (for web server) and 22 (for ssh) are open. That's great for reducing the attack surface, but having ssh open is a potentially disastrous vulnerability. For this reason I often close that at the cloud firewall level as well, but it has to be open when I'm making changes or running the weekly ansible update/cleanup playbooks.
 

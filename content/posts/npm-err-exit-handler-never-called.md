@@ -14,11 +14,11 @@ tags:
 
 I quite like GitHub scanning all my code and sending me security advisories. Here's today's:
 
-![](/images/screen-shot-2024-09-27-at-11.31.03-am.png)
+<a href="/images/screen-shot-2024-09-27-at-11.31.03-am.png"><img src="/images/screen-shot-2024-09-27-at-11.31.03-am.png" width="800" alt=""></a>
 
 With these, and my [dependabot](https://github.com/dependabot) alerts, fixing them is usually just a matter of pulling down the project, running an `npm update`, building any artifacts, then pushing it back up. But today, not so:
 
-![](/images/screen-shot-2024-09-27-at-11.36.57-am.png)
+<a href="/images/screen-shot-2024-09-27-at-11.36.57-am.png"><img src="/images/screen-shot-2024-09-27-at-11.36.57-am.png" width="900" alt=""></a>
 
 ### package-lock.json
 
@@ -75,6 +75,6 @@ npm install --no-package-lock
 
 This just runs the update ignoring the package-lock.json file - as if you'd just deleted it. If that works, it was a problem with the `package-lock.json` file, which in this context of just wanting all the latest versions we don't care about. We do want to rebuild the `package-lock.json` file though, so go ahead and delete it and run `npm install` to create a nice new one.
 
-![](/images/screen-shot-2024-09-27-at-12.03.23-pm.png)
+<a href="/images/screen-shot-2024-09-27-at-12.03.23-pm.png"><img src="/images/screen-shot-2024-09-27-at-12.03.23-pm.png" width="900" alt=""></a>
 
 Now your project will have a couple of version changes in those package files. You'll need to redo all your testing and rebuild any Docker images etc, and then you're all up to date and secure again!

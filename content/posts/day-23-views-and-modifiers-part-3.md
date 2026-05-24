@@ -11,7 +11,7 @@ tags:
   - swiftui
 ---
 
-![](/images/psm_v10_d562_the_hindoo_earth-3.jpg)
+<img src="/images/psm_v10_d562_the_hindoo_earth-3.jpg" width="472" alt="">
 
 The next part of day 23 started to make my brain hurt a bit. It's easy to imagine that when presenting a complex screen - perhaps some data from a source as a mixture of images and text loaded from a database into a scroll-able view, that the view may start to get complex. Then it becomes good practice to decompose the views to make the code clearer, less error prone, and to avoid any unnecessary repetition.
 

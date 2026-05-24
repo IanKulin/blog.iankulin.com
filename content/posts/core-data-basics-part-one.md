@@ -17,9 +17,9 @@ To help me get clear on the Core Data basics ([so I can master one of the #100Da
 
 The opening screen is a navigation view of the list of gardens, and a button. There’s a navigation link from each garden item to a detail view which shows the garden details, including a list of plants.
 
-![](/images/simulator-screen-shot-iphone-14-pro-2022-11-19-at-19.40.30.png)
+<img src="/images/simulator-screen-shot-iphone-14-pro-2022-11-19-at-19.40.30.png" width="138" alt="">
 
-![](/images/simulator-screen-shot-iphone-14-pro-2022-11-19-at-19.40.40.png)
+<img src="/images/simulator-screen-shot-iphone-14-pro-2022-11-19-at-19.40.40.png" width="138" alt="">
 
 ### Struct version
 

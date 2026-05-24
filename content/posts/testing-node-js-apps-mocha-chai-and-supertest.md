@@ -80,11 +80,11 @@ In the `package.json` file, we can add a section called scripts. If you started 
 
 `npm` does the magic to make the correct version of the library available when this script is run. The end effect of these is that you can type `npm test` at the command line, and mocha will run your tests. Let's try it would our tests.
 
-![](/images/screen-shot-2023-12-16-at-8.18.28-pm.png)
+<a href="/images/screen-shot-2023-12-16-at-8.18.28-pm.png"><img src="/images/screen-shot-2023-12-16-at-8.18.28-pm.png" width="900" alt=""></a>
 
 That's what we like to see, passing tests. I'll make one fail by telling it to expect 5x5=26.
 
-![](/images/screen-shot-2023-12-16-at-8.22.53-pm.png)
+<a href="/images/screen-shot-2023-12-16-at-8.22.53-pm.png"><img src="/images/screen-shot-2023-12-16-at-8.22.53-pm.png" width="900" alt=""></a>
 
 And that's it, you're all set up to write tests against your node apps.
 

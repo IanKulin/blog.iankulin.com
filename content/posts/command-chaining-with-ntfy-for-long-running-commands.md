@@ -23,7 +23,7 @@ curl -d "😀 demo push message via NTFY" ntfy.sh/blog_demo
 
 Since I'm subscribed to the "blog\_demo" topic in NTFY, this message will be pushed to my phone and watch:
 
-![](/images/img_0056.png)
+<img src="/images/img_0056.png" width="640" alt="">
 
 How I use this is with 'command chaining'. In Linux, you can stack commands together with the `&&` characters like this:
 
@@ -57,7 +57,7 @@ nohup rsync -rvits --bwlimit=20 "/volume1/media/video/Movies/Night of the Living
 
 Now we'll get a push message for completion or failure. There is one more little bit of housekeeping to do though. When we curl ntfy like this, it actually returns some JSON:
 
-![](/images/screen-shot-2024-12-28-at-11.00.08-am.png)
+<a href="/images/screen-shot-2024-12-28-at-11.00.08-am.png"><img src="/images/screen-shot-2024-12-28-at-11.00.08-am.png" width="900" alt=""></a>
 
 Since we're running this whole thing backgrounded, we really want that to go to the `output.log` file with the other output:
 

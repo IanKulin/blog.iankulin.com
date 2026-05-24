@@ -16,7 +16,7 @@ tags:
 
 A couple of times ([Protocols](/protocols/) & [Named Loops](/named-loops/)) in the past few days I've needed to write and run a couple of tiny C or C++ snippets, and I've acutely felt the lack of Swift Playgrounds for it. It occurred to me that Playgrounds has been instrumental in my enjoyment of learning Swift - it's just a bit magic to grab the closest device and noodle out an idea or to make sure I've understood a new concept.
 
-![](/images/15152540.jpg)
+<img src="/images/15152540.jpg" width="89" alt="">
 
 In a [conversation between Chris Lattner and Paul Hudson](https://podcasts.apple.com/us/podcast/episode-11-chris-lattner/id1505697997?i=1000478871841) I've listened to recently, they discuss the value of [Playgrounds](https://www.apple.com/swift/playgrounds/) and the excellent [Swift book](https://docs.swift.org/swift-book/) in bringing the community along from Objective C. I could not agree more about the value of these two.
 

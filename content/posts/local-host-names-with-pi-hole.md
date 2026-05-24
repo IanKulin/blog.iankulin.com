@@ -32,6 +32,6 @@ Luckily, since Pi-hole works by being a DNS server (who drops requests for domai
 
 Down the left side of the Pi-hole interface, there's a link for Local DNS | DNS Records. Click on that for this screen, then input the name you'd like to use and the IP address it should go to. I use the device host names so there's less confusion, but there's no rule for this - you can use whatever you like.
 
-![](/images/screen-shot-2023-02-04-at-6.05.02-pm.png)
+<a href="/images/screen-shot-2023-02-04-at-6.05.02-pm.png"><img src="/images/screen-shot-2023-02-04-at-6.05.02-pm.png" width="900" alt=""></a>
 
-![](/images/screen-shot-2023-02-04-at-6.08.26-pm.png)
+<a href="/images/screen-shot-2023-02-04-at-6.08.26-pm.png"><img src="/images/screen-shot-2023-02-04-at-6.08.26-pm.png" width="900" alt=""></a>

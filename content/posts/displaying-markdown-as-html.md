@@ -17,7 +17,7 @@ tags:
 
 In the spirit of over-complicating things, when I wanted to collect all the links to the services on my homelab into one place, I decided I needed to write them in markdown, and have them converted on the fly into HTML by a server. Then when I couldn't find exactly what I was after ([Harp](http://harpjs.com/) was closest) of course, I decided to write it.
 
-![](/images/distracted.jpg)
+<img src="/images/distracted.jpg" width="1000" alt="">
 
 ### Markdown
 
@@ -84,7 +84,7 @@ The first is that it's not actually well formed HTML. If we load a markdown file
 
 It looks like this:
 
-![](/images/screen-shot-2023-10-22-at-7.42.46-am.png)
+<a href="/images/screen-shot-2023-10-22-at-7.42.46-am.png"><img src="/images/screen-shot-2023-10-22-at-7.42.46-am.png" width="900" alt=""></a>
 
 But if we view the page source, it's this:
 

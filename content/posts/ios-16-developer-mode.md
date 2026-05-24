@@ -16,8 +16,8 @@ I updated my iPhone to iOS16 this morning, and tonight when I went to run one of
 
 I had to google the setting, it's in "Privacy and Security" down the bottom, and requires a reboot. When you open the phone there's another dialog and you need to reauth.
 
-![](/images/img_3320.png)
+<img src="/images/img_3320.png" width="577" alt="">
 
-![](/images/img_3321.png)
+<img src="/images/img_3321.png" width="577" alt="">
 
 ![](/images/img_3322.jpg)

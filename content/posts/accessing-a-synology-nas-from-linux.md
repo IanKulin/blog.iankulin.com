@@ -14,7 +14,7 @@ tags:
   - synology
 ---
 
-![](/images/img_4154x.jpg)
+<img src="/images/img_4154x.jpg" width="1000" alt="">
 
 I picked up a Synology DS216j NAS from eBay to use for storage for the rapidly growing home lab. The eventual plan is that as well as my VM backups, it will host the media library, and eventually (when this has all proved itself reasonably bullet-proof) my current DropBox contents. That won't all fit on the 2x2TB drives that the DS216j came with, and I have a pair of 8TBs on hand, but I wanted to set it up and checked it all worked.
 
@@ -24,11 +24,11 @@ Configuration of the NAS was a 'follow the prompts' exercise for the most part. 
 
 Once I'd got through all of that, I created a share in 'File Station' and copied a couple of files in. By default, Samba shares are on (with the name WORKGROUP - so I guess this is aimed at making it simple for Windows users) but NFS are not. I know nothing about NFS, so this suits me for the moment. Additionally, my [WD-TV](https://en.wikipedia.org/wiki/WD_TV) shares it's attached USB drive using Samba, so I'm used to accessing it from the MacBook. Let's try the NAS from the MacBook:
 
-![](/images/screen-shot-2023-02-18-at-3.23.38-pm.png)
+<a href="/images/screen-shot-2023-02-18-at-3.23.38-pm.png"><img src="/images/screen-shot-2023-02-18-at-3.23.38-pm.png" width="512" alt=""></a>
 
 It asked for the login details, then I was in. Could not have been much easier.
 
-![](/images/screen-shot-2023-02-18-at-3.28.55-pm.png)
+<a href="/images/screen-shot-2023-02-18-at-3.28.55-pm.png"><img src="/images/screen-shot-2023-02-18-at-3.28.55-pm.png" width="800" alt=""></a>
 
 ## Accessing from Linux
 

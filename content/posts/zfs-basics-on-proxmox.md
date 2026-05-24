@@ -22,9 +22,9 @@ I started to think a little [JBOD](https://www.techtarget.com/searchstorage/defi
 
 I purchased this little UNITEK S1206A dual bay enclosure and another stick of 256GB Samsung SSD.
 
-![](/images/img_5742.jpg)
+<img src="/images/img_5742.jpg" width="600" alt="">
 
-![](/images/s-l960.jpg)
+<img src="/images/s-l960.jpg" width="600" alt="">
 
 The instructions for the unit show sticking a layer of silicon over the top of the gum sticks, and then a thin piece of aluminum. I've heard these get hot, but it wasn't clear to me if I should peel that paper off first. So I've done nothing for the moment while I do some more research.
 
@@ -34,7 +34,7 @@ The process of getting it set up in Proxmox was simple. If you select the node i
 
 You can see on the screenshot above, that further down in the Disks list it says ZFS. That's where you go to create the ZFS pool. I probably need to pause here, and go over some of the ZFS terminology.
 
-[![](/images/zfs-components-1.png)](https://blog.victormendonca.com/2020/11/03/zfs-for-dummies/)
+<a href="https://blog.victormendonca.com/2020/11/03/zfs-for-dummies/"><img src="/images/zfs-components-1.png" width="706" alt=""></a>
 
 To start in the middle, we have the concept of a ZFS Pool. This is, well, a pool of storage that's available to be used. It has a size, and we can see how much space is available. The pool is made up of vdev (virtual devices). A vdev could be a single physical drive, or multiple drives in some kind of RAID arrangement.
 

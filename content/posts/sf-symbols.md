@@ -27,7 +27,7 @@ struct ContentView: View {
 }
 ```
 
-![](/images/screen-shot-2022-07-17-at-7.26.23-am.png)
+<a href="/images/screen-shot-2022-07-17-at-7.26.23-am.png"><img src="/images/screen-shot-2022-07-17-at-7.26.23-am.png" width="128" alt=""></a>
 
 The `systemName` parameter signifies the image is this type, and `"globe"` is the name of the image. The code above draws a globe with some lat/long lines. So where does "globe" come from, and how can I find and choose them?
 

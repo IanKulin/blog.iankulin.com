@@ -22,7 +22,7 @@ Something that's not fraught however, is upgrading the RAM in a virtual machine 
 
 I run two VM's full time on the production node - a general docker host for a variety of small services, and a separate VM for [Jellyfin](https://jellyfin.org/). I'd allocated 6GB for this VM, but when I checked tonight ProxMox was reporting that 5GB was already being used.
 
-![](/images/screen-shot-2023-03-16-at-6.16.57-pm.png)
+<a href="/images/screen-shot-2023-03-16-at-6.16.57-pm.png"><img src="/images/screen-shot-2023-03-16-at-6.16.57-pm.png" width="974" alt=""></a>
 
 I have noticed that the Jellyfin memory usage seems to slowly grow over time. That might be related to my current usage pattern - I'm frequently re-scanning the libraries as I check and update the metadata.
 

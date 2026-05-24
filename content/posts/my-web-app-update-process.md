@@ -51,7 +51,7 @@ Now I take the service down from the CLI with `sudo docker compose down`, then p
 
 The to start it again, it's just a `docker compose up -d` and we're live again.
 
-![](/images/screen-shot-2024-03-24-at-8.52.45-am.png)
+<a href="/images/screen-shot-2024-03-24-at-8.52.45-am.png"><img src="/images/screen-shot-2024-03-24-at-8.52.45-am.png" width="900" alt=""></a>
 
 #### Testing
 

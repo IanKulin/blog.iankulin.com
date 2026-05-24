@@ -39,7 +39,7 @@ npm install express multer
 
 After a few seconds NPM should have created a couple of files (`package.json` & `package-lock.json`) and a directory called `node_modules`. `node_modules` contains all the library code we'll be using, and the package files have some versioning information used by NPM.
 
-![](/images/screen-shot-2024-08-18-at-2.00.01-pm.png)
+<a href="/images/screen-shot-2024-08-18-at-2.00.01-pm.png"><img src="/images/screen-shot-2024-08-18-at-2.00.01-pm.png" width="900" alt=""></a>
 
 This is going to be a server that responds to web requests, so we better write a skeleton for that. Create a file called `server.js` and add this code.
 
@@ -68,11 +68,11 @@ node server.js
 
 Now if you visit the web address [http://127.0.0.1:3000](http://127.0.0.1:3000) in your web browser, you should see the message "hello world".
 
-![](/images/screen-shot-2024-08-18-at-2.15.28-pm.png)
+<a href="/images/screen-shot-2024-08-18-at-2.15.28-pm.png"><img src="/images/screen-shot-2024-08-18-at-2.15.28-pm.png" width="900" alt=""></a>
 
 To stop the server hold down control and press 'C' in the terminal window.
 
-![](/images/screen-shot-2024-08-18-at-2.18.49-pm.png)
+<a href="/images/screen-shot-2024-08-18-at-2.18.49-pm.png"><img src="/images/screen-shot-2024-08-18-at-2.18.49-pm.png" width="900" alt=""></a>
 
 #### Serving a HTML file
 
@@ -109,7 +109,7 @@ This will send the file `index.html` instead of just the 'hello world' text from
 
 Ah yes. That's much more professional.
 
-![](/images/screen-shot-2024-08-18-at-2.28.36-pm.png)
+<a href="/images/screen-shot-2024-08-18-at-2.28.36-pm.png"><img src="/images/screen-shot-2024-08-18-at-2.28.36-pm.png" width="900" alt=""></a>
 
 #### Multer
 
@@ -232,15 +232,15 @@ We need a way for the /upload route to be hit with the file data, and that's don
 
 That `enctype` of `"multipart/form-data"` is important. That's what Multer wants to see. Apart from that, this is just a form with two buttons. The first one lets the user choose a file, and the second "Upload" button submits it.
 
-![](/images/screen-shot-2024-08-18-at-3.00.01-pm.png)
+<a href="/images/screen-shot-2024-08-18-at-3.00.01-pm.png"><img src="/images/screen-shot-2024-08-18-at-3.00.01-pm.png" width="900" alt=""></a>
 
 Clicking on the "Browse..." button will open the file selection dialog for your operating system. Once you've selected a file, the name will be shown.
 
-![](/images/screen-shot-2024-08-18-at-3.03.39-pm.png)
+<a href="/images/screen-shot-2024-08-18-at-3.03.39-pm.png"><img src="/images/screen-shot-2024-08-18-at-3.03.39-pm.png" width="900" alt=""></a>
 
 If we press the Upload button, that file will now be sent to the server, and should appear in the `data` directory.
 
-![](/images/screen-shot-2024-08-18-at-3.07.20-pm.png)
+<a href="/images/screen-shot-2024-08-18-at-3.07.20-pm.png"><img src="/images/screen-shot-2024-08-18-at-3.07.20-pm.png" width="900" alt=""></a>
 
 ### Conclusion
 

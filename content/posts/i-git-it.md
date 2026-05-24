@@ -9,7 +9,7 @@ tags:
   - posts
 ---
 
-![](/images/6y8jpj5f4el91.jpg)
+<img src="/images/6y8jpj5f4el91.jpg" width="500" alt="">
 
 This meme's been trending in the [r/ProgrammerHumor subreddit](https://old.reddit.com/r/ProgrammerHumor/comments/x3udcz/is_it_really_that_much_easy_because_in_the/), and although "to do literally anything" is a stretch, my git / github workflow is pretty routine now using the [relevant xkcd](https://xkcd.com/1597/) method, but actually with quite a bit of understanding from the first half of the excellent [Pro Git book](https://git-scm.com/book/en/v2). I highly recommend it.
 

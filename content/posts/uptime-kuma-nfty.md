@@ -14,7 +14,7 @@ tags:
 
 [Uptime Kuma](https://github.com/louislam/uptime-kuma) is a monitoring tool suitable for self-hosting, and as well as being a good tool for monitoring the status of your network and applications, it's a nice smallish app to get started on Docker containers.
 
-![](/images/screen-shot-2023-02-05-at-6.41.24-am.png)
+<a href="/images/screen-shot-2023-02-05-at-6.41.24-am.png"><img src="/images/screen-shot-2023-02-05-at-6.41.24-am.png" width="900" alt=""></a>
 
 Since it's in a container, you need to create a volume for it and pass it in to persist your settings. Then it's just a matter of adding each item you want to monitor. There's a heap of fancy options for this, the only three I've used are ping - just pings an address, http(s) - requests a page and checks the header for a 200, and http(s) keyword - looks at the returned page for a keyword in the html.
 
@@ -28,7 +28,7 @@ curl -d "This message will pop up on phone" ntfy.sh/ian_test
 
 ![](/images/screen-shot-2023-02-05-at-12.39.22-pm.png)
 
-![](/images/img_4055.jpg)
+<img src="/images/img_4055.jpg" width="192" alt="">
 
 The `ian_test` part of the url is called the _topic_, and in the app you can subscribe to several topics. It's worth noting this is all completely open. Anyone can send messages to the ian\_test topic, and anyone can receive them. You should choose a topic name that's likely to be unique, and be mindful that you're leaking intelligence. For example:
 

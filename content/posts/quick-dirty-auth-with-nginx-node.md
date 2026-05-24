@@ -40,7 +40,7 @@ sudo apt install nginx
 
 Now if we open the server ip address, we should see the nginx test page:
 
-![](/images/screen-shot-2024-02-17-at-3.23.32-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-3.23.32-pm.png"><img src="/images/screen-shot-2024-02-17-at-3.23.32-pm.png" width="800" alt=""></a>
 
 If you're wondering where this page comes from, it's `/var/www/html/index.nginx-debian.html`. There's a default nginx site config at `/etc/nginx/sites-available/default` that points to it. We'll be playing in there later.
 
@@ -68,7 +68,7 @@ const express = require('express');const app = express();const port = 3000;app.g
 
 If we've done everything right, once you've saved that (ctl-O, ctl-X) if we run `node app.js` we'll get the message `Server is listening at http://localhost:3000` and visiting the IP address of our server with `:3000` on the end should get this result:
 
-![](/images/screen-shot-2024-02-17-at-3.56.39-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-3.56.39-pm.png"><img src="/images/screen-shot-2024-02-17-at-3.56.39-pm.png" width="900" alt=""></a>
 
 ### The Firewall
 
@@ -80,7 +80,7 @@ sudo apt-get install netfilter-persistentsudo iptables -A INPUT -p tcp --dport 3
 
 Now if you start the app again with `node app.js` and visit :3000 in the browser, it should eventually just time out because the request is never making it to our app.
 
-![](/images/screen-shot-2024-02-17-at-4.17.42-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-4.17.42-pm.png"><img src="/images/screen-shot-2024-02-17-at-4.17.42-pm.png" width="900" alt=""></a>
 
 ### Proxy Pass
 
@@ -92,7 +92,7 @@ Scroll down till you see the `location / {` block. Delete out the contents and r
 proxy_pass http://localhost:3000;
 ```
 
-![](/images/screen-shot-2024-02-17-at-4.49.27-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-4.49.27-pm.png"><img src="/images/screen-shot-2024-02-17-at-4.49.27-pm.png" width="900" alt=""></a>
 
 Then we'll check the configuration is okay, and restart the nginx server.
 
@@ -102,7 +102,7 @@ sudo nginx -tsudo service nginx restart
 
 Now if our app is running (`node app.js`) you should be able to go to the server address (without the :3000) and see the app working again.
 
-![](/images/screen-shot-2024-02-17-at-4.55.54-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-4.55.54-pm.png"><img src="/images/screen-shot-2024-02-17-at-4.55.54-pm.png" width="900" alt=""></a>
 
 ### Credentials
 
@@ -116,7 +116,7 @@ This second command is creating (that's the `-c` flag) a text file called `.htpa
 
 `user1` is just what I've called this user - it could of course be just about anything. htpasswd will ask you to enter a password for this user, and confirm it.
 
-![](/images/screen-shot-2024-02-17-at-5.55.14-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-5.55.14-pm.png"><img src="/images/screen-shot-2024-02-17-at-5.55.14-pm.png" width="900" alt=""></a>
 
 If you're curious about how that looks in the file, you can just `cat` it out. You won't see the plaintext password, it's been hashed into gooblygook.
 
@@ -134,7 +134,7 @@ auth_basic "Protected app";auth_basic_user_file /etc/nginx/.htpasswd;
 
 "Protected app" is the explanation that should pop up in the modal, and the other directive just tells nginx where to look for the credentials.
 
-![](/images/screen-shot-2024-02-17-at-6.09.17-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-6.09.17-pm.png"><img src="/images/screen-shot-2024-02-17-at-6.09.17-pm.png" width="900" alt=""></a>
 
 I'm pretty sure nginx processes these in order, so put the auth\_basic directives before the proxy\_pass.
 
@@ -146,7 +146,7 @@ ian@ct372-authplay:~$ sudo nginx -tnginx: the configuration file /etc/nginx/ngin
 
 If we go back to the page, it should pop up and ask for the credentials. If you input your credentials it will direct you to the "hello world" message from our app.
 
-![](/images/screen-shot-2024-02-17-at-6.15.55-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-6.15.55-pm.png"><img src="/images/screen-shot-2024-02-17-at-6.15.55-pm.png" width="900" alt=""></a>
 
 ### Accessing the user in node
 
@@ -156,7 +156,7 @@ That's all great, but how do we access the authenticated user in our app so we k
 
 This takes the user name (in remote\_user) and inserts it to the request header.
 
-![](/images/screen-shot-2024-02-17-at-7.39.41-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-7.39.41-pm.png"><img src="/images/screen-shot-2024-02-17-at-7.39.41-pm.png" width="900" alt=""></a>
 
 After making this change, we need to restart nginx to pick up the config change again - `sudo service nginx restart`
 
@@ -166,7 +166,7 @@ Back in our node app, we need to recover the username from the request header.
 app.get('/', (req, res) => {  const username = req.get('X-Username');  res.send('Hello '+username);});
 ```
 
-![](/images/screen-shot-2024-02-17-at-7.51.33-pm.png)
+<a href="/images/screen-shot-2024-02-17-at-7.51.33-pm.png"><img src="/images/screen-shot-2024-02-17-at-7.51.33-pm.png" width="900" alt=""></a>
 
 In the example above I've extracted the username in the route - often in my apps I do that in middleware and use it to set some request variables with allowed roles and so on.
 

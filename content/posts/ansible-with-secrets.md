@@ -95,7 +95,7 @@ ansible-vault create vault.yaml
 
 This will ask us to enter the password we want to use. The strength of this password needs to be good. If it's crackable, you are giving away root access to your systems. And it's in a file, not in a login situation where you can time out after three logins. Whoever has the file has the time to brute force password of the the [AES 256](https://www.ipswitch.com/blog/use-aes-256-encryption-secure-data) encryption.
 
-![](/images/h4c7m5z2a2b71-copy.jpg)
+<img src="/images/h4c7m5z2a2b71-copy.jpg" width="460" alt="">
 
 Once you've entered your strong password twice, it will open up the new file in the default editor - probably vim. You may need help to use this editor.
 

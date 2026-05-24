@@ -13,7 +13,7 @@ tags:
   - xcode14
 ---
 
-![Screenshop of Habits app](/images/img_3110.png)
+<img src="/images/img_3110.png" width="150" alt="Screenshop of Habits app">
 
 As usual, I'm spending way more time on the apps written from scratch in the [100Days series](https://www.hackingwithswift.com/guide/ios-swiftui/4/3/challenge). The Habit tracking app I'm working on has been good practice, especially of the architecture of the simple [list based app](/list-apps/).
 

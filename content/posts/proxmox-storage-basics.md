@@ -36,7 +36,7 @@ You can see from the graph that I've used a bit of this storage already. That be
 
 Let's click on the other storage `local-lmv (pve)`:
 
-![](/images/screen-shot-2023-01-26-at-8.28.41-pm.png)
+<a href="/images/screen-shot-2023-01-26-at-8.28.41-pm.png"><img src="/images/screen-shot-2023-01-26-at-8.28.41-pm.png" width="999" alt=""></a>
 
 We already discussed the `local` part of the name `local-lvm (pre)` means it's on this machine/node. LVM stands for Logical Volume Manager. An LVM is an abstraction from the physical disk. A single LMV might actually be made of of a number of physical partitions, or even drives. Regardless of this, and LVM presents as a single volume at the software layer.
 

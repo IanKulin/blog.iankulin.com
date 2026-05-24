@@ -43,17 +43,17 @@ services:
 
 However, there is a gotcha I hadn't encountered before - when I `docker compose up` with this, I got the error "failed to register layer: unlinkat /app/gogs/docker/build: invalid argument".
 
-![](/images/screen-shot-2023-11-20-at-8.36.42-pm.png)
+<a href="/images/screen-shot-2023-11-20-at-8.36.42-pm.png"><img src="/images/screen-shot-2023-11-20-at-8.36.42-pm.png" width="900" alt=""></a>
 
 When I asked ChatGPT about this, she thought it might be to do with the storage driver. I didn't know what that was so I spent time googling around.
 
-![](/images/screen-shot-2023-11-20-at-8.40.36-pm.png)
+<a href="/images/screen-shot-2023-11-20-at-8.40.36-pm.png"><img src="/images/screen-shot-2023-11-20-at-8.40.36-pm.png" width="900" alt=""></a>
 
 Pretty soon, I discovered [this thread](https://forum.proxmox.com/threads/docker-failed-to-register-layer-applylayer-exit-status-1-stdout-stderr-unlinkat-var-log-apt-invalid-argument.119954/). Part way down there's the suggestion to edit `/etc/docker/daemon.json` to add a different storage driver, followed by many comments of "Thanks!" and "That fixed it". I followed that advice, (it uses a different driver "vfs" rather than "aufs" as suggested by ChatGPT) and then the container came up properly.
 
 With that out of the way, and the container live, if you go to the port you've specified in the docker-compose file (mine was :80), you'll be greeted with the "Install Steps For First-time Run".
 
-![](/images/screen-shot-2023-11-20-at-8.54.19-pm.png)
+<a href="/images/screen-shot-2023-11-20-at-8.54.19-pm.png"><img src="/images/screen-shot-2023-11-20-at-8.54.19-pm.png" width="900" alt=""></a>
 
 They are not joking. You won't be able to guess these settings. I guess they haven't put a lot of work into the container experience - some of these settings need to be for inside the container, and some are used for prompting the user, which are outside of the container settings. I suspect this rough edge is why the container install is not on the Gogs website yet.
 
@@ -61,11 +61,11 @@ Anyway, after I'd ignored this suggestion, run into problems, google them, found
 
 I'll leave you to read the guidelines. The only other things of note is that I used the SQLite database to make my life simpler, and you don't need to muck around making an admin account - it just makes the first person to log in the admin. Once that's all done, you have to create a user account, then log in with it. You'll be greeted by a reasonably familiar sight.
 
-![](/images/screen-shot-2023-11-20-at-9.07.30-pm.png)
+<a href="/images/screen-shot-2023-11-20-at-9.07.30-pm.png"><img src="/images/screen-shot-2023-11-20-at-9.07.30-pm.png" width="900" alt=""></a>
 
 If you go ahead and create a repository in Gogs, it will give you the commands to push a repo up:
 
-![](/images/screen-shot-2023-11-20-at-9.09.28-pm.png)
+<a href="/images/screen-shot-2023-11-20-at-9.09.28-pm.png"><img src="/images/screen-shot-2023-11-20-at-9.09.28-pm.png" width="900" alt=""></a>
 
 So let's do that:
 
@@ -73,4 +73,4 @@ So let's do that:
 
 The back in our repo on Gogs:
 
-![](/images/screen-shot-2023-11-20-at-9.22.53-pm.png)
+<a href="/images/screen-shot-2023-11-20-at-9.22.53-pm.png"><img src="/images/screen-shot-2023-11-20-at-9.22.53-pm.png" width="1023" alt=""></a>

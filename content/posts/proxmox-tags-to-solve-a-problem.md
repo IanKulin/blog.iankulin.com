@@ -15,7 +15,7 @@ Each weekend I run an Ansible script that updates all my apt based VMs and conta
 
 Long story short, the dev server has some containers and VM's that need turned on before I run the updates, and some that don't. I could just start them all up, for the ten minutes the updates usually take, but that seems wasteful somehow. If there was only some way to mark the ones I need to turn on in the Proxmox webgui! Well, there is. We can add tags to machines in Proxmox.
 
-![](/images/screen-shot-2023-10-14-at-11.23.57-am-copy.png)
+<a href="/images/screen-shot-2023-10-14-at-11.23.57-am-copy.png"><img src="/images/screen-shot-2023-10-14-at-11.23.57-am-copy.png" width="512" alt=""></a>
 
 Proxmox has quite a [comprehensive tagging system](https://pve.proxmox.com/pve-docs/pve-admin-guide.html#_tags) - there are different display formats, and tags can be limited to a specific set, or completely free form. Also, there's a heap of command line tools to work with them. For this job, I don't really need much of that stuff - I just want to click a few things in the web gui to mark some of my VM's with a coloured marker so I know which ones to start when I'm going to run my updates.
 
@@ -25,11 +25,11 @@ Go into `DataCenter | Options`. One of the options is `Tag Style Override`. It's
 
 Back to me being fussy. Opening up the `Tag Style Override` I'm setting apt to be dark blue with white text.
 
-![](/images/screen-shot-2023-10-14-at-2.58.00-pm.png)
+<a href="/images/screen-shot-2023-10-14-at-2.58.00-pm.png"><img src="/images/screen-shot-2023-10-14-at-2.58.00-pm.png" width="900" alt=""></a>
 
 To apply these tags, you just click on the machine you want to tag, then notice that up the top of the web gui, next to the machine name, it says "No Tags"
 
-![](/images/screen-shot-2023-10-14-at-3.07.11-pm.png)
+<a href="/images/screen-shot-2023-10-14-at-3.07.11-pm.png"><img src="/images/screen-shot-2023-10-14-at-3.07.11-pm.png" width="900" alt=""></a>
 
 You just click on the pencil, and enter the tag name. If you haven't changed any of the other defaults, a coloured circle will appear next to the machine in the server view.
 
@@ -37,4 +37,4 @@ There are three display options for the tags - "full" which is a coloured bar in
 
 As well as being able to see the tag blobs in the tree view, if you look at all your machines on the `Datacenter | Search` view, it's possible to sort by tags - which will even further simplify the job for me of starting them all up before I run the updates.
 
-![](/images/screen-shot-2023-10-14-at-3.35.21-pm.png)
+<a href="/images/screen-shot-2023-10-14-at-3.35.21-pm.png"><img src="/images/screen-shot-2023-10-14-at-3.35.21-pm.png" width="900" alt=""></a>

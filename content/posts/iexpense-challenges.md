@@ -11,7 +11,7 @@ tags:
   - xcode14
 ---
 
-![](/images/screen-shot-2022-09-29-at-6.41.29-am.png)
+<a href="/images/screen-shot-2022-09-29-at-6.41.29-am.png"><img src="/images/screen-shot-2022-09-29-at-6.41.29-am.png" width="308" alt=""></a>
 
 [Day 38](https://www.hackingwithswift.com/100/swiftui/38) is three challenges on the iExpense app - a simple expense tracking app that uses UseDefaults for storing it's data.
 

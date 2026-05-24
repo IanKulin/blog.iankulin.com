@@ -36,7 +36,7 @@ It's possible to create a file on the system we want to ssh onto and to paste th
 ssh-copy-id <username>@<host>
 ```
 
-![](/images/screen-shot-2023-02-04-at-1.51.49-pm.png)
+<a href="/images/screen-shot-2023-02-04-at-1.51.49-pm.png"><img src="/images/screen-shot-2023-02-04-at-1.51.49-pm.png" width="800" alt=""></a>
 
 #### Turning off password access
 
@@ -46,7 +46,7 @@ Note that I'm running on Unbuntu server 22.x so your mileage may vary. Certainly
 
 The configuration files for ssh on Ubuntu are at /etc/ssh/
 
-![](/images/screen-shot-2023-02-04-at-3.57.15-pm.png)
+<a href="/images/screen-shot-2023-02-04-at-3.57.15-pm.png"><img src="/images/screen-shot-2023-02-04-at-3.57.15-pm.png" width="800" alt=""></a>
 
 It's the `sshd_config` we're interested in (`ssh_config` is for the client, we're wanting to change the ssh server - daemon). You'll also notice there's a `sshd_config.d` directory. The reason for this is that the config file has a line in it at the top that includes all the config files in that directory. This is a common pattern in Unbuntu - the main config file pulls in other config files. When you see that, you really shouldn't edit the main config file as it's possible that a future update will change it, you edit, or add to the files in the directory below.
 

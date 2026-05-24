@@ -12,7 +12,7 @@ tags:
   - security
 ---
 
-![](/images/screen-shot-2024-12-05-at-7.53.56-pm.png)
+<a href="/images/screen-shot-2024-12-05-at-7.53.56-pm.png"><img src="/images/screen-shot-2024-12-05-at-7.53.56-pm.png" width="1000" alt=""></a>
 
 My accountant works for one of those giant firms, and it bugs me that I'm emailing him password protected zip files of my accounts rather than to a secure upload facility at his firm. I can fix this with the power of self hosting, by running my own secure file dropping app on a VPS.
 
@@ -70,4 +70,4 @@ networks:
 
 Once that's running, the user name and password will required to upload files or write notes. The interface is clean and self-explanatory:
 
-![](/images/screen-shot-2024-12-05-at-8.34.47-pm.png)
+<a href="/images/screen-shot-2024-12-05-at-8.34.47-pm.png"><img src="/images/screen-shot-2024-12-05-at-8.34.47-pm.png" width="900" alt=""></a>

@@ -23,7 +23,7 @@ In this post, focusing on the server side, using node, express, and particularly
 
 For most web applications, we need to persist state _per user_. For example, if you go to a drawing app and start a drawing, you want it to be there when you come back to the app. Additionally, you don't want to come back to someone else's half-drawn app, or, have them drawing over your picture. What we really want is something like this:
 
-![](/images/20240126-sessions-1.drawio-1.png)
+<img src="/images/20240126-sessions-1.drawio-1.png" width="283" alt="">
 
 User 1 sees their picture of the star, and User 2 sees their picture of a heart.
 
@@ -79,7 +79,7 @@ Thanks to the magic of browser development tools, we can have a look in the requ
 
 It's also possible to go and find the cookie your browser has stored. Again, this is easiest in the developer tools - look under 'Storage':
 
-![](/images/screen-shot-2024-01-26-at-10.19.16-am.png)
+<a href="/images/screen-shot-2024-01-26-at-10.19.16-am.png"><img src="/images/screen-shot-2024-01-26-at-10.19.16-am.png" width="1000" alt=""></a>
 
 Currently, we're only storing the links between session\_ids and the number of views in memory in the server, so if the server restarts, we'll lose them, and everyone will go back to 'Views: 1'.
 
@@ -122,7 +122,7 @@ app.listen(3000, () => {
 
 Now view counts for each browser are persisted even when the server is re-started. If we look inside one of the files we should see a view\_count field:
 
-![](/images/screen-shot-2024-01-26-at-12.22.45-pm.png)
+<a href="/images/screen-shot-2024-01-26-at-12.22.45-pm.png"><img src="/images/screen-shot-2024-01-26-at-12.22.45-pm.png" width="1000" alt=""></a>
 
 The name of each file is the session id, but these don't match the session id's you see in the browser cookies - presumably because they've been encrypted by the secret we used when establishing the express-session.
 
@@ -348,7 +348,7 @@ app.get("/create/:user/:password", (req, res) => {  if (findUser(req.params.user
 
 #### Forms
 
-![](/images/screen-shot-2024-01-27-at-1.44.22-pm.png)
+<a href="/images/screen-shot-2024-01-27-at-1.44.22-pm.png"><img src="/images/screen-shot-2024-01-27-at-1.44.22-pm.png" width="800" alt=""></a>
 
 To move the passwords out of the URLs, we'll present a simple forms to the user for creating and logging in. The log in page is the basic user name / password form you've built before. This is served from the app.get("/login") route.
 

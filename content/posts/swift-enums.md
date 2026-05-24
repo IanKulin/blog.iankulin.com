@@ -15,7 +15,7 @@ I've started on the refactoring for [Rock, paper, scissors](/rock-paper-scissors
 
 I'm pleased with this solution:
 
-![](/images/screen-shot-2022-09-08-at-6.39.53-pm.png)
+<a href="/images/screen-shot-2022-09-08-at-6.39.53-pm.png"><img src="/images/screen-shot-2022-09-08-at-6.39.53-pm.png" width="921" alt=""></a>
 
 If you're a refugee from C, there's a lot happening here:
 

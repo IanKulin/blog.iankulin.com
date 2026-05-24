@@ -28,4 +28,4 @@ Workspace settings (such as excluding a file) are stored in `./vscode/settings.j
 
 This will remove it from the files, and it will stop it being processed by your extensions including any linters. If the problems don't disappear instantly, click into a different file for a second and they should go, or occasionally, you'll need to close and open VSCode.
 
-![Screenshot of VS Code showing settings.json and zero problems in the problems tab.](/images/screen-shot-2023-07-20-at-6.54.47-am.png)
+<a href="/images/screen-shot-2023-07-20-at-6.54.47-am.png"><img src="/images/screen-shot-2023-07-20-at-6.54.47-am.png" width="800" alt="Screenshot of VS Code showing settings.json and zero problems in the problems tab."></a>

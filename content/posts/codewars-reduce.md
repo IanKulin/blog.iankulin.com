@@ -11,7 +11,7 @@ tags:
   - swift-language
 ---
 
-[![](/images/1_0plbhkaulwnsx4u2mqyn2w.png)](https://www.codewars.com/)
+<a href="https://www.codewars.com/"><img src="/images/1_0plbhkaulwnsx4u2mqyn2w.png" width="242" alt=""></a>
 
 [codewars.com](https://www.codewars.com/) is a "coding practice" website. You chose a language and a skill level, then it offers up a task (or _kata_) for you to write a suitable function. The first one it gave me was seemed too hard, so I changed my level to beginner and skipped to the next one. This was my task:
 

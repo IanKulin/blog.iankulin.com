@@ -33,7 +33,7 @@ Does that matter for this application? No, but the whole exercise was for learni
 
 I think my new system will be that the homelab servers will still poll the VPS, but the VPS will be a Node.js endpoint. When it receives a GET from one of the servers, it will check the age of it's current weather data. If it's less than a minute, it will return that, if it's older than a minute, it will call the weather API, store that and return it.
 
-![](/images/20230624-weather.drawio-1.png)
+<img src="/images/20230624-weather.drawio-1.png" width="512" alt="">
 
 Apart from reducing the latency of the outside temperature data, this has a couple of other benefits. The first is that my VPS won't go on for ever requesting the weather API data after I've reloaded the operating system on the home servers and completely forgotten about this project. The second is that the temperatures in the data I'm getting back look like they only change every 20 minutes, so probably they are stale before I ever get them from Open Weather. There are live weather station web pages that I could scrape for better data, so doing things in node on the VPS leaves a good option open for that future improvement.
 

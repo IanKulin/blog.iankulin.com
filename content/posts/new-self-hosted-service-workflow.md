@@ -24,7 +24,7 @@ In any case, that made me decide I couldn't trust them, and it was time to reass
 
 ### Do it on dev
 
-![](/images/img_7003.jpg)
+<img src="/images/img_7003.jpg" width="900" alt="">
 
 Since I have the luxury of having separate production and development servers, I generally play around with new things I'm trying out on the dev instance of Proxmox. Note that this is almost entirely unnecessary - since everything is virtualised in Proxmox on the production server, there's hardly any damage I could cause in one VM or container that would adversely affect anything else.
 
@@ -126,7 +126,7 @@ The combination of using Tailscale, and having access to port 80 means that the 
 
 Some of the next steps are so common, I've set up Ansible playbooks for them, but to allow me to apply them to the new server, they need to be added into my Ansible infrastructure. First the hosts file where they get a host entry and some variables.
 
-![](/images/screen-shot-2023-11-18-at-5.48.08-am.png)
+<a href="/images/screen-shot-2023-11-18-at-5.48.08-am.png"><img src="/images/screen-shot-2023-11-18-at-5.48.08-am.png" width="900" alt=""></a>
 
 Then in the encrypted `vault.yml` file for the secrets. I've written about these before [here](/first-ansible-playbook/) and [here](/ansible-with-secrets/). Since I have `hosts:all` in the playbook that runs all my [`apt` updates](https://gist.github.com/IanKulin/41dbf097ac6bddd9e315859d3a06fe02), this now means the LXC container will get all it's updates.
 

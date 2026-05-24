@@ -13,13 +13,13 @@ tags:
 
 If you fiddle around with computers, and especially with Linux drives, you'll often find yourself with an ISO file you need to boot a device from. These can't just be copied onto an existing USB or SD card - they need to be bootable, so you'll need a special program to write the ISO to the storage device.
 
-![](/images/screen-shot-2023-04-23-at-2.02.44-pm.png)
+<a href="/images/screen-shot-2023-04-23-at-2.02.44-pm.png"><img src="/images/screen-shot-2023-04-23-at-2.02.44-pm.png" width="247" alt=""></a>
 
 Previously I've been a big fan of [Balena Etcher](https://www.balena.io/etcher). It couldn't be much more simple - you chose the ISO file you've downloaded from somewhere, chose your removable drive (it intelligently hides the non-removable drives to prevent you from accidentally wiping your hard disk), then tell it to do it's thing.
 
 When you want to try a different ISO file, you go through that whole process again. At least that's what I did till I heard about [Ventoy](https://www.ventoy.net/en/index.html).
 
-![](/images/ventoy.png)
+<img src="/images/ventoy.png" width="241" alt="">
 
 This installs onto the USB in a similar way - although with it's own program Ventoy2Disk (no macOS version). Once it's on there, the USB drive just appears as an ordinary empty ExFat drive if you plug it in.
 

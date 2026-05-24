@@ -55,7 +55,7 @@ The certificate bundle contains:
 
 And when you go to add a custom certificate in NPM you have these options:
 
-![](/images/screenshot-2025-03-08-at-15.47.04.png)
+<img src="/images/screenshot-2025-03-08-at-15.47.04.png" width="981" alt="">
 
 As you can see your certificate (domain.cert.pem) goes in the certificate slot, and the Certificate Key it's asking for is your private key (private.key.pem). You don't need the intermediate key - this is the same for all Let's Encrypt certificates.
 

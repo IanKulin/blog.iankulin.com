@@ -11,7 +11,7 @@ tags:
   - proxmox
 ---
 
-![](/images/img_7342.jpg)
+<img src="/images/img_7342.jpg" width="1000" alt="">
 
 My homelab set up is a production node, (pve-prod1) a backup production node (pve-prod2) and a development machine (pve-dev1). They are all G2 800 minis, but pve-prod1 has a i7 6700T and 32GB RAM, where as the other two are i5 6500T with 16GB. My thinking is that the older two can easily share the workload of the main production machine for disaster recovery. Everything is virtualised on top of Proxmox, so sharing up the VM's and containers is trivial.
 
@@ -53,7 +53,7 @@ Also I need to shoutout Synology NAS's. Just super reliable. I yearn for a ZFS s
 
 #### Monitoring
 
-![](/images/img_b42eca952bee-1.jpeg)
+<img src="/images/img_b42eca952bee-1.jpeg" width="577" alt="">
 
 A lot of the time I don't really think about my monitoring - which consists or Uptime Kuma hooked up to Ntfy for phone notifications, and a [custom Go program](/simple-api-endpoint-in-go/) that exposes the RAM and disk use on each container and VM.
 

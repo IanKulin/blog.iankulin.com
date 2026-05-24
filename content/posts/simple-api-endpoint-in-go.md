@@ -14,7 +14,7 @@ tags:
   - web-dev
 ---
 
-![](/images/gopher.png)
+<img src="/images/gopher.png" width="219" alt="">
 
 I'd like a small, quick, low load endpoint on all my nodes and VM's that exposes a text keyword indicating if that machine is okay for RAM and disk space. I'm currently using [Uptime Kuma](/tags/uptime-kuma/) to monitor if these machines are pingable, but I'd love a tiny bit more information from them so I'd get a [Ntfy](/uptime-kuma-nfty/) buzz on my phone if a machine is in trouble.
 
@@ -28,13 +28,13 @@ The code is up on [GitHub](https://github.com/IanKulin/vitals-glimpse).
 
 It's hard-coded to port 10321 and the route is `/vitals.`
 
-![](/images/screen-shot-2023-08-15-at-9.37.44-pm.png)
+<a href="/images/screen-shot-2023-08-15-at-9.37.44-pm.png"><img src="/images/screen-shot-2023-08-15-at-9.37.44-pm.png" width="900" alt=""></a>
 
 You get back this JSON. In my Uptime Kuma system, I search for the keywords `mem_okay` and `disk_okay` - no need to parse the JSON, it's just an on/off status check that will show up in red on the page if there's trouble, and ping my phone using [ntfy.sh](/uptime-kuma-nfty/).
 
 In Uptime Kuma, there's an option when setting up a new monitor for `Http(s) Keyword`. How this works is that it will scrape that web address and look to see if a particular keyword exists. If the keyword is present on the page, that site is marked as up, if not, it's marked as down.
 
-![](/images/screen-shot-2023-08-15-at-7.47.44-pm.png)
+<a href="/images/screen-shot-2023-08-15-at-7.47.44-pm.png"><img src="/images/screen-shot-2023-08-15-at-7.47.44-pm.png" width="900" alt=""></a>
 
 Testing the memory threshold for the screenshot above was fun:
 

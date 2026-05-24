@@ -71,7 +71,7 @@ as I would normally from my laptop, I have to use `ssh nas1_admin@104.43.22.181`
 
 Via the web interface on both Synologys, you'll need to enable rsync. The setting is in `Control Panel | File Services | rsync`
 
-![](/images/screen-shot-2024-08-25-at-1.56.57-pm.png)
+<a href="/images/screen-shot-2024-08-25-at-1.56.57-pm.png"><img src="/images/screen-shot-2024-08-25-at-1.56.57-pm.png" width="900" alt=""></a>
 
 Leave the port as 22 and don't bother with the other settings, but do hit `Apply` at the bottom to save the change.
 
@@ -87,7 +87,7 @@ I'm not going to go into all the flags for rsync (the internet has plenty of goo
 
 Note that if you have a jazillion files, this could take a while, you might be better to limit it to a smaller sub directory such as `/volume1/media/music/napster/Metallica`/
 
-![](/images/yo-dawg-heard-you.jpg)
+<img src="/images/yo-dawg-heard-you.jpg" width="497" alt="">
 
 The other bit of free rsync advice I'll give you is to look carefully at the source and destination directories in the command above. The source sub directory has a trailing '/', the destination does not. If you mess this up you'll be making directories inside your directories dawg.
 

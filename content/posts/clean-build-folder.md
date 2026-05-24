@@ -13,7 +13,7 @@ Working on adding Core Data to the FriendFace app, and burnt up 20 minutes figur
 
 Problem One was that I was getting a build errors saying the core data classes had been re-declared, and others saying that my class name was ambiguous. Since XCode had generated this code when I'd told it to "Create NSManagedObject subclass". This is what you do when you want to be able to edit the NSManagedObject for example to created computed properties to unwrap the real properties. If you don't need that flexibility, you just leave the default setting in the entity for XCode to create internally.
 
-![](/images/screen-shot-2022-11-15-at-7.52.05-pm.png)
+<a href="/images/screen-shot-2022-11-15-at-7.52.05-pm.png"><img src="/images/screen-shot-2022-11-15-at-7.52.05-pm.png" width="885" alt=""></a>
 
 Eventually I figured out my error - when I'd turned off the CodeGen in the data model inspector, I'd only done it for one of the two entities. Now the CodeGen version was duplicating the code in the "manually" generated version. Solved!
 

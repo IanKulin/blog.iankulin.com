@@ -14,7 +14,7 @@ tags:
   - web-dev
 ---
 
-![](/images/screen-shot-2023-08-02-at-9.09.48-pm-2.png)
+<a href="/images/screen-shot-2023-08-02-at-9.09.48-pm-2.png"><img src="/images/screen-shot-2023-08-02-at-9.09.48-pm-2.png" width="300" alt=""></a>
 
 I've been using the excellent [Uptime Kuma](https://github.com/louislam/uptime-kuma) for my monitoring, but a couple of recent incidents - an external USB mount disappeared on a remote machine, an NVME drive filled up on a different node and stopped backups working because of a configuration error - have made me start to think about more robust monitoring.
 
@@ -24,6 +24,6 @@ Uptime Kuma is already pretty great - it can parse a webpage to search for a par
 
 I could expose some of this data - disk space free, CPU temp, checking a mount is working - pretty easily in a little Node endpoint. But it thinking about this, it made me wonder what the overhead of running Node (probably with Express) to carry out this menial task might be. I was thinking that the alternatives would be to use python/flask, or just to write it in C or Golang.
 
-[![](/images/screen-shot-2023-08-02-at-9.34.50-pm.png)](https://dev.to/wickdchromosome/is-the-pain-worth-the-gain-writing-webapps-in-c-benchmarks-vs-flask-and-nodejs-14l0)
+<a href="https://dev.to/wickdchromosome/is-the-pain-worth-the-gain-writing-webapps-in-c-benchmarks-vs-flask-and-nodejs-14l0"><img src="/images/screen-shot-2023-08-02-at-9.34.50-pm.png" width="129" alt=""></a>
 
 Whilst searching for answers about this, I found this excellent article from Bence Cotis. It turns out, that for very low loads (I'll probably hit these endpoints once every five minutes) C is a bit better, but probably not (in my opinion) worth the hassle. I'll stick to Node.

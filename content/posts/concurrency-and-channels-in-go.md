@@ -12,7 +12,7 @@ tags:
   - web-dev
 ---
 
-![](/images/portal-logo.jpg)
+<img src="/images/portal-logo.jpg" width="400" alt="">
 
 In the long ago times, I'd done several years of commercial programming before I ever had to worry about dealing with multiple things happening at the same time. Perhaps because of the rarity of this problem, doing it in traditional languages was not always elegant.
 
@@ -44,7 +44,7 @@ func main() {
 
 If we run this, main hands control over to the worker, which sleeps for a bit, prints a message then repeats (normally the worker would some, like, actual work; but for our demo purposes, having a little nap then reporting it it fine).
 
-![](/images/screen-shot-2023-11-23-at-8.34.12-pm.png)
+<a href="/images/screen-shot-2023-11-23-at-8.34.12-pm.png"><img src="/images/screen-shot-2023-11-23-at-8.34.12-pm.png" width="1000" alt=""></a>
 
 We can convert it to a Goroutine, just by putting a go in front of the function call,
 

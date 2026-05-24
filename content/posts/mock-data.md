@@ -24,7 +24,7 @@ As I was doing it, it occurred to me that a completely random date of birth didn
 
 It was a simple matter to download my data as JSON, but there's also options for fetching it from a REST API.
 
-![](/images/screen-shot-2022-11-26-at-5.59.38-am.png)
+<a href="/images/screen-shot-2022-11-26-at-5.59.38-am.png"><img src="/images/screen-shot-2022-11-26-at-5.59.38-am.png" width="273" alt=""></a>
 
 I'll download and host this on my home Raspberry Pi server that I bought for a different project, but it's possible just to pull it direct from their server.
 

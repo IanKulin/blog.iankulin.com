@@ -19,7 +19,7 @@ But the world moves on, and now developers have some amazing [NoSQL](https://en.
 
 In a document database, each collection contains a number of documents. In the ones I'm looking at these are basically JSON objects, so this could be a document:
 
-[![](/images/screen-shot-2023-07-01-at-8.14.06-am.png)](https://www.mongodb.com/docs/manual/introduction/)
+<a href="https://www.mongodb.com/docs/manual/introduction/"><img src="/images/screen-shot-2023-07-01-at-8.14.06-am.png" width="402" alt=""></a>
 
 In this example (from the MongoDB manual) `groups` is an array of string, but it could just as easily be an array of objects. Documents can be big ([Fireship says try to keep them under 1MB](https://www.youtube.com/watch?v=jm66TSlVtcc)) so a large collection of child objects is a realistic possibility.
 

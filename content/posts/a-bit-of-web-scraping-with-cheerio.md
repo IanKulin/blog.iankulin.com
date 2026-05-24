@@ -15,7 +15,7 @@ tags:
 
 I had an idea for a little holiday project that required a list of episodes from [The Rest Is History](https://therestishistory.supportingcast.fm/) podcast. On their 'Episodes' page, they have a player, and a list of post entries for the most recent eighteen podcasts. There is a 'show all' button, but it doesn't work.
 
-![](/images/screen-shot-2025-01-05-at-8.47.03-am.png)
+<a href="/images/screen-shot-2025-01-05-at-8.47.03-am.png"><img src="/images/screen-shot-2025-01-05-at-8.47.03-am.png" width="900" alt=""></a>
 
 The player does contain the full list of episodes (about 600) including a number of duplicates, so I expected if I inspected the network calls that I'd see a JSON package arriving with what I wanted. This is what I almost always find these days so I've had very little call to do any real web scraping - it's normally just a matter of locating the endpoint and perhaps extracting an API key from a header.
 

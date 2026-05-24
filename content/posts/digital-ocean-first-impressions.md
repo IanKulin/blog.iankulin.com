@@ -13,7 +13,7 @@ tags:
 
 I've been thinking about the time it takes me to provision a guest VM in Proxmox. I seem to remember on [BinaryLane](https://www.binarylane.com.au/) it was seconds rather than minutes. This seemed to be a good excuse to use the free credit I've heard about for [Linode](https://www.linode.com/lp/free-credit-100/?promo=sitelin100-02162023&promo_value=100&promo_length=60&utm_source=google&utm_medium=cpc&utm_campaign=11178784684_109179223363&utm_term=g_kwd-2629795801_e_linode&utm_content=466889596558&locationid=1000676&device=c_c&gclid=CjwKCAjw-7OlBhB8EiwAnoOEk9lQtzb_l17rAJmoU1KzhTUcWc6TF6C8KBTZU3j6tJ3d1qLWqqiRgxoC6qUQAvD_BwE) or Digital Ocean hundreds of times in podcast adverts, so I claimed the [$200 credit for being a Late Night Linux listener](http://do.co/lnl) at Digital Ocean. They extracted $5 out of me in the process, so I guess they are in front on that transaction. $200 would run a little VM for a couple of years at their rates, but of course it's limited to two months, at the end of which I will have an account sitting there, with my credit card already recorded - so all the friction is gone if I need an internet facing machine for some purpose - which is clearly their dastardly plan
 
-![](/images/screen-shot-2023-07-11-at-7.50.07-pm.png)
+<a href="/images/screen-shot-2023-07-11-at-7.50.07-pm.png"><img src="/images/screen-shot-2023-07-11-at-7.50.07-pm.png" width="351" alt=""></a>
 
 The process of creating a 'droplet' (that's what they call their VM's) was straightforward - select the datacentre, machine size etc You can upload your SSH key which is a nice touch.
 

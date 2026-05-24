@@ -19,7 +19,7 @@ It sat plugged into the network for 24 hours with no load, then I moved the serv
 
 It was all working perfectly, then a day later, it suddenly stopped responding to pings and the interface was unavailable. The weird bit was that the network was still working perfectly - I could ssh to the server through it, but it didn't appear on the network. The leds on the connected ports where flashing away happily.
 
-![](/images/screen-shot-2023-02-05-at-7.18.51-am.png)
+<a href="/images/screen-shot-2023-02-05-at-7.18.51-am.png"><img src="/images/screen-shot-2023-02-05-at-7.18.51-am.png" width="900" alt=""></a>
 
 There are a couple of search results for this switch working, but the interface not reachable - but they all seem to involve complicated VLAN setups where people have locked themselves out rather than the default config suddenly having an issue.
 

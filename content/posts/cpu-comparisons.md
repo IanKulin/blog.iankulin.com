@@ -10,7 +10,7 @@ tags:
   - intel
 ---
 
-![](/images/cloud.jpg)
+<img src="/images/cloud.jpg" width="800" alt="">
 
 When I was a young whipper-snapper, working at the "data processing" centre, you could see if one CPU was better than another one by the CPU name/number. No one wanted an 8086 once the 286's came out. Then a 386 was what you wanted for the latest multitasking support, but only till the 486 was available, then you wanted that for the gargantuan memory addressing.
 
@@ -22,4 +22,4 @@ Luckily, there are some handy CPU comparison sites like [versus.com](http://vers
 
 Spoiler alert - it turns out the i7 is not 2 better than the i5, they are almost identical except the i7 has double the threads (because Hyperthreading?) - a not insignificant different for a machine that's running several VM's
 
-![](/images/screen-shot-2023-03-21-at-8.49.52-pm.png)
+<a href="/images/screen-shot-2023-03-21-at-8.49.52-pm.png"><img src="/images/screen-shot-2023-03-21-at-8.49.52-pm.png" width="787" alt=""></a>

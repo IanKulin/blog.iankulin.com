@@ -10,7 +10,7 @@ tags:
   - lxc
 ---
 
-![](/images/boinc_logo.png)
+<img src="/images/boinc_logo.png" width="900" alt="">
 
 Years ago, I was very keen on the [SETI@home](https://youtu.be/WwxTc6pFOcU) project that used a distributed computing model whereby packets of digitized received radio data were farmed out to individuals' computers to be processed to look for any unusual signals that could potentially be from an intelligent extra-terrestrial source.
 
@@ -26,6 +26,6 @@ Well, that seems like it's doing some serious work. Either I've been hacked and 
 
 Each of the organisations enrolled in BOINC have a community page where you sign up and get an API key that identifies your computers to the project, and you can head there to see your contributions. Sure enough, I've been receiving, processing and returning packets.
 
-![](/images/screen-shot-2023-08-27-at-7.12.05-pm.png)
+<a href="/images/screen-shot-2023-08-27-at-7.12.05-pm.png"><img src="/images/screen-shot-2023-08-27-at-7.12.05-pm.png" width="900" alt=""></a>
 
 This is another thing I'd like to return to later - I don't think it was as simple as following the [instructions](https://boinc.berkeley.edu/wiki/Installing_BOINC_on_Debian_or_Ubuntu) because I'd made my life a bit more complicated by running it in an LXC. It also occurs to me that this might be a good workload to use an orchestration tool like Kubernetes for - since I don't really have any actual need (excuse) to play with those.

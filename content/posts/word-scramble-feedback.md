@@ -28,7 +28,7 @@ Whereas Paul had:
 
 I have no idea if that's better performing or safer, but to me, it's a lot clearer, so I prefer Paul's solution.
 
-![](/images/screen-shot-2022-09-17-at-4.30.14-pm-1.png)
+<a href="/images/screen-shot-2022-09-17-at-4.30.14-pm-1.png"><img src="/images/screen-shot-2022-09-17-at-4.30.14-pm-1.png" width="266" alt=""></a>
 
 The second difference is a user experience one. I had chosen to put the score and reset button both in a bottom toolbar. It's a good solution in the sense that it keeps the score and the reset buttons visible regardless of the size of the (scrollable) list. My code for this was appended to the bottom of the list:
 
@@ -58,4 +58,4 @@ Paul used a _SafeAreaInset_ appended to the bottom of the list, and as he was en
 
 until I saw the result and loved it.
 
-![](/images/screen-shot-2022-09-17-at-6.22.34-pm.png)
+<a href="/images/screen-shot-2022-09-17-at-6.22.34-pm.png"><img src="/images/screen-shot-2022-09-17-at-6.22.34-pm.png" width="490" alt=""></a>

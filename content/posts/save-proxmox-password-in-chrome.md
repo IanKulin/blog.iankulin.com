@@ -21,7 +21,7 @@ Well, you'd guess it was something to do with this. I feel like Chrome is trying
 
 Seems like a certificate thing. [These peeps](https://forum.proxmox.com/threads/how-can-i-save-pve-web-loginpassword-on-firefox-chrome.46180/) say that I need to import the CA from PVE, and one more [googlestep reveals](https://pve.proxmox.com/wiki/Import_certificate_in_browser) the certificate is on the Proxmox machine at `/etc/pve/pve-root-ca.pem` so we need to grab that.
 
-![](/images/aint.jpg)
+<img src="/images/aint.jpg" width="90" alt="">
 
 A while ago, I wrote a post about [using scp to copy files over ssh](/copying-a-file-via-ssh/), and you should totally know how to do that, but my daily drive for secure file copying is now [filezilla](https://filezilla-project.org/). Once you have a bundle of servers in VM's and containers that you revisit and move stuff around all the time, its just a big productivity step-up to have that list of hosts and credentials a tap away, plus having the visual arrangement of nested folders works for my brain somehow.
 
@@ -41,4 +41,4 @@ Looking at the settings for the site in Chrome, there's an option for "Insecure 
 
 But it actually does help - I've got the little padlock. That wasn't quite the end since Chrome still wasn't offering to save the password, but clearing the cache fixed that.
 
-![](/images/screen-shot-2023-02-04-at-7.24.08-am.png)
+<a href="/images/screen-shot-2023-02-04-at-7.24.08-am.png"><img src="/images/screen-shot-2023-02-04-at-7.24.08-am.png" width="566" alt=""></a>

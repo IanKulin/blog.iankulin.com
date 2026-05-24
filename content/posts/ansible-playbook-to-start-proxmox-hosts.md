@@ -11,7 +11,7 @@ tags:
   - proxmox
 ---
 
-![](/images/mick-jagger-start-me-up-video-the-rolling-stones-far-out-magazine-copy.jpg)
+<img src="/images/mick-jagger-start-me-up-video-the-rolling-stones-far-out-magazine-copy.jpg" width="683" alt="">
 
 [In my last post](/proxmox-tags-to-solve-a-problem/), I talked about tagging guests in a Proxmox node so I could easily see which VMs and LXCs I needed to manually start before I ran an Ansible script to run all my `apt updates`. It would have been reasonable to wonder why I didn't just add things to my playbook to magically do that.
 
@@ -21,7 +21,7 @@ The answer would be, I haven't gotten around to it yet, so here goes:
 
 You might remember we discussed that the various functionalities for Ansible are in _modules_. The modules for starting Proxmox guests are `[community.general.proxmox_kvm](https://docs.ansible.com/ansible/2.9/modules/proxmox_kvm_module.html)` for VMs, and `[community.general.proxmox](https://docs.ansible.com/ansible/2.9/modules/proxmox_module.html)` for LXC containers. If you look at the documentation for either of those, you'll see a couple of prerequisites: _proxmoxer_ and _requests_.
 
-![](/images/screen-shot-2023-10-14-at-8.18.46-pm.png)
+<a href="/images/screen-shot-2023-10-14-at-8.18.46-pm.png"><img src="/images/screen-shot-2023-10-14-at-8.18.46-pm.png" width="900" alt=""></a>
 
 _requests_ is a common Python library (Ansible is actually running Python on the machines it's configuring) for HTTP requests. We can ignore it since (a) you probably already have it installed, and (b) if not, when we install _proxmoxer_, it will be installed as a dependency. You've probably already guessed that _proxmoxer_ is the Python library for interacting with Proxmox through it's API.
 

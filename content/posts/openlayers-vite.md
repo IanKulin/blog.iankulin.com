@@ -75,7 +75,7 @@ where as I would have been expecting
 
 (a side note - I have no idea why \*ix systems use `./` to mean the current directory. It would be like prefixing everyone's name with _parent's child_ when you're talking to them).
 
-![](/images/soanyway.jpg)
+<img src="/images/soanyway.jpg" width="74" alt="">
 
 So anyway, I just started manually editing the built code which doesn't seem like great practice:
 

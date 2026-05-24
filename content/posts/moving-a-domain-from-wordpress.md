@@ -35,11 +35,11 @@ Even if that's not your situation, still keep in mind this transfer will take ab
 
 Most domain registrars allow you to (probably be default) ['lock' a domain](https://www.icann.org/resources/pages/locked-2013-05-03-en) to prevent changes. To get to this on Wordpress, go into your site, and look in "Upgrades" | "Domains" for "Transfer". There's a toggle to turn that off.
 
-![](/images/screen-shot-2024-11-09-at-5.19.45-pm.png)
+<a href="/images/screen-shot-2024-11-09-at-5.19.45-pm.png"><img src="/images/screen-shot-2024-11-09-at-5.19.45-pm.png" width="900" alt=""></a>
 
 This is also where you can request the "Authorization Code". This is the key that you'll take over to your new domain registrar. But don't do that yet - that's what I did and got this:
 
-![](/images/screen-shot-2024-11-09-at-5.29.57-pm.png)
+<a href="/images/screen-shot-2024-11-09-at-5.29.57-pm.png"><img src="/images/screen-shot-2024-11-09-at-5.29.57-pm.png" width="900" alt=""></a>
 
 Lol. What?! Someone objected by fax to me moving my domain? I feel like the only people who could have done that to this transfer I initiated two seconds ago could be Wordpress.
 
@@ -47,13 +47,13 @@ Lol. What?! Someone objected by fax to me moving my domain? I feel like the only
 
 To their credit (again) this was explained in another email shortly after:
 
-![](/images/screen-shot-2024-11-16-at-7.02.20-am.png)
+<a href="/images/screen-shot-2024-11-16-at-7.02.20-am.png"><img src="/images/screen-shot-2024-11-16-at-7.02.20-am.png" width="900" alt=""></a>
 
 Ah, so I need to turn 'private registration' off. This is the mechanism that hides your personal details as a domain owner from scammers and grifters. Apparently it has to be 'off' to transfer the site. This is not a source of stress to me, as soon as the domain is transferred to PorkBun, the apparent owner of the domain when someone does a `whois` on it, will be "Private By Design LLC".
 
 Once again, this setting is in the Wordpress site settings under "Domain".
 
-![](/images/screen-shot-2024-11-09-at-5.32.29-pm.png)
+<a href="/images/screen-shot-2024-11-09-at-5.32.29-pm.png"><img src="/images/screen-shot-2024-11-09-at-5.32.29-pm.png" width="900" alt=""></a>
 
 #### Get your Authorization Code
 
@@ -65,7 +65,7 @@ I guess every domain registrar will have a slightly different set up. With porkb
 
 On the porkbun status page for the transfer, I was able to set up an A record to the wordpress IP where by blog still lives, so that the second the transfer went through, it would be set up to direct traffic there with a minimal downtime. I guess in this case that would have no effect since the wordpress name servers would still be in place (see further down), but it's a good idea since often when you're moving a domain, the losing registrar would be deleting your name-server entry.
 
-![](/images/5later.jpg)
+<img src="/images/5later.jpg" width="300" alt="">
 
 Once the email came through on the sixth day, I checked the domain was still pointing to the blog, and it was all good. But we're not done yet.
 
@@ -75,7 +75,7 @@ Although I've now got control of the domain, we're still using WordPress's names
 
 First step is to see who are the nameservers for a domain. We do this with the `dig NS <domain-name>` command:
 
-![](/images/screen-shot-2024-11-16-at-8.27.37-am.png)
+<a href="/images/screen-shot-2024-11-16-at-8.27.37-am.png"><img src="/images/screen-shot-2024-11-16-at-8.27.37-am.png" width="900" alt=""></a>
 
 In this example the name servers are `b.iana-servers.net` and `a.iana-servers.net` In the case of your wordpress blog they are probably `ns1.wordpress.com` etc.
 
@@ -87,13 +87,13 @@ This is done with `dig @<name-server> <domain-name> <record-type>` for example `
 
 In this case there is a single A record pointing the domain to 93.184.215.14 We need to note all of these to reproduce them in the domain settings in your new registrar. Again this is going to be different for each one, but if you've ever pointed a domain anywhere, you'll know how to do it on yours.
 
-![](/images/screen-shot-2024-11-16-at-8.40.11-am-1.png)
+<a href="/images/screen-shot-2024-11-16-at-8.40.11-am-1.png"><img src="/images/screen-shot-2024-11-16-at-8.40.11-am-1.png" width="900" alt=""></a>
 
 #### Change the nameservers
 
 Now those records are all in, it's time to change the nameservers. There will be an option somewhere in your domain management tools at the registrar to allow for this. In my case, I'll be switching to porkbun's default ones.
 
-![](/images/screen-shot-2024-11-16-at-8.45.30-am.png)
+<a href="/images/screen-shot-2024-11-16-at-8.45.30-am.png"><img src="/images/screen-shot-2024-11-16-at-8.45.30-am.png" width="900" alt=""></a>
 
 #### Profit
 

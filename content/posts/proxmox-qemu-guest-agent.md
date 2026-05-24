@@ -47,7 +47,7 @@ But then change once the boot gets to the stage of running all the daemons. This
 
 If you want to double check everything is working, you can `ssh` into the VM, and have a look at the process with `systemctl status qemu-guest-agent`
 
-![](/images/screen-shot-2023-01-29-at-12.07.46-pm.png)
+<a href="/images/screen-shot-2023-01-29-at-12.07.46-pm.png"><img src="/images/screen-shot-2023-01-29-at-12.07.46-pm.png" width="938" alt=""></a>
 
 Or, we can look from the host. If you select the shell of the node - remember mine was called `pve`, you have a console for the root node that owns all the virtual machines. We can run qm with [all sorts of options](https://qemu.readthedocs.io/en/latest/interop/qemu-ga-ref.html) to accomplish different things. One of the most interesting is `qm guest exec` which allows us to run whatever we'd like, as root, on the guest vm.
 

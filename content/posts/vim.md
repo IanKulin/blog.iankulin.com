@@ -11,7 +11,7 @@ tags:
   - vim
 ---
 
-![](/images/1-_bwvjb2jzuuzyxgxm6xwqq.png)
+<img src="/images/1-_bwvjb2jzuuzyxgxm6xwqq.png" width="191" alt="">
 
 I've been working through the [Missing Semester](https://missing.csail.mit.edu/) lectures from MIT, and recently completed the lecture about the [Vim editor](https://github.com/vim/vim). Vim is a test editor, called from the command line, and optimised for programming - in the sense that it assumes most of the use of the editor is navigating around a big text file making small changes rather than entering large amount of test.
 

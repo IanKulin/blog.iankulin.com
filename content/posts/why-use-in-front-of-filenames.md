@@ -25,7 +25,7 @@ I mostly see this in references to files in HTML and have often wondered why. He
 
 It's one of those things that's difficult to Google, so these days my reflex is to ask ChatGPT such questions.
 
-![](/images/screen-shot-2023-04-19-at-11.17.53-am.png)
+<a href="/images/screen-shot-2023-04-19-at-11.17.53-am.png"><img src="/images/screen-shot-2023-04-19-at-11.17.53-am.png" width="800" alt=""></a>
 
 Okay. That makes sense for executable files. If you just type in the name, Linux will look in the current directory, then if not found, in each of the directories in your $PATH variable. But if you add the ./ to the front, it will only look in your current directory. This claim of ChatGPT's is easily tested, lets try with `cat`.
 
@@ -53,7 +53,7 @@ cp /etc/passwd ./users.txt
 
 Lol - I feel this is a real edge case. I can see it being more a problem with the first file rather than the second one. eg.
 
-![](/images/screen-shot-2023-04-19-at-12.21.05-pm.png)
+<a href="/images/screen-shot-2023-04-19-at-12.21.05-pm.png"><img src="/images/screen-shot-2023-04-19-at-12.21.05-pm.png" width="800" alt=""></a>
 
 So, TL:DR; using './' in front of a filename can be useful when:
 

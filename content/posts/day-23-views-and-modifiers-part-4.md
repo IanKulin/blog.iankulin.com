@@ -11,7 +11,7 @@ tags:
   - swiftui
 ---
 
-![This image has an empty alt attribute; its file name is psm\_v10\_d562\_the\_hindoo\_earth-3.jpg](/images/psm_v10_d562_the_hindoo_earth-3.jpg)
+<img src="/images/psm_v10_d562_the_hindoo_earth-3.jpg" width="417" alt="This image has an empty alt attribute; its file name is psm\_v10\_d562\_the\_hindoo\_earth-3.jpg">
 
 Then the last trick for for decomposing the views, is to remember we can pass values when we init a struct. So something like this:
 

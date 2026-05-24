@@ -13,7 +13,7 @@ tags:
   - web-dev
 ---
 
-![](/images/screen-shot-2024-04-25-at-10.20.28-am.png)
+<a href="/images/screen-shot-2024-04-25-at-10.20.28-am.png"><img src="/images/screen-shot-2024-04-25-at-10.20.28-am.png" width="900" alt=""></a>
 
 A 'dockerfile' contains all the instructions to build a Docker image. Here's my first draft for a project I'm working on:
 
@@ -49,7 +49,7 @@ docker run -it iankulin/tick /bin/bash
 
 Those flags, `-it` are saying we want an interactive terminal. To get back out of it, just use `ctrl-D` the sames as if you where logging out of an ssh session.
 
-![](/images/screen-shot-2024-04-25-at-10.27.22-am.png)
+<a href="/images/screen-shot-2024-04-25-at-10.27.22-am.png"><img src="/images/screen-shot-2024-04-25-at-10.27.22-am.png" width="900" alt=""></a>
 
 Well well, there are a few files there I can add to the `.dockerignore`
 
@@ -69,4 +69,4 @@ dockerfile
 
 Much neater:
 
-![](/images/screen-shot-2024-04-25-at-10.42.56-am.png)
+<a href="/images/screen-shot-2024-04-25-at-10.42.56-am.png"><img src="/images/screen-shot-2024-04-25-at-10.42.56-am.png" width="900" alt=""></a>

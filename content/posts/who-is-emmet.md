@@ -12,7 +12,7 @@ tags:
   - web-dev
 ---
 
-[![](/images/css-hacks.jpg)](https://www.piqsels.com/en/public-domain-photo-ircsa)
+<a href="https://www.piqsels.com/en/public-domain-photo-ircsa"><img src="/images/css-hacks.jpg" width="728" alt=""></a>
 
 I knew there was some magical way of entering all the the <HTML> boilerplate in Visual Studio Code as I'd seen it happen in several videos, and assumed is was some sort of macro expansion thing in the editor. Fast forward a few blog post readings and youtube viewings and I keep seeing tangential references to someone called Emmet. Turns out they're the same thing, and it's pretty cool.
 

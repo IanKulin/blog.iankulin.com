@@ -40,7 +40,7 @@ struct ContentView: View {
 
 produces:
 
-![](/images/screen-shot-2022-08-31-at-7.20.54-pm.png)
+<a href="/images/screen-shot-2022-08-31-at-7.20.54-pm.png"><img src="/images/screen-shot-2022-08-31-at-7.20.54-pm.png" width="164" alt=""></a>
 
 Having defined our view struct, we don't call for it to be rendered on the screen, SwiftUI is just going to do that for us whenever it thinks it needs to. This seems bizarre at first, but you get used to it. It will happen when it needs to - usually because the information that makes up the view has changed. We help that to happen by binding the views to their data in various ways. More on that another day.
 
@@ -59,8 +59,8 @@ struct ContentView: View {
 
 We get
 
-![](/images/screen-shot-2022-08-31-at-7.33.07-pm.png)
+<a href="/images/screen-shot-2022-08-31-at-7.33.07-pm.png"><img src="/images/screen-shot-2022-08-31-at-7.33.07-pm.png" width="188" alt=""></a>
 
 The order of the modifiers is important. You can think of each modifier that's added as wrapping around the view and any previous modifiers. In this example, we've got the same text field with the _.padding()_ and _.background(.blue)_ modifiers. The left one has the padding first, then is wrapped in the blue background. The right one has the blue background applied first, then the padding.
 
-![](/images/screen-shot-2022-08-31-at-7.39.53-pm.png)
+<a href="/images/screen-shot-2022-08-31-at-7.39.53-pm.png"><img src="/images/screen-shot-2022-08-31-at-7.39.53-pm.png" width="192" alt=""></a>
