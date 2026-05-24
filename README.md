@@ -58,7 +58,7 @@ Deviations from hugo-theme-console defaults, grouped by location.
 
 | Setting | Value | Theme default |
 |---|---|---|
-| `params.navlinks` | about/, posts/, tags/, glossary/, web-dev-links/ | none |
+| `params.navlinks` | about/, posts/, tags/, | none |
 | `taxonomies` | tags only | tags + categories |
 | `pagination.pagerSize` | 20 | 10 |
 | `permalinks.posts` | `/:slug/` | `/:year/:month/:day/:slug/` |

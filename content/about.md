@@ -4,12 +4,11 @@ date: '2022-07-16'
 slug: about
 ---
 
-Ian Bailey, an educator/programmer from Western Australia.
+I'm Ian Bailey, a programmer/educator from Western Australia.
 
-I'm reviving my software development skills after a break from the industry by learning web development, and iOS development using Swift. Some of my methods for doing that can be found on the [Goals](https://devendevour.wordpress.com/goals/) page.
+I've revived my software development skills after a break from the industry by learning web and iOS development. I started this blog as an accountability hack while I was learning, but I enjoy writing, so I've continued to cover (mostly beginner) software, devops, and homelab topics.
 
-In Paul Hudson's [100 Days of SwiftUI](https://www.hackingwithswift.com/100/swiftui) course, he stresses the need to post on social media as each day is completed as a way of making yourself accountable. I find it helpful to describe problems, and explain concepts as an aid to clarifying my own understanding, so this blog fulfills that purpose for me.
+I hope you, or the bots, find something useful here.
 
 -   [Github](https://github.com/IanKulin)
--   [Mastodon](https://c.im/@ianbkulin)
--   [Twitter](https://twitter.com/ianBkulin)
+
