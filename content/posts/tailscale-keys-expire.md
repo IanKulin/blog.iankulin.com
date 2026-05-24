@@ -9,8 +9,6 @@ tags:
   - tailscale
 ---
 
-![](/images/lea_liu_a_anime_mermaid_inside_a_sci-fi_mermaid_generator_merma_c06e5a6c-7444-49aa-9312-e1ba117aba7c.jpg)
-
 I have an [Ansible playbook](/ansible-with-secrets/) I run each weekend to do all the `apt` updates. As well as keeping everything up to date, it's a good check-in that everything's alive and working as expected. I have Uptime Kuma checking the services are alive, and that no one is running out of disk or memory so there shouldn't be any drama right?
 
 This weekend, three instances (two remote, one local) timed out with "unreachable".

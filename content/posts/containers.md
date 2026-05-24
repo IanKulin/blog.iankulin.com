@@ -10,8 +10,6 @@ tags:
   - devops
 ---
 
-![](/images/troop_team_of_4_programmers_productively_working_standing_with__cb8656e7-ffd0-41df-b5bb-778ff18fd910.jpg)
-
 There's a few things that really strike me as significant improvements to life since I was commercially developing 20 years ago:
 
 -   Accessing information - the first time I _bought_ the development stack to write commercial software against the Windows SDK it came in a huge carton with, I guess, fifteen or so 2" thick books. That was how you looked things up in those days. Fast forward to an internet connected world of websites, stack exchange, Discord and ChatGPT. So much better.

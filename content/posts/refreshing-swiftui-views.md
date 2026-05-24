@@ -12,8 +12,6 @@ tags:
   - xcode14
 ---
 
-![refreshing view, Rococo - Stable Diffusion](/images/refreshing-view-rococo.jpg)
-
 SwiftUI does some property wrapper magic to (very efficiently) refresh your views, but what if you want to force a refresh for some reason? Here's the techniques I'm currently using to do that.
 
 The tricks are below, but just so you can see them in context, here's the sample app we're working on. It's a list of cars so you can keep track of how many of each kind you own. Here's our data:
@@ -208,8 +206,6 @@ struct ContentView: View {
 ```
 
 #### Trick 4 - a timer
-
-![a watch face containing a refreshing view - stable diffusion](/images/a-watch-face-containing-a-refreshing-view.jpg)
 
 Even if our user leaves the app open and foregrounded, eventually the descriptions will be out of date, so another thing we could do is use a timer. We have to add a timer property, and add an .onReceive() to the view. The timer interval in seconds is set when the timer is created. The example below is going to trigger every second.
 

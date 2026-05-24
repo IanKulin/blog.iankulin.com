@@ -11,8 +11,6 @@ tags:
   - scripting
 ---
 
-![](/images/jimmy_e_a_computer_melting_on_an_office_desk_in_the_style_of_da_337547b0-ed21-46d5-8857-15d6dc8f6134.jpg)
-
 A potential solution to my concern about the either perfect, or nearly dead, SSD would be to add a NVMe disk to the M.2 slot in the HP Elitedesk 800 G2's. I'd use those to boot from and run Proxmox, then the existing SSD's on each node in the cluster would just be part of the CephFS pool that has some redundancy built into it and hosts the VMs that are not using the NAS for their storage.
 
 These 'gumstick' NVMe drives are remarkably good value in the smaller sizes at the moment, with Samsung 250GB NVMe's costing less than a pack of cigarettes in Australia.

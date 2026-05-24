@@ -13,8 +13,6 @@ tags:
   - web-dev
 ---
 
-![](/images/rajeshtva_node.js_609056a9-3b73-46f5-bc4f-c1f110e3a367.png)
-
 As mentioned in the [previous post](/complicating-the-temperature-api/), stage one is just to return the same static text file, but from the Node server, rather than NGINX. That's non-trivial to a rank beginner since I need to figure out 1) how to serve a static file from Node, and 2) how to configure NGINX to hand off calls to the API to Node. This post will look at both of those, but it's first probably worth just setting out what each of the puzzle pieces are.
 
 ### NGINX

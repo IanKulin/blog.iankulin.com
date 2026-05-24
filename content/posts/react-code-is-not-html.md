@@ -11,8 +11,6 @@ tags:
   - web-dev
 ---
 
-![The React atom logo fighting with some HTML  - midjourney, edited](/images/pucker_the_react_atom_logo_fighting_with_some_html_4b0d18eb-b17f-471f-a42c-a99e160b1231-copy.jpg)
-
 I was looking at this ugly code in a React app:
 
 ```

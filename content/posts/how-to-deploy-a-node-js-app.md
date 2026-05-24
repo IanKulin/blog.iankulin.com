@@ -18,8 +18,6 @@ tags:
   - web-dev
 ---
 
-![](/images/naresh_create_a_github_account_and_a_new_repository._install_gi_c8bce4b2-201f-422b-815c-bb6286fb000a.jpg)
-
 This is one of those things that is simple once you know it. I had my [tiny Node service working](/using-node-js-to-return-a-static-file/) on my MacBook, but how do I run it on the server?
 
 ### Native or Container

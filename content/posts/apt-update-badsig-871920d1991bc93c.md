@@ -13,8 +13,6 @@ tags:
   - ubuntu
 ---
 
-![](/images/thdgown_there_was_a_huge_dragon_guarding_the_treasure_in_the_wo_5bbc5295-9c5c-4e04-805a-912552832900.jpg)
-
 I have an ansible script that runs each weekend which basically does an `apt update && apt upgrade -Y` on every Debian based instance. This weekend it failed on one Ubuntu host. When I went it to try it manually, this was the output:
 
 ```

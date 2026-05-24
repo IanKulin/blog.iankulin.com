@@ -20,8 +20,6 @@ Since it's in a container, you need to create a volume for it and pass it in to 
 
 You choose the time intervals for all these. Additionally you can set up a notification for each. This is a great idea - I'm not sitting in my datacentre command room watching Uptime Kuma all day, I need to know on my phone if a CAT5 cable's been pulled out inadvertently while I was vacuuming.
 
-![](/images/pucker_modern_incident_command_center_with_a_wall_of_screens_sh_8807037d-0d9d-4f28-944f-4b8760eef8f1.jpg)
-
 There's lots of options for how to do this, including messaging platforms such as Telegram and Discord. I had a look on [r/selfhosted](https://www.reddit.com/r/selfhosted/comments/z0gpr2/free_push_service_for_uptime_kuma/) to see what was recommended, and discovered [NFTY](https://ntfy.sh/) which is an amazing little service. It has Android and iOS apps, in the app you subscribe to an endpoint, then a notification can be sent to your phone with a simple http get, for example:
 
 ```

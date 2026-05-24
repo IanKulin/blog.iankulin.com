@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![](/images/the_og_jay_go_programming_language_gopher_avatar._the_environme_3dc4f7dc-43b2-459e-8b76-57d9771eb9f7.jpg)
-
 When I'm working in an unfamiliar language, I find its quicker to just ask ChatGPT to write samples of anything I need than to look it up. For instance, last night I needed to format a date in Go, and rather than Google that and pick one of the results and scroll past the ads to read something, I just asked ChatGPT to give me a code example of formatting a date I gave it to DDMMYYYY.
 
 The answer it spat out, was something like:

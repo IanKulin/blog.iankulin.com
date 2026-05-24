@@ -11,8 +11,6 @@ tags:
   - vm
 ---
 
-![](/images/pucker_photo_of_female_cyborg_holding_a_small_child_in_her_arms_ac9cb085-3dd4-444b-8a0c-6dafc5b48418.jpg)
-
 Literally an hour after I wrote the post [about installing the qemu guest agent](/proxmox-qemu-guest-agent/) in a VM and explaining how it can be used to inject root level commands into a VM, I had use of it due to a mistake.
 
 I'd decided to add myself to the sudoers file. Since the last line in that file is a directive to include all the files in the /etc/sudoers.d directory, the accepted way to do that for local changes is to create a file in that directory with the necessary commands.

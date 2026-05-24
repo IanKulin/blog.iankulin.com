@@ -13,8 +13,6 @@ tags:
   - webdev
 ---
 
-![](/images/brobinhook_sketch_design_of_a_modern_landing_page_for_a_webdev__79beff03-b181-4195-90b9-ff9c41b9f138.jpg)
-
 The very first issue I opened on [mdserver](/displaying-markdown-as-html/) - my server project that serves HTML from markdown files - was that the title of the page (which shows in the browser tab, and is used for browser bookmarks) needed to be set _inside_ the markdown file, rather than generated from the file name. I didn't invent this idea - I've seen this sort of metadata in the top of Jekyll and Hugo markdown. Here's an example from the [Jekyll website](https://jekyllrb.com/docs/front-matter/):
 
 ```

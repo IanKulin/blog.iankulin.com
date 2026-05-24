@@ -11,8 +11,6 @@ tags:
   - vm
 ---
 
-![](/images/pucker_large_stone_wall_with_a_crack_of_sunlight_shining_throug_b2b090d2-7855-4170-9c5c-a899b205668d.jpg)
-
 One of the strengths of having virtual machines (VMs) running inside a hypervisor like Proxmox is how they are isolated from each other and their host. This is a strength - if there is a problem with a particular VM nothing else should be affected by it.
 
 But this can also be a pain if the hypervisor needs access to a VM to control or monitor it in some way that's only possible from inside the VM. Proxmox can use the [Qemu Guest Agent](https://qemu-project.gitlab.io/qemu/interop/qemu-ga.html) for this purpose. To over simplify, this is a deamon that runs in the VM and opens a unix socket/virtual serial port to the hypervisor, and listens for commands on it. With Proxmox, the main use of this is to aid in orderly shutdowns and backups, but it also allows us to run commands in the VM from Proxmox - an obvious security compromise. You definitely would not want to install this daemon on a hosted VPS.

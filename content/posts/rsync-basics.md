@@ -10,8 +10,6 @@ tags:
   - rsync
 ---
 
-![](/images/computerdatasynchronisation_31637620.jpg)
-
 I've started down the path of improved storage management, including embracing the [3-2-1](https://www.backblaze.com/blog/the-3-2-1-backup-strategy/) mantra. I've settled on a RAID6 NAS for local, mirrored to an off-site NAS, and an offline local USB drive.
 
 While I've been setting those up, my services have been live, so files have been changing on my main storage, which I've then switched to the bigger NAS, and I've been trying to keep data in sync by remembering what changes have been made where, and manually replicating them. That's not sustainable and not the plan.

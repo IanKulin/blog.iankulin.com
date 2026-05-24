@@ -12,8 +12,6 @@ tags:
   - xcode14
 ---
 
-![cute cupcake, cartoon - Stable Diffusion](/images/cupcake.jpg)
-
 [Day 52](https://www.hackingwithswift.com/books/ios-swiftui/cupcake-corner-wrap-up) of [#100Days](https://www.hackingwithswift.com/100/swiftui) was the challenges to the Cupcake Corner app - an app that allows you to build a one-row order, encode it as JSON and submit it to an API with a URLSession. To allow the order to be passed around, it's an @ObservedObject which meant that a few extra hoops needed to be jumped through to make it Codable.
 
 #### 1) Whitespace validation

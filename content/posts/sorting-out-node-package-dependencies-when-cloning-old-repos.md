@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![Russian dolls](/images/tomins_russian_dolls_inside_out._vector_style_for_storyboard._a57e3973-3942-47ad-9f07-813694c9cecb.jpg)
-
 If you clone an old node project and `npm install` it, you'll most likely get a bunch of errors and warning messages. If you just decide to yolo it and run the project, you'll get a bunch more.
 
 I've been doing this exact thing. I want to add some auth to my app, and I've been following [WebDevSimplified](https://github.com/WebDevSimplified)'s [video](https://www.youtube.com/watch?v=-RCnNyD0L-s) about using [passport](https://www.passportjs.org/packages/passport-npm/). I was building into my app without really understanding what I was doing, ran into problems and decided just to clone his repo and integrate the code into my app. The repo is four years old.

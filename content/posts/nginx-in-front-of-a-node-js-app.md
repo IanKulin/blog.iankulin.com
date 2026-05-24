@@ -14,8 +14,6 @@ tags:
   - web-dev
 ---
 
-![](/images/jonaslittorin_strictly_digital_content_web_server_technology_we_fad86a29-71f0-439c-9900-2134fea30897.jpg)
-
 NGINX is a great webserver and reverse proxy - as in it can hand off requests to other web-servers. That's the situation I want to have set up on my VPS. I want NGINX to handle incoming requests - some of them will just be sorted out by returning static HTML, others (like the weather api I've been playing with) need to be handed off to other services to respond to.
 
 In the situation I'm looking at, I want requests that have the route /api (eg example.com/api/weather) to be passed to a node.js program I've written. All the other http requests should just be treated as requests for static pages and dealt with by NGINX.

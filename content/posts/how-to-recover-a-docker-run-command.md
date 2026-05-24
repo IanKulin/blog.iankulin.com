@@ -10,8 +10,6 @@ tags:
   - homelab
 ---
 
-![](/images/andywatt83_a_developer_environment_in_a_container_using_docker_051f6abb-8c38-4b2d-85cf-7c3f8744118b.jpg)
-
 Imagine if, lets say hypothetically, you'd set up an application months ago with a `docker run` command. Then you'd heard there had been an update to the app because of a security update. So you need to stop/remove the container, pull a new image and restart it, trouble is, you don't remember the exact `run` command you used to start it.
 
 This didn't happen to me, since all my vm setups are in git as markdown (I'm pre-Ansible), but I did google how to do this thinking that there would be an easy way before I bothered to look through my config files.

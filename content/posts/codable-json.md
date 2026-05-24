@@ -11,8 +11,6 @@ tags:
   - swift5-7
 ---
 
-![encryption machine, comic 27970 - Stable Diffusion](/images/encryption-machine-comic-27970-.jpg)
-
 If we mark a type with the protocol _Codable_, we're specifying that this type has the capability of having it's properties encoded to some format, and decoded back again.
 
 So far in the #100Days this has been used to write and read data in UserDefaults, and to encode an object to send it as a URLRequest, then receive data back and create a new object from it. It's a handy, powerful feature baked into Swift that just requires the developer to ensure any types that need this functionality comply with the _Encodable_ and _Decodable_ protocols that make up the Codable.

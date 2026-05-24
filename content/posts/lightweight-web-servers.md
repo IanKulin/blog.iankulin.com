@@ -14,8 +14,6 @@ tags:
   - web-dev
 ---
 
-![](/images/dreamshaper_v7_a_web_server_floating_away_because_it_is_so_lig_0.jpg)
-
 ![](/images/screen-shot-2023-08-02-at-9.09.48-pm-2.png)
 
 I've been using the excellent [Uptime Kuma](https://github.com/louislam/uptime-kuma) for my monitoring, but a couple of recent incidents - an external USB mount disappeared on a remote machine, an NVME drive filled up on a different node and stopped backups working because of a configuration error - have made me start to think about more robust monitoring.

@@ -10,8 +10,6 @@ tags:
   - posts
 ---
 
-![adel and taylor swift with ed sheeran, watercolor painting - stable diffusion](/images/tataed.jpg)
-
 As usual, I watch Paul's solution video, and compare it to mine.
 
 #### Task 1

@@ -12,8 +12,6 @@ tags:
   - xcode14
 ---
 
-![looking through a keyhole to a room, diagram, colorful - Stable Diffusion](/images/looking-through-a-keyhole-to-a-room-diagram-colorful.jpg)
-
 I've noticed Paul is inclined to ignore the preview and run his code in the simulator to check its operation. That's valid, but it seems quicker, and reassuring, to see it in the preview as I type.
 
 This led to a small problem with [Day 53](https://www.hackingwithswift.com/books/ios-swiftui/how-to-combine-core-data-and-swiftui) that uses CoreData. When I added a student in the preview, it looked like this, and was immediately followed with a crash report.

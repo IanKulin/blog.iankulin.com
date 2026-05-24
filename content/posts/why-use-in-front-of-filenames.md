@@ -10,8 +10,6 @@ tags:
   - linux
 ---
 
-![](/images/pino_path_in_the_middle_of_tall_wheat_stalks_sunset_cartoon_sty_dc2ca25c-dec8-4e9b-b204-6236bc3e8b08.jpg)
-
 In Linux (and MS-DOS I guess) the period signifies the current directory, so if I have a file in the current directory called `test.txt`, I can refer to it as `test.txt` or `./test.txt`
 
 ```

@@ -9,8 +9,6 @@ tags:
   - possibly-useful
 ---
 
-![mila kunis standing in front of a bank vault, watercolor painting - stable diffusion](/images/mila2.jpg)
-
 When I was writing the blog post for the last project, I needed the "before" code to paste into the post. I'd committed that code, so a quick way to go back without losing my changes. I hadn't committed the new code, so there is a super easy way to accomplish this.
 
 ```

@@ -12,8 +12,6 @@ tags:
   - zfs
 ---
 
-![](/images/shawnjooste_hero_image_welcome_playful_colorful_tech_company_co_5e8971cb-4cb0-4aa8-938a-610467b485c6.jpg)
-
 Now I've added NVME drives to my nodes, plus added an external NMVE RAID, I've got quite the collection of storage options. For one of my nodes, it looks like this:
 
 ![Screenshot of Proxmox GUI showing 5 storage options](/images/screen-shot-2023-07-23-at-1.20.34-pm.png)

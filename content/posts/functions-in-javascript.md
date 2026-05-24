@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![](/images/pucker_factory_with_robot_workers_on_an_assembly_line_making_bo_dadc6d24-8873-48f2-97aa-df5508e6e625-1.jpg)
-
 As with other languages, functions are a little lumps of code with their own scope. They can optionally take some arguments, and optionally return a value.
 
 In JavaScript they often have names, can be passed around as types and have a condensed form suitable for functional programming.

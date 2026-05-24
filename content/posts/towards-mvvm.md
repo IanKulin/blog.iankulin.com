@@ -11,8 +11,6 @@ tags:
   - video
 ---
 
-![young woman swimming in spaghetti, by Hokusai  - Stable Diffusion](/images/young-woman-swimming-in-spaghetti-by-hokusai-.jpg)
-
 On one of the more mediocre [episodes of Fireside Swift](https://firesideswift.fireside.fm/96), McSwiftface and Zach talk about the [SOLID principles](https://en.wikipedia.org/wiki/SOLID) of class design, although I don't hold the principles as the article of religious fervour that many interviewers apparently do, they are a useful touchstone for considering class quality. OOP had been in swing (in a commercial way) for a few years by then - I was writing in Delphi and C++. The spaghetti code era was a long way behind us and the idea of separation of responsibilities was well established.
 
 I have been thinking about architecture a bit anyway - the introduction of Core Data into the [#100Day](https://www.hackingwithswift.com/100/swiftui) apps I'm up to (day 63) means that there's complicated looking code scattered around my views. In the [cs193p lectures](https://cs193p.sites.stanford.edu/), MVVM is right near the start, and I made [some early forays](/tags/mvvm/) into it, but so far no talk of architecture in 100Days (although I know it's coming soon.

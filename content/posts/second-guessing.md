@@ -8,8 +8,6 @@ tags:
   - posts
 ---
 
-![young women identical twins enjoying the beach unreal engine - midjourney](/images/pucker_young_women_identical_twins_enjoying_the_beach_unreal_en_89773710-ae61-42d7-bede-d74ef60dafd3.jpg)
-
 In the last post, I was pleased with myself for accidentally anticipating an improvement to a tutorial project which turned out to be the next task, today I'm pleased with myself for discussing the pros and cons of `onclick=` vs `addEventListener()` then having that same discussion turn up in the next tutorial. I take it as an indication that I am correctly immersing myself in the subject.
 
 My approach to this learning is to watch all the tutorials, and any that involve code, type along with them. Usually they are followed with a task to extend them so I do those or invent my own. I've also started trying to reproduce versions of other websites I see that I'm interested in.

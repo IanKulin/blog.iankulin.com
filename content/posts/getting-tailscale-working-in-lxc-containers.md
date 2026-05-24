@@ -11,8 +11,6 @@ tags:
   - tailscale
 ---
 
-![](/images/stoneyhawk_wireguard_mesh_network_9cc1d03b-813c-433e-9af6-4e92ba6f6783.jpg)
-
 I've taken to running lots of my services in LXC containers under Proxmox. I like the feeling of installing in a VM, but it's lightweight. I like the backups, I like things being isolated from each other, I like moving them around between machines easily. I'm just a big LXC lover at the moment.
 
 I'm also a Tailscale lover, and the generous number of nodes in the free tier means I now just routinely install them in my VMs and containers without a thought.

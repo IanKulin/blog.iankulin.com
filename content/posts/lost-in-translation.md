@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![](/images/pucker_two_female_robots_having_a_confusing_conversation_2d32f035-3a1e-4e9f-a335-f7c395190925.jpg)
-
 We're in a pretty good place now (compared to a few years ago) in terms of being able to rely on JavaScript behaving the same on different platforms. There's still some differences (mostly in when things are implemented) but overall, not to bad once you decide to no longer support Internet Explorer.
 
 [In times past, it was a lot more painful](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/JavaScript). A few of approaches to deal with this arose. One is to let a library, such as [jQuery](https://jquery.com/) or a [polyfill](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills) deal with it, and the other is use a translation utility such as Babel to down convert (transpile) your modern JavaScript to something that will run in more browsers.

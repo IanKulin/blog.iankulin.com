@@ -8,8 +8,6 @@ tags:
   - posts
 ---
 
-![](/images/ea49e0c3-f1d2-4060-83df-18b2cd52e734_damian_he_him_they_linux_tree-directory_structure_in_egyptian_hieroglyphs_-hd.jpg)
-
 A quick look at the arrangements around the config settings for nginx. This is based on what I can see in Debian and Ubuntu, but likely it will be most `apt` flavoured distros. Others may well be different, I know CentOS is.
 
 ### Context

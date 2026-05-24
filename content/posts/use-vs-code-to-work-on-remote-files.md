@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![Cavewoman typing on a MacBook](/images/dreamshaper_v7_a_cavewoman_sitting_in_a_cave_typing_on_a_small_0.jpg)
-
 If you've got a script, or some code to work on, and it's on a VM somewhere, you can always `ssh` in and use `nano` or [`vim`](/bloody-vim/) to make your edits. Like a caveman. With an archaic editor, no intellisense, and no spell checking.
 
 Or....

@@ -13,8 +13,6 @@ tags:
   - web-dev
 ---
 
-![](/images/koda702_create_a_detailed_and_visually_engaging_collage_highlig_23cd7276-3e92-46ca-a055-086e4ff35417.jpg)
-
 I have a sort of muscle memory for starting little web projects now. I seem to have landed on node/express SSR apps with HTMX sprinkles. So it goes a bit like this:
 
 -   Create a working directory - all lower case with a simple, but unlikely to be duplicated by me, name.

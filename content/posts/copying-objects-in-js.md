@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![](/images/nullgrim_three_ominous_mechanical_cyber_demon_sisters_asajj_ven_1eaa87e3-99a8-4c4a-9bc0-ec8fb807caad.jpg)
-
 I've paid for a month of Mosh to do his [React 18 course](https://codewithmosh.com/p/ultimate-react-part1), and one of the things he makes a big deal about is not to go too deep with nested objects for your state. As soon as you start to update them it becomes apparent why.
 
 Because of the way state works in React, if we need to update part of an object it has to be deep copied, the changes applied to this copy, then that new copy passed back to React to replace the previous version. So, how we copy objects becomes a matter of particular interest.

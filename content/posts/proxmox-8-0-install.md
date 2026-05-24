@@ -12,8 +12,6 @@ tags:
   - tailscale
 ---
 
-![](/images/alaviles_experience_the_gold_standard_in_local_desktop_virtuali_f1a1d3a4-d7b1-489f-be57-41388033eea1.jpg)
-
 I'm normally a x.1 release type of sysadmin, but the increasing temptation of installing Proxmox 8.0 while I've got some time off, and the fact that I've got a cluster, so I can just move the VM's around all adds up to thinking I'll do that today.
 
 ![](/images/cluster-2.png)

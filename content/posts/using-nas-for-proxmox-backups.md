@@ -14,8 +14,6 @@ tags:
   - synology
 ---
 
-![](/images/pisskatt_wrapped_eth_cryptocurrency_coins_wrapped_8k_2fe1bfde-8bed-4851-ac42-6dc00e4ef98f.jpg)
-
 [A few weeks ago](/moving-a-vm-between-two-proxmox-hosts/), I was very excited to be able to take a snapshot of a virtual machine, copy it across the network from that Proxmox node, copy it back across the network to a different Proxmox node, start it there, and have it up and running, without it noticing it was actually on different hardware.
 
 Backing up a VM is pretty simple, you just click on the node, choose _Backup_ and click the _Backup Now_ button. The ease, and completeness of backing up a VM is one of the main reasons I'm using Proxmox for my systems.

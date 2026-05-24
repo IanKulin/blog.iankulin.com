@@ -13,8 +13,6 @@ tags:
   - swift5-7
 ---
 
-![](/images/medieval-door-lock-detailed-drawing.jpg)
-
 A common issue when working with JSON that you vacuum up from internet APIs will be that the key names in the JSON don't match your property names. The JSON de facto standard of using snake\_case in key names could be one cause, or perhaps you just take [variable naming more seriously](https://www.freshconsulting.com/insights/blog/development-principle-1-choose-appropriate-variable-names/) than the person who wrote the API.
 
 We saw yesterday how using codable and the JSONEncoder in Swift makes moving between an object/struct in the code and a stringish representation of it simple. With a couple of small changes, we can also deal with the mismatched key/property name issue.

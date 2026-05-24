@@ -12,8 +12,6 @@ tags:
   - synology
 ---
 
-![](/images/extendedattributes_31636167.jpg)
-
 The reason I've been figuring out rsync is to setup my backup strategy. Eventually this will partly be managed with scheduled tasks (ie cron jobs) running rsync. I wanted the SSH in and try this out, since I didn't know some basic things like the mount points of the shares.
 
 ### Mount points

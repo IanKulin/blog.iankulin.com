@@ -13,8 +13,6 @@ tags:
   - swift
 ---
 
-![Jason Modern Art - Stable Diffusion](/images/jason-modern-art.jpg)
-
 I mentioned yesterday "_I could use a renamed old version of my struct to load the existing data, and convert it across to the new model._". Since I've been testing the app on my phone, and using plausible data, it was going to be painful enough to lose it that I thought I should go through those steps.
 
 First, I make a copy of the old struct, and renamed it with the app version number that used it. No need to bring all the computed properties into this struct, just the bits that get encoded into the JSON.

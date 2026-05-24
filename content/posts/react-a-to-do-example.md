@@ -12,8 +12,6 @@ tags:
   - webdev
 ---
 
-![](/images/crake_react_framework_logo_in_a_stylized_and_minimalist_ink-sta_cd004169-cd3c-4f76-8314-3d841f7233ec.jpg)
-
 Since I'm on a roll making different versions of the To Do app, this might be a good time to talk about [React](https://react.dev/). React is one of the giants of front end libraries. It's based on a few big ideas - and to work effectively in React you need to wrap your head around these.
 
 ### Overview

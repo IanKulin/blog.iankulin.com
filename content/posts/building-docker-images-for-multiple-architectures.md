@@ -10,8 +10,6 @@ tags:
   - docker
 ---
 
-![](/images/featured-image-shipping-containers.jpeg.webp)
-
 My little mdserver app has been a good way for me to start experimenting with the the devops side of things, especially building for Docker. Since I wanted to make the Docker image available for ARM Linux & x86 Linux I had a janky shell script that looked like this:
 
 ```

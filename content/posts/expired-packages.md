@@ -9,8 +9,6 @@ tags:
   - web-dev
 ---
 
-![](/images/pucker_a_large_pile_of_garbage_containg_binary_code_slowly_rott_55771f9e-3781-42e7-90f0-e6943b12ae8e-1.jpg)
-
 At several points in the [Complete Web Developer](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/) course, deprecated packages have been used, with the slide before the video explaining what's happening, and giving a work around, or sometimes - as is the case for the bit I'm just starting - exhorting the benefits of dropping you into a non-working mess and having you figure it out yourself.
 
 While this argument can be reasonably made - that figuring things out on your own is a valuable skill - it's also a useful fig leaf to cover up the fact that they haven't bothered to fix the course to make it work out of the box.

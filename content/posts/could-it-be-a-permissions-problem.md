@@ -10,8 +10,6 @@ tags:
   - posts
 ---
 
-![](/images/padlock.jpg)
-
 Unix, and therefore Linux, was built from the ground up as a multi-user system. Thanks to this, great security is baked in, for example every file has permission attributes for it's owner, the group the owner is a member of, and then everyone. For example, it might be a good idea if I can read, write and execute my own files, but the other members of my group can just read them, and any other user on the system has none of those rights.
 
 I [talked a bit about this](/folder-ownership-problems-with-jellyfin/) when I was solving the first round of problems with getting Jellyfin working. I actually solved all of those problems - they were permissions related. Once I'd figured out the group id of the jellyfin user and applied that when mounting the NAS I had a week of blissful media consumption on the TV (via Google TV Chromecast), on my laptop, and phone. The eventual plan for this little box is to move it offsite though, so I needed TailScale, which has worked perfectly and effortlessly everywhere else I'd tried it, but it turns out it is not happy living in an LXC container on Proxmox which is where my Jellyfin instance was running.

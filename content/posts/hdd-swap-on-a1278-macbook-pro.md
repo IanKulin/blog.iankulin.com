@@ -14,8 +14,6 @@ tags:
   - repairs
 ---
 
-![](/images/dexxx3d_computer_repair_shop__a_lot_of_computer_laptop_for_repa_7ee46d83-216e-4f67-81af-ee3c7037e6e7.jpg)
-
 My MacBook died, I guess about three years ago. It was randomly difficult for a week or so, but then just behaving as if it had no hard drive at all. It's been in a drawer ever since waiting for me to replace the hard drive and see if I could sell it, which I never quite got to.
 
 I mentioned a while ago that I'd [borrowed an old Atom powered HP Mini 110](/linux-on-hp-mini-110/) to play with a Linux desktop machine, partly for fun & learning, and partly for a first-class SPICE experience (also fun). Meanwhile I've got an old but still sexy Intel MacBook Pro sitting in a drawer - that doesn't make sense!

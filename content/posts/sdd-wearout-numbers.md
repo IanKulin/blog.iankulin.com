@@ -10,8 +10,6 @@ tags:
   - ssd
 ---
 
-![](/images/lionovich_computer_cries_because_of_dead_ssd_6149b1c0-005e-41d2-a912-eb864a307555.jpg)
-
 I didn't understand why the default Proxmox install sets up the storage the way it does - with the available disk split up into an LVM and an LVM thin storage - so I've been reading this excellent [Proxmox Storage Guide](https://blog.programster.org/proxmox-storage-guide) by Programster (spoiler - the LVM thin makes VM snapshots easier).
 
 At one point in the post they mention that you can see the "Wearout" percentage for any SSD drives in the Proxmox GUI, so of course, since I now own five second hand HP Elitedesk 800 G1/G2's all with SSD drives, I dived in to have a look at each drive and found this.

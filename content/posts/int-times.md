@@ -10,8 +10,6 @@ tags:
   - swift-language
 ---
 
-![](/images/shockwave_coaster_sfot.jpg)
-
 When writing [yesterday's post](/the-_-underscore/) about iterating through a range or collection and using the underscore to throw away the item, I had in the back of my mind that there should be a more straightforward way of doing something a number of times.
 
 Just to re-iterate (lol), here's the issue. If we want to print "Here's the thing" three times, in Swift the simplest we can do is:

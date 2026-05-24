@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![C-3PO from Star Wars on Tatooine, playing Tic-tac-toe on the side of a crashed spaceship - MidJourney](/images/pucker_c-3po_from_star_wars_on_tatooine_playing_tic-tac-toe_on__66c1149e-de97-45d4-9863-18181aa54cf7.jpg)
-
 ```javascript
 /* 
 Question 1: Clean the room function: given an input of [1,2,4,591,392,391,2,5,10,2,1,1,1,20,20], 

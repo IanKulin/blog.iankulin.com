@@ -12,8 +12,6 @@ tags:
   - xcode14
 ---
 
-![frustrated worker, painting - Stable Diffusion](/images/frustration.jpg)
-
 I'm writing the Habits [list based app](/list-apps/) from #100Days and had a working MVP, then for some reason, decided to refactor by changing the subview I'd written as a function, into a struct. Some time later, I discovered that my list items were not updating correctly, so detective time.
 
 I talked a little bit about the architecture yesterday - the item is a struct, and there's a class containing an array of the items. Something like this:

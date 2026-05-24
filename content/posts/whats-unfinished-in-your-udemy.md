@@ -14,8 +14,6 @@ tags:
   - web-dev
 ---
 
-![](/images/pauchi0195_unfinished_robotic_bodies_female_scientist_rebel_bio_b9b95c92-d4af-4600-9c5b-e0974f6c2b18.jpg)
-
 If you work or study in tech, I always feel a good getting-to-know-you question is "what courses or tutorials did you start, but not finish?"
 
 My Udemy doesn't look _too_ bad:

@@ -11,8 +11,6 @@ tags:
   - xcode14
 ---
 
-![cute cupcake, cartoon drawing - Stable Diffusion](/images/cute-cupcake-cartoon-drawing.jpg)
-
 As usual, here's my thoughts comparing my attempts at the challenges to Paul's. Usually he's better!
 
 #### 1) Whitespace

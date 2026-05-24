@@ -12,8 +12,6 @@ tags:
   - regex
 ---
 
-![](/images/macro094_recursive_feedback_loops_7129c6ad-a42c-4698-b3d7-bf340201b6ac.jpg)
-
 I've spent a few hours over the weekend migrating a media library from an external USB drive to the NAS, and in the process reorganised it, and in many cases bulk changed file names. I've also added a heap of metadata.
 
 I'd like to check that I haven't missed any files, but a side by side listing of each data source won't do the trick, so I'll probably end up pulling the data into a spreadsheet, but I'd like to get as close as possible with Linux-fu first.

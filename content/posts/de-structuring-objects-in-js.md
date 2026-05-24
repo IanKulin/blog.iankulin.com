@@ -9,8 +9,6 @@ tags:
   - web-dev
 ---
 
-![robot repair shop wth several humanoid robots in state of disrepair, cinematic lighting, dust in the air - midjourney](/images/pucker_robot_repair_shop_wth_several_humanoid_robots_in_state_o_c5ef7630-fb2a-4dec-acd5-dfb9b9f478ac.jpg)
-
 I've worked through my first React tutorial app, and obviously that's a lot - I'm struct by how messy mixing HTML, JS and React is.
 
 One language feature that's being used quite a bit, and that is apparently a JS ability I'd never seen is 'destructuring' object properties. It's very cool and obviously useful. It's a way of extracting just the properties you need from an object and then using them without accesing them via the object. An example will make it clearer.

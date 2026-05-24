@@ -11,8 +11,6 @@ tags:
   - ram
 ---
 
-![](/images/swellingcomputerbrain_73513374.jpg)
-
 The hardware engineering of these corporate world mini-PCs is really nice. I swapped out the RAM today to bump my main machine up to 32GB from 16GB. It was a straightforward task - no screwdrivers, no drama.
 
 To open the machine up, there is a single large screw on the back that can be undone with your fingers - it's a captive screw, as in it doesn't fall out - just another nice engineering thought.

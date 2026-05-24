@@ -12,8 +12,6 @@ tags:
   - zfs
 ---
 
-![](/images/bitlord_imagine_a_futuristic_ai-inspired_structure_in_the_backg_b80936d4-6746-423f-a620-f8167c2fc802.jpg)
-
 I'm a keen listener of the [2.5 Admins](https://2.5admins.com/) podcast in which there's frequent enumeration of the advantages of [ZFS](https://itsfoss.com/what-is-zfs/) as a file system. So much so, that I've had occasional twinges or regret about the money I spent on the Synology - although it has been boringly reliable and does everything I need.
 
 Proxmox has some built in support for ZFS, including through the web GUI. So I've been itching to give it a try.

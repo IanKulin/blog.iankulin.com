@@ -13,8 +13,6 @@ tags:
   - web-dev
 ---
 
-![](/images/shmbo_an_artificial_intelligence_entitys_head_embodying_the_ess_f348db7a-e7b6-4620-beda-44fdb8e565d3.jpg)
-
 I don't have experience with [SQLite](https://www.sqlite.org/index.html) and want to shift one of my apps over from Mongoose since apparently SQLite is [much more capable](https://www.sqlite.org/whentouse.html) than I imagined. My usual tactic when trying something new is to try and get a minimal project working on it, so what follows is the simplest possible node/express REST API to demo SQLite.
 
 The simplest possible Express app is going to look something like this. Of course we would have gone to the terminal with `npm i express` first so this could run.

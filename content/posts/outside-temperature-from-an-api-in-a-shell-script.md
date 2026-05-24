@@ -15,8 +15,6 @@ tags:
   - posts
 ---
 
-![](/images/challengereality_a_highly_detailed_ultra_high_resolution_hologr_1509798a-548d-4528-bcc7-cb1f2bb30a0e.jpg)
-
 I'm interested in [collecting some internal temperature data](/linux-shell-script-for-temperature-logging/) from my servers to look at the effect of adding an NMVe drive. Last week we had a couple of warm days immediately followed by a couple of cool ones. I imagine a 20° ambient temperature change could effect the server temperatures, so I thought it would be good to add that to my temperature logs.
 
 I don't have a weather station or other automated system for collecting the temperature, but there are several commercial sources for this data which, while probably not as good as a sensor in the server room, will be fine for our purposes.

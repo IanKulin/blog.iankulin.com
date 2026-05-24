@@ -12,8 +12,6 @@ tags:
   - web-dev
 ---
 
-![](/images/starliu_building_trust_with_ai_challenges_and_solutions_a519169f-8b94-4b34-88d9-e2e635bc5996.jpg)
-
 When you've successfully got Nginx running in a Docker container, AND got your [domain correctly pointing](/adding-a-domain-name-to-a-vps/) at your nascent website, you're then going to want to set it up for encrypted, and therefore trusted, browsing with SSL.
 
 ### Certificates

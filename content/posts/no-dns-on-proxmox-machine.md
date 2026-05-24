@@ -10,8 +10,6 @@ tags:
   - proxmox
 ---
 
-![](/images/confusedanimegirl_40917951.jpg)
-
 I had some more network weirdness setting up this new Proxmox machine. When I went to run the updates it couldn't resolve any of the addresses:
 
 ```

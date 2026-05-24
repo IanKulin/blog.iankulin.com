@@ -12,8 +12,6 @@ tags:
   - rsync
 ---
 
-![](/images/imperialofficersworkingatl_62923535.jpg)
-
 With all those earlier rsync bumps out of the way, I was ready to try my first rsync backup at the command line to sync my movies directory on the NAS to a (NTFS formatted) USB drive plugged into the same NAS. This is to be one of the simplest since there's no remote server involved, just copying from mount point directory to another - so no drama with remote permissions.
 
 There's a lot of files involved, and I knew from running the dry run that there would be a lot of output. I could see a few error messages, but each of the file copies was taking a while so I was confident they, at least, were working. If you missed the last episode, here's where I landed for this rsync command.

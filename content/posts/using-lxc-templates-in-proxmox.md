@@ -11,8 +11,6 @@ tags:
   - proxmox
 ---
 
-![](/images/unagi911_identical_female_triplets_sit_in_three_large_silver_do_d51d8006-cd33-4934-b7ab-988aecc5da7d.jpg)
-
 I wrote a couple of weeks ago about a [standard workflow](/new-self-hosted-service-workflow/) I use to spin up a web service in an LXC container to add to my self-hosted collection of services. It went a bit like: do this, and then this, then this other thing. Whenever you find yourself repeating a set of steps like this, it's usually a sign that you should be automating it. Not just to save time (although this is a key benefit) but also to improve repeatability and to avoid introducing errors.
 
 In Proxmox, this particular task is easily systematized using container _templates_.

@@ -11,8 +11,6 @@ tags:
   - posts
 ---
 
-[![](/images/rendered2x-1638462885.png)](https://developer.apple.com/documentation/coreml)
-
 A few years ago when I still used a Tom-Tom for car navigation, I was a little freaked out when it started offering suggestions on where to go to when I started the car - guessing, usually correctly, where I wanted to go. Like - how did it know I was leaving school for band practice two towns over?
 
 Clearly, is must have been collecting data on times/days and departure locations to learn some of my habits. It felt quite invasive, but I thought it must have been on-device since I had the wifi turned off in the unit.

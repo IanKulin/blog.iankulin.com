@@ -12,8 +12,6 @@ tags:
   - xcode14-1
 ---
 
-![room full of monkeys typing at computers - stable diffusion](/images/22.jpg)
-
 This week, the internet has been all about [ChatGPT](https://chat.openai.com/chat), the rather remarkable natural language AI with a very large model. If you're a twitter user, you were probably amazed, but now eventually tired of seeing examples of it's output. I'll add to that with an example of a SwifUI CoreData based todo app it wrote for me from a single sentence prompt below. Rather than look at other people's examples you should definitely go and play with it yourself - it is very impressive. Along with the image based AI's it's made 2022 into a historical year for AI.
 
 ChatGPT will write software. I can't see it replacing developers, but it seems likely there'll be a bunch of interesting tools to come over the next few years. I feel like the first big effect will be the volume of mediocre internet content will increase dramatically as it is pretty great at run of the mill copy-writing. I'd like to assure my readers that all my mediocre internet content will continue to be human written - with the exception of most of the art, and the code example below :- )

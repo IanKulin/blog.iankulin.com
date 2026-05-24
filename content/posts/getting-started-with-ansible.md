@@ -12,8 +12,6 @@ tags:
   - idempotence
 ---
 
-![](/images/cyberpunk_24_k_hyper_realistic_a_thousand_details_hyper_detaile_841f4769-e869-497f-a804-c9fade21e150.jpg)
-
 Ansible is a system for executing commands on remote systems. It allows a declarative approach - so if you run a playbook (the system configuration files are called playbooks) that says a system has a Docker container running Jellyfin, Ansible will check if that's true, and if not, make it so. Ansible is best used when you have a large number of systems to maintain, but even with a small number, it serves to document systems as well as to automate their creation.
 
 Since, with Ansible, system configurations can be completely described, it's a step in the journey to "infrastructure as code" and allows infrastructure to be version controlled, and lends itself to Git-Ops where you push a change to a playbook file, and it's executed to make that description of the configuration reality on your servers. The list of servers is stored in a file called the inventory.

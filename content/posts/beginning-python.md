@@ -10,8 +10,6 @@ tags:
   - python
 ---
 
-![](/images/mhbaando_girl_coding_in_a_computer_with_python_language_4702d51a-c38b-45b8-b12d-9daa4bc2110d.jpg)
-
 I've gotten interested in [Plain Text Accounting](https://plaintextaccounting.org/), and I'm looking at using [BeanCount](https://beancount.github.io/) for small business & personal finances. If you haven't heard of this, it's a command line program that uses text files with a human comprehensible syntax to define transactions, then acts on them to create the needed reports etc. A side benefit for developers is that it's then easily version controlled using GIT, and of course there's VS Code plugins for it.
 
 Transactions in one of these BeanCount text files looks like this:

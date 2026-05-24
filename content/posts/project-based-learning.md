@@ -9,8 +9,6 @@ tags:
   - posts
 ---
 
-![young woman holding a phone outside near a lake, painting - Stable Diffusion](/images/young-woman-holding-a-phone-outside-near-a-lake-painting.jpg)
-
 A couple of times in conversations on [Fireside Swift](https://firesideswift.fireside.fm/) and [Swift Over Coffee](https://podcasts.apple.com/au/podcast/swift-over-coffee/id1435076502) the presenters have talked about the danger of just doing more and more tutorials to learn programming, and the benefit, in contrast, of building your own real app. Although I am very much still benefiting from the 100DaysOfSwiftUI I have been seeing some of the upside of working on a real app in the last day and a half.
 
 From my search history, I've learned about:

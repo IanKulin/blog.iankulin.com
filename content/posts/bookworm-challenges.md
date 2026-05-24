@@ -12,8 +12,6 @@ tags:
   - xcode14
 ---
 
-![cartoon worm on a book - Stable Diffusion](/images/cartoon-worm-on-a-book.jpg)
-
 Another set of challenges for a [#100DaysofSwiftUI](https://www.hackingwithswift.com/100/swiftui) tutorial app. Project 11 was a book tracking app - the big new thing was using CoreData. Here's the [challenges for it](https://www.hackingwithswift.com/books/ios-swiftui/bookworm-wrap-up).
 
 > _Right now it’s possible to select no title, author, or genre for books, which causes a problem for the detail view. Please fix this, either by forcing defaults, validating the form, or showing a default picture for unknown genres – you can choose._

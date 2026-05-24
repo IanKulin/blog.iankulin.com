@@ -10,8 +10,6 @@ tags:
   - linux
 ---
 
-![](/images/luc_legay_hyperrealistic_wide_angle_shot_of_a_futuristic_milita_c8fa0a81-4a16-4314-a490-c89221c4060f-1.jpg)
-
 Since I'm constantly standing up Linux virtual machines and containers - almost always of the `apt` variety, I'm constantly typing in:
 
 ```

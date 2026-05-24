@@ -12,8 +12,6 @@ tags:
   - yaml
 ---
 
-![](/images/biomage_biomechanical_cyborg_computer_hacker_keyboard_protrudin_3d895c1b-0776-4f6e-b1a6-733b5622ea5d.jpg)
-
 In the [previous post](/getting-started-with-ansible/), we looked at getting up and running with Ansible, including using the ad-hoc mode to send commands to our servers. We had a inventory file called hosts that had groups of server IP addresses and a simple `ansible.cfg` file that pointed to our inventory file.
 
 ### Playbooks

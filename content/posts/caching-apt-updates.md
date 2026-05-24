@@ -12,8 +12,6 @@ tags:
   - linux
 ---
 
-![](/images/quangpham2576_realistic_red_hen_that_is_serving_a_plate_of_soft_b56bccf5-82c1-4bf9-9936-edd7606ab70a.jpg)
-
 It's bothered me for a while that all these VM's are pulling down a lot of the same updates. As well as needlessly using some bandwidth, I'm hammering the update servers (that I don't pay for) with the same requests over and over. I did briefly consider running my own mirror, but that's not simple, plus I'd then be mirroring a heap of files in a complete repository that I'd never use. What I really needed was some sort of cache so once I'll pulled down an update, it would hang around for a few days being available to other machines on the local network. Luckily, that exact thing exists - [APT Cacher NG](https://www.unix-ag.uni-kl.de/~bloch/acng/html/index.html).
 
 It works pretty much as described above - all of the machines on the LAN have their APT calls proxied through a little server. If the server doesn't have a copy of the appropriate package, it pulls it down and delivers it. If it's got a good copy already, it just provides that.

@@ -14,8 +14,6 @@ tags:
   - proxmox
 ---
 
-![](/images/es047_illustration_of_a_workflow_with_only_four_text_boxes_with_b026526e-30b7-45c7-9491-080adc1594ce.jpg)
-
 I've developed a bit of a workflow for setting up a new service of some type on the homelab. Installing it is the obvious thing, but I also have a few quality of life things I do to make it a full production-quality part of my installation. I thought it might be helpful to run through those things using a recent example of adding [audiobookshelf](https://www.audiobookshelf.org/).
 
 ### audiobookshelf

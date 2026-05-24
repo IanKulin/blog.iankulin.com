@@ -10,8 +10,6 @@ tags:
   - vps
 ---
 
-![](/images/sjramblings_io_aws_route_53_resolver_is_a_dns_resolution_servic_227bbb4f-1ff3-455d-84fa-5e8ea4310df8_png_92.jpg)
-
 I've had a small [BinaryLane VPS](https://www.binarylane.com.au/) for a while that I use for homelab type stuff, but now need to serve a tiny amount of JSON from it. A longer term plan is to use it as a [Wireguard](https://www.wireguard.com/) tunnel back to my cluster at home to expose the services that need to be internet facing. I've also had a domain name I bought from [Porkbun](https://porkbun.com/products/domains) sitting round for a bit, so it's probably a good time to join them up.
 
 When you type a domain name into your web browser it needs to be turned into an IP address in order to return the content you need from that web server. For example if I type in `google.com` it needs to be turned into `172.217.24.46` in order to fetch the front page of Google.

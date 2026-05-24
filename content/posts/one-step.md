@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![giant girl leaping for joy in the forest children's book - midjourney](/images/pucker_giant_girl_leaping_for_joy_in_the_forest_childrens_book__eadb2294-124d-46e0-a0ca-f94a1a9305ea.jpg)
-
 I was a bit pleased with myself when I started the next content element in the Complete Web Developer course to find that one and a half of the extensions I'd made to the tutorial app for my own fun were specified as the next task.
 
 In my previous post, I'd talked about using a class to denote if an item was completed, and using a style to indicate this by crossing it out. What I haven't discussed was that I'd captured right click events on the list items to make this delete them. I wasn't entirely happy with that for a couple of reasons:

@@ -11,8 +11,6 @@ tags:
   - posts
 ---
 
-![](/images/tanjian1998_an_ai_humanoid_pushing_a_shopping_cart_with_that_ha_5eceff04-704f-403d-af6d-46fd9ba57909.jpg)
-
 I am loving running a local Gogs instance - it's nice pushing my git repos to a totally private hub that I know is backed up with all my other self-hosted infrastructure.
 
 Of course, there's good reasons to have code in GitHub as well - my build-in-public philosophy, the vague possibility that some of it might be useful to someone, my contribution to our future AI overlords, and when I need to make some code linkable - for example from one of these posts. And of course there's this bit of social-engineering which I assume was inspired by the bathroom decor in [Veronica Mars](https://i.pinimg.com/originals/94/23/85/9423854153f55938c454a061ad5462fe.gif).

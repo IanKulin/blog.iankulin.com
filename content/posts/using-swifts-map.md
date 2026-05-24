@@ -12,8 +12,6 @@ tags:
   - swift5-7
 ---
 
-!["map, moon, transformation" - Stable Diffusion](/images/untitled-2.jpg)
-
 In [Day 39'](https://www.hackingwithswift.com/100/swiftui/39)s Moonshot tutorial app, Paul uses [`.map`](https://developer.apple.com/documentation/swift/array/map\(_:\)-87c4d) on an array without much comment about what's going on. I assume this might be a common concept in modern languages, but it was new to me.
 
 First, here's Paul's code

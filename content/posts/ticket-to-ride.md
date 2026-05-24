@@ -11,8 +11,6 @@ tags:
   - ticket-app
 ---
 
-![superman crashing into a train, cartoon - Stable Diffusion](/images/superman-crashing-into-a-train-cartoon-2.jpg)
-
 A [couple of days ago](/project-based-learning/) I was lauding the learning benefits of writing your own projects over completing tutorial projects - since your own projects push your boundaries further. Of course, its also the case that the project requirements might so completely exceed your current ability that it grinds to a halt. That's the case with my [behaviour ticket app](/tickets-on-myself/).
 
 The part of the app for collecting the data is pretty much done and how I imagined it, but the output needs to be pretty tickets that can be printed on paper. I managed to write the ticket data to a CSV file and export that to the files app with a .fileExporter, but really what I wanted is to have one of those share screens where you can chose to AirDrop, Print etc, and for the tickets to have been rendered to a PDF or series of images to be shared. That will have to wait. I'm just up to a bit in the #100Days about writing images so I'll push on with that for a bit and come back to my app.

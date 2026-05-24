@@ -13,8 +13,6 @@ tags:
   - macos
 ---
 
-![](/images/uwillc_a_computer_screen_displaying_the_github_page_3622791d-5c28-458b-acac-8f2ca2066179.jpg)
-
 I'm working on the world's shortest shell script - it's called by `cron` to pull down a JSON weather report to a text file using `curl` so I can expose it on an Nginx endpoint. The purpose is to allow me to hammer that weather API from multiple machines I control without violating the TOS of my free API key.
 
 Because I'm learning all the things, instead of just creating this on the VPS where it runs, it's cloned from my GitHub repo for that machine. I'm creating and editing the file in VS Code on macOS, pushing to Github, then pulling the changes on the Ubuntu VPS. The intention is that this will eventually become automated with a Github action.

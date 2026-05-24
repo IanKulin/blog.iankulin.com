@@ -10,8 +10,6 @@ tags:
   - web-dev
 ---
 
-![Two white bread guys clicking away on a screen wall](/images/apollon_young_man_touching_a_transparent_wall_hiding_code_for_a_524e38cd-fa31-45a3-ab96-dc9b9ed25caa.jpg)
-
 I'm interested in trying out [Pico CSS](https://picocss.com/) - a lightweight CSS library, but when I tossed it into my project, the linter found and reported 29 problems. One of my processes is to just keep that problems tab clear as I work, so I'd like that to go away.
 
 ![Screenshot of VS Code showing 29 problems detected.](/images/screen-shot-2023-07-20-at-6.54.06-am.jpg)

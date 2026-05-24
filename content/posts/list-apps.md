@@ -10,8 +10,6 @@ tags:
   - swiftui
 ---
 
-![girl making a list at a desk, graphic novel - Stable Diffusion](/images/girl-making-a-list-at-a-desk-graphic-novel.jpg)
-
 When I was first programming professionally, it wasn't long before I noticed that there were patterns to the sort of bread-and-butter things I was writing most times - the majority of the small business applications I wrote tracked several entities; for each entity there needed to be add/edit/delete screens, there would be some business rules around those things, and some reports and search functionality.
 
 The [Day 47 Milestone app](https://www.hackingwithswift.com/guide/ios-swiftui/4/3/challenge) is for tracking habits - presented in a list; you need to be able to add and delete them, view details and do some business logic on them. Not only does this sound a lot like the earlier expense tracking app, but also not that different to the app idea I've got for tracking when I charge each of the rechargeable batteries in my house.

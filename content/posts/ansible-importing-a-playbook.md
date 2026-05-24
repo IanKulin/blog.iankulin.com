@@ -9,8 +9,6 @@ tags:
   - devops
 ---
 
-![](/images/billyoblivion_intricate_and_highly_detailed_portable_ansible_la_c7e1c515-a2e6-4fef-b3c5-2d35e04ba09e.jpg)
-
 [Ansible](/tags/ansible/) is a system for automating server tasks, and these tasks are written in a special yaml file called a playbook. I had need to call one playbook from another today and learned a couple of things.
 
 ### Plays vs Tasks

@@ -11,8 +11,6 @@ tags:
   - synology
 ---
 
-![](/images/hddlockedup_50825865.jpg)
-
 The Synology operating system DSM (I'm on DSM 7.1.1) is Linux, but its highly customised for the purpose of making running a complicated Linux NAS doable for less technical users.
 
 Due to that, some things that are routine in a regular distro, require a few more steps to jump through to get them to work. SSH-ing in to a Synology with keys is one of those things.

@@ -13,8 +13,6 @@ tags:
   - xcode14-1
 ---
 
-![young woman cleaning a computer, painting - stable diffusion](/images/young-woman-cleaning-a-computer-painting.jpg)
-
 I've been listening to the [latest episode of the Empower Apps](https://www.youtube.com/watch?v=YVrHPCZnC50) podcast, this one with [Jill Scott](https://twitter.com/Jilsco9) talking about "Humane" development - in the sense of being humane to whoever (probably you) is going to be reading this code in the future. It helped me clarify my thoughts about a couple of things.
 
 None of these ideas are particularly new or groundbreaking, and although I think of them as my personal style, they are very common, and in Swift could be regarded as part of the culture. Some of these concepts support each other, some represent a trade off between two opposing ideas that require us to make a choice.

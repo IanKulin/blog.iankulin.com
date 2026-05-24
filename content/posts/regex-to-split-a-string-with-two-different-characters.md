@@ -11,8 +11,6 @@ tags:
   - xcode14-1
 ---
 
-![young woman cutting string, painting by - StableDiffusion](/images/young-woman-cutting-string-painting-by.jpg)
-
 I'm working on the behaviour tickets app, and wanted a visually functional version to share with stakeholders this week to get some feedback. As usual in this situation, I'm pressed for time so feeling the pressure to take some liberties with code quality that I'll come back and fix one day.
 
 In a salient lesson of why that's usually a bad idea, I've ended up googling to try and understand regex instead of writing code.
