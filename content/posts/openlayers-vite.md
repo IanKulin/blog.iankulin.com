@@ -13,7 +13,7 @@ tags:
 
 In Randy Pausch's [last lecture](https://www.youtube.com/watch?v=ji5_MqicxSo) he talks about the benefit of brick walls in our lives - they tell us how much we really want something. Software development is full of these brick walls - things we want to do, but there's a barrier to achieving it. Will we persevere and accomplish the thing, give up, or some other compromise.
 
-In heroic tales, the protagonist overcomes all obstacles to achieve the goal. In life and especially in software development, that's not always the smart thing to do - to stubbornly invest in an outcome, often disproportionately to the benefit. Here's my brickwalls from today.
+In heroic tales, the protagonist overcomes all obstacles to achieve the goal. In life and especially in software development, that's not always the smart thing to do - to stubbornly invest in an outcome, often disproportionately to the benefit. Here's my brick walls from today.
 
 I had made a web page showing text of the updated lat/long of the ISS. It met the requirements, but was not very exciting. The obvious thing to do with this information would be to show it on a map.
 

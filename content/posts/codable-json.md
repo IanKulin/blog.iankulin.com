@@ -55,7 +55,7 @@ This prints out:
 
 `{"name":"Stool","legs":3}`
 
-So the property names are used to build our data. The "data" returned by the JSONDeconder is a UTF8 string - this is specified by the JSON standard, and that's why the print above is not just `print(jsonData)`.
+So the property names are used to build our data. The "data" returned by the JSONDecoder is a UTF8 string - this is specified by the JSON standard, and that's why the print above is not just `print(jsonData)`.
 
 #### Decoding
 

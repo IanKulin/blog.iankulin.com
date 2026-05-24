@@ -6,7 +6,7 @@ aliases:
   - /2023/01/24/apis-http-https-mixed-content-error/
 tags:
   - api
-  - htpps
+  - https
   - web-dev
 ---
 

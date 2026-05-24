@@ -1,14 +1,14 @@
 ---
-title: "Uptime Kuma & NFTY"
+title: "Uptime Kuma & NTFY"
 date: '2023-02-15'
-slug: uptime-kuma-nfty
+slug: uptime-kuma-ntfy
 aliases:
   - /2023/02/15/uptime-kuma-nfty/
 tags:
   - devops
   - homelab
   - monitoring
-  - nfty
+  - ntfy
   - uptime-kuma
 ---
 
@@ -20,7 +20,7 @@ Since it's in a container, you need to create a volume for it and pass it in to 
 
 You choose the time intervals for all these. Additionally you can set up a notification for each. This is a great idea - I'm not sitting in my datacentre command room watching Uptime Kuma all day, I need to know on my phone if a CAT5 cable's been pulled out inadvertently while I was vacuuming.
 
-There's lots of options for how to do this, including messaging platforms such as Telegram and Discord. I had a look on [r/selfhosted](https://www.reddit.com/r/selfhosted/comments/z0gpr2/free_push_service_for_uptime_kuma/) to see what was recommended, and discovered [NFTY](https://ntfy.sh/) which is an amazing little service. It has Android and iOS apps, in the app you subscribe to an endpoint, then a notification can be sent to your phone with a simple http get, for example:
+There's lots of options for how to do this, including messaging platforms such as Telegram and Discord. I had a look on [r/selfhosted](https://www.reddit.com/r/selfhosted/comments/z0gpr2/free_push_service_for_uptime_kuma/) to see what was recommended, and discovered [NTFY](https://ntfy.sh/) which is an amazing little service. It has Android and iOS apps, in the app you subscribe to an endpoint, then a notification can be sent to your phone with a simple http get, for example:
 
 ```
 curl -d "This message will pop up on phone" ntfy.sh/ian_test
@@ -38,4 +38,4 @@ curl -d "CCTV offline - 12 George St" ntfy.sh/maquarie_bank
 
 would not a be a good use case. Get something more secure for that application. It's probably not going to be free.
 
-Speaking of which, NFTY is free, including the server. It is possible (and probably a good idea since then you could add a little security) to self host it. It's such a great little tool, and just so immediately and completely achieved what I wanted with zero drama and low effort, I hit the [github sponsor button for it](https://github.com/sponsors/binwiederhier).
+Speaking of which, NTFY is free, including the server. It is possible (and probably a good idea since then you could add a little security) to self host it. It's such a great little tool, and just so immediately and completely achieved what I wanted with zero drama and low effort, I hit the [github sponsor button for it](https://github.com/sponsors/binwiederhier).

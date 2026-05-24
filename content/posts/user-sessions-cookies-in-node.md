@@ -332,7 +332,7 @@ So it seems like there is four jobs to do:
 
 Although I described this as 'encrypting' that's not exactly what we're going to do. The current state of the art for this is to _hash_ and _salt_ passwords before storing them.
 
-hash - turn the password into some gobblygook such that that the hashed version always comes out the same if you put the same password into it. Preferably the hash is always the same length regardless of the length of the input password.
+hash - turn the password into some gooblygook such that that the hashed version always comes out the same if you put the same password into it. Preferably the hash is always the same length regardless of the length of the input password.
 
 salt - mix some random characters in to the the hashed password so that the combination of hashing and salting the password comes out different every time, even though you are putting in the same password as input to the process.
 
