@@ -1,5 +1,5 @@
 baseURL = "https://devendevour.iankulin.com"
-title   = "dev.endevour"
+title   = "blog.iankulin.com"
 theme   = "zen"
 locale  = "en-AU"
 
@@ -21,7 +21,7 @@ buildFuture     = false
 
 [params]
   logo         = false
-  description  = "iOS dev - web dev - homelab"
+  description  = "web dev - homelab - iOS dev"
   dateformat   = "2 January, 2006"
   submitted    = true
   mainSections = ["posts"]
@@ -45,13 +45,3 @@ weight = 2
 name   = "tags/"
 url    = "/tags/"
 weight = 3
-
-[[menu.main]]
-name   = "glossary/"
-url    = "/glossary/"
-weight = 4
-
-[[menu.main]]
-name   = "web-dev-links/"
-url    = "/web-development-links/"
-weight = 5
