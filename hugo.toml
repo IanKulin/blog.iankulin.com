@@ -20,7 +20,8 @@ buildFuture     = false
   tag = "tags"
 
 [params]
-  logo         = false
+  logo         = true
+  logopath     = "favicon.svg"
   description  = "web dev - homelab - iOS dev"
   dateformat   = "2 January, 2006"
   submitted    = true
