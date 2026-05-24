@@ -1,6 +1,6 @@
 # blog.iankulin.com
 
-Hugo static site for [blog.iankulin.com](https://blog.iankulin.com). Theme: [hugo-theme-console](https://github.com/mrmierzejewski/hugo-theme-console).
+Hugo static site for [blog.iankulin.com](https://blog.iankulin.com). Theme: [Zen](https://github.com/frjo/hugo-theme-zen).
 
 ## Development
 
