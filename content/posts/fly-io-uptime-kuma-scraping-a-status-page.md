@@ -1,5 +1,5 @@
 ---
-title: "Fly.io, Uptime Kuma &amp; scraping a status page"
+title: "Fly.io, Uptime Kuma & scraping a status page"
 date: '2024-02-02'
 slug: fly-io-uptime-kuma-scraping-a-status-page
 aliases:

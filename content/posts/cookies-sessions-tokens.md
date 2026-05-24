@@ -1,5 +1,5 @@
 ---
-title: "Cookies, Sessions &amp; Tokens"
+title: "Cookies, Sessions & Tokens"
 date: '2023-09-12'
 slug: cookies-sessions-tokens
 aliases:

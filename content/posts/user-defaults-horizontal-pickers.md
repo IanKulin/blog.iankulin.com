@@ -1,5 +1,5 @@
 ---
-title: "User Defaults &amp; Horizontal Pickers"
+title: "User Defaults & Horizontal Pickers"
 date: '2022-09-28'
 slug: user-defaults-horizontal-pickers
 aliases:

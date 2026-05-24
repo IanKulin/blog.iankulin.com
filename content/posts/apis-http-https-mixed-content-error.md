@@ -1,5 +1,5 @@
 ---
-title: "APIs - http &amp; https Mixed Content error"
+title: "APIs - http & https Mixed Content error"
 date: '2023-01-24'
 slug: apis-http-https-mixed-content-error
 aliases:

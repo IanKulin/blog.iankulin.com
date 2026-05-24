@@ -1,5 +1,5 @@
 ---
-title: "Codable &amp; JSON"
+title: "Codable & JSON"
 date: '2022-10-30'
 slug: codable-json
 aliases:

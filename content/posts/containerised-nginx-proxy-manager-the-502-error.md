@@ -1,5 +1,5 @@
 ---
-title: "Containerised NGINX Proxy Manager &amp; the 502 error"
+title: "Containerised NGINX Proxy Manager & the 502 error"
 date: '2024-09-16'
 slug: containerised-nginx-proxy-manager-the-502-error
 aliases:

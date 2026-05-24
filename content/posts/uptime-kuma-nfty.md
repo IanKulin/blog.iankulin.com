@@ -1,5 +1,5 @@
 ---
-title: "Uptime Kuma &amp; NFTY"
+title: "Uptime Kuma & NFTY"
 date: '2023-02-15'
 slug: uptime-kuma-nfty
 aliases:

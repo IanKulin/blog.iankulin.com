@@ -1,5 +1,5 @@
 ---
-title: "SSH &amp; the scary warning"
+title: "SSH & the scary warning"
 date: '2023-02-08'
 slug: ssh-the-scary-warning
 aliases:

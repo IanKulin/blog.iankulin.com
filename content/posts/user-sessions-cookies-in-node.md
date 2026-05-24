@@ -1,5 +1,5 @@
 ---
-title: "User Sessions &amp; Cookies in Node"
+title: "User Sessions & Cookies in Node"
 date: '2024-02-09'
 slug: user-sessions-cookies-in-node
 aliases:

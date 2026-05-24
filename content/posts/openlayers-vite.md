@@ -1,5 +1,5 @@
 ---
-title: "Openlayers &amp; Vite"
+title: "Openlayers & Vite"
 date: '2023-01-26'
 slug: openlayers-vite
 aliases:

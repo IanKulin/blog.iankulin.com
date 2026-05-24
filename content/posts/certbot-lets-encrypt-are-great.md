@@ -1,5 +1,5 @@
 ---
-title: "Certbot &amp; Let's Encrypt are great"
+title: "Certbot & Let's Encrypt are great"
 date: '2023-10-12'
 slug: certbot-lets-encrypt-are-great
 aliases:
