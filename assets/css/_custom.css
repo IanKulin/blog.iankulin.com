@@ -4,6 +4,39 @@
   --max-line-width: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Text */
+    --color-text:         oklch(88% 0.01 248);
+    --color-text-bg:      oklch(22% 0.02 248);
+    --color-text-meta:    oklch(62% 0.01 248);
+    --color-headings:     oklch(93% 0.01 248);
+    --color-code:         oklch(85% 0.01 248);
+
+    /* Brand — Nord frost blue for links/accents */
+    --color-brand:        oklch(72% 0.07 210);
+    --color-brand-alt:    oklch(82% 0.05 210);
+    --color-brand-light:  oklch(42% 0.03 248);
+    --color-brand-dark:   oklch(85% 0.05 210);
+
+    /* Backgrounds — Nord Polar Night palette */
+    --color-header-bg:    oklch(25% 0.02 248);
+    --color-body-bg:      oklch(22% 0.02 248);
+    --color-footer-bg:    oklch(25% 0.02 248);
+    --color-backdrop:     oklch(28% 0.02 248);
+
+    /* Borders */
+    --color-border:       oklch(45% 0.03 248);
+    --color-border-light: oklch(35% 0.02 248);
+    --color-border-dark:  oklch(55% 0.03 248);
+  }
+
+  /* Soften images slightly so they don't blast in dark mode */
+  img {
+    filter: brightness(0.9);
+  }
+}
+
 .header__logo-image {
   height: var(--fs-xxl);
   width: auto;
