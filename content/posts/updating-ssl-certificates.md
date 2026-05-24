@@ -13,8 +13,6 @@ tags:
   - web
 ---
 
-![](/images/0_logo_minimal_modern_vector_it_tools_security_anonymous_vuln_31d19059-50fd-4809-bff1-a13ef295807e.png)
-
 When I first installed my SSL certificates, [I mentioned](/installing-ssl-certificates-with-nginx-on-docker/) it's a process I need to automate before they came up for expiry, but here we are ten days out, and I haven't done that yet, but I have been keeping an eye on it though the excellent display and notifications set up in [Uptime Kuma](/uptime-kuma-nfty/).
 
 ![](/images/screen-shot-2023-07-10-at-5.36.01-pm.png)
