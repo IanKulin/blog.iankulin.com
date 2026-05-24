@@ -3,3 +3,13 @@
 :root {
   --max-line-width: none;
 }
+
+.header__logo-image {
+  height: var(--fs-xxl);
+  width: auto;
+  transform: translateY(2px);
+}
+
+.header__site-name {
+  margin-inline-start: -0.5ch;
+}
