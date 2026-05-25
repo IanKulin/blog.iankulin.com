@@ -27,7 +27,7 @@ The list is nicely named with a unique class (which I've highlighted above), so 
 
 We might just dive into the code then pull it apart.
 
-```
+```js
 function enumeratePlaylist(html) {
   // Load the HTML into cheerio
   const $ = cheerio.load(html);
@@ -58,7 +58,7 @@ function enumeratePlaylist(html) {
 
 [Cheerio](https://cheerio.js.org/) is a library often used for this purpose, if you're familiar with [jQuery](https://jquery.com/) which is used to manipulate the DOM on the browser side, it's not unreasonable to think of Cheerio as the same thing running in the server. In fact, a lot of the conventions established by jQuery are brought over to Cherio which brings us to our first code snippet.
 
-```
+```js
   const $ = cheerio.load(html);
 ```
 
@@ -68,7 +68,7 @@ In jQuery, we just have one '$' - the document we're in, but in Cheerio working 
 
 You can think of '$' as now containing a collection of DOM elements. We can select a sub-set of them with a CSS like syntax:
 
-```
+```js
   // Find all list items within the playlist
   const $playlistItems = $("ul.sm2-playlist-bd li");
 ```
@@ -81,7 +81,7 @@ Notice we've used the '$' at the start of our variable. Once again, this is the 
 
 Next we loop through the $playListItems and break down the HTML anchor into the title and the link texts.
 
-```
+```js
     const title = $(item).find("a").text().trim();
     const link = $(item).find("a").attr("href");
 ```
@@ -90,7 +90,7 @@ Cheerio can do a bit more with the DOM - including manipulating the elements, bu
 
 Here's our final code:
 
-```
+```js
 import * as cheerio from "cheerio";
 
 function outputEpisode(title, link) {

@@ -18,7 +18,7 @@ Another set of challenges for a [#100DaysofSwiftUI](https://www.hackingwithswift
 
 The genre is already forced since it uses a picker, but I added a default (plain grey) image to deal with the situation that there's no data for it in a record. It doesn't make sense to provide defaults for the title or author, but some validation to ensure those fields are not empty is worthwhile.
 
-```
+```swift
 Section {
     Button("Save") {
         let newBook = Book(context: moc)
@@ -53,7 +53,7 @@ Straightforward, with use of the ternary operator.
 2.  Set it to current date in the Save of the AddView
 3.  Showing it in the Detail View was a little more interesting - adding a test to ensure it was in the database - since we've now got two versions of these records.
 
-```
+```swift
 Text(book.author ?? "Unknown author")
     .font(.title)
     .foregroundColor(.secondary)

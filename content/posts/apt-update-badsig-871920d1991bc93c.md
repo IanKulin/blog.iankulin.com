@@ -15,7 +15,7 @@ tags:
 
 I have an ansible script that runs each weekend which basically does an `apt update && apt upgrade -Y` on every Debian based instance. This weekend it failed on one Ubuntu host. When I went it to try it manually, this was the output:
 
-```
+```bash
 Hit:1 http://au.archive.ubuntu.com/ubuntu jammy InRelease
 Hit:2 https://download.docker.com/linux/ubuntu jammy InRelease                  
 Hit:3 http://au.archive.ubuntu.com/ubuntu jammy-backports InRelease             

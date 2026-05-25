@@ -12,7 +12,7 @@ tags:
 
 My little mdserver app has been a good way for me to start experimenting with the the devops side of things, especially building for Docker. Since I wanted to make the Docker image available for ARM Linux & x86 Linux I had a janky shell script that looked like this:
 
-```
+```bash
 #!/bin/bash
 
 # Extract the version number from package.json using jq
@@ -36,13 +36,13 @@ But the big official images, for instance Node, have a long list of architecture
 
 To create these, we need to use the `docker buildx` feature. If you google how to do this, there's a few mentions of how to 'turn on' this 'experimental' feature. I didn't do that, so perhaps it's been mainstreamed now. What I did to enable it was to enter:
 
-```
+```bash
 docker buildx create --use
 ```
 
 Then to create my dual architecture image:
 
-```
+```bash
 docker buildx build --push \
 --platform linux/arm64,linux/amd64 \
 -t iankulin/mdserver:latest .

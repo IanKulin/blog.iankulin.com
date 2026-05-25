@@ -17,7 +17,7 @@ My current difficulty is getting my head around closures capturing variables. It
 
 To go back a bit, nested functions have access to the variables declared in the scope they are nested in.  
 
-```
+```swift
 func someFunction(){
     var someInt = 4
     nestedFunction()
@@ -37,7 +37,7 @@ I can’t explain the next bit any better than the Swift book, so here’s it’
 
 Here’s my slight edit to the code from the book to get it to print out the incrementing values. This prints ”10” and ”20” to the console.
 
-```
+```swift
 func makeIncrementer(forIncrement amount: Int) -> () -> Int {
     var runningTotal = 0
     func incrementer() -> Int {

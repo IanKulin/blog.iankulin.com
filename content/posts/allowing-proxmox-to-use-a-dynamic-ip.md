@@ -23,7 +23,7 @@ Except that I'm building a system with a couple of VM's and a NAS that I'm going
 
 The configuration file for the network interfaces is /`etc/network/interfaces` the one on the Proxmox machine I'm setting up looked like this:
 
-```
+```bash
 iface lo inet loopback
 
 iface eno1 inet manual
@@ -43,7 +43,7 @@ iface vmbr0 inet static
 
 So this is the bit we are interested in:
 
-```
+```bash
 iface vmbr0 inet static
 	address 192.168.100.30/24
 	gateway 192.168.100.1
@@ -54,7 +54,7 @@ iface vmbr0 inet static
 
 All that bridge stuff can stay the same, I'll comment out the static bits and change it to use the DHCP. The final file looks like:
 
-```
+```bash
 auto lo
 iface lo inet loopback
 
@@ -76,7 +76,7 @@ I used the mac address to tell the DCHP server to allocate it a different addres
 
 Now the server had a new address, there's one more place I need to update; /etc/hosts contains the domain information you set during the Proxmox install, and it will include that old IP address. Once the system has a new one, it needs to be edited to include that.
 
-```
+```bash
 127.0.0.1 localhost.localdomain localhost
 192.168.100.28 pve-kr01.local pve-kr01
 

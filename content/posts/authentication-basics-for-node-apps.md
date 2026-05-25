@@ -25,7 +25,7 @@ Before we dive into our authentication story, it's worth thinking about how HTTP
 
 A HTTP _request_ is just a bunch of lines of text arriving at TCP port 80. It's an agreed on [Internet standard](https://www.rfc-editor.org/rfc/rfc9110.html#name-example-message-exchange) originally written by [Tim Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee). The request will include the type of request it is (GET, POST etc), the resource being requested (usually a web-page) - these make up the _request line_. Then there will be some lines of data called the _header_ that might include things like the type of browser making the request, and optionally a _body_ of the request. The body might contain form data being submitted or a JSON description of an object. If there is a body, there will be a blank line separating it from the header.
 
-```
+```bash
 GET /hello.txt HTTP/1.1
 User-Agent: curl/7.64.1
 Host: www.example.com
@@ -34,7 +34,7 @@ Accept-Language: en, mi
 
 Similarly, the HTTP _response_ is just some lines of text. A _status line_ (which includes the famous _status code_ such as 404), some _headers_ and the _body_.
 
-```
+```bash
 HTTP/1.1 200 OK
 Date: Mon, 27 Jul 2009 12:28:53 GMT
 Server: Apache
@@ -54,7 +54,7 @@ A web app might be serving thousands of users, so we need some way for the serve
 
 In a very simple example, the cookie could contain the name of our user - for example 'Fred' or 'Jane'. Then when the server received each request, it could read the cookie to know which user was making the request. Here's our code:
 
-```
+```js
 const express = require('express');
 
 const app = express();
@@ -79,7 +79,7 @@ app.listen(PORT, () => {
 
 The cookie is just a line of text included in the header of the request. Perhaps the request looks like this:
 
-```
+```bash
 GET / HTTP/1.1
 Accept: application/json, text/plain, */*
 Cookie: name=Fred
@@ -104,7 +104,7 @@ Our server as it stands at the moment is not very secure. Any hacker can just ch
 
 Again, we'll npm install a little library to assist us. [cookie-parser](https://github.com/expressjs/cookie-parser#readme) is some middleware that lets us easily work with cookies. For the demonstration we'll just add some routes to set the name to 'Jane' or to clear it. Setting it to 'Jane' will look like this:
 
-```
+```js
 // Route to set a cookie for 'Jane'
 app.get("/setuserjane", (req, res) => {
   res.cookie("name", "Jane"); // Set a cookie named 'name' with value 'Jane'
@@ -114,7 +114,7 @@ app.get("/setuserjane", (req, res) => {
 
 And clearing it, like this:
 
-```
+```js
 // Route to clear the 'name' cookie
 app.get("/clearuser", (req, res) => {
   res.clearCookie("name");
@@ -124,7 +124,7 @@ app.get("/clearuser", (req, res) => {
 
 And since we're using cookie-parser, we may as well use it for reading the cookie to tidy things up a bit as well
 
-```
+```js
 const express = require("express");
 const cookieParser = require("cookie-parser");
 
@@ -174,7 +174,7 @@ Let's think about what we'd need to do to make this work for /setuserjane.
 -   save that ID along with 'Jane' in the local store
 -   save the UID to the cookie to go back to the browser
 
-```
+```js
 app.get("/setuserjane", (req, res) => {
   const sessionId = uuidv4(); // Generate a new GUID
   sessions.push({ sessionId, name: "Jane" });
@@ -189,7 +189,7 @@ Then when we needed to check who the user was at a route, we'd need to:
 -   look it up in the server's session store
 -   use that to identify the name
 
-```
+```js
 app.get("/", (req, res) => {
   const sessionId = req.cookies.sessionId;
   const session = sessions.find(s => s.sessionId === sessionId);
@@ -204,7 +204,7 @@ app.get("/", (req, res) => {
 
 Here's the whole thing. The store of session id:name keypairs is just an array of objects (so it will be wiped on every server restart), and we're using the uuid library to generate globally unique ids.
 
-```
+```js
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const { v4: uuidv4 } = require("uuid");
@@ -260,7 +260,7 @@ The code above is a great improvement, however in practice, instead of managing 
 
 This is the case with `express-session` which does basically what we have above, but also deals with potential cross-site scripting, regenerates session id's to avoid fixation attacks, and signs the cookies to reduce the chance of session data being tampered with. express-session will also handle the storage for the key value pairs for us.
 
-```
+```js
 const express = require("express");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
@@ -320,7 +320,7 @@ Everyone in the world by now is familiar with having to use a username and passw
 -   If there is, then the route is served, if not they are redirected to a log in page
 -   At the log in page, we take a username and password, and check it against an internal store. If they match, we update the session to identify the user
 
-```
+```js
 app.get("/", (req, res) => {
   if (req.session.name) {
     res.send(`Hello ${req.session.name}!`);
@@ -332,7 +332,7 @@ app.get("/", (req, res) => {
 
 I'm using the EJS templating system for this app because it will be handy for later. I'm not going to explain it more here other than to say you can just imagine the above is loading the login form HTML. In fact, it just looks like this:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -359,7 +359,7 @@ I'm using the EJS templating system for this app because it will be handy for la
 
 This form posts to the /login route, which looks like this:
 
-```
+```js
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
   if (username === "demo" && password === "password") {
@@ -375,7 +375,7 @@ It extracts the user name and password from the body of the request (ie from the
 
 To log out, we just tell express-session to destroy the session:
 
-```
+```js
 app.get("/logout", (req, res) => {
   req.session.destroy((err) => {
     if (err) {
@@ -391,7 +391,7 @@ app.get("/logout", (req, res) => {
 
 We just need a bit of refactoring before we move on. Currently our `/login` route only allows a single user, and is not great to read, let's change it to:
 
-```
+```js
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
   if (isValidCredentials(username, password)) {
@@ -405,7 +405,7 @@ app.post("/login", (req, res) => {
 
 That's better, and for the isValidCredentials() we'll check against an array of objects like so:
 
-```
+```js
 const validCredentials = [
   { username: "demo", password: "password" },
   { username: "Jane", password: "password" },
@@ -423,7 +423,7 @@ If you haven't met the JavaScript `.some()` method, it's used to run a callback 
 
 We've made a few changes, lets revisit the complete server.js code:
 
-```
+```js
 // npm install cookie-parser express express-session
 
 const express = require("express");
@@ -506,7 +506,7 @@ We're going to use the [bcrypt](https://www.npmjs.com/package/bcrypt) to do the 
 
 The encryption process is resource intensive, so these are going to be async operations.It's a small trade-off for the security we're adding.
 
-```
+```js
 const bcrypt = require("bcrypt");
 
 const validCredentials = [
@@ -554,7 +554,7 @@ By default, `express-session` uses a memory store, but this can be swapped out f
 
 Implementing this is simple, we just need to declare a variable for the class, then include it in our initialisation of the session middleware.
 
-```
+```js
 const FileStore = require("session-file-store")(session);
 
 const app = express();
@@ -586,7 +586,7 @@ Since express-session is now dealing with our cookies, we can eliminate cookie-p
 
 Here's where we're up to:
 
-```
+```js
 const express = require("express");
 const session = require("express-session");
 const bodyParser = require("body-parser");

@@ -15,7 +15,7 @@ tags:
 
 In C world, if we want to pass a parameter down into a functional call, and allow the receiving function to change it's value, we'd pass a pointer to the variable. Something like this:
 
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -27,7 +27,7 @@ _requests_ is a common Python library (Ansible is actually running Python on the
 
 So before we can start any of the guests, we need to ensure proxmoxer is installed:
 
-```
+```yaml
   tasks:
 
     - name: Install proxmoxer
@@ -40,7 +40,7 @@ So before we can start any of the guests, we need to ensure proxmoxer is install
 
 It's probably worth going over how my Ansible is set up so you can make sense of the rest of this without going back to read earlier posts. In the directory where I'm running this playbook, I have an `ansible.cfg` file. Here's the entire contents:
 
-```
+```ini
 [defaults]
 INVENTORY = hosts
 
@@ -50,7 +50,7 @@ It's an INI type file, and in this case it's just saying if I don't specify the 
 
 The `hosts` file looks a bit like this:
 
-```
+```ini
 [pve_dev1]
 pve-dev1
 #192.168.100.28
@@ -62,7 +62,7 @@ ansible_become_password='{{pve_dev1_become_pass}}'
 
 There's a couple of these entries for every 'machine' that I manage. The first bit just gives the address for the machine, and the second the variables for that machine - a sudo user and their password. You could just type those entries in here like this:
 
-```
+```ini
 [pve_dev1]
 pve-dev1
 #192.168.100.28
@@ -76,7 +76,7 @@ Instead of putting my credentials in a text file that's pushed up to github, I u
 
 You might also be wondering about the IP address that's commented out in the snippets above. I am using the Tailscale MagicDNS on my machines, so I can just refer to this dev Proxmox instance as `pve-dev1`, but yours is probably setup with IP address instead- in which case use that:
 
-```
+```ini
 [pve_dev1]
 192.168.100.28
 
@@ -89,7 +89,7 @@ So now the name being used in Ansible is pve\_dev1, but it's referring to the ma
 
 ### Starting a Proxmox VM
 
-```
+```yaml
     - name: start vm321-deb
       community.general.proxmox_kvm:
         api_user    : root@pam
@@ -101,7 +101,7 @@ So now the name being used in Ansible is pve\_dev1, but it's referring to the ma
 
 The api\_host is the address of the node, and the user and password above it are the same ones you use to log into the web gui of this Proxmox server. name is the you gave the VM in Proxmox when you created it. Note that this is for a stand-alone Proxmox server, not a node that's part of a cluster. If we had a cluster called 'mycluster' and the server/node that vm321-deb was hosted on was called 'node2' the Ansible entry for it would be:
 
-```
+```yaml
     - name: start vm321-deb
       community.general.proxmox_kvm:
         api_user    : root@pam
@@ -116,7 +116,7 @@ The api\_host is the address of the node, and the user and password above it are
 
 Increasingly, I run services in their own LXC container. They are quick to create and start, use less resources, but can still be snapshot-ed for easy backups.
 
-```
+```yaml
     - name: start ct351-go
       community.general.proxmox:
         api_user    : root@pam

@@ -26,7 +26,7 @@ You can't really see in this example, but the format is YAML. Although I might b
 
 I'm using the [Showdown](https://showdownjs.com/) library to do the conversion from markdown. Here's a short demo of how that works:
 
-```
+```js
 const showdown = require('showdown');
 const converter = new showdown.Converter();
 
@@ -43,7 +43,7 @@ console.log(rawHtml);
 
 This would output:
 
-```
+```html
 <h1 id="heading">heading</h1>
 <p>Some random Text</p>
 <ul>
@@ -56,7 +56,7 @@ Showdown is an 827K dependency, so I figured it might already deal with front ma
 
 To enable front matter, you just have to set a flag in the converter, then there's a .getMetadata() method on the converter to get an object of all the metadata. Let's flesh out my demo code a bit to show this, I'll highlight the changes.
 
-```
+```js
 const showdown = require('showdown');
 const converter = new showdown.Converter({metadata: true});
 

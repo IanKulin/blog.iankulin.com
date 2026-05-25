@@ -19,7 +19,7 @@ There were a couple of new things introduced in the solution, which felt a bit u
 
 Same with the sticky nav bar, I'd actually considered this in my design, but hadn't figured out how to do it. It was done with:
 
-```
+```css
 nav {
     position: fixed;
     top: 0;

@@ -30,7 +30,7 @@ I could just change the port number of the Node app to listen to port 80 and con
 
 One of the Nginx options is the ability to turn on '[basic auth](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/)'. This can be enabled for a route, subdomain, or a whole domain. It forces a user to authenticate before being able to access resources from that area. It's basic in the sense that the password is manually set on the server in a file that the nginx conf points to. Ideally your app will have comprehensive auth built in, but (especially when you are still developing it) basic auth is a quick and easy way to prevent all of the internet from accessing your app.
 
-```
+```bash
 	server_name sub.example.com;	location / {		auth_basic "Secure app";	        auth_basic_user_file /etc/nginx/.htpasswd;	}
 ```
 

@@ -22,7 +22,7 @@ The starting point was some html with a a handful of elements, and some unnecess
 
 <a href="/images/screen-shot-2022-12-20-at-8.06.13-am-1.png"><img src="/images/screen-shot-2022-12-20-at-8.06.13-am-1.png" width="800" alt=""></a>
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -90,7 +90,7 @@ I changed up the HTML a bit to make it more semantic, but still ended up with a 
 
 I'll work through the CSS piece by piece. The general stuff was importing the font, the reset and setting the body defaults.
 
-```
+```css
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
@@ -107,7 +107,7 @@ body {
 
 The header/nav bar was actually the toughest job here - it needs four links; three left aligned and one right aligned. I have no doubt that this is not the most elegant solution.
 
-```
+```css
 header {
     background: #33BCFF;
     height: 3rem;
@@ -118,7 +118,7 @@ header {
 
 This grid and align was just to get the text vertically centered.
 
-```
+```css
 header ul {
     display: grid;
     grid-template-columns: repeat(3, fit-content(150px)) 1fr;
@@ -130,7 +130,7 @@ header ul {
 
 The links are in an unordered list, so that's made to be a grid with three columns closely fitted to the text size, and one more column that takes up the rest of the screen width. There's a 10 pixel gap between the columns and the content in the grid is aligned to the end. That makes no difference for the first three links since they are the size of their containers, but the right end one is pushed to the edge of the screen minus the padding.
 
-```
+```css
 header li {
     list-style-type: none;
 }
@@ -147,7 +147,7 @@ header a:hover {
 
 Even though it's convenient to have the links in a list, we don't want the bullet points, so `list-style-type: none;` eliminates them. The `text-decoration: none;` gets rid of the underline, then we add in a hover style so the user gets some feedback that this is, in fact, clickable.
 
-```
+```css
 .cover {
     height: 300px;
     display: grid;
@@ -161,7 +161,7 @@ Even though it's convenient to have the links in a list, we don't want the bulle
 
 The cover image was a bit more straightforward. I used a grid to centre it in both axes, and made the image a bit smaller than the div.
 
-```
+```css
 .projects {
      /* the grid container */
     background-color: #33BCFF;
@@ -184,7 +184,7 @@ The computer icons are displayed in another grid. This time the columns are auto
 
 Finally, the footer is yet another grid, just to center the text on both axes.
 
-```
+```css
 footer {
     background-color: #F1948A;
     height: 3rem;

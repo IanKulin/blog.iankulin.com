@@ -14,7 +14,7 @@ I did so well on this one that it's not going to make a very interesting post. M
 
 On the third challenge, there was a minor difference in the display process. I had done this:
 
-```
+```swift
 let date = book.date ?? Date()
 Text(date.formatted(.dateTime.day().month().year()))
     .foregroundColor(.secondary)
@@ -23,7 +23,7 @@ Text(date.formatted(.dateTime.day().month().year()))
 
 But @twostraws went:
 
-```
+```swift
 if let date = book.date {
     Text(date.formatted(date:.abbreviated, time:.omitted))
 }

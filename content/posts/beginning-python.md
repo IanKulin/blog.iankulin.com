@@ -18,7 +18,7 @@ Transactions in one of these BeanCount text files looks like this:
 
 A good way to enter all these transactions is from your bank statement. Banks make this data available to customers, usually in a range of formats that are digestible by accounting programs. One of the formats I can get this data in looks like this:
 
-```
+```bash
 "116-002 123456789","05/07/2022","WDL05","-49.99","RETAIL PURCHASE","PAYPAL *EVERNOTE1, 4029357733","0107 AUD000000004999"
 "116-002 123456789","03/07/2022","WDL05","-95.34","RETAIL PURCHASE","PUMA ENERGY MOUN,MOUNT MELVILL","0207 AUD000000009534"
 ```
@@ -45,13 +45,13 @@ Coming from Delphi/C++/Swift the use of indentation to define code blocks is sli
 
 My plan for this utility is that I'll type something like this at the command line to process the bank CSV file into a text file full of the BeanCount transactions:
 
-```
+```bash
 python csv2bean.py bank.csv > 2022_July.bean
 ```
 
 So the first problem is grabbing the command line arguments. There's a library to import for that - `sys`. The arguments will be in an array `argv[]`so the demo code could look like this:
 
-```
+```py
 import sys
 
 print('Self name: ', sys.argv[0])
@@ -67,7 +67,7 @@ There's a couple of library options for processing CSV files. One is just called
 
 csv.reader(filename) will give us a collection of lines to iterate through, and we can break each line into a row array which will contain each piece of text.
 
-```
+```py
 # process a bank extended csv file to a beancount transaction
 import csv, sys
 
@@ -98,14 +98,14 @@ Beancount dates have to be in the format of YYYY-MM-DD and my Australian bank on
 
 Functions are defined with `def`, can accept arguments and return values with `return`. Here's a (non-functional) version of the function to format the date:
 
-```
+```py
 def flip_date(dmy_date):
     return dmy_date
 ```
 
 We can think of strings as arrays of characters, so the chopping and changing we want to do will end up like this:
 
-```
+```py
 def flip_date(dmy_date):
     if len(dmy_date) < 10:
         print('Error: date too short: '+dmy_date)
@@ -118,7 +118,7 @@ The only notable thing there is that when we slice out a sub-string with these i
 
 That's about all the work we need to do for this program, all that's left is to spit it out in the correct format.
 
-```
+```py
 print(trans_date+ ' * "'+trans_payee+'" "'+trans_narration+'"')
 print('    Assets:Cheque:    '+str(trans_amount)+' AUD')
 if trans_amount < 0.0:
@@ -132,7 +132,7 @@ Most of that is self evident - string concatenation in Python is with the `+` op
 
 In Australia there's a 10% GST (similar to VAT or sales tax), so the output code checks if this is a debit, and if so, calculates the GST by dividing the amount by 11. This is usually going to end in a number with a lot of decimal places, so it needs to the rounded to the nearest cent. That's what this weird looking thing is doing:
 
-```
+```bash
 f'{-trans_amount/11:.2f}'
 ```
 

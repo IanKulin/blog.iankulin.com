@@ -27,7 +27,7 @@ To ensure I'm growing my CSS skills, I also decided to steal the design of the i
 
 Since the calculator display is used for two asynchronous purposes - showing the calculation string as it's being built, and showing a calculation result when we press equals, I've kept a state variable `inputState` which is true when we're building the string, and false when we're displaying a result. `btnAddClick()` is attached to all the buttons used to build the string - `0123456789()-+/*`
 
-```
+```js
 let inputText = '';
 let inputState = true;
 
@@ -43,7 +43,7 @@ function btnAddClick(event) {
 
 The backspace key just slices off the last character in the input string.
 
-```
+```js
 function btnBackspaceClick() {
     if (inputState && inputText.length > 0) {
         inputText = inputText.slice(0, -1);
@@ -54,7 +54,7 @@ function btnBackspaceClick() {
 
 Clear just empties the string and updates the display, then equals calls the dreaded `eval()` and shows the output. To make it a bit fancy, I show the input for the calculation just above the result.
 
-```
+```js
 function btnEqualsClick() {
     inputState = false;
     let output = eval(inputText);

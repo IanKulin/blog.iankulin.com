@@ -19,7 +19,7 @@ We wrote a nice [little Ansible playbook](/first-ansible-playbook/) the other da
 
 This asked us the password to use with the usernames in the `hosts` file. Luckily that day, it was the same username/password combo to use for sudo on every server. What happens if that's not the case? Here's our new hosts file for today. There's a cool new sysadmin in town - Jane.
 
-```
+```yaml
 [vm323_deb]
 100.108.154.133
 
@@ -37,7 +37,7 @@ We could still use `--ask-become-pass` but it only asks us one password, and it'
 
 If you look at the inventory file above, you can see how the variables work - it's the same variable name - Ansible swaps the correct value in for each server as it accesses them. There's many of these variables in addition to `ansible_ssh_user`, including `ansible_ssh_pass`, so maybe we can do something like this:
 
-```
+```yaml
 [vm323_deb]
 100.108.154.133
 
@@ -89,7 +89,7 @@ Ansible has a tool for this called [Ansible Vault](https://docs.ansible.com/ansi
 
 The command to create our file, which we'll call `vault.yaml` will be:
 
-```
+```bash
 ansible-vault create vault.yaml
 ```
 
@@ -107,7 +107,7 @@ When you're done, save the file and exit. What does this file look like:
 
 Yep. That should do it. We still need to tell our playbook to use this file instead of the other one.
 
-```
+```yaml
 --- 
 - name: nginx for all web servers
   vars_files: ./vault.yaml
@@ -127,7 +127,7 @@ Yep. That should do it. We still need to tell our playbook to use this file inst
 
 And when we run the playbook, we need to let it know to ask us the vault password.
 
-```
+```bash
 ansible-playbook web_installs.yaml --ask-vault-pass
 ```
 

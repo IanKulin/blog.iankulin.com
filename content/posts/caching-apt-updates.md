@@ -24,7 +24,7 @@ I decided an unprivileged LXC container would be the perfect base for this servi
 
 Then we just install it, and start and enable it as a service.
 
-```
+```bash
 apt install apt-cacher-ng
 systemctl start apt-cacher-ng
 systemctl enable apt-cacher-ng

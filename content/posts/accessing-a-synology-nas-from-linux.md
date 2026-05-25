@@ -36,13 +36,13 @@ I'm planning on running Jellyfin in an LCX container. So I'll set that up for th
 
 We need to make an empty directory to mount to:
 
-```
+```bash
 mkdir /mnt/media
 ```
 
 Then edit (I use nano) the file `/etc/fstab` to include:
 
-```
+```bash
 //192.168.100.25/media /mnt/media cifs username=jelly,password=jellypass,uid=1000,gid=1000,file_mode=0660,dir_mode=07
 ```
 
@@ -52,7 +52,7 @@ Then edit (I use nano) the file `/etc/fstab` to include:
 
 Note that a couple of other posts on the internet about mounting samba shares thought I'd have to do one or both of these commands to install extra samba goodness:
 
-```
+```bash
 apt install smbclient
 apt install cifs-utils
 ```
@@ -61,7 +61,7 @@ But it turns out I didn't. I suspect that was something to do with ticking the b
 
 Once you've saved that command in `/etc/fstab`, reload the mounts with:
 
-```
+```bash
 mount -a
 ```
 
