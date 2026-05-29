@@ -1,0 +1,26 @@
+{{ define "head" }}
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<style>
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --pagefind-ui-text:       oklch(88% 0.01 248);
+      --pagefind-ui-background: oklch(28% 0.02 248);
+      --pagefind-ui-border:     oklch(45% 0.03 248);
+      --pagefind-ui-tag:        oklch(32% 0.02 248);
+      --pagefind-ui-primary:    oklch(72% 0.07 210);
+    }
+  }
+</style>
+{{ end }}
+{{ define "main" -}}
+<main class="main layout__main">
+  <header>
+    <h1 class="title">{{ .Title }}</h1>
+  </header>
+  <div id="search"></div>
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    new PagefindUI({ element: "#search", showSubResults: true });
+  </script>
+</main>
+{{ end -}}

@@ -49,6 +49,6 @@ url    = "/posts/"
 weight = 2
 
 [[menu.main]]
-name   = "tags/"
-url    = "/tags/"
-weight = 3
+name   = "search/"
+url    = "/search/"
+weight = 4

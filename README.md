@@ -102,6 +102,22 @@ docker build --build-arg BASE_URL=http://localhost:8080 -t blog-local .
 docker run -p 8080:80 blog-local
 ```
 
+### Search preview (no Docker)
+
+`hugo server` does not run Pagefind, so search won't work in live-reload mode. For a quick local preview of the search page:
+
+```bash
+# Build the site then index it
+hugo --minify && npx pagefind --site public --root-selector "main.layout__main"
+
+# Option A: Python's built-in server (no install needed)
+python3 -m http.server -d public
+
+# Option B: VS Code Live Server extension — right-click public/index.html → "Open with Live Server"
+```
+
+Python serves at `http://localhost:8000`; Live Server typically uses `http://127.0.0.1:5500`.
+
 ### One-off Hugo build (no Docker)
 
 Output goes to `public/`:
@@ -109,3 +125,6 @@ Output goes to `public/`:
 ```bash
 hugo --minify
 ```
+
+## Progress
+Up to quick-dirty-auth-with-nginx-node.md with the language ids for code blocks
