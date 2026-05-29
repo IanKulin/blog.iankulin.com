@@ -21,7 +21,7 @@ I assume there's some magic (by magic I guess I mean code created during the com
 
 For simple situations, you just add the Codable protocol to your type. If all the properties inside that type are Codable, then your struct/class will be to. All the straightforward built in types are.
 
-```
+```swift
 struct Chair: Codable {
     var name: String = ""
     var legs: Int = 4
@@ -34,7 +34,7 @@ Since String and Int are codable, the Chair struct will be as well. I'll deal wi
 
 To encode our data we need an encoder. We'll use the Foundation JSONEncoder, but there are others such as [XML](https://github.com/ShawnMoore/XMLParsing) and so on.
 
-```
+```swift
 struct Chair: Codable {
     var name: String = ""
     var legs: Int = 4
@@ -59,7 +59,7 @@ So the property names are used to build our data. The "data" returned by the JSO
 
 #### Decoding
 
-```
+```swift
 // use # to delimit a string that contains double quotes
 let jsonString = #"{"name":"Kitchen chair","legs":4}"#
 

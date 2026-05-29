@@ -15,7 +15,7 @@ tags:
 
 I've been whipping up a little mock-database unit that has a few access functions but actually stores the data as arrays for a demo project for a post I'm writing. In the process I wrote this gem:
 
-```
+```js
 export function dbOrdersAdd(order) {
   const orderCopy = { ...order };
   // since id is a stringified number, finding the max is a bit of a mess
@@ -34,13 +34,13 @@ It also occurred to me, that a year or so ago, these functional array methods we
 
 If you think of all the things you're likely to do with a collection like an array, the most common thing is to iterate over it. Javascript has you covered - with the `forEach()` method. This just executes the callback function you pass:
 
-```
+```js
 [1, 2, 3].forEach(x => console.log(x));
 ```
 
 That's super handy, and gets used a lot. But what if I wanted to do something like summing all the values in an array. In the olden days we might write something like:
 
-```
+```js
 const numbers = [1, 2, 3];
 let sum = 0; 
 for (let i = 0; i < numbers.length; i++) {
@@ -51,7 +51,7 @@ console.log(sum); // 6
 
 But all the cool young things be like:
 
-```
+```js
 const numbers = [1, 2, 3];
 const sum = numbers.reduce((acc, num) => acc + num, 0);
 console.log(sum); // 6
@@ -69,7 +69,7 @@ In our function above `(acc, num) => acc + num`, 'acc' is used by reduce() as th
 
 If we wanted to find the max in an array of numbers we could:
 
-```
+```js
 const numbers = [1, 2, 3];
 const maxnum = numbers.reduce((acc, num) => Math.max(acc, num), 0);
 console.log(maxnum); // 3

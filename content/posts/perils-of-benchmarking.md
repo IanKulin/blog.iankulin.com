@@ -25,11 +25,22 @@ Before I panicked, I thought I'd do my own A/B tests, which since it's container
 
 Here's the results for a series of tests. I included a commercial website I suspect is in the same data centre as a sanity check.
 
-<table class="has-fixed-layout"><tbody><tr><td>Test</td><td>Mean time (ms)</td><td>St dev</td></tr><tr><td>nextdc.com.au</td><td>834</td><td>293</td></tr><tr><td>busy-box uclibc</td><td>450</td><td>93</td></tr><tr><td>busy-box uclibc</td><td>411</td><td>24</td></tr><tr><td>nginx-alpine</td><td>423</td><td>24</td></tr><tr><td>nginx-alpine</td><td>410</td><td>26</td></tr><tr><td>busy-box uclibc</td><td>398</td><td>19</td></tr><tr><td>busy-box uclibc</td><td>419</td><td>20</td></tr><tr><td>nginx-alpine</td><td>403</td><td>16</td></tr><tr><td>nginx-alpine</td><td>398</td><td>23</td></tr><tr><td>nextdc.com.au</td><td>759</td><td>306</td></tr></tbody></table>
+| Test              | Mean time (ms) | St dev |
+|-------------------|----------------|--------|
+| nextdc.com.au     | 834            | 293    |
+| busy-box uclibc   | 450            | 93     |
+| busy-box uclibc   | 411            | 24     |
+| nginx-alpine      | 423            | 24     |
+| nginx-alpine      | 410            | 26     |
+| busy-box uclibc   | 398            | 19     |
+| busy-box uclibc   | 419            | 20     |
+| nginx-alpine      | 403            | 16     |
+| nginx-alpine      | 398            | 23     |
+| nextdc.com.au     | 759            | 306    |
 
 Huh. A couple of things jump out. One is that the site is probably fast enough, and the other is that the performance of busy-box and NGINX are similar, like very suspiciously similar. I wonder what happens if I `docker compose down` the website and run the test again?....
 
-```
+```bash
 This is ApacheBench, Version 2.3 <$Revision: 1903618 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
@@ -59,14 +70,19 @@ lol. Okay. I guess I've been testing the cache in NGINX Proxy Manager this whole
 
 Time to trick it into not using the cache by making unique requests each time. I'll use these:
 
-```
+```bash
 ab -n 100 -c 10 "https://example.com.au/index.html?nocache=$(date +%s%N)"
 ab -n 100 -c 10 "https://www.nextdc.com/index.html?nocache=$(date%20+%s%N)"
 ```
 
 I'm also able to see that it's hitting the container with all the requests by running the compose up in the foreground and having the logs output. So now I'm much more confident about the output. Here's the summary of a much larger group of tests run in that round robin style.
 
-<table class="has-fixed-layout"><tbody><tr><td>Situation</td><td>Mean time (ms)</td></tr><tr><td>Nextdc.com</td><td>617</td></tr><tr><td>NGINX Proxy with no site</td><td>412</td></tr><tr><td>NGINX-apline site</td><td>420</td></tr><tr><td>Busy-box (uclibc)</td><td>424</td></tr></tbody></table>
+| Situation                     | Mean time (ms) |
+|------------------------------|----------------|
+| Nextdc.com                   | 617            |
+| NGINX Proxy with no site     | 412            |
+| NGINX-apline site            | 420            |
+| Busy-box (uclibc)            | 424            |
 
 The comparison with nextdc is of course unfair. They are returning a lot more html, and some of it could be server rendered. I don't have an explanation of why my results are so different from nerkn's. He's using a different tool, and I imagine on a local network (mine is over a mobile data link, to a VPS in a data centre).
 

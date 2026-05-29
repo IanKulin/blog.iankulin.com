@@ -20,7 +20,7 @@ Here's a few commands that are going to help navigate this situation if you've f
 
 #### Show all certificates and which domains
 
-```
+```bash
 sudo certbot certificates
 ```
 
@@ -28,6 +28,6 @@ sudo certbot certificates
 
 There's no way to delete a domain from a certificate, the process is to renew it, but just for the domains you want to keep. Certbot will notice you've missed some and warn you that you're effectively deleting them.
 
-```
+```bash
 sudo certbot --cert-name <certifcate-name> -d <domain1> -d <domain-2>
 ```

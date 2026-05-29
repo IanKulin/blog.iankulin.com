@@ -79,7 +79,7 @@ struct FilteredList: View {
 
 The changes here are to the init() in the FilteredList. Just need another argument to replace the format parameter in the FetchRequest. I may have misunderstood something, because Paul hinted to use string interpolation, but I can't see that it's needed.
 
-```
+```swift
 init(format: String, filter: String) {
     _fetchRequest = FetchRequest<Singer>(sortDescriptors: [], predicate: NSPredicate(format: format, filter))
 }
@@ -87,7 +87,7 @@ init(format: String, filter: String) {
 
 Then when we call it, just pass in the format string.
 
-```
+```swift
 // list of matching singers
 FilteredList(format: "lastName BEGINSWITH %@", filter: lastNameFilter)
 ```
@@ -100,7 +100,7 @@ I'm a fan of this task, because of my wariness of Hard Coded Strings.
 
 The enum, with attached raw values:
 
-```
+```swift
 enum PredicateType: String {
     case beginsWith = "BEGINSWITH"
     case beginsWithIgnoreCase = "BEGINSWITH[c]"
@@ -186,7 +186,7 @@ struct FilteredList: View {
 
 Yet another change to the init in our subview. It's getting kinda messy:
 
-```
+```swift
 init(format: PredicateType, filter: String, sortDescriptors: [SortDescriptor<Singer>]) {
     _fetchRequest = FetchRequest<Singer>(sortDescriptors: sortDescriptors, predicate: NSPredicate(format: "lastName \(format.rawValue) %@", filter))
 }
@@ -194,7 +194,7 @@ init(format: PredicateType, filter: String, sortDescriptors: [SortDescriptor<Sin
 
 Then in the subview call:
 
-```
+```swift
 // list of matching singers
 FilteredList(format: predicateType, filter: lastNameFilter, sortDescriptors: [
                 SortDescriptor<Singer>(\.firstName)

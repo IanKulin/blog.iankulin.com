@@ -21,7 +21,7 @@ This video I watched last night is a compilation of the first few videos of [Sea
 
 In the last couple of tutorials he starts on the way the views are called, and how we can pass values into them. This is great marketing for me - it's exactly where I'm up to in my journey - I'm perplexed about the structure of a SwiftUI app (where's main?!) and the engine that's watching when the UI needs updated and building the views. For example, I want to write a little hello world that just prints the time on the screen. I got this far:
 
-```
+```swift
 struct ContentView: View {
     let today = Date.now
     var body: some View {

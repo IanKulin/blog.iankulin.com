@@ -17,7 +17,7 @@ I've been containerising my static websites with BusyBox (because it's small), a
 
 Here's the dockerfile.
 
-```
+```dockerfile
 FROM busybox:latest
 
 # Add shell script and set executable
@@ -37,7 +37,7 @@ CMD ["sh", "-c", "/usr/local/bin/update_content.sh & busybox httpd -f -p 80 -h /
 
 And the bash script:
 
-```
+```bash
 #!/bin/sh
 
 # Define the URL and the destination path
@@ -67,7 +67,7 @@ In a [Stack Overflow post](/fancier-website-in-a-docker-container/), [Tarun Lalw
 
 Another suggestion is just to bind mount the certs directory in the container to the host (as read only), and use the host's certificates. This seems like a much simpler approach to me. It's just an edit to the `docker-compose.yml` or the run command.
 
-```
+```yaml
 services:
   example.com:
     container_name: httpd-example.com
@@ -79,6 +79,6 @@ services:
 
 or
 
-```
+```bash
 docker run --name httpd-example.com -p 80:80 -v /etc/ssl/certs:/etc/ssl/certs:ro ghcr.io/iankulin/example.com:latest
 ```

@@ -20,7 +20,7 @@ The tutorial app validates the order address by checking that each field is not 
 
 The tutorial version of the app accomplished the checking with a computed property in the Order struct - which is a good place for it. Here it is:
 
-```
+```swift
 var hasValidAddress: Bool {
     if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
         return false
@@ -31,7 +31,7 @@ var hasValidAddress: Bool {
 
 There's no .isEmptyIfYouIgnoreWhiteSpace method, so I did this:
 
-```
+```swift
 var hasValidAddress: Bool {
     let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
     let trimmedStreetAddress = streetAddress.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -58,7 +58,7 @@ This is a bit more complicated. A reason for preferring a struct is that all of 
 
 I created a wrapper class, with the struct as an @Published var.
 
-```
+```swift
 class Wrapper: ObservableObject {
     @Published var order = Order()
 

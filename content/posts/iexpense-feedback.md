@@ -26,7 +26,7 @@ except that he does the work in a local variable which is a bit neater. Since it
 
 I'd done this with ternary operator modifiers:
 
-```
+```swift
             Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
         }.foregroundColor((item.amount < 10) ? .purple : (item.amount < 100) ? .green : .blue)
 ```
@@ -104,7 +104,7 @@ Perplexed, now that I'm thinking carefully about it. I did some print statement 
 
 Which outputs this:
 
-```
+```bash
 Offset:3
 Before remove
 Bus 1 [0]

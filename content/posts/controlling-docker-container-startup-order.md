@@ -38,7 +38,7 @@ Having some sort of health check like this is super common for containerised dat
 
 Now we just add that into the compose file.
 
-```
+```yaml
 services:
   influxdb:
     image: influxdb:2    
@@ -71,7 +71,7 @@ Even if you don't need your containers to depend on one another, it might still 
 
 The next step is to tell the other container (in our example, the glimpse-scan app) which other service it depends on.
 
-```
+```yaml
   glimpse-scan:
     image: ghcr.io/iankulin/glimpse_scan:latest
     container_name: glimpse-scan

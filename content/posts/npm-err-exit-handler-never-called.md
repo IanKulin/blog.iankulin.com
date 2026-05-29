@@ -60,7 +60,7 @@ This is potentially a substantial change to your app, so you'd definitely want t
 
 ### The Error
 
-```
+```bash
 npm ERR! Exit handler never called!
 
 npm ERR! This is an error with npm itself. Please report this error at:
@@ -69,7 +69,7 @@ npm ERR!     <https://github.com/npm/cli/issues>
 
 This sounds quite serious, but before you head off to report it, try this:
 
-```
+```bash
 npm install --no-package-lock
 ```
 

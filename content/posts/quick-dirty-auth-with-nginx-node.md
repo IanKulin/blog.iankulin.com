@@ -56,13 +56,13 @@ This is going to install the version of node and npm that are provided by Debian
 
 We're going to create a very basic node/Express server app to run on our server. I'm going to remote in with VS Code because that's how I roll this week, but do this however you want. Nano is fine, or maybe you're a vim person. Perhaps for these examples we'll assume you're a sane person near the start of their dev journey and use nano. `ssh` to the server, then:
 
-```
+```bash
 mkdir appcd appnpm initnpm install expressnano app.js
 ```
 
 Then, our app code in app.js
 
-```
+```bash
 const express = require('express');const app = express();const port = 3000;app.get('/', (req, res) => {  res.send('Hello World');});app.listen(port, () => {  console.log(`Server is listening at http://localhost:${port}`);});
 ```
 
@@ -88,7 +88,7 @@ So now that raw access from the network to our app is blocked off, we want to co
 
 Scroll down till you see the `location / {` block. Delete out the contents and replace it with
 
-```
+```bash
 proxy_pass http://localhost:3000;
 ```
 
@@ -96,7 +96,7 @@ proxy_pass http://localhost:3000;
 
 Then we'll check the configuration is okay, and restart the nginx server.
 
-```
+```bash
 sudo nginx -tsudo service nginx restart
 ```
 
@@ -108,7 +108,7 @@ Now if our app is running (`node app.js`) you should be able to go to the server
 
 Now we need to create a file with our credentials, so nginx can have something to check against. The first web server that I ever used that did this was [Apache](https://httpd.apache.org/), and that format has carried forward to be used by nginx. I'm mentioning this to explain why I'm about to tell you to install some Apache tools.
 
-```
+```bash
 sudo apt install apache2-utilssudo htpasswd -c /etc/nginx/.htpasswd user1
 ```
 
@@ -122,13 +122,13 @@ If you're curious about how that looks in the file, you can just `cat` it out. Y
 
 If you want to add more users, go ahead; it's the same command without the `-c`
 
-```
+```bash
 sudo htpasswd /etc/nginx/.htpasswd ian
 ```
 
 Next, we need to tell nginx to use this. We need to go back to the same spot in the `/etc/nginx/sites-available/default` where we added the proxy pass statement. Just _above_ the proxy statement, add:
 
-```
+```bash
 auth_basic "Protected app";auth_basic_user_file /etc/nginx/.htpasswd;
 ```
 
@@ -140,7 +140,7 @@ I'm pretty sure nginx processes these in order, so put the auth\_basic directive
 
 Once that's saved, we'll check the configuration and restart nginx to load it.
 
-```
+```bash
 ian@ct372-authplay:~$ sudo nginx -tnginx: the configuration file /etc/nginx/nginx.conf syntax is oknginx: configuration file /etc/nginx/nginx.conf test is successfulian@ct372-authplay:~$ sudo service nginx restart
 ```
 
@@ -162,7 +162,7 @@ After making this change, we need to restart nginx to pick up the config change 
 
 Back in our node app, we need to recover the username from the request header.
 
-```
+```bash
 app.get('/', (req, res) => {  const username = req.get('X-Username');  res.send('Hello '+username);});
 ```
 

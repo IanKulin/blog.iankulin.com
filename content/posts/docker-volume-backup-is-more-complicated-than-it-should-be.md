@@ -46,7 +46,7 @@ For demo purposes, I created the admin user `ian` and set up Uptime Kuma to moni
 
 If you started the app from a docker compose file, you can just look in there to see what the internal data directories that are being mounted to are:
 
-```
+```yaml
 version: '3.8'
 
 services:
@@ -65,7 +65,7 @@ volumes:
 
 or alternatively use the `docker inspect <container name>` command. You'll get back a barrage of Json - somewhere in there will be the mount details:
 
-```
+```json
 "Mounts": [
     {
         "Type": "volume",
@@ -100,7 +100,7 @@ Once I'd copied them over and [installed Docker](https://docs.docker.com/engine/
 
 Now we need copy the backed up data (which is just sitting in the current directory) into the named volume. Once again, this will be achieved by creating a new container, mounting the named volume and and current external working directory.
 
-```
+```bash
 sudo docker run --rm --volumes-from uptime-kuma -v $(pwd):/backup ubuntu bash -c "cd /app && tar xvf /backup/backup.tar --strip 1"
 ```
 

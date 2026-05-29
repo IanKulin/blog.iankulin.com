@@ -17,15 +17,18 @@ I found this one of the trickier days, so I'll write it out to clear up my think
 
 To draw to to screen in SwiftUI, we don't call a command to draw on a canvas or window. Rather, a _view_ is defined as an immutable struct of type some View. Here's the simple one from the default Xcode project.
 
+```swift
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
     }
 }
+```
 
 The _body_ var must be present, and can contain up to ten views. This simple example only contains one view - a text box. There are container view types that can, well, contain other views - for example a _HStack_ which arranges its content horizontally.
 
+```swift
 struct ContentView: View {
     var body: some View {
         HStack {
@@ -37,6 +40,7 @@ struct ContentView: View {
 
     }
 }
+```
 
 produces:
 
@@ -46,6 +50,7 @@ Having defined our view struct, we don't call for it to be rendered on the scree
 
 If you look back at the code above, you'll see that views often have _modifiers_ attached to them. In our example the _padding()_ on the text and the _.frame()_ on the rectangle. There's many different modifiers for all of the different view primitives. Many of them are common to different primitives, some are different. It's possible to attach them to container views - in which case they are applied to all the views in the container. For example, if we move the .frame() to the HStack, like this:
 
+```swift
 struct ContentView: View {
     var body: some View {
         HStack {
@@ -56,6 +61,7 @@ struct ContentView: View {
         .frame(width: 100, height: 100, alignment: .center)
     }
 }
+```
 
 We get
 

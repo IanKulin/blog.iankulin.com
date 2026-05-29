@@ -12,6 +12,7 @@ tags:
 
 The Youtube algorithm thinks I need to watch more MVVM videos, and it turns out it's probably right. A day or two ago in an [MVVM](/simple-mvvm/) post using a super simple example, I stored the view model as a property of the view using the @ObservedObject wrapper, as I created it.
 
+```swift
 struct ContentView: View {
     @ObservedObject var light = LightViewModel()
     
@@ -24,6 +25,7 @@ struct ContentView: View {
             else{
                 Image(systemName: "lightbulb.fill").font(.system(size: 72))
             }
+```
 
 But then today, Youtube served me up this video from [BeyondOnesAndZeros](https://www.youtube.com/c/BeyondOnesAndZeros/videos)
 

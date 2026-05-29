@@ -20,7 +20,7 @@ Since I've paid to be a member of Hacking with Swift, one of the perks is to see
 
 When I changed the VStacks to Sections, I put the section title text at the top:
 
-```
+```swift
 Section(header: Text("When do you want to wake up?")) {
     HStack {
         DatePicker("Please enter a time", selection: $wakeUp,       
@@ -31,7 +31,7 @@ Section(header: Text("When do you want to wake up?")) {
 
 Paul had his in a trailing closure at the bottom:
 
-```
+```swift
 Section {
     DatePicker("Please enter a time", selection: $wakeUp,    
         displayedComponents: .hourAndMinute).labelsHidden()
@@ -43,7 +43,7 @@ header: {
 
 I thought mine was nicer, but then the very next thing he shows in the video is:
 
-```
+```swift
 Section("When do you want to wake up?") {
     DatePicker("Please enter a time", selection: $wakeUp,    
         displayedComponents: .hourAndMinute).labelsHidden()
@@ -54,7 +54,7 @@ So there - I have learned something for an expert...
 
 The next job was to change the stepper to a picker for the number of cups of coffee. I had something like this:
 
-```
+```swift
 Section(header: Text("Daily coffee intake?") {
     Picker(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", 
         selection: $coffeeAmount) {
@@ -71,7 +71,7 @@ Section(header: Text("Daily coffee intake?") {
 
 And Paul:
 
-```
+```swift
 Section("Daily coffee intake?") {
     Picker("Number of cups", selection: $coffeeAmount) {
         ForEach(1..<21) {

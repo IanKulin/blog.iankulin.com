@@ -15,6 +15,7 @@ tags:
 
 Although "immutable" the view structs can contain some control statements such as if/then and for loops. So this is quite legal, and useful.
 
+```swift
 struct ContentView: View {
     @State private var likesGreen = true
 
@@ -30,6 +31,7 @@ struct ContentView: View {
         }
     }
 }
+```
 
 But Paul cautions against this, saying:
 
@@ -37,6 +39,7 @@ But Paul cautions against this, saying:
 
 Instead, he encourages the use of the ternary operator in modifiers for these situations. The ternary operator is like an if/then/else statement packaged up neatly. So the code above becomes:
 
+```swift
 struct ContentView: View {
     @State private var likesGreen = true
     
@@ -45,5 +48,6 @@ struct ContentView: View {
             .background(likesGreen ? .green : .blue)
     }
 }
+```
 
 He's not arguing that it's neater, but also that it's more efficient - that the first version has to destroy and create a Text when the value of the flag changes, whereas the second one just changes the colour. I assume he's correct, but it's not obvious why that would be so. It must be in the magic of how SwiftUI optimises how and when it renders each part of a view.

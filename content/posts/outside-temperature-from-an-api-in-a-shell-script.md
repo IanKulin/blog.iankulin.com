@@ -39,7 +39,7 @@ https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API k
 
 There's a couple of options for language and units, I went with _metric_, then you get have some JSON.
 
-```
+```json
 {
   "coord": {
     "lon": 118,
@@ -88,7 +88,7 @@ There's a couple of options for language and units, I went with _metric_, then y
 
 From this, I want to extract the temperature, and the unix timestamp "dt". Here's my bash script.
 
-```
+```bash
 #!/bin/bash
 
 weather_text=`curl -s "https://api.openweathermap.org/data/2.5/weather?lat=-33.93&lon=118.00&appid=somegiantrandomUIDtypenumber&units=metric"`
@@ -103,7 +103,7 @@ printf "%s,%s" $temp_text $time_text > $log_file
 
 Of note, and that I haven't already discussed:
 
-```
+```bash
 weather_text=`curl -s "https://api.openweathermap.org/data/2.5/weather?lat=-33.93&lon=118.00&appid=somegiantrandomUIDtypenumber&units=metric"`
 ```
 
@@ -111,37 +111,37 @@ weather_text=`curl -s "https://api.openweathermap.org/data/2.5/weather?lat=-33.9
 
 weather\_text is a variable to which we are assigning the return value of the curl - ie the string of JSON. Note the backticks \`\` the curl is enclosed in. This is how the script knows to execute the command and assign the results rather than assigning some text beginning with `curl`.
 
-```
+```bash
 temp_text=`echo $weather_text | awk -F'"temp":' '{print $2}' | cut -d',' -f1`
 ```
 
 Oh man, this took me on a journey. Firstly, keep in mind I've prettified the JSON above, actually the string looked like this, so it wasn't possible to process it on a line by line.
 
-```
+```json
 {"coord":{"lon":118,"lat":-33.93},"weather":[{"id":803,"main":"Clouds","description":"broken clouds","icon":"04d"}],"base":"stations","main":{"temp":12.59,"feels_like":11.68,"temp_min":12.59,"temp_max":12.59,"pressure":1007,"humidity":68,"sea_level":1007,"grnd_level":976},"visibility":10000,"wind":{"speed":7.39,"deg":307,"gust":11.23},"clouds":{"all":64},"dt":1682401802,"sys":{"country":"AU","sunrise":1682375848,"sunset":1682415263},"timezone":28800,"id":2070753,"name":"Gnowangerup","cod":200}
 ```
 
 We are assigning to the variable `temp_text` the contents of this command, where $weather\_text is the JSON string.
 
-```
+```bash
 echo $weather_text | awk -F'"temp":' '{print $2}' | cut -d',' -f1
 ```
 
 The vertical lines are called _pipes_ `|` they send the output of the command on their left into the command to their right. So there's three different things happening here. The `echo` just outputs the JSON, then we process it twice more.
 
-```
+```bash
 awk -F'"temp":' '{print $2}'
 ```
 
 [awk](https://www.geeksforgeeks.org/awk-command-unixlinux-examples/) is one of the great text processing commands along with `grep` and `sed`. The way it is being used here is to break the string into multiple parts, where the parts are delimited by the text `"temp":` which in our case is just two parts. Then we are outputting the second part ready for the next processing. So at this stage, the text would look like this.
 
-```
+```bash
 12.59,"feels_like":11.68,"temp_min":12.59,"temp_max":12.59,"pressure":1007,"humidity":68,"sea_level":1007,"grnd_level":976},"visibility":10000,"wind":{"speed":7.39,"deg":307,"gust":11.23},"clouds":{"all":64},"dt":1682401802,"sys":{"country":"AU","sunrise":1682375848,"sunset":1682415263},"timezone":28800,"id":2070753,"name":"Gnowangerup","cod":200}
 ```
 
 Then I need to do the same sort of thing again - split the string using a delimiter, and just keep the part with the termperature in it. This time we'll use a comma , as the delimiter, and only keep the part in front of it.
 
-```
+```bash
 cut -d',' -f1
 ```
 
@@ -161,7 +161,7 @@ Now that's in place, I just edited `/etc/crontab` to have the new script run eve
 
 We've already seen most of this, but I've made a couple of additions.
 
-```
+```bash
 #!/bin/bash
 
 #check drivetemp has been loaded - needed for ssd temp
@@ -190,13 +190,13 @@ We've already discussed how the curl works - this one is picking up the script w
 
 The drivetemp module needs to be loaded into the Linux kernel before we can read the SSD temperature with the line.
 
-```
+```bash
 ssd_temp=`cat /sys/class/hwmon/hwmon2/temp1_input`
 ```
 
 Once it's loaded, it stays there, unless computer is shutdown for any reason. There's a [number of places](https://www.baeldung.com/linux/run-script-on-startup) we can execute things on startup, but really this `drivetemp` module is only needed for this script, so we should do it here. As far as I can make out, telling Linux to load a module that's already loaded does not do any harm, and at once every five minutes it's hardly going to cause a performance issue. Nevertheless, some sort of programmer ethics compels me to only do it if its needed.
 
-```
+```bash
 #check drivetemp has been loaded - needed for ssd temp
 if ! lsmod | grep -wq drivetemp; then
   modprobe drivetemp

@@ -10,13 +10,13 @@ tags:
 
 First lesson with classes today. First of all I was pleased to see they exists since we've just been plucking objects out of thing air like:`}`
 
-```
+```js
 const userIan = {name: 'Ian', language: 'Indonesian'}
 ```
 
 but with classes we can declare a class and instantiate an object of it:
 
-```
+```js
 class User {
     constructor(name, language) {
       this.name = name;
@@ -30,7 +30,7 @@ console.log(ian.name);
 
 There's (at least) single inheritance:
 
-```
+```js
 class User {
     constructor(name, language) {
       this.name = name;
@@ -53,7 +53,7 @@ Of course it's JS, so there's no named arguments, and if you miss one off in a c
 
 Methods are declared without a keyword:
 
-```
+```js
 class User {
     constructor(name, language) {
       this.name = name;
@@ -71,7 +71,7 @@ console.log(ian.asString());
 
 Or we could do that as. computed property using 'get':
 
-```
+```js
 class User {
     constructor(name, language) {
       this.name = name;
@@ -89,7 +89,7 @@ console.log(ian.asString);
 
 You don't have to have a constructor, just declare the fields:
 
-```
+```js
 class User {
     name;
     language;
@@ -107,7 +107,7 @@ console.log(ian.asString);
 
 Probably a good idea to have default values in that case though:
 
-```
+```js
 class User {
     name = '';
     language = 'English';

@@ -15,7 +15,7 @@ One language feature that's being used quite a bit, and that is apparently a JS 
 
 Imagine we've got a couple of food objects, and we want to test them and provide some dietary advice.
 
-```
+```js
 const hotDog = {name: 'hot dog', calories: 290, colors: ['red', 'wheat']};
 const lettuce = {name: 'lettuce', calories: 0, colors: ['green']};
 
@@ -33,7 +33,7 @@ eatRecomendation(lettuce);
 
 The parameter in eatRecomendation() could be destructured like so:
 
-```
+```js
 function eatRecomendation( {name, calories} ) {
     if (calories > 200) {
         console.log(`Eat ${name} in moderation`);
@@ -48,7 +48,7 @@ eatRecomendation(lettuce);
 
 It's still called with the food object, but the destructuring creates just the properties we need as local variables. If you don't love doing this as the object is passed in - I don't because it arguably makes it harder to see from the signature what should be passed to this function - you can keep the object parameter and destructure it inside the function body:
 
-```
+```js
 function eatRecomendation(food) {
     const {name, calories} = food;
     if (calories > 200) {

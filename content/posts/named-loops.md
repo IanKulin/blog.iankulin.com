@@ -17,6 +17,7 @@ Here’s a neat thing I haven’t seen before. Other languages I’ve worked in 
   
 To explain, say if we had these two loops (in C):
 
+```c
   int i;
   int j;
   char string\[\] = "This string";
@@ -29,9 +30,11 @@ To explain, say if we had these two loops (in C):
     }
     
   }
+```
 
 and for some unexplained reason, we need to break out of both loops when we encounter a lowercase ‘t’. There is a C command to break out of a loop - _break_. But it only breaks out of the current loop:
 
+```c
   int i;
   int j;
   char string\[\] = "This string";
@@ -47,10 +50,11 @@ and for some unexplained reason, we need to break out of both loops when we enco
     }
     
   }
+```
 
 Since the outside loop that is iterating ‘i’ is not broken out of, we still end up looping through to the letter ‘t’ four times. Like this:
 
-```
+```bash
 char:T num:0
 char:h num:0
 char:i num:0
@@ -83,6 +87,7 @@ char:t num:3
 
 So in C/C++ I would convert the loops to _while_, and set a _continue_ flag. First the whiles:
 
+```c++
   int i;
   int j;
   char string\[\] = "This string";
@@ -102,9 +107,11 @@ So in C/C++ I would convert the loops to _while_, and set a _continue_ flag. Fir
     
     i++;
   }
+```
 
 Then the flag, which I've called _keepGoing_:
 
+```c++
   int i;
   int j;
   char string\[\] = "This string";
@@ -124,11 +131,12 @@ Then the flag, which I've called _keepGoing_:
     }
  
   }
+```
 
 This gives us the output we want and we can close the ticket. Note that I have  
 typedef'd _true_ and _false_ off-screen in the code above.
 
-```
+```bash
 char:T num: 0
 char:h num: 0
 char:i num: 0
@@ -140,6 +148,7 @@ char:t num: 0
 
 With Swift, we can just name the loops, then break out to a named loop level:
 
+```swift
   littleLoop: for i in 0...3 {
     bigLoop: for char in "This string" {
         print("char:\\(char) num:\\(i)")
@@ -148,5 +157,6 @@ With Swift, we can just name the loops, then break out to a named loop level:
         }
     }
   }
+```
 
 Note that I didn't need to name the internal _littleLoop_, that was just showing off.

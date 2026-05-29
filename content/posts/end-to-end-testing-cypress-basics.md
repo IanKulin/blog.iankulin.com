@@ -28,7 +28,7 @@ In the app I'm working on, if you view an individual customer (say at "[http://1
 
 Here's the test code:
 
-```
+```js
 describe('Page Navigation', () => {
   it('should navigate to the customers list when clicking the Home link', () => {
     // visit the customer details page
@@ -45,13 +45,13 @@ describe('Page Navigation', () => {
 
 If you've been writing unit tests before, this format will be familiar, but let's look at the steps:
 
-```
+```js
 cy.visit('http://127.0.0.1:3002/customers/1');
 ```
 
 You guessed it - we're telling Cypress to visit that page.
 
-```
+```js
 cy.get('a').contains('Home').click();
 ```
 
@@ -59,7 +59,7 @@ I'm not sure if Cypress uses [JQuery](https://jquery.com/), or just a JQuery lik
 
 Finally the `click()` at the end of the statement tells Cypress to click this link.
 
-```
+```js
 cy.url().should('eq', 'http://127.0.0.1:3002/customers');
 ```
 
@@ -97,7 +97,7 @@ Actually - the code in our very simple demo above covers about 70% of the testin
 
 comes up again and again. So I'm going to try not to repeat myself too much. Most of what's new in the following tests will be extra selectors, and assertions. We won't cover all of them, but rather a smattering to get started with.
 
-```
+```js
   // test for customers list page
   describe("Customers Page", () => {
     it("should have the home page redirect to customers page", () => {
@@ -128,7 +128,7 @@ There's a [massive list of should() assertions](https://docs.cypress.io/api/comm
 
 Another handy thing might be testing for `"not.exist".` In my example app if I want to test deleting a _customer_, I can check they exist in the customers list, click delete, then check that they no longer exist in the list:
 
-```
+```js
     it("should delete a customer when delete link is clicked", () => {
       // first check the customer exists
       cy.visit("http://localhost:3002/customers");
@@ -148,7 +148,7 @@ Another handy thing might be testing for `"not.exist".` In my example app if I w
 
 We've already seen selecting an anchor tag with get("a") - this will work for any HTML tag, but of course you'll frequently need more specificity than that. As [described in the docs](https://docs.cypress.io/api/commands/get#__docusaurus_skipToContent_fallback), most of the JQuery selectors will also work with get.
 
-```
+```js
 // Select by element type
 cy.get('button')
 
@@ -171,7 +171,7 @@ Those first four are straightforward, but you might not know about attributes.
 
 As part of the HTML specification, tags can have attributes. You've been using them all along. For example. this button:
 
-```
+```html
 <button id="submit" class="btn primary" type="submit">Submit</button>
 ```
 
@@ -183,13 +183,13 @@ has attributes for:
 
 These all have particular meanings for HTML, CSS and JavaScript, but actually we can make up our own. For example we could say:
 
-```
+```html
 <button type="submit" data-test="submit-button">Submit</button>
 ```
 
 There's no specification for 'data-test', it's just a convention, we could just have easily said:
 
-```
+```html
 <button type="submit" data-green-zebra="submit-button">Submit</button>
 ```
 
@@ -203,7 +203,7 @@ Sometimes the exact test you need might not be available, or you need to do some
 
 Once you've got it, you can use `then()` to run an arrow function against it to do something. The pseudo codes looks a bit like this:
 
-```
+```js
 cy.get(selector)
   .invoke(jQueryMethod)  // Extract what you need
   .then((result) => {    // Process it with your own logic
@@ -213,13 +213,13 @@ cy.get(selector)
 
 Let's look at an example. Imagine the HTML of our page looks like this:
 
-```
+```html
 <span class="price">$24.99</span>
 ```
 
 And we want to check that the price was greater than $20 - perhaps we are supposed to have added tax or something. Our test could look like this:
 
-```
+```js
 cy.get('.price')
   .invoke('text')
   .then((priceText) => {
@@ -236,7 +236,7 @@ In my demo app, I use this to check the cascading delete - when we delete the cu
 
 Then, after deleting the customer (and orders) we navigate to the orders page to make sure that order number does not exist there any more.
 
-```
+```js
   describe("Cascading Deletions", () => {
     it("should delete owned orders when a customer is deleted", () => {
       // first make a note of an order for a specific customer
@@ -315,7 +315,7 @@ So, at the start of this 'delete order' test, I'm checking if the order exists, 
 
 The pattern above (where you run a test twice and it fails the second time because the first execution changed the state) is common. To avoid this, we need some system of resetting the state. Cypress has a mocha like 'beforeEach' ability. You most always need this for logging things in:
 
-```
+```js
 describe('My app tests', () => {
   beforeEach(() => {
     // This code runs before each test in this block

@@ -48,7 +48,7 @@ If you're trying things from a single machine, you could install something like 
 
 If you're running against multiple machines, you'll make your life easier by having the same user name on each one. For example, the commands I use to `ssh` into mine are:
 
-```
+```bash
 ssh ian@192.168.100.37
 ssh ian@192.168.100.38
 ssh ian@192.168.100.39
@@ -58,7 +58,7 @@ ssh ian@192.168.100.39
 
 Ansible has the concept of an _Inventory_. The Inventory is a text file of the servers/nodes (I'm just going to say nodes from now on). We need this inventory whether using playbooks or ad-hoc commands. Here's mine, which I've saved in the directory I'm working from as `hosts`:
 
-```
+```bash
 192.168.100.37
 192.168.100.38
 192.168.100.39
@@ -70,7 +70,7 @@ Note that these could also be domain names if your nodes are set up on DNS.
 
 Finally, we're at the point we can run something. Let's try this command to find the host name of each node. There's a lot going on, so we'll break it down after we've looked at the output.
 
-```
+```bash
 ansible -i hosts all -u ian -a "hostname"
 ```
 
@@ -85,7 +85,7 @@ Let's break down all those arguments:
 
 What Ansible has actually done here is ssh into each node and use python to execute the command. Collected the output, then formatted that for us to see. Here it is:
 
-```
+```bash
 192.168.100.37 | CHANGED | rc=0 >>
 vm321-deb
 192.168.100.38 | CHANGED | rc=0 >>
@@ -124,7 +124,7 @@ This time, since the directory is there, there's no need to change it. Ansible c
 
 I'm getting a bit sick of this long command. We can move the inventory file name to a config file to save the typing. Create an ansible.cfg file in your working directory like this.
 
-```
+```ini
 [defaults]
 inventory = hosts
 ```
@@ -139,7 +139,7 @@ I'd also like to get rid of the `-u ian` from each command. That's not stored in
 
 We started off with a very simple inventory file - literally just a list of IP addresses. let's revisit that to add the ssh user, and while we're there, we can group the nodes according to their functions - this will come in handy later.
 
-```
+```ini
 [web]
 192.168.100.37
 192.168.100.38
@@ -156,7 +156,7 @@ ansible_ssh_user=ian
 
 Here I've created two groups for my nodes, a `web` group and a `db` group. I've also set the ssh\_user for each group. Now that argument can be left out of out commands. So to get the hostnames now, we can just say:
 
-```
+```bash
 ansible all -a "hostname"
 ```
 

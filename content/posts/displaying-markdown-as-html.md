@@ -31,7 +31,7 @@ My plan for tackling this is to have a simple Node.js/Express web server that's 
 
 This is easily accomplished in a simple Express server which has the concept of '[middleware](https://expressjs.com/en/guide/using-middleware.html)'. This are just layers of processing that each request goes through. If a layer can deal with a request it does, otherwise it passes it off to the next layer. You'll often see this type of pattern (usually with more layers) in an Express app, where each of the `app.use` declarations is another middleware layer:
 
-```
+```js
 const app = express();
 app.use(mdParser);
 app.use(express.static(publicDirectory));
@@ -76,7 +76,7 @@ This simple version works - the markdown is correctly displayed in the browser, 
 
 The first is that it's not actually well formed HTML. If we load a markdown file containing this:
 
-```
+```markdown
 # Test.md
 
 * A sample mark down file
@@ -88,7 +88,7 @@ It looks like this:
 
 But if we view the page source, it's this:
 
-```
+```html
 <h1 id="testmd">Test.md</h1>
 <ul>
 <li>A sample mark down file</li>
@@ -101,7 +101,7 @@ There's a second related problem I don't like, that's that the title of this pag
 
 As usual, these are a class of problem that's long been solved, in this case with templates. Essentially what I need to do is take the generated (but not correctly formed) HTML output from Showdown, and insert it in the middle of some boilerplate HTML. Perhaps the template could look like this:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,7 +121,7 @@ I'd put the title I wanted for the page in `{{title}}` and the converted markdow
 
 If I load the template file (which can include all sorts of lovely CSS and JS) into `templateData` at start up, I can just use a string replace when I need to serve the file at request time:
 
-```
+```js
 if (useTemplate) {
     // Replace placeholders with title and content 
     const title = path.basename(mdFilePath);
@@ -138,7 +138,7 @@ I'm just using the file name for the title here, I'll think about [how to improv
 
 Now the output looks like:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

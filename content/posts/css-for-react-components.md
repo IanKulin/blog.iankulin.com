@@ -36,15 +36,52 @@ The most common downside of this approach, that I come across, is that I change 
 
 The first CSS we ever wrote was just stuffed in the HTML in style tags, and of course that's still an option. We can use variables to help with the readability, and end up with something like this:
 
-```
-function Card(props: CardProps) {    const cardStyles: React.CSSProperties = {    width: '120px',    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',    textAlign: 'center',    backgroundColor: 'cornsilk',    margin: '10px',    padding: '10px',    transform: 'scale(1)',    transition: 'transform 0.3s',  };  const pictureStyles: React.CSSProperties = {    width: '100px',    height: '150px',    margin: 'auto',    borderRadius: '50%',    border: '2px solid #000',  };  const nameStyles: React.CSSProperties = {    color: 'black',    fontSize: '18px',  };  return (    <div style={cardStyles}>      <img        style={pictureStyles}        src={props.image}        alt={props.name}        width={100}      />      <p style={nameStyles}>{props.name}</p>    </div>  );}
+```ts
+function Card(props: CardProps) {
+  const cardStyles: React.CSSProperties = {
+    width: '120px',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
+    textAlign: 'center',
+    backgroundColor: 'cornsilk',
+    margin: '10px',
+    padding: '10px',
+    transform: 'scale(1)',
+    transition: 'transform 0.3s',
+  };
+
+  const pictureStyles: React.CSSProperties = {
+    width: '100px',
+    height: '150px',
+    margin: 'auto',
+    borderRadius: '50%',
+    border: '2px solid #000',
+  };
+
+  const nameStyles: React.CSSProperties = {
+    color: 'black',
+    fontSize: '18px',
+  };
+
+  return (
+    <div style={cardStyles}>
+      <img
+        style={pictureStyles}
+        src={props.image}
+        alt={props.name}
+        width={100}
+      />
+
+      <p style={nameStyles}>{props.name}</p>
+    </div>
+  );
+}
 ```
 
 Initially, this seemed like a good solution, but there's a few bumps involved. The first is that, or course, this is not real CSS. You can see from the type that TypeScript forced me to use (React.CSSProperties) that these are React types that will get turned into CSS at some distant time in the future. Because of this, there are some oddities - my muscle memory wants to type the CSS property names like `box-shadow`, but for this they need to be camel case.
 
 The next issue of 'it's not actually CSS' was when I wanted to do my hover effect for the cards. In CSS this is just:
 
-```
+```css
 .card:hover {    transform: scale(1.05);    background-color: lightgoldenrodyellow;}
 ```
 
@@ -70,14 +107,66 @@ If you build an app with the CSS in component.css files like this, all the CSS i
 
 A bit fancier approach is to use CSS modules. This is somewhat similar to the component CSS files described above. Our CSS files have to be renamed to end in `.module.css`, then in the code where you normally insert the class names, you use the class names from the styles library:
 
-```
-import styles from "./Card.module.css";// props for cardinterface CardProps {  name: string;  image: string;}function Card(props: CardProps) {  return (    <div className={styles.card}>      <img        className={styles.picture}        src={props.image}        alt={props.name}        width={100}      />      <p className={styles.name}>{props.name}</p>    </div>  );}export default Card;
+```ts
+import styles from "./Card.module.css";
+
+// Props for card
+interface CardProps {
+  name: string;
+  image: string;
+}
+
+function Card(props: CardProps) {
+  return (
+    <div className={styles.card}>
+      <img
+        className={styles.picture}
+        src={props.image}
+        alt={props.name}
+        width={100}
+      />
+
+      <p className={styles.name}>{props.name}</p>
+    </div>
+  );
+}
+
+export default Card;
 ```
 
 Those class names match the CSS:
 
-```
-.card {    width: 120px;    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    text-align: center;    background-color: cornsilk;    margin: 10px;    padding: 10px;    /* tilt and enlarge on mouseover */    transform: scale(1);    transition: transform 0.3s;}.card:hover {    transform: scale(1.05);    background-color: lightgoldenrodyellow;}.name {    font-size: 18px;    color: black;}.picture {    width: 100px;    height: 150px;    margin: auto;    border-radius: 50%;    border: 2px solid black;}
+```css
+.card {
+  width: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: cornsilk;
+  margin: 10px;
+  padding: 10px;
+
+  /* Tilt and enlarge on mouseover */
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: lightgoldenrodyellow;
+}
+
+.name {
+  font-size: 18px;
+  color: black;
+}
+
+.picture {
+  width: 100px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid black;
+}
 ```
 
 The advantage of using modules, is that you now do _not_ have worry about name clashes. If I build the app and have a look in the generated CSS file, you can see how that works:
@@ -92,22 +181,102 @@ All the generated CSS has unique class names created for it! Presumably these ma
 
 There are several libraries that tackle the issue of what to do about CSS in React. One of the more popular ones is `Styled Components`. How this works is that you define a base component with some styles in it (with a weird backticky syntax), then build your own components from the styled one. It makes more sense when you see it than my written explanation.
 
-```
-import styled from "styled-components";const StyledDiv = styled.div`  width: 120px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  text-align: center;  background-color: cornsilk;  margin: 10px;  padding: 10px;  transform: scale(1);  transition: transform 0.3s;  &:hover {    transform: scale(1.05);    background-color: lightgoldenrodyellow;  }`;const StyledImage = styled.img`  width: 100px;  height: 150px;  margin: auto;  border-radius: 50%;  border: 2px solid black;`;const StyledP = styled.p`  font-size: 18px;  color: black;`;// props for cardinterface CardProps {  name: string;  image: string;}function Card(props: CardProps) {  return (    <StyledDiv className="card">      <StyledImage        className="picture"        src={props.image}        alt={props.name}        width={100}      />      <StyledP className="name">{props.name}</StyledP>    </StyledDiv>  );}export default Card;
+```ts
+import styled from "styled-components";
+
+const StyledDiv = styled.div`
+  width: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: cornsilk;
+  margin: 10px;
+  padding: 10px;
+  transform: scale(1);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: lightgoldenrodyellow;
+  }
+`;
+
+const StyledImage = styled.img`
+  width: 100px;
+  height: 150px;
+  margin: auto;
+  border-radius: 50%;
+  border: 2px solid black;
+`;
+
+const StyledP = styled.p`
+  font-size: 18px;
+  color: black;
+`;
+
+// props for card
+interface CardProps {
+  name: string;
+  image: string;
+}
+
+function Card(props: CardProps) {
+  return (
+    <StyledDiv className="card">
+      <StyledImage
+        className="picture"
+        src={props.image}
+        alt={props.name}
+        width={100}
+      />
+
+      <StyledP className="name">{props.name}</StyledP>
+    </StyledDiv>
+  );
+}
+
+export default Card;
 ```
 
 If you don't mind more dependencies, this is a great solution - I like the clarity of the philosophy of creating styled versions of regular elements as React elements, then using them as the building blocks of our new component. All the CSS attributes you've learned are still there.
 
 The only thing I needed to look up was how to deal with my hover. In the CSS this had been:
 
-```
-.card {    width: 120px;    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);    text-align: center;    background-color: cornsilk;    margin: 10px;    padding: 10px;    transform: scale(1);    transition: transform 0.3s;}.card:hover {    transform: scale(1.05);    background-color: lightgoldenrodyellow;}
+```css
+.card {
+  width: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: cornsilk;
+  margin: 10px;
+  padding: 10px;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: lightgoldenrodyellow;
+}
 ```
 
 Which had to be translated into this with the & syntax:
 
-```
-const StyledDiv = styled.div`  width: 120px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  text-align: center;  background-color: cornsilk;  margin: 10px;  padding: 10px;  transform: scale(1);  transition: transform 0.3s;  &:hover {    transform: scale(1.05);    background-color: lightgoldenrodyellow;  }`;
+```ts
+const StyledDiv = styled.div`
+  width: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: cornsilk;
+  margin: 10px;
+  padding: 10px;
+  transform: scale(1);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    background-color: lightgoldenrodyellow;
+  }
+`;
 ```
 
 So - lots of options for dealing with CSS in React. I haven't written much, so I'm not sure what my personal preference is. styled-components is definitely the most elegant of the approaches I've looked at here, but I'm a dependency calorie counter so my natural inclination is look elsewhere. The CSS file for each component seems like the next best system - I like that there's no special hooks in the JSX besides the class names I would have used in ordinary HTML, but then you have the risk of name clashes. They can be avoided with the modules - but I am sort of used to dealing with that anyway.

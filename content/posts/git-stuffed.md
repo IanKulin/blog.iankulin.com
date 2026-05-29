@@ -10,7 +10,7 @@ tags:
 
 I'm in a bit of a swing with my git process. I usually develop locally committing as needed, then when I reach some sort of first milestone, create an empty repo on GitHub the push up to it by:
 
-```
+```bash
 git remote add origin git@github.com:IanKulin/RockPaper.git
 git branch -M main
 git push -u origin main

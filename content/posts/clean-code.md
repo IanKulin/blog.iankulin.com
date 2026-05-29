@@ -27,7 +27,7 @@ If other people or bots are going to read your code, or you need to comprehend t
 
 If it's possible to make choices in a piece of code to make it read more like a description of what is happening, then usually do that. Swift (and probably other modern languages - I wouldn't know) has some great language features to support this. For example:
 
-```
+```swift
 answer = resultOf(6, plus: 7)
 ```
 
@@ -49,7 +49,7 @@ In an ideal world, I could grab a piece of code and paste it into a [gist](https
 
 I doubt I invented this, but I haven't seen it mentioned anywhere else either. The way I most commonly use comments is to clarify my thoughts before I write any code, something like:
 
-```
+```swift
 func sendFile(fileName: String, link: NetworkTube) -> SendResultCode {
   // check link is operational
   // attempt to open file
@@ -63,7 +63,7 @@ Then as I flesh out the function, I delete the comment if the code is straight f
 
 I just went back through the code for that apps I actually use on my phone, and these are the only comments I could find outside of a header.
 
-```
+```swift
 var fractionDue: Double {
     // when a habit is overdue, or due now, the fractionDue is 1.0
     // when it's not due at all - just been done, the fractioDue is 0.0

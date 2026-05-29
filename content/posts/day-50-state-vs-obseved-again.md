@@ -23,7 +23,7 @@ So I should be able to do that with @StateObject and @ObservedObject then just d
 
 Obviously, I'm not comprehending all of this, but it looks like the main difference is this extra Wrapper struct in the ObservedObject:
 
-```
+```swift
 @dynamicMemberLookup @frozen public struct Wrapper {
         public subscript<Subject>(dynamicMember keyPath: ReferenceWritableKeyPath<ObjectType, Subject>) -> Binding<Subject> { get }
     }

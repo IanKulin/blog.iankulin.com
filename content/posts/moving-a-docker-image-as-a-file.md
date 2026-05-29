@@ -28,19 +28,19 @@ So if we wanted to export an image, it would basically be a collection of binari
 
 First you need to have pulled the image down from the repository, so when you list your images with `docker image ls` you can see it in the list. In my case, since I was working on an M1 (ARM) MacBook and wanted the Linux/64 image (to run on my Debian VMs) I had to specify the platform I needed from the multi-architecture image
 
-```
+```bash
 docker pull --platform linux/amd64 jellyfin/jellyfin
 ```
 
 Once it's pulled down, we output it to a file:
 
-```
+```bash
 docker save -o jellyfin.image jellyfin/jellyfin
 ```
 
 `jellyfin.image` is just what I'm calling my file, it could be anything. In fact, lets call it `jellyfin.tar`, that will be more fun.
 
-```
+```bash
 docker save -o jellyfin.tar jellyfin/jellyfin
 ```
 
@@ -52,7 +52,7 @@ Yep - a folder of layer binaries named with their sha256s, and a manifest file s
 
 Once you've got your image in it's file, you move it to the machine where you need it, then make it available to docker there with:
 
-```
+```bash
 docker load -i jellyfin.image
 ```
 

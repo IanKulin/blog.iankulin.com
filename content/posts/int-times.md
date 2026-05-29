@@ -14,33 +14,41 @@ When writing [yesterday's post](/the-_-underscore/) about iterating through a ra
 
 Just to re-iterate (lol), here's the issue. If we want to print "Here's the thing" three times, in Swift the simplest we can do is:
 
+```swift
 for \_ in 1...3 {
     print("Here's the thing")
 }
+```
 
 I had the idea, that this should really be a method of the Int type. And in fact I could write it as an extension that took a closure. Then we could just do this:
 
+```swift
 3.times {
     print("Here's the thing")
 }
+```
 
 That feels much more like the Swift way of doing things (although I probably picked it up during a brief flirtation with Ruby). Of course, I'd implement it with a while loop and a counter, so there'd still be the counter memory allocated, but only for an Int rather than the Array element type.
 
 With this system, the problem I was talking about yesterday:
 
+```swift
 let thingStrings = \["Thing one", "Thing two", "Thing three"\]
 
 for \_ in thingStrings {
     print("Here's the thing")
 }
+```
 
 would become:
 
+```swift
 let thingStrings = \["Thing one", "Thing two", "Thing three"\]
 
 thingStrings.count.times {
     print("Here's the thing")
 }
+```
 
 Which is, I admit, not amazingly better, but better, especially if the compiler is allocating the memory and filling it with each array value in the first example (which I don't know if it is, but am increasingly interested in finding out).
 

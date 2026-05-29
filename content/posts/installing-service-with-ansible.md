@@ -18,6 +18,7 @@ Having written my little monitoring endpoint in Go, it needs pushed out to all m
 
 A service in Linux is just a program, but one that's usually required to be running all the time to provide some piece of functionality. The "program" can be any executable, but to allow systemd to manage it, we need to tell it a bit about what we want in a `.service` file. This file is used by `systemd` to know how to manage the service. They can get quite complex, but here's the simple one for `vitals-glimpse` - my little monitoring API endpoint.
 
+```bash
 ![\[Unit\]
 Description=Memory and Disk statistics server on port 10321
 After=network.target
@@ -26,6 +27,7 @@ Type=simple
 ExecStart=/usr/local/bin/vitals-glimpse
 \[Install\]
 WantedBy=default.target](/images/screen-shot-2023-08-19-at-11.23.21-am.png)
+```
 
 `ExecStart` is just saying what executable file is to be run. In this case it's my compiled Go program. It's a whopping 6MB so I'm assuming it's all statically linked and standalone, so to run it we just copy it into `/usr/local/bin` and run it from there.
 
@@ -37,7 +39,7 @@ I already have my hosts file listing every machine, and an encrypted vault for m
 
 If the files are already up to date and we don't copy anything, then there's no need touch the service, but if we have copied a new file, then we want to restart the service to pick up the change. Here's how that all looks.
 
-```
+```yaml
 ---
 - name: Install vitals-glimpse to a Debian based server
   # ansible-playbook vg-install.yml --ask-vault-pass 

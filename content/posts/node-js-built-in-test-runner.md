@@ -24,7 +24,7 @@ If you are coming from Mocha, there are very few changes to your practice to mak
 
 As well as what ever you're testing, you need to import a couple of things from node:
 
-```
+```js
 import { isEven } from "../index.js";
 import { describe, it } from "node:test";
 import assert from "node:assert";
@@ -32,7 +32,7 @@ import assert from "node:assert";
 
 Then we can write our tests, grouping them in a describe:
 
-```
+```js
 describe("isEven", () => {
   it("returns true for even numbers", (t) => {
     assert.strictEqual(isEven(4), true);

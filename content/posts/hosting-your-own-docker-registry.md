@@ -54,7 +54,7 @@ FROM busyboxRUN mkdir /appCOPY script.sh /app/script.shWORKDIR /appRUN chmod +x 
 
 So basically, this image contains a small Linux distro, and all it does is run a script that outputs "Hello from Docker!" to the console. We can build our image by switching into the directory with the `dockerfile` and running:
 
-```
+```bash
 sudo docker build -t hello-docker .
 ```
 
@@ -62,7 +62,7 @@ sudo docker build -t hello-docker .
 
 If you want to run it to check my docker skills, use
 
-```
+```bash
 sudo docker run hello-docker
 ```
 
@@ -74,7 +74,7 @@ I'm using two Debian virtual machines (LXCs actually) both on my homelab network
 
 First we need to tag our image to include the registry name:
 
-```
+```bash
 sudo docker tag hello-docker:latest ct390-docker-reg:5000/hello-docker
 ```
 
@@ -82,7 +82,7 @@ sudo docker tag hello-docker:latest ct390-docker-reg:5000/hello-docker
 
 And we'll try to push it up to our registry with:
 
-```
+```bash
 docker push ct390-docker-reg:5000/hello-docker
 ```
 
@@ -90,7 +90,7 @@ docker push ct390-docker-reg:5000/hello-docker
 
 What's happening is that Docker would (quite reasonably) prefer to only work over secure connections. We can override this on this machine for today's demo purposes by adding an exception for our self-hosted registry. You'll need to create the file `/etc/docker/daemon.json` and add the registry that's going to be allowed like this:
 
-```
+```json
 {    "insecure-registries" : [ "ct390-docker-reg:5000" ]}
 ```
 
@@ -100,7 +100,7 @@ If we restart docker and retry the push now, it should work:
 
 That looks like it worked. If we wanted to check, we can just hit an endpoint on the registry:
 
-```
+```bash
 curl http://ct390-docker-reg:5000/v2/_catalog
 ```
 
@@ -112,7 +112,7 @@ Of course the ultimate test is going to be to use this image from a third machin
 
 We're going to have the same challenge pulling from a non-TLS registry as we had pushing to it, and the workaround is going to be exactly the same - add the registry to the insecure list in the `/etc/docker/daemon.json`
 
-```
+```bash
 echo '{ "insecure-registries" : [ "ct390-docker-reg:5000" ]}' | sudo tee /etc/docker/daemon.jsonsudo systemctl daemon-reloadsudo systemctl restart docker
 ```
 

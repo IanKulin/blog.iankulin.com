@@ -18,6 +18,7 @@ The evolution of structs into class-like things that can hold properties _and_ m
 
 Swift classes implement inheritance, but only from one class; there's no multiple inheritance. Protocols neatly address both these concerns to a large extent, but perhaps before we look at how they work, we should have a brief diversion into inheritance in C++.
 
+```c
 #include <iostream>
 
 class Shape {
@@ -46,6 +47,7 @@ int main() {
     square.draw();
     return 0;
 }
+```
 
 In the code above, there's two classes _Shape_ and _Drawable_. You could regard _Drawable_ as an _interface_ if you're coming from Java world (because the method draw() is marked _virtual_ - there's no implementation). The class _Square_ inherits from both those classes - it's a new class that is a _Shape_, but is also _Drawable_. (Line 15 above)
 
@@ -55,6 +57,7 @@ Swift addresses most of these needs with Protocols. A protocol defines a set of 
 
 Here's the Swift equivalent of the C++ above:
 
+```swift
 protocol Shape {
     var sides: Int { get set }
 }
@@ -90,6 +93,7 @@ let ianClass = IanClass()
 
 drawAThing(squareStruct)
 drawAThing(ianClass)
+```
 
 So the function _drawAThing()_ is happy to draw anything, as long as it conforms with the Drawable protocol by implementing the draw() method. It doesn't even matter what it is - as in this example where we've passed it a struct on one occasion, and a class on another.
 

@@ -33,7 +33,7 @@ So to deploy our Node app as a Docker container, we need to build an image, and 
 
 To create a Docker image of our app that can be distributed, we run the `docker build` command which reads a file named `Dockerfile` to create the image. Here's the `Dockerfile` for the mdserver app.
 
-```
+```dockerfile
 # Use an official Node.js runtime as the base image
 FROM node:20-alpine
 
@@ -147,7 +147,7 @@ If we go to Docker Hub and search for mdserver, we should be able to find it now
 
 Now it's in the registry, anyone can use it as easily as any of the Docker images - NGINX, Jellyfin - whatever. I provide a docker-compose file in the repo, it looks like this:
 
-```
+```yaml
 version: '3'
 services:
   mdserver:

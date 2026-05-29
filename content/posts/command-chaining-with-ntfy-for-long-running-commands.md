@@ -17,7 +17,7 @@ tags:
 
 This magic is possible since we can just `curl` to send a NTFY notification. For example:
 
-```
+```bash
 curl -d "😀 demo push message via NTFY" ntfy.sh/blog_demo
 ```
 
@@ -27,13 +27,13 @@ Since I'm subscribed to the "blog\_demo" topic in NTFY, this message will be pus
 
 How I use this is with 'command chaining'. In Linux, you can stack commands together with the `&&` characters like this:
 
-```
+```bash
 mkdir test_dir && echo "success"
 ```
 
 This will create the directory, then print "success" to the shell. I could use it like this:
 
-```
+```bash
 nohup rsync -rvits --bwlimit=20 "/volume1/media/video/Movies/Night of the Living Dead (1968)/" ds1_admin@100.78.2.105:"/volume1/media/video/Movies/Night of the Living Dead (1968)" > output.log 2>&1 && curl -d "💾 upload to vm500-kr complete" ntfy.sh/blog_demo &
 ```
 
@@ -41,7 +41,7 @@ Both commands will run in the background, and the output of the first command is
 
 What about if it fails? Well, posix has you covered here too. There's a `||` chaining operator that only runs if a command fails.
 
-```
+```bash
 mkdir invalid/name && (echo "Directory created successfully.") || (echo "Failed to create directory.")
 ```
 
@@ -51,7 +51,7 @@ Note that I've added some parenthesis - it makes things clearer for the reader, 
 
 Let's apply this to our slow file transfer:
 
-```
+```bash
 nohup rsync -rvits --bwlimit=20 "/volume1/media/video/Movies/Night of the Living Dead (1968)/" ds1_admin@100.78.2.105:"/volume1/media/video/Movies/Night of the Living Dead (1968)" > output.log 2>&1 && curl -d "💾 upload to vm500-kr complete" ntfy.sh/blog_demo || curl -d "⚠️ upload to vm500-kr failed!" ntfy.sh/blog_demo &
 ```
 
@@ -61,6 +61,6 @@ Now we'll get a push message for completion or failure. There is one more little
 
 Since we're running this whole thing backgrounded, we really want that to go to the `output.log` file with the other output:
 
-```
+```bash
 nohup rsync -rvits --bwlimit=20 "/volume1/media/video/Movies/Night of the Living Dead (1968)/" ds1_admin@100.78.2.105:"/volume1/media/video/Movies/Night of the Living Dead (1968)" > output.log 2>&1 && curl -d "💾 upload to vm500-kr complete" ntfy.sh/blog_demo >> output.log || curl -d "⚠️ upload to vm500-kr failed!" ntfy.sh/blog_demo >> output.log &
 ```

@@ -16,7 +16,7 @@ I'm moving towards having these backups (and the ISOs) on the NAS rather than lo
 
 The [Proxmox documentation for storage](https://pve.proxmox.com/wiki/Storage:_Directory) says to have a look in `/etc/pve/storage.cfg` to see what's up. Mine looks like this:
 
-```
+```bash
 dir: local
 	path /var/lib/vz
 	content iso,vztmpl,backup
@@ -33,7 +33,7 @@ And sure enough, if I look in `/var/lib/vz/dump` (dump is the backup location me
 
 I ain't messing around this morning, so I'll just grab these onto my laptop with scp.
 
-```
+```bash
 scp root@192.168.100.23:/var/lib/vz/dump/\* Downloads
 ```
 

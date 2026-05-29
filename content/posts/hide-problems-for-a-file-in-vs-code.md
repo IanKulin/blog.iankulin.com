@@ -20,7 +20,7 @@ It's possible, but only by 'excluding' the file from your project - it won't sho
 
 Workspace settings (such as excluding a file) are stored in `./vscode/settings.json` - this has some other bits and pieces such as spelling corrections etc. It's worth letting this into your repository so your workspace is recreated when you clone the repo. The fragment you need to add is:
 
-```
+```json
     "files.exclude": {
         "**/pico.min.css": true
     }

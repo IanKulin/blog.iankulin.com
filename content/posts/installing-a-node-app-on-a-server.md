@@ -28,7 +28,7 @@ Until now, I've been running my tests on my laptop, or in a server logged in as 
 
 We'll use the very simple server (`index.js`) I've written for the future Ansible post. All it does is listen on port 3000 to serve a tiny piece of text if someone hits the `/api` route.
 
-```
+```js
 const express = require('express');
 const app = express();
 
@@ -57,7 +57,7 @@ systemd manages the init and daemon processes in most Linux distros, so we'll be
 
 `/lib/systemd/system/test-server.service`
 
-```
+```ini
 [Unit]
 Description=index.js - test server                     
 After=network.target
@@ -76,7 +76,7 @@ This file needs to say that we should wait for the network to come up before sta
 
 Once that file is in place, we can reload the configs, and start the service, this can be from anywhere, including a user home directory, and check it's status.
 
-```
+```bash
 sudo systemctl daemon-reload
 sudo systemctl start test-server
 ```

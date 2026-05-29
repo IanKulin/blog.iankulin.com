@@ -21,7 +21,7 @@ The new task was to add a delete button for each item, which is a much better id
 
 The HTML for them looks like:
 
-```
+```html
 <ul id="ulItems">
     <li>
         Sample Item
@@ -35,7 +35,7 @@ I might have been a bit too clever using emoji. I assume they are well supported
 
 Having two buttons complicated some of the handling code a bit. In the section where I attach the listeners to the buttons for any items that have been specified in the HTML (which could probably just be removed) it looks a bit hacky:
 
-```
+```js
 var links = document.getElementsByTagName('li');
 for (var i = 0; i < links.length; i++) {
     var link = links[i];
@@ -50,7 +50,7 @@ Using the indexes into the childNodes like this is quite fragile. For example, t
 
 I thought I'd reuse the function for clicking on an item for clicking on the check button, but of course the event contains a different caller. So they ended up like this:
 
-```
+```js
 function onListItemClick(event) {
     if (event.target.tagName === "LI") {
         event.target.classList.toggle("completed") 
@@ -66,7 +66,7 @@ The test in onListItemClick() for the tagname is to stop this being triggered as
 
 The code for adding the buttons for new items is pretty straightforward:
 
-```
+```js
 function addNewItem() {
     if (txtItem.value.length > 0) {
         
@@ -98,7 +98,7 @@ In the code above I've used two different methods of inserting the text into an 
 
 Another thing I've got two different versions of in this codebase is adding the event handlers for when things are clicked on. In some places I've got the succinct, clear onClick =, in others, addEventListener().
 
-```
+```js
 txtItem.addEventListener("keydown", onKeyPress)
 btnItem.addEventListener("click", addNewItem)
 

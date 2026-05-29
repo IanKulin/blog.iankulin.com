@@ -12,7 +12,7 @@ tags:
 
 A HTML file is a text file that can be displayed in a web browser. It is _marked up_ in the sense that _tags_ are applied to the text to signify the purpose of that text in the structure of the document. For example:
 
-```
+```html
 <h1>Greetings</h1>
 Hello Earthlings
 ```
@@ -35,7 +35,7 @@ There are just about [100 different tags](https://www.w3schools.com/TAGS/default
 
 Tags can be nested inside other tags. So using the tags you've already met, we might build a simple web page like this:
 
-```
+```html
 <html>
 <head>
     <title>Greetings</title>
@@ -49,7 +49,7 @@ Tags can be nested inside other tags. So using the tags you've already met, we m
 
 Later on, things will get much more nested. The line breaks and indents used here are entirely for clarity. The browser does not need them. It would be just as legal to write this exact same document as:
 
-```
+```html
 <html><head><title>Greetings</title></head><body><h1> Greetings</h1>Hello 
 Earthling</body></html>
 ```
@@ -60,13 +60,13 @@ But, you know... don't do that.
 
 [`<img>`](https://www.w3schools.com/TAGS/tag_img.asp) - It you want to have an image in your web-page, you use the `<img>` tag and include a link to the image. The image could be sitting in the same directory as your html file, or anywhere else on the internet. If our image is here, and called example.png, the image tag would look like this:
 
-```
+```html
 <img src="example.png">
 ```
 
 Let's add it to our Greetings page:
 
-```
+```html
 <html>
 <head>
     <title>Greetings</title>
@@ -81,7 +81,7 @@ Let's add it to our Greetings page:
 
 You can see `<img>` is one of those unpaired tags - there's no closing tag. If the image was somewhere else on the internet, you just use the full URL as the source:
 
-```
+```html
 <html>
 <head>
     <title>Greetings</title>

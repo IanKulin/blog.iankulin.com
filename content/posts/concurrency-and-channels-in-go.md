@@ -20,7 +20,7 @@ In the modern world of everything happening on the network, and systems being bu
 
 In Go, we have _Goroutines_. This is basically a way of calling a function in such a way that the function goes away and does it's thing and the rest of the program doesn't wait for it. To do this, you just pop a go directive in front of the function call. Consider this little program:
 
-```
+```go
 package main
 
 import (
@@ -48,7 +48,7 @@ If we run this, main hands control over to the worker, which sleeps for a bit, p
 
 We can convert it to a Goroutine, just by putting a go in front of the function call,
 
-```
+```go
 func main() {
 	go waitAndReportWorker()
 }
@@ -66,7 +66,7 @@ The way Go deals with this is with _channels_. A channel is like a portal betwee
 
 Let's have a look at the changes for this, then tease them out a little:
 
-```
+```go
 func waitAndReportWorker(resultChan chan<- string) {
 	for {
 		sleepTime := time.Duration(rand.Intn(5)) * time.Second
@@ -111,7 +111,7 @@ If you look at the output at the bottom, you can see that extracting the string 
 
 Of course, there is a way around this. What we really want to to is check if there's a value in the channel. If there is, process it, or if not, travel around our loop again. What we do is put the retrieval of the channel value as a case in a select block.
 
-```
+```go
 func main() {
 
 	resultChan := make(chan string)
@@ -141,7 +141,7 @@ To release the channel we made above, we close it:
 
 Let's add that for completeness. I'll the time to exit my infinite loop. In practice You'll have some other condition.
 
-```
+```go
 package main
 
 import (

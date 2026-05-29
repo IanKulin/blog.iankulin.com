@@ -16,6 +16,7 @@ I'm up to Challenge 1 of 100 Days of SwiftUI ([Day 19](https://www.hackingwithsw
 
 Something that's not nice, is that when you touch into the text field to change the number, it's not selected ready to type over (the way they always are in browser url fields) so you need to backspace over the previous entry. That's the sort of anoying behaviour I don't like. It seems (after some googling) there's no straightforward way of addressing this in SwiftUI, with the best solution involving importing a package. I will come back to that because it is bugging me.
 
+```swift
 struct ContentView: View {
     @State private var fromDistance = 0.0
     @State private var fromUnits = "meters"
@@ -98,5 +99,6 @@ struct ContentView: View {
         }
     }
 }
+```
 
 [Source on Github](https://github.com/IanKulin/HSUnitConvert)

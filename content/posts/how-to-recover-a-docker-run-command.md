@@ -22,7 +22,7 @@ There isn't a docker command that will retrieve your run command for you.
 
 It's probably still in your bash history, try:
 
-```
+```bash
 history | grep "docker run"
 ```
 
@@ -30,7 +30,7 @@ If that doesn't work, it must have been a long time ago.
 
 Most likely, the crucial information you want to know will be the ports you specified, the network setup, and any directories you've bound or volumes used. All of this information is available from the `docker inspect` command, but you're going to have to trawl through it a bit. Search for `Mounts` to see what you did there:
 
-```
+```json
 "Mounts": [
             {
                 "Type": "volume",

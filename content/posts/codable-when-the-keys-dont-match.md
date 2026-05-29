@@ -51,7 +51,7 @@ This will fail at line 22. If you look at the JSON you'll notice that the key na
 
 CodingKey is an enum that maps our property names to the key names used in the JSON. Here's something that would work for the example above:
 
-```
+```swift
 enum CodingKeys: String, CodingKey {
     case id
     case firstName = "what_I_call_them"

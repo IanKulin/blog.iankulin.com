@@ -12,7 +12,7 @@ tags:
 
 I had some more network weirdness setting up this new Proxmox machine. When I went to run the updates it couldn't resolve any of the addresses:
 
-```
+```bash
 root@pve-kr01:~# apt update
 Err:1 http://ftp.au.debian.org/debian bullseye InRelease
   Temporary failure resolving 'ftp.au.debian.org'

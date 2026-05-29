@@ -10,7 +10,7 @@ tags:
   - code
 ---
 
-```
+```swift
  /*
  If it’s a multiple of 3, print “Fizz”
  If it’s a multiple of 5, print “Buzz”

@@ -14,7 +14,7 @@ I'm playing with [Syncthing](https://syncthing.net/) with the idea that it might
 
 I'm going to use a share from the NAS, and I'm assuming I'll need it mount it into the container for Syncthing to access. I'm experienced enough to know that I'm going to want a privileged container, and I thought I'd done all the NFS sharing correctly, but when I tried to mount the NFS share, I was getting an error.
 
-```
+```bash
 root@ct356-syncthing:~# showmount -e 192.168.100.32
 
 Export list for 192.168.100.32:

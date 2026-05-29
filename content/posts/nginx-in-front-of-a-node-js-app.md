@@ -33,7 +33,7 @@ There's a line in that file that includes all the `*.conf` files in `/etc/nginx/
 
 The way they have done this with the nginx.conf means that the only changes we can make in the `conf.d` directory are to do with virtual hosts, but that's going to be 99% of the things we would want to change. So much so, I'm not even going to show you the `nginx.conf` file, just our little `/etc/nginx/conf.d/nodeapi.conf`
 
-```
+```bash
         server {
             listen 80;
             server_name 192.168.100.40;

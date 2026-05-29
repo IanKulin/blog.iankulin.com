@@ -16,13 +16,13 @@ I run an instance of Pi-hole as a network-wide advert and surveillance blocker. 
 
 As I've increased the number of real and virtual devices on my network, it's getting to be a pain remembering all of their IP addresses. So I'd like to have DNS entries for them, for example I'd much rather:
 
-```
+```bash
 ssh ian@vm100-dockhost
 ```
 
 than
 
-```
+```bash
 ssh ian@192.168.100.29
 ```
 

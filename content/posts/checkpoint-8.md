@@ -13,7 +13,8 @@ tags:
 
 {{< youtube Ga800-Qgft4 >}}
 
-/\*
+```swift
+/*
 Your challenge is this: make a protocol that describes a
   building, adding various properties and methods, then 
   create two structs, House and Office, that conform to it.
@@ -29,7 +30,7 @@ Your protocol should require the following:
 
 https://www.hackingwithswift.com/quick-start/beginners/checkpoint-8
 
-\*/
+*/
 
 protocol Building {
     var rooms: Int {get set}

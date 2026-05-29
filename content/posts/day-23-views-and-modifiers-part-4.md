@@ -15,6 +15,7 @@ tags:
 
 Then the last trick for for decomposing the views, is to remember we can pass values when we init a struct. So something like this:
 
+```swift
 struct ContentView: View {
 
     var body: some View {
@@ -36,5 +37,6 @@ struct ContentView: View {
     }
     
 }
+```
 
 This is probably my favourite - because although in this example I've created the mini-view struct in the body, if it's a building block I can use elsewhere in a different view, it's super portable.

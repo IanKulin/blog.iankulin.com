@@ -35,7 +35,7 @@ We are going to get XCode to explicitly generate the Managed Object code for our
 
 Since the properties are (a slightly different to Swift version of) optionals, this file is a good place to make any computed properties to return safely unwrapped versions.
 
-```
+```swift
 extension Garden {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Garden> {
@@ -61,7 +61,7 @@ That's our classes for the individual bits of data - analogous to the structs - 
 
 For this, we need an NSPersistentContainer. The way Paul does things, this is a property of a data controller obect. It links to the data model we defined before.
 
-```
+```swift
 class DataController: ObservableObject {
     let container = NSPersistentContainer(name: "DataDemo")
 
@@ -81,7 +81,7 @@ class DataController: ObservableObject {
 
 In the app definition, instantiate the dataController as an @StateObject, then insert its viewcontext into the Environment. The view context is what we’ll use elsewhere in the app to manipulate the data.
 
-```
+```swift
 @main
 struct DataDemoApp: App {
     @StateObject private var dataController = DataController()
@@ -96,7 +96,7 @@ struct DataDemoApp: App {
 
 In the view where we want to access our data, extract the managed object context from the environment and express it as a property of the view. Also in the view, we need a property to access our collection of Gardens. This is another property, with the @FetchRequest property wrapper.
 
-```
+```swift
 struct ContentView: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: [
@@ -106,7 +106,7 @@ struct ContentView: View {
 
 To add data - new gardens, instantiate a new garden with the “context:” initialiser and pass in our managed object context – this is the link to all the persistence code – the data model and so on. When you’re ready for these to be committed to “disk” (so far they are in the collection, but only in memory) call the managed object context’s save() method.
 
-```
+```swift
 Button("Sample Data") {
     let garden1 = Garden(context: moc)
     garden1.name = "White Lodge"
@@ -124,7 +124,7 @@ Note that we are dealing with objects now – reference types – so we have to 
 
 To access our data, it’s identical to accessing any collection, except that I’ll use the unwrapped computed properties from earlier.
 
-```
+```swift
     @FetchRequest(sortDescriptors: [
         SortDescriptor(\.name)
     ]) var gardens: FetchedResults<Garden>

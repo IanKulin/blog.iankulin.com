@@ -25,7 +25,7 @@ The opening screen is a navigation view of the list of gardens, and a button. Th
 
 First the data. Two structs, Plant, and Garden. Garden contains a list of plants. The gardens state variable lives in the main contentview and is an array of Gardens.
 
-```
+```swift
 struct Plant {
     var id = UUID()
     var name: String
@@ -44,7 +44,7 @@ struct ContentView: View {
 
 To create the sample data, a button creates the struct instances and adds them to the array.
 
-```
+```swift
 Button("Sample Data") {
     var someGarden = Garden()
     someGarden.name = "White Lodge"
@@ -115,7 +115,7 @@ struct ContentView: View {
 
 The DetailView is passed the selected garden. It shows a couple of details from the garden, and a list of plants if there are any.
 
-```
+```swift
 struct DetailView: View {
     var garden: Garden
     

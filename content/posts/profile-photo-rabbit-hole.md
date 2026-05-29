@@ -21,7 +21,7 @@ Now all I need is a way to generate a number 1-1000 such that it's always the sa
 
 So I need to write my own hash. This is not cryptography - I can just sum all the ascii values of the characters in the string and modulo them. I'm a bit hazy on how to get every character in a Swift string because of the unicode thing, but rmaddy has [this answer](https://stackoverflow.com/questions/51606011/4-bit-hash-from-string-in-swift):
 
-```
+```swift
 extension String {
     var fourBitHash: Int {
         return self.utf8.reduce(0) { $0 + Int($1) } % 16
@@ -34,7 +34,7 @@ print(colorIndex)
 
 Perfect. I adapt this into my code as:
 
-```
+```swift
 func simpleHash(_ string: String) -> Int {
     string.utf8.reduce(0) { $0 + Int($1) } % 1000
 }
@@ -44,7 +44,7 @@ And we're in business, but hang on, I'm still getting a different picture by rep
 
 Okay, so I need a different source for pics. More googling, and I discover [RandomUser.me](https://randomuser.me/) They only have 100 profiles for men, and another 100 for women - but this app is only for me, and I'll probably get bored after I've clicked on three or four so that will be fine. I throw that into my AsyncImage and we're in business.
 
-```
+```swift
 AsyncImage(
     url: URL(string: "https://randomuser.me/api/portraits/women/\(simpleHash(user.name)).jpg"),
     scale: 3
@@ -64,7 +64,7 @@ More [googling](https://stackoverflow.com/questions/1685559/find-the-gender-from
 
 returns:
 
-```
+```swift
 {
   "count": 306685,
   "gender": "male",
@@ -77,7 +77,7 @@ or
 
 `https://api.genderize.io/?name=kim`
 
-```
+```swift
 {
   "count": 83361,
   "gender": "female",

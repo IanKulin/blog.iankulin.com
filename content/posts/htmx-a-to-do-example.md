@@ -226,19 +226,52 @@ Again, there's no startling innovation. When it loads, the API is called to get 
 
 #### index.html
 
-```
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    https://unpkg.com/htmx.org/dist/htmx.min.js    <title>Todos</title>    <link rel="stylesheet" href="./styles.css"></head><body><!-- Main section-->    <main>        <h1>To do</h1>        <ul id="todos_list" hx-get="/todos" hx-trigger="load"></ul>        <!-- the list of todo items from the database gets inserted here-->        <!-- form to add a todo -->        <form hx-post="/todos" hx-target="#todos_list" hx-swap="beforeend"         hx-on::after-request="this.reset()">            <input type="text" name="todo_item" id="todo" required>            <button type="submit">Add</button>        </form>    </main>                  </body></html>
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    https://unpkg.com/htmx.org/dist/htmx.min.js
+
+    <title>Todos</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Main section -->
+    <main>
+      <h1>To do</h1>
+
+      <ul id="todos_list" hx-get="/todos" hx-trigger="load"></ul>
+
+      <!-- the list of todo items from the database gets inserted here -->
+
+      <!-- form to add a todo -->
+      <form
+        hx-post="/todos"
+        hx-target="#todos_list"
+        hx-swap="beforeend"
+        hx-on::after-request="this.reset()"
+      >
+        <input type="text" name="todo_item" id="todo" required />
+        <button type="submit">Add</button>
+      </form>
+    </main>
+  </body>
+</html>
 ```
 
 The script tag at the top pulls in html (which is actually just 14K of gzipped Javascript) from a CDN. You can alternatively download it and serve it statically with your other assets. It's worth noting, that's all the tooling involved - no build tools etc.
 
-```
+```html
 <ul id="todos_list" hx-get="/todos" hx-trigger="load"></ul>
 ```
 
 This is the unordered list I want the todo items to go into. When the page is loaded (hx-trigger) we'll hit the `app.get("/todos")` endpoint (hx-get). I don't need to specify where the returned html goes to - by default it's the innerHTML of the calling tag.
 
-```
+```html
 <form hx-post="/todos" hx-target="#todos_list" hx-swap="beforeend"  hx-on::after-request="this.reset()">
 ```
 
@@ -331,7 +364,7 @@ app.listen(port, () => console.log(`Todo app listening on http://localhost:${por
 
 The first change in the top of the file is that we've removed the middleware for JSON request bodies and switched to URLEncoded which is what htmx will be sending us by default. Then we dive into this function which builds the HTML for each of the Todo items encapsulated in an <li> with it's 'Done' button to delete it.
 
-```
+```js
 function htmlForTodoItem(uid, item_text) {  let html = `<li>${item_text}`;  html += `<button hx-delete="todos/${uid}" hx-target="closest li" `;  html += 'hx-swap="outerHTML">Done</button></li>';  return html;}
 ```
 

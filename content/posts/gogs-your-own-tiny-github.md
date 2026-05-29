@@ -26,7 +26,7 @@ There are a couple of popular options for this job, one is [Gitea](https://about
 
 It's not mentioned on the [install page for Gogs](https://gogs.io/docs/installation), but there is an official [container build](https://hub.docker.com/r/gogs/gogs/). Possibly this is because there's a couple of rough edges that I'll get to shortly. I've talked before about how I like to run services in Docker on LXC, so I won't go over that again. Here's my docker-compose:
 
-```
+```yaml
 version: '3'
 
 services:

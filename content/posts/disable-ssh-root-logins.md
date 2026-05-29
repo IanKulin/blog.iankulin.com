@@ -21,14 +21,14 @@ This is why the number three thing on my new install list is to disable root acc
 
 Add a new user, and put them in the sudo group
 
-```
+```bash
 add user fred
 usermod -aG sudo fred
 ```
 
 Then log out, and ssh back in with the user you just created. Now we want to edit the config file for the ssh daemon. Since we're not logged in as root now, we'll have to use `sudo`, so we'll also find out if that's working.
 
-```
+```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
@@ -36,13 +36,13 @@ If `sudo` doesn't work, either you stuffed up adding the new username to the sud
 
 There is probably a line with `PermitRootLogin` in it. It may be commented out, or set to `yes`. But we want it to end up looking like this
 
-```
+```bash
 PermitRootLogin no
 ```
 
 We'll need to restart the daemon to pick up the config changes.
 
-```
+```bash
 sudo systemctl restart sshd
 ```
 
@@ -50,7 +50,7 @@ Now if you log out, and try to ssh back in as root, it should fail. If it doesn'
 
 In the case of this file, there's a line up the top saying
 
-```
+```bash
 Include /etc/ssh/sshd_config.d/*.conf
 ```
 

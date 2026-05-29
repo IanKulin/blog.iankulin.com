@@ -25,7 +25,7 @@ You need an account on npm. It doesn't cost anything to host your packages there
 
 Make a directory with the same name as your package. All lower case, no spaces, hyphens are allowed. While we're at the command line, let's sign into npm
 
-```
+```bash
 mkdir is-even
 cd is-even
 npm login
@@ -35,7 +35,7 @@ Almost every straightforward name you can think of for your utility code will ha
 
 This is called _scoping_ it to our username. When we do that, the project is initialised like this:
 
-```
+```bash
 npm init --scope=iankulin
 ```
 
@@ -45,7 +45,7 @@ You'll get asked the questions in a similar way as init-ing a regular node proje
 
 Now we'd better write some code. Here's my `index.js`
 
-```
+```js
 function isEven(num) {
     if (typeof num === 'number' && Number.isInteger(num)) {
         return num % 2 === 0;
@@ -61,7 +61,7 @@ export { isEven };
 
 After extensive testing and refinement, you can push it up to npm:
 
-```
+```bash
 npm publish --access public
 ```
 
@@ -73,7 +73,7 @@ And the exciting moment - we can see our package on npm, just like a real coder.
 
 Using the package once it's published is exactly the same as using any npm package: Start a new project, and install the package.
 
-```
+```bash
 mkdir test-is-even
 cd test-is-even
 npm init

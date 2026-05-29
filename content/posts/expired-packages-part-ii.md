@@ -45,7 +45,7 @@ As far as I can make out, the package-lock.json file's purpose is to lock in par
 
 There's about five dependencies on this package in package-lock.json, and I notice all of them except this one, start with the ^caret.
 
-```
+```json
 "nth-check": {
   "version": "1.0.2",
   "resolved": "https://registry.npmjs.org/nth-check/-/nth-check-1.0.2.tgz",

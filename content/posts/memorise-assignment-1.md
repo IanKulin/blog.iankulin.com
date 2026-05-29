@@ -17,7 +17,7 @@ A small milestone achieved - I've completed the first assignment from the CS193p
 -   The text under the SF Symbols you can see in the preview above not being vertically aligned.
 -   Having duplicated code in my emoji arrays:
 
-```
+```swift
     let animalEmojis = ["🐠", "🐢", "🦋", "🐥", "🐣", "🐰", "🐝", "🦄", "🐵", "🐛"]
     let weatherEmojis = ["🌪", "🌝", "🌈", "🔥", "🌧", "🌙", "🌬", "☃️", "☔️", "🌫"]
     let transportEmojis = ["🚗", "🚕", "🚲", "🚚", "🛵", "🚜", "🛴", "🛺", "🚃", "🚡"]
@@ -28,13 +28,13 @@ A small milestone achieved - I've completed the first assignment from the CS193p
 
 This second problem is because I couldn't just
 
-```
+```swift
 @State var emojis = animalEmojis
 ```
 
 When I tried it, I encountered the error:
 
-```
+```bash
 Cannot use instance member 'animalEmojis' within property initializer; property initializers run before 'self' is available
 ```
 

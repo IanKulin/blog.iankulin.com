@@ -14,7 +14,7 @@ Thank you YouTube algorithm for this recommendation - Chris Lattner, the main au
 
 Also some interesting comments about how a language delivers it's complexity. Chris gives the funny example of what "hello world" looks like in Swift vs C++. Here's Swift: `Print("Hello world")`, here's C++:
 
-```
+```C++
 #include <iostream>
 
 int main() {

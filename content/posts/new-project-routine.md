@@ -39,7 +39,7 @@ I have a sort of muscle memory for starting little web projects now. I seem to h
 
 That's my basic web app setup, but since this is an express app, and we're using some EJS templating, there's some other starter files I like to create. Let's start with our pages. I'll need an index and a 404 page, and my pages are all going to have a header section as well as a nav and a footer. Something like this:
 
-```
+```bash
 ─── views
     ├── 404.ejs
     ├── index.ejs
@@ -51,7 +51,7 @@ That's my basic web app setup, but since this is an express app, and we're using
 
 To give you a flavour of how that all works, here's a sample `index.ejs`
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <%- include('./partials/head.ejs') %>
@@ -67,7 +67,7 @@ To give you a flavour of how that all works, here's a sample `index.ejs`
 
 Then we need some basic routing in `server.js`
 
-```
+```js
 const express = require('express');
 const app = express();
  
@@ -93,7 +93,7 @@ app.listen(port, hostname, () => {
 
 And, lastly, a bit of CSS to make it beautiful.
 
-```
+```css
 @viewport {
     width: device-width ;
     zoom: 1.0 ;

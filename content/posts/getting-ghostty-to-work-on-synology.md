@@ -84,7 +84,7 @@ I suppose there is a third choice - wait until Synology includes the Ghostty ter
 
 ssh can have a config set for a host so we can override the TERM value. If you have something like this in `~/.ssh/config` we can fix the issue.
 
-```
+```bash
 Host NAS-DS2
   SetEnv TERM=xterm-256color
 ```
@@ -95,7 +95,7 @@ And everything works again - I can up arrow to access the history without proble
 
 An extra reason for using this approach is that if you have a good naming convention for your hosts (I worked in the 'data processing' department of a bank in the 1990's so I learned good naming conventions for hosts) then you can wild-card this entry to for all of them. You might have guessed that all the Synology NAS's I manage are named `NAS-DS<some positive integer>`. Let's change the config to say:
 
-```
+```bash
 Host NAS-DS*
   SetEnv TERM=xterm-256color
 ```
@@ -110,7 +110,7 @@ The alternate approach is to extract the xterm-ghostty `terminfo` off the curren
 
 The command given in the [Ghostty docs](https://ghostty.org/docs/help/terminfo#ssh) is:
 
-```
+```bash
 infocmp -x xterm-ghostty | ssh YOUR-SERVER -- tic -x -
 ```
 
@@ -120,7 +120,7 @@ Let's try it:
 
 This is not that surprising - Synology DSM is minimal (I think it uses busybox) so it's missing lots of these commands. You might think that's okay, I'll compile it on this machine then `scp` it across. That would be something like this:
 
-```
+```bash
 infocmp -x xterm-ghostty > xterm-ghostty.src
 tic -x -o ./terminfo xterm-ghostty.src
 scp -r ./terminfo/78 ds2_admin@NAS-DS2:~/.terminfo/

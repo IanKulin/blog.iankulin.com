@@ -17,7 +17,7 @@ As usual, here's my thoughts comparing my attempts at the challenges to Paul's. 
 
 The task was to validate the order address properties, not just by checking they are not empty, but also that they don't just contain spaces. I went the bruteforce route since there was no .isEmptyIncludingWhitespace method.
 
-```
+```swift
 var hasValidAddress: Bool {
     let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
     let trimmedStreetAddress = streetAddress.trimmingCharacters(in: .whitespacesAndNewlines)

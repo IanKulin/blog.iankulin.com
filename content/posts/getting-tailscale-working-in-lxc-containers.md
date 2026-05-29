@@ -17,7 +17,7 @@ I'm also a Tailscale lover, and the generous number of nodes in the free tier me
 
 There is an issue with unprivileged LXC containers and Tailscale though. Unprivileged containers have less access to the host system's internals, and are therefore a bit safer, but part of that reduced access includes some of the networking stuff that Tailscale needs. If you try to install Tailscale, it will look fine, until you get to the `tailscale up` command, at which point it will say something like:
 
-```
+```bash
 failed to connect to local tailscaled (which appears to be running as tailscaled, pid 3121). Got error: 503 Service Unavailable: no backend
 ```
 
@@ -25,7 +25,7 @@ There is an easy way to fix this, documented in a [Tailscale how to guide](https
 
 Add the lines:
 
-```
+```bash
 lxc.cgroup2.devices.allow: c 10:200 rwm
 lxc.mount.entry: /dev/net/tun dev/net/tun none bind,create=file
 ```

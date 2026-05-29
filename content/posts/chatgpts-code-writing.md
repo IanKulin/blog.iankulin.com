@@ -65,7 +65,7 @@ struct TodoDetail: View {
 
 That's pretty cool. I don't think that DateFormatter.mediumDate is a thing, so I changed that line to:
 
-```
+```swift
 Text("Due: \(item.dueDate, style: .date)")
 ```
 
@@ -104,7 +104,7 @@ struct ContentView: View {
 
 To let this compile, I commented out the Preview and changed the items property in the top of the TodoList view to a binding:
 
-```
+```swift
 struct TodoList: View {
     @Binding var items: [TodoItem]
 ```
@@ -143,7 +143,7 @@ struct ContentView: View {
 
 This all runs and the add item works, but the NavigationLink to get to the detail view does not. Let's wrap it in a NavigationView to fix that.
 
-```
+```swift
 struct ContentView: View {
     @State var items = [TodoItem]()
 

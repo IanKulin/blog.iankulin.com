@@ -14,7 +14,7 @@ tags:
 
 Ran into a little bump today - I was calling a [cool API](http://open-notify.org/Open-Notify-API/ISS-Location-Now/) that gives the current location of the International Space Station. In a classic case of "it worked on my machine" it worked perfectly in the [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in VS Code on my laptop, but when I pushed it up to my GitHub space, it didn't work - throwing the error:
 
-```
+```bash
 script.js:5 Mixed Content: The page at 'https://iankulin.github.io/iss/index.html' was loaded over HTTPS, but requested an insecure resource 'http://api.open-notify.org/iss-now.json'. This request has been blocked; the content must be served over HTTPS.
 ```
 

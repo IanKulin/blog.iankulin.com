@@ -49,7 +49,7 @@ I'm not really seeing any consistent naming conventions for element ids in the c
 
 The first problem, of catching the user input (pressing enter in the text, or clicking the button) was mostly solved for me by the CWD tutorial. It involves adding event listeners to both those elements.
 
-```
+```js
 var txtItem = document.getElementById("txtItem")
 var btnItem = document.getElementById("btnAddItem")
 
@@ -65,7 +65,7 @@ Since we're using hard coded strings, an anticipatable error would be misspellin
 
 `[addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)` does what it says on the box. You need to tell it which event (another string) and pass it the name of the handler function. It's not specified here, but the handlers can have access to an [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event) object which turns out to be handy. Here's the two handlers referenced in the code above:
 
-```
+```js
 function respondToKeyPress(event) {
     if (event.code === "Enter") {
         addNewItem()  
@@ -87,7 +87,7 @@ The first one just uses the Event object to check the user has pressed enter to 
 
 After checking that there's actually some text to add, it creates a new <li> item, appends the text to it, then appends the new item to our unordered list. The next line: `li.onclick = listItemClick` adds an eventListener for "click" to this list new item. We'll use this same handler later to detect clicks on any of the todo items in the list. This same event handler was also attached to any preexisting <li> elements at page load with:
 
-```
+```js
 var links = document.getElementsByTagName('li');
 for (var i = 0; i < links.length; i++) {
     var link = links[i];
@@ -107,7 +107,7 @@ Since this single handler (addNewItem())is handling the clicks for every list it
 
 We saw above that the handlers can access the Event that is instigating them. Event contains a property "target" that is the element that triggered the event, so we can just use that. Here's my first attempt at the listItemClick() handler.
 
-```
+```js
 function listItemClick(event) {
     if (event.target.style.textDecoration === "line-through") {
         event.target.style.textDecoration = ""  
@@ -125,7 +125,7 @@ The second problem is related to that. We're testing if `event.target.style.text
 
 The solution to both these issues would be to use a class to indicate the completed/uncompleted status of each list item, and let the UI team set how these should be displayed in the CSS. If we use the class name `completed`, we could use some simple CSS like this to make a fat red line:
 
-```
+```js
 .completed {
     text-decoration-line: line-through;
     text-decoration-color: red;
@@ -135,7 +135,7 @@ The solution to both these issues would be to use a class to indicate the comple
 
 And we could convert out listItemClick code to change the class with:
 
-```
+```js
 function listItemClick(event) {
     if (event.target.classList.contains("completed")) {
         event.target.classList.remove("completed") 
@@ -152,7 +152,7 @@ That works nicely. We've separated our concerns, and .completed items are clearl
 
 In fact, even this can be slightly improved on. There is a .toggle() method for turning a class off and on for an element, so we can eliminate some code by using that. As well as being simpler, we've removed the possibility of a classname typo the three times we use it. So:
 
-```
+```js
 function listItemClick(event) {
     event.target.classList.toggle("completed") 
 }

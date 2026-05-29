@@ -14,7 +14,7 @@ As with other languages, functions are a little lumps of code with their own sco
 
 In JavaScript they often have names, can be passed around as types and have a condensed form suitable for functional programming.
 
-```
+```js
 function addNums(a, b) {
     return a+b;
 }
@@ -26,7 +26,7 @@ console.log(addNums(3,4)) // 7
 
 Arguments are passed in by value so they have local scope only in the function body.
 
-```
+```js
 function someFunction(firstNumber, secondNumber) {
     firstNumber = 7;
     return firstNumber+secondNumber;
@@ -40,7 +40,7 @@ console.log(c);
 
 Of course this won't prevent the contents of reference types from being mutated:
 
-```
+```js
 function someFunction(numberArray) {
     numberArray[0] = 7;
 }
@@ -53,7 +53,7 @@ console.log(c);
 
 Functions can access values from the the scope they are called in:
 
-```
+```js
 const a = "hello";
 
 function printA() {
@@ -68,7 +68,7 @@ This always seems like a bad code smell to me. The tiny bit of extra work to pas
 
 A variable declared inside a function should not exist outside of the function:
 
-```
+```js
 function someStuff() {
     const a = 5;
     let b = 2;
@@ -85,7 +85,7 @@ Don't use `var`, but I had the same result for it in Chrome/Firefox and node.js
 
 Functions can be nested inside other functions and that's a good idea to avoid polluting the namespace if it meets your needs:
 
-```
+```js
 function addTwo(someNumber) {
     
     let a = addOne(someNumber);
@@ -108,7 +108,7 @@ console.log(addOne(1))
 
 We can assign a function to a variable, then use that to invoke it:
 
-```
+```js
 function addNums(a, b) {
     return a+b;
 }
@@ -121,7 +121,7 @@ console.log(someMaths(3, 4));
 
 We can also do that directly:
 
-```
+```js
 const someMaths = function addNums(a, b) { return a+b; };
 console.log(someMaths(3, 4));
 // 7
@@ -129,7 +129,7 @@ console.log(someMaths(3, 4));
 
 If we're doing that, we don't really need the old function name any more since we're not using it:
 
-```
+```js
 const someMaths = function (a, b) { return a+b; };
 console.log(someMaths(3, 4));
 // 7
@@ -137,7 +137,7 @@ console.log(someMaths(3, 4));
 
 It's also possible to make these even more compact in modern browsers by using "arrow functions". Just use a fat arrow between the parameters and the function body:
 
-```
+```js
 const addTwoNums = (a, b) => { return a+b; };
 console.log(addTwoNums(3, 4));
 // 7
@@ -145,7 +145,7 @@ console.log(addTwoNums(3, 4));
 
 In a one-liner we can eliminate the curly braces and return since it's implied:
 
-```
+```js
 const addTwoNums = (a, b) => a+b;
 console.log(addTwoNums(3, 4));
 // 7
@@ -153,7 +153,7 @@ console.log(addTwoNums(3, 4));
 
 If there's only one argument, we could eliminate the parentheses as well:
 
-```
+```js
 const addFive = a => a+5;
 console.log(addFive(3));
 // 8
@@ -161,7 +161,7 @@ console.log(addFive(3));
 
 What's the point of being able to treat functions as variables? Mainly so we can pass them into other functions, or return them from functions. Here's passing them in:
 
-```
+```js
 const addTwoNums = (a, b) => a+b;
 const multiplyTwoNums = (a, b) => a*b;
 
@@ -180,7 +180,7 @@ console.log(f);
 
 And here's returning a function.
 
-```
+```js
 function randomMathsFunc() {
     if (Math.random() > 0.5) {
         return (a, b) => a+b;
@@ -200,7 +200,7 @@ It's also great for some functional flavour programming. For instance a common p
 
 In fact, there is an array method like this called `map`.
 
-```
+```js
 const firstArray = [2, 3, 4, 5];
 const plusTwo = a => a+2;
 const secondArray = firstArray.map(plusTwo);
@@ -210,7 +210,7 @@ console.log(secondArray);
 
 Once you've got it clear in your head how the arrow functions work, it's actually clearer to eliminate the superfluous variable and pass them directly:
 
-```
+```js
 const firstArray = [2, 3, 4, 5];
 const secondArray = firstArray.map(a => a+2);
 console.log(secondArray);

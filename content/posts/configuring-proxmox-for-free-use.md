@@ -12,7 +12,7 @@ tags:
 
 I installed Proxmox on my second server last night, and tonight when I ran `apt update` I ran into the error you get when you haven't bought a license.
 
-```
+```bash
 Err:5 https://enterprise.proxmox.com/debian/pve bullseye InRelease             
   401  Unauthorized [IP: 103.67.14.50 443]
 Reading package lists... Done                                                  
@@ -29,7 +29,7 @@ There's a couple of little steps for this. They are both [here on the Proxmox wi
 1.  edit `/etc/apt/sources.list.d/pve-enterprise.list` to comment out the single repository listed in there.
 2.  edit `/etc/apt/sources.list` to look like this:
 
-```
+```bash
 deb http://ftp.debian.org/debian bullseye main contrib
 deb http://ftp.debian.org/debian bullseye-updates main contrib
 

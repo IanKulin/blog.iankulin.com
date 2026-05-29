@@ -11,7 +11,7 @@ tags:
   - posts
 ---
 
-```
+```swift
 /*
  The challenge is this: write a function that accepts an integer from 1 through 10,000, and returns the integer square root of that number. That sounds easy, but there are some catches:
  

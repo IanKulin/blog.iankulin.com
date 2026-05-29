@@ -17,6 +17,7 @@ The next part of day 23 started to make my brain hurt a bit. It's easy to imagin
 
 Paul's first suggestion is to pull some parts of the view as _properties_ of the same view.
 
+```swift
 struct ContentView: View {
 
     let greenText = Text("Hello").foregroundColor(.green)
@@ -28,6 +29,7 @@ struct ContentView: View {
         }
     }
 }
+```
 
 This works fine, and exactly how you expect, except that if you don't enclose it in the VStack, you just get one Text, but two ContentPreviews. I do not understand why yet, but its probably something to do with the @ViewBuilder property wrapper.
 
@@ -37,6 +39,7 @@ But... a property can't refer to another property, so this isn't compilable Swif
 
 To get around this, we can use a computed property. So this works:
 
+```swift
 struct ContentView: View {
     
     @State private var greeting = "Hello"
@@ -52,6 +55,7 @@ struct ContentView: View {
         }
     }
 }
+```
 
 In fact, this is what I've been doing so far to decompose views, although I've been dropping the segments underneath the main body to make things subjectively neater.
 
@@ -61,6 +65,7 @@ Paul cautions about returning multiple views in this computed property manner. S
 
 That makes sense - we were relying on the implied return. Putting them in a VStack would work - because we're just returning a single view (the VStack) which happens to contain multiple views.
 
+```swift
 struct ContentView: View {
     
     @State private var greeting = "Hello"
@@ -80,11 +85,13 @@ struct ContentView: View {
     }
     
 }
+```
 
 There's another view container type called Group which is like a stack, but just contains, rather than arranging, a collection of views, that can be used in the same way.
 
 Alternatively, and I assume this is related to the problem I had above, we can just wrap the property with the @ViewBuilder attribute.
 
+```swift
 struct ContentView: View {
     
     @State private var greeting = "Hello"

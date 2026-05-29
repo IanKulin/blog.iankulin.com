@@ -12,7 +12,7 @@ tags:
 
 The [Checkpoint 4](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-4) task was to find an integer square root of numbers up to 10000. My [first pass solution](/checkpoint-4/) was:
 
-```
+```swift
 func calculateIntSqrt(_ number:Int) throws -> Int  {
     let lowerBound = 1
     let upperBound = 10_000
@@ -35,7 +35,7 @@ This code works fine (there was no discernible time difference between 4 and 999
 
 It's possible a good mathematics student would know some good tricks for calculating square roots, the first couple of links I googled suggested a method of looking for multiples that themselves were squares. While that's a viable strategy mentally, and for reasonable size numbers, it didn't lend itself to being coded. So I guess the computer science guys would pull out the binary search.
 
-```
+```swift
 func calculateIntSqrt(_ number:Int) throws -> Int  {
     var lowerBound = 1
     var upperBound = 2_147_483_646

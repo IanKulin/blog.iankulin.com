@@ -90,7 +90,7 @@ struct ContentView: View {
 
 If we save the screen:
 
-```
+```swift
 Button("Save Image") {
     let renderer = ImageRenderer(content: ticketView)
     

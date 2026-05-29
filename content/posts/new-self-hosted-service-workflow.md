@@ -60,7 +60,7 @@ My pattern for SSH keys, which might not be the most secure, is that I have a ke
 
 Often the service I'm installing needs access to the NAS - and that's the case for audibookshelf which obviously needs access to my collection of audio books on my four bay Synology. I use an `/etc/fstab` entry to mount the folder I'm interested in. I've set up the NAS to share these over SMB. The entry for audiobookshelf looks like this:
 
-```
+```bash
 //192.168.100.32/media/books/audio/ /mnt/media cifs username=abs_user,password=SeCrErpaSSword,file_mode=0660,dir_mode=07
 ```
 
@@ -96,7 +96,7 @@ Once that's in the `/etc/fstab`, you need to mount it with a `mount -a`, then yo
 
 Obviously this will vary with whatever service you're running. Here's mine for audiobookshare.
 
-```
+```yaml
 version: '3'
 
 services:

@@ -21,7 +21,7 @@ I'm running Unbuntu Server 22.4.1 inside Proxmox 7.3 for the following examples.
 
 Use apt (or whatever you distro uses) to install the agent inside the VM.
 
-```
+```bash
 apt install qemu-guest-agent
 ```
 

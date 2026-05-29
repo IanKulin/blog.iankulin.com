@@ -13,7 +13,8 @@ tags:
 
 [![](/images/screen-shot-2022-08-08-at-8.43.44-pm.jpg)](https://www.hackingwithswift.com/quick-start/beginners/checkpoint-7)
 
-/\*
+```swift
+/*
 Your challenge is this: make a class hierarchy 
   for animals, starting with Animal at the top, 
   then Dog and Cat as subclasses, then Corgi and 
@@ -35,7 +36,7 @@ But there’s more:
 
 https://www.hackingwithswift.com/quick-start/beginners/checkpoint-7
 
-\*/
+*/
 
 class Animal {
     var legs = 4

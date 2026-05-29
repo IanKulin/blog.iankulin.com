@@ -18,7 +18,7 @@ I should also mention I figured out some of this with help from [this video](htt
 
 First step is another Paul hack. If you look in the `Garden+CoreDataProperties.swift` file where the Garden properties are defined, you'll see that the `plants` variable has the type `?NSSet` which is not straightforward to work with. We'd prefer it to be an array of Plant so we can easily turn it into a list in SwiftUI ways.
 
-```
+```swift
 extension Garden {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Garden> {
@@ -51,7 +51,7 @@ Using a computed variable (in this case plantArray), Paul likes to turn it into 
 
 Back in our Garden DetailView, it's now a simple matter to show the plants for a garden in a list under the other garden details.
 
-```
+```swift
 struct DetailView: View {
     var garden: Garden
     
@@ -72,7 +72,7 @@ struct DetailView: View {
 
 Finally, in the button press to create our sample data, we need to create each of the plant instances then call a method on a garden to add them to that garden.
 
-```
+```swift
 Button("Sample Data") {
     let garden1 = Garden(context: moc)
     garden1.id = UUID()

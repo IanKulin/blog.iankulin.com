@@ -22,13 +22,13 @@ A couple of posts ago, I [mentioned](/adding-a-domain-name-to-a-vps/) that it wa
 
 In order for the SSL to work, we're going to have to make a couple of files available to Nginx - `fullchain.pem` and `private.key.pem`. So there's our first gotcha - we don't have a `fullchain.pem`, so we have to build it. To do this, we just combine the domain certificate and the intermediate certificate. On the mac, I did this:
 
-```
+```bash
 cat domain.cert.pem intermediate.cert.pem > fullchain.pem
 ```
 
 This is me solving the first gotcha, while simultaneously creating the second. Much later in the process when Nginx was failing at startup, I looked in the logs (with the handy `docker logs` command) and saw these messages:
 
-```
+```bash
 2023/04/21 05:42:45 [emerg] 1#1: cannot load certificate "/etc/nginx/conf.d/fullchain.pem": PEM_read_bio_X509() failed (SSL: error:0908F066:PEM routines:get_header_and_data:bad end line)
 nginx: [emerg] cannot load certificate "/etc/nginx/conf.d/fullchain.pem": PEM_read_bio_X509() failed (SSL: error:0908F066:PEM routines:get_header_and_data:bad end line)
 ```
@@ -45,7 +45,7 @@ In order to have the certificates work with Nginx, we're going to need to add th
 
 If you're as new to running Nginx in a container as I am, you might have been starting it up with a command like:
 
-```
+```bash
 docker run -p 80:80 -d -v ~/www:/usr/share/nginx/html nginx
 ```
 
@@ -53,7 +53,7 @@ That's fine and all, but as your system gets a bit more complex (which it's abou
 
 Below is my `docker-compose.yaml` file for Nginx. Note that these files are always called that, so you keep the compose files for different containers in separate directories.
 
-```
+```bash
 version: "3.9"
 
 services:
@@ -79,7 +79,7 @@ services:
 
 Let's have a look at the config file. This is stored in `/home/ian/iankulin.com/nginx/conf/`.
 
-```
+```bash
 server {
     listen 80 default_server;
     listen [::]:80 default_server;

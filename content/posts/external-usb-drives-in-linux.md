@@ -14,7 +14,7 @@ Many modern Linux distros will auto-mount USB drives - they just pop up in the g
 
 Let's look at some basics. `[lsblk](https://man7.org/linux/man-pages/man8/lsblk.8.html)` will list the 'block' devices. Your output will almost certainly be a bit different than this.
 
-```
+```bash
 root@pve:~# lsblk
 NAME                         MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 sda                            8:0    0 119.2G  0 disk 
@@ -43,7 +43,7 @@ sda                            8:0    0 119.2G  0 disk
 
 If you look at the `type` column, you can see this machine has one _disk_, with three _partitions_, and the last partition has a heap of _logical volumes_. Let's plug the thumb drive in:
 
-```
+```bash
 root@pve:~# lsblk
 NAME                         MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 sda                            8:0    0 119.2G  0 disk 
@@ -76,7 +76,7 @@ There we are, down the bottom. Our disk is `sdb`, and partition is `sdb1`. So th
 
 By convention, removable media is often mounted in `/media` or `/mnt`, but it can be wherever you like. Let's make a directory for it in `/media` and mount it there.
 
-```
+```bash
 root@pve:/# mkdir /media/external
 root@pve:/# mount /dev/sdb1 /media/external
 root@pve:/# ls /media/external
@@ -92,7 +92,7 @@ Success!
 
 If we do the lsblk again, you'll see out mount point in the listing
 
-```
+```bash
 root@pve:/# lsblk
 NAME                         MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 sda                            8:0    0 119.2G  0 disk 
@@ -110,7 +110,7 @@ Of course, just as in Windows, we need to tell the OS when we want to remove a r
 
 We can unmount a drive with the `[umount](https://man7.org/linux/man-pages/man8/umount.8.html)` command.
 
-```
+```bash
 root@pve:/# ls /media/external
 '02 Advance Australia Fair 1 verse vocal.mp3'  'Year 3 Pack.pdf'
 'Araw ng Kasarinl'$'\341''n.mp4'	       'Year 4 Pack.pdf'

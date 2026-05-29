@@ -18,7 +18,7 @@ I definitely had the path correct - I could copy it from the dialog and cd to it
 
 If, as root, I ls -l (-l for long) any of the directories in this path, they look like this:
 
-```
+```bash
 root@jellyfin:/mnt/media/video# ls -l
 total 0
 drwxrwx--- 2 1000 1000 0 Feb 18 09:13 Movies
@@ -27,8 +27,8 @@ drwxrwx--- 2 1000 1000 0 Feb 18 04:30 Shows
 
 Those letters at the start of each listing [have a meaning](https://detailed.wordpress.com/2017/10/28/understanding-ls-command-output/). The first `d` just means it's a directory. Then there's three groups of three letters:
 
-```
-d rwx rwx --- (I've just added those spaces to make things clear)
+```bash
+d rwx rwx --- # (I've just added those spaces to make things clear)
 ```
 
 These three lots of letters are the _permissions_ in the order of _owner_, _group_ & _everybody_. So for these directories:
@@ -43,7 +43,7 @@ This raises the question, who is the owner of this directory, and what is the gr
 
 In our case the owner is `1000` and the group is `1000`. Where did these come from? Well, they were in the mount command I used in `etc/fstab` yesterday:
 
-```
+```bash
 //192.168.100.25/media /mnt/media cifs username=jelly,password=jellypass,uid=1000,gid=1000,file_mode=0660,dir_mode=07
 ```
 
@@ -55,14 +55,14 @@ How to I find out what user Jellyfin is running as? A good place to start is to 
 
 Well, lookee here. User `jellyfin` is running this process. We can see what groups she's a member of by running the `groups` command.
 
-```
+```bash
 root@jellyfin:/# groups jellyfin
 jellyfin : jellyfin
 ```
 
 So, not a member of the `1000` group then. We can use the `getent` command to see the group numbers for users:
 
-```
+```bash
 root@jellyfin:/# getent group jellyfin              
 jellyfin:x:115:
 root@jellyfin:/# getent group root    

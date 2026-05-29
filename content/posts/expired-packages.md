@@ -23,7 +23,7 @@ Straight out of that experience, Andrei advises that the next section uses a dep
 
 ![](/images/screen-shot-2023-01-23-at-11.14.08-am.jpg)
 
-```
+```bash
 Starting the development server...
 
 Error: error:0308010C:digital envelope routines::unsupported

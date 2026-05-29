@@ -30,6 +30,7 @@ tags:
 
 I know there's a cool "Set" container type in Swift, so my plan was to iterate through the array, then for each number if there's no entry in the set, then add one, but if there is, remove it. That way whatever is left in the set at the end must be in the original array an odd number of times. I was pretty pleased with myself. Here's the code I Playground'd up:
 
+```swift
 func oddTimesInt(intArray: \[Int\]) -> Int {
     
     var intSet: Set<Int> = \[\]
@@ -51,6 +52,7 @@ func oddTimesInt(intArray: \[Int\]) -> Int {
         return 0
     }
 }
+```
 
 While you are writing your code in their webpage, you can run it against a test suite. Mine passed the first time; even more pleased with myself.
 
@@ -58,9 +60,11 @@ When you're ready, you can submit your code. Now it runs against a much bigger t
 
 There's a chance to clean up, comment, or to refactor your code before it's finally locked in. Then once you commit that, it shows you other people's solutions. This was the top one:
 
+```swift
 func findIt(\_ seq: \[Int\]) -> Int {
     seq.reduce(0, ^)
 }
+```
 
 lol. One. Line. That'll learn me.
 
@@ -68,20 +72,25 @@ So, anyways.... I guess I learned there's an array method called _reduce_, and i
 
 [According to the docs](https://developer.apple.com/documentation/swift/array/reduce\(_:_:\)), _reduce_ "Returns the result of combining the elements of the sequence using the given closure." Basically, the 0 in the example above is the inital value of the accumulator, then the closure repeatedly operates on the accumulaotr and each value of the array, then the final result in the accumulator is returned. An example will make a lot more sense. Here's the one from the Apple documentation:
 
+```swift
 let numbers = \[1, 2, 3, 4\]
 let numberSum = numbers.reduce(0, { x, y in
     x + y
 })
 // numberSum == 10
+```
 
 The closure in the winning entry used all the closure redaction tricks I think I've [complained](/closures/) about before. We could make it a bit more readable by putting syntax back.
 
+```swift
 func findIt(\_ seq: \[Int\]) -> Int {
     seq.reduce(0, {accumulator, element in accumulator ^ element} )
 }
+```
 
 or to go back another step:
 
+```swift
 func superXOR(accumulator: Int, element:Int) -> Int {
     return accumulator ^ element
 }
@@ -89,6 +98,7 @@ func superXOR(accumulator: Int, element:Int) -> Int {
 func findIt(\_ seq: \[Int\]) -> Int {
     seq.reduce(0, superXOR )
 }
+```
 
 The ^ operator is XOR. I know what that does, and could even manually do it on two binary numbers.
 

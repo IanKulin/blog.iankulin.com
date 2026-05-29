@@ -16,7 +16,7 @@ I was doing updates on all my nodes and VM's today, and backing up the VMs that 
 
 When I tried to back it up today, I got this drama.
 
-```
+```bash
 INFO: starting new backup job: vzdump 200 --node pve-dev1 --mode snapshot --remove 0 --notes-template '{{vmid}}-{{guestname}} ({{node}}) - after timezone fix' --storage NAS-DS2 --compress zstd
 INFO: Starting Backup of VM 200 (lxc)
 INFO: Backup started at 2023-04-07 17:11:08
@@ -44,7 +44,7 @@ If I dropped to the console for the node, I could create an identically named fi
 
 During all that testing, I saw some output that led to more helpful thinking.
 
-```
+```bash
 INFO: starting new backup job: vzdump 303 --storage NAS-DS2 --compress zstd --notes-template '{{guestname}}' --remove 0 --node pve-dev1 --mode snapshot
 INFO: Starting Backup of VM 303 (lxc)
 INFO: Backup started at 2023-04-07 18:43:44

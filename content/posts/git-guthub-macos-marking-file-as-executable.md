@@ -21,7 +21,7 @@ The problem I've run into is that I want the file permissions so show the file i
 
 Some googling suggested that the executable flag (but none of the other file permissions) is stored and handled by git, and furthermore, there's a git command to set it:
 
-```
+```bash
 git update-index --chmod=+x bin/fetchWeather.sh 
 ```
 

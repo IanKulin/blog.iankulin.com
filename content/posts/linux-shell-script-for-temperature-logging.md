@@ -23,7 +23,7 @@ A small concern I've got about that, and about the (very cute looking) way I've 
 
 That sort of turned out to be true. In /sys/class/hwmon/ there's a couple of directories (actually symlinks) for bits of hardware that can be monitored for temperature, and in those directories are text files with some values, the ones we're interested in being `name` and `temp1_input`.
 
-```
+```bash
 root@pve-dev1:~# tree /sys/class/hwmon/
 /sys/class/hwmon/
 ├── hwmon0 -> ../../devices/virtual/thermal/thermal_zone0/hwmon0
@@ -55,13 +55,13 @@ I wrote MS-DOS batch files in the 1980s so this wasn't completely alien to me. A
 -   In that list of variables, each one is filled with the results of the command being assigned to it in the single quotes. So if typing in `cat /sys/class/hwmon/hwmon0/name` at the terminal prompt would result in the output `pch_skylake`, then the variable `pch_name` will contain `pch_skylake`.
 -   If you're not coming to this from a programming background, this printf() command is going to look weird.
 
-```
+```bash
 printf "$(date +'%d/%m/%Y,%T'),%s,%d,%s,%d,%s,%d\n" $pch_name $pch_temp $cpu_name $cpu_temp $ssd_name $ssd_temp >> $log_file
 ```
 
 -   How these work is that the first part is the string to print, but it has some placeholders (all those `%`letters). At runtime, the values from the end of the line are inserted into them. Like this:
 
-```
+```bash
 root@pve-dev1:~# printf "Hello %s\n" "Ian"
 Hello Ian
 ```
@@ -72,7 +72,7 @@ At this point I know enough about Linux permissions that I knew I'd have to set 
 
 Again, the original article gave an example of the line to put into /etc/crontab. It just needed the path to my script and it was good to go.
 
-```
+```bash
 # Example of job definition:
 # .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)
@@ -86,7 +86,7 @@ Again, the original article gave an example of the line to put into /etc/crontab
 
 Next thing you know, the log file is slowly growing at `/var/log/temps.csv`.
 
-```
+```bash
 20/04/2023,20:30:01,pch_skylake,45000,coretemp,38000,drivetemp,38000
 20/04/2023,20:35:01,pch_skylake,45000,coretemp,37000,drivetemp,38000
 20/04/2023,20:40:01,pch_skylake,44500,coretemp,37000,drivetemp,38000

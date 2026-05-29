@@ -17,14 +17,14 @@ They are similar in that when the container is launched from an image, these com
 
 `doc-`entry:
 
-```
+```dockerfile
 FROM debian:stable-slim
 ENTRYPOINT ["echo", "Hello World from ENTRYPOINT"]
 ```
 
 `doc-cmd`:
 
-```
+```dockerfile
 FROM debian:stable-slim
 CMD ["echo", "Hello World"]
 ```
@@ -41,7 +41,7 @@ It's possible to have an ENTRYPOINT and a CMD in your dockerfile:
 
 `doc-both`:
 
-```
+```dockerfile
 FROM debian:stable-slim
 ENTRYPOINT ["echo", "Hello World from ENTRYPOINT"]
 CMD ["& Hello World from CMD"]

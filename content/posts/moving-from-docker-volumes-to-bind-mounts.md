@@ -18,7 +18,7 @@ When I started with Docker, the docs seemed to suggest that using Docker volumes
 
 Here's a docker-compose for [Uptime Kuma](https://github.com/louislam/uptime-kuma/wiki) using a volume.
 
-```
+```yaml
 services:
   uptime-kuma:
     image: louislam/uptime-kuma:1
@@ -45,7 +45,7 @@ So if I ever needed to move this somewhere, I could `docker compose down`, then 
 
 Instead of using Docker volumes, I'm using 'bind mounts' to those sub-directories. The docker-compose is not more complicated, if anything, it's simpler since we don't need the `volumes` part at the bottom.
 
-```
+```yaml
 services:
   jellyfin:
     image: jellyfin/jellyfin
@@ -88,13 +88,13 @@ Next thing, I'll make a data sub-directory for it. `mkdir ~/uptimekuma/data`
 
 The (with the container stopped), copy the data over.
 
-```
+```bash
 sudo cp -a /var/lib/docker/volumes/uptimekuma_kuma_data/_data/. ~/uptimekuma/data
 ```
 
 After checking that's actually worked, I'll kill the volume. We need to get the volume name first if you haven't figured it out from the location path.
 
-```
+```bash
 ian@ct390-test:~/uptimekuma$ sudo docker volume ls
 DRIVER    VOLUME NAME
 local     uptimekuma_kuma_data
@@ -104,7 +104,7 @@ uptimekuma_kuma_data
 
 Now we'll need to update the `docker-compose.yaml` file from the top of this post so it bind mounts the sub-directory that we've copied to instead of the named volume.
 
-```
+```yaml
 services:
   uptime-kuma:
     image: louislam/uptime-kuma:1

@@ -19,13 +19,13 @@ One of my early goals was to get in the habit of using version control with Git/
 
 It possibly helped that I'm also on mac, so I didn't have to deal with the "or however that's done on your system" type problems. Also, where things didn't work as expected, the explanation about what was being done was clear enough that the problem was solvable. For example, the push command Gwen used was:
 
-```
+```bash
 git push origin master
 ```
 
 but GitHub had defaulted my initial branch to "main" rather than "master". Easily fixed since she immediately explained what both of those modifiers were. The only other tiny bit of troubleshooting was that my git global config wasn't set up, so my commit was followed by a big message pointing out that my real email address wasn't used for the commit:
 
-```
+```bash
  Committer: User Name <username@Ians-MacBook-Pro.local>
 Your name and email address were configured automatically based
 on your username and hostname. Please check that they are accurate.

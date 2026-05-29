@@ -11,7 +11,7 @@ tags:
   - posts
 ---
 
-```
+```swift
 /*
  Your input is this:
  

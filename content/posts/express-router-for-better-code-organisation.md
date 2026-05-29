@@ -16,7 +16,7 @@ A Node/Express app I'm working on has been sprouting routes so much that the `se
 
 Imagine we've written this little Node/Express app.
 
-```
+```js
 import express from "express";
 import {
   dbCustomersGet,
@@ -83,7 +83,7 @@ One thing I've done better here than in the real app I'm fixing is that the rout
 
 Like almost everything in Express, the router is middleware. Let's look at how our index.js has changed once we've moved the routes out into a `customers.js` and an `orders.js`.
 
-```
+```js
 import express from "express";
 import customersRouter from "./routes/customers.js";
 import ordersRouter from "./routes/orders.js";
@@ -114,14 +114,14 @@ First of all, the imports for all my database functions are gone - they'll be in
 
 There are a couple of new imports though - our two 'routers'.
 
-```
+```js
 import customersRouter from "./routes/customers.js";
 import ordersRouter from "./routes/orders.js";
 ```
 
 Then further down, they are installed as middleware:
 
-```
+```js
 // routers
 app.use("/customers", customersRouter);
 app.use("/orders", ordersRouter);
@@ -135,7 +135,7 @@ You might have noticed how we're organising the routes - there's a "routes" fold
 
 Let's have a look at one of the route files:
 
-```
+```js
 import express from "express";
 import {
   dbCustomersGet,
@@ -172,7 +172,7 @@ This is nice. We're only importing the customer database functions, and we've go
 
 There's really only one gotcha here which we alluded to earlier. You'll notice how I've added a comment over each route?
 
-```
+```js
 // GET /customers/:id
 router.get("/:id", (req, res) => {
   const customer = dbCustomersGetById(req.params.id);

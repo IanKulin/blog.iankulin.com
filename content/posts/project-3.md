@@ -40,6 +40,7 @@ where w is the condition, t is the code if the condition is true and f is the co
 
 Again, pretty straightforward. I just made a new view struct in the main view.
 
+```swift
 struct FlagView: View {
         var flagOf: String
         
@@ -49,9 +50,11 @@ struct FlagView: View {
                 .shadow(radius: 5)
         }
 }
+```
 
 Then called it with our flag name.
 
+```swift
 ForEach(0..<3) { number in
     Button {
         // flag was tapped
@@ -60,6 +63,7 @@ ForEach(0..<3) { number in
         FlagView(flagOf: countries\[number\])
     }
 }
+```
 
 [Source](https://github.com/IanKulin/GuessTheFlag/compare/v1.0...v1.1)
 
@@ -67,6 +71,7 @@ ForEach(0..<3) { number in
 
 > _Create a custom_ `ViewModifier` _(and accompanying_ `View` _extension) that makes a view have a large, blue font suitable for prominent titles in a view._
 
+```swift
 struct ContentView: View {
     var body: some View {
         VStack{
@@ -91,3 +96,4 @@ extension View {
         modifier(ProminentTitle())
     }
 }
+```

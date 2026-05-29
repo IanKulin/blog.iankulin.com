@@ -18,7 +18,7 @@ This [article in the docs](https://docs.nginx.com/nginx/admin-guide/security-con
 
 To get it passed in with every request, we need to stick it in the headers. We do this in the NGINX conf for the site:
 
-```
+```bash
 server {
 	root /var/www/ct.example.com;
 	index index.html;
@@ -39,7 +39,7 @@ server {
 
 Then in my app, I just check the header like:
 
-```
+```js
 const USERNAME_HEADER = "x-username";
 
 // basic auth middleware

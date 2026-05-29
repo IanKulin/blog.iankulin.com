@@ -23,7 +23,7 @@ When you `git init`, a hidden folder is created in the directory you init in cal
 
 So in Pat's words:
 
-```
+```bash
 rm -rf .git
 git init
 git add .

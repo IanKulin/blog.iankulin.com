@@ -33,7 +33,7 @@ I have a better idea anyway - since the ISS should be at the centre of the map, 
 
 This turns out to be a low wall. The CSS for my image is:
 
-```
+```css
 img {
   position: absolute;
   top: 50%;

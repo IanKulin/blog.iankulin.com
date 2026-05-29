@@ -11,13 +11,13 @@ tags:
 
 When I was writing the blog post for the last project, I needed the "before" code to paste into the post. I'd committed that code, so a quick way to go back without losing my changes. I hadn't committed the new code, so there is a super easy way to accomplish this.
 
-```
+```bash
 git stash
 ```
 
 This grabs the code since the last commit and stashes it away, reverting the directory to the last committed version. I was able to copy the code I needed to the blog post, then to go back to my changes:
 
-```
+```bash
 git stash pop
 ```
 

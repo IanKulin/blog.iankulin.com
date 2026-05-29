@@ -31,7 +31,7 @@ This is a little bit confusing, since we can also manually access NPM from `http
 
 Here's my compose file, notice I haven't exposed port 81
 
-```
+```yaml
 services:
   nginx-proxy-manager:
     image: 'jc21/nginx-proxy-manager:latest'
@@ -65,7 +65,7 @@ You can get a fair way with Docker without really thinking or knowing about [Doc
 
 That network `nginx-proxy-manager_default` is the one we're interested in. Its name is just the container name with "\_default" added on the end. What we need to do is just make sure the second container is included in that same network. That's a matter of declaring the external network with that name, and including it in our service definition. I'm going to use an NGINX server in my example, but it could be anything. Here's the compose for the second container.
 
-```
+```yaml
 services:
   nginx-example.com:
     image: nginx

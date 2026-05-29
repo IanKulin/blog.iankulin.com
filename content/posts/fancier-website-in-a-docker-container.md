@@ -24,7 +24,7 @@ We need the container (as well as hosting the website) to repeatedly download an
 
 Where I ended up was having a script called `update_content.sh` that has a loop with a `sleep()` in the bottom, but at the top, downloads the file we want into our `/var/www/html/` directory. Here's the script:
 
-```
+```bash
 #!/bin/sh
 
 # Define the URL and the destination path
@@ -48,7 +48,7 @@ done
 
 Then in our `dockerfile`, the `CMD` launches the script as well as the httpd server:
 
-```
+```dockerfile
 FROM busybox:latest
 
 # Add shell script and set executable
@@ -68,7 +68,7 @@ CMD ["sh", "-c", "/usr/local/bin/update_content.sh & busybox httpd -f -p 80 -h /
 
 The docker-compose.yml remains the same as in the previous post - if you haven't read that, I was running all these website containers behind Nginx Proxy Manager. If you are not, then just go ahead and delete out the "networks" parts.
 
-```
+```yaml
 services:
   example.com:
     container_name: httpd-example.com

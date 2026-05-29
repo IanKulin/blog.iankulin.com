@@ -17,7 +17,7 @@ tags:
 
 A 'dockerfile' contains all the instructions to build a Docker image. Here's my first draft for a project I'm working on:
 
-```
+```dockerfile
 FROM node:20
 WORKDIR /usr/src/app
 COPY package*.json ./
@@ -31,7 +31,7 @@ CMD ["node", "server.js"]
 
 Docker has an easy fix for this, we can just add these files to a `.dockerignore` file in the project, again, here a first draft.
 
-```
+```bash
 data
 db
 node_modules
@@ -43,7 +43,7 @@ node_modules
 
 When I build an image, it doesn't list the files it's copying in, so I often like to sneak inside the image to have a look. This is easy, the trick is just to launch bash inside there. When I built this particular image, I tagged it `iankulin/tick`, so the command to run bash inside it is:
 
-```
+```bash
 docker run -it iankulin/tick /bin/bash
 ```
 
@@ -59,7 +59,7 @@ You might think I could have avoided all this by explicitly copying the files I 
 
 Actually, I generally don't want any dot files in my containers, so we'll add that as a wildcard in the .dockerignore
 
-```
+```bash
 data
 db
 node_modules

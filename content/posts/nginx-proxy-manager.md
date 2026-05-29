@@ -25,7 +25,7 @@ This is nice for a few reasons:
 
 All this stuff is managed through the [NGINX config](/nginx-config-on-debian-ubuntu/) files. Perhaps one might look like this:
 
-```
+```bash
 server {
     listen 80;
     server_name example.com;

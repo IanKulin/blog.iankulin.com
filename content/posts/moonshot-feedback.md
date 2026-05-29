@@ -22,7 +22,7 @@ Lists do have a heap of features - checkboxes, multiple selection, pull down for
 
 There is however, a generally important reason for using the standard iOS controls in the way they are intended - accessibility. There's a good example of that a few minutes later when Paul adds his toolbar to the NavigationView. Here's mine - succinct, nice use of the ternary operator:
 
-```
+```swift
 .toolbar {
     Image(systemName: showingList ? "square.grid.2x2" : "list.bullet")
         .onTapGesture {
@@ -32,7 +32,7 @@ There is however, a generally important reason for using the standard iOS contro
 
 Here's Paul's:
 
-```
+```swift
 . toolbar { 
     Button {
     showingGrid.toggle()

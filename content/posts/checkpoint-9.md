@@ -13,7 +13,8 @@ tags:
 
 {{< youtube -JmAbcISEmY >}}
 
-/\*
+```swift
+/*
 Your challenge is this: write a function that accepts an 
   optional array of integers, and returns one randomly. 
   If the array is missing or empty, return a random number 
@@ -28,7 +29,7 @@ If that sounds easy, it’s because I haven’t explained
 
 https://www.hackingwithswift.com/quick-start/beginners/checkpoint-9
 
-\*/
+*/
 
 func randomInt(\_ numbers:\[Int\]?) -> Int { numbers?.randomElement() ?? Int.random(in:1...100) }
 

@@ -14,7 +14,7 @@ tags:
 
 When I was working on the Day 60 app, I noticed I kept getting a message in the console "`No wall clock alignment provided at SwiftUI/ResolvableStringAttribute.swift:86`" every time I went into the detail view. Via elimination by commenting bits out, I've narrowed it down to a date formatting call. Here is the code to reproduce it in Xcode Version 14.0.1, Swift 5.7.0.127.4
 
-```
+```swift
 struct ContentView: View {
     var body: some View {
         Text("Date: \(Date(), style: .date)")

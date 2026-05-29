@@ -23,14 +23,14 @@ Git is an amazing tool, so of course this is possible. Normally my workflow is t
 
 This is making the connection between my local project and the GitHub repo. I'd never really thought about what `origin` meant in this context the hundreds of times I've previously typed it in, but actually it's just the name we are giving to this connection. It's just a convention to call it 'origin', it could just as easily be called 'fred' or 'github'. Since I am now planning to push to two separate remotes, it's going to make sense to give them meaningful names. So in that case, we can do this:
 
-```
+```bash
 git remote add github git@github.com:IanKulin/test.git
 git remote add gogs http://ct-gogs/iankulin/test.git
 ```
 
 Then, we can push with:
 
-```
+```bash
 git push github main
 git push gogs main
 ```
@@ -41,7 +41,7 @@ You might be wondering what happens if you just do a `git push` at this stage (o
 
 We can set the default remote with the -u flag when we're pushing
 
-```
+```bash
 git push -u gogs main
 ```
 
