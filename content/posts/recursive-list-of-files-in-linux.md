@@ -28,7 +28,7 @@ What I need to end up with is something that recursively lists all the files, wi
 
 My go to for listing files is `ls -all`, perhaps than can help us? It lists one line per file (along with permissions etc), so if we add `-R` for recursive, that could be it. Here's the output for `ls -all -R test`
 
-```
+```bash
 test:
 total 16
 drwxr-xr-x 4 ian ian 4096 Mar  6 16:36 .
@@ -65,7 +65,7 @@ So we get one line per file, but the directory is on it's own at the beginning o
 
 Based on [this post](https://www.cyberciti.biz/faq/how-to-show-recursive-directory-listing-on-linux-or-unix/), there is a command, `find`, that might do what we want. The simple version would be `find test` (remember test is the directory name).
 
-```
+```bash
 ian@vm102-jellyfin:~$ find test
 test
 test/dir2

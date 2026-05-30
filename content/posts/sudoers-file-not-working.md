@@ -11,13 +11,13 @@ tags:
 
 A couple of weeks ago, I posted [about the sudoers' file](/sudo-incident-reports-where-do-they-go/), and how there was a special tool for editing it since breaking it is a bad idea, and that in fact I needn't bother, since I can just add my user to the sudoers' group with:
 
-```
+```bash
 usermod -a -G sudo ian
 ```
 
 That worked (on Unbuntu) since `/etc/sudoers` contained a line saying:
 
-```
+```bash
 # Allow members of group sudo to execute any command
 %sudo	ALL=(ALL:ALL) ALL
 ```

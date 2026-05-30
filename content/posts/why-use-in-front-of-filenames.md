@@ -12,7 +12,7 @@ tags:
 
 In Linux (and MS-DOS I guess) the period signifies the current directory, so if I have a file in the current directory called `test.txt`, I can refer to it as `test.txt` or `./test.txt`
 
-```
+```bash
 ian@enrico-rider:~$ cat test.txt
 test
 ian@enrico-rider:~$ cat ./test.txt
@@ -29,7 +29,7 @@ It's one of those things that's difficult to Google, so these days my reflex is 
 
 Okay. That makes sense for executable files. If you just type in the name, Linux will look in the current directory, then if not found, in each of the directories in your $PATH variable. But if you add the ./ to the front, it will only look in your current directory. This claim of ChatGPT's is easily tested, lets try with `cat`.
 
-```
+```bash
 ian@enrico-rider:~$ cat test.txt
 test
 ian@enrico-rider:~$ ./cat test.txt
@@ -45,7 +45,7 @@ So that checks out, but it doesn't explain the main place I see it - in HTML.
 
 Again, that makes sense. But it still doesn't answer why the instructor in my course is using it for:
 
-```
+```bash
 cp /etc/passwd ./users.txt
 ```
 

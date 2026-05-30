@@ -17,13 +17,24 @@ I don't have experience with [SQLite](https://www.sqlite.org/index.html) and wan
 
 The simplest possible Express app is going to look something like this. Of course we would have gone to the terminal with `npm i express` first so this could run.
 
-```
-const express = require('express');const app = express();const port = 3000;app.get('/', (req, res) => {  res.send('Hello, World!');});app.listen(port, () => {  console.log(`Server is running at http://localhost:${port}`);});
+```js
+const express = require('express');
+
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
 ```
 
 The only thing to add to this for the moment is some middleware to allow Express to parse JSON body payloads.
 
-```
+```js
 app.use(express.json());
 ```
 
@@ -37,7 +48,7 @@ If you want all of your data to fit in a link, these are great. They can be book
 
 The code to process the GET request above would look like this:
 
-```
+```js
 app.get('/adduser', (req, res) => {  const name = req.query.name;  const email = req.query.email;
 ```
 
@@ -47,7 +58,7 @@ Often the data you want to pass is going to be more complex, or you don't want i
 
 You can stuff all sorts of text data in the body. Most times you are going to want JSON. I do for this demo, so that's why I've added the `expresss.json()` middleware - all the hard work will be done for me and I can just do this to access the information that's passed as part of the request:
 
-```
+```js
 app.post('/users', (req, res) => {  const name = req.body.name;  const email = req.body.email;
 ```
 
@@ -55,7 +66,7 @@ app.post('/users', (req, res) => {  const name = req.body.name;  const email = r
 
 Once you've run `npm i sqlite3` at the terminal to install the package, at the top of our app somewhere - probably where we're requiring the other packages - we'll need this:
 
-```
+```js
 const sqlite3 = require('sqlite3').verbose();const db = new sqlite3.Database('db/test.sqlite');
 ```
 
@@ -63,16 +74,27 @@ This is just requiring the package, and giving us `db` as the variable for the S
 
 On the first run, obviously this will be empty, so somewhere before the listen command, we need to create a table.
 
-```
-// if the 'users' table doesn't exist, // create it with 'name' and 'email' columnsdb.run('CREATE TABLE IF NOT EXISTS users (name TEXT, email TEXT)');
+```js
+// if the 'users' table doesn't exist, 
+// create it with 'name' and 'email' 
+columnsdb.run('CREATE TABLE IF NOT EXISTS users (name TEXT, email TEXT)');
 ```
 
 If you've never encountered SQL before, and was expecting a bunch of methods being passing in structs to do this, this is going to be alarming. But no - in SQL we do things by sending the engine a string. This has created a massive [attack surface](https://en.wikipedia.org/wiki/SQL_injection), but it's also a convenient and very readable convention.
 
 For our simple purposes today, that could be enough infrastructure for SQLite, but because we are good programmers, we'll correctly close the database when the app undergoes an orderly shutdown by adding this before the `app.listen`.
 
-```
-// close the database connection when the app is shutting downprocess.on('SIGINT', () => {  db.close((err) => {    if (err) {      console.error('Error closing SQLite database:', err.message);    } else {      process.exit(0);    }  });});
+```js
+// Close the database connection when the app is shutting down
+process.on('SIGINT', () => {
+  db.close((err) => {
+    if (err) {
+      console.error('Error closing SQLite database:', err.message);
+    } else {
+      process.exit(0);
+    }
+  });
+});
 ```
 
 ### Working with SQLite
@@ -83,13 +105,31 @@ That's the infrastructure out of the way. Now, onto our CRUD (create, read, upda
 
 We already started on that earlier, and explained the concept of passing in data via the 'body' here's the complete thing:
 
-```
-// endpoint to add a user record to the users table// expects a name and email in the JSON body of the requestapp.post('/users', (req, res) => {  const name = req.body.name;  const email = req.body.email;  const sql = `INSERT INTO users (name, email) VALUES ("${name}", "${email}")`;  db.run(sql, function(err) {    if (err) {      res.status(500).send(err.message);    } else {      res.status(201).json({ rowid: this.lastID });    }  });});
+```js
+// Endpoint to add a user record to the users table
+// Expects a name and email in the JSON body of the request
+app.post('/users', (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+
+  const sql = `
+    INSERT INTO users (name, email)
+    VALUES ("${name}", "${email}")
+  `;
+
+  db.run(sql, function (err) {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      res.status(201).json({ rowid: this.lastID });
+    }
+  });
+});
 ```
 
 So this code processes a request to our server - something like `http://localhost:3000/users` and expects the body payload to contain some JSON with a name and email. It could look like this:
 
-```
+```json
 {  "name": "John Doe",  "email": "john.doe@example.com"}
 ```
 
@@ -101,8 +141,19 @@ And when run in Bruno:
 
 There's a couple of reads we can do, one where all the data is returned, and one where only a specific record is. Let's do the big one first, since we'll use it a lot while we're writing the rest!
 
-```
-// endpoint to get all users from the users table in the databaseapp.get('/users', (req, res) => {  const sql = 'SELECT rowid, * FROM users';  db.all(sql, (err, rows) => {    if (err) {      res.status(500).send(err.message);    } else {      res.status(200).send(rows);    }  });});
+```js
+// Endpoint to get all users from the users table in the database
+app.get('/users', (req, res) => {
+  const sql = 'SELECT rowid, * FROM users';
+
+  db.all(sql, (err, rows) => {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      res.status(200).send(rows);
+    }
+  });
+});
 ```
 
 Which looks like this in Bruno:
@@ -111,8 +162,26 @@ Which looks like this in Bruno:
 
 Or if we just want one in particular, we'll pass the id in the URL.
 
-```
-// endpoint to get a single user from the users table in the database// expects an id in the URLapp.get('/user/:id', (req, res) => {  const id = req.params.id;  const sql = `SELECT rowid, * FROM users WHERE rowid = ${id}`;  db.get(sql, (err, row) => {    if (err) {      res.status(500).send(err.message);    } else {      res.status(200).send(row);    }  });});
+```js
+// Endpoint to get a single user from the users table in the database
+// Expects an id in the URL
+app.get('/user/:id', (req, res) => {
+  const id = req.params.id;
+
+  const sql = `
+    SELECT rowid, *
+    FROM users
+    WHERE rowid = ${id}
+  `;
+
+  db.get(sql, (err, row) => {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      res.status(200).send(row);
+    }
+  });
+});
 ```
 
 <a href="/images/screen-shot-2023-12-16-at-10.55.25-am.png"><img src="/images/screen-shot-2023-12-16-at-10.55.25-am.png" width="1000" alt=""></a>
@@ -121,41 +190,116 @@ Or if we just want one in particular, we'll pass the id in the URL.
 
 You're probably getting the hang of this now.
 
-```
-// endpoint to update a user record in the users table in the database// expects a name, and email in the JSON body of the request// expects an id in the URLapp.put('/user/:id', (req, res) => {  const id = req.params.id;  const name = req.body.name;  const email = req.body.email;  const sql = `UPDATE users SET name = "${name}", email = "${email}" WHERE rowid = ${id}`;  db.run(sql, (err) => {    if (err) {      res.status(500).send(err.message);    } else {      res.status(200).send('User updated.');    }  });});
+```js
+// Endpoint to update a user record in the users table in the database
+// Expects a name and email in the JSON body of the request
+// Expects an id in the URL
+app.put('/user/:id', (req, res) => {
+  const id = req.params.id;
+  const name = req.body.name;
+  const email = req.body.email;
+
+  const sql = `
+    UPDATE users
+    SET name = "${name}",
+        email = "${email}"
+    WHERE rowid = ${id}
+  `;
+
+  db.run(sql, (err) => {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      res.status(200).send('User updated.');
+    }
+  });
+});
 ```
 
 #### Delete
 
-```
-// endpoint to delete a user record from the users table in the database// expects an id in the URL. Doesn't complain if the id doesn't exist.app.delete('/user/:id', (req, res) => {  const id = req.params.id;  const sql = `DELETE FROM users WHERE rowid = ${id}`;  db.run(sql, (err) => {    if (err) {      res.status(500).send(err.message);    } else {      res.status(200).send();    }  });});
+```js
+// Endpoint to delete a user record from the users table in the database
+// Expects an id in the URL. Doesn't complain if the id doesn't exist.
+app.delete('/user/:id', (req, res) => {
+  const id = req.params.id;
+
+  const sql = `
+    DELETE FROM users
+    WHERE rowid = ${id}
+  `;
+
+  db.run(sql, (err) => {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      res.status(200).send();
+    }
+  });
+});
 ```
 
 ### Hardening
 
 To keep things simple (since I was just trying to show basic examples of using sqlite) I used string interpolation when making the SQL to run against the database. That's not a great technique because of the danger of SQL injection; so we should routinely use parameterized queries instead. Here's how adding a user looks if we use parameterized queries:
 
-```
-// endpoint to add a user record to the users table// expects a name and email in the JSON body of the requestapp.post('/users', (req, res) => {  const name = req.body.name;  const email = req.body.email;  const sql = `INSERT INTO users (name, email) VALUES (?, ?)`;  db.run(sql, [name, email], function(err) {    if (err) {      res.status(500).send(err.message);    } else {      res.status(201).json({ rowid: this.lastID });    }  });});
+```js
+// Endpoint to add a user record to the users table
+// Expects a name and email in the JSON body of the request
+app.post('/users', (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+
+  const sql = `
+    INSERT INTO users (name, email)
+    VALUES (?, ?)
+  `;
+
+  db.run(sql, [name, email], function (err) {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      res.status(201).json({ rowid: this.lastID });
+    }
+  });
+});
 ```
 
 With parameterized queries, whatever the user passes in ends up in the database rather than being executed as part of the query string.
 
 For example, imagine if an API user tried to add a user with this body:
 
-```
+```json
 {  "name": "John",  "email": "john@example.com\"); DROP TABLE users; --"}
 ```
 
 Then my original add code:
 
-```
-app.post('/users', (req, res) => {  const name = req.body.name;  const email = req.body.email;  const sql = `INSERT INTO users (name, email) VALUES ("${name}", "${email}")`;  db.run(sql, function(err) {    if (err) {      res.status(500).send(err.message);    } else {      res.status(201).json({ rowid: this.lastID });    }  });});
+```js
+// Endpoint to add a user record to the users table
+// Expects a name and email in the JSON body of the request
+app.post('/users', (req, res) => {
+  const name = req.body.name;
+  const email = req.body.email;
+
+  const sql = `
+    INSERT INTO users (name, email)
+    VALUES ("${name}", "${email}")
+  `;
+
+  db.run(sql, function (err) {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      res.status(201).json({ rowid: this.lastID });
+    }
+  });
+});
 ```
 
 would result in executing this against the database:
 
-```
+```sql
 INSERT INTO users (name, email) VALUES ("John", "john@example.com"); DROP TABLE users; --")
 ```
 
@@ -169,14 +313,55 @@ Changing all of these doesn't add much code, but does make it a little bit harde
 
 You may have noticed in this code I've used a variety of HTTP request types - GET, POST, PUT, DELETE etc. There's no rules for these things, but if someone else (including future you) is going to have to maintain or use your API, it's a good idea to follow the conventions.
 
-<table><tbody><tr><td><strong>Situation</strong></td><td><strong>Request</strong></td><td><strong>URL</strong></td><td><strong>Return</strong></td></tr><tr><td>Add a record</td><td>POST</td><td>/users</td><td>record id</td></tr><tr><td>Replace a whole record</td><td>PUT</td><td>/users/:id</td><td>the whole record</td></tr><tr><td>Replace part of a record</td><td>PATCH</td><td>/users/:id</td><td>the whole record</td></tr><tr><td>Get all the records</td><td>GET</td><td>/users</td><td>all the records</td></tr><tr><td>Get a particular record</td><td>GET</td><td>/users/:id</td><td>that record</td></tr><tr><td>Delete a record</td><td>DELETE</td><td>/users/:id</td><td>nothing</td></tr></tbody></table>
+| Situation                     | Request | URL          | Return         |
+|----------------------------|---------|-------------|----------------|
+| Add a record               | POST    | /users      | record id      |
+| Replace a whole record     | PUT     | /users/:id  | the whole record |
+| Replace part of a record   | PATCH   | /users/:id  | the whole record |
+| Get all the records        | GET     | /users      | all the records |
+| Get a particular record    | GET     | /users/:id  | that record    |
+| Delete a record            | DELETE  | /users/:id  | nothing        |
 
 You might have noticed that I haven't done the PATCH - the difference between that and the PUT is that with the PATCH we don't supply the whole record, just the fields we want to change. I'm not going to worry about that for this API since our record is so small.
 
 But I also don't return the whole record after a PUT. Unfortunately, it means a second request - but there's probably not much of a performance hit since it will be in the cache.
 
-```
-// endpoint to update a user record in the users table in the database// expects a name, and email in the JSON body of the request// expects an id in the URLapp.put('/user/:id', (req, res) => {  const id = req.params.id;  const name = req.body.name;  const email = req.body.email;  const updateSql = `UPDATE users SET name = ?, email = ? WHERE rowid = ?`;  db.run(updateSql, [name, email, id], (err) => {    if (err) {      res.status(500).send(err.message);    } else {      const selectSql = `SELECT rowid, * FROM users WHERE rowid = ?`;      db.get(selectSql, [id], (err, row) => {        if (err) {          res.status(500).send(err.message);        } else {          res.status(200).json(row);        }      });    }  });});
+```js
+// Endpoint to update a user record in the users table in the database
+// Expects a name and email in the JSON body of the request
+// Expects an id in the URL
+app.put('/user/:id', (req, res) => {
+  const id = req.params.id;
+  const name = req.body.name;
+  const email = req.body.email;
+
+  const updateSql = `
+    UPDATE users
+    SET name = ?,
+        email = ?
+    WHERE rowid = ?
+  `;
+
+  db.run(updateSql, [name, email, id], (err) => {
+    if (err) {
+      res.status(500).send(err.message);
+    } else {
+      const selectSql = `
+        SELECT rowid, *
+        FROM users
+        WHERE rowid = ?
+      `;
+
+      db.get(selectSql, [id], (err, row) => {
+        if (err) {
+          res.status(500).send(err.message);
+        } else {
+          res.status(200).json(row);
+        }
+      });
+    }
+  });
+});
 ```
 
 [Link to the completed project on Github](https://github.com/IanKulin/sqlite-rest-demo/blob/main/app.js).

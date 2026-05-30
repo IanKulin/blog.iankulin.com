@@ -14,7 +14,7 @@ tags:
 
 I'm noodling around making sure I understand how Core Data works. Thought I'd start with a master/detail app with an array of structs, then replicate it in a Core Data implementation. I'm using an array of this struct for my data:
 
-```
+```swift
 struct Garden {
     var id = UUID()
     var name = ""
@@ -25,7 +25,7 @@ struct Garden {
 
 And I thought this code to load up some sample data was pretty sweet.
 
-```
+```swift
 Button("Sample Data") {
     var someGarden = Garden()
     someGarden.name = "White Lodge"
@@ -49,7 +49,7 @@ But, no. This is what happens:
 
 The reason I thought this was okay was that structs are value types in Swift. When I pass a struct in a function or method, it's actually a copy at the other end. I could prove this by mutating the array copy and checking the original.
 
-```
+```swift
 Button("Sample Data") {
     var someGarden = Garden()
     someGarden.name = "White Lodge"
@@ -63,7 +63,7 @@ Button("Sample Data") {
 
 Prints:
 
-```
+```bash
 Array: Mutated
 Local: White Lodge
 ```
@@ -84,7 +84,7 @@ I'm almost tempted to ask for help.
 
 Before one does that, it's always a good idea to boil things down to the essence of the problem. Playgrounds is an excellent tool for such an endeavor. I just need the simplest version of an array of structs. Here's what I came up with:
 
-```
+```swift
 import Foundation
 
 struct Animal {
@@ -104,7 +104,7 @@ print(animals)
 
 Produces the output:
 
-```
+```bash
 [Page_Contents.Animal(name: "Cat"), Page_Contents.Animal(name: "Dog")]
 ```
 
@@ -112,8 +112,21 @@ Grrr. It turns out Swift works perfectly.
 
 In the screenshot above, where I've broken on line 52, I couldn't actually see how to inspect the gardens array. Perhaps I'd be better with the classic print() debugging instead.
 
-```
-[DataDemo.Garden(id: 0725A8FC-D410-4A2C-B925-C34340F25B05, name: "White Lodge", address: "72 Anderson Street, \nRothwell QLD 4022", plants: []), DataDemo.Garden(id: CF30FA66-A2F2-44FB-A6E0-A22E93492578, name: "Gordon Terrace", address: "95 Learmouth Street\nTahara Vic 3301", plants: []), DataDemo.Garden(id: 0725A8FC-D410-4A2C-B925-C34340F25B05, name: "Powlett Cottage", address: "11 Bayfield Street\nWhite Beach Tas 7184", plants: []), DataDemo.Garden(id: 0725A8FC-D410-4A2C-B925-C34340F25B05, name: "Adams Garden", address: "71 Swanston Street\nKanya Vic 3381", plants: [])]
+```bash
+[
+    DataDemo.Garden(
+        id: 0725A8FC-D410-4A2C-B925-C34340F25B05, name: "White Lodge", address: "72 Anderson Street, \nRothwell QLD 4022", plants: []
+        ), 
+    DataDemo.Garden(
+        id: CF30FA66-A2F2-44FB-A6E0-A22E93492578, name: "Gordon Terrace", address: "95 Learmouth Street\nTahara Vic 3301", plants: []
+        ), 
+    DataDemo.Garden(
+        id: 0725A8FC-D410-4A2C-B925-C34340F25B05, name: "Powlett Cottage", address: "11 Bayfield Street\nWhite Beach Tas 7184", plants: []
+        ), 
+    DataDemo.Garden(
+        id: 0725A8FC-D410-4A2C-B925-C34340F25B05, name: "Adams Garden", address: "71 Swanston Street\nKanya Vic 3381", plants: []
+        )
+]
 ```
 
 Okay, so the bug I've been trying to fix, is not the bug at all. The array is working exactly as intended, it's my view that's the issue somehow.
@@ -127,7 +140,7 @@ And it's not just a general problem with the view - it's a problem with the view
 
 You can guess the rest, my ForEach is using the UUID:
 
-```
+```swift
 List {
     ForEach(gardens, id: \.id) {garden in
         HStack {

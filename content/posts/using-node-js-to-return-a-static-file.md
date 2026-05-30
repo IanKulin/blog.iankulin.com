@@ -37,17 +37,24 @@ Once you start writing backends in Node, you'll find yourself writing a lot of t
 
 I said it was trivial. Here's the code, then we'll discuss it:
 
-![const express = require('express');
+```js  
+const express = require('express');
+
 const app = express();
 const PORT = 3000;
-app.get("/api/gnp\_temp.txt", (req, res) => {
-res.status(200).sendFile(\_\_dirname + '/gnp\_temp.txt');
+
+app.get("/api/gnp_temp.txt", (req, res) => {
+  res.status(200).sendFile(__dirname + "/gnp_temp.txt");
 });
-app.listen(PORT, () => {console.log(\`Listening on port ${PORT}\`)});](/images/screen-shot-2023-06-25-at-8.45.20-am.png)
+
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
+});
+```
 
 PORT is the port we're listening on. In this case 3000. So if I open a URL on http://localhost:3000 that request will be handled by this code. The actual work is done in these lines:
 
-```
+```js
 app.get("/api/gnp_temp.txt", (req, res) => {
     res.status(200).sendFile(__dirname + '/gnp_temp.txt');
 });

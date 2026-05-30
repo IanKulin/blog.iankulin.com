@@ -40,7 +40,11 @@ He ends up recommending three tests using `fio`.
 
 I ran all of those tests once on each of my storage options and this is what we got.
 
-<table><tbody><tr><td></td><td>NVME</td><td>NAS/NFS/RAID 5</td><td>SDD/ZFS</td><td>External NVME RAID 1 ZFS</td></tr><tr><td>Single 4KiB random write process</td><td>430</td><td>17.9</td><td>80.6</td><td>75.7</td></tr><tr><td>16 parallel 64KiB random write processes</td><td>2328</td><td>4897</td><td>267</td><td>135</td></tr><tr><td>Single 1MiB random write process</td><td>651</td><td>70.7</td><td>379</td><td>195</td></tr></tbody></table>
+| Workload                                 | NVME | NAS/NFS/RAID 5 | SDD/ZFS | External NVME RAID 1 ZFS |
+| ---------------------------------------- | ---- | -------------- | ------- | ------------------------ |
+| Single 4KiB random write process         | 430  | 17.9           | 80.6    | 75.7                     |
+| 16 parallel 64KiB random write processes | 2328 | 4897           | 267     | 135                      |
+| Single 1MiB random write process         | 651  | 70.7           | 379     | 195                      |
 
 *Speeds in MB/s*
 

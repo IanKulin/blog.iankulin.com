@@ -96,7 +96,7 @@ When the user clicks on the button in a list item, the underlying data is amende
 
 Then, in that method, I have to search for the car the user intends to change, then change it.
 
-```
+```swift
 func increment(_ car: Car) -> Bool {
     let index = items.firstIndex(of: car)
     if let index = index {

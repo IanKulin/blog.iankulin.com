@@ -24,7 +24,7 @@ The dockerfile pulls in BusyBox then copies those files into the container. Note
 
 `EXPOSE 80` doesn't really do anything, it's pretty much just documentation. Then the `CMD` directive starts the server on port 80 and points to the static files that we copied in earlier.
 
-```
+```yaml
 FROM busybox:latest
 
 # Create the directory for the web content, and copy files in
@@ -40,13 +40,13 @@ CMD ["sh", "-c", "busybox httpd -f -p 80 -h /var/www/html"]
 
 To use this dockerfile to build our container, just docker build it and give it a tag:
 
-```
+```bash
 docker build -t ghcr.io/iankulin/example.com:latest .
 ```
 
 Then if we run it, and go to http://localhost, there's our website.
 
-```
+```bash
 docker run --name httpd-example.com -p 80:80 ghcr.io/iankulin/example.com:latest
 ```
 
@@ -56,7 +56,7 @@ docker run --name httpd-example.com -p 80:80 ghcr.io/iankulin/example.com:latest
 
 The `docker-compose.yml` file I use on the VPS host is slightly more complicated. We want each of the website containers to run in the same docker network as Nginx Proxy Manager - since docker networks have their own little dns server based on the container names, that's going to make hooking it up trivial.
 
-```
+```yaml
 services:
   example.com:
     container_name: httpd-example.com
@@ -74,13 +74,13 @@ networks:
 
 Since I develop on an M1 MacBook, but host all my workloads on regular AMD64 Linux LXC containers or VMs, I need to build for that:
 
-```
+```bash
 docker build --platform linux/amd64 -t ghcr.io/iankulin/example.com:latest .
 ```
 
 In actual fact, I could have built that way for the Mac as well - Docker Desktop would have just run it in a Linux VM with a small performance penalty which wouldn't be noticeable for my purposes. Once it's built, we push it up to the GitHub Container Registry.
 
-```
+```bash
 docker push ghcr.io/iankulin/example.com:latest
 ```
 

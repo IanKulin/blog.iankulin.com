@@ -30,7 +30,7 @@ const express = require('express');const app = express();const port = 3000;app.u
 
 #### Install the tools
 
-```
+```bash
 npm install --save-dev mocha chai supertest
 ```
 
@@ -40,7 +40,7 @@ The `--save-dev` bit installs them as a development dependencies - they will go 
 
 The testing system needs to be able to control the app a little bit - start it, stop it, and hook into it. To do that, we'll complicate our `app.listen` code a bit so that we've also got a server variable, then we'll export the app and server so out test files can import them. It will end up looking something like this:
 
-```
+```bash
 let server;if (process.env.NODE_ENV !== 'test') {  server = app.listen(3000, () => console.log(`Maths server is running at http://localhost:${port}`));}module.exports = { app, server };
 ```
 
@@ -54,8 +54,48 @@ Each test file will need to pull in our tools (supertest and chai) and the serve
 
 That's followed by one or more _test suites_; each test suite contains one or more _test cases_. This might be easier to explain if we look at a real file:
 
-```
-const supertest = require('supertest');const chai = require('chai');const { app, server } = require('../app');const expect = chai.expect;describe('POST / add', () => {    it('should return the correct sum', () => {        return supertest(app)            .post('/sum')            .send({ a: 5, b: 5 })            .expect(200)            .then(res => {                expect(res.body.sum).to.equal(10);            });    });    it('should return the correct sum with negative numbers', () => {        return supertest(app)            .post('/sum')            .send({ a: -5, b: -5 })            .expect(200)            .then(res => {                expect(res.body.sum).to.equal(-10);            });    });});describe('POST / multiply', () => {    it('should return the correct product', () => {        return supertest(app)            .post('/multiply')            .send({ a: 5, b: 5 })            .expect(200)            .then(res => {                expect(res.body.product).to.equal(25);            });    });});server.close();
+```js
+const supertest = require('supertest');
+const chai = require('chai');
+const { app, server } = require('../app');
+
+const expect = chai.expect;
+
+describe('POST /sum', () => {
+  it('should return the correct sum', () => {
+    return supertest(app)
+      .post('/sum')
+      .send({ a: 5, b: 5 })
+      .expect(200)
+      .then(res => {
+        expect(res.body.sum).to.equal(10);
+      });
+  });
+
+  it('should return the correct sum with negative numbers', () => {
+    return supertest(app)
+      .post('/sum')
+      .send({ a: -5, b: -5 })
+      .expect(200)
+      .then(res => {
+        expect(res.body.sum).to.equal(-10);
+      });
+  });
+});
+
+describe('POST /multiply', () => {
+  it('should return the correct product', () => {
+    return supertest(app)
+      .post('/multiply')
+      .send({ a: 5, b: 5 })
+      .expect(200)
+      .then(res => {
+        expect(res.body.product).to.equal(25);
+      });
+  });
+});
+
+server.close();
 ```
 
 This file contains two test suites - 'POST/add' and 'POST/multiply'. POST/add contains two test cases (each begins with `it<statement of what the test subject should do>`).
@@ -74,8 +114,26 @@ But we didn't do that, so we need npm to start it up for us. I know this seems l
 
 In the `package.json` file, we can add a section called scripts. If you started you project with `npm init` you may already have this section, if not, just add it in. It's common to have a `run` and a `test` script, and I often have one or two others. Here's the sort of thing you want.
 
-```
-{  "name": "test-demo",  "version": "0.1.0",  "description": "Simple Maths API",  "main": "app.js",  "scripts": {    "start": "node app.js",    "test": "mocha './test/*.test.js'"  },  "dependencies": {    "express": "^4.18.2"  },  "devDependencies": {    "chai": "^4.3.10",    "mocha": "^10.2.0",    "nyc": "^15.1.0",    "supertest": "^6.3.3"  }}
+```json
+{
+  "name": "test-demo",
+  "version": "0.1.0",
+  "description": "Simple Maths API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha './test/*.test.js'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "supertest": "^6.3.3"
+  }
+}
 ```
 
 `npm` does the magic to make the correct version of the library available when this script is run. The end effect of these is that you can type `npm test` at the command line, and mocha will run your tests. Let's try it would our tests.

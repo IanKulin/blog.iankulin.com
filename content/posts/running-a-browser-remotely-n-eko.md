@@ -22,8 +22,30 @@ I ended up going an even more modern way by using the virtual browser [N.eko](ht
 
 Docker is the easy way to spin it up. It is a little bit resource hungry - 1GB is specified for the lowest resolution, but [this guy](//www.youtube.com/watch?v=ISunHDh7WyQ) shows adding a swap file to make the memory up to that. My VPS has 512KB, but NVMe storage, so I tried without the swap file and could not get it to start, and then with the swap file and it worked fine. Here's my compose:
 
-```
-version: '3.5'services:  neko:    image: m1k1o/neko:chromium    restart: always    cap_add:      - SYS_ADMIN    ports:      - "8081:8080"      - "59000-59100:59000-59100/udp"    environment:      DISPLAY: :99.0      SCREEN_WIDTH: 1024      SCREEN_HEIGHT: 576      SCREEN_DEPTH: 16      NEKO_PASSWORD: neko      NEKO_ADMIN: admin      NEKO_BIND: :8080      NEKO_NAT1TO1: 100.138.120.102 
+```yaml
+version: '3.5'
+
+services:
+  neko:
+    image: m1k1o/neko:chromium
+    restart: always
+
+    cap_add:
+      - SYS_ADMIN
+
+    ports:
+      - "8081:8080"
+      - "59000-59100:59000-59100/udp"
+
+    environment:
+      DISPLAY: ":99.0"
+      SCREEN_WIDTH: 1024
+      SCREEN_HEIGHT: 576
+      SCREEN_DEPTH: 16
+      NEKO_PASSWORD: neko
+      NEKO_ADMIN: admin
+      NEKO_BIND: ":8080"
+      NEKO_NAT1TO1: 100.138.120.102
 ```
 
 The only thing in there that took a bit of sorting out was the last line - the NEKO\_ATA1TO1 environment variable. I didn't need that at all running on a remote VPS - it just all worked out of the box, but when I was trying on my development node at home (which is a close hardware/software mirror of the remote setup I need it for) I had less luck.

@@ -64,7 +64,7 @@ Note that once this config is activated, you won't be able to log in via ssh wit
 
 This config won't be active until the ssh daemon is restarted.
 
-```
+```bash
 sudo systemctl reload ssh
 ```
 

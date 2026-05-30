@@ -38,6 +38,6 @@ In Uptime Kuma, there's an option when setting up a new monitor for `Http(s) Key
 
 Testing the memory threshold for the screenshot above was fun:
 
-```
+```bash
 stress-ng --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/meminfo)k --vm-keep -m 1
 ```

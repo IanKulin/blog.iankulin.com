@@ -58,7 +58,7 @@ If we click on the share link, it looks like this:
 
 The little thumbnail and the word "View" at the top of the share sheet is from the preview parameter in our call.
 
-```
+```swift
 ShareLink(item: image, preview: SharePreview("View",image: image)) {
     Label("Share", systemImage:  "square.and.arrow.up")
 ```

@@ -19,7 +19,7 @@ The basic idea of ViewTube is that it's a self-hosted front end for YouTube, whi
 
 It only took five minutes to get it running to try out, and most of that was downloading the docker images. I just made a directory in a VM and dropped this docker compose into it.
 
-```
+```yaml
 version: '3'
 
 services:

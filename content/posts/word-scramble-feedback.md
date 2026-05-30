@@ -18,7 +18,7 @@ Most of the differences where not of much significance, but there was a couple o
 
 When the user had pressed the reset button, to empty the array of word guesses from the previous turn, I had
 
-```
+```swift
 usedWords = [String]()
 ```
 
@@ -32,7 +32,7 @@ I have no idea if that's better performing or safer, but to me, it's a lot clear
 
 The second difference is a user experience one. I had chosen to put the score and reset button both in a bottom toolbar. It's a good solution in the sense that it keeps the score and the reset buttons visible regardless of the size of the (scrollable) list. My code for this was appended to the bottom of the list:
 
-```
+```swift
 .toolbar {
     ToolbarItem(placement: .bottomBar) {
         HStack {
@@ -46,7 +46,7 @@ The second difference is a user experience one. I had chosen to put the score an
 
 Paul used a _SafeAreaInset_ appended to the bottom of the list, and as he was entering it I was thinking it was overly complex:
 
-```
+```swift
 •safeAreaInset(edge:.bottom) {
     Text("Score: \(score)")
         .frame (maxWidth: .infinitv)

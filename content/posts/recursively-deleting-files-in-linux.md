@@ -12,7 +12,7 @@ tags:
 
 I've been using this rsync command to backup files from my NAS to a USB drive. The --excludes are to avoid copying over some junk hidden files - some created by MacOS and some by Synology.
 
-```
+```bash
 sudo rsync -rvit --exclude '*@eaDir*' --exclude '.DS_Store' /volume1/media/ /volumeUSB1/usbshare1-2/media --del
 ```
 
@@ -22,12 +22,12 @@ If I wanted to delete them anyway, how would I go about it? They are scattered r
 
 I found a better solution on [AskUbuntu](https://askubuntu.com/questions/377438/how-can-i-recursively-delete-all-files-of-a-specific-extension-in-the-current-di), we can use the `find` command. This way it's easy to safely test your filename matching first before you destroy any files.
 
-```
+```bash
 find . -name ".DS_Store" -type f
 ```
 
 `-name` is clear enough, and the `-type f` option is just saying to look for files (rather than directories etc). The period at the start is the location, ie, start in the directory above so the current working directory is included. Once you've tuned this, you can add `-delete` to go nuclear.
 
-```
+```bash
 find . -name ".DS_Store" -type f -delete
 ```

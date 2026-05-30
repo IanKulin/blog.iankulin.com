@@ -52,7 +52,7 @@ Once that was done, tank appeared as storage in the list under my node. I moved 
 
 If we drop into the shell now, we can have a look at the datasets.
 
-```
+```bash
 root@pve-prod1:/# zfs list
 NAME                 USED  AVAIL     REFER  MOUNTPOINT
 tank                32.0G   199G       96K  /tank
@@ -65,13 +65,13 @@ root@pve-prod1:/#
 
 So my pool is `tank`, and there's been datasets created for each of the VM guests' disks. We can create a data set to start using the pool as well.
 
-```
+```bash
 zfs create tank/temp_set
 ```
 
 That creates a dataset called `temp_set` in the `tank` zpool. It will have been mounted for us too. Let's create a 1 GB file in there.
 
-```
+```bash
 root@pve-prod1:/# cd /tank/temp_set
 root@pve-prod1:/tank/temp_set# head -c 1G </dev/urandom >myfile
 root@pve-prod1:/tank/temp_set# ls
@@ -80,7 +80,7 @@ myfile
 
 Then if we list the datasets again.
 
-```
+```bash
 root@pve-prod1:/tank/temp_set# zfs list
 NAME                 USED  AVAIL     REFER  MOUNTPOINT
 tank                33.0G   198G      104K  /tank
@@ -94,7 +94,7 @@ root@pve-prod1:/tank/temp_set#
 
 Once you've created a dataset, you can just use it as a regular place to store stuff. ZFS will go on doing it's magic in the background to keep your data safe with copy-on-write and other magic. It's good ZFS practice to do a _scrub_ every now and then. This causes ZFS to use whatever information it's got to check the integrity of all your data.
 
-```
+```bash
 root@pve-prod1:/# zpool scrub tank
 
 root@pve-prod1:/# zpool status -v tank

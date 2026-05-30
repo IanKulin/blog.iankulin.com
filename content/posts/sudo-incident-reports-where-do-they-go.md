@@ -26,17 +26,17 @@ It does raise the question though - since it's my server, shouldn't I be getting
 
 Like everything, the answer is 'it's logged'. We can use the `journalctl` command to look at the logs, on this server that's been running less than 20 hours, there's already several thousand lines to look through if you just enter `journalctl`, so I'm going to just send all the high priority logs to a file:
 
-```
+```bash
 journalctl -p 3 > errors.txt
 ```
 
 Then since this just happened, it should be at the end of the file:
 
-```
+```bash
 tail errors.txt
 ```
 
-```
+```bash
 Jan 28 12:10:40 enrico-rider sshd[5168]: fatal: Timeout before authentication for 110.41.153.190 port 41826
 Jan 28 12:11:01 enrico-rider sshd[5170]: fatal: Timeout before authentication for 110.41.153.190 port 41856
 Jan 28 12:23:15 enrico-rider sshd[5222]: fatal: Timeout before authentication for 61.177.173.39 port 29421
@@ -59,7 +59,7 @@ Since the error message says I'm not in the sudoers file, I should just add my n
 
 The sudoers file is at `/etc/sudoers`, if you `cat` it, it has a heap of commented out stuff, but there's be a section that looks like this:
 
-```
+```bash
 # User privilege specification
 root	ALL=(ALL:ALL) ALL
 
@@ -78,13 +78,13 @@ That last line includes any files in the `/ect/sudoers.d` as part of this one, s
 
 But, we don't need to. The `%admin` and `%sudo` lines are granting these permissions to groups, so all we need to do is add `ian` to the `sudo` group and those permissions will be granted, safely.
 
-```
+```bash
 usermod -a -G sudo ian
 ```
 
 Success:
 
-```
+```bash
 ian@enrico-rider:~$ docker ps
 Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json": dial unix /var/run/docker.sock: connect: permission denied
 ian@enrico-rider:~$ sudo docker ps

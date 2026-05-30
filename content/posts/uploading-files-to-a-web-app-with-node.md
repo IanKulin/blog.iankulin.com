@@ -43,7 +43,7 @@ After a few seconds NPM should have created a couple of files (`package.json` & 
 
 This is going to be a server that responds to web requests, so we better write a skeleton for that. Create a file called `server.js` and add this code.
 
-```
+```js
 const express = require("express");
 const app = express();
 
@@ -60,7 +60,7 @@ app.listen(3000, () => {
 
 To start our server, we need to enter this in the terminal:
 
-```
+```js
 node server.js
 ```
 
@@ -78,7 +78,7 @@ To stop the server hold down control and press 'C' in the terminal window.
 
 Sending that 'hello world' text is cool and all, but ideally, our web server would serve a web page. Let's alter the default route of our server to do that:
 
-```
+```js
 const express = require("express");
 const app = express();
 
@@ -95,7 +95,7 @@ app.listen(3000, () => {
 
 This will send the file `index.html` instead of just the 'hello world' text from before. The `__dirname` part is just saying the index.html file will be in the same directory as our app. We better also create an `index.html` there so it can be sent.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -117,7 +117,7 @@ Now it does get a bit more complicated. Multer can use several different types o
 
 Then the Multer `upload` is used in the route for the web request that contains our file. Possibly this explanation is more complicated than the code. Let's have a look:
 
-```
+```js
 const express = require("express");
 const multer = require("multer");
 const fs = require("fs");
@@ -162,14 +162,14 @@ app.listen(3000, () => {
 
 We'll look at each of these new fragments one at a time:
 
-```
+```js
 const multer = require("multer");
 const fs = require("fs");
 ```
 
 This just pulls in two libraries - `multer` for handling the uploads, and `fs` which just has some file operations that we'll use for creating the directory for our data.
 
-```
+```js
 // set up storage engine for Multer
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -183,13 +183,13 @@ const storage = multer.diskStorage({
 
 As discussed before, we need to create a storage engine, and these can be of different types. This is the diskStorage type. We'll save the file to the ./data directory and use the original filename it had on the user's machine.
 
-```
+```js
 const upload = multer({ storage: storage });
 ```
 
 This creates the upload handler with that storage engine we created in the previous step.
 
-```
+```js
 // create the 'data' directory if it doesn't exist 
 if (!fs.existsSync("./data")) {
   fs.mkdirSync("./data");
@@ -198,7 +198,7 @@ if (!fs.existsSync("./data")) {
 
 We'd get an error if multer tries to write to the directory we told it to when we created the storage engine and the directory did not exist. So we check for that here and create it if needed.
 
-```
+```js
 // handle the upload route
 app.post("/upload", upload.single("file"), (req, res) => {
   if (!req.file) {
@@ -214,7 +214,7 @@ Here's our route handler. Any POST requests to hrrp://127.0.0.1:3000/upload will
 
 We need a way for the /upload route to be hit with the file data, and that's done by submitting a form with the file data. Let's edit out index.html to do that:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

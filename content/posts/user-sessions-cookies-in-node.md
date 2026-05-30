@@ -297,20 +297,67 @@ I will eventually have to start serving some actual HTML, but for this next step
 
 We'll do create first:
 
-```
-app.get("/create/:user/:password", (req, res) => {  const user = req.params.user;  const password = req.params.password;  const views = 0;  req.session.user = user;  user_views.push({ user, password, views });  writeUserViewFile();  res.send(`User ${user} created & logged in`);});
+```js
+app.get("/create/:user/:password", (req, res) => {
+  const user = req.params.user;
+  const password = req.params.password;
+  const views = 0;
+
+  req.session.user = user;
+
+  user_views.push({
+    user,
+    password,
+    views,
+  });
+
+  writeUserViewFile();
+
+  res.send(`User ${user} created & logged in`);
+});
 ```
 
 We should probably first check there's not an existing user with the same name to avoid having two users and the second user never being able to log in.
 
-```
-app.get("/create/:user/:password", (req, res) => {  if (findUser(req.params.user)) {    res.send(`User ${req.params.user} already exists`);    return;  }  const user = req.params.user;  const password = req.params.password;  const views = 0;  req.session.user = user;  user_views.push({ user, password, views });  writeUserViewFile();  res.send(`User ${user} created & logged in`);});
+```js
+app.get("/create/:user/:password", (req, res) => {
+  if (findUser(req.params.user)) {
+    res.send(`User ${req.params.user} already exists`);
+    return;
+  }
+
+  const user = req.params.user;
+  const password = req.params.password;
+  const views = 0;
+
+  req.session.user = user;
+
+  user_views.push({
+    user,
+    password,
+    views,
+  });
+
+  writeUserViewFile();
+
+  res.send(`User ${user} created & logged in`);
+});
 ```
 
 and logging in:
 
-```
-app.get("/login/:user/:password", (req, res) => {  const user = findUser(req.params.user);  if (user && user.password === req.params.password) {    req.session.user = req.params.user;    res.send(`User ${req.params.user} logged in`);    return;  } else {    res.send(`Incorrect username or password`);  }});
+```js
+app.get("/login/:user/:password", (req, res) => {
+  const user = findUser(req.params.user);
+
+  if (user && user.password === req.params.password) {
+    req.session.user = req.params.user;
+    res.send(`User ${req.params.user} logged in`);
+    return;
+  } else {
+    res.send(`Incorrect username or password`);
+  }
+});
 ```
 
 Although this is an improvement, clearly, it would a stretch to call this improved _security_. Here's a few things that are jumping out at me, and I'm sure there's some being missed:
@@ -354,8 +401,24 @@ To move the passwords out of the URLs, we'll present a simple forms to the user 
 
 And here's the endpoint it posts to:
 
-```
-app.post("/login", (req, res) => {  const user = findUser(req.body.username);  if (user && bcrypt.compareSync(req.body.password, user.hash)) {    req.session.user = req.body.username;    req.session.save((err) => {      if (err) {        res.send('Cookie saving error, <a href="/login">try again</a>`');      } else {        res.redirect("/");      }    });  } else {    res.send(`Incorrect username or password, <a href="/login">try again</a>`);  }});
+```js
+app.post("/login", (req, res) => {
+  const user = findUser(req.body.username);
+
+  if (user && bcrypt.compareSync(req.body.password, user.hash)) {
+    req.session.user = req.body.username;
+
+    req.session.save((err) => {
+      if (err) {
+        res.send('Cookie saving error, <a href="/login">try again</a>');
+      } else {
+        res.redirect("/");
+      }
+    });
+  } else {
+    res.send('Incorrect username or password, <a href="/login">try again</a>');
+  }
+});
 ```
 
 Normally express-session will deal with saving the session without us having to worry about, but I decided that a successful login should be followed to a re-direct to the view count page.
@@ -366,8 +429,35 @@ Apart from that, the changes are really just grabbing the user name and password
 
 The `/register` form is the same as the log in, but with a second password field and some client side scripting to check the two passwords are the same. Processing the new user is very similar to the previous `create` route.
 
-```
-app.post("/register", (req, res) => {  if (findUser(req.body.username)) {    res.send(`User ${req.body.username} already exists`);    return;  }  const user = req.body.username;  const hash = bcrypt.hashSync(req.body.password, saltRounds);  const views = 0;  req.session.user = user;  user_views.push({ user, hash, views });  writeUserViewFile();  req.session.save((err) => {    if (err) {      res.send('Cookie saving error, <a href="/login">try again</a>`');    } else {      res.redirect("/");    }  });});
+```js
+app.post("/register", (req, res) => {
+  if (findUser(req.body.username)) {
+    res.send(`User ${req.body.username} already exists`);
+    return;
+  }
+
+  const user = req.body.username;
+  const hash = bcrypt.hashSync(req.body.password, saltRounds);
+  const views = 0;
+
+  req.session.user = user;
+
+  user_views.push({
+    user,
+    hash,
+    views,
+  });
+
+  writeUserViewFile();
+
+  req.session.save((err) => {
+    if (err) {
+      res.send('Cookie saving error, <a href="/login">try again</a>');
+    } else {
+      res.redirect("/");
+    }
+  });
+});
 ```
 
 #### Sanitising inputs
@@ -380,8 +470,24 @@ user name - is stored in a json file, and is output to the user. In the future t
 
 Here's our `users_view.json`
 
-```
-[  {    "user": "user1",    "hash": "$2b$10$8Zf9LZWH78mWnSKjxKQxXe9TlPoqe7L3SOABcPHIUQ5Pq3jIbVQVm",    "views": 16  },  {    "user": "user2",    "hash": "$2b$10$f/QAQ7we6Hh/hTx35LjfGeYtCY8aRG3ZqbJZqhEZRDXUqxkKCgPhq",    "views": 14  },  {    "user": "user3",    "hash": "$2b$10$KBZe6orYpjG3JeIGhnLDCuyYQXxfVZYBjovGf3XIdU8rr6kXlNrLC",    "views": 1  }]
+```json
+[
+  {
+    "user": "user1",
+    "hash": "$2b$10$8Zf9LZWH78mWnSKjxKQxXe9TlPoqe7L3SOABcPHIUQ5Pq3jIbVQVm",
+    "views": 16
+  },
+  {
+    "user": "user2",
+    "hash": "$2b$10$f/QAQ7we6Hh/hTx35LjfGeYtCY8aRG3ZqbJZqhEZRDXUqxkKCgPhq",
+    "views": 14
+  },
+  {
+    "user": "user3",
+    "hash": "$2b$10$KBZe6orYpjG3JeIGhnLDCuyYQXxfVZYBjovGf3XIdU8rr6kXlNrLC",
+    "views": 1
+  }
+]
 ```
 
 The obvious attack here would be injection. For example a hacker might register with the user name:
@@ -402,8 +508,11 @@ It's not great to allow anyone on the internet to run code in our visitors' brow
 
 You should really use a library designed by someone who knows what they are doing, but I just wanted to do enough here to prompt you to think about. For that demo purpose, I'm going to replace all " < and > with \_
 
-```
-// sanitise a string by replacing all " < and > with _ (underscore) // and truncating it at 20 charactersfunction sanitise(str) {  return str.replace(/["<>]/g, "_").slice(0, 20);}
+```js
+// sanitise a string by replacing all " < and > with _ (underscore) // and truncating it at 20 characters
+function sanitise(str) {  
+  return str.replace(/["<>]/g, "_").slice(0, 20);
+}
 ```
 
 This is all a bit doge. If we are going to have rules like this (and the other rules we should have about min lengths) we should be implementing them in the browser and on the backend, and there should be helpful prompting to the users to enable them to understand and correct their inputs. As I mentioned earlier, this is just to get you to think about it.
@@ -412,14 +521,35 @@ This is all a bit doge. If we are going to have rules like this (and the other r
 
 In the list of four security improvements we wanted to make, the last one was to enforce HTTPS. There's two places to do this. One is that when we initialise our session at the top of the app, we can tell it we want 'secure' cookies. This setting means that cookies will not be sent over plain HTTP, but only the end-to-end encrypted HTTPS. Currently our cookies contain a user name:
 
-```
-{  "cookie": {    "originalMaxAge": null,    "expires": null,    "httpOnly": true,    "path": "/"  },  "__lastAccess": 1706315491081,  "user": "user1"}
+```json
+{
+  "cookie": {
+    "originalMaxAge": null,
+    "expires": null,
+    "httpOnly": true,
+    "path": "/"
+  },
+  "__lastAccess": 1706315491081,
+  "user": "user1"
+}
 ```
 
 Even though a user name isn't a lot of information, it could still be critical. If there was rumors about your company being acquired and a hacker leaked that j\_bezos had been looking at your view counts, it could have implications. To turn on secure cookies:
 
-```
-app.use(  session({    secret: sessionSecret,    resave: false,    saveUninitialized: true,    store: new FileStore(),    name: cookie_name,    cookie: {      secure: true,      httpOnly: true,    },  }));
+```js
+app.use(
+  session({
+    secret: sessionSecret,
+    resave: false,
+    saveUninitialized: true,
+    store: new FileStore(),
+    name: cookie_name,
+    cookie: {
+      secure: true,
+      httpOnly: true,
+    },
+  })
+);
 ```
 
 Note that your infrastructure needs to support HTTPS for this to be useful - if the cookies are not sent, this particular app is rendered useless.
@@ -428,8 +558,35 @@ But we want to enforce HTTPS anyway, because a bigger problem is that if we don'
 
 I generally do this by running all web services behind NGINX as a proxy. Then the NGINX configs can be set to redirect all HTTP requests to HTTPS, and valid requests can be passed off to your app. Here's the sort of thing you might have in a config.
 
-```
-server {    listen 80;    server_name viewcount.example.com;    return 301 https://$host$request_uri;}server {    listen 443 ssl;    server_name viewcount.example.com;    # SSL certificate configuration    ssl_certificate /path/to/your/certificate.crt;    ssl_certificate_key /path/to/your/private-key.key;    # Additional SSL configuration, such as preferred protocols and ciphers, can be added here    location / {        # Your application configuration goes here        # Proxy pass to your Node.js or other application server        # Example for proxying to a Node.js server running on localhost:3000        proxy_pass http://localhost:3000;        proxy_http_version 1.1;        proxy_set_header Upgrade $http_upgrade;        proxy_set_header Connection 'upgrade';        proxy_set_header Host $host;        proxy_cache_bypass $http_upgrade;    }}
+```bash
+server {
+    listen 80;
+    server_name viewcount.example.com;
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name viewcount.example.com;
+
+    # SSL certificate configuration
+    ssl_certificate /path/to/your/certificate.crt;
+    ssl_certificate_key /path/to/your/private-key.key;
+
+    # Additional SSL configuration (preferred protocols/ciphers) can be added here
+
+    location / {
+        # Proxy pass to Node.js or other backend (e.g. localhost:3000)
+        proxy_pass http://localhost:3000;
+
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
 ```
 
 There are other security actions that can be taken at the NGINX level - things like rate limiting, blocking particular IP ranges, and access logging - all of which can be handy for protecting your endpoint from bad actors.

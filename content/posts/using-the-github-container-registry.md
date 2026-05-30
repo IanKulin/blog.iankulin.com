@@ -43,7 +43,7 @@ Once that's completed, you'll be shown a list of your existing PATs, plus the ne
 
 Before we can push an image to the GitHub Container Registry (ghcr.io) we'll need to use this PAT to log in. I'm using the command:
 
-```
+```bash
 docker login --username <github username> --password <PAT we just generated> ghcr.io
 ```
 
@@ -57,7 +57,7 @@ Note that you can be logged into several container registries at once. Logging i
 
 Once that's done, you can push images just as you are used to with DockerHub, with the exception that you need to specify the container registry as part of your image name. It's possible to do that with `hub.docker.com` as well, but Docker privileged themselves to make it a default. To use a different registry (in our case ghcr.io) it needs to be included in the image name, along with your GitHub use name.
 
-```
+```bash
 docker push ghcr.io/<github user name>/<container name>:<tag>
 ```
 
@@ -71,7 +71,7 @@ If you head to GitHub, and go into "Packages" instead of "Repositories", your co
 
 Pulling the container is going to be even simpler, log in to the registry with the same command we used above, then just docker pull with the registry in the container name - exactly as suggested in the package page on GitHub above.
 
-```
+```bash
 docker pull ghcr.io/<github user name>/<container name>:<tag>
 ```
 

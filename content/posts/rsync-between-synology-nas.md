@@ -35,19 +35,19 @@ If the issue is that it asked for a password, that just means you need to instal
 
 Anything to do with ssh is stored in a hidden directory, `.ssh` in a user's home directory. For example you can check you've got public keys with:
 
-```
+```bash
 ls -la ~/.ssh/id_rsa.pub
 ```
 
 These are the keys you want to add to the remote NASs authorised keys, so we'll use ssh (with a password) to add them to the end of that file:
 
-```
+```bash
 ssh <user>@<remote NAS address> 'cat >> ~/.ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 ```
 
 You need to substitute your remote NASs username and address, so mayby it would look like this:
 
-```
+```bash
 ssh nas1_admin@83.78.2.105 'cat >> ~/.ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 ```
 
@@ -79,7 +79,7 @@ Leave the port as 22 and don't bother with the other settings, but do hit `Apply
 
 We're now at the stage where you should be able to ssh into the remote NAS from the local one without being asked for a password, and rsync is turned on both ends, so in theory, you should be able to do something like this:
 
-```
+```bash
 rsync -rvitn /volume1/ nas1_admin@104.43.22.181:/volume1
 ```
 
@@ -97,7 +97,7 @@ In theory once you're at this point, everything should work. But here's a couple
 
 Synology has a bunch of hidden directories with metadata stuff. My advice is don't mess with them, but also don't sync them over either. Tell rsync to ignore them. Same for the recycle bin.
 
-```
+```bash
 rsync -rvitn --exclude '*@eaDir*' --exclude '#recycle*' /volume1/ nas1_admin@104.43.22.181:/volume1
 ```
 
@@ -105,7 +105,7 @@ rsync -rvitn --exclude '*@eaDir*' --exclude '#recycle*' /volume1/ nas1_admin@104
 
 The user that you're ssh'ing with needs to have permissions to all the places you are rsync'ing files to. Even though I've only ever had one user for each of my Synology NAS's, and everything has been done by that one user either through the web GUI or command line, the files and directories on my NAS have a mixture of owners (my user and root) and permissions. Someone smarter than me could probably figure out why - and if your NAS has to include files from multiple users etc, you are going to need to do that. Because I like sledgehammers, all I did was ssh into the remote and:
 
-```
+```bash
 sudo chown -R nas1_admin:users /volume1/media
 sudo chmod -R 775 /volume1/media
 ```
@@ -116,7 +116,7 @@ If I saturate the downlink at my remote site while I'm rsync-ing a bunch of file
 
 rsync has a flag for that. If we want to limit the transfer bandwidth to 500KB it could look like:
 
-```
+```bash
 rsync -rvitn --bwlimit=500 --exclude '*@eaDir*' --exclude '#recycle*' /volume1/ nas1_admin@104.43.22.181:/volume1
 ```
 
@@ -124,7 +124,7 @@ rsync -rvitn --bwlimit=500 --exclude '*@eaDir*' --exclude '#recycle*' /volume1/ 
 
 If you only want to sync the files one way from your local to remote, then we can add a flag that will delete any files on the remote machine that are not present on the local one. Obviously use with care, and run with the -n flag first to see what's going to get chopped.
 
-```
+```bash
 rsync -rvitn --bwlimit=500 --exclude '*@eaDir*' --exclude '#recycle*' /volume1/ nas1_admin@104.43.22.181:/volume1 --del
 ```
 
@@ -136,7 +136,7 @@ Eventually though, it will be so routine and error free you'd rather do somethin
 
 On the local NAS, create a file called `sync-media.sh`
 
-```
+```bash
 #!/bin/bash
 
 nohup rsync -rvitn --bwlimit=500 --exclude '*@eaDir*' --exclude '#recycle*' /volume1/ nas1_admin@104.43.22.181:/volume1 > sync_media.log 2>&1 &
@@ -144,7 +144,7 @@ nohup rsync -rvitn --bwlimit=500 --exclude '*@eaDir*' --exclude '#recycle*' /vol
 
 Make it executable:
 
-```
+```bash
 chmod +x sync_media.sh
 ```
 

@@ -36,7 +36,7 @@ That's what `map` does - it works through a collection, and uses the code in a c
 
 Let me try to make it clearer with a simpler example. Time to open a Playground. Let's map an array of integers into an array of strings:
 
-```
+```swift
 let intArray = [0, 55, 21, 13]
 var stringArray = [String]()
 
@@ -48,7 +48,7 @@ print(stringArray)
 
 $0 is a stand in for each element. This is a common Swift feature but this variable can be named for clarity if desired:
 
-```
+```swift
 let intArray = [0, 55, 21, 13]
 var stringArray = [String]()
 
@@ -60,7 +60,7 @@ print(stringArray)
 
 If we didn't have map, we could do it the long way, something like this.
 
-```
+```swift
 let intArray = [0, 55, 21, 13]
 var stringArray = [String]()
 
@@ -74,7 +74,7 @@ print(stringArray)
 
 or, going back even further in time:
 
-```
+```swift
 let intArray = [0, 55, 21, 13]
 var stringArray = [String]()
 

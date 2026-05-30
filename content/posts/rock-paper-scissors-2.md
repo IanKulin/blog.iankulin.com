@@ -31,7 +31,7 @@ We can't always help what a client wants. Deal with it.
 
 _Having the didUserWin and didComputerWin funcs is a cop out – that should probably be a single function returning a win/lose/dra_w
 
-```
+```swift
 enum GameResult {
     case win
     case loss
@@ -66,7 +66,7 @@ _duplicating the last part of the view but making the elements .hidden() to keep
 
 This was an issue - not just because of the mess of code, but because (according to Paul) it's a workload issue - the view managing part of SwiftUI has to keep creating and destroying parts of our view instead of recycling them. In an earlier lesson, he encouraged the use of the ternary operator in modifiers to avoid this - but .hidden() doesn't have any arguments. Here's the sort of code I'm talking about - I've got this sort of thing several places.
 
-```
+```swift
 if revealResult {
     Text(computerSelection.rawValue)
         .font(.system(size: 200))
@@ -101,7 +101,7 @@ I was surprised when googling something like "swiftui view visibility not hidden
 
 Within was my answer - most views have an .opacity() modifier. With that, the code above becomes:
 
-```
+```swift
 Group {
     Text(computerSelection.rawValue)
         .font(.system(size: 200))

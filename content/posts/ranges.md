@@ -13,7 +13,7 @@ tags:
 
 I wondered aloud, in a [previous post](/project-4-challenges/), about the differences in writing a range as
 
-```
+```swift
         ForEach(1..<21) {
             Text(String($0))
         }
@@ -21,7 +21,7 @@ I wondered aloud, in a [previous post](/project-4-challenges/), about the differ
 
 versus
 
-```
+```swift
         ForEach(1...20) {
             Text(String($0))
         }

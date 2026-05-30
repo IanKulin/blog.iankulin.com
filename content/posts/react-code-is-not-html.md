@@ -13,7 +13,7 @@ tags:
 
 I was looking at this ugly code in a React app:
 
-```
+```html
 <div style={{overflow: 'scroll', border: '1px solid black', height: '600px' }}>
   { props.children }
 </div>

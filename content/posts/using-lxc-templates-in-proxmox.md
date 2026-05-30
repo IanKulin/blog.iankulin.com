@@ -19,7 +19,12 @@ The simplest way to think of a container template is that it's just a one-for-on
 
 If we create new containers from a template, all the software and configuration that was in the template will be present in the new container. This is obviously the desired behaviour, but it presents some issues - we probably don't want multiple containers with the same host name, or MAC address, or SSH host keys. Some of these issues Proxmox will sort out for us, some we'll need to tidy up manually.
 
-<table><tbody><tr><td><strong>Issue</strong></td><td><strong>Solution</strong></td></tr><tr><td>Host name</td><td>When you 'clone' the template in Proxmox, it will ask you the new host name.</td></tr><tr><td>MAC address</td><td>Proxmox just creates a new one with no input needed from you.</td></tr><tr><td>Machine ID</td><td>If you truncate it in the template before you save it as a template, a new one will be created then the container is.</td></tr><tr><td>SSH host keys</td><td>Manually delete them in the template before saving the template, then manually re-create them in the new container once it's booted up.</td></tr></tbody></table>
+| Issue            | Solution                                                                                                                                 |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Host name        | When you "clone" the template in Proxmox, it will ask you the new host name.                                                           |
+| MAC address      | Proxmox just creates a new one with no input needed from you.                                                                            |
+| Machine ID       | If you truncate it in the template before you save it as a template, a new one will be created when the container is started.            |
+| SSH host keys    | Manually delete them in the template before saving it as a template, then manually re-create them in the new container once it's booted. |
 
 ### Making the template
 

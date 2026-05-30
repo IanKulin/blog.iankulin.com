@@ -29,7 +29,7 @@ Inside each of those _volumes_ are any _shares_ you've created. At the moment I 
 
 rsync has a cool feature whereby you can do a 'dry run' where it goes through the motions of the command you've given it, but doesn't change any files. If you combine this with the verbose output, you can clearly see what it's going to do before you let it start changing things. That's an especially good idea when you're dealing with large amounts of data, so my first pass at this included the -n option.
 
-```
+```bash
 rsync -avin /volume1/media/video/Movies/ /volumeUSB1/usbshare/media/video/Movies --del
 ```
 
@@ -37,7 +37,7 @@ The situation with these two lots of data is that I've copied my media off the U
 
 I noticed a lot of them included this weird directory that I didn't recognise.
 
-```
+```bash
 >f+++++++++ @eaDir/Tora Tora Tora (1970 PG)@SynoEAStream
 >f+++++++++ @eaDir/Tora Tora Tora (1970 PG)@SynoResource
 ```
@@ -46,6 +46,6 @@ I've since learned it might be extended attributes, people started noticing it a
 
 I'll tackle removing them all and trying to prevent their reoccurence another day, but for the moment, I'll just tell rsync to ignore them using the `--exclude` option.
 
-```
+```bash
 rsync -avin --exclude '*@eaDir*' /volume1/media/video/Movies/ /volumeUSB1/usbshare/media/video/Movies --del
 ```

@@ -24,14 +24,14 @@ If you're not logged in as root (that should be turned off) you'll need to run a
 
 Edit `/etc/pam.d/sshd` to add these lines to the bottom:
 
-```
+```bash
 # at the end of the file
 session optional pam_exec.so /usr/bin/ntfy-ssh-login.sh
 ```
 
 Then create the file `/usr/bin/ntfy-ssh-login.sh`
 
-```
+```bash
 #!/bin/bash
 if [ "${PAM_TYPE}" = "open_session" ]; then
   curl \
@@ -46,13 +46,13 @@ but replace `your-unique-notification-string` with whatever string you're monito
 
 We need to make this executable:
 
-```
+```bash
 chmod +x /usr/bin/ntfy-ssh-login.sh
 ```
 
 And restart the ssh daemon
 
-```
+```bash
 sudo systemctl restart sshd
 ```
 

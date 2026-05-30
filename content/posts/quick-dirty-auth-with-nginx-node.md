@@ -1,5 +1,5 @@
 ---
-title: "Quick && Dirty auth with nginx & Node"
+title: "Quick & Dirty auth with nginx & Node"
 date: '2024-02-23'
 slug: quick-dirty-auth-with-nginx-node
 aliases:

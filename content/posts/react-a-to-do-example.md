@@ -42,14 +42,48 @@ I ended up with three components - the App (every React app has one), the TodoLi
 
 I claimed earlier that a component was it's HTML and Javascript wrapped up together which, while a massive simpliciation, is a good place to start thinking about it. Every component is just a function that returns a bunch of (templated) HTML. We'll start off by developing our AddTodoForm. At it's simplest, it could be something like this:
 
-```
-function AddTodoForm() {    return (        <form>            <input                type="text"                name="todo_item"                id="todo"                required            />            <button type="submit">Add</button>        </form>    );}export default AddTodoForm;
+```js
+function AddTodoForm() {
+    return (
+        <form>
+            <input
+                type="text"
+                name="todo_item"
+                id="todo"
+                required
+            />
+            <button type="submit">Add</button>
+        </form>
+    );
+}
+
+export default AddTodoForm;
 ```
 
 But this little form component can't really talk to the world, where as we need it to add a todo item. First, let's track any changes to the text field.
 
-```
-import { useState } from 'react';function AddTodoForm(props) {    const [value, setValue] = useState('');    return (        <form onSubmit={handleSubmit}>            <input                type="text"                name="todo_item"                id="todo"                value={value}                onChange={e => setValue(e.target.value)}                required            />            <button type="submit">Add</button>        </form>    );}export default AddTodoForm;
+```js
+import { useState } from 'react';
+
+function AddTodoForm(props) {
+    const [value, setValue] = useState('');
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                name="todo_item"
+                id="todo"
+                value={value}
+                onChange={e => setValue(e.target.value)}
+                required
+            />
+            <button type="submit">Add</button>
+        </form>
+    );
+}
+
+export default AddTodoForm;
 ```
 
 This is an example of the very explicit management of state I was talking about earlier.
@@ -66,16 +100,37 @@ So that's our value sorted, but of course we need to add it to our data model. T
 
 We'll start at the top, here's the relevant code from App.jsx - our App component.
 
-```
- const [todos, setTodos] = useState([]);  const addTodo = (newTodo) => {    fetch('http://localhost:3000/todos', {      method: 'POST',      headers: {        'Content-Type': 'application/json',      },      body: JSON.stringify(newTodo),    })      .then(response => response.json())      .then(data => {        // Update the todos state with the new todo        setTodos([...todos, data]);      });  };
+```js
+const [todos, setTodos] = useState([]);
+
+const addTodo = (newTodo) => {
+    fetch('http://localhost:3000/todos', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newTodo),
+    })
+        .then(response => response.json())
+        .then(data => {
+            // Update the todos state with the new todo
+            setTodos([...todos, data]);
+        });
+};
 ```
 
 This useState hook should be starting to look familiar. We read the todos from `todos`, and write to them with `setTodos()`
 
 `addTodo` does the actual work of saving it to the database (via our REST API) then creates a new `todos` array by adding our new one to the end. But we need to pass this down into our AddTodoForm. Here's the main part of the App that returns out HTML, in this case that's the list of todos and our form:
 
-```
-  return (    <main>      <h1>To do</h1>      <TodoList todos={todos} onDeleteTodo={deleteTodo}/>      <AddTodoForm onAddTodo={addTodo} />    </main>  )
+```js
+return (
+    <main>
+        <h1>To do</h1>
+        <TodoList todos={todos} onDeleteTodo={deleteTodo} />
+        <AddTodoForm onAddTodo={addTodo} />
+    </main>
+);
 ```
 
 You can see here that the todos array and a function _deleteTodo_() are passed into the the TodoList component, and that our _addTodo()_ function is passed to the AddTodoForm.
@@ -84,7 +139,7 @@ In React, things like this that are passed into a component are passed as a sing
 
 There is a lighter partial solution to adding types to props so that the linter can call out any issues - this is the PropTypes library - once it's installed, we import it with `import PropTypes from 'prop-types';` then we can add a definition for the props at the bottom of the file. For our AddTodoForm, this would look like this:
 
-```
+```js
 AddTodoForm.propTypes = {    onAddTodo: PropTypes.func.isRequired,};
 ```
 
@@ -92,16 +147,66 @@ Now the linter will prevent us from using anything other than props.onAddToDo, a
 
 Anyway, the props are passed in and we can extract the function from it to use.
 
-```
-import { useState } from 'react';function AddTodoForm(props) {    const [value, setValue] = useState('');    const handleSubmit = (event) => {        event.preventDefault();        if (!value) return;        props.onAddTodo({ todo_item: value });        setValue('');    };    return (        <form onSubmit={handleSubmit}>            <input                type="text"                name="todo_item"                id="todo"                value={value}                onChange={e => setValue(e.target.value)}                required            />            <button type="submit">Add</button>        </form>    );}export default AddTodoForm;
+```js
+import { useState } from 'react';
+
+function AddTodoForm(props) {
+    const [value, setValue] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (!value) return;
+
+        props.onAddTodo({ todo_item: value });
+        setValue('');
+    };
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                name="todo_item"
+                id="todo"
+                value={value}
+                onChange={e => setValue(e.target.value)}
+                required
+            />
+            <button type="submit">Add</button>
+        </form>
+    );
+}
+
+export default AddTodoForm;
 ```
 
 The arrangement of elements in this file will start to become familiar - there's often some state at the top with the useState() hook, then a few handler functions, then our final return of the 'HTML'.
 
 Our TodoList is a bit simpler in that it doesn't have any handlers, but a better illustration of using PropTypes since it has access to the global state of the todos.
 
-```
-import PropTypes from 'prop-types';function TodoList(props) {    return (        <ul>            {props.todos.map(todo => (                <li key={todo.id}>                    {todo.todo_item}                    <button onClick={() => props.onDeleteTodo(todo.id)}>                        Done                    </button>                </li>            ))}        </ul>    )}TodoList.propTypes = {    todos: PropTypes.array.isRequired,    onDeleteTodo: PropTypes.func.isRequired};export default TodoList;
+```js
+import PropTypes from 'prop-types';
+
+function TodoList(props) {
+    return (
+        <ul>
+            {props.todos.map((todo) => (
+                <li key={todo.id}>
+                    {todo.todo_item}
+                    <button onClick={() => props.onDeleteTodo(todo.id)}>
+                        Done
+                    </button>
+                </li>
+            ))}
+        </ul>
+    );
+}
+
+TodoList.propTypes = {
+    todos: PropTypes.array.isRequired,
+    onDeleteTodo: PropTypes.func.isRequired,
+};
+
+export default TodoList;
 ```
 
 ### Conclusion

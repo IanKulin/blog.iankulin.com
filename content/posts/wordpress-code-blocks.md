@@ -11,6 +11,8 @@ tags:
   - wordpress
 ---
 
+_edit from 2026 - since I'm no longer hosting this page on wordpress - the examples are meaningless. Best skip it._
+
 Non-iOS post warning :- )
 
 I'm not really happy with the way I'm sharing code in these posts. I started off with the regular Wordpress code blocks:

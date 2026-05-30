@@ -24,14 +24,17 @@ Those optionals, type inference, type safety, and exhaustive switch/match statem
 
 Blocks evaluating to a result is cute. This is allowed:
 
+```swift
 let x = {
     let y = 1; // first statement
     let z = 2; // second statement
     y + z // this is the \*tail\* - what the whole block will evaluate to
 };
+```
 
 Notice the missing semicolon - that's sugar for the 'return' that would be otherwise needed. Perhaps only from habit, I do miss the semicolons when writing Swift. I'm sure I'll get used to it, but currently I start to feel uncomfortable when spreading an expression out over multiple lines (for clarity) and just expecting LVM to figure it all out.
 
+```swift
             Button("Toggle Light", action: {
                 light.toggle()}
             )
@@ -42,6 +45,7 @@ Notice the missing semicolon - that's sugar for the 'return' that would be other
             .cornerRadius(10)
             .padding()
             Spacer()
+```
 
 Underscore as a "throwaway" value turns up, but in the guise of default for the match statement.
 

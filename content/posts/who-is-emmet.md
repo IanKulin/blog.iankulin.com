@@ -30,7 +30,7 @@ The same trick works for an id - Enter
 
 Would you like a div, with a heading inside? The greater than sign nests elements, so `div>h4` becomes:
 
-```
+```html
 <div>
   <h4></h4>
 <div>
@@ -38,7 +38,7 @@ Would you like a div, with a heading inside? The greater than sign nests element
 
 If you'd like some text up in there, try div>h4{Hello world}
 
-```
+```html
 <div>
  <h4>Hello world</h4>
 </div>
@@ -46,7 +46,7 @@ If you'd like some text up in there, try div>h4{Hello world}
 
 You can repeat things numbers of times, so to create a list with three items, try `ul>li*3` to get:
 
-```
+```html
 <ul>
  <li></li>
  <li></li>

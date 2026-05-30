@@ -29,7 +29,7 @@ It turns out that [Tailscale keys expire](https://tailscale.com/kb/1028/key-expi
 
 My first idea was to use the Tailscale CLI to do the re-authentication on each machine _before_ it expires. And handily, there is a command for this:
 
-```
+```bash
 tailscale up --force-reauth
 ```
 

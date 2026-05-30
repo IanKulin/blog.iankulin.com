@@ -14,7 +14,7 @@ A couple of times in the App Development seminar I went to, we used system symbo
 
 First, here's how they look in code - this is from the default Hello World app.
 
-```
+```swift
 struct ContentView: View {
     var body: some View {
         VStack {

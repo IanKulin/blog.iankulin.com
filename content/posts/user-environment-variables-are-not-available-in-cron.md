@@ -31,7 +31,7 @@ I could see them, but it didn't include the environment variable passed in from 
 
 To get around this, I now save the environment variable I'm interested in to a file in the script that runs at the entry point:
 
-```
+```bash
 # Save the environment variable IMAGE_URL into
 # a file for later use in the cron script
 
@@ -40,7 +40,7 @@ env | grep IMAGE_URL > image_url.txt
 
 Then in my script that is run by cron, I reconstitute it from the file:
 
-```
+```bash
 # Read the file saved by the entry point script
 # and extract the environment variable
 

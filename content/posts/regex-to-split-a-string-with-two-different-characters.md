@@ -23,7 +23,7 @@ Its super easy to combine values together into a string, but substantially more 
 
 There is a String.split() function that takes a separator and returns an array of the strings split on that. That could work in this case, but I'd have to split a couple of times since I'm using two different separators. Swift 5.7 released in 2022 introduced a regex (regular expression) type, and this can be used as the argument for the split() method. Sounds perfect. Here's the code that I ended up with:
 
-```
+```swift
 let myString = "Some behaviour (expectation)"
 let regex = /\ \(|\)/
 
@@ -37,7 +37,7 @@ I think it's fair to say that regex is powerful, but not intuitive. There are ma
 
 The first thing is that the expression is enclosed in two forward slashes. So if we just wanted to split on lower case 'o' the expression would be `/o/`
 
-```
+```swift
 let myString = "Some behaviour (expectation)"
 let regex = /o/
 
@@ -49,7 +49,7 @@ print(splits)
 
 But we want to split on an opening bracket. You might think `/)/` would work, but brackets are part of the regex syntax, so they have to be escaped. This is done with a back slash.
 
-```
+```swift
 let myString = "Some behaviour (expectation)"
 let regex = /\(/
 
@@ -61,7 +61,7 @@ print(splits)
 
 I don't want that space at the end of "Some behaviour " so I'll add that to the regex. Spaces are not allowed at the start of a regex, so that needs to be escaped too.
 
-```
+```swift
 let myString = "Some behaviour (expectation)"
 let regex = /\ \(/
 
@@ -73,7 +73,7 @@ print(splits)
 
 To match the end bracket, we'll need to add an OR to our expression. In regex, this is a | (pipe), and of course we need to escape the bracket again.
 
-```
+```swift
 let myString = "Some behaviour (expectation)"
 let regex = /\ \(|\)/
 

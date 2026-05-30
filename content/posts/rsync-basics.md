@@ -28,7 +28,7 @@ I never fail to be amazed at the substantial but unassuming command line tools f
 
 Let's say I've got two directories in my home folder called localdir and remotedir. localdir has some files in it and I want them copied to the remotedir. `rsync` can do that for us with this command. The `-a` flag does a few things, including recursing into directories and preserving some of the file attributes when it copies files. I found if I didn't do this, and just used -`r` for the recursion, rsync's system for checking for changes didn't work.
 
-```
+```bash
 rsync -a localdir/ remotedir
 ```
 
@@ -66,13 +66,13 @@ First, the machine where the rsync is being executed must have ssh access to the
 
 The second part is to add an ssh like address to the remote directory. So instead of just
 
-```
+```bash
 rsync -avi localdir/ remotedir --del
 ```
 
 it will be
 
-```
+```bash
 rsync -avi localdir/ ian@192.168.100.33:remotedir --del
 ```
 

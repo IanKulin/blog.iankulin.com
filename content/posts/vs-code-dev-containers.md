@@ -48,7 +48,7 @@ The rest of this post will focus on the basics of working in a Dev Container. Th
 
 After you've installed the VS Code [extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers), and set up your local Docker environment, you're going to need a Docker container to work in. There's a [big list of existing containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) that cover most scenarios, but I prefer to roll my own. This is achieved by writing a Dockerfile.
 
-```
+```yaml
 FROM node:24-bookworm
 
 # Use non-root user for development
@@ -71,7 +71,7 @@ The Dockerfile describes the system that we'll be working in when we're working 
 
 Next we need to tell VS Code how to work in the container we've specified.
 
-```
+```json
 {
   "name": "Node.js Dev Container",
   "build": {
@@ -134,7 +134,7 @@ Extensions added this way will be the same for anyone who uses our dev container
 
 Let's add a couple of extensions.
 
-```
+```json
 {
   "name": "Node.js Dev Container",
   "build": {

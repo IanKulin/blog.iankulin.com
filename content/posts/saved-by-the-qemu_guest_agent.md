@@ -15,7 +15,7 @@ Literally an hour after I wrote the post [about installing the qemu guest agent]
 
 I'd decided to add myself to the sudoers file. Since the last line in that file is a directive to include all the files in the /etc/sudoers.d directory, the accepted way to do that for local changes is to create a file in that directory with the necessary commands.
 
-```
+```bash
 # User privilege specification
 root	ALL=(ALL:ALL) ALL
 

@@ -53,7 +53,7 @@ Normally you can just click on 'tags' for an image on Docker Hub, but since this
 
 The extra step we'll need to go through this time is to decide what level of version we want to specify in our docker-compose. I'll stick to specifying to the minor version so my new `docker-compose.yml` will be:
 
-```
+```yaml
 version: '3'
 
 networks:

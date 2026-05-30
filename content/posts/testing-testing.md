@@ -31,7 +31,7 @@ If you click into the `<app name>Test.swift` file, you'll see a couple of method
 
 Before we can write any tests, we need to import any modules with the code we want to test. In my case, I want to test the function stripSpaces() which is in the ContentView of my app called CodeTrimmer. So in the top of the CodeTrimmerTests.swift file, under the other import, I add the import:
 
-```
+```swift
 import XCTest
 @testable import CodeTrimmer
 ```

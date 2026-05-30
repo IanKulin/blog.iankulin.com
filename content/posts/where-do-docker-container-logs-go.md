@@ -22,13 +22,13 @@ The first sign of a problem is that the container is not running after I've laun
 
 To cat the log for the exited container is simple. Note that the (randomly provided) name for the container is `eager_haslett` so to see the log we enter:
 
-```
+```bash
 sudo docker logs eager_haslett
 ```
 
 The log output was:
 
-```
+```bash
 panic: While parsing config: invalid character '\n' in string literal
 
 goroutine 1 [running]:

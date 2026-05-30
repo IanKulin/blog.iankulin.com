@@ -20,7 +20,7 @@ There's a number of applications that [do this sort of thing](https://github.com
 
 The docs provide a [simple compose file](https://docs.enclosed.cc/self-hosting/docker-compose) to get going docker. Mine is slightly more complex because it's proxy-ed with Nginx Proxy Manager, so it needs to share it's network.
 
-```
+```yaml
 services:
   enclosed:
     container_name: enclosed
@@ -40,7 +40,7 @@ What's not well explained in the docs is how to set up authenticated login. By d
 
 Here's a sample .env file. This just goes in the same directory as our docker-compose.yml
 
-```
+```bash
 AUTHENTICATION_USERS=example@example.com:$$2a$$10$$n4StEr5Tcat7jItq
 PUBLIC_IS_AUTHENTICATION_REQUIRED=true
 ```
@@ -51,7 +51,7 @@ The tool includes an option for escaping the '$' character correctly for docker 
 
 To use this `.env` file, we pull in the values in the docker-compose thus:
 
-```
+```yaml
 services:
   enclosed:
     container_name: enclosed

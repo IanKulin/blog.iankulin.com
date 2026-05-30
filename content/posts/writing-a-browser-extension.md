@@ -58,7 +58,7 @@ And if I'm stealing it, that's what I want. So my plan is to write a browser ext
 
 You might have heard about the new "Manifest 3" that limits what extensions can do (and breaks ad blockers) in Chrome? Manifest v2 remains fully supported in Firefox, and offers simpler APIs for things like background scripts, which are perfect for small utility extensions like this. Here's our manifest.js:
 
-```
+```js
 {
   "manifest_version": 2,
   "name": "Clean Image Opener",
@@ -90,7 +90,7 @@ There are many different permissions - "history", "clipboard", "webrequest". The
 
 Let's have a look at the first part of background.js:
 
-```
+```js
 // Create the context menu item when the extension starts
 browser.contextMenus.create({
   id: "open-clean-image",
@@ -102,7 +102,7 @@ browser.contextMenus.create({
 
 The `title:` is just the text that appears in the context menu when the user write clicks on an image (this is the `contexts: ["image"]` part). This can happen on `["<all_urls>"]` (we could have restricted it to a particular domain or sub-domain). The `id:` is just how we are going to reference it in the click handler. Speaking of:
 
-```
+```js
 // Handle context menu clicks
 browser.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "open-clean-image") {
@@ -127,7 +127,7 @@ Not much explanation needed here due to good naming and generous comments ;-)
 
 And that's pretty much the whole extension. Of course there's a `stripQueryParameters()` somewhere. For now, just imagine it says:
 
-```
+```js
 function stripQueryParameters(url) {
   return url.split('?')[0];
 }

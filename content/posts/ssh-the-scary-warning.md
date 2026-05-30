@@ -15,7 +15,7 @@ tags:
 
 The first time you connect to a new server with ssh, it asks you something like:
 
-```
+```bash
 ➜ ~ > ssh ian@192.168.100.20      
 The authenticity of host '192.168.100.20 (192.168.100.20)' can't be established.
 ED25519 key fingerprint is SHA256:ZcNTcOjO/0fOLC5iNChf8Q8MHN7z2d+VV0qz7XqH1g4.
@@ -49,7 +49,7 @@ It is right to be suspicious. From its point of view, it goes to Joe's house eac
 
 Although the message says to add the new fingerprint to the known\_hosts file, it's easier just to delete the old ones. Then when I try to connect to this server again, it will think it's a new one and ask me to accept it. To delete this ip address (or hostname) out of the known hosts file, I just need to:
 
-```
+```bash
 ➜ ~ > ssh-keygen -R 192.168.100.20
 # Host 192.168.100.20 found: line 7
 # Host 192.168.100.20 found: line 8

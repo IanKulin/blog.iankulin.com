@@ -22,7 +22,7 @@ To untangle this mess, it's worth understanding what's going on with these two f
 
 The `package.json` file doesn't just store package versions, it has a heap of other project configuration stuff - like the starts script, project name and other meta data that we're not really interested in here. What we're interested in is the dependancies, so let's have a look at a sample.
 
-```
+```bash
 "dependencies": {
   "lodash": "^4.17.21",
   "express": "~4.17.1",
@@ -50,7 +50,7 @@ Most non-trivial packages you use will themselves depend on other packages. Thes
 
 If you want code bases to be completely reproducible, then we also need to lock all the versions of the transitive dependencies. To do this, `package-lock.json` was introduced in [Node v5.0](https://github.com/npm/npm/releases/tag/v5.0.0) in 2017. Here's a snippet out of the file for an app using axios.
 
-```
+```bash
     "node_modules/mime-types": {
       "version": "2.1.35",
       "resolved": "https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz",
@@ -78,7 +78,7 @@ So, we're in a bit of a bind here. The package version specified by the package 
 -   Edit `package.json` to allow minor version changes - maybe all of the package versions in here have the caret ^ in front of their version number to allow them to be updated to the latest minor version and patch without changing the major version. If they do not, then try adding the caret to each one.
 -   Allow the latest version - an option we didn't talk about when adding carets or tildes is that we can actually tell npm to just download the latest version. You don't often see this, but if you put in a wildcard it will just grab the most recent. This is a bit more of a nuclear option, so it's probably worth having a look at the 2000 lines of errors I had, and seeing if you can make an intelligent guess about which package is troublesome, and starting from there, doing them one at a time.
 
-```
+```bash
 "dependencies": {
   "axios": "*"
 }

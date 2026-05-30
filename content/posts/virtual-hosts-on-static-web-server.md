@@ -32,7 +32,7 @@ I'm running Tailscale on this VM, so it can be referred to by any of the address
 
 ### Docker
 
-```
+```yaml
 version: "3.3"
 
 services:
@@ -53,7 +53,7 @@ You're probably familiar with docker-compose by now, but if not, the volumes lin
 
 An example will make this more concrete, lets look at the first line:
 
-```
+```yaml
       - ./data:/var
 ```
 
@@ -65,7 +65,7 @@ Consider our file in the tree listing above `~/sws/data/100.124.218.26/public/in
 
 There's excellent documentation about Static Web Server on their [web site](https://static-web-server.net/), so I'm not going to go through the whole `config.toml` file, in any case, I've left nearly everything on the defaults. Instead, lets scroll down to the bottom and look at the virtual hosts settings.
 
-```
+```yaml
 [[advanced.virtual-hosts]]
 host = "100.124.218.26"
 root = "/var/100.124.218.26/public"

@@ -21,7 +21,7 @@ One issue was solved for my by the wonderful [Fireside Swift](https://firesidesw
 
 First, because I hate hard coded strings, and they seem to be a thing in SwiftUI, and there's no #const system, I've got an enum:
 
-```
+```swift
 enum HCS: String {
     case operand = "Operand"
     case markerFeltWide = "Marker Felt Wide"
@@ -30,7 +30,7 @@ enum HCS: String {
 
 Then in the OnChange for the picker where I want to save/set the value into the default store:
 
-```
+```swift
 .onChange(of: tablesSelection) { _ in  
         UserDefaults.standard.set(self.tablesSelection, 
         forKey: HCS.operand.rawValue)
@@ -42,7 +42,7 @@ So basically, there's a UserDefaults class that we can call the set method of, p
 
 Getting it back is no harder:
 
-```
+```swift
 @State private var tablesSelection =
         UserDefaults.standard.integer(forKey: HCS.operand.rawValue)
 ```
@@ -51,7 +51,7 @@ Super simple!
 
 If the key doesn't exist, [it returns a zero](https://developer.apple.com/documentation/foundation/userdefaults/1407405-integer), so the slightly more complicated production version is:
 
-```
+```swift
 @State private var tablesSelection =
      (UserDefaults.standard.integer(forKey: HCS.operand.rawValue) != 0) ?  
       UserDefaults.standard.integer(forKey: HCS.operand.rawValue) : 5

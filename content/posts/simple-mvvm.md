@@ -25,9 +25,11 @@ The Model (or Models - an app could have more than one) does not know anything a
 
 Our simple example app for this post is going to be a light bulb app. There will be a picture of a light bulb, and a button which will toggle the light off an on. It's difficult to think of a simpler Model. This is what I've come up with.
 
+```swift
 struct Light{
     var on: Bool = false
 }
+```
 
 A Model in a real application could be massive - with connections to online data stores and complex business rules. Our light just has two exclusive states - off and on. We could make it more complex - it could be an incandescent light with a particular resistance and a formula for the brightness output for any particular voltage that was applied. All of that would go into the Model. But for today, we'll just have _on_ or not.
 
@@ -39,6 +41,7 @@ The _View Model_ will have the _Model_ as a property. That way it can do things 
 
 The View Model will also have properties or methods that the View can use to access the Model data. Remember the Model is completely hidden from the View, so the View Model provides that access. In a real situation, it would also do whatever translation or packaging was required to make the View's life easy. In our example it is rather simple.
 
+```swift
 class LightViewModel: ObservableObject {
     @Published private var lightBulb = Light(on: false)
     
@@ -49,6 +52,7 @@ class LightViewModel: ObservableObject {
     var isOn: Bool { return lightBulb.on }
     
 }
+```
 
 Again, the View Model is in it's own file. The only thing we haven't mentioned is the _@Published_ used in the property for our Model. This is just part of the magic mentioned earlier in the discussion about [ObservableObject](https://developer.apple.com/documentation/combine/observableobject) which allows the View to know that something has changed, and that it needs to react to this by rebuilding the View.
 
@@ -68,6 +72,7 @@ These connections have these effects
 -   This both protects and hides the Model from the view, and is an opportunity for the View Model to do any work it needs to to the data to make it easy for the View to put on the screen.
 -   Any user interaction that occurs in the View is passed to the View Model to deal with.
 
+```swift
 struct ContentView: View {
     @StateObject var light = LightViewModel()
     
@@ -101,6 +106,7 @@ struct ContentView: View {
         }
     }
 }
+```
 
 To make the code read nicely, the View Model is called "light", and it's an @StateObject so for the redrawing trigger to work correctly. The rest of the code should be reasonably clear if you've made a few SwiftUI views.
 

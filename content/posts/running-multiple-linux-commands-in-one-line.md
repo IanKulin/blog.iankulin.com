@@ -12,20 +12,20 @@ tags:
 
 Since I'm constantly standing up Linux virtual machines and containers - almost always of the `apt` variety, I'm constantly typing in:
 
-```
+```bash
 apt update
 apt upgrade
 ```
 
 Then hitting enter again to allow whatever installation is needed to proceed. I've noticed in some of the commands I've been pasting in from installation instructions or StackExchange solutions have been separated by characters that look like it allows several commands to be run one after the other. To cut a long story short, the commands above could be entered like this with double ampersands:
 
-```
+```bash
 apt update && apt upgrade
 ```
 
 The ampersands mean that the second command will run after the first one as long as it completes without an error. To avoid having to hit enter again, we can add the `-y` flag.
 
-```
+```bash
 apt update && apt upgrade -y
 ```
 

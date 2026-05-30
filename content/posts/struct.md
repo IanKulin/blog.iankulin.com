@@ -15,13 +15,13 @@ Started on [Day 10 of 100 days of etc etc](https://www.hackingwithswift.com/100/
 
 If structs can have methods as well as properties, it answers the question of why tuples exist, but immediately asks the question, why have classes since structs have all this power? I already know (from my podcast consumption) one of the answers for this is that structs are value types rather than references. When you:
 
-```
+```swift
 let someConstant = someClass
 ```
 
 someConstant now contains a copy of the pointer to someClass, as opposed to making a copy as similar code would do for a struct. So this code:
 
-```
+```swift
 struct SomeStruct {
     var counter: Int = 0
 }
@@ -57,7 +57,7 @@ print("someOtherClass:\(someOtherClass.counter)")
 
 Produces the output:
 
-```
+```bash
 structInstance:0
 someOtherStruct:0
 structInstance:0

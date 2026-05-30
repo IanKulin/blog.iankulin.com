@@ -22,7 +22,7 @@ You choose the time intervals for all these. Additionally you can set up a notif
 
 There's lots of options for how to do this, including messaging platforms such as Telegram and Discord. I had a look on [r/selfhosted](https://www.reddit.com/r/selfhosted/comments/z0gpr2/free_push_service_for_uptime_kuma/) to see what was recommended, and discovered [NTFY](https://ntfy.sh/) which is an amazing little service. It has Android and iOS apps, in the app you subscribe to an endpoint, then a notification can be sent to your phone with a simple http get, for example:
 
-```
+```bash
 curl -d "This message will pop up on phone" ntfy.sh/ian_test
 ```
 
@@ -32,7 +32,7 @@ curl -d "This message will pop up on phone" ntfy.sh/ian_test
 
 The `ian_test` part of the url is called the _topic_, and in the app you can subscribe to several topics. It's worth noting this is all completely open. Anyone can send messages to the ian\_test topic, and anyone can receive them. You should choose a topic name that's likely to be unique, and be mindful that you're leaking intelligence. For example:
 
-```
+```bash
 curl -d "CCTV offline - 12 George St" ntfy.sh/maquarie_bank
 ```
 

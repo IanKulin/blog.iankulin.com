@@ -34,7 +34,7 @@ SwiftLint has many rules. Some are default rules (these are the most widely acce
 
 Here's an example from [mine](https://github.com/IanKulin/dotfiles/blob/main/.swiftlint.yml), where I want to alter a rule:
 
-```
+```yaml
 vertical_whitespace:
     max_empty_lines: 2
 ```
@@ -43,7 +43,7 @@ There's a rule called vertical\_whitespace. It throws a warning if there is more
 
 Rules can also be disabled and enabled in your code with special comments. For example, in my tests, I have enormous multi-line strings which don't follow proper indentation for a deliberate reason, so at the top of this file I have:
 
-```
+```swift
 // swiftlint:disable line_length
 // swiftlint:disable indentation_width
 ```

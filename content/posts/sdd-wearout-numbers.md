@@ -34,9 +34,7 @@ Well, some of this is comprehensible. The Power\_On\_Hours is saying it's been o
 
 SMART overall-health self-assessment test result: PASSED
 
-...
-                                   
-
+...                               
 ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
   1 Raw_Read_Error_Rate     0x0032   120   120   050    Old_age   Always       -       0
   5 Reallocated_Sector_Ct   0x0033   100   100   003    Pre-fail  Always       -       0
@@ -44,7 +42,6 @@ ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_
  12 Power_Cycle_Count       0x0032   099   099   000    Old_age   Always       -       1059
 171 Unknown_Attribute       0x000a   100   100   000    Old_age   Always       -       0
 172 Unknown_Attribute       0x0032   100   100   000    Old_age   Always       -       0
-
 ...
 
 No self-tests have been logged.  [To run self-tests, use: smartctl -t]

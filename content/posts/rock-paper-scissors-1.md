@@ -23,6 +23,7 @@ There's lots in the code below I don't love.
 
 [source on github](https://github.com/IanKulin/RockPaper/commit/b1497cccf2dc8af953b946458af797dc5ad12dc9?diff=unified#diff-223dd39ecc4f631b084c99b065a71ea40dc2deba8e36e7f5f939802e60c80186)
 
+```swift
 struct ContentView: View {
     @State var score = 0
     @State var goalIsWinThisTurn = Bool.random()
@@ -196,3 +197,4 @@ struct CustomButtonStyle : ButtonStyle {
             .cornerRadius(5)
     }
 }
+```

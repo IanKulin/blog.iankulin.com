@@ -14,7 +14,7 @@ tags:
 
 I'm on Day 25 of Hacking With SwiftUI, and [Paul is making a point](https://www.hackingwithswift.com/guide/ios-swiftui/2/2/key-points) about how SwiftUI can loop over an array to build a view. He starts with this:
 
-```
+```swift
 let agents = ["Cyril", "Lana", "Pam", "Sterling"]
 VStack {
     ForEach(0..<agents.count) {
@@ -25,7 +25,7 @@ VStack {
 
 But then proposes an alternative:
 
-```
+```swift
 let agents = ["Cyril", "Lana", "Pam", "Sterling"]
 VStack {
     ForEach(agents, id: \.self) {
@@ -46,7 +46,7 @@ I'm having a couple of problems with this.
 
 The first is that Swift can't really use the "strings themselves". So this doesn't work:
 
-```
+```swift
 ForEach(agents, String($0)) {
     Text($0)
 }
@@ -76,7 +76,7 @@ These initialisers also shed some light on my first problem, the references used
 
 So I tried this:
 
-```
+```swift
 ForEach(agents, id: \String.$0) {
     Text($0)
 }
