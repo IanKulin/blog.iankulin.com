@@ -1,12 +1,12 @@
 ---
-title: "CORS, What is it good for"
+title: "CORS, What is it good for?"
 date: '2026-06-01'
 slug: cors-what-is-it-good-for
 tags:
   - cors
   - webdev
   - security
-draft: true
+  - sop
 ---
 
 Imagine you have two browser tabs open, one to your bank, and one to evil-site.com 
