@@ -2,7 +2,7 @@
 
 <main class="main layout__main" data-pagefind-ignore>
 <header>
-<h1 class="title">{{ .Title }}</h1>
+<h1 class="title">{{ strings.ToLower .Title }}</h1>
 </header>
 
 {{ .Content }}
