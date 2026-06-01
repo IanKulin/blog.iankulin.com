@@ -31,7 +31,7 @@ A major difference from some other server-side scripting languages (for example,
 
 ### Express.js
 
-Once you start writing backends in Node, you'll find yourself writing a lot of the same code over and over to achieve some standard things - time for a framework. [Express](https://expressjs.com/) is one of the most popular web frameworks for writing APIs on Node. Using Express makes that job simpler and leaves you with cleaner, more succinct code. It's can be argued that there are better frameworks, but at around 5 miliion downloads per day, I think we can regard it as a standard approach to the problems it solves.
+Once you start writing backends in Node, you'll find yourself writing a lot of the same code over and over to achieve some standard things - time for a framework. [Express](https://expressjs.com/) is one of the most popular web frameworks for writing APIs on Node. Using Express makes that job simpler and leaves you with cleaner, more succinct code. It's can be argued that there are better frameworks, but at around 5 million downloads per day, I think we can regard it as a standard approach to the problems it solves.
 
 ### Serve a static file from Node
 

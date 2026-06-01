@@ -208,7 +208,7 @@ app.post("/upload", upload.single("file"), (req, res) => {
 });
 ```
 
-Here's our route handler. Any POST requests to hrrp://127.0.0.1:3000/upload will be sent here. It passes off the file contained in the request to our Multer upload, and if that all works, it sends a message back to the browser.
+Here's our route handler. Any POST requests to http://127.0.0.1:3000/upload will be sent here. It passes off the file contained in the request to our Multer upload, and if that all works, it sends a message back to the browser.
 
 #### HTML form
 

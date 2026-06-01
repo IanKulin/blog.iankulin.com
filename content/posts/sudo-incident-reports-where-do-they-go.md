@@ -16,7 +16,7 @@ Even though it's _my_ server, I still have a pang of guilt when this happens.
 
 ![](/images/screen-shot-2023-01-28-at-10.40.43-am-copy.png)
 
-I always imagine [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman) (or someone with a similar 2000's database administrator beard) looking at me disappointedly and shaking his head slowly.
+I always imagine [Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman) (or someone with a similar 2000's database administrator beard) looking at me disappoint-edly and shaking his head slowly.
 
 It does raise the question though - since it's my server, shouldn't I be getting a text message from CERN or something?
 

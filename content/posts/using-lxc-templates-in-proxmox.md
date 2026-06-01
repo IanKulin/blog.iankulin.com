@@ -28,7 +28,7 @@ If we create new containers from a template, all the software and configuration 
 
 ### Making the template
 
-Create an LXC container as normal - ie chose "Create CT" in Proxmox, give it a name, choose a password, then a template, make the decisions about memory, disk, networking etc. Note that when you are choosing an official template to create it from (Apline, Debian, Ubuntu etc) , these files are almost identical to what we'll be creating in this process.
+Create an LXC container as normal - ie chose "Create CT" in Proxmox, give it a name, choose a password, then a template, make the decisions about memory, disk, networking etc. Note that when you are choosing an official template to create it from (Alpine, Debian, Ubuntu etc) , these files are almost identical to what we'll be creating in this process.
 
 Once that's up and running, I `ssh` in and run all my apt updates and install any software or make any other changes. For me this includes:
 

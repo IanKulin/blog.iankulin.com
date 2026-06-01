@@ -99,7 +99,7 @@ struct ContentView: View {
     }
     
     var drawLitBulb: some View {
-        // view of an iluminated bulb
+        // view of an illuminated bulb
         ZStack{
             Circle().fill(.yellow).frame(width: 150, height: 150)
             Image(systemName: "lightbulb").font(.system(size: 72))

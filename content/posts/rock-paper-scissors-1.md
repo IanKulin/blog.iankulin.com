@@ -16,7 +16,7 @@ There's lots in the code below I don't love.
 
 -   The rock paper scissors could be some better data structure than an array and some ints.
 -   I don't love the try to win, try to lose aspect, but the client specified it
--   Having the didUserWin and didComputerWin funcs is a cop out - that should probably be a single function returning a win/lose/draw type
+-   Having the didUserWin and didComputerWin functions is a cop out - that should probably be a single function returning a win/lose/draw type
 -   I also am unhappy with nesting them in the view namespace to use my #consts
 -   duplicating the last part of the view but making the elements .hidden() to keep the same spacing seems like a kludge
 -   when I added the link to the Hacking With SwiftUI page with the app brief just now, I noticed I haven't done the scoring the way it was asked for

@@ -23,7 +23,7 @@ Below the form for adding a new expense item is a list of expenses. Each one sho
 
 ### Design Decisions
 
-The first decision in an React app is "What are the components going to be?". Clearly the form at the top is a component (I called mine `AddForm`). The bottom section could be two - the filter and the list, but my style is to start with less components then seperate them out if they are getting complex so I considered the filtered list a single component called `ExpenseList`. In Mosh's solution, he did have these as separate components, arguing that the filter is likely to become more complex in future which is a sound argument, but too much premature optimisation for me.
+The first decision in an React app is "What are the components going to be?". Clearly the form at the top is a component (I called mine `AddForm`). The bottom section could be two - the filter and the list, but my style is to start with less components then separate them out if they are getting complex so I considered the filtered list a single component called `ExpenseList`. In Mosh's solution, he did have these as separate components, arguing that the filter is likely to become more complex in future which is a sound argument, but too much premature optimisation for me.
 
 ### Code
 
@@ -108,7 +108,7 @@ So, I don't love the duplication in the existing type definition, but it seemed 
 
 There's also a subtle design decision in the very simple `ExpenseProps` worth thinking about. Firstly, I like having the props here with the `Expense` definition, but mostly how simple they are. There's no `addExpense()`, `updateExpense()`, or `deleteExpense()`. That's because, to the extent they are needed, they are dealt with inside each component.
 
-Components are already tightly bound to their data types, so we're not making that worse by having this code with the compnent, but it would be perfectly valid to argue that all the data manipulation for expenses should be in one place. That argument would be won for me the second I needed to duplicate any of it - for example if two different components needed to delete an expense. But as the app stands now, this is neater, so that's what I've gone with.
+Components are already tightly bound to their data types, so we're not making that worse by having this code with the component, but it would be perfectly valid to argue that all the data manipulation for expenses should be in one place. That argument would be won for me the second I needed to duplicate any of it - for example if two different components needed to delete an expense. But as the app stands now, this is neater, so that's what I've gone with.
 
 ### Expenses List
 

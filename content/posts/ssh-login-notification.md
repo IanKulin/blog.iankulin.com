@@ -16,7 +16,7 @@ tags:
 
 My VPS's are usually locked down so just ports 80 & 443 (for web server) and 22 (for ssh) are open. That's great for reducing the attack surface, but having ssh open is a potentially disastrous vulnerability. For this reason I often close that at the cloud firewall level as well, but it has to be open when I'm making changes or running the weekly ansible update/cleanup playbooks.
 
-To make things a bit safer, I run [Fail2Ban](/beginning-node-app-security/) on the ssh logs, and also have notifications turned on via [Ntfy](https://ntfy.sh/). Ntfy is so useful I make an annual donation to support it's development and help with Phil's server costs. I recommend you do to. In fact, my setup for getting a notification on my watch everytime someone ssh's into one of my VPS's is just copied directly from [Phil's examples](https://docs.ntfy.sh/examples/#__tabbed_1_1).
+To make things a bit safer, I run [Fail2Ban](/beginning-node-app-security/) on the ssh logs, and also have notifications turned on via [Ntfy](https://ntfy.sh/). Ntfy is so useful I make an annual donation to support it's development and help with Phil's server costs. I recommend you do to. In fact, my setup for getting a notification on my watch every time someone ssh's into one of my VPS's is just copied directly from [Phil's examples](https://docs.ntfy.sh/examples/#__tabbed_1_1).
 
 ### Changes
 

@@ -45,7 +45,7 @@ These are the keys you want to add to the remote NASs authorised keys, so we'll 
 ssh <user>@<remote NAS address> 'cat >> ~/.ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 ```
 
-You need to substitute your remote NASs username and address, so mayby it would look like this:
+You need to substitute your remote NASs username and address, so maybe it would look like this:
 
 ```bash
 ssh nas1_admin@83.78.2.105 'cat >> ~/.ssh/authorized_keys' < ~/.ssh/id_rsa.pub

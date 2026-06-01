@@ -25,7 +25,7 @@ In Linux, to see your own environment variables, you type in `env`. I think this
 
 ![](/images/screen-shot-2024-07-02-at-6.51.16-pm.png)
 
-I could see them, but it didn't include the environment variable passed in from Docker that was available at the entry point. This is all a bit weird to me - I'm not sure why we're the same user, with the same permissions but with a new seperate environment. I guess there is a reason, it's just not apparent to me.
+I could see them, but it didn't include the environment variable passed in from Docker that was available at the entry point. This is all a bit weird to me - I'm not sure why we're the same user, with the same permissions but with a new separate environment. I guess there is a reason, it's just not apparent to me.
 
 ### The Hack
 

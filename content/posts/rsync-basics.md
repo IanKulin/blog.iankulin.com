@@ -76,7 +76,7 @@ it will be
 rsync -avi localdir/ ian@192.168.100.33:remotedir --del
 ```
 
-Before I've run this, I've sshed in and created the directory `remotedir` on the target machine, but then it's simple as
+Before I've run this, I've ssh-ed in and created the directory `remotedir` on the target machine, but then it's simple as
 
 ![](/images/screen-shot-2023-03-25-at-5.06.01-pm.jpg)
 

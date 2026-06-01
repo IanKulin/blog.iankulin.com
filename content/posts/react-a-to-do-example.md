@@ -40,7 +40,7 @@ I ended up with three components - the App (every React app has one), the TodoLi
 
 ### Anatomy of a component
 
-I claimed earlier that a component was it's HTML and Javascript wrapped up together which, while a massive simpliciation, is a good place to start thinking about it. Every component is just a function that returns a bunch of (templated) HTML. We'll start off by developing our AddTodoForm. At it's simplest, it could be something like this:
+I claimed earlier that a component was it's HTML and Javascript wrapped up together which, while a massive simplification, is a good place to start thinking about it. Every component is just a function that returns a bunch of (templated) HTML. We'll start off by developing our AddTodoForm. At it's simplest, it could be something like this:
 
 ```js
 function AddTodoForm() {
@@ -90,7 +90,7 @@ This is an example of the very explicit management of state I was talking about 
 
 `const [value, setValue] = useState('');`
 
-useState() is a React hook for managing state. This line gives us a getter (value) and setter (setValue) for this variable, and set's its initial state to ''. If the value changes the component will be redrawn. React will know that the value has changed as this is built into the setValue() function where we never need see or worry about it. If you foolishly decided to side-step React and assign directly to `value`, I guess there'd be a runtime error, or even worse, no error and the management of the DOM state wuld fall into some type of chaos.
+useState() is a React hook for managing state. This line gives us a getter (value) and setter (setValue) for this variable, and set's its initial state to ''. If the value changes the component will be redrawn. React will know that the value has changed as this is built into the setValue() function where we never need see or worry about it. If you foolishly decided to side-step React and assign directly to `value`, I guess there'd be a runtime error, or even worse, no error and the management of the DOM state would fall into some type of chaos.
 
 What we're doing with this value (which I'm now realising is very badly named) is using it to collect the text input from out form. It's constantly updated as the user types.
 

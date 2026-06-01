@@ -56,7 +56,7 @@ Note that I've used a GET request here, when semantically a POST would make more
 
 Often the data you want to pass is going to be more complex, or you don't want it in the URL for other reasons (for example, you wouldn't want a user to be able to bookmark a record delete request). In that case you use the [body](https://developer.mozilla.org/en-US/docs/Web/API/Request/body).
 
-You can stuff all sorts of text data in the body. Most times you are going to want JSON. I do for this demo, so that's why I've added the `expresss.json()` middleware - all the hard work will be done for me and I can just do this to access the information that's passed as part of the request:
+You can stuff all sorts of text data in the body. Most times you are going to want JSON. I do for this demo, so that's why I've added the `express.json()` middleware - all the hard work will be done for me and I can just do this to access the information that's passed as part of the request:
 
 ```js
 app.post('/users', (req, res) => {  const name = req.body.name;  const email = req.body.email;

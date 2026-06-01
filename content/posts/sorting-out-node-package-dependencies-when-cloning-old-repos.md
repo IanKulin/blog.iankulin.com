@@ -20,7 +20,7 @@ To untangle this mess, it's worth understanding what's going on with these two f
 
 ### package.json
 
-The `package.json` file doesn't just store package versions, it has a heap of other project configuration stuff - like the starts script, project name and other meta data that we're not really interested in here. What we're interested in is the dependancies, so let's have a look at a sample.
+The `package.json` file doesn't just store package versions, it has a heap of other project configuration stuff - like the starts script, project name and other meta data that we're not really interested in here. What we're interested in is the dependencies, so let's have a look at a sample.
 
 ```bash
 "dependencies": {
@@ -46,7 +46,7 @@ For a long time, `package.json` was all that was available, and beautiful thing 
 
 Even though, in the example of `"axios": "2.6.0"` we've firmly locked axios to version 2.6.0 by putting it in the package.json file with no prefix on the version number, some changes are still possible - how so?
 
-Most non-trivial packages you use will themselves depend on other packages. These are called transitional dependancies. In the case of axios (which is a http client to pull web pages into node) it depends on seven other packages that do more specialised things such as handling streams, understanding mime types and so on.
+Most non-trivial packages you use will themselves depend on other packages. These are called transitional dependencies. In the case of axios (which is a http client to pull web pages into node) it depends on seven other packages that do more specialised things such as handling streams, understanding mime types and so on.
 
 If you want code bases to be completely reproducible, then we also need to lock all the versions of the transitive dependencies. To do this, `package-lock.json` was introduced in [Node v5.0](https://github.com/npm/npm/releases/tag/v5.0.0) in 2017. Here's a snippet out of the file for an app using axios.
 

@@ -96,7 +96,7 @@ However, this is pretty hacky. A space followed by a lowercase could easily occu
 
 ### grep with regex
 
-Okay, it turns out we can use regex with grep. I'm no expert in that either, but in regex the caret ^ represents the start of the line, a fullstop represents any character, and we can repeat that however many times we want by following it with a number in (escaped) curly braces. Something like `'^.{17}d'` should do it.
+Okay, it turns out we can use regex with grep. I'm no expert in that either, but in regex the caret ^ represents the start of the line, a full stop represents any character, and we can repeat that however many times we want by following it with a number in (escaped) curly braces. Something like `'^.{17}d'` should do it.
 
 ![](/images/screen-shot-2023-03-06-at-5.44.46-pm.png)
 

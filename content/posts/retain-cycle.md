@@ -16,7 +16,7 @@ Structs, integers, and enums are value types, classes are reference types.
 
 Memory management of value types is relatively straightforward - there’s a 1:1 relationship between the variable name and its data, so if the variable goes out of scope it can get the chop. With reference types, it’s possible to have several variables (or class or struct properties etc) all pointing to the data, so a more sophisticated system is needed to know when it’s safe to delete the data.  
 
-In Swift (and some other languages), this memory management is done by Automatic Reference Counting ARC. The compiler inserts code that keeps track of what references exist in scope that point to the data in memory that could potentially be freed. When there are zero references exisiting for an object, it can be freed. Here’s an example, meet SomeClass:
+In Swift (and some other languages), this memory management is done by Automatic Reference Counting ARC. The compiler inserts code that keeps track of what references exist in scope that point to the data in memory that could potentially be freed. When there are zero references existing for an object, it can be freed. Here’s an example, meet SomeClass:
 
 ```swift
 class SomeClass{

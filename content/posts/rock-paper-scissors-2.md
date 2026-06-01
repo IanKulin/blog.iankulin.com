@@ -14,7 +14,7 @@ When I was forced by a deadline into delivering this project, I noted in its [po
 
 > 1.  _The rock paper scissors could be some better data structure than an array and some ints._
 > 2.  _I don’t love the try to win, try to lose aspect, but the client specified it_
-> 3.  _Having the didUserWin and didComputerWin funcs is a cop out – that should probably be a single function returning a win/lose/draw type_
+> 3.  _Having the didUserWin and didComputerWin functions is a cop out – that should probably be a single function returning a win/lose/draw type_
 > 4.  _I also am unhappy with nesting them in the view namespace to use my #consts_
 > 5.  _duplicating the last part of the view but making the elements .hidden() to keep the same spacing seems like a kludge_
 > 6.  _when I added the link to the Hacking With SwiftUI page with the app brief just now, I noticed I haven’t done the scoring the way it was asked for_
@@ -29,7 +29,7 @@ _I don’t love the try to win, try to lose aspect, but the client specified it_
 
 We can't always help what a client wants. Deal with it.
 
-_Having the didUserWin and didComputerWin funcs is a cop out – that should probably be a single function returning a win/lose/dra_w
+_Having the didUserWin and didComputerWin functions is a cop out – that should probably be a single function returning a win/lose/dra_w
 
 ```swift
 enum GameResult {

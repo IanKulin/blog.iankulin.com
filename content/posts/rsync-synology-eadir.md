@@ -44,7 +44,7 @@ I noticed a lot of them included this weird directory that I didn't recognise.
 
 I've since learned it might be extended attributes, people started noticing it around the introduction of DSM7. [I don't seem to be the only user who hates](https://tech.webit.nu/synology-nas-those-eadir-folders/) Synology messing with my data. There's some consensus they are created by the indexing service (which I've turned off as much as is possible in the GUI) and when the [drives are externally mounted](https://www.reddit.com/r/synology/comments/exh5ho/preventing_eadir_from_being_created/) \- which of course I have been doing quite a bit while moving things around.
 
-I'll tackle removing them all and trying to prevent their reoccurence another day, but for the moment, I'll just tell rsync to ignore them using the `--exclude` option.
+I'll tackle removing them all and trying to prevent their reoccurrence another day, but for the moment, I'll just tell rsync to ignore them using the `--exclude` option.
 
 ```bash
 rsync -avin --exclude '*@eaDir*' /volume1/media/video/Movies/ /volumeUSB1/usbshare/media/video/Movies --del
