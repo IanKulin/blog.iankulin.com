@@ -15,7 +15,7 @@ As usual, here's my thoughts comparing my attempts at the challenges to Paul's. 
 
 #### 1) Whitespace
 
-The task was to validate the order address properties, not just by checking they are not empty, but also that they don't just contain spaces. I went the bruteforce route since there was no .isEmptyIncludingWhitespace method.
+The task was to validate the order address properties, not just by checking they are not empty, but also that they don't just contain spaces. I went the brute force route since there was no isEmptyIncludingWhitespace method.
 
 ```swift
 var hasValidAddress: Bool {
@@ -39,7 +39,7 @@ Paul's approach exactly the same as mine, with the addition of showing the local
 
 #### 3) struct Wrapper
 
-We had the same approach. I liked Paul's naming better. He named the wrapper class _SharedOrder_, then the instance _order_. Then the instance of the struct _data_. That way the name hierarchys in the code were something like _order.data.street_ which was better than mine, although they still bug me. Another difference I noticed was that the static enum for the cupcake types he put in the wrapper class whereas I had it in the order struct.
+We had the same approach. I liked Paul's naming better. He named the wrapper class _SharedOrder_, then the instance _order_. Then the instance of the struct _data_. That way the name hierarchies in the code were something like _order.data.street_ which was better than mine, although they still bug me. Another difference I noticed was that the static enum for the cupcake types he put in the wrapper class whereas I had it in the order struct.
 
 Paul left the CodingKey enum in - no problem with that, but I can't see that it's needed.
 

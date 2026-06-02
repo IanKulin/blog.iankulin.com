@@ -1,9 +1,10 @@
 ---
 title: "Day 50 - @State vs @Observed again"
 date: '2022-10-28'
-slug: day-50-state-vs-obseved-again
+slug: day-50-state-vs-observed-again
 aliases:
   - /2022/10/28/day-50-state-vs-obseved-again/
+  - /day-50-state-vs-obseved-again/
 tags:
   - swift5-7
   - xcode14

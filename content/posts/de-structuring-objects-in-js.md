@@ -11,7 +11,7 @@ tags:
 
 I've worked through my first React tutorial app, and obviously that's a lot - I'm struct by how messy mixing HTML, JS and React is.
 
-One language feature that's being used quite a bit, and that is apparently a JS ability I'd never seen is 'destructuring' object properties. It's very cool and obviously useful. It's a way of extracting just the properties you need from an object and then using them without accesing them via the object. An example will make it clearer.
+One language feature that's being used quite a bit, and that is apparently a JS ability I'd never seen is 'destructuring' object properties. It's very cool and obviously useful. It's a way of extracting just the properties you need from an object and then using them without accessing them via the object. An example will make it clearer.
 
 Imagine we've got a couple of food objects, and we want to test them and provide some dietary advice.
 
@@ -19,7 +19,7 @@ Imagine we've got a couple of food objects, and we want to test them and provide
 const hotDog = {name: 'hot dog', calories: 290, colors: ['red', 'wheat']};
 const lettuce = {name: 'lettuce', calories: 0, colors: ['green']};
 
-function eatRecomendation(food) {
+function eatRecommendation(food) {
     if (food.calories > 200) {
         console.log(`Eat ${food.name} in moderation`);
     } else {
@@ -27,14 +27,14 @@ function eatRecomendation(food) {
     }
 }
 
-eatRecomendation(lettuce);
+eatRecommendation(lettuce);
 // Eat lettuce as often as you please
 ```
 
-The parameter in eatRecomendation() could be destructured like so:
+The parameter in eatRecommendation() could be destructured like so:
 
 ```js
-function eatRecomendation( {name, calories} ) {
+function eatRecommendation( {name, calories} ) {
     if (calories > 200) {
         console.log(`Eat ${name} in moderation`);
     } else {
@@ -42,14 +42,14 @@ function eatRecomendation( {name, calories} ) {
     }
 }
 
-eatRecomendation(lettuce);
+eatRecommendation(lettuce);
 // Eat lettuce as often as you please
 ```
 
 It's still called with the food object, but the destructuring creates just the properties we need as local variables. If you don't love doing this as the object is passed in - I don't because it arguably makes it harder to see from the signature what should be passed to this function - you can keep the object parameter and destructure it inside the function body:
 
 ```js
-function eatRecomendation(food) {
+function eatRecommendation(food) {
     const {name, calories} = food;
     if (calories > 200) {
         console.log(`Eat ${name} in moderation`);
@@ -58,6 +58,6 @@ function eatRecomendation(food) {
     }
 }
 
-evenBetterRecomendation(lettuce);
+evenBetterRecommendation(lettuce);
 // Eat lettuce as often as you please
 ```
