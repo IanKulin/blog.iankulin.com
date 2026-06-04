@@ -51,7 +51,7 @@ My first thought was that perhaps I could just enable the non-free option for th
 
 antiX had a slightly different setup, with a whole directory of sources, but the non-free option was set. I also mucked around with the `rfkill` command which kept saying the softblock was on - although I could see, by using rfkill list that the hardware button was working exactly how it should - flick it once and the hardware block for wifi and bluetooth was activated, flick it again and it went off.
 
-I also jumped off the cliff of just trying commands that I found on the internet that were suggested for similar sounding situations, and that I only had the shakiest idea of what they did. I'm certain that the problem at this stage is that I need to install those Broadcom 43 drivers. Without something poping up to ask me if I want to do that (which is exactly the sort of thing a lean distro wouldn't have) I'm a bit lost.
+I also jumped off the cliff of just trying commands that I found on the internet that were suggested for similar sounding situations, and that I only had the shakiest idea of what they did. I'm certain that the problem at this stage is that I need to install those Broadcom 43 drivers. Without something popping up to ask me if I want to do that (which is exactly the sort of thing a lean distro wouldn't have) I'm a bit lost.
 
 Antix seemed so right for my purposes, I might come back and try it again when my Linux knowledge is a bit better. In the mean time, I need a popular distro, lighter weight than Lubuntu, so I'll give Mint a shot.
 

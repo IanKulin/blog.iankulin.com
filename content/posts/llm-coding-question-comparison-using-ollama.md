@@ -19,7 +19,7 @@ If you go on HuggingFace to look at a new model you're interested, they often ha
 
 There has been a lot of work in crafting these and other benchmarks which are often comprehensive and well thought out. I've also seen people doing fun things, like [this guy](https://youtu.be/B0uMFWAGUzI?t=145), who is just pasting coding challenges off a web page into an LLM and seeing if it can solve them (spoiler - mostly it can solve [coding problems that are probably part of it's training set](https://www.w3resource.com/python-exercises/basic/python-basic-1-exercise-141.php)).
 
-A factor to keep in mind when looking at these charts is that they are probably running unquantised (uncompressed is a close enough analogy) models on fleets of [$60K graphics cards](https://www.nvidia.com/en-au/data-center/h100/). I can use that if I pay them $20 a month and have an internet connection, but I want to pay $0 and run it on my M1 MacBook - that's why I downloaded [Ollama](https://ollama.com/).
+A factor to keep in mind when looking at these charts is that they are probably running un-quantised (uncompressed is a close enough analogy) models on fleets of [$60K graphics cards](https://www.nvidia.com/en-au/data-center/h100/). I can use that if I pay them $20 a month and have an internet connection, but I want to pay $0 and run it on my M1 MacBook - that's why I downloaded [Ollama](https://ollama.com/).
 
 So what follows is my completely unscientific testing of the models I've downloaded. Basically, I'll ask them the same question (that I think I know the answer to) and time their response, and subjectively judge their output. For the question I've chosen:
 
@@ -59,7 +59,7 @@ That's the situation with these two versions of _llama3_ - one is more 'compress
 
 ### Conclusion
 
-It would be foolish to put much weight on a conclusion from a single run of a dubious test analyzed by a subjective carbon based lifeform, but anyway...
+It would be foolish to put much weight on a conclusion from a single run of a dubious test analyzed by a subjective carbon based life form, but anyway...
 
 -   All of these models produced a useful starting point except _phi3_. You probably could have just used what the others produced and gone on working with your dockerfile and things would have worked out fine.
 -   _llama3_'s performance matches my experience of other times I've been using it. It's just pretty great for what it is.

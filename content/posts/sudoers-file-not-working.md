@@ -15,7 +15,7 @@ A couple of weeks ago, I posted [about the sudoers' file](/sudo-incident-reports
 usermod -a -G sudo ian
 ```
 
-That worked (on Unbuntu) since `/etc/sudoers` contained a line saying:
+That worked (on Ubuntu) since `/etc/sudoers` contained a line saying:
 
 ```bash
 # Allow members of group sudo to execute any command

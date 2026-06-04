@@ -47,7 +47,7 @@ I'll run through the thinking of each of the options I've considered.
 
 ![](/images/screen-shot-2023-03-10-at-5.14.28-pm.jpg)
 
-I had a couple of Synologys with more bays than this in my eBay watchlist, but as you add drives, you add power consumption and heat, so I think realistically at the 12TB point, 4 bays is the most you could justify. There's a bit of a price step up as well when you go to five bays and leave the serious home user segment of the market.
+I had a couple of Synologys with more bays than this in my eBay watch list, but as you add drives, you add power consumption and heat, so I think realistically at the 12TB point, 4 bays is the most you could justify. There's a bit of a price step up as well when you go to five bays and leave the serious home user segment of the market.
 
 It's worth mentioning how the Synology model numbers work in the DS range. My existing unit is a DS216j. The 2 is for two bays and it's 2016 model. So the DS412+ is from 2012 and has four bays. The 'j' on mine denotes its a mouse-power CPU - in this case a Marvell Armada 385 - some sort of low power ARM. The DS412+ is rocking a bigger mouse - the Intel Atom D2700, and it has a bit more RAM.
 

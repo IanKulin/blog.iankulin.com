@@ -46,11 +46,11 @@ And the second was that I still had the Debian 11 ISO mounted in the 'cd-rom'. L
 
 The first time I ever did this - move a guest VM from one lot of hardware to another, then boot it up and all my apps are working perfectly on their old IP addresses - I was amazed and danced around in excitement. I didn't dance today, but it is so cool.
 
-Interestingly, it's decided to use much less RAM now. I caused that increase at the end of the graph by rescanning the media library, then browsing through all the titles so the cover images would have to be loaded - so perhaps it's the web server caching them all. It's hard to know for sure without some objective measurements, but I suspect the app was crisper and more responsive than before. In any case, it certainly wasn't any worse.
+Interestingly, it's decided to use much less RAM now. I caused that increase at the end of the graph by re-scanning the media library, then browsing through all the titles so the cover images would have to be loaded - so perhaps it's the web server caching them all. It's hard to know for sure without some objective measurements, but I suspect the app was crisper and more responsive than before. In any case, it certainly wasn't any worse.
 
 ![](/images/screen-shot-2023-07-04-at-9.02.56-am.png)
 
-Moving the docker host over was straightforward and only took five minutes of downtime as it's a smaller image. I guess a lot of that time is just my 1GB network limitation or the spinning disk transfer speed from the NAS - the docker hoats was 4GB and Jellyfin 14GB.
+Moving the docker host over was straightforward and only took five minutes of downtime as it's a smaller image. I guess a lot of that time is just my 1GB network limitation or the spinning disk transfer speed from the NAS - the docker host was 4GB and Jellyfin 14GB.
 
 ### Nuke and pave
 
@@ -70,7 +70,7 @@ My install process for Proxmox goes something like this:
 -   Follow my nose through the prompts - since this is an existing server, the DHCP serves up the correct IP address
 -   `ssh` into it to check everything's fine. Since this IP was already in my known hosts file, I had to go an delete it out
 -   `ssh-copy-id` to get my ssh keys across
--   Update the repositories - by default, Proxmox comes set up to use with a subscription. I wish they had a lower tier and I'd by one since it gives me so much joy - even if it didn't remove the nags. In the meantime, you can follow the instructions [here](https://pve.proxmox.com/wiki/Package_Repositories#sysadmin_no_subscription_repo) to set it up to use the non-subscription repoistories:
+-   Update the repositories - by default, Proxmox comes set up to use with a subscription. I wish they had a lower tier and I'd by one since it gives me so much joy - even if it didn't remove the nags. In the meantime, you can follow the instructions [here](https://pve.proxmox.com/wiki/Package_Repositories#sysadmin_no_subscription_repo) to set it up to use the non-subscription repositories:
     -   edit `/etc/apt/sources.list` to add `deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription`
     -   edit `/etc/apt/sources.list.d/pve-enterprise.list` to comment out the line in there
     -   and a new one that's not mentioned on that wiki page, edit `/etc/apt/sources.list.d/ceph.list` to comment out the line in there. I don't know where that leaves you if you are using Ceph (which is a cool file system if you're using high availability) but I'm not, so all good. If you don't do this, you'll get errors like `E: Failed to fetch https://enterprise.proxmox.com/debian/ceph-quincy/dists/bookw orm/InRelease 401 Unauthorized IP: 103.76.41.50 4431 E: The repository "https://enterprise.proxmox.com/debian/ceph-quincy bookworm In Release' is not signed.`

@@ -33,7 +33,7 @@ I'd done this with ternary operator modifiers:
 
 But Paul, again, goes one better with another extension, this time of View, to create a style(for: Item) - this is a better approach, especially if (as would be likely in a real app) it was going to need to be reused.
 
-I also note that Paul added new files for both these extensions. I think that's wise for the currency one, but perhaps this one could probably have lived wherever the ExpenceItem was defined.
+I also note that Paul added new files for both these extensions. I think that's wise for the currency one, but perhaps this one could probably have lived wherever the ExpenseItem was defined.
 
 > _For a bigger challenge, try splitting the expenses list into two sections: one for personal expenses, and one for business expenses. This is tricky for a few reasons, not least because it means being careful about how items are deleted!_
 

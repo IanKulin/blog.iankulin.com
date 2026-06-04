@@ -13,7 +13,7 @@ tags:
 
 I'm in the process of shuffling disks around as I move towards my 3-2-1 storage arrangements. I thought after my extensive rsync adventures I'd mirrored everything everywhere, but then realised, with a sinking (no pun) feeling, after I'd repurposed a drive out of the 2 drive Synology as a USB caddy drive and wiped it, that I'd forgotten my audio book directory. All my rsync fiddling around had been on the video subdirectory of the media folder, not the whole media directory that included my audiobooks.
 
-It's not the end of the world if I'd wiped them, I've just been working through downloading them from Audible and de-drming, so I could do that again in the few days I've got left till my subscription cancellation date comes around. That was a painful and slow process, so I don't really want to.
+It's not the end of the world if I'd wiped them, I've just been working through downloading them from Audible and de-drm-ing, so I could do that again in the few days I've got left till my subscription cancellation date comes around. That was a painful and slow process, so I don't really want to.
 
 I still had one of the RAID drives that hadn't been wiped, so in theory it should have a full copy of the data, and if I put it back in the Synology by itself it should work. That would be the same situation as if one drive in the RAID pool had died completely.
 

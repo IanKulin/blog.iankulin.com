@@ -49,13 +49,13 @@ INFO: starting new backup job: vzdump 303 --storage NAS-DS2 --compress zstd --no
 INFO: Starting Backup of VM 303 (lxc)
 INFO: Backup started at 2023-04-07 18:43:44
 INFO: status = running
-INFO: CT Name: apline-unpriv
+INFO: CT Name: alpine-unpriv
 INFO: including mount point rootfs ('/') in backup
 INFO: mode failure - some volumes do not support snapshots
 INFO: trying 'suspend' mode instead
 INFO: backup mode: suspend
 INFO: ionice priority: 7
-INFO: CT Name: apline-unpriv
+INFO: CT Name: alpine-unpriv
 INFO: including mount point rootfs ('/') in backup
 INFO: temporary directory is on NFS, disabling xattr and acl support, consider configuring a local tmpdir via /etc/vzdump.conf
 INFO: starting first sync /proc/39778/root/ to /mnt/pve/NAS-DS2/dump/vzdump-lxc-303-2023_04_07-18_43_44.tmp

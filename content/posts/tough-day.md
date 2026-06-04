@@ -24,7 +24,7 @@ To try and get it straight in my mind, here's how I think Core Data works:
 
 4\. If you set CodeGen to "Manual/None", it is now your responsibility to create that file. You usually select this, then tell XCode to generate them for you and add them to your project navigator by going in to Editor | Create NSManagedObject subclass. This then allows you to edit those files.
 
-5\. To do anything these objects, you need a managaged object context. I'm not real clear on what this is. You create it in the App file, from a data controller that contains an NSPersistantObject. Then you save it to some super global called the environment.
+5\. To do anything these objects, you need a managed object context. I'm not real clear on what this is. You create it in the App file, from a data controller that contains an NSPersistentObject. Then you save it to some super global called the environment.
 
 6\. To add objects to the collection, you instantiate them using an initialiser that accepts the managed object context as an argument. Then to really persist them (as opposed to just the memory version) you call save() on the object context.
 

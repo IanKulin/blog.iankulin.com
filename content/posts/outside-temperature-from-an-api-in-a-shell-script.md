@@ -139,7 +139,7 @@ awk -F'"temp":' '{print $2}'
 12.59,"feels_like":11.68,"temp_min":12.59,"temp_max":12.59,"pressure":1007,"humidity":68,"sea_level":1007,"grnd_level":976},"visibility":10000,"wind":{"speed":7.39,"deg":307,"gust":11.23},"clouds":{"all":64},"dt":1682401802,"sys":{"country":"AU","sunrise":1682375848,"sunset":1682415263},"timezone":28800,"id":2070753,"name":"Gnowangerup","cod":200}
 ```
 
-Then I need to do the same sort of thing again - split the string using a delimiter, and just keep the part with the termperature in it. This time we'll use a comma , as the delimiter, and only keep the part in front of it.
+Then I need to do the same sort of thing again - split the string using a delimiter, and just keep the part with the temperature in it. This time we'll use a comma , as the delimiter, and only keep the part in front of it.
 
 ```bash
 cut -d',' -f1

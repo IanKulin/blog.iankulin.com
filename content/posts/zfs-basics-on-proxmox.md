@@ -46,7 +46,7 @@ To create the ZFS pool in Proxmox, again select the node, then select ZFS in the
 
 ![](/images/screen-shot-2023-07-04-at-8.26.42-pm.jpg)
 
-Once that was done, tank appeared as storage in the list under my node. I moved the drives of these dev guests across to it so the zpool would have something to do. I did notice that this process would rush through, then pause for a few seconds - something I haven't noticed when moving guest droves between the NAS and internal SSDs. Early reviews of Samsung pm981 NVME SSD [noted a sustained write dropoff](https://www.tomshardware.com/reviews/samsung-pm981-980-nvme-ssd,5323.html), so this might be something to come back and have a look at later.
+Once that was done, tank appeared as storage in the list under my node. I moved the drives of these dev guests across to it so the zpool would have something to do. I did notice that this process would rush through, then pause for a few seconds - something I haven't noticed when moving guest droves between the NAS and internal SSDs. Early reviews of Samsung pm981 NVME SSD [noted a sustained write drop-off](https://www.tomshardware.com/reviews/samsung-pm981-980-nvme-ssd,5323.html), so this might be something to come back and have a look at later.
 
 ![](/images/screen-shot-2023-07-04-at-8.23.10-pm.png)
 

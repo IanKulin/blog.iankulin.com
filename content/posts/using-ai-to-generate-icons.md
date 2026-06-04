@@ -12,7 +12,7 @@ tags:
   - stable-diffusion
 ---
 
-Since I have minimal design skills, I went back to [Fiverr](https://www.fiverr.com/) (the digital gig economy platform) to get some icons done for CodeTrimmer - explaining that I wanted something like a "pair of scissors floating over some computer code". At the same time I've been playing with [DiffusionBee](https://github.com/divamgupta/diffusionbee-stable-diffusion-ui) - a free Apple silicon version of the [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) artifical intellligence that generates images from text prompts. The image above was created on an M1 Macbook using DiffusionBee.
+Since I have minimal design skills, I went back to [Fiverr](https://www.fiverr.com/) (the digital gig economy platform) to get some icons done for CodeTrimmer - explaining that I wanted something like a "pair of scissors floating over some computer code". At the same time I've been playing with [DiffusionBee](https://github.com/divamgupta/diffusionbee-stable-diffusion-ui) - a free Apple silicon version of the [Stable Diffusion](https://stability.ai/blog/stable-diffusion-public-release) artificial intelligence that generates images from text prompts. The image above was created on an M1 Macbook using DiffusionBee.
 
 Since generating an image from a text prompt is exactly what I'd just done with Fiverr, I thought I'd give the AI a chance. Even if the results are not great, they will do for the toy applications I'm creating as I'm learning.
 

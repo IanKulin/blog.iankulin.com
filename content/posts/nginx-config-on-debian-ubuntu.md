@@ -36,7 +36,7 @@ Nginx configuration follows this pattern. The main configuration file `nginx.con
 
 It's common for web servers running on an individual machine, to be serving content for more than one domain or web site. For example you might be running apache2 on a VPS that is serving your business web site, as well as the web sites of a couple of clients. This would be achieved by having the DNS records for, say itfreaks.com, realfakedoors.ca, and joesusedcars.com all pointing to the same IP address of your server.
 
-Since each of these sites may need slightly different setups, it would make sense for them to have separate config files as well. If you look at the screenshot above, you can see that nginx is going to look in the `/etc/nginx/sites-enabled/` sub-directory for these, but that's not quite the whole story. Let's look at the tree of a fresh install of niginx.
+Since each of these sites may need slightly different setups, it would make sense for them to have separate config files as well. If you look at the screenshot above, you can see that nginx is going to look in the `/etc/nginx/sites-enabled/` sub-directory for these, but that's not quite the whole story. Let's look at the tree of a fresh install of nginx.
 
 ![](/images/screen-shot-2023-07-09-at-9.03.01-am.png)
 

@@ -79,7 +79,7 @@ Rolling your own, or using NGINX Proxy Manager are not your only options. There'
 
 -   [HAProxy](https://www.haproxy.org/#desc) - an industrial strength proxy/load balancer
 -   [Caddy](https://caddyserver.com/docs/quick-starts/reverse-proxy) - same as NGINX but different. Has a great plugin architecture. A particular plugin [Caddy-docker-proxy](https://github.com/lucaslorentz/caddy-docker-proxy) enables configuration of each service with tables inside the service's docker-compose file which is a particularly neat trick.
--   [Traefik](https://traefik.io/traefik/) - does a similar trick to Caddy-docker-proxy of figuring out it's config from the services it's proxying. It's a serious bit of kit valuable for putting in front of huge Kubernetes swams, and is therefore probably a bit more complex to manage than Caddy-docker-proxy.
+-   [Traefik](https://traefik.io/traefik/) - does a similar trick to Caddy-docker-proxy of figuring out it's config from the services it's proxying. It's a serious bit of kit valuable for putting in front of huge Kubernetes swarms, and is therefore probably a bit more complex to manage than Caddy-docker-proxy.
 
 I haven't used any of these (except NGINX Proxy Manager) so take these descriptions as a starting point only.
 

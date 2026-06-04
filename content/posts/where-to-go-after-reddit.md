@@ -13,7 +13,7 @@ tags:
 
 A big chunk of my mindless doomscrolling used to go to Reddit, but also, Reddit posts from the various communities were frequently the useful results when googling error messages. I lurked in many a sub-reddit, but only posted in a couple - usually r/self-hosted or r/Homelab.
 
-The problematic treatment of the communities in the leadup to their IPO has been well publicised, and the short blackout by some subreddits seemed to have zero effect on the company's approach to it's users (which is in fact what they have to sell). Those subreddits, and many others are still working, but (and perhaps I'm imagining this) seem somehow thinner. Additionally, I feel like it's a fragile arrangement - the company has shown how they will deal with their communities, so depending on them in the long term does not seem wise, or even, somehow, ethical - like I'm crossing a picket line.
+The problematic treatment of the communities in the lead up to their IPO has been well publicised, and the short blackout by some subreddits seemed to have zero effect on the company's approach to it's users (which is in fact what they have to sell). Those subreddits, and many others are still working, but (and perhaps I'm imagining this) seem somehow thinner. Additionally, I feel like it's a fragile arrangement - the company has shown how they will deal with their communities, so depending on them in the long term does not seem wise, or even, somehow, ethical - like I'm crossing a picket line.
 
 It's a great pity. The format of asynchronous chats around bite-size topics that are promoted or demoted based on user interests is a great format for technology questions.
 

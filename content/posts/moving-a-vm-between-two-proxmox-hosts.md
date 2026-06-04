@@ -15,7 +15,7 @@ tags:
 
 So, the very small datacentre has undergone a major hardware upgrade today. The HP 800 G1 is joined by an HP 800 G2. Four core i7 vs the old two core i5. Double the RAM to 16GB, four times the disk. The old machine will become a dev/play machine - still virtualised, and the new machine will run the production apps, mostly in Docker containers.
 
-Since everything is containerised, I did consider running Unbuntu Server on the bare metal of the new machine, but running it on Proxmox will give me some flexibility, and since we've stepped up the underlying hardware resource so substantially, performance will be well in front anyway. Plus it will give me some flexibility if needed in the future.
+Since everything is containerised, I did consider running Ubuntu Server on the bare metal of the new machine, but running it on Proxmox will give me some flexibility, and since we've stepped up the underlying hardware resource so substantially, performance will be well in front anyway. Plus it will give me some flexibility if needed in the future.
 
 Another massive benefit of virtualisation is the ability to backup a VM to a single file.
 

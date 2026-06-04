@@ -77,7 +77,7 @@ A big increase for the small writes, slight decrease in the parallel ones.
 It's really a bit hard to come to any conclusions from all this, but let's have a go:
 
 -   There's a speed penalty for using ZFS at all
--   ZFS compression is expensive for many small writes of uncompressible data
+-   ZFS compression is expensive for many small writes of un-compressible data
 -   I need to know more about fio to figure out what was going on with that near impossible speed
 -   NVME is really fast connected to the bus, plugged in through USB, not so much
 

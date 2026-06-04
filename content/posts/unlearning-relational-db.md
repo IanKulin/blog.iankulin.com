@@ -37,7 +37,7 @@ In a fixed-sized record database (most relational databases) you can edit record
 
 The best (from a dev point of view) answer to this is don't worry about it. It's abstracted away so you don't have to think about it. Of course there are edge cases, usually involving large scale implementations, where these things would start to affect database design decisions, but for most cases not.
 
-The actuall answer is going to be complex, but it is going to involve a couple of things for sure.
+The actual answer is going to be complex, but it is going to involve a couple of things for sure.
 
 The first is that modern situations make good use of memory caches so nearly all edits occur in memory rather than disk. Often this is paralleled with writing a journal to disk to allow for a recovery in an unexpected power down situation.
 

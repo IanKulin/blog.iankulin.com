@@ -1,9 +1,10 @@
 ---
-title: "Uwrap App"
+title: "Unwrap App"
 date: '2022-08-25'
-slug: uwrap-app
+slug: unwrap-app
 aliases:
   - /2022/08/25/uwrap-app/
+  - /uwrap-app/
 tags:
   - app
   - learning

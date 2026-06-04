@@ -34,7 +34,7 @@ You need to come up with a name for this VM. These can only use letters and numb
 
 ![](/images/screen-shot-2023-01-28-at-3.15.02-pm.png)
 
-Here's where we choose the image, I'm going with the Unbuntu I downloaded earlier.
+Here's where we choose the image, I'm going with the Ubuntu I downloaded earlier.
 
 ![](/images/screen-shot-2023-01-28-at-3.16.46-pm.png)
 

@@ -13,7 +13,7 @@ tags:
   - xcode14
 ---
 
-<img src="/images/img_3110.png" width="150" alt="Screenshop of Habits app">
+<img src="/images/img_3110.png" width="150" alt="Screenshot of Habits app">
 
 As usual, I'm spending way more time on the apps written from scratch in the [100Days series](https://www.hackingwithswift.com/guide/ios-swiftui/4/3/challenge). The Habit tracking app I'm working on has been good practice, especially of the architecture of the simple [list based app](/list-apps/).
 
@@ -21,7 +21,7 @@ My version has a couple of refinements I quite like. I'm using a checkmark in a 
 
 Until this app I've purely been using the preview and simulator for looking and and checking the operation of the app. But now I've started using my own iPhone for testing and actually trying to use the app from day to day. There's a noticeable difference between thinking up use-cases in your head or [dogfooding](https://en.wikipedia.org/wiki/Eating_your_own_dog_food) it. This has led to several improvements, but now I'm at a crossroads with one to do with the data persistence.
 
-I'm using the Swift [built in JSON](https://www.ralfebert.com/ios/json-handling-in-swift/) encode/decode which has been quite painless. It uses the struct property names (so not really in line with the JSON snakecase convention) and just magics everthing up for you. Here's the structs, and the JSON produced after a week of using the app.
+I'm using the Swift [built in JSON](https://www.ralfebert.com/ios/json-handling-in-swift/) encode/decode which has been quite painless. It uses the struct property names (so not really in line with the JSON snake-case convention) and just magics everything up for you. Here's the structs, and the JSON produced after a week of using the app.
 
 ```swift
 struct HabitItem: Identifiable, Codable, Equatable {

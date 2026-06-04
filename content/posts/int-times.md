@@ -52,7 +52,7 @@ thingStrings.count.times {
 
 Which is, I admit, not amazingly better, but better, especially if the compiler is allocating the memory and filling it with each array value in the first example (which I don't know if it is, but am increasingly interested in finding out).
 
-Feeling pretty pleased with myself for inventing this new Int method, I had a extra thought that in fact, the Swift community may already of invented this and incorporated it in the language, so I should google it first. It turns out it's not aprt of the official language, but neither (unsurprisingly) am I the first to think of it.
+Feeling pretty pleased with myself for inventing this new Int method, I had a extra thought that in fact, the Swift community may already of invented this and incorporated it in the language, so I should google it first. It turns out it's not a part of the official language, but neither (unsurprisingly) am I the first to think of it.
 
 There's a [Stack Overflow answer](https://stackoverflow.com/questions/30554013/what-is-the-shortest-way-to-run-same-code-n-times-in-swift) to a question "What is the shortest way to run same code n times in Swift?"
 

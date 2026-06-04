@@ -81,7 +81,7 @@ I'm also able to see that it's hitting the container with all the requests by ru
 |------------------------------|----------------|
 | Nextdc.com                   | 617            |
 | NGINX Proxy with no site     | 412            |
-| NGINX-apline site            | 420            |
+| NGINX-alpine site            | 420            |
 | Busy-box (uclibc)            | 424            |
 
 The comparison with nextdc is of course unfair. They are returning a lot more html, and some of it could be server rendered. I don't have an explanation of why my results are so different from nerkn's. He's using a different tool, and I imagine on a local network (mine is over a mobile data link, to a VPS in a data centre).

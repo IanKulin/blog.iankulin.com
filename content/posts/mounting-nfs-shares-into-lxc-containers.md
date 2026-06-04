@@ -26,7 +26,7 @@ root@ct356-syncthing:~# mount -t nfs 192.168.100.32:/volume1/syncthing /mnt/sync
 mount.nfs: access denied by server while mounting 192.168.100.32:/volume1/syncthing
 ```
 
-This is just part of the security nature of the LXC containter getting in our way. We can edit the `.conf` for the container, or just change it in the container options via the web GUI and restart the container.
+This is just part of the security nature of the LXC container getting in our way. We can edit the `.conf` for the container, or just change it in the container options via the web GUI and restart the container.
 
 <a href="/images/screen-shot-2023-04-18-at-7.19.41-pm.png"><img src="/images/screen-shot-2023-04-18-at-7.19.41-pm.png" width="800" alt=""></a>
 

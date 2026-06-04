@@ -29,7 +29,7 @@ So I guess is part V of my adventures in the weather API, if you just want to kn
 
 Once nginx and node.js are installed (with [the Ansible script](https://gist.github.com/IanKulin/bd6d1a78f9a9fa9a859384a26ca95235) if you want to rock the dev ops tattoo) you'll need to configure nginx. On my Debian systems, the config file `nginx.conf` is in `/etc/nginx/`
 
-There's a line in that file that includes all the `*.conf` files in `/etc/nginx/conf.d`. This is a common pattern I see in some distros - the main config files are not really meant to be messed with, but then there's a directory to add config files to whihc are included. The theoretical advantage of this is that the distro maintainers can roll out a new version of a package and change the main config file, and your stuff will still work.
+There's a line in that file that includes all the `*.conf` files in `/etc/nginx/conf.d`. This is a common pattern I see in some distros - the main config files are not really meant to be messed with, but then there's a directory to add config files to which are included. The theoretical advantage of this is that the distro maintainers can roll out a new version of a package and change the main config file, and your stuff will still work.
 
 The way they have done this with the nginx.conf means that the only changes we can make in the `conf.d` directory are to do with virtual hosts, but that's going to be 99% of the things we would want to change. So much so, I'm not even going to show you the `nginx.conf` file, just our little `/etc/nginx/conf.d/nodeapi.conf`
 

@@ -17,7 +17,7 @@ Sean Allen has come to my notice a couple of times, once where he was mentioned 
 
 {{< youtube HXoVSbwWUIk >}}
 
-This video I watched last night is a compilation of the first few videos of [Sean's SwiftUI course](https://seanallen.teachable.com/p/swiftui-fundamentals), and it's pretty great. In particular he does a great job of explaining how to start to refactor child views out and call them, and how all the stacks go together to make a pretty interface. What he does not do is vist/explain any of the Swift language fundamentals. If you don't already know what a struc is, and the Swift flavour of them, it may be a challenging place to start.
+This video I watched last night is a compilation of the first few videos of [Sean's SwiftUI course](https://seanallen.teachable.com/p/swiftui-fundamentals), and it's pretty great. In particular he does a great job of explaining how to start to refactor child views out and call them, and how all the stacks go together to make a pretty interface. What he does not do is visit/explain any of the Swift language fundamentals. If you don't already know what a struc is, and the Swift flavour of them, it may be a challenging place to start.
 
 In the last couple of tutorials he starts on the way the views are called, and how we can pass values into them. This is great marketing for me - it's exactly where I'm up to in my journey - I'm perplexed about the structure of a SwiftUI app (where's main?!) and the engine that's watching when the UI needs updated and building the views. For example, I want to write a little hello world that just prints the time on the screen. I got this far:
 

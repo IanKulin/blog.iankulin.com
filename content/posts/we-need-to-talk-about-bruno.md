@@ -34,4 +34,4 @@ This video from Anoop (with a very clickbait-y title) does a good job of explain
 
 {{< youtube b_ctmKlEOXg >}}
 
-I've only played around with Bruno for an afternoon, but I'm loving it so far. Seems like it will do everything I need, and the diffable files for the requests are a bonus. This is a project that deserves to be better known.
+I've only played around with Bruno for an afternoon, but I'm loving it so far. Seems like it will do everything I need, and the diff-able files for the requests are a bonus. This is a project that deserves to be better known.

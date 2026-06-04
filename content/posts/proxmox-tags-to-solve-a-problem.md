@@ -13,7 +13,7 @@ tags:
 
 Each weekend I run an Ansible script that updates all my apt based VMs and containers. For the production machines, that's everything, but my dev Proxmox is full of half-finished projects. Some of these have IP addresses reserved and are in the Ansible hosts file (because whatever service they are running is almost ready to move to the production server) others do not.
 
-Long story short, the dev server has some containers and VM's that need turned on before I run the updates, and some that don't. I could just start them all up, for the ten minutes the updates usually take, but that seems wasteful somehow. If there was only some way to mark the ones I need to turn on in the Proxmox webgui! Well, there is. We can add tags to machines in Proxmox.
+Long story short, the dev server has some containers and VM's that need turned on before I run the updates, and some that don't. I could just start them all up, for the ten minutes the updates usually take, but that seems wasteful somehow. If there was only some way to mark the ones I need to turn on in the Proxmox web GUI! Well, there is. We can add tags to machines in Proxmox.
 
 <a href="/images/screen-shot-2023-10-14-at-11.23.57-am-copy.png"><img src="/images/screen-shot-2023-10-14-at-11.23.57-am-copy.png" width="512" alt=""></a>
 

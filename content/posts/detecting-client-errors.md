@@ -1,6 +1,6 @@
 ---
 title: "Detecting front-end client errors"
-date: '2026-06-03'
+date: '2026-06-03T00:00:00+10:00'
 slug: detecting-client-errors
 tags:
   - monitoring

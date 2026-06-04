@@ -8,7 +8,7 @@ tags:
   - code
   - data
   - json
-  - persistance
+  - persistence
   - posts
   - swift
 ---

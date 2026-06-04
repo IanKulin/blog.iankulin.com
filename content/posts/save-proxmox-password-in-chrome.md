@@ -13,7 +13,7 @@ tags:
   - proxmox
 ---
 
-When I installed Proxmox, I'd used a secure, and therefore absurdly long and complicated root password. I do use a password manager, but don't have it integrated into Chrome, so it was buggging me having to find it and paste it in each time - why wasn't Chrome offering to save it for me?
+When I installed Proxmox, I'd used a secure, and therefore absurdly long and complicated root password. I do use a password manager, but don't have it integrated into Chrome, so it was bugging me having to find it and paste it in each time - why wasn't Chrome offering to save it for me?
 
 Well, you'd guess it was something to do with this. I feel like Chrome is trying to tell me something here:
 

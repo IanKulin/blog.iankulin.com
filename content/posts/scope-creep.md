@@ -16,7 +16,7 @@ In project management, and especially in programming "scope creep" refers to the
 
 My iOS development learning journey has been experiencing some of this as well. I started out with only four clear goals:
 
--   Complete the Standford CS193p course
+-   Complete the Stanford CS193p course
 -   Complete Hacking with SwiftUI
 -   Get an app in the app store
 -   Document my progress by blogging my learning

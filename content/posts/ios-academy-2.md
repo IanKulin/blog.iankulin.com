@@ -11,6 +11,6 @@ tags:
   - video
 ---
 
-A YouTube channel worth subscribing to is [Afraz Siddiqui's](https://www.linkedin.com/in/afrazsiddiqui) [iOS Academy](https://www.youtube.com/c/iOSAcademy/videos). He does a great videos on iOS development. My favouriets might be the shorter focussed ones, like this one on the new SwiftUI chart views.
+A YouTube channel worth subscribing to is [Afraz Siddiqui's](https://www.linkedin.com/in/afrazsiddiqui) [iOS Academy](https://www.youtube.com/c/iOSAcademy/videos). He does a great videos on iOS development. My favourites might be the shorter focussed ones, like this one on the new SwiftUI chart views.
 
 {{< youtube KVz_I10R-wA >}}

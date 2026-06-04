@@ -10,7 +10,7 @@ tags:
   - vm
 ---
 
-I [mentioned a while ago](/pi-server/) that the price of the [Raspberry Pi4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/) was getting such that it's smarter to purchase one of the little business workstations instead. Depsite having little need for such a thing, I went ahead and bought an [HP Elitedesk 800 G1](https://support.hp.com/au-en/document/c04266271) "mini" PC. It has 8GB RAM (which is the max for the Pi4) as well as a 128GB SDD, the processor is an Intel i5.
+I [mentioned a while ago](/pi-server/) that the price of the [Raspberry Pi4](https://www.raspberrypi.com/products/raspberry-pi-4-model-b/specifications/) was getting such that it's smarter to purchase one of the little business workstations instead. Despite having little need for such a thing, I went ahead and bought an [HP Elitedesk 800 G1](https://support.hp.com/au-en/document/c04266271) "mini" PC. It has 8GB RAM (which is the max for the Pi4) as well as a 128GB SDD, the processor is an Intel i5.
 
 ![](/images/screen-shot-2023-01-26-at-10.54.25-am.jpg)
 

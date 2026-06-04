@@ -13,11 +13,11 @@ tags:
 
 One of the strengths of having virtual machines (VMs) running inside a hypervisor like Proxmox is how they are isolated from each other and their host. This is a strength - if there is a problem with a particular VM nothing else should be affected by it.
 
-But this can also be a pain if the hypervisor needs access to a VM to control or monitor it in some way that's only possible from inside the VM. Proxmox can use the [Qemu Guest Agent](https://qemu-project.gitlab.io/qemu/interop/qemu-ga.html) for this purpose. To over simplify, this is a deamon that runs in the VM and opens a unix socket/virtual serial port to the hypervisor, and listens for commands on it. With Proxmox, the main use of this is to aid in orderly shutdowns and backups, but it also allows us to run commands in the VM from Proxmox - an obvious security compromise. You definitely would not want to install this daemon on a hosted VPS.
+But this can also be a pain if the hypervisor needs access to a VM to control or monitor it in some way that's only possible from inside the VM. Proxmox can use the [Qemu Guest Agent](https://qemu-project.gitlab.io/qemu/interop/qemu-ga.html) for this purpose. To over simplify, this is a daemon that runs in the VM and opens a unix socket/virtual serial port to the hypervisor, and listens for commands on it. With Proxmox, the main use of this is to aid in orderly shutdowns and backups, but it also allows us to run commands in the VM from Proxmox - an obvious security compromise. You definitely would not want to install this daemon on a hosted VPS.
 
 #### Installing Qemu-guest-agent
 
-I'm running Unbuntu Server 22.4.1 inside Proxmox 7.3 for the following examples.
+I'm running Ubuntu Server 22.4.1 inside Proxmox 7.3 for the following examples.
 
 Use apt (or whatever you distro uses) to install the agent inside the VM.
 

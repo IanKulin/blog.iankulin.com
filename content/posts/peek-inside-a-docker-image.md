@@ -55,7 +55,7 @@ Well well, there are a few files there I can add to the `.dockerignore`
 
 There's a couple of reasons to only keep necessary files in our containers. The first is that it just seems like good programming craft to keep things neat and clean, and a second is that it could become a security issue if we leak things into our containers. An obvious one would be a .`env` that contained API keys or similarly sensitive stuff, but also, I have no idea what's in a `.DS_Store`. Mostly likely nothing important, but it's not needed by my app so lets eliminate it by adding it to `.dockerignore`
 
-You might think I could have avoided all this by explicitly copying the files I know I need in the `dockerfile` instead of using the broadbrush `COPY . .` and that's true. But I've found that if I do that, I end up wasting time debugging things that turn out to be a missing file, whereas if I copy everything, I just need to inspect the container at the start of the project and again as part of the shipping checks and we're golden.
+You might think I could have avoided all this by explicitly copying the files I know I need in the `dockerfile` instead of using the broad-brush `COPY . .` and that's true. But I've found that if I do that, I end up wasting time debugging things that turn out to be a missing file, whereas if I copy everything, I just need to inspect the container at the start of the project and again as part of the shipping checks and we're golden.
 
 Actually, I generally don't want any dot files in my containers, so we'll add that as a wildcard in the .dockerignore
 

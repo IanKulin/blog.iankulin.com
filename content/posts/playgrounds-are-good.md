@@ -8,7 +8,7 @@ tags:
   - chris-lattner
   - learning
   - paul-hudson
-  - playgounds
+  - playgrounds
   - posts
 ---
 
