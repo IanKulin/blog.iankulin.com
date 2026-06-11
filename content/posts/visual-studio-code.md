@@ -11,7 +11,7 @@ tags:
   - visual-studio-code
 ---
 
-<img src="/images/visual_studio_code_1.35_icon.svg_.png" width="149" alt="">
+![](/images/visual_studio_code_1.35_icon.svg_.png)
 
 I've noticed [Visual Studio Code](https://code.visualstudio.com/) in a few videos, and admired what a clean interface it had, and was impressed how opening a terminal window was automatically in the directory you were working in.
 

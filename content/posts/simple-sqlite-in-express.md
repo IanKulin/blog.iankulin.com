@@ -135,7 +135,7 @@ So this code processes a request to our server - something like `http://localhos
 
 And when run in Bruno:
 
-<a href="/images/screen-shot-2023-12-16-at-10.24.54-am.png"><img src="/images/screen-shot-2023-12-16-at-10.24.54-am.png" width="1000" alt=""></a>
+![](/images/screen-shot-2023-12-16-at-10.24.54-am.png)
 
 #### Read
 
@@ -158,7 +158,7 @@ app.get('/users', (req, res) => {
 
 Which looks like this in Bruno:
 
-<a href="/images/screen-shot-2023-12-16-at-10.35.56-am.png"><img src="/images/screen-shot-2023-12-16-at-10.35.56-am.png" width="1000" alt=""></a>
+![](/images/screen-shot-2023-12-16-at-10.35.56-am.png)
 
 Or if we just want one in particular, we'll pass the id in the URL.
 
@@ -184,7 +184,7 @@ app.get('/user/:id', (req, res) => {
 });
 ```
 
-<a href="/images/screen-shot-2023-12-16-at-10.55.25-am.png"><img src="/images/screen-shot-2023-12-16-at-10.55.25-am.png" width="1000" alt=""></a>
+![](/images/screen-shot-2023-12-16-at-10.55.25-am.png)
 
 #### Update
 

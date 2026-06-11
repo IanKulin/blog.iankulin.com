@@ -11,7 +11,7 @@ tags:
   - xcode14-1
 ---
 
-<img src="/images/green_tick.svg_.png" width="164" alt="">
+![](/images/green_tick.svg_.png)
 
 I think I've finally completed the minimum work for Day 61 of [#100DaysOfSwiftUI](https://www.hackingwithswift.com/100/swiftui/61). The task was to suck up some data in JSON, decode it. back it up into a Core Data graph then display the data from the Core Data.
 

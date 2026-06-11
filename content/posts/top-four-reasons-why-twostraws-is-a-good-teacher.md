@@ -10,7 +10,7 @@ tags:
   - posts
 ---
 
-<a href="/images/screen-shot-2022-10-29-at-1.28.59-pm.png"><img src="/images/screen-shot-2022-10-29-at-1.28.59-pm.png" width="241" alt=""></a>
+![](/images/screen-shot-2022-10-29-at-1.28.59-pm.png)
 
 #### Good Questions
 

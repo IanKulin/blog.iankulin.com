@@ -29,7 +29,7 @@ lvmthin: local-lvm
 
 And sure enough, if I look in `/var/lib/vz/dump` (dump is the backup location mentioned in the docs):
 
-<a href="/images/screen-shot-2023-03-26-at-11.59.10-am.png"><img src="/images/screen-shot-2023-03-26-at-11.59.10-am.png" width="1000" alt=""></a>
+![](/images/screen-shot-2023-03-26-at-11.59.10-am.png)
 
 I ain't messing around this morning, so I'll just grab these onto my laptop with scp.
 

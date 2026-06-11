@@ -30,8 +30,8 @@ I was right to be saving the settings and exiting with F10, but then instead of 
 
 If you get the message `No support for KVM virtualization detected` from Proxmox.
 
-<img src="/images/img_4419.jpg" width="560" alt="">
+![](/images/img_4419.jpg)
 
 Then follow its advice. Head into the BIOS settings and look for Virtualization Technology (VTx) and turn it on.
 
-<img src="/images/img_4420.jpg" width="697" alt="">
+![](/images/img_4420.jpg)

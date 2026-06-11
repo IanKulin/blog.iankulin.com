@@ -9,7 +9,7 @@ tags:
   - swift-language
 ---
 
-<a href="https://en.wikipedia.org/wiki/The_Undertaker"><img src="/images/undertaker_with_fire.jpg" width="84" alt=""></a>
+[![](/images/undertaker_with_fire.jpg)](https://en.wikipedia.org/wiki/The_Undertaker)
 
 I've learned (so far) an underscore can be used for a couple of things in Swift, both of them loosely translating to "doesn't really matter".
 

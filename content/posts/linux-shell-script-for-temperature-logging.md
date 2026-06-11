@@ -38,7 +38,7 @@ pch_skylake
 45500
 ```
 
-<a href="https://commons.wikimedia.org/w/index.php?curid=9817206"><img src="/images/intel_5_series_architecture.png" width="232" alt=""></a>
+[![](/images/intel_5_series_architecture.png)](https://commons.wikimedia.org/w/index.php?curid=9817206)
 *Intel 5 architecture - Anas hashmi*
 
 The first two are temperatures of the [Platform Controller Hub (PCH)](https://commons.wikimedia.org/w/index.php?curid=9817206) and actual CPU. Both of these values were already just sitting there.

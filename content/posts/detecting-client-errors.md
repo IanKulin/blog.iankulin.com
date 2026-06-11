@@ -171,7 +171,7 @@ We end up with a database of time stamped errors for each site. The `/results` e
 
 The in Uptime Kuma, we set up a monitor that looks for the site name in the JSON with zero errors:
 
-![](/images/detecting-client-errors-kuma.md)
+![](/images/detecting-client-errors-kuma.png)
 
 Now, if there are errors in my front end code, I'll be notified immediately.
 
