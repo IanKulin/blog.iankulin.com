@@ -2,6 +2,7 @@
 title: "Good AI Questions"
 date: '2026-08-20'
 slug: good-ai-questions
+description: A look at my LLM supported webdev process in light of the open questions flagged by Manuel Schipper.
 tags:
   - ai
   - llm

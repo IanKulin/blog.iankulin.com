@@ -30,6 +30,7 @@ title: "My Post Title"
 date: "2025-05-15"
 slug: my-post-title
 draft: true
+description: A summary of this blog post used by search engines and social media.
 tags:
   - ios-dev
 ---

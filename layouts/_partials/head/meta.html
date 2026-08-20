@@ -1,11 +1,12 @@
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" {{ printf "type=%q" .MediaType.Type | safeHTMLAttr }} title="{{ .Name }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
-{{ if .IsHome -}}
-{{ with $.Param "description" }}<meta name="description" content="{{ . }}">{{ end }}
-{{ else -}}
-{{ with .Description }}<meta name="description" content="{{ . }}">{{ end }}
-{{ end -}}
+{{- $pageDescription := "" }}
+{{- if .IsHome }}{{ $pageDescription = $.Param "description" }}
+{{- else }}{{ $pageDescription = .Description }}
+{{- if not $pageDescription }}{{ $pageDescription = .Summary | plainify }}{{ end }}
+{{- end }}
+{{ with $pageDescription }}<meta name="description" content="{{ . | truncate 200 }}">{{ end }}
 <meta name="created" {{ printf "content=%q" (.Date.Format "2006-01-02T15:04:05-0700") | safeHTMLAttr }}>
 <meta name="modified" {{ printf "content=%q" (.Lastmod.Format "2006-01-02T15:04:05-0700") | safeHTMLAttr }}>
 {{ with .Params.author | default site.Params.author.name }}<meta name="author" content="{{ . }}">{{ end }}
@@ -14,12 +15,7 @@
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-{{- $ogDescription := "" }}
-{{- if .IsHome }}{{ $ogDescription = $.Param "description" }}
-{{- else }}{{ $ogDescription = .Description }}
-{{- if not $ogDescription }}{{ $ogDescription = .Summary | plainify }}{{ end }}
-{{- end }}
-{{ with $ogDescription }}<meta property="og:description" content="{{ . | truncate 200 }}">{{ end }}
+{{ with $pageDescription }}<meta property="og:description" content="{{ . | truncate 200 }}">{{ end }}
 {{- $ogImage := $.Param "image" }}
 {{- if not $ogImage }}
   {{- with findRE "<img[^>]+src=\"[^\"]+\"" .Content 1 }}
