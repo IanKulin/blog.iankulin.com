@@ -18,7 +18,7 @@ Maintainability - when we separate how the pages should look from what's in them
 
 Accessibility - not every human user will be using a conventional web-browser to consume the pages, and even if they are, they might be using accessibility features to suit their abilities. I already mentioned the obvious issues for screen readers that describe things in audio, but imagine if you do not use a mouse, how helpful it might be to be able to skip from section to section in a document using a keyboard shortcut - that's made more possible by dividing our content into sections.
 
-Skynet - Your web pages are not only consumed by humans. Search engine web crawlers and, increasingly, AI models hungry for knowledge will also use them as input. If the different parts of your pages are marked up semantically it will improve your search engine optimisation and further the rise of our robot overlords. For example, a top-level heading <h1> can be assumed by the machine to be a good indication of the content of the page. The text between the <summary> tags could be assumed to be good to show as a snippet in some search results.
+Skynet - Your web pages are not only consumed by humans. Search engine web crawlers and, increasingly, AI models hungry for knowledge will also use them as input. If the different parts of your pages are marked up semantically it will improve your search engine optimisation and further the rise of our robot overlords. For example, a top-level heading `<h1>` can be assumed by the machine to be a good indication of the content of the page. The text between the `<summary>` tags could be assumed to be good to show as a snippet in some search results.
 
 #### Headings
 
