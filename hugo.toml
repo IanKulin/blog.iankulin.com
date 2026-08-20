@@ -65,6 +65,7 @@ buildFuture     = false
   submitted    = true
   mainSections = ["posts"]
   poweredby    = false
+  themecolor   = "#ffffff"
   feedlinks    = true
 
   [params.author]
