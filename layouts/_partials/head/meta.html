@@ -37,6 +37,9 @@
   {{- with $ogImageAlt }}
 <meta property="og:image:alt" content="{{ . }}">
   {{- end }}
+<meta name="twitter:card" content="summary_large_image">
+{{ else }}
+<meta name="twitter:card" content="summary">
 {{ end }}
 {{ hugo.Generator }}
 {{ with $.Param "themecolor" }}<meta name="theme-color" content="{{ . }}">{{ end }}
