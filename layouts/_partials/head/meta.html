@@ -17,9 +17,14 @@
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 {{ with $pageDescription }}<meta property="og:description" content="{{ . | truncate 200 }}">{{ end }}
 {{- $ogImage := $.Param "image" }}
+{{- $ogImageAlt := "" }}
 {{- if not $ogImage }}
-  {{- with findRE "<img[^>]+src=\"[^\"]+\"" .Content 1 }}
-    {{- $ogImage = replaceRE `.*src="([^"]+)".*` "$1" (index . 0) }}
+  {{- with findRE "<img[^>]+>" .Content 1 }}
+    {{- $imgTag := index . 0 }}
+    {{- $ogImage = replaceRE `.*src="([^"]+)".*` "$1" $imgTag }}
+    {{- if findRE `alt="[^"]*"` $imgTag }}
+      {{- $ogImageAlt = replaceRE `.*alt="([^"]*)".*` "$1" $imgTag }}
+    {{- end }}
   {{- end }}
 {{- end }}
 {{ with $ogImage }}
@@ -28,6 +33,9 @@
   {{- with $ogImageResource }}
 <meta property="og:image:width" content="{{ .Width }}">
 <meta property="og:image:height" content="{{ .Height }}">
+  {{- end }}
+  {{- with $ogImageAlt }}
+<meta property="og:image:alt" content="{{ . }}">
   {{- end }}
 {{ end }}
 {{ hugo.Generator }}
