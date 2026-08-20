@@ -31,7 +31,7 @@ I have a house stack and style that I want replicated in every project where it 
 
 These are not anything dramatic - the biggest one is my stack for SSR apps, others for code review, HTML/CSS audit, addressing a single tem from a code review etc. The first versions were mostly developed by an LLM pointed at all of my production repos and told to pull out the common quality practices, then as I run into issues they get added to. I used to have a template app for some of my project types that I'd copy over - this is a bit like that except it can be applied to existing projects as well.
 
-![](/images/good-ai-questions-ssr-playbook.png)
+![](/images/good-ai-questions-ssr-playbook.jpg)
 
 
 ### Early review
