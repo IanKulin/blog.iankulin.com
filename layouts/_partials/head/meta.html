@@ -12,6 +12,7 @@
 {{ with .Params.author | default site.Params.author.name }}<meta name="author" content="{{ . }}">{{ end }}
 {{ with $.Param "contact" }}<meta name="contact" content="{{ . }}">{{ end }}
 <meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:locale" content="{{ site.Language.Locale | replaceRE "-" "_" }}">
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
