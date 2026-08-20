@@ -22,6 +22,38 @@ buildFuture     = false
 [permalinks]
   posts = "/:slug/"
 
+[[module.mounts]]
+  source = "static/images"
+  target = "assets/images"
+
+[[module.mounts]]
+  source = "static"
+  target = "static"
+
+[[module.mounts]]
+  source = "content"
+  target = "content"
+
+[[module.mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[module.mounts]]
+  source = "data"
+  target = "data"
+
+[[module.mounts]]
+  source = "i18n"
+  target = "i18n"
+
+[[module.mounts]]
+  source = "archetypes"
+  target = "archetypes"
+
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
 [taxonomies]
   tag = "tags"
 
