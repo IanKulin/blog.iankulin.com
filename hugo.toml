@@ -29,6 +29,7 @@ buildFuture     = false
 [[module.mounts]]
   source = "static"
   target = "static"
+  files = ["!images/**"]
 
 [[module.mounts]]
   source = "content"

@@ -1,0 +1,19 @@
+{{- $destination := .Destination -}}
+{{- $ext := path.Ext $destination | lower -}}
+{{- if in (slice ".gif" ".svg") $ext -}}
+<img src="{{ $destination | safeURL }}" alt="{{ .Text }}" loading="lazy">
+{{- else -}}
+  {{- $image := resources.Get (strings.TrimPrefix "/" $destination) -}}
+  {{- if $image -}}
+    {{- $maxWidth := 1600 -}}
+    {{- $targetWidth := $image.Width -}}
+    {{- if gt $image.Width $maxWidth -}}
+      {{- $targetWidth = $maxWidth -}}
+    {{- end -}}
+    {{- $resized := $image.Resize (printf "%dx webp q78" $targetWidth) -}}
+    {{- $isFirst := eq .Ordinal 0 -}}
+<img src="{{ $resized.RelPermalink }}" width="{{ $resized.Width }}" height="{{ $resized.Height }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $isFirst }} loading="eager" fetchpriority="high"{{ else }} loading="lazy"{{ end }} decoding="async">
+  {{- else -}}
+<img src="{{ $destination | safeURL }}" alt="{{ .Text }}" loading="lazy">
+  {{- end -}}
+{{- end -}}
