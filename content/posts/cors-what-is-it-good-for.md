@@ -74,3 +74,7 @@ or perhaps if https://api.example.com is a public API that's happy for anyone to
 ```
 Access-Control-Allow-Origin: *
 ```
+
+It's worth remembering that CORS is enforced by the browser, not the server — the response actually gets sent either way, the browser just refuses to hand it to your Javascript if the headers don't check out. If you use a non-browser tool (like `curl`) then CORS is not in effect. I've confused myself forgetting that more than once.
+
+So that's CORS: The same-origin policy locks everything down by default, and CORS is the mechanism a server uses to deliberately unlock the door for specific origins it trusts. 
