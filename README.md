@@ -90,12 +90,6 @@ docker buildx build --builder multiarch-builder --platform linux/amd64 \
 
 ### Running locally
 
-Build and start with the production URL (uses your native platform):
-
-```bash
-docker compose up -d --build
-```
-
 To test with a local URL (links will resolve to `localhost:8080`):
 
 ```bash
