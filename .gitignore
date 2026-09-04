@@ -6,6 +6,7 @@ resources/
 scripts/output/
 scripts/node_modules/
 scripts/pack*
+scripts/.env
 import/
 node_modules/
 
