@@ -2,6 +2,7 @@
 title: "HTML 002 - Tags for structure"
 date: '2022-12-21'
 slug: html-002-tags-for-structure
+summary: "An introduction to semantic HTML: tags that describe what a piece of content is rather than how it should look. Covers why semantic markup matters for maintainability, accessibility, and search engines, and surveys common tags like header, nav, article, and section, along with the non-semantic div and span."
 aliases:
   - /2022/12/21/html-002-tags-for-structure/
 tags:
