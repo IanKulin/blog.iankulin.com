@@ -2,6 +2,7 @@
 title: "Why use './' in front of filenames?"
 date: '2023-04-23'
 slug: why-use-in-front-of-filenames
+summary: "An exploration of why filenames in Linux are sometimes prefixed with ./. I ask ChatGPT for an explanation, verify its claims with hands-on tests, and find the prefix is useful for executing scripts in the current directory, preventing filenames from being mistaken for command arguments, and clarifying relative paths in HTML—though in many cases it's optional."
 aliases:
   - /2023/04/23/why-use-in-front-of-filenames/
 tags:

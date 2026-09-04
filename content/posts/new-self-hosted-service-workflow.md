@@ -2,6 +2,7 @@
 title: "New Self-Hosted Service Workflow"
 date: '2023-12-03'
 slug: new-self-hosted-service-workflow
+summary: "A walkthrough of my workflow for adding a new self-hosted service to my Proxmox homelab, using audiobookshelf—set up after abandoning Audible—as the worked example. It covers running the service as a Docker container inside an unprivileged Debian LXC, mounting NAS storage via fstab, Tailscale access, Ansible automation, monitoring with Uptime Kuma, and Proxmox backups."
 aliases:
   - /2023/12/03/new-self-hosted-service-workflow/
 tags:

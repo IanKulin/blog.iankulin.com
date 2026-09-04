@@ -2,6 +2,7 @@
 title: ".git stuffed"
 date: '2022-09-11'
 slug: git-stuffed
+summary: "A git workflow run-in with the \"unrelated histories\" error: after pushing my local work to a GitHub repo initialized with a readme, I couldn't merge the two histories despite pulling and pushing attempts. I ultimately deleted the .git folder and the remote repo and started over, with plans to reproduce the problem later."
 aliases:
   - /2022/09/11/git-stuffed/
 tags:

@@ -2,6 +2,7 @@
 title: "Playgrounds - Learn to Code"
 date: '2022-07-07'
 slug: playgrounds-learn-to-code
+summary: "I embed a short video showing a challenge from Apple's Learn to Code 1 book in the Playgrounds app. I also note that the series continues with Learn to Code 2 and Get Started with Apps."
 aliases:
   - /2022/07/07/playgrounds-learn-to-code/
 tags:

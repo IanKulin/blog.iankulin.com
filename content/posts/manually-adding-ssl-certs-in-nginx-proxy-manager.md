@@ -2,6 +2,7 @@
 title: "Manually adding SSL certs in Nginx Proxy Manager"
 date: '2025-03-31'
 slug: manually-adding-ssl-certs-in-nginx-proxy-manager
+summary: "After the Porkbun DNS plugin for Nginx Proxy Manager stopped working, my homelab Let's Encrypt certificates no longer renewed automatically, so I now download certificate bundles directly from Porkbun and install them manually. Along the way there's background on SSL, DNS challenges, and securing internal services that aren't reachable from the public internet. The manual approach requires repeating the renewal process every 90 days."
 aliases:
   - /2025/03/31/manually-adding-ssl-certs-in-nginx-proxy-manager/
 tags:

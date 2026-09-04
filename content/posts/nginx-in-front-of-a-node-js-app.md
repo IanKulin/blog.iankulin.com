@@ -2,6 +2,7 @@
 title: "nginx in Front of a node.js app"
 date: '2023-08-04'
 slug: nginx-in-front-of-a-node-js-app
+summary: "I configure NGINX on a VPS to serve static files while forwarding /api routes to a Node.js app running on localhost. I cover a server block example with proxy_pass and the Host header, the conf.d include convention, and restarting or validating the config. This post is part of a series on my weather API, but it is self-contained."
 aliases:
   - /2023/08/04/nginx-in-front-of-a-node-js-app/
 tags:

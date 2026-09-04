@@ -2,6 +2,7 @@
 title: "ZTM - Complete Web Developer"
 date: '2022-12-13'
 slug: ztm-complete-web-developer
+summary: "A few weeks into the Zero to Mastery Complete Web Developer course on Udemy, I compare it with Paul Hudson's 100 Days of SwiftUI across several dimensions: video versus text format, pacing and depth, how current the content is, student exercises, and cost. My early impressions are positive, though the course is faster-paced and less hands-on than the SwiftUI counterpart."
 aliases:
   - /2022/12/13/ztm-complete-web-developer/
 tags:

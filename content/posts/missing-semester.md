@@ -2,6 +2,7 @@
 title: "Missing Semester"
 date: '2022-08-05'
 slug: missing-semester
+summary: "I discovered MIT's Missing Semester course, which teaches practical CS skills not covered in a typical degree, and highlight that its lectures, notes, and assignments are freely available. Having watched the shell and git lectures, I found both excellent and plan to work through the rest of the series."
 aliases:
   - /2022/08/05/missing-semester/
 tags:

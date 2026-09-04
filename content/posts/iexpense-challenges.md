@@ -2,6 +2,7 @@
 title: "iExpense Challenges"
 date: '2022-10-02'
 slug: iexpense-challenges
+summary: "Day 38 of my 100 Days of SwiftUI challenge covers three exercises on the iExpense app: showing amounts in the user's preferred currency (navigating a deprecated Locale API), applying conditional styling based on expense value, and splitting the expense list into personal and business sections. The list-splitting required me to wrap conditionals in a Group to satisfy the compiler's ViewBuilder type checks."
 aliases:
   - /2022/10/02/iexpense-challenges/
 tags:

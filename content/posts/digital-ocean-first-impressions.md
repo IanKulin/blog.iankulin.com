@@ -2,6 +2,7 @@
 title: "Digital Ocean first impressions"
 date: '2023-08-19'
 slug: digital-ocean-first-impressions
+summary: "Frustrated with slow VM provisioning in Proxmox compared to BinaryLane, I used a $200 Digital Ocean credit from a podcast promotion to test how quickly a cloud VM can be spun up. A Debian droplet booted in about 42 seconds, but initial SSH access proved awkward, requiring me to dig through docs and the web console to set up a user since Debian blocks root login. Once I cleared that hurdle, the rest of the experience was fine."
 aliases:
   - /2023/08/19/digital-ocean-first-impressions/
 tags:

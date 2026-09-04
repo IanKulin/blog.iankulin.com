@@ -2,6 +2,7 @@
 title: "Proxmox - Qemu-guest-agent"
 date: '2023-02-09'
 slug: proxmox-qemu-guest-agent
+summary: "I walk through installing and enabling the Qemu Guest Agent in an Ubuntu Server VM under Proxmox, including the gotcha that the agent should be activated by enabling the option in Proxmox and shutting down the VM, not by running systemctl or rebooting. I also cover verifying the agent from both the guest and host sides, and note the security trade-off that anyone with Proxmox access can run commands as root inside VMs running the daemon."
 aliases:
   - /2023/02/09/proxmox-qemu-guest-agent/
 tags:

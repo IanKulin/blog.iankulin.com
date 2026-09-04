@@ -2,6 +2,7 @@
 title: "Complicating the Temperature API"
 date: '2023-06-28'
 slug: complicating-the-temperature-api
+summary: "A short YouTube video on building REST APIs with Node and Express prompts a plan to replace my existing weather data setup—a Python cron job on a VPS that writes API results to a text file served by NGINX—with a Node.js endpoint that fetches and caches fresh weather data on request. This would cut the up-to-ten-minute staleness of temperature data polled by homelab servers, and I break the work into small steps, starting with replicating the current text-file behaviour in Node behind NGINX."
 aliases:
   - /2023/06/28/complicating-the-temperature-api/
 tags:

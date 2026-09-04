@@ -2,6 +2,7 @@
 title: "HP Secure Boot Pain"
 date: '2023-03-23'
 slug: hp-secure-boot-pain
+summary: "Installing Proxmox on my HP EliteDesk 800 G2 from USB fails with a \"Selected boot image did not authenticate\" error because of Secure Boot. Disabling Secure Boot in the BIOS isn't enough — the setting reverts unless I also type in the confirmation number HP prompts for after I save and exit, which is easy to miss. I include a short bonus section on enabling Virtualization Technology (VTx) when Proxmox reports no KVM support."
 aliases:
   - /2023/03/23/hp-secure-boot-pain/
 tags:

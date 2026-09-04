@@ -2,6 +2,7 @@
 title: "Practice your restore strategy"
 date: '2023-12-21'
 slug: practice-your-restore-strategy
+summary: "My routine quarterly disaster-recovery test in my Proxmox homelab—shutting down the production node and restoring its backups onto a second machine—turned up a few minor issues: the backup node ran out of disk space, was still on an old Proxmox version, and was missing a config fix for backing up LXCs to NFS. The exercise also prompted me to reflect on sticking with Proxmox, Synology's reliability, and the Uptime Kuma and ntfy monitoring that confirmed services came back up."
 aliases:
   - /2023/12/21/practice-your-restore-strategy/
 tags:

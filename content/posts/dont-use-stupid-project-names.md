@@ -2,6 +2,7 @@
 title: "Don't Use Stupid Project Names"
 date: '2022-09-22'
 slug: dont-use-stupid-project-names
+summary: "While working through Day 32 of 100 Days of SwiftUI — Project 6, a set of animation tutorials rather than a full app — I name a new Xcode project \"Project 6 - Animation\" and hit seven build errors caused by an unreplaced ___PACKAGENAME macro. Renaming the project without the dash fixes it, and since a web search turned up nothing, I include the exact error message for anyone else who names projects with dashes."
 aliases:
   - /2022/09/22/dont-use-stupid-project-names/
 tags:

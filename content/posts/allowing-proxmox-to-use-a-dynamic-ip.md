@@ -2,6 +2,7 @@
 title: "Allowing Proxmox to use a Dynamic IP"
 date: '2023-04-06'
 slug: allowing-proxmox-to-use-a-dynamic-ip
+summary: "How to switch a Proxmox server from a static IP to a DHCP-assigned address at boot, which I needed for a machine being shipped to a remote site for non-technical setup. Covers the edit to /etc/network/interfaces to change the vmbr0 bridge from static to DHCP, plus the follow-up task of updating /etc/hosts once the server has its new address."
 aliases:
   - /2023/04/06/allowing-proxmox-to-use-a-dynamic-ip/
 tags:

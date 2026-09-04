@@ -2,6 +2,7 @@
 title: "Proxmox - Storage Basics"
 date: '2023-02-03'
 slug: proxmox-storage-basics
+summary: "I walk through the Proxmox web interface after a default install, explaining how nodes and datacenters fit together. I cover the two storage locations the installer creates: a local directory for ISO images, backups, and container templates, and an LVM-Thin volume used for VM disks. I end with an explanation of thin provisioning and what happens when VMs actually consume their allocated space."
 aliases:
   - /2023/02/03/proxmox-storage-basics/
 tags:

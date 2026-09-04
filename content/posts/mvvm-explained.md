@@ -2,6 +2,7 @@
 title: "MVVM Explained"
 date: '2022-08-07'
 slug: mvvm-explained
+summary: "After watching part of a video by Emmanuel Okwara, I explain my new understanding of how MVVM differs from MVC: in MVVM the ViewModel doesn't manipulate the View directly, it just broadcasts changes and lets the View update itself, which fits SwiftUI's declarative style. I raise an open question about what constitutes a View in MVVM and plan to build a minimal MVVM app as a practice project."
 aliases:
   - /2022/08/07/mvvm-explained/
 tags:

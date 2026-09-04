@@ -2,6 +2,7 @@
 title: "Using Swift's map"
 date: '2022-10-13'
 slug: using-swifts-map
+summary: "While working through Day 39 of the Hacking with Swift 100 Days of SwiftUI course, I explain Swift's map method, which applies a closure to each element of a collection and returns a transformed array. Simple Playground examples demonstrate mapping integers to strings, with equivalent forEach and for loop versions included for comparison."
 aliases:
   - /2022/10/13/using-swifts-map/
 tags:

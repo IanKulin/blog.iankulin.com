@@ -2,6 +2,7 @@
 title: "Sean != Erica"
 date: '2022-09-04'
 slug: sean-erica
+summary: "With few current podcasts focused on learning Swift, I have been working through older episodes of shows like Fireside Swift and Swift Over Coffee, enjoying hearing past predictions such as Paul Hudson's doubts about an iPad-capable Xcode. I compare the two seasons of Swift Over Coffee, finding co-host Sean Allen's beginner questions more useful than the more expert pairing with Erica Sadun, despite her deep Swift knowledge."
 aliases:
   - /2022/09/04/sean-erica/
 tags:

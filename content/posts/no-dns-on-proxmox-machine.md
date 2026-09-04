@@ -2,6 +2,7 @@
 title: "No DNS on Proxmox machine"
 date: '2023-03-17'
 slug: no-dns-on-proxmox-machine
+summary: "DNS resolution failed on a fresh Proxmox install during apt updates because /etc/resolv.conf pointed at 127.0.0.1 instead of the router's DNS server. After comparing configs on other machines and swapping the network cable, I reinstalled Proxmox from scratch, verified the network settings during setup, and everything worked. This was the third networking issue with this machine, following a DHCP address conflict and a misbehaving managed switch."
 aliases:
   - /2023/03/17/no-dns-on-proxmox-machine/
 tags:

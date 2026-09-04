@@ -2,6 +2,7 @@
 title: "Calculator"
 date: '2023-01-16'
 slug: calculator-2
+summary: "After a podcast episode on JavaScript features to avoid piqued my interest in eval(), I built a browser-based calculator that passes button presses as a string directly to eval(). The app mimics the iPhone calculator's design, with most of the effort going into CSS that displays correctly across different devices. I also cover browser responsive-mode tooling and a touch-action fix for iOS Safari's double-tap zoom, with links to the source and live version."
 aliases:
   - /2023/01/16/calculator-2/
 tags:

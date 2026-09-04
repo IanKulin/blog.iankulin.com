@@ -2,6 +2,7 @@
 title: "Sudoers' file not working"
 date: '2023-02-27'
 slug: sudoers-file-not-working
+summary: "After adding my user to the sudo group, which worked on Ubuntu, I tried the same approach on a fresh Debian install and found it didn't take. Despite the sudoers file and group membership looking correct, the fix turned out to be simply logging out and back in for the change to take effect."
 aliases:
   - /2023/02/27/sudoers-file-not-working/
 tags:

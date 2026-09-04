@@ -2,6 +2,7 @@
 title: "Recursive list of files in Linux"
 date: '2023-03-08'
 slug: recursive-list-of-files-in-linux
+summary: "After migrating a media library from an external USB drive to a NAS and reorganising it, I needed a way to verify no files were missed in the move. I walk through building a Linux command-line pipeline using find, grep with regex, and cut to recursively list media files while filtering out directories, metadata, and unwanted filenames. I then feed the resulting clean listing into a spreadsheet for comparison against the original drive."
 aliases:
   - /2023/03/08/recursive-list-of-files-in-linux/
 tags:

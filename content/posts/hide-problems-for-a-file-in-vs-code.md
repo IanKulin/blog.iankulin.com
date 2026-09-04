@@ -2,6 +2,7 @@
 title: "Hide 'Problems' for a file in VS Code"
 date: '2023-08-25'
 slug: hide-problems-for-a-file-in-vs-code
+summary: "How I silence linter warnings that VS Code raises for the minified pico.min.css file from the Pico CSS library: I exclude the file with a files.exclude entry in .vscode/settings.json, which stops it appearing in the file view and being processed by extensions. I also cover committing workspace settings to the repository and leaving a note in .gitignore so the hidden file isn't confusing later."
 aliases:
   - /2023/08/25/hide-problems-for-a-file-in-vs-code/
 tags:

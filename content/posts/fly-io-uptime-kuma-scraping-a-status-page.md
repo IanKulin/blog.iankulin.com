@@ -2,6 +2,7 @@
 title: "Fly.io, Uptime Kuma & scraping a status page"
 date: '2024-02-02'
 slug: fly-io-uptime-kuma-scraping-a-status-page
+summary: "Because my Uptime Kuma monitoring instance runs on a home network sharing the same flaky 4G connection as the VPS sites it watches, I consider Uptime Robot before deploying a second instance on Fly.io's free tier. Setting it up as a Docker container proves simple, and to fold the remote status back into my local instance I discover Uptime Kuma already exposes an SVG status badge usable with keyword monitoring, avoiding a custom scraping endpoint."
 aliases:
   - /2024/02/02/fly-io-uptime-kuma-scraping-a-status-page/
 tags:

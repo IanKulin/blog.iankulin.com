@@ -2,6 +2,7 @@
 title: "Installing a Node app on a server"
 date: '2023-08-22'
 slug: installing-a-node-app-on-a-server
+summary: "A walkthrough of deploying a Node.js app to a server so it runs as a systemd service rather than an attached terminal session. Using a minimal Express app as the example, I cover copying the files over, installing dependencies, writing a systemd unit file with restart behaviour, and confirming the app still responds after logging out. It's my manual groundwork for a later Ansible playbook that will automate the setup."
 aliases:
   - /2023/08/22/installing-a-node-app-on-a-server/
 tags:

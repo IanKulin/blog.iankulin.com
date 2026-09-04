@@ -2,6 +2,7 @@
 title: "Using LXC templates in Proxmox"
 date: '2023-12-24'
 slug: using-lxc-templates-in-proxmox
+summary: "A guide to automating the setup of new self-hosted services on Proxmox by converting a fully configured LXC container into a reusable template. I cover preparing the base container with standard software such as Docker and Tailscale, addressing clone-specific issues like host names, machine IDs, and SSH host keys, then cloning the template to spin up new containers quickly."
 aliases:
   - /2023/12/24/using-lxc-templates-in-proxmox/
 tags:

@@ -2,6 +2,7 @@
 title: "Firebase"
 date: '2022-08-09'
 slug: firebase
+summary: "I muse on a potential future project, a simple accounting app, and whether Google's Firebase/Firestore could serve as its backend. After watching some CodeWithChris videos on the topic, I conclude that a local SQLite database with iCloud syncing is probably the more realistic approach, though a cloud database would partly address the syncing complications."
 aliases:
   - /2022/08/09/firebase/
 tags:

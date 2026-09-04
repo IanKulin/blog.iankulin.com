@@ -2,6 +2,7 @@
 title: "Unwrap App"
 date: '2022-08-25'
 slug: unwrap-app
+summary: "My review of Unwrap, Paul Hudson's iOS app for learning Swift, which pairs short videos and written lessons with true-or-false questions about Swift code. Though the quizzes sometimes test error-spotting rather than the specific lesson topic, I found they sharpened both my syntax knowledge and my ability to spot mistakes in code. The app is a good way to use spare moments on a phone, even for those not following the Hacking with Swift courses."
 aliases:
   - /2022/08/25/uwrap-app/
   - /uwrap-app/

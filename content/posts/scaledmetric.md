@@ -2,6 +2,7 @@
 title: "@ScaledMetric"
 date: '2022-07-29'
 slug: scaledmetric
+summary: "A short follow-up on fixing inconsistent SF Symbol heights in SwiftUI: locking the symbol height inside a frame solves the earlier problem, but breaks down when users change their text size. Apple's @ScaledMetric property wrapper, introduced in iOS 14, scales the value with Dynamic Type and addresses that, though I admit not fully understanding how it works."
 aliases:
   - /2022/07/29/scaledmetric/
 tags:

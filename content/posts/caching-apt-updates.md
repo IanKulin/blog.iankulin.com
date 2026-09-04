@@ -2,6 +2,7 @@
 title: "Caching APT updates"
 date: '2023-10-03'
 slug: caching-apt-updates
+summary: "I set up APT Cacher NG in an unprivileged LXC container to cache Debian package downloads for machines on my homelab LAN, avoiding repeated fetching of the same updates. My walkthrough covers installing and configuring the server (including enabling HTTPS passthrough), pointing client machines at the cache via a proxy config file pushed out with Ansible, and checking the built-in report page for cache statistics."
 aliases:
   - /2023/10/03/caching-apt-updates/
 tags:

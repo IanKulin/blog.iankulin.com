@@ -2,6 +2,7 @@
 title: "Instant Errors"
 date: '2022-07-10'
 slug: instant-errors
+summary: "A short reflection on how Xcode and Playgrounds flag errors continuously as you type, rather than only at compile time. I contrast this with the long builds of earlier tools like Clipper and Visual C++, and describe moving from finding the live error feedback unnerving to enjoying it."
 aliases:
   - /2022/07/10/instant-errors/
 tags:

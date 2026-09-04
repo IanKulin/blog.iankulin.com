@@ -3,7 +3,7 @@ title: "JSONata in Uptime Kuma"
 date: '2026-09-03'
 slug: jsonata-in-kuma
 description: How to use JSONata in UptimeKuma to trigger alerts calculated from parsed JSON
-summary: "After a BOINC workload change pushed a homelab container's memory usage past its monitoring threshold, I switched from keyword-based checks in Uptime Kuma to its JSON query feature, which applies JSONata expressions to fetched JSON metrics. The post walks through the setup, and shows a conditional query combining memory and CPU values."
+summary: "After a BOINC workload change pushed a homelab container's memory usage past its monitoring threshold, I switched from keyword-based checks in Uptime Kuma to its JSON query feature, which applies JSONata expressions to fetched JSON metrics. I walk through the setup, and show a conditional query combining memory and CPU values."
 tags:
   - json
   - jsonata

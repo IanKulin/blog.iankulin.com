@@ -2,6 +2,7 @@
 title: "Bloody VIM"
 date: '2023-08-10'
 slug: bloody-vim
+summary: "A short survival guide to vi/vim for sysadmins who unexpectedly find themselves in it, such as when editing an Ansible vault or adding a message to a git commit. I cover the essentials of Vim's modes: navigating with the cursor keys, pressing i to enter insert mode, using escape and :wq to save and quit, with a brief note on why Vim's unusual movement-focused design exists."
 aliases:
   - /2023/08/10/bloody-vim/
 tags:

@@ -2,6 +2,7 @@
 title: "Clear explanation of how transformer AI works"
 date: '2024-10-28'
 slug: clear-explanation-of-how-transformer-ai-works
+summary: "I recommend Ishan Anand's YouTube series Spreadsheets are all you need, which teaches how generative AI works using an Excel spreadsheet implementing most of GPT-2. I highlight Anand's teaching ability, note that the featured lessons are the first three of a paid course, and link to a downloadable version of the spreadsheet."
 aliases:
   - /2024/10/28/clear-explanation-of-how-transformer-ai-works/
 tags:

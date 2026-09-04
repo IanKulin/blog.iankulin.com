@@ -2,6 +2,7 @@
 title: "Perils of Benchmarking"
 date: '2025-01-06'
 slug: perils-of-benchmarking
+summary: "After choosing the tiny BusyBox httpd server for containerised websites, I encountered third-party benchmarks suggesting NGINX was dramatically faster. Running my own A/B tests with Apache's ab tool initially gave misleading results, which turned out to be NGINX Proxy Manager serving cached responses. With cache-busting requests, BusyBox and NGINX performed similarly over the network, so I am sticking with the 1.35MB BusyBox containers over the roughly 49MB NGINX-alpine images."
 aliases:
   - /2025/01/06/perils-of-benchmarking/
 tags:

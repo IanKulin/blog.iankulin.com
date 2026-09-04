@@ -2,6 +2,7 @@
 title: "Gitting up to date"
 date: '2022-09-27'
 slug: gitting-up-to-date
+summary: "I explain how to bring a feature branch's changes back into the main branch, comparing merge, squash merge, and rebase with example commit histories. I close with a note on why rebasing commits that have been pushed to a shared repository is considered bad practice. Branching per feature is part of my effort to become more competent with git."
 aliases:
   - /2022/09/27/gitting-up-to-date/
 tags:

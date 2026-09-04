@@ -2,6 +2,7 @@
 title: "SSH with Keys to Synology"
 date: '2023-03-27'
 slug: ssh-with-keys-to-synology
+summary: "Setting up SSH key-based login on a Synology NAS running DSM 7.1.1 takes a couple of extra steps compared to a standard Linux distro: enabling the SSH service and enabling user home directories, since DSM doesn't create them by default and ssh-copy-id needs one. I walk through both settings in the DSM web interface, and note that most Synology tasks are usually easier and safer done through its web UI or Package Center."
 aliases:
   - /2023/03/27/ssh-with-keys-to-synology/
 tags:

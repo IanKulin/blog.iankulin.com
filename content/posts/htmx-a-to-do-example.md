@@ -2,6 +2,7 @@
 title: "htmx - A To Do Example"
 date: '2024-01-05'
 slug: htmx-a-to-do-example
+summary: "An introduction to htmx and the hypermedia and HATEOAS concepts behind it, followed by a conversion of a simple todo app from a Node/Express setup that serves JSON and renders client-side in JavaScript to an htmx version where the server returns HTML fragments instead. I compare the two implementations and discuss when htmx makes sense, particularly for server-side developers who want to avoid writing frontend JavaScript."
 aliases:
   - /2024/01/05/htmx-a-to-do-example/
 tags:

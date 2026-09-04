@@ -2,6 +2,7 @@
 title: "CSS Intro"
 date: '2022-08-18'
 slug: css-intro
+summary: "My HTML experience ends in 1996, before CSS existed, so I am catching up on the basics. I share and recommend a Tech With Tim video introducing CSS for non-web developers, embedded in the post."
 aliases:
   - /2022/08/18/css-intro/
 tags:

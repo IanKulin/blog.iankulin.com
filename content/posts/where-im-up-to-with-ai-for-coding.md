@@ -2,6 +2,7 @@
 title: "Where I'm up to with AI for coding"
 date: '2025-03-03'
 slug: where-im-up-to-with-ai-for-coding
+summary: "I reflect on my use of LLMs for coding, weighing concerns about training data, accuracy, energy use, and data leakage against the practical benefits. I describe trying GitHub Copilot, Codeium, and local models via Ollama, and settling on Codeium for code completion alongside web chatbots for code discussions. I also cover how AI has changed my practice, including writing clearer code, favoring well-established technologies, and adopting new libraries more readily."
 aliases:
   - /2025/03/03/where-im-up-to-with-ai-for-coding/
 tags:

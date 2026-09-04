@@ -2,6 +2,7 @@
 title: "Bruno asserts"
 date: '2023-11-11'
 slug: bruno-asserts
+summary: "After ChatGPT flagged that mdserver might allow path traversal attacks, I used Bruno, an under-development Postman/Insomnia alternative, to check whether Express was sanitizing URLs properly. ChatGPT generated pass and fail URL examples, I wrote asserts for each in Bruno, and the whole collection can be run at once. A side benefit is that requests are stored as version-controllable text committed alongside the rest of the code."
 aliases:
   - /2023/11/11/bruno-asserts/
 tags:

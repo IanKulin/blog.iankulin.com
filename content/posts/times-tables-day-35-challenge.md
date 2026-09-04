@@ -2,6 +2,7 @@
 title: "Times Tables -Day 35 Challenge"
 date: '2022-10-01'
 slug: times-tables-day-35-challenge
+summary: "My write-up of the Day 35 challenge from 100 Days of SwiftUI: building a times tables drilling app. I cover creating a custom number keypad and replacing the standard iOS modal with a ZStack-based overlay, finding that tap events pass through very transparent overlays but not more solid ones. I also note the finished app is plain-looking and that improving visual design is now a goal."
 aliases:
   - /2022/10/01/times-tables-day-35-challenge/
 tags:

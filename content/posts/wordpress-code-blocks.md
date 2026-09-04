@@ -2,6 +2,7 @@
 title: "Wordpress Code Blocks"
 date: '2022-09-21'
 slug: wordpress-code-blocks
+summary: "I compare ways of displaying Swift code snippets in WordPress posts, including the default code block, the paid SyntaxHighlighter block, screenshots, pasted rich text, and raw HTML, aiming for Xcode-style syntax highlighting. Citing Paul Hudson's site as the ideal, I conclude that a proper solution would require better HTML and CSS skills than I currently have."
 aliases:
   - /2022/09/21/wordpress-code-blocks/
 tags:

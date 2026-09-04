@@ -2,6 +2,7 @@
 title: "Digital Color Meter"
 date: '2023-01-18'
 slug: digital-color-meter
+summary: "My quick guide to two small MacOS tips: the built-in Digital Color Meter app shows the RGB values of whatever is under the cursor (useful when matching colours, as with the iOS calculator buttons), and screenshots can include the cursor by enabling it in the Shift-Command-5 options."
 aliases:
   - /2023/01/18/digital-color-meter/
 tags:

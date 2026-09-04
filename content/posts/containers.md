@@ -2,6 +2,7 @@
 title: "Containers"
 date: '2023-05-07'
 slug: containers
+summary: "Reflections on three ways software development has improved since I was commercially developing 20 years ago: internet-based access to information, open source becoming mainstream, and containers eliminating dependency and environment setup hassles. Includes an embedded video explaining how containers work."
 aliases:
   - /2023/05/07/containers/
 tags:

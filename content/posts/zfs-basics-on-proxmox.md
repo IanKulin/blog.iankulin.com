@@ -2,6 +2,7 @@
 title: "ZFS Basics on Proxmox"
 date: '2023-07-29'
 slug: zfs-basics-on-proxmox
+summary: "Persuaded by the 2.5 Admins podcast's enthusiasm for ZFS, I set up a mirrored ZFS pool in Proxmox using two 256GB NVME drives in a USB dual-bay enclosure. My walkthrough covers creating the pool via the Proxmox web GUI, a primer on ZFS terminology (pools, vdevs, datasets), and basic tasks like moving VM disks onto the pool and running a scrub. I also note enclosure temperatures under load and possible sustained write slowdowns on the Samsung PM981 SSDs."
 aliases:
   - /2023/07/29/zfs-basics-on-proxmox/
 tags:

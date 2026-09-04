@@ -2,6 +2,7 @@
 title: "Containerised NGINX Proxy Manager & the 502 error"
 date: '2024-09-16'
 slug: containerised-nginx-proxy-manager-the-502-error
+summary: "Running NGINX Proxy Manager in a Docker container breaks the usual habit of pointing proxies at 127.0.0.1, since localhost now refers to inside the container rather than the host. I explain why, cover the confusing exception of NPM's own admin interface, and show how joining service containers to NPM's Docker network lets the proxy reach them by container name via DNS, with no ports exposed to the host."
 aliases:
   - /2024/09/16/containerised-nginx-proxy-manager-the-502-error/
 tags:

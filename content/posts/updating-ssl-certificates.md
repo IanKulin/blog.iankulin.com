@@ -2,6 +2,7 @@
 title: "Updating SSL Certificates"
 date: '2023-07-12'
 slug: updating-ssl-certificates
+summary: "A short walkthrough of manually renewing SSL certificates before expiry: downloading the new certificates from PorkBun, concatenating the cert and intermediate files into a fullchain with a newline between them (avoiding an issue from the previous renewal), and restarting the nginx Docker container to pick them up. Uptime Kuma and ntfy notifications confirmed the swap, leaving 84 days until the next renewal — which I still intend to automate."
 aliases:
   - /2023/07/12/updating-ssl-certificates/
 tags:

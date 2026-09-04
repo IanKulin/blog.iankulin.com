@@ -2,6 +2,7 @@
 title: "SwiftUI Essentials"
 date: '2022-07-27'
 slug: swiftui-essentials
+summary: "A short note on finally understanding SwiftUI's declarative nature after watching a 2019 WWDC video on the topic. I still have unanswered questions about how views bind to their data, plan to watch the series' Data Flow video next, and acknowledge the detour is a way of procrastinating from two ongoing courses."
 aliases:
   - /2022/07/27/swiftui-essentials/
 tags:

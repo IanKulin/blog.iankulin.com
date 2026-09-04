@@ -2,6 +2,7 @@
 title: "Solved DNS Issues - Proxmox, LXC, Ubuntu, Tailscale"
 date: '2023-10-06'
 slug: solved-dns-issues-proxmox-lxc-ubuntu-tailscale
+summary: "While setting up an Ubuntu 20.04 LXC on Proxmox to run a TP-Link Omada controller, I found DNS resolution failing because Proxmox copies the host's Tailscale-based resolv.conf into containers, and the container has no route to the Tailscale DNS address. In this post, I cover the diagnosis of why Debian templates behaved differently, plus two fixes: specifying DNS explicitly in the Proxmox GUI, or creating a .pve-ignore.resolv.conf file so Proxmox stops overwriting the container's settings."
 aliases:
   - /2023/10/06/solved-dns-issues-proxmox-lxc-ubuntu-tailscale/
 tags:

@@ -2,6 +2,7 @@
 title: "Day 23 - Views and Modifiers - Part 2"
 date: '2022-09-01'
 slug: day-23-views-and-modifiers-part-2
+summary: "A short SwiftUI note in which I compare two ways to vary a view based on state: branching with if/else inside the body, which Paul Hudson warns makes SwiftUI destroy and recreate views when the state changes, versus using the ternary operator within a modifier so only the changed property updates. I walk through both code versions and reflect on why the efficiency difference exists."
 aliases:
   - /2022/09/01/day-23-views-and-modifiers-part-2/
 tags:

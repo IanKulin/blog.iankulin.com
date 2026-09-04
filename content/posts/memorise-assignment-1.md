@@ -2,6 +2,7 @@
 title: "Memorise Assignment 1"
 date: '2022-07-28'
 slug: memorise-assignment-1
+summary: "My notes on completing the first assignment from Stanford's CS193p SwiftUI lecture series, which involved minor changes to the app built in the lectures. My write-up covers an error that prevented me from initializing a @State property from an instance member, and some dissatisfaction with duplicated emoji arrays and SF Symbol alignment—issues I partly resolved after reading the assignment's hints section and rewatching a lecture."
 aliases:
   - /2022/07/28/memorise-assignment-1/
 tags:

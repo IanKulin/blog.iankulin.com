@@ -2,6 +2,7 @@
 title: "Detecting front-end client errors"
 date: '2026-06-03T00:00:00+10:00'
 slug: detecting-client-errors
+summary: "Client-side JavaScript errors go unnoticed by keyword-based uptime checks like Uptime Kuma's, which is how a broken weather widget slipped past monitoring on one of my sites. I walk through building Faultsy, a lightweight alternative to Sentry: a browser script captures uncaught errors and unhandled promise rejections, reports them to a small Node server via sendBeacon(), and exposes per-site error counts as JSON that Uptime Kuma can monitor. The project is on GitHub and still under active development."
 tags:
   - monitoring
   - webdev

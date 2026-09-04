@@ -2,6 +2,7 @@
 title: "Learn to Code 1 - Finished"
 date: '2022-07-11'
 slug: learn-to-code-1-finished
+summary: "My milestone update marks the completion of the Learn to Code 1 Playgrounds book, with a look at what comes next: Learn to Code 2 and other bundled books like Get Started with Apps. I also cover the More Playgrounds section, a mini app store of sorts offering small complete apps and feature-focused extensions such as Organizing with Grids."
 aliases:
   - /2022/07/11/learn-to-code-1-finished/
 tags:

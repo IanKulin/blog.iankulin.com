@@ -2,6 +2,7 @@
 title: "RAID Rescue"
 date: '2023-04-04'
 slug: raid-rescue
+summary: "While rearranging disks toward a 3-2-1 backup setup, I realise a wiped Synology drive still held the only other copy of my audiobook collection. Reinstalling the one surviving RAID drive and using the Recover option brings the pool back in a degraded state, allowing the files to be copied out. The episode doubles as a useful test of a dead-drive scenario, with the NAS's beeping alert proving reassuring for a self-hosted setup."
 aliases:
   - /2023/04/04/raid-rescue/
 tags:

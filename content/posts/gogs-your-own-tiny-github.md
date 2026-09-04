@@ -2,6 +2,7 @@
 title: "Gogs - your own tiny GitHub"
 date: '2023-12-06'
 slug: gogs-your-own-tiny-github
+summary: "I wanted a private git server for version-controlling my plain-text financial accounts (kept with beancount), rather than pushing them to GitHub. I walk through installing Gogs — chosen over Gitea for being simpler — in Docker on an LXC container, including a storage driver fix needed to get it running, and finish with the first-run setup and pushing a repo."
 aliases:
   - /2023/12/06/gogs-your-own-tiny-github/
 tags:

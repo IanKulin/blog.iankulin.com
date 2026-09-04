@@ -2,6 +2,7 @@
 title: "Gitting the hang of it"
 date: '2022-08-04'
 slug: gitting-the-hang-of-it
+summary: "A beginner-oriented cheat sheet I put together for using git from the command line on macOS, aimed at people working with Xcode and GitHub. I walk through setting up a new repository and pushing it to GitHub, then cover basic commands for status, add, commit, push, and tagging, along with .gitignore notes and cloning from a tag. I include a short list of git learning resources at the end."
 aliases:
   - /2022/08/04/gitting-the-hang-of-it/
 tags:

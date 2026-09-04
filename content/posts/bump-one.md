@@ -2,6 +2,7 @@
 title: "Bump One"
 date: '2022-08-01'
 slug: bump-one
+summary: "Working through the Swift book, I cover functions as first-class types and passing closures around, then grapple with how closures capture variables that persist after their original scope has ended. My code examples show nested functions and a makeIncrementer closure, along with my reservations about variable capture and my suspicion that ARC is what keeps captured variables alive."
 aliases:
   - /2022/08/01/bump-one/
 tags:

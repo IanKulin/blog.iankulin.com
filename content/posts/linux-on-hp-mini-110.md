@@ -2,6 +2,7 @@
 title: "Linux on HP Mini 110"
 date: '2023-04-17'
 slug: linux-on-hp-mini-110
+summary: "I experiment with lightweight Linux distros on an old HP Mini 110 netbook, motivated by wanting a low-cost machine for accessing Proxmox VMs outside the web GUI. I try three distros, antiX, Lubuntu, and Mint Xfce, with the main stumbling block being Broadcom wifi drivers: antiX runs the fastest but I never get wireless working on it, while Lubuntu and Mint both work once I install proprietary drivers over Ethernet. Mint Xfce ends up as the working option, despite its 32-bit version nearing end of life."
 aliases:
   - /2023/04/17/linux-on-hp-mini-110/
 tags:

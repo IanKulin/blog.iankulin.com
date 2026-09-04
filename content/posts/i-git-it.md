@@ -2,6 +2,7 @@
 title: "I git it*"
 date: '2022-09-06'
 slug: i-git-it
+summary: "A short reflection, prompted by a trending ProgrammerHumor meme, on my now-routine git and GitHub workflow. I cover the Pro Git book as my main source of understanding, my preference for the git CLI in a customized zsh terminal over tools like Xcode, and my open questions about consolidating many small learning repos into a single repository."
 aliases:
   - /2022/09/06/i-git-it/
 tags:

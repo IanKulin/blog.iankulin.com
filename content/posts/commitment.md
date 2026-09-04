@@ -2,6 +2,7 @@
 title: "$==Commitment"
 date: '2022-08-28'
 slug: commitment
+summary: "I cover Paul Hudson's free 100 Days of SwiftUI course and the paid Hacking with Swift+ subscription option. I signed up for a year to support Hudson's contributions to the Swift community and because the one-year time limit makes it more likely I will complete the course."
 aliases:
   - /2022/08/28/commitment/
 tags:

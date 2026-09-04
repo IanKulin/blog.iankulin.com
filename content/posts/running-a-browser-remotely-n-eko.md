@@ -2,6 +2,7 @@
 title: "Running a Browser Remotely - n.eko"
 date: '2023-05-02'
 slug: running-a-browser-remotely-n-eko
+summary: "After leaving a remote site unsure whether DHCP reservation changes on the router were actually saved, I look at ways to reach the router's web UI from home. Options considered include a Tailscale subnet router and terminal browsers like browsh, before settling on N.eko, a self-hosted virtual browser run in Docker on a VPS. My writeup includes a compose file and the NEKO_NAT1TO1 setting needed to fix a \"peer disconnected\" error behind NAT."
 aliases:
   - /2023/05/02/running-a-browser-remotely-n-eko/
 tags:

@@ -2,6 +2,7 @@
 title: "NGINX Proxy Manager"
 date: '2024-04-15'
 slug: nginx-proxy-manager
+summary: "I take a look at using NGINX as a reverse proxy in front of self-hosted services, and at NGINX Proxy Manager, a project that adds a web GUI to the process and simplifies obtaining Let's Encrypt certificates. I cover setup via Docker, along with a brief comparison of alternatives such as HAProxy, Caddy, and Traefik."
 aliases:
   - /2024/04/15/nginx-proxy-manager/
 tags:

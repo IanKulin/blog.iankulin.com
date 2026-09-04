@@ -2,6 +2,7 @@
 title: "sudo Incident Reports - where do they go?"
 date: '2023-02-04'
 slug: sudo-incident-reports-where-do-they-go
+summary: "After trying to run a docker command on a new home server and hitting the \"user is not in the sudoers file\" error, I look up the incident report in the journalctl logs, then explain how to properly gain sudo access. Instead of hand-editing /etc/sudoers, I add my user to the sudo group with usermod, covering why visudo exists and why I prefer sudo over logging in as root."
 aliases:
   - /2023/02/04/sudo-incident-reports-where-do-they-go/
 tags:

@@ -2,6 +2,7 @@
 title: "Console spam - No wall clock alignment"
 date: '2022-11-16'
 slug: console-spam-no-wall-clock-alignment
+summary: "A debugging session traces a recurring console message in my SwiftUI app, \"No wall clock alignment provided,\" to the .date style when formatting dates in a Text view. I reproduce the issue with a minimal code snippet, find little documentation online beyond an old Reddit thread, and file my first Radar bug report with Apple."
 aliases:
   - /2022/11/16/console-spam-no-wall-clock-alignment/
 tags:

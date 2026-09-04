@@ -2,6 +2,7 @@
 title: "Your own Aussie server on BinaryLane"
 date: '2023-02-05'
 slug: your-own-aussie-server-on-binarylane
+summary: "Frustrated by the lack of cheap Australian VPS options compared to US providers, I tried Binary Lane, a low-priced developer-focused service from Australian host Mammoth. An Ubuntu server in Sydney was live within a minute of signing up, with Docker and a website running soon after. I also touch on the web panel, switching to SSH, and my plans to use the server for learning domains, SSL, and testing."
 aliases:
   - /2023/02/05/your-own-aussie-server-on-binarylane/
 tags:

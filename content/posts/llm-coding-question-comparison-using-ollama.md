@@ -2,6 +2,7 @@
 title: "LLM coding question comparison using Ollama"
 date: '2024-07-29'
 slug: llm-coding-question-comparison-using-ollama
+summary: "Having downloaded a pile of large language models to run locally with Ollama on my M1 MacBook, I compare how several of them (codeqwen, deepseek-coder, phi3, dolphin-mistral, and llama3 at different quantisation levels) answer a Docker question about CMD versus ENTRYPOINT. I time each response and judge it subjectively, with caveats that the test is unscientific and benchmark charts usually reflect full-size models on expensive hardware. My writeup includes a layman's explanation of quantisation, brief notes on each model's character, and I conclude that llama3 and most others gave usable answers while phi3 fell short."
 aliases:
   - /2024/07/29/llm-coding-question-comparison-using-ollama/
 tags:

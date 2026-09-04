@@ -2,6 +2,7 @@
 title: "Codable & JSON"
 date: '2022-10-30'
 slug: codable-json
+summary: "In this beginner-level look at Swift's Codable protocol, I explain that it combines Encodable and Decodable and is applied automatically when a type's properties are all Codable. I use simple code examples to demonstrate encoding a struct to JSON with JSONEncoder and decoding JSON back into a struct with JSONDecoder. I flag more involved cases, such as decoding JSON with snake_case keys, as topics for later posts."
 aliases:
   - /2022/10/30/codable-json/
 tags:

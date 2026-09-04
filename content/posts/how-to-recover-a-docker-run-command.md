@@ -2,6 +2,7 @@
 title: "How to recover a docker run command"
 date: '2023-07-16'
 slug: how-to-recover-a-docker-run-command
+summary: "How I reconstruct a forgotten docker run command when I need to update a container: there's no Docker command that retrieves it, but shell history and docker inspect can reveal the ports, mounts, and volumes I used. I suggest switching to Docker Compose as the way to avoid the problem in future."
 aliases:
   - /2023/07/16/how-to-recover-a-docker-run-command/
 tags:

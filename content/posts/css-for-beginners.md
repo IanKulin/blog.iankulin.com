@@ -2,6 +2,7 @@
 title: "CSS for Beginners"
 date: '2022-12-15'
 slug: css-for-beginners
+summary: "I found the ZTM webdev course was skipping ahead too quickly and decided it needed supplementing. For CSS, I've chosen a YouTube series by Dave Gray as the additional material."
 aliases:
   - /2022/12/15/css-for-beginners/
 tags:

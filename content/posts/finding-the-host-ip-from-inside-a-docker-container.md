@@ -2,6 +2,7 @@
 title: "Finding the host IP from inside a Docker container"
 date: '2023-08-07'
 slug: finding-the-host-ip-from-inside-a-docker-container
+summary: "Migrating my node.js API from a homelab VM to a VPS hits a snag: nginx, running in a Docker container, serves static files fine but returns Bad Gateway when proxying API requests. I walk through working out that localhost inside the container doesn't reach the host, trying host.docker.internal without success, and finding the fix by checking the docker0 bridge interface, which gave 172.17.0.1 as the address to put in the nginx config."
 aliases:
   - /2023/08/07/finding-the-host-ip-from-inside-a-docker-container/
 tags:

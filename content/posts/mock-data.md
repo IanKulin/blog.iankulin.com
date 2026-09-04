@@ -2,6 +2,7 @@
 title: "Mock Data"
 date: '2022-11-28'
 slug: mock-data
+summary: "Needing mock student data for an iOS app without using real records, I try Mockaroo, a web-based test data generator with configurable field types and download options including JSON and a REST API. My writeup ends with a privacy caution that schemas saved on the service are publicly visible."
 aliases:
   - /2022/11/28/mock-data/
 tags:

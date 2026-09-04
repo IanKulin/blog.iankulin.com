@@ -2,6 +2,7 @@
 title: "Authentication basics for Node apps"
 date: '2024-08-19'
 slug: authentication-basics-for-node-apps
+summary: "I walk through building user authentication in an Express.js app from the ground up, starting with how HTTP requests, cookies, and sessions work before moving to session IDs and the express-session library. I then cover a login flow with bcrypt-hashed passwords and file-based session persistence, laying groundwork for a future post that will use Passport.js."
 aliases:
   - /2024/08/19/authentication-basics-for-node-apps/
 tags:

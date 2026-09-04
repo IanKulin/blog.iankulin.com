@@ -2,6 +2,7 @@
 title: "Website in a Docker Container"
 date: '2024-11-11'
 slug: website-in-a-docker-container
+summary: "Serving static websites from small Docker containers built on BusyBox httpd, coming in at around 4MB each. I walk through the Dockerfile setup, cross-platform builds from an M1 Mac to linux/amd64, pushing to the GitHub Container Registry, and deploying via docker-compose behind Nginx Proxy Manager, including DNS and SSL configuration."
 aliases:
   - /2024/11/11/website-in-a-docker-container/
 tags:

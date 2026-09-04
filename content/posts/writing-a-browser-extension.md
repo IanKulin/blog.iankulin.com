@@ -2,6 +2,7 @@
 title: "Writing a Browser Extension"
 date: '2025-06-22'
 slug: writing-a-browser-extension
+summary: "I walk through building a simple Firefox extension that adds a right-click menu option to open an image in a new tab with its query parameters stripped, useful when CDNs serve resized or converted versions instead of the original. I cover the manifest, permissions, and background script, plus how to test the extension via about:debugging and enable it in private windows, with brief notes on publishing to the Add-ons store."
 aliases:
   - /2025/06/22/writing-a-browser-extension/
 tags:

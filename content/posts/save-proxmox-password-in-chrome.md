@@ -2,6 +2,7 @@
 title: "Save Proxmox password in Chrome"
 date: '2023-02-11'
 slug: save-proxmox-password-in-chrome
+summary: "How I got Chrome to offer saving the Proxmox root password, which it won't do while the web UI's self-signed certificate is untrusted. I cover grabbing the Proxmox root CA, importing it into the macOS Keychain and trusting it, allowing insecure content for the site, and clearing the cache to finally get the save prompt."
 aliases:
   - /2023/02/11/save-proxmox-password-in-chrome/
 tags:

@@ -2,6 +2,7 @@
 title: "Color Picker (website)"
 date: '2022-10-04'
 slug: color-picker-website
+summary: "A short note on using ImageColorPicker, a browser-based tool for identifying colors in an image, while recreating a designer-provided UI in SwiftUI. The site returns RGB values out of 255, which I divide by 255 to get the CGFloat values required by SwiftUI's Color initializer."
 aliases:
   - /2022/10/04/color-picker-website/
 tags:

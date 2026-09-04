@@ -2,6 +2,7 @@
 title: "When it Works"
 date: '2022-10-17'
 slug: when-it-works
+summary: "A short reflection on what makes coding enjoyable: the steady stream of small problems to solve on the way to a bigger goal. I note the urge to build a simple drawing app hits in every new language I learn, from Visual C++ and MFC to SwiftUI."
 aliases:
   - /2022/10/17/when-it-works/
 tags:

@@ -2,6 +2,7 @@
 title: "Problems backing up LXC to NFS in Proxmox"
 date: '2023-09-24'
 slug: problems-backing-up-lxc-to-nfs-in-proxmox
+summary: "I found that backing up an unprivileged LXC container on Proxmox to an NFS share can fail with a permission denied error when the backup process tries to create a temporary file on the remote share. The fix is to edit /etc/vzdump.conf on my Proxmox node and set tmpdir to /tmp, so the temporary file is built locally before being copied to the share."
 aliases:
   - /2023/09/24/problems-backing-up-lxc-to-nfs-in-proxmox/
 tags:

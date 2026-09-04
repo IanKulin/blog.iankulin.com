@@ -2,6 +2,7 @@
 title: "Nginx config on Debian/Ubuntu"
 date: '2023-08-16'
 slug: nginx-config-on-debian-ubuntu
+summary: "I give an overview of how nginx configuration files are arranged on apt-based distros like Debian and Ubuntu. I cover the main nginx.conf file including configs from the conf.d directory, a pattern that separates distro-maintained settings from local changes, and the sites-available/sites-enabled symlink setup for enabling and disabling individual site configs."
 aliases:
   - /2023/08/16/nginx-config-on-debian-ubuntu/
 tags:

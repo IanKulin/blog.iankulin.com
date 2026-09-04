@@ -2,6 +2,7 @@
 title: "Uptime Kuma & NTFY"
 date: '2023-02-15'
 slug: uptime-kuma-ntfy
+summary: "I walk through setting up Uptime Kuma, a self-hosted monitoring tool, in a Docker container to watch network devices and web services, with notifications pushed to a phone via NTFY. I cover basic monitor types like ping and HTTP checks, how NTFY's topic-based subscriptions work, and the security trade-offs of its open public topics."
 aliases:
   - /2023/02/15/uptime-kuma-nfty/
 tags:

@@ -2,6 +2,7 @@
 title: "Ansible - Importing a Playbook"
 date: '2023-11-30'
 slug: ansible-importing-a-playbook
+summary: "I look at structuring Ansible playbooks, starting with the distinction between plays and tasks, then covering how to import one playbook into another with import_playbook. I include a note on where imports can be placed — at the top level of the YAML, not inside a play."
 aliases:
   - /2023/11/30/ansible-importing-a-playbook/
 tags:

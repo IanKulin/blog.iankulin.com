@@ -2,6 +2,7 @@
 title: "Where's My App?"
 date: '2022-10-08'
 slug: wheres-my-app
+summary: "My short guide to building a release version of a macOS app in Xcode and finding the resulting .app bundle. I cover creating a new scheme set to Release builds, running the build, and using \"Show Build Folder in Finder\" to locate the .app file so it can be copied into the Applications folder."
 aliases:
   - /2022/10/08/wheres-my-app/
 tags:

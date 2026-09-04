@@ -2,6 +2,7 @@
 title: "My Web App Update Process"
 date: '2024-04-01'
 slug: my-web-app-update-process
+summary: "I describe my standard, reproducible homelab setup: a Proxmox-based system of three machines with nightly backups to a Synology NAS, where most apps run as Docker containers managed by docker compose inside LXCs cloned from a prepared template. An upgrade of Forgejo from 1.21.1 to 1.21.8 demonstrates how quick and low-risk maintenance has become under this arrangement, involving a container backup, an image pull, a restart, and some brief testing."
 aliases:
   - /2024/04/01/my-web-app-update-process/
 tags:

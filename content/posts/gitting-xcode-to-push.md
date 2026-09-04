@@ -2,6 +2,7 @@
 title: "Gitting Xcode to Push"
 date: '2022-09-30'
 slug: gitting-xcode-to-push
+summary: "I explain how to fix Xcode failing to push to GitHub after GitHub stopped accepting RSA keys that use SHA-1. My solution, based on an Apple Developer forum answer, is to switch to a new ECDSA SSH key — with the one step the forum post missed being a restart of Xcode to make it take effect."
 aliases:
   - /2022/09/30/gitting-xcode-to-push/
 tags:

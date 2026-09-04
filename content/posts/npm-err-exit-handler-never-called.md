@@ -2,6 +2,7 @@
 title: "npm ERR! Exit handler never called!"
 date: '2024-10-21'
 slug: npm-err-exit-handler-never-called
+summary: "My routine npm update, triggered by a GitHub security advisory, runs into the cryptic \"Exit handler never called!\" error. Alongside a refresher on what package-lock.json and npm update do, my fix is to confirm the lock file is at fault using npm install --no-package-lock, then delete it and regenerate it with a fresh npm install, followed by retesting and rebuilding any artifacts."
 aliases:
   - /2024/10/21/npm-err-exit-handler-never-called/
 tags:

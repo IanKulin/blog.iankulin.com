@@ -2,6 +2,7 @@
 title: "Certbot - removing a domain"
 date: '2024-03-18'
 slug: certbot-removing-a-domain
+summary: "After I moved a domain to a new host, the original certbot certificate on the old host still included it, causing renewal errors. I explain that domains can't be deleted from a certificate directly; instead you renew the certificate specifying only the domains you want to keep, and certbot warns about the ones being dropped. I include the commands for listing certificates and their domains, and for renewing with a reduced domain set."
 aliases:
   - /2024/03/18/certbot-removing-a-domain/
 tags:

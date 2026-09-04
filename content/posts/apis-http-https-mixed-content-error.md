@@ -2,6 +2,7 @@
 title: "APIs - http & https Mixed Content error"
 date: '2023-01-24'
 slug: apis-http-https-mixed-content-error
+summary: "A short write-up of a mixed content error that appeared when I called the Open Notify ISS location API from a page hosted on GitHub Pages over HTTPS. I explain why browsers block insecure requests from secure pages, note that the API doesn't support HTTPS and GitHub Pages can't serve over HTTP, and describe switching to the wheretheiss.at API, which supports HTTPS, as the fix."
 aliases:
   - /2023/01/24/apis-http-https-mixed-content-error/
 tags:

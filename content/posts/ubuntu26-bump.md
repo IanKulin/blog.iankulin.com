@@ -2,6 +2,7 @@
 title: "Ubuntu Ansible 'waiting for privilege escalation prompt'"
 date: '2026-05-16'
 slug: ubuntu26-bump
+summary: "My Ansible playbook for SSH hardening fails on a newly provisioned Ubuntu 26.04 LTS VPS because that release ships sudo-rs, whose password prompt differs from the classic sudo prompt that Ansible matches against, causing a privilege-escalation timeout. A fix has landed upstream in Ansible but hasn't reached my version yet, so I fall back to Ubuntu 24.04 LTS, mentioning a passwordless SSH Ansible user as an alternative."
 tags:
   - ubuntu
   - rust

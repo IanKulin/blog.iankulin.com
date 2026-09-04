@@ -2,6 +2,7 @@
 title: "Animation Feedback"
 date: '2022-09-24'
 slug: animation-feedback
+summary: "A short comparison of two solutions to the Guess The Flags animation challenge: my approach of storing animation amounts in an Int array versus Paul's more concise use of ternary operators in the modifiers. Both vary the effect depending on which flag was selected, but Paul's version needs considerably less code."
 aliases:
   - /2022/09/24/animation-feedback/
 tags:

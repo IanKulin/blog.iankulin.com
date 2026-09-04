@@ -2,6 +2,7 @@
 title: "Expired packages"
 date: '2023-01-30'
 slug: expired-packages
+summary: "I run into repeated breakage in the Zero to Mastery Complete Web Developer course, where deprecated packages like particles.js and a legacy REST API leave the material non-functional out of the box. After spending several hours on a workaround, a required react-scripts downgrade leaves the dev server failing with errors, and I weigh the remaining options, from watching the content without following along to cloning the instructor's repo."
 aliases:
   - /2023/01/30/expired-packages/
 tags:

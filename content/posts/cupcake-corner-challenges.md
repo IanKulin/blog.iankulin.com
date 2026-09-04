@@ -2,6 +2,7 @@
 title: "Cupcake Corner challenges"
 date: '2022-11-02'
 slug: cupcake-corner-challenges
+summary: "My solutions to the day 52 challenges for the Hacking with Swift Cupcake Corner app: trimming whitespace before validating the order address, showing an alert when the order submission to the API fails instead of just printing, and converting the Order class to a struct inside an ObservableObject wrapper to eliminate the manual Codable code. I present each change with Swift code snippets and links to the corresponding GitHub commits."
 aliases:
   - /2022/11/02/cupcake-corner-challenges/
 tags:

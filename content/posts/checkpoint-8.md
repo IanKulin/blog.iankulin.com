@@ -2,6 +2,7 @@
 title: "Checkpoint 8"
 date: '2022-08-17'
 slug: checkpoint-8
+summary: "My solution to Hacking with Swift's Checkpoint 8: a Building protocol requiring rooms, cost, and estate agent properties, with a protocol extension providing a method that prints a sales summary. My House and Office structs conform to the protocol, each adding its own extra property, and my sample instances show the method in use."
 aliases:
   - /2022/08/17/checkpoint-8/
 tags:

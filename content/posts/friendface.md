@@ -2,6 +2,7 @@
 title: "FriendFace"
 date: '2022-11-14'
 slug: friendface
+summary: "A write-up of my Day 60 milestone challenge in the 100 Days of SwiftUI course: I build a small app that fetches a JSON file of users, decodes it into Codable structs (including ISO-8601 dates), and displays them in a list with a detail view. I share my fetch and view code, note some friction with nested do/catch error handling, and add profile pictures via AsyncImage, deciding against implementing image caching in order to keep the challenge simple."
 aliases:
   - /2022/11/14/friendface/
 tags:

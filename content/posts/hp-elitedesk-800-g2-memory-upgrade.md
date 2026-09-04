@@ -2,6 +2,7 @@
 title: "HP EliteDesk 800 G2 Memory Upgrade"
 date: '2023-04-02'
 slug: hp-elitedesk-800-g2-memory-upgrade
+summary: "I walk through upgrading the RAM in my HP EliteDesk 800 G2 Desktop Mini from 16GB to 32GB. I cover the tool-free disassembly, including the captive screw, sliding case lid, and tilting the fan aside to reach the SODIMMs, along with the RAM specs required (1.2V DDR4-2133MHz, PC4-17000) and the SK Hynix modules I used."
 aliases:
   - /2023/04/02/hp-elitedesk-800-g2-memory-upgrade/
 tags:

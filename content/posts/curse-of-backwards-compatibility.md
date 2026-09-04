@@ -2,6 +2,7 @@
 title: "Curse of Backwards Compatibility"
 date: '2022-12-29'
 slug: curse-of-backwards-compatibility
+summary: "My reflections on a JavaScript Jabber podcast discussion about how HTML, CSS, and JavaScript must preserve backward compatibility in ways compiled languages like Swift do not, illustrated by my 1996 website still rendering fine in modern browsers. I argue this legacy burden weighs down web technologies and makes them harder to learn, noting CSS features like flex-box can never be deprecated in favor of newer approaches. A later episode on semantic HTML revisited the theme, with hosts wishing breaking changes would force site owners to update."
 aliases:
   - /2022/12/29/curse-of-backwards-compatibility/
 tags:

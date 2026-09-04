@@ -2,6 +2,7 @@
 title: "Problems mounting network share at boot"
 date: '2023-03-01'
 slug: problems-mounting-network-share-at-boot
+summary: "I move Jellyfin from a Proxmox LXC container to a VM because Tailscale wouldn't run in the container, but the fstab entry mounting a NAS media share over CIFS no longer mounts at boot, even though mount -a works. The cause is the network not being up when the mount is attempted, and the fix is adding noauto, x-systemd.automount, and _netdev to the mount options so systemd waits for the network and mounts on demand."
 aliases:
   - /2023/03/01/problems-mounting-network-share-at-boot/
 tags:

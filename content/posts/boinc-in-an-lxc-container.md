@@ -2,6 +2,7 @@
 title: "BOINC in an LXC container"
 date: '2023-10-09'
 slug: boinc-in-an-lxc-container
+summary: "My homelab post about BOINC, the successor to SETI@home, running in an LXC container. After an earlier setup attempt ended with limited success and doubt about the configuration, a pulsing CPU during a weekend maintenance routine showed the client was actually processing World Community Grid work. I also float the idea of using BOINC as a workload to experiment with Kubernetes."
 aliases:
   - /2023/10/09/boinc-in-an-lxc-container/
 tags:

@@ -2,6 +2,7 @@
 title: "Using the Community"
 date: '2023-01-27'
 slug: using-the-community
+summary: "Beginners often can't successfully Google coding problems because they don't yet know the terminology, and I describe how the Discord community attached to ZTM courses helps fill that gap, with tasks that push students to introduce themselves, pair up, and answer others' questions. Getting community help still requires doing your homework and providing enough context for someone to answer. A CodePen example demonstrating how to center an image in a div is included."
 aliases:
   - /2023/01/27/using-the-community/
 tags:

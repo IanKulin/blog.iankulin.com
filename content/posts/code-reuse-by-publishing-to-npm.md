@@ -2,6 +2,7 @@
 title: "Code reuse by publishing to NPM"
 date: '2024-10-14'
 slug: code-reuse-by-publishing-to-npm
+summary: "I walk through publishing my own JavaScript utility to npm so it can be installed and updated like any other package, rather than copying source files between Node projects. I cover creating an npm account, scoping the package name to my username, writing and publishing the code with npm publish, and installing it in another project, using a simple is-even example."
 aliases:
   - /2024/10/14/code-reuse-by-publishing-to-npm/
 tags:

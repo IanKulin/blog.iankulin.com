@@ -2,6 +2,7 @@
 title: "CWD - 185 - Problem solving"
 date: '2023-01-14'
 slug: cwd-185-problem-solving
+summary: "I give a line-by-line walkthrough of my JavaScript solution to the \"clean the room\" coding challenge, which groups equal values in an array into subarrays and returns them sorted. My explanation covers spread syntax for array copying, sort() comparison behavior, the difference between for...of and for...in loops, and building an object keyed by value, with occasional comparisons to Swift equivalents."
 aliases:
   - /2023/01/14/cwd-185-problem-solving/
 tags:

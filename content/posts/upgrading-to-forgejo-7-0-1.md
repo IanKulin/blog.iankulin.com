@@ -2,6 +2,7 @@
 title: "Upgrading to Forgejo 7.0.1"
 date: '2024-05-06'
 slug: upgrading-to-forgejo-7-0-1
+summary: "Upgrading Forgejo from 1.21 to 7.0.0 takes more than the usual pull on an existing tag, because the container tag changes with the minor version. After explaining how container image tags work, I update my docker-compose.yml to pin Forgejo 7.0 and run the usual backup, down, pull, up, and test steps."
 aliases:
   - /2024/05/06/upgrading-to-forgejo-7-0-1/
 tags:

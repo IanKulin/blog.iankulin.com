@@ -2,6 +2,7 @@
 title: "Ranges"
 date: '2022-09-25'
 slug: ranges
+summary: "A follow-up to my previous post about the difference between writing a SwiftUI ForEach range as 1..<21 versus 1...20. I found the answer in a Hacking with Swift Day 34 article, which indicates older versions of Swift might not have allowed the closed-range form."
 aliases:
   - /2022/09/25/ranges/
 tags:

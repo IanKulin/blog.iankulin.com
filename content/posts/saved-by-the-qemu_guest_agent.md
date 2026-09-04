@@ -2,6 +2,7 @@
 title: "Saved by the qemu_guest_agent"
 date: '2023-02-10'
 slug: saved-by-the-qemu_guest_agent
+summary: "A copy of the system sudoers file that I placed into /etc/sudoers.d created an infinite include loop that broke sudo, and with no root login the VM seemed locked out. The qemu guest agent I covered in the previous post, accessed through Proxmox, provided a way to edit the protected file and undo the mistake."
 aliases:
   - /2023/02/10/saved-by-the-qemu_guest_agent/
 tags:

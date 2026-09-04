@@ -2,6 +2,7 @@
 title: "Getting Ghostty to Work on Synology"
 date: '2025-07-28'
 slug: getting-ghostty-to-work-on-synology
+summary: "Trying the Ghostty terminal, I hit a problem over SSH to a Synology NAS: arrow-key history recall and clear don't work, because Ghostty sets TERM to xterm-ghostty and Synology lacks the matching terminfo. The practical fix is overriding TERM to xterm-256color via an ssh config SetEnv entry, which can be wildcarded across multiple hosts. The terminfo installation method Ghostty officially recommends fails on Synology's minimal DSM."
 aliases:
   - /2025/07/28/getting-ghostty-to-work-on-synology/
 tags:

@@ -2,6 +2,7 @@
 title: "Git - make all the commits into a single commit"
 date: '2022-10-29'
 slug: git-make-all-the-commits-into-a-single-commit
+summary: "After following along with an app tutorial, I want to collapse all the small commits made along the way into one before pushing the project to GitHub. The solution, borrowed from a Stack Overflow answer, skips rebase and squash tricks entirely: delete the .git directory, re-initialize the repository, and make a single fresh commit."
 aliases:
   - /2022/10/29/git-make-all-the-commits-into-a-single-commit/
 tags:

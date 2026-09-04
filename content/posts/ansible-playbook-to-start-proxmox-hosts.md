@@ -2,6 +2,7 @@
 title: "Ansible playbook to start Proxmox hosts"
 date: '2023-11-05'
 slug: ansible-playbook-to-start-proxmox-hosts
+summary: "A follow-up to my previous post on tagging Proxmox guests, showing how to use Ansible to automatically start VMs and LXC containers before running apt updates. I cover installing the proxmoxer Python library, my inventory and vault setup, and the differences between starting VMs by name with the proxmox_kvm module and containers by VMID with the proxmox module. I include a complete example playbook."
 aliases:
   - /2023/11/05/ansible-playbook-to-start-proxmox-hosts/
 tags:

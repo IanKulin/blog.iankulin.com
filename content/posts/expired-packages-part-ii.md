@@ -2,6 +2,7 @@
 title: "Expired Packages Part II"
 date: '2023-01-31'
 slug: expired-packages-part-ii
+summary: "While trying to clear an npm audit vulnerability in my React app's nth-check dependency, I investigate confusing version mismatches between package-lock.json and npm list, and find that hand-editing the lock file doesn't survive an install. A GitHub issue on create-react-app explains the flag is effectively a false positive for a dev-only dependency and can be safely ignored, with a workaround for CI builds. My takeaways include a clearer understanding of package.json versus package-lock.json and the value of searching for the exact error first."
 aliases:
   - /2023/01/31/expired-packages-part-ii/
 tags:

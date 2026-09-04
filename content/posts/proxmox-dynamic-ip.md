@@ -2,6 +2,7 @@
 title: "Proxmox Dynamic IP"
 date: '2023-03-16'
 slug: proxmox-dynamic-ip
+summary: "My attempt to set up a Jellyfin media server on a mini PC turns into a networking detour: after installing Proxmox, an IP address conflict with a Wi-Fi light bulb leaves the host unreachable over SSH, and reserving a new address doesn't help because Proxmox hardcodes the IP it picks up via DHCP during installation. It ends with the unresolved problem of deploying the machine to a network with unknown configuration, where Proxmox's expectation of a static IP is inconvenient."
 aliases:
   - /2023/03/16/proxmox-dynamic-ip/
 tags:

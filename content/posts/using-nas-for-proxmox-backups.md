@@ -2,6 +2,7 @@
 title: "Using NAS for Proxmox backups"
 date: '2023-04-10'
 slug: using-nas-for-proxmox-backups
+summary: "Proxmox saves VM backups to local storage by default, which is no help if the host dies and makes restoring to a different node awkward. My walkthrough covers creating a shared folder with NFS permissions on a Synology NAS, then adding that share as storage at the datacenter level in Proxmox so backups and restores can happen from any node, making it easy to move VMs between hosts."
 aliases:
   - /2023/04/10/using-nas-for-proxmox-backups/
 tags:

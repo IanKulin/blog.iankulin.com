@@ -2,6 +2,7 @@
 title: "Project 12 Feedback"
 date: '2022-11-11'
 slug: project-12-feedback
+summary: "I compare my solutions with Paul's video for a SwiftUI challenge built around FilteredList, covering passing a predicate as a string, converting to enums, and adding sort descriptors. The enum task matched Paul's exactly, while sort descriptors caused some struggle with NSSortDescriptors until I spotted the hint to use SortDescriptor instead."
 aliases:
   - /2022/11/11/project-12-feedback/
 tags:

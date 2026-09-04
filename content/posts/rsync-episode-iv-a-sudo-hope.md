@@ -2,6 +2,7 @@
 title: "rsync episode IV - a sudo hope"
 date: '2023-03-30'
 slug: rsync-episode-iv-a-sudo-hope
+summary: "My attempt to rsync a NAS movies directory to an NTFS-formatted USB drive fails with \"Operation not permitted\" errors on setting times and creating temporary files, even though a manual cp by the same user succeeds. Running rsync with sudo makes the copies work, though owner and permission attributes still get rewritten on every run, possibly because of the NTFS format. I consider the sudo workaround unsatisfactory given my plans to eventually automate the backup."
 aliases:
   - /2023/03/30/rsync-episode-iv-a-sudo-hope/
 tags:

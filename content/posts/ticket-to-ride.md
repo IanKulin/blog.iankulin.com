@@ -2,6 +2,7 @@
 title: "Ticket to ride"
 date: '2022-12-05'
 slug: ticket-to-ride
+summary: "This is a progress update on my SwiftUI behaviour ticket app. Rather than the eventual goal of rendering tickets to PDFs or images for a share sheet, I cover exporting ticket data as a CSV text file, using a FileDocument struct adapted from Paul Hudson and SwiftUI's fileExporter modifier, with code included."
 aliases:
   - /2022/12/05/ticket-to-ride/
 tags:

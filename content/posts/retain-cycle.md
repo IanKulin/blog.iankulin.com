@@ -2,6 +2,7 @@
 title: "Retain Cycle"
 date: '2022-08-02'
 slug: retain-cycle
+summary: "I explain Swift memory management, starting with the difference between value types and reference types and why the latter requires Automatic Reference Counting. My code examples using a class with init and deinit methods show ARC working as expected, then demonstrate a retain cycle where two objects reference each other and are never deallocated."
 aliases:
   - /2022/08/02/retain-cycle/
 tags:

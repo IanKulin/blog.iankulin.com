@@ -2,6 +2,7 @@
 title: "Project 4 Challenges"
 date: '2022-09-16'
 slug: project-4-challenges
+summary: "I complete the Project 4 challenges of the 100 Days of SwiftUI course and compare my solutions to Paul Hudson's video solutions. Differences covered include Section header syntax, a picker implementation containing a careless bug, and moving a bedtime calculation into a computed property. Finding the comparison useful, I plan to check the video solutions going forward."
 aliases:
   - /2022/09/16/project-4-challenges/
 tags:

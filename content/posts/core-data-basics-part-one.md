@@ -2,6 +2,7 @@
 title: "Core Data basics - Part One"
 date: '2022-11-22'
 slug: core-data-basics-part-one
+summary: "In the first part of my series on learning Core Data basics, I build a simple SwiftUI master/detail app that lists gardens and their plants using structs and arrays, as a starting point before converting it to Core Data in later parts. My code draws heavily on Paul Hudson's 100 Days of SwiftUI course, with a GitHub link to the source."
 aliases:
   - /2022/11/22/core-data-basics-part-one/
 tags:

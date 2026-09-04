@@ -2,6 +2,7 @@
 title: "Core Data basics - Part Two"
 date: '2022-11-23'
 slug: core-data-basics-part-two
+summary: "Part two of my series on Core Data basics, in which I convert a SwiftUI master/detail garden-list app from structs to Core Data. I walk through defining entities in the Xcode data model, generating editable NSManagedObject subclasses, setting up a DataController with NSPersistentContainer, and fetching and saving data with @FetchRequest. I defer one-to-many relationships to the next part, and I draw much of the code from Paul Hudson's 100 Days of SwiftUI."
 aliases:
   - /2022/11/23/core-data-basics-part-two/
 tags:

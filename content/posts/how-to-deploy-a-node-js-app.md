@@ -2,6 +2,7 @@
 title: "How to deploy a Node.js app"
 date: '2023-07-05'
 slug: how-to-deploy-a-node-js-app
+summary: "I deploy a small Node.js and Express service from my MacBook to an Ubuntu VPS, covering the choice between a native install and a Docker container, installing Node and npm via apt (including why the Ubuntu repository version is quite old), and copying project files to the server with scp rather than setting up git-based CI/CD for such a tiny project. I test with Insomnia instead of Postman, which I avoid because of its data collection."
 aliases:
   - /2023/07/05/how-to-deploy-a-node-js-app/
 tags:

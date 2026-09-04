@@ -2,6 +2,7 @@
 title: "iOS 16 Developer Mode"
 date: '2022-11-19'
 slug: ios-16-developer-mode
+summary: "After updating my iPhone to iOS 16, I found my app would no longer run until Developer Mode was enabled. I briefly cover where to find the setting (in Privacy and Security) and note that it requires a reboot and re-authentication."
 aliases:
   - /2022/11/19/ios-16-developer-mode/
 tags:

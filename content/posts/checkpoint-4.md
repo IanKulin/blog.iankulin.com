@@ -2,6 +2,7 @@
 title: "Checkpoint 4"
 date: '2022-07-13'
 slug: checkpoint-4
+summary: "My Swift solution to a coding challenge: compute the integer square root of a number between 1 and 10,000 without using the built-in sqrt() function. My implementation uses a brute-force loop and throws custom errors for out-of-bounds input or when no integer root exists, with do/catch error handling shown in the example usage."
 aliases:
   - /2022/07/13/checkpoint-4/
 tags:

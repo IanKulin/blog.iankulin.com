@@ -2,6 +2,7 @@
 title: "Tuple Pronunciation"
 date: '2022-07-12'
 slug: tuple-pronunciation
+summary: "A short follow-up in which I note an unexpected benefit of watching CS193P lecture videos: learning how terms are actually pronounced. I had always said \"tuple\" to rhyme with \"cup,\" but the videos revealed the correct pronunciation is \"too-pull.\""
 aliases:
   - /2022/07/12/tuple-pronunciation/
 tags:

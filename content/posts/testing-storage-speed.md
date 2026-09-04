@@ -2,6 +2,7 @@
 title: "Testing Storage Speed"
 date: '2023-09-03'
 slug: testing-storage-speed
+summary: "After adding NVMe drives and an external USB NVMe mirror to my Proxmox homelab, I benchmark four storage options — internal NVMe, SATA SSD with ZFS, Synology NAS, and external ZFS pool — using fio write tests to decide where live VM disks should live. Results upend expectations: the NAS is fastest for parallel writes, the external enclosure disappoints, and ZFS compression carries a real cost on small random writes. The upshot is ZFS without compression on the SATA SSDs, trading some speed for data integrity and easy snapshot transfers."
 aliases:
   - /2023/09/03/testing-storage-speed/
 tags:

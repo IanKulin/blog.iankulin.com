@@ -2,6 +2,7 @@
 title: "Design Challenge"
 date: '2022-10-05'
 slug: design-challenge
+summary: "I give a progress update on translating an external designer's UI into SwiftUI, covering the rounded-rectangle elements I've completed and the .offset modifier I used to create an overlapping layout. My remaining work includes a custom picker and a combined picker/progress indicator."
 aliases:
   - /2022/10/05/design-challenge/
 tags:

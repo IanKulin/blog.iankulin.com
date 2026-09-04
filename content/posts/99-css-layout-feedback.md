@@ -2,6 +2,7 @@
 title: "99 CSS Layout Feedback"
 date: '2022-12-25'
 slug: 99-css-layout-feedback
+summary: "I compare my solution to the first CSS assignment in the Complete Web Developer course with the instructor's, covering differences in semantic HTML choices, the use of classes versus selectors, and layout techniques like flexbox. I also note new concepts introduced in the solution, including vh units, media queries, and a fixed-position sticky navbar, along with a centering issue that arose when applying it."
 aliases:
   - /2022/12/25/99-css-layout-feedback/
 tags:

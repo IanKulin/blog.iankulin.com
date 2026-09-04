@@ -2,6 +2,7 @@
 title: "React Expense Tracker App"
 date: '2024-01-22'
 slug: react-expense-tracker-app
+summary: "This is a write-up of an exercise from Mosh's React 18 course: building a small expense-tracking app in React and TypeScript, with Zod used for form validation. I cover component breakdown decisions, persisting expenses to local storage, tradeoffs in TypeScript type definitions, and refactoring repeated table markup into reusable components."
 aliases:
   - /2024/01/22/react-expense-tracker-app/
 tags:

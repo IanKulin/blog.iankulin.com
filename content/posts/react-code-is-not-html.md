@@ -2,6 +2,7 @@
 title: "React code is not HTML"
 date: '2023-01-22'
 slug: react-code-is-not-html
+summary: "A failed attempt to replace my React component's inline-styled div with plain HTML and CSS leads to the realization that JSX is JavaScript code that mutates the virtual DOM, not HTML. I question why React uses the faux-HTML syntax instead of a pure JavaScript DOM API. An update notes that a video revealed the HTML-like syntax was an intentional selling point of React, and that similar ideas have already been tried and abandoned."
 aliases:
   - /2023/01/22/react-code-is-not-html/
 tags:

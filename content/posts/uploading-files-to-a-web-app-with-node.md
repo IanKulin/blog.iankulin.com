@@ -2,6 +2,7 @@
 title: "Uploading files to a web app with Node"
 date: '2024-09-02'
 slug: uploading-files-to-a-web-app-with-node
+summary: "A beginner-friendly walkthrough of enabling file uploads in a Node/Express web app using the multer middleware. I cover setting up a basic Express server, configuring multer's disk storage, and submitting files via an HTML form with multipart/form-data encoding, before briefly noting production concerns like sanitizing filenames and restricting file size and type."
 aliases:
   - /2024/09/02/uploading-files-to-a-web-app-with-node/
 tags:

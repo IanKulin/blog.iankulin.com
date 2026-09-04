@@ -2,6 +2,7 @@
 title: "Fixing TLS for wget in BusyBox"
 date: '2024-11-25'
 slug: fixing-tls-for-wget-in-busybox
+summary: "A BusyBox container serving a static site can't fetch content over HTTPS because BusyBox ships without root CA certificates and has no package manager to install them. Rather than switch to a larger Alpine image, I settle on bind-mounting the host's certificate directory into the container read-only, with example configurations for both docker-compose and docker run."
 aliases:
   - /2024/11/25/fixing-tls-for-wget-in-busybox/
 tags:

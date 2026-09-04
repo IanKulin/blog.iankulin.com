@@ -2,6 +2,7 @@
 title: "CPU Comparisons"
 date: '2023-03-24'
 slug: cpu-comparisons
+summary: "Comparing an i5 6500T and i7 6700T to decide which mini PC gets a RAM upgrade and becomes the boss node in my homelab cluster. After noting how much clearer CPU naming used to be, I use comparison sites like versus.com to decode modern Intel chip names. My verdict: the two are nearly identical except the i7 has double the threads via Hyperthreading, which matters for a machine running multiple VMs."
 aliases:
   - /2023/03/24/cpu-comparisons/
 tags:

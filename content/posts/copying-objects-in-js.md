@@ -2,6 +2,7 @@
 title: "Copying Objects in JS"
 date: '2024-01-15'
 slug: copying-objects-in-js
+summary: "I take a look at copying objects in JavaScript for React state updates, covering why simple assignment fails, how the spread operator creates copies, and how to selectively replace properties during a copy. I also show why shallow copies fall short with nested data, demonstrating how to manually spread nested arrays for add and remove operations, and end by noting how the approach gets messy at deeper nesting levels."
 aliases:
   - /2024/01/15/copying-objects-in-js/
 tags:

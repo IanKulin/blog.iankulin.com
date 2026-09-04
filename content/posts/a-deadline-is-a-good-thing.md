@@ -2,6 +2,7 @@
 title: "A deadline is a good thing"
 date: '2022-09-09'
 slug: a-deadline-is-a-good-thing
+summary: "I keep a few pre-written blog posts in reserve to maintain a daily publishing schedule and streak, but one tired evening the buffer ran dry. The resulting deadline pressure pushed me to finish a minimum viable version of a half-started project."
 aliases:
   - /2022/09/09/a-deadline-is-a-good-thing/
 tags:

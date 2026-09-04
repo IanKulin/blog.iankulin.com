@@ -2,6 +2,7 @@
 title: "Cupcake Corner Feedback"
 date: '2022-11-03'
 slug: cupcake-corner-feedback
+summary: "A comparison of my solutions to Paul Hudson's for a SwiftUI challenge covering address validation, alerts for failed POST requests, and wrapping a struct in an observable class. I find Paul's String extension approach to whitespace checking neater than my brute-force version, and I highlight Paul's use of @dynamicMemberLookup with key paths to shorten chained property access like order.data.street down to order.street."
 aliases:
   - /2022/11/03/cupcake-corner-feedback/
 tags:

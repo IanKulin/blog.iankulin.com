@@ -2,6 +2,7 @@
 title: "Mounting NFS shares into LXC containers"
 date: '2023-04-21'
 slug: mounting-nfs-shares-into-lxc-containers
+summary: "I run Syncthing in a Proxmox LXC container as a possible Dropbox replacement and hit a snag when an NFS share from the NAS fails to mount with an access denied error. The cause is the container's security restrictions, and the fix is to run it as privileged, either by editing its config file or changing the option in the Proxmox web GUI."
 aliases:
   - /2023/04/21/mounting-nfs-shares-into-lxc-containers/
 tags:

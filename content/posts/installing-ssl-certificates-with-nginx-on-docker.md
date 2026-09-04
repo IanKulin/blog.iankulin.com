@@ -2,6 +2,7 @@
 title: "Installing SSL Certificates with Nginx on Docker"
 date: '2023-04-29'
 slug: installing-ssl-certificates-with-nginx-on-docker
+summary: "I set up SSL for a domain served by Nginx in Docker, using Let's Encrypt certificates generated through Porkbun. I cover concatenating the certificate files, fixing a malformed PEM that broke Nginx startup, and migrating from a plain docker run command to a docker-compose setup with volume mounts and SSL config. I note that certificates expire after 90 days, with certbot suggested as a future automation fix."
 aliases:
   - /2023/04/29/installing-ssl-certificates-with-nginx-on-docker/
 tags:

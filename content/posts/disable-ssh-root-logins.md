@@ -2,6 +2,7 @@
 title: "Disable SSH root logins"
 date: '2023-09-18'
 slug: disable-ssh-root-logins
+summary: "My freshly spun-up Ubuntu VPS starts receiving SSH brute-force login attempts against root within minutes, at roughly one attempt every 10 seconds. I cover disabling root SSH login by creating a sudo user, setting PermitRootLogin no in sshd_config, restarting sshd, and watching out for included config files in sshd_config.d that can override settings. I end with the idea of logging what passwords the bots actually try."
 aliases:
   - /2023/09/18/disable-ssh-root-logins/
 tags:

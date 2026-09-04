@@ -2,6 +2,7 @@
 title: "How to install M.2 SSD in HP G2 800 Mini"
 date: '2023-08-28'
 slug: how-to-install-m-2-ssd-in-hp-g2-800-mini
+summary: "A step-by-step walkthrough of installing 256GB NVMe drives in the M.2 slot of HP EliteDesk 800 G2 Mini machines. My Proxmox nodes will boot from the new drives, letting the existing SSDs — whose SMART reporting is unreliable — run ZFS with scrubbing for data integrity. I cover opening the case, removing the drive cage to reach the M.2 slots, seating the drive, and reassembly, along with a note that M.2 mounting screws typically need to be ordered separately."
 aliases:
   - /2023/08/28/how-to-install-m-2-ssd-in-hp-g2-800-mini/
 tags:

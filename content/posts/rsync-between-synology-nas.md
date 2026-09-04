@@ -2,6 +2,7 @@
 title: "rsync between Synology NAS"
 date: '2024-09-30'
 slug: rsync-between-synology-nas
+summary: "After abandoning an overly complicated LXD-based file transfer setup, I walk through using command-line rsync to sync files directly between two Synology NASes, including over Tailscale. I cover setting up passwordless SSH without ssh-copy-id, working around DSM 7's restriction on Tailscale outbound connections and its lack of Magic DNS, enabling rsync in the Synology interface, excluding metadata and recycle bin directories, fixing permissions, throttling bandwidth, deleting remote files in one-way syncs, and running the job in the background with nohup."
 aliases:
   - /2024/09/30/rsync-between-synology-nas/
 tags:

@@ -2,6 +2,7 @@
 title: "Checkpoint 4 optimisation"
 date: '2022-07-13'
 slug: checkpoint-4-optimisation
+summary: "A walkthrough of the Hacking with Swift Checkpoint 4 exercise, computing integer square roots in Swift. I first solve it with a brute-force loop, then show a binary search version that handles far larger input ranges with no perceptible delay, and reflect on the trade-offs between code simplicity and performance."
 aliases:
   - /2022/07/13/checkpoint-4-optimisation/
 tags:

@@ -2,6 +2,7 @@
 title: "Upgrade Cycle"
 date: '2023-02-02'
 slug: upgrade-cycle
+summary: "After discovering that RAM is the main limitation on my small homelab server, I am tempted by eBay's algorithm into a second, better-specified machine — 4 cores, double the RAM, bigger disk — complete with a 20% off code. The post covers the upgrade cost comparison and my increasingly creative rationalisations for buying it."
 aliases:
   - /2023/02/02/upgrade-cycle/
 tags:

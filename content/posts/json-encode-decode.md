@@ -2,6 +2,7 @@
 title: "JSON encode/decode"
 date: '2022-10-24'
 slug: json-encode-decode
+summary: "Progress on my SwiftUI habit tracking app built for the 100 Days challenge, covering UI refinements like a fading checkmark and the shift from simulator testing to daily use on a real iPhone. Persistence uses Swift's built-in JSON encoding with UserDefaults, which works well until the struct changes — I discuss the resulting decode failures and the lack of a simple way to decode missing properties using default values."
 aliases:
   - /2022/10/24/json-encode-decode/
 tags:

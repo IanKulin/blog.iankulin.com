@@ -2,6 +2,7 @@
 title: "Project Based Learning"
 date: '2022-12-01'
 slug: project-based-learning
+summary: "Reflecting on podcast advice that building a real app beats endless tutorials, I share what a day and a half of working on my own SwiftUI project turned up in my search history, covering topics like Core Data filtering, file exports, date formatting, and NavigationView quirks. The experience supports the podcasters' point: a real app forces you to push through hard problems you would otherwise sidestep when just noodling around."
 aliases:
   - /2022/12/01/project-based-learning/
 tags:

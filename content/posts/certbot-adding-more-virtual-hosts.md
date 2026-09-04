@@ -2,6 +2,7 @@
 title: "Certbot - adding more virtual hosts"
 date: '2023-10-15'
 slug: certbot-adding-more-virtual-hosts
+summary: "A walkthrough of how I add a new domain as a virtual host to an NGINX server already managed by Certbot, showing that rerunning certbot --nginx lets me expand the existing combined certificate to cover the new domain. I also cover migrating domains with existing Porkbun-issued certificates to the same server and folding them into the combined certificate, ending with a note on revoking the now-redundant ones."
 aliases:
   - /2023/10/15/certbot-adding-more-virtual-hosts/
 tags:

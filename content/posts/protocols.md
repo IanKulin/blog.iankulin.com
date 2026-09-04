@@ -2,6 +2,7 @@
 title: "Protocols"
 date: '2022-08-16'
 slug: protocols
+summary: "Swift structs can't use inheritance and classes are limited to a single superclass, so protocols fill the gap by letting structs, classes, and enums adopt shared properties and methods. I walk through a C++ multiple inheritance example and its Swift protocol equivalent, showing how a function can accept any type that conforms to a given protocol."
 aliases:
   - /2022/08/16/protocols/
 tags:

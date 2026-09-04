@@ -2,6 +2,7 @@
 title: "Openlayers & Vite"
 date: '2023-01-26'
 slug: openlayers-vite
+summary: "Applying Randy Pausch's brick wall metaphor to software development, I describe building a web page that shows the ISS's position on a live OpenLayers map, and the obstacles I hit along the way: the library's complexity, unfamiliar Vite build tooling, GitHub Pages conflicts, and broken asset paths. Each wall prompts a cost/benefit judgment, and I leave the remaining polish undone in favour of progressing with the course."
 aliases:
   - /2023/01/26/openlayers-vite/
 tags:

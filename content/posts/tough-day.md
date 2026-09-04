@@ -2,6 +2,7 @@
 title: "Tough Day"
 date: '2022-11-20'
 slug: tough-day
+summary: "Day 61 of the 100 Days of SwiftUI course presents a Core Data challenge that exposes gaps in my understanding, leading me to write out my current mental model of Core Data — object persistence, data models, code generation, and managed object contexts. Rather than push ahead, I plan to build a simple comparison of array-based storage versus Core Data before redoing the challenge."
 aliases:
   - /2022/11/20/tough-day/
 tags:

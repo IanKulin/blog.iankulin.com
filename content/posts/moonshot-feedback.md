@@ -2,6 +2,7 @@
 title: "Moonshot Feedback"
 date: '2022-10-15'
 slug: moonshot-feedback
+summary: "A comparison of my SwiftUI solution to the Hacking With Swift Moonshot challenge against Paul Hudson's, covering choices like whether to extract sub-views into separate files and using a List versus a ScrollView with HStacks. The key difference I discuss is a toolbar toggle built with a Button instead of an Image with a tap gesture, since using standard controls as intended gives screen readers the information they need for accessibility."
 aliases:
   - /2022/10/15/moonshot-feedback/
 tags:

@@ -2,6 +2,7 @@
 title: "Getting Your Vite React App to Work on Github Pages"
 date: '2024-01-26'
 slug: getting-your-vite-react-app-to-work-on-github-pages
+summary: "I walk through deploying a Vite/React app on GitHub Pages using the branch-based setup. I cover pointing Pages at a /docs directory, setting Vite's base path to the repo name, building and copying the output to /docs, and an optional vite.config change to build directly into it."
 aliases:
   - /2024/01/26/getting-your-vite-react-app-to-work-on-github-pages/
 tags:

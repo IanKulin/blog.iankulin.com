@@ -2,6 +2,7 @@
 title: "Regex to split a string with two different characters"
 date: '2022-11-30'
 slug: regex-to-split-a-string-with-two-different-characters
+summary: "A walkthrough of using Swift 5.7's regex support as the separator argument to String.split(), in order to parse a string like \"Some behaviour (expectation)\" into its two parts. I build the expression up step by step, covering escaping of brackets and spaces and the use of the pipe for OR, and note that the Playgrounds app doesn't yet support Swift 5.7."
 aliases:
   - /2022/11/30/regex-to-split-a-string-with-two-different-characters/
 tags:

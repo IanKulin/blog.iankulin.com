@@ -2,6 +2,7 @@
 title: "Calculator"
 date: '2022-09-29'
 slug: calculator
+summary: "While building a calculator-style answer keypad for a multiplication tables practice app, I follow an iOS Academy video that recreates the iOS Calculator in SwiftUI and enjoy spotting edge cases the tutorial's quick implementation leaves unhandled. I also reflect on copying existing Apple apps as a way to skip design work, and on wanting to improve at design over time."
 aliases:
   - /2022/09/29/calculator/
 tags:

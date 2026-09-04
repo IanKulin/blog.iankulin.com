@@ -2,6 +2,7 @@
 title: "Simple API endpoint in Go"
 date: '2023-09-27'
 slug: simple-api-endpoint-in-go
+summary: "A small Go utility exposes a lightweight JSON endpoint on each node or VM indicating whether RAM and disk usage are okay. Uptime Kuma watches the endpoint with its HTTP keyword check and sends an ntfy push notification when a machine gets into trouble. I include brief impressions of writing in Go and link to the GitHub repo."
 aliases:
   - /2023/09/27/simple-api-endpoint-in-go/
 tags:

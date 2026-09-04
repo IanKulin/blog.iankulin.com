@@ -2,6 +2,7 @@
 title: "Project 12 Challenges"
 date: '2022-11-10'
 slug: project-12-challenges
+summary: "My solutions to the three wrap-up challenges from Project 12 of the Hacking with Swift SwiftUI series, which involve a FilteredList subview whose @FetchRequest is built dynamically in its initializer. The tasks add a predicate format parameter, replace the hard-coded predicate string with an enum using raw values, and support an array of SortDescriptor objects."
 aliases:
   - /2022/11/10/project-12-challenges/
 tags:

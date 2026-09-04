@@ -2,6 +2,7 @@
 title: "CodePen.io"
 date: '2023-01-05'
 slug: codepen-io
+summary: "After seeing examples from a web development course, I try CodePen.io, an online editor for HTML, CSS and JavaScript with a live preview. I note its support for preprocessors, some quirks around document-level HTML, and its limits compared to a full IDE, and share a link to my first example pen."
 aliases:
   - /2023/01/05/codepen-io/
 tags:

@@ -2,6 +2,7 @@
 title: "Outside Temperature From an API in a Shell Script"
 date: '2023-05-03'
 slug: outside-temperature-from-an-api-in-a-shell-script
+summary: "I describe adding outdoor temperature readings to my homelab server temperature logs to account for ambient temperature changes, using OpenWeather's free API. A bash script on a VPS polls the weather endpoint every five minutes, extracts the temperature and timestamp with awk and cut, and serves the result as a text file that each server fetches during its logging cycle; the server-side script also loads the drivetemp kernel module to read SSD temperatures. Graphs of 24 hours of data show how ambient temperature, workload, and a CPU stress test affected the three servers."
 aliases:
   - /2023/05/03/outside-temperature-from-an-api-in-a-shell-script/
 tags:

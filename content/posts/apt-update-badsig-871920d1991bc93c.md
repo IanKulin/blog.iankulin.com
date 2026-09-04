@@ -2,6 +2,7 @@
 title: "apt update - BADSIG 871920D1991BC93C"
 date: '2023-10-30'
 slug: apt-update-badsig-871920d1991bc93c
+summary: "My weekend Ansible apt upgrade run failed on one Ubuntu host with a BADSIG GPG signature error on the Ubuntu jammy-updates repository. I trace the problem to my Apt Cacher NG cache and fix it by deleting the cached Ubuntu repository data, forcing fresh index files to be downloaded. I leave the underlying cause unresolved, though it appears to affect only that one host."
 aliases:
   - /2023/10/30/apt-update-badsig-871920d1991bc93c/
 tags:

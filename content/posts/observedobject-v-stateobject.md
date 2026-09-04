@@ -2,6 +2,7 @@
 title: "@ObservedObject v @StateObject"
 date: '2022-08-13'
 slug: observedobject-v-stateobject
+summary: "This is a follow-up to my earlier simple MVVM example, correcting my use of @ObservedObject for a view model created inside a SwiftUI view. Because SwiftUI can recreate views at any time, I explain that @StateObject is the correct wrapper in that situation, with @ObservedObject reserved for objects passed down from parent views, and I link to Apple's documentation and other explanations of the difference."
 aliases:
   - /2022/08/13/observedobject-v-stateobject/
 tags:

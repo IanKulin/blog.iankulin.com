@@ -2,6 +2,7 @@
 title: "Project 3"
 date: '2022-09-05'
 slug: project-3
+summary: "My solutions to three small SwiftUI challenges: using a ternary with semantic colors to turn the total red at a 0% tip in WeSplit, wrapping the flag Image in a reusable FlagView for GuessTheFlag, and building a custom ViewModifier with a View extension that applies a large blue title style. Each solution includes a short code snippet and a link to my change on GitHub."
 aliases:
   - /2022/09/05/project-3/
 tags:

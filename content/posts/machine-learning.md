@@ -2,6 +2,7 @@
 title: "Machine Learning"
 date: '2022-09-15'
 slug: machine-learning
+summary: "Reflecting on how a Tom-Tom GPS once seemed to predict my destinations, I work through Day 27 of 100 Days of SwiftUI, which covers CoreML by training a model in CreateML from Xcode and using it in an app. I note how straightforward the process was and that I'm more excited about small uses of machine learning, like better defaults for user inputs, than ambitious applications. I link to Apple's machine learning introduction."
 aliases:
   - /2022/09/15/machine-learning/
 tags:

@@ -2,6 +2,7 @@
 title: "Things I love about Swift after a week of JavaScript"
 date: '2023-01-06'
 slug: things-i-love-about-swift-after-a-week-of-javascript
+summary: "As an iOS developer a week into learning JavaScript, I reflect on what I miss from Swift, including the determinism of compiled code, a complete IDE for debugging, and the ability to fully remove deprecated language features. I also cover what JavaScript has in its favour, such as its low barrier to entry and lack of a required build step."
 aliases:
   - /2023/01/06/things-i-love-about-swift-after-a-week-of-javascript/
 tags:

@@ -2,6 +2,7 @@
 title: "Proxmox 8.0 Install"
 date: '2023-07-23'
 slug: proxmox-8-0-install
+summary: "Ahead of upgrading my Proxmox homelab node from 7.4 to 8.0, I migrate its guest VMs (Jellyfin and a Docker host) to another cluster node, which doubles as a test of the disaster-recovery plan, fixing a couple of hardware incompatibilities along the way. The node then gets a fresh Proxmox 8 install rather than the in-place upgrade, which I document as a runbook covering non-subscription repositories, SSL certificates, Tailscale, and NFS storage."
 aliases:
   - /2023/07/23/proxmox-8-0-install/
 tags:

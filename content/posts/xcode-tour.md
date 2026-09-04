@@ -2,6 +2,7 @@
 title: "Xcode Tour"
 date: '2022-07-24'
 slug: xcode-tour
+summary: "An embedded video in which I tour the basics of Xcode, presented as the first installment of my design-oriented course on SwiftUI."
 aliases:
   - /2022/07/24/xcode-tour/
 tags:

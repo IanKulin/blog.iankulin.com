@@ -2,6 +2,7 @@
 title: "Checkpoint 3"
 date: '2022-07-08'
 slug: checkpoint-2
+summary: "This is my Swift implementation of the classic FizzBuzz exercise. My code loops from 1 to 100, using named booleans for divisibility by 3 and 5 to decide whether to print Fizz, Buzz, FizzBuzz, or the number itself."
 aliases:
   - /2022/07/08/checkpoint-2/
 tags:

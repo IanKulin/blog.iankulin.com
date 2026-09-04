@@ -2,6 +2,7 @@
 title: "Certbot & Let's Encrypt are great"
 date: '2023-10-12'
 slug: certbot-lets-encrypt-are-great
+summary: "I explain why I switched from manually downloading SSL certificates from PorkBun every 90 days to using Let's Encrypt and Certbot, prompted in part by limitations with managing Australian .au domains. It covers installing Certbot on Ubuntu with NGINX, how it reads site configs to obtain and install certificates, and the systemd timer that renews them automatically."
 aliases:
   - /2023/10/12/certbot-lets-encrypt-are-great/
 tags:

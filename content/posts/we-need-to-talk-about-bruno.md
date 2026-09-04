@@ -2,6 +2,7 @@
 title: "We need to talk about Bruno"
 date: '2023-10-27'
 slug: we-need-to-talk-about-bruno
+summary: "After Insomnia forced account creation and my saved API requests disappeared, I switched to Bruno, a free and open-source API client available for Mac, Windows, and Linux, plus a CLI and VS Code plugins. Bruno stores request collections as human-readable text files, making them easy to commit to source control alongside code. The writeup includes my first impressions after an afternoon of use."
 aliases:
   - /2023/10/27/we-need-to-talk-about-bruno/
 tags:

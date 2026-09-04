@@ -2,6 +2,7 @@
 title: "Classes in JavaScript"
 date: '2023-01-07'
 slug: classes-in-javascript
+summary: "My first impressions of JavaScript classes from a beginner's lesson, with examples of declaring and instantiating classes, single inheritance using extends and super, defining methods, and using getters as computed properties. I also note JS quirks like the lack of named arguments, that missing constructor arguments fail silently, and classes that skip the constructor in favor of field declarations with default values."
 aliases:
   - /2023/01/07/classes-in-javascript/
 tags:

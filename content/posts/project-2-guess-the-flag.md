@@ -2,6 +2,7 @@
 title: "Project 2 - Guess the Flag"
 date: '2022-08-31'
 slug: project-2-guess-the-flag
+summary: "The second tutorial project in my 100 Days series, a flag-guessing game written with everything in the view — an approach I grew uneasy with as the challenges expanded it. Takeaways include string-based image asset identification, alert dialogs in a declarative framework, and gradients and frosted glass effects. Source code is on GitHub."
 aliases:
   - /2022/08/31/project-2-guess-the-flag/
 tags:

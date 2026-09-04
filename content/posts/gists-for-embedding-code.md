@@ -2,6 +2,7 @@
 title: "Gists for embedding code"
 date: '2022-09-23'
 slug: gists-for-embedding-code
+summary: "I describe using GitHub Gists to embed code snippets in WordPress posts, a simpler alternative to the WordPress code blocks I complained about previously. Pasting a Gist URL into WordPress renders it as a formatted code block, which I demonstrate with a Swift example."
 aliases:
   - /2022/09/23/gists-for-embedding-code/
 tags:

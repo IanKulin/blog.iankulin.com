@@ -2,6 +2,7 @@
 title: "Playgrounds"
 date: '2022-07-06'
 slug: playgrounds
+summary: "I explain how Swift Playgrounds evolved from an Xcode scratchpad into a STEM education tool I now use to learn Swift basics through puzzle-based lessons in spare moments. With the Playgrounds 4 release enabling full app development and App Store submission from the iPad, I've started an app called EasterDay and appreciate the seamless iCloud workflow between iPad and Mac, though I plan to move to Xcode soon to add unit tests and version control."
 aliases:
   - /2022/07/06/playgrounds/
 tags:

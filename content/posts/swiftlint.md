@@ -2,6 +2,7 @@
 title: "SwiftLint"
 date: '2022-10-10'
 slug: swiftlint
+summary: "Prompted by a video on effective developer habits, I finally add a linter to my Swift workflow. I cover installing SwiftLint and hooking it into Xcode builds, adjusting rules via a swiftlint.yml config file, and selectively disabling rules with code comments. My approach is to enable all optional rules up front, then decide for each violation whether to change the code or drop the rule."
 aliases:
   - /2022/10/10/swiftlint/
 tags:

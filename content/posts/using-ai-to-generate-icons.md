@@ -2,6 +2,7 @@
 title: "Using AI to Generate Icons"
 date: '2022-10-11'
 slug: using-ai-to-generate-icons
+summary: "After hiring a designer on Fiverr for CodeTrimmer icons, I try generating them locally with DiffusionBee, a free Apple silicon build of Stable Diffusion, on an M1 MacBook. I show outputs for a scissors-over-code prompt, note the permissive CreativeML Open RAIL-M license, and observe that prompt-writing is a skill, with results good enough for toy apps or as starting points for design ideas."
 aliases:
   - /2022/10/11/using-ai-to-generate-icons/
 tags:

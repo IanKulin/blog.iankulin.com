@@ -2,6 +2,7 @@
 title: "Could it be a permissions problem?"
 date: '2023-03-05'
 slug: could-it-be-a-permissions-problem
+summary: "In my homelab troubleshooting saga, Linux file permissions repeatedly foil my attempts to get Jellyfin working — first in an LXC container on Proxmox, then in a Debian VM, and finally via the official container version. Along the way Tailscale proves incompatible with the container, metadata posters vanish unexpectedly, and I conclude that on Linux, permission issues should be the first suspect whenever something breaks."
 aliases:
   - /2023/03/05/could-it-be-a-permissions-problem/
 tags:

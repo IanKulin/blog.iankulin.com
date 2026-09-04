@@ -2,6 +2,7 @@
 title: "rsync / Synology / @eaDir"
 date: '2023-03-28'
 slug: rsync-synology-eadir
+summary: "Setting up a backup strategy on a Synology NAS, I SSH in to locate volume and share mount points and do a dry-run rsync of a movies directory from the NAS to a USB drive. The first run surfaces thousands of @eaDir entries, which turn out to be Synology metadata files likely produced by the indexing service, and I end the post by excluding them via the --exclude option."
 aliases:
   - /2023/03/28/rsync-synology-eadir/
 tags:

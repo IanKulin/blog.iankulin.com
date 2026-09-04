@@ -2,6 +2,7 @@
 title: "Clean code"
 date: '2022-12-09'
 slug: clean-code
+summary: "After listening to a podcast episode about \"humane\" development, I describe my personal Swift coding style, which centers on being kind to whoever reads the code next. The principles I cover include following community conventions, writing code that reads like natural language, keeping functions small and single-purpose, avoiding hidden dependencies like globals, and using comments as temporary scaffolding that usually gets deleted once the code is written."
 aliases:
   - /2022/12/09/clean-code/
 tags:

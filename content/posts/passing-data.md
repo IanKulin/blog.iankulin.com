@@ -2,6 +2,7 @@
 title: "Passing Data"
 date: '2022-07-20'
 slug: passing-data
+summary: "Impressions of a free compilation video from Sean Allen's SwiftUI fundamentals course, which I find strong on explaining child views and layout stacks but note assumes existing Swift language knowledge. The later lessons on passing values into views speak to my own confusion about SwiftUI app structure and how views get redrawn, making the paid course tempting despite my already juggling several other learning resources."
 aliases:
   - /2022/07/20/passing-data/
 tags:

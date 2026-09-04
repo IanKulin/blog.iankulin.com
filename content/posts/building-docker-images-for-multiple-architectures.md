@@ -2,6 +2,7 @@
 title: "Building Docker images for multiple architectures"
 date: '2023-11-20'
 slug: building-docker-images-for-multiple-architectures
+summary: "I look at replacing a shell script that built and pushed separate Docker images for amd64 and arm64 with docker buildx, which produces a single multi-platform image of my mdserver app. My attempt to also target 32-bit ARM for the Raspberry Pi runs extremely slowly because buildx emulates foreign architectures with QEMU, prompting me to consider offloading builds to GitHub Actions."
 aliases:
   - /2023/11/20/building-docker-images-for-multiple-architectures/
 tags:

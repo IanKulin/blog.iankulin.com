@@ -2,6 +2,7 @@
 title: "iOS Academy"
 date: '2022-08-08'
 slug: ios-academy
+summary: "A short post recommending iOS Academy's brief video tutorials on Swift iOS programming, with an embedded example covering Grid Views. I reflect on how today's freely shared Swift and iOS learning material differs from the magazines and thick books I relied on when learning to program before the internet."
 aliases:
   - /2022/08/08/ios-academy/
 tags:

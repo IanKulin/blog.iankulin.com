@@ -2,6 +2,7 @@
 title: "HDD Swap on A1278 MacBook Pro"
 date: '2023-05-10'
 slug: hdd-swap-on-a1278-macbook-pro
+summary: "A short walkthrough of replacing my dead hard drive with a 2.5-inch SSD in my 2012 Intel MacBook Pro that had sat in a drawer for three years. I cover removing the bottom cover, disconnecting the SATA plug, transferring the mounting lugs with a torx driver, and reassembling, along with a few practical notes like the angled case screws and a packing-tape fix for the pull tab."
 aliases:
   - /2023/05/10/hdd-swap-on-a1278-macbook-pro/
 tags:

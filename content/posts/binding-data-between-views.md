@@ -2,6 +2,7 @@
 title: "@Binding - data between views"
 date: '2022-11-05'
 slug: binding-data-between-views
+summary: "I explain SwiftUI's @Binding property wrapper, framed by an analogy to passing pointers in C. A short code example demonstrates a parent view passing an @State variable to a subview with the $ prefix, letting the subview read and mutate the value."
 aliases:
   - /2022/11/05/binding-data-between-views/
 tags:

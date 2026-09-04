@@ -2,6 +2,7 @@
 title: "Profile Photo Rabbit Hole"
 date: '2022-11-13'
 slug: profile-photo-rabbit-hole
+summary: "My #100DaysOfSwiftUI challenge post is about adding profile pictures to a Friendface app. Swift's hashValue turns out to be non-deterministic between runs, so I write a simple string hash by hand to pick stable photo numbers. After Unsplash proves unreliable, I settle on RandomUser.me portraits and consider using the genderize.io API to match gender from names."
 aliases:
   - /2022/11/13/profile-photo-rabbit-hole/
 tags:

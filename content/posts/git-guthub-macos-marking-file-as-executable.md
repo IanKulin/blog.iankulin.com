@@ -2,6 +2,7 @@
 title: "Git/GutHub - macOS - marking file as executable"
 date: '2023-04-30'
 slug: git-guthub-macos-marking-file-as-executable
+summary: "While setting up a small cron-driven script to cache a weather API's JSON output for serving over Nginx, I run into trouble getting git to preserve the script's executable bit between macOS and an Ubuntu VPS. After git update-index --chmod=+x fails and toggling the filemode config setting only seems to work by accident, the root cause turns out to be a forgotten fact: macOS does support Unix file permissions, so a plain chmod before committing solves it."
 aliases:
   - /2023/04/30/git-guthub-macos-marking-file-as-executable/
 tags:

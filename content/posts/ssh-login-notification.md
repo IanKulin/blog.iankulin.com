@@ -2,6 +2,7 @@
 title: "SSH login notification"
 date: '2024-05-13'
 slug: ssh-login-notification
+summary: "How to get a phone notification whenever someone SSHs into a VPS, using a PAM hook and the Ntfy push notification service. I explain why SSH access is a risk worth monitoring on otherwise locked-down servers, then walk through editing the sshd PAM config, creating a script that sends a curl request to an Ntfy topic on login, and restarting sshd to test it."
 aliases:
   - /2024/05/13/ssh-login-notification/
 tags:

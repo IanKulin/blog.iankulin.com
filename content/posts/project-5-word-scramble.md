@@ -2,6 +2,7 @@
 title: "Project 5 - Word Scramble"
 date: '2022-09-19'
 slug: project-5-word-scramble
+summary: "I built a Scrabble-like word game as a 100 Days of SwiftUI project. I cover bundling a large text file and loading it into an array at view launch, plus a brief detour into UIKit to use UITextChecker. My source code is on GitHub."
 aliases:
   - /2022/09/19/project-5-word-scramble/
 tags:

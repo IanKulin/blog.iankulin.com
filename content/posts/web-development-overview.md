@@ -2,6 +2,7 @@
 title: "Web Development Overview"
 date: '2024-02-05'
 slug: web-development-overview
+summary: "In this short post, I link to Brad Traversy's Web Development In 2024 – A Practical Guide YouTube video, describing it as a comprehensive, beginner-friendly overview of web development that he publishes each year."
 aliases:
   - /2024/02/05/web-development-overview/
 tags:

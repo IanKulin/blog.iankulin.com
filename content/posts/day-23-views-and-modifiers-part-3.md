@@ -2,6 +2,7 @@
 title: "Day 23 - Views and Modifiers - Part 3"
 date: '2022-09-02'
 slug: day-23-views-and-modifiers-part-3
+summary: "A look at how I decompose SwiftUI views into smaller pieces: storing view fragments as properties, why properties can't reference each other, and why a computed property can't return multiple views without a single container. I cover fixes including wrapping views in a VStack or Group or applying the @ViewBuilder attribute, and I note a quirk where omitting a VStack unexpectedly produced two preview instances."
 aliases:
   - /2022/09/02/day-23-views-and-modifiers-part-3/
 tags:

@@ -2,6 +2,7 @@
 title: ".self in ForEach"
 date: '2022-09-07'
 slug: self-in-foreach
+summary: "While working through Hacking With SwiftUI, I run into two points of confusion around ForEach: what the id: \\.self key path actually does when looping over an array of strings, and a compiler warning about non-constant ranges such as 0..<agents.count. Attempts to use key paths directly don't compile, and a forum explanation of the warning — guarding against the array changing size during the loop — leaves me unconvinced."
 aliases:
   - /2022/09/07/self-in-foreach/
 tags:

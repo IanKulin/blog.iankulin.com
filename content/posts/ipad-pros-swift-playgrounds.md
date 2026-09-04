@@ -2,6 +2,7 @@
 title: "iPad Pros - Swift Playgrounds"
 date: '2022-07-09'
 slug: ipad-pros-swift-playgrounds
+summary: "Swift Playgrounds gets daily use in my workflow switching between iPad and MacBook, and I marvel that a tool aimed at education scales up to commercial-level app production. I also cover a 2017 iPad Pros podcast episode about the launch of Playgrounds 4, which focused on the iPad as a serious development tool, and my concern that making Playgrounds more like Xcode could make it less approachable for children."
 aliases:
   - /2022/07/09/ipad-pros-swift-playgrounds/
 tags:

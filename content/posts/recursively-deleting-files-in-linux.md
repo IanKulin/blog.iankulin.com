@@ -2,6 +2,7 @@
 title: "Recursively Deleting Files in Linux"
 date: '2023-04-14'
 slug: recursively-deleting-files-in-linux
+summary: "I give a short walkthrough of backing up a Synology NAS to a USB drive with rsync, using excludes to skip junk files like macOS's .DS_Store and Synology's @eaDir. I also show how to use the find command to recursively locate .DS_Store files scattered through subdirectories, preview the matches first, and delete them with the -delete flag."
 aliases:
   - /2023/04/14/recursively-deleting-files-in-linux/
 tags:

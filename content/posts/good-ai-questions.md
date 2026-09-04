@@ -3,7 +3,7 @@ title: "Good AI Questions"
 date: '2026-08-20'
 slug: good-ai-questions
 description: A look at my LLM supported webdev process in light of the open questions flagged by Manuel Schipper.
-summary: "Prompted by Manuel Schipper's piece on technical leaders and AI, the I document my current workflow for using LLMs in web development. This approach keeps context small and explicit — frequent clearing, markdown summaries passed between stages, no background agents or MCPs — supported by a personal library of prompt playbooks that encode my stack and conventions. Work proceeds in discrete stages (exploration, plan, AI and human plan review, implement, checking) so problems surface at the document level before code gets written."
+summary: "Prompted by Manuel Schipper's piece on technical leaders and AI, I document my current workflow for using LLMs in web development. This approach keeps context small and explicit — frequent clearing, markdown summaries passed between stages, no background agents or MCPs — supported by a personal library of prompt playbooks that encode my stack and conventions. Work proceeds in discrete stages (exploration, plan, AI and human plan review, implement, checking) so problems surface at the document level before code gets written."
 tags:
   - ai
   - llm

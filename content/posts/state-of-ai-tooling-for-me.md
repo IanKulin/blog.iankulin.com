@@ -2,6 +2,7 @@
 title: "State of AI tooling (for me)"
 date: '2025-07-07'
 slug: state-of-ai-tooling-for-me
+summary: "A follow-up to my earlier article on AI-assisted coding, describing my move from autocomplete tools to agentic coding with Cline, Claude Code, and Gemini CLI. I cover token costs, comparisons between Claude, OpenAI, DeepSeek, and Gemini models, and practical tips such as plan-then-act workflows, guardrails, and keeping context lean."
 aliases:
   - /2025/07/07/state-of-ai-tooling-for-me/
 tags:

@@ -2,6 +2,7 @@
 title: "Adding Front Matter To mdserver"
 date: '2023-11-24'
 slug: adding-front-matter-to-mdserver
+summary: "The mdserver project needed page titles defined as YAML front matter inside markdown files, in the style of Jekyll and Hugo, instead of being generated from the file name. Rather than writing custom extraction code, I use Showdown's built-in metadata support, enabled with a converter flag, and confirm the front matter leaves the HTML output unchanged."
 aliases:
   - /2023/11/24/adding-front-matter-to-mdserver/
 tags:

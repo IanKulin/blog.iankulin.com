@@ -2,6 +2,7 @@
 title: "De-structuring objects in JS"
 date: '2023-01-20'
 slug: de-structuring-objects-in-js
+summary: "My notes from a first React tutorial, with a focus on JavaScript object destructuring. Examples show extracting object properties as local variables, either in a function's parameter list or inside the function body, along with my thoughts on the readability trade-offs between the two approaches."
 aliases:
   - /2023/01/20/de-structuring-objects-in-js/
 tags:

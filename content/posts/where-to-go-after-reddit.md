@@ -2,6 +2,7 @@
 title: "Where to go after Reddit"
 date: '2023-08-01'
 slug: where-to-go-after-reddit
+summary: "After Reddit's treatment of its communities ahead of its IPO, I decide to leave the site and evaluate alternatives, settling on Lemmy as a federated, Reddit-like replacement. I also cover communities that moved to Discourse instead, the fragmentation of online discussion into smaller islands, and ChatGPT's possible role in Stack Overflow's decline, and close with a list of the Lemmy and Discourse communities where I now post."
 aliases:
   - /2023/08/01/where-to-go-after-reddit/
 tags:

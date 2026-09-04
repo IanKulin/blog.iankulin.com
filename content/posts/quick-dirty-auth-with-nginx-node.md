@@ -2,6 +2,7 @@
 title: "Quick & Dirty auth with nginx & Node"
 date: '2024-02-23'
 slug: quick-dirty-auth-with-nginx-node
+summary: "I walk through protecting a Node/Express app with nginx basic auth, aimed at simple utilities on public servers: firewall off the app's port so only nginx can reach it, configure nginx to proxy requests and require htpasswd credentials, and pass the authenticated username to the app via a request header. I also cover the approach's limitations, such as plaintext passwords without SSL, no logout mechanism, and no brute-force protection."
 aliases:
   - /2024/02/23/quick-dirty-auth-with-nginx-node/
 tags:

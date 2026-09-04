@@ -2,6 +2,7 @@
 title: "Gogs, Gitea, Forgejo"
 date: '2023-12-18'
 slug: gogs-gitea-forgejo
+summary: "A security vulnerability announced for Forgejo, which also affects Gitea and Gogs, prompted me to look into the fork history behind my self-hosted Gogs setup: Gitea split from Gogs in 2016 over project management disagreements, and Forgejo forked from Gitea in 2022 after its trademarks moved to a company. Impressed by Forgejo's handling of the issue and only lightly invested in Gogs, I'm considering a switch. The takeaway is that project governance matters alongside features, and security announcements for the tools you rely on are worth following."
 aliases:
   - /2023/12/18/gogs-gitea-forgejo/
 tags:

@@ -2,6 +2,7 @@
 title: "Project 9 - Drawing"
 date: '2022-10-18'
 slug: project-9-drawing
+summary: "This is my #100DaysOfSwiftUI journal entry covering days on custom drawing: paths, shapes, transforms, ImagePaint, drawingGroup with Metal, blurs, blend modes, and animatableData. I walk through the challenge solutions, building an Arrow shape with animatable line thickness and a ColorCyclingRectangle whose gradient endpoint is controlled by sliders, and I note the lesson I learned from not using git for scratch code."
 aliases:
   - /2022/10/18/project-9-drawing/
 tags:

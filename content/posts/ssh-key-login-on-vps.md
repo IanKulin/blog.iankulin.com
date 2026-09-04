@@ -2,6 +2,7 @@
 title: "ssh key login on VPS"
 date: '2023-02-12'
 slug: ssh-key-login-on-vps
+summary: "I walk through moving a server from password-based SSH logins to key-based authentication as a defence against brute force attacks. I cover generating an SSH key pair on a Mac, installing the public key on the target machine with ssh-copy-id, and disabling password authentication on Ubuntu 22 by adding PasswordAuthentication no to a config file in sshd_config.d and reloading the ssh daemon. I also note console login still works if something goes wrong."
 aliases:
   - /2023/02/12/ssh-key-login-on-vps/
 tags:

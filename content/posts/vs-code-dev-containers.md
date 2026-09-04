@@ -2,6 +2,7 @@
 title: "VS Code Dev Containers"
 date: '2026-01-10'
 slug: vs-code-dev-containers
+summary: "In this walkthrough, I set up a VS Code Dev Container, beginning with my use of Remote-SSH on homelab LXCs and my goal of running AI coding agents like Claude Code in an isolated, easily recreated environment. I cover writing a Dockerfile and devcontainer.json, how the extension automatically handles the VS Code server and workspace bind mounts, and the difference between UI and workspace extensions, including declaring them in the config for reproducible setups. I leave handling SSH keys for pushing code to a future post."
 aliases:
   - /2026/01/10/vs-code-dev-containers/
 tags:

@@ -2,6 +2,7 @@
 title: "Top Four Reasons why @TwoStraws is a Good Teacher"
 date: '2022-11-01'
 slug: top-four-reasons-why-twostraws-is-a-good-teacher
+summary: "I reflect on what makes the 100 Days of SwiftUI course effective as a teaching resource: its true/false comprehension questions, carefully pitched difficulty, hands-on learning in context, and the instructor's knack for anticipating how beginners think. I also praise how reliably the course content stays up to date despite the rapid pace of change in Swift and SwiftUI."
 aliases:
   - /2022/11/01/top-four-reasons-why-twostraws-is-a-good-teacher/
 tags:

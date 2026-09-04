@@ -2,6 +2,7 @@
 title: "Getting Tailscale working in LXC containers"
 date: '2023-10-18'
 slug: getting-tailscale-working-in-lxc-containers
+summary: "When I ran Tailscale inside an unprivileged LXC container on Proxmox, it failed at tailscale up with a \"no backend\" error, because the container lacked access to the TUN/TAP device Tailscale needs. My fix was to stop the container, add a device allow rule and a bind mount entry for /dev/net/tun to its LXC config file, then start it and run tailscale up again."
 aliases:
   - /2023/10/18/getting-tailscale-working-in-lxc-containers/
 tags:

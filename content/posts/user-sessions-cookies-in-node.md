@@ -2,6 +2,7 @@
 title: "User Sessions & Cookies in Node"
 date: '2024-02-09'
 slug: user-sessions-cookies-in-node
+summary: "In this tutorial, I build a user login and session management system from scratch in Node and Express, starting with a simple cookie-based session counter and progressively adding file-based persistence, user accounts, logout, and password authentication using bcrypt. I also cover input sanitisation, secure cookies, and enforcing HTTPS behind an NGINX proxy. The tutorial is aimed at readers with basic familiarity with Node and Express."
 aliases:
   - /2024/02/09/user-sessions-cookies-in-node/
 tags:

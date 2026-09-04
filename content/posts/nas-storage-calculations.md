@@ -2,6 +2,7 @@
 title: "NAS Storage Calculations"
 date: '2023-03-11'
 slug: nas-storage-calculations
+summary: "While planning to move my applications from the cloud to self-hosting, I evaluate Synology NAS options for a roughly 12TB storage target, weighing RAID levels, second-hand versus new drives, cost per terabyte, and power consumption. I ultimately choose a new DS420j with four used 6TB drives in RAID 6 for production, plus a single-drive NAS for local backup and my existing unit with 14TB drives for remote backup."
 aliases:
   - /2023/03/11/nas-storage-calculations/
 tags:

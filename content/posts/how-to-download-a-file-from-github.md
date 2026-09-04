@@ -2,6 +2,7 @@
 title: "How to download a file from GitHub"
 date: '2022-09-17'
 slug: how-to-download-a-file-from-github
+summary: "I share a quick tip for downloading an individual file from GitHub without cloning the repository: use the Raw button to get a direct link to the file, then save it via the browser as you would any other web resource."
 aliases:
   - /2022/09/17/how-to-download-a-file-from-github/
 tags:

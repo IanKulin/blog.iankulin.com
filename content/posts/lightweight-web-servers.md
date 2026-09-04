@@ -2,6 +2,7 @@
 title: "Lightweight Web Servers"
 date: '2023-09-15'
 slug: lightweight-web-servers
+summary: "After a couple of homelab incidents that Uptime Kuma didn't catch, including a vanished USB mount and an NVMe drive filling up, I consider adding custom checks for things like disk space, memory use, and mount status via a small metrics endpoint. Weighing Node/Express against Python, C, and Golang, I conclude that C's benchmark edge isn't worth the hassle for endpoints polled only every few minutes."
 aliases:
   - /2023/09/15/lightweight-web-servers/
 tags:

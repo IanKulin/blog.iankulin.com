@@ -2,6 +2,7 @@
 title: "Day 47 - Habits App"
 date: '2022-10-27'
 slug: day-47-habits-app
+summary: "I wrap up my Habits app as an MVP, the first of my own apps I have actually installed on my phone, after 120 days on the 100 Days of SwiftUI course with only day 47 completed. Possible future features include setting habits due at a specific time, like 6pm, rather than a fixed interval after the last completion. A growing backlog, including a custom picker for a times table app, remains deferred."
 aliases:
   - /2022/10/27/day-47-habits-app/
 tags:

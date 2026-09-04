@@ -2,6 +2,7 @@
 title: "Getting Started with Ansible"
 date: '2023-07-19'
 slug: getting-started-with-ansible
+summary: "My beginner's guide to taking the first steps with Ansible, aimed at people comfortable managing a few Linux servers on homelab VMs or a VPS rather than following tutorials built around Vagrant and VirtualBox. I cover installation prerequisites, ad-hoc commands run against a small set of Debian VMs, core concepts like modules and idempotence, and simplifying commands with inventory files and ansible.cfg. I defer playbooks to a follow-up."
 aliases:
   - /2023/07/19/getting-started-with-ansible/
 tags:

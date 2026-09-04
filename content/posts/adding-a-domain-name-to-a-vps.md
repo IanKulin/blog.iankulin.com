@@ -2,6 +2,7 @@
 title: "Adding a Domain Name to a VPS"
 date: '2023-04-28'
 slug: adding-a-domain-name-to-a-vps
+summary: "I point a Porkbun-registered domain at a BinaryLane VPS by keeping Porkbun as the name server and updating the A record to the VPS's IP address. Along the way, I include a short primer on DNS resolution and authoritative name servers, plus a mention of my longer-term plan to use the VPS as a Wireguard tunnel to a home cluster. The end result is the domain serving a test page from Nginx running in a container on the VPS."
 aliases:
   - /2023/04/28/adding-a-domain-name-to-a-vps/
 tags:

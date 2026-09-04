@@ -2,6 +2,7 @@
 title: "Error wiping old drive in Proxmox"
 date: '2023-08-31'
 slug: error-wiping-old-drive-in-proxmox
+summary: "When reusing my old Proxmox boot SSD as a ZFS pool, a \"has a holder (500)\" error blocks wiping the drive in the web GUI. The workaround is to delete the old partitions with fdisk, reboot to release the kernel's hold, and then wipe the drive normally. I also note the installer's existing-volume-group prompt and recommend the graphical installer when adding a boot drive to an existing node."
 aliases:
   - /2023/08/31/error-wiping-old-drive-in-proxmox/
 tags:

@@ -2,6 +2,7 @@
 title: "Purple warning - \"Publishing changes\""
 date: '2022-10-21'
 slug: purple-warning-publishing-changes
+summary: "I hit SwiftUI's publishing changes from within view updates purple warning in Xcode 14 when a button in a list updates a model, and after research I conclude it's likely an Xcode bug rather than a code mistake. Adding a button style modifier silences the warning as a temporary workaround, with newer Xcode versions possibly fixing the issue."
 aliases:
   - /2022/10/21/purple-warning-publishing-changes/
 tags:

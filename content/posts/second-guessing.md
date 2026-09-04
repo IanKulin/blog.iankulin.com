@@ -2,6 +2,7 @@
 title: "Second Guessing"
 date: '2023-01-05'
 slug: second-guessing
+summary: "I reflect on my methods for learning JavaScript: typing along with tutorials and completing the extension tasks, recreating websites I find interesting, and cherry-picking beginner episodes of the JavaScript Jabber podcast. I also touch on how writing these blog posts helps clarify my thinking and provides a sense of accountability, and mention anticipating a tutorial's discussion of onclick versus addEventListener as a sign my immersion is paying off."
 aliases:
   - /2023/01/05/second-guessing/
 tags:

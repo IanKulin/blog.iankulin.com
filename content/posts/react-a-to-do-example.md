@@ -2,6 +2,7 @@
 title: "React - a To Do Example"
 date: '2024-01-08'
 slug: react-a-to-do-example
+summary: "My To Do app gets rebuilt in React, continuing a series that has already covered vanilla JavaScript and htmx versions backed by the same REST API. I cover React's core ideas—components, declarative UI, and the virtual DOM—along with Vite build tooling, and walk through the app's components, useState-based state management, and passing data via props. React's tooling complexity and 150K of shipped JavaScript make it overkill at this scale, but I plan further React work, possibly with TypeScript."
 aliases:
   - /2024/01/08/react-a-to-do-example/
 tags:

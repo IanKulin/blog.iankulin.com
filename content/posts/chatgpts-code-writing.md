@@ -2,6 +2,7 @@
 title: "ChatGPT's code writing"
 date: '2022-12-11'
 slug: chatgpts-code-writing
+summary: "I ask ChatGPT to write a SwiftUI todo app with items that reoccur after a set number of days, sharing the generated code and the fixes needed to make it run, such as replacing a non-existent date formatter and adding a NavigationView. Iterating toward a more complex app, including CoreData persistence, required progressively more manual correction from me. My brief closing thoughts cover what ChatGPT might mean for developers and internet content."
 aliases:
   - /2022/12/11/chatgpts-code-writing/
 tags:

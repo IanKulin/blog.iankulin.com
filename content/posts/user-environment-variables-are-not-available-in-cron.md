@@ -2,6 +2,7 @@
 title: "User environment variables are not available in cron"
 date: '2024-07-15'
 slug: user-environment-variables-are-not-available-in-cron
+summary: "Docker environment variables set for a container aren't available to scripts run by cron inside it, even when cron runs as the same user. After confirming the cause and finding no clean fix, I settle on a workaround: saving the needed variable to a file in the entry point script and reading it back from the cron job."
 aliases:
   - /2024/07/15/user-environment-variables-are-not-available-in-cron/
 tags:

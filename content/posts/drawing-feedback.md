@@ -2,6 +2,7 @@
 title: "Drawing Feedback"
 date: '2022-10-19'
 slug: drawing-feedback
+summary: "I compare my solutions to the Project 9 drawing challenges from Paul Hudson's 100 Days of SwiftUI course, covering an Arrow shape, making its shaft width animatable using AnimatableData, and a ColorCyclingRectangle with a controllable gradient. My closing aside considers whether to use US or UK spellings like \"color\" in Swift code."
 aliases:
   - /2022/10/19/drawing-feedback/
 tags:

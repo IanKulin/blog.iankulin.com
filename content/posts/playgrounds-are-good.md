@@ -2,6 +2,7 @@
 title: "Playgrounds are good"
 date: '2022-08-22'
 slug: playgrounds-are-good
+summary: "After needing to run small C and C++ snippets and missing Swift Playgrounds, I look at options for scratch coding on an iPad. A C Language app works via an online compiler but feels sluggish, and some paid apps advertised as offline compilation actually send code to a server. Free online compilers that support many languages, including C and Swift, turned out to be a handy alternative."
 aliases:
   - /2022/08/22/playgrounds-are-good/
 tags:

@@ -2,6 +2,7 @@
 title: "git stash"
 date: '2022-11-12'
 slug: git-stash
+summary: "I take a short look at using git stash to temporarily set aside uncommitted changes and revert a directory to the last commit, then git stash pop to restore them — handy for grabbing an earlier version of code. I also briefly mention more advanced stash features like naming, multiple stashes, and viewing diffs, with a link to Atlassian's guide."
 aliases:
   - /2022/11/12/git-stash/
 tags:

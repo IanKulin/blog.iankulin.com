@@ -2,6 +2,7 @@
 title: "Moving a domain from Wordpress"
 date: '2024-12-30'
 slug: moving-a-domain-from-wordpress
+summary: "A step-by-step guide to moving my domain registration from WordPress.com to Porkbun, motivated by my unease over recent WordPress drama. I cover the transfer process—including a required 60-day wait, disabling the transfer lock, and a gotcha where private registration had to be turned off before the authorization code would work—plus copying DNS records and switching nameservers. In a closing update, I note that WordPress later blocked external domain pointing, pushing me toward self-hosting."
 aliases:
   - /2024/12/30/moving-a-domain-from-wordpress/
 tags:

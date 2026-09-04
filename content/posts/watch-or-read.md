@@ -2,6 +2,7 @@
 title: "Watch or Read"
 date: '2022-07-10'
 slug: watch-or-read
+summary: "A short reflection on my time working through the 100 Days of SwiftUI course, where Paul Hudson pairs each topic with both a video and a text explanation. I usually read the text to skim for the Swift-specific parts of familiar material, use the videos when multitasking with a meal, and find that the two versions aren't identical, which helps when a concept is unclear."
 aliases:
   - /2022/07/10/watch-or-read/
 tags:

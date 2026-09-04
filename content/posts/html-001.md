@@ -2,6 +2,7 @@
 title: "HTML 001"
 date: '2022-12-16'
 slug: html-001
+summary: "I give a beginner-level introduction to HTML covering what markup tags are, paired versus unpaired tags, and why HTML is semantic rather than about display. I explain the basic document structure with html, head, and body tags, how tags nest, and how to add an image with the img tag, building up a simple example page along the way."
 aliases:
   - /2022/12/16/html-001/
 tags:

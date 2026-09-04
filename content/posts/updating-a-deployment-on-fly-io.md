@@ -2,6 +2,7 @@
 title: "Updating a deployment on fly.io"
 date: '2024-12-16'
 slug: updating-a-deployment-on-fly-io
+summary: "Hosting UptimeKuma on Fly.io's free tier, I find that updating an out-of-date container image requires nothing more than running fly deploy with an existing fly.toml file. After the update the app starts crashing from memory exhaustion, and switching to a lighter Alpine-based image appears to keep usage within the free instance's 256MB limit."
 aliases:
   - /2024/12/16/updating-a-deployment-on-fly-io/
 tags:

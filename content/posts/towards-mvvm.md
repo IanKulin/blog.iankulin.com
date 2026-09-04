@@ -2,6 +2,7 @@
 title: "Towards MVVM"
 date: '2022-12-03'
 slug: towards-mvvm
+summary: "Prompted by a Fireside Swift episode on SOLID principles and the arrival of Core Data in the 100 Days of SwiftUI course, I reflect on when architecture should enter an iOS developer's toolkit. Drawing on a long-standing habit of wrapping external dependencies for easy replacement, I conclude that scalable code suits real apps but not learning—which is likely why Paul Hudson defers architecture until later in the course."
 aliases:
   - /2022/12/03/towards-mvvm/
 tags:

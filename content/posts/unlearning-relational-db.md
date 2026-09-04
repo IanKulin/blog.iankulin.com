@@ -2,6 +2,7 @@
 title: "Unlearning Relational DB"
 date: '2023-07-09'
 slug: unlearning-relational-db
+summary: "Coming from a relational database background, I look at schema design for document-oriented NoSQL databases such as MongoDB, alongside how implementations handle updates to variable-size documents on disk, covering techniques like memory caching, journaling, delta writes, and periodic compaction. My practical conclusion is to design schemas around how the app accesses data and leave the low-level storage details to the database."
 aliases:
   - /2023/07/09/unlearning-relational-db/
 tags:

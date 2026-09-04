@@ -2,6 +2,7 @@
 title: "First Ansible Playbook"
 date: '2023-07-26'
 slug: first-ansible-playbook
+summary: "This is a follow-up to my getting-started-with-Ansible post, in which I walk through writing my first playbook that installs NGINX and keeps the service running on a pair of web servers. I cover the basics of YAML, the shift to declarative thinking, the apt and service modules, and how to read the color-coded output from a playbook run. I close by setting up a problem for a future post: automating updates across servers that each have unique credentials."
 aliases:
   - /2023/07/26/first-ansible-playbook/
 tags:

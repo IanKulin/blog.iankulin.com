@@ -2,6 +2,7 @@
 title: "Express router for better code organisation"
 date: '2025-04-28'
 slug: express-router-for-better-code-organisation
+summary: "In this beginner-level walkthrough, I tidy up a Node/Express app whose server.js has grown unwieldy by moving routes into separate files with Express Router. I show how to mount routers as middleware with app.use, note that a routes folder is a common convention, and highlight the gotcha that the mounted path prefix gets stripped from the request URL. A consistent naming convention for route groups makes the split easier, and sample code is available on GitHub."
 aliases:
   - /2025/04/28/express-router-for-better-code-organisation/
 tags:

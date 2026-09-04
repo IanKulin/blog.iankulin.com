@@ -2,6 +2,7 @@
 title: "Local host names with Pi-hole"
 date: '2023-02-13'
 slug: local-host-names-with-pi-hole
+summary: "A short guide to using Pi-hole's Local DNS Records feature to assign friendly hostnames to devices on a home network, so tools like SSH can be used with names instead of IP addresses. I also briefly mention using Pi-hole's domain blocking to discourage late-night Reddit browsing."
 aliases:
   - /2023/02/13/local-host-names-with-pi-hole/
 tags:

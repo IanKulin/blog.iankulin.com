@@ -2,6 +2,7 @@
 title: "Folder ownership problems with Jellyfin"
 date: '2023-02-22'
 slug: folder-ownership-problems-with-jellyfin
+summary: "After mounting a network share on a Linux Jellyfin server, I find Jellyfin can't add the media path as a library even though root can access it. Using ls, ps, and getent, I trace the problem to a group mismatch: the share was mounted with gid=1000, but the Jellyfin process runs as user jellyfin in group 115. Remounting the share with the correct gid resolves the issue."
 aliases:
   - /2023/02/22/folder-ownership-problems-with-jellyfin/
 tags:

@@ -2,6 +2,7 @@
 title: "Proxmox Backup Files"
 date: '2023-03-31'
 slug: proxmox-backup-files
+summary: "Before adding RAM to my Proxmox production server, I shut down my VMs, take snapshots, and copy the backups off local storage. I locate the backup directory via Proxmox's storage config, pull the files to a laptop with scp, and note a zsh gotcha where wildcards in the command need escaping."
 aliases:
   - /2023/03/31/proxmox-backup-files/
 tags:

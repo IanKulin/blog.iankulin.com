@@ -2,6 +2,7 @@
 title: "NGINX proxy manager - setting headers to use basic auth in your apps"
 date: '2024-12-09'
 slug: nginx-proxy-manager-setting-headers-to-use-basic-auth-in-your-apps
+summary: "Using NGINX basic auth as a lightweight alternative to building authentication for my side projects. For a standard NGINX setup, the authenticated username is passed to a Node app in an X-Username header and checked against a user list for access rights. I then cover replicating this in NGINX Proxy Manager, using access lists and the locations tab to set the header."
 aliases:
   - /2024/12/09/nginx-proxy-manager-setting-headers-to-use-basic-auth-in-your-apps/
 tags:

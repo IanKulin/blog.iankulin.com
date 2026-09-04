@@ -2,6 +2,7 @@
 title: "Displaying markdown as HTML"
 date: '2023-11-08'
 slug: displaying-markdown-as-html
+summary: "This is a write-up of a small weekend project of mine: a Node.js/Express server that serves markdown files from a directory as HTML, using middleware to intercept requests for .md files and convert them with the Showdown library. I added a simple string-replacement template so the output is well-formed HTML with a proper page title. The code is on GitHub, with hardening and a possible Docker containerization left as future work."
 aliases:
   - /2023/11/08/displaying-markdown-as-html/
 tags:

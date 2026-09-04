@@ -2,6 +2,7 @@
 title: "Simple SQLite in Express"
 date: '2023-12-28'
 slug: simple-sqlite-in-express
+summary: "In this walkthrough, I build a minimal Node/Express REST API backed by SQLite as a learning exercise for migrating an app away from Mongoose. I cover query strings versus request bodies, CRUD endpoints for a users table, and rewriting string-interpolated SQL as parameterized queries to prevent injection. I close with a table of REST conventions for HTTP methods and a link to the finished project on GitHub."
 aliases:
   - /2023/12/28/simple-sqlite-in-express/
 tags:

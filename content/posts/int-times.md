@@ -2,6 +2,7 @@
 title: "Int.times()"
 date: '2022-08-27'
 slug: int-times
+summary: "I propose adding a times method to Int via an extension, allowing a closure to run a set number of times, in a follow-up to a post about discarding loop variables with an underscore. I find the same idea was already shared as a Stack Overflow answer seven years earlier. I also consider a hypothetical for each in loop syntax, along with why it would likely break existing code."
 aliases:
   - /2022/08/27/int-times/
 tags:

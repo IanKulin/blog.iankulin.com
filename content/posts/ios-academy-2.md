@@ -2,6 +2,7 @@
 title: "iOS Academy"
 date: '2022-09-26'
 slug: ios-academy-2
+summary: "I briefly recommend Afraz Siddiqui's iOS Academy YouTube channel, which features iOS development tutorials, including shorter focused videos such as one covering the new SwiftUI chart views."
 aliases:
   - /2022/09/26/ios-academy-2/
 tags:

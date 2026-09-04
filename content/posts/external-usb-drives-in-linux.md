@@ -2,6 +2,7 @@
 title: "External USB Drives in Linux"
 date: '2023-02-18'
 slug: external-usb-drives-in-linux
+summary: "A walkthrough of how I manually mount and unmount USB drives on Linux systems that don't auto-mount them, such as servers. Using a Proxmox host as an example, I show how to identify a plugged-in drive with lsblk, mount a partition to a directory under /media, and safely unmount it with umount before removal."
 aliases:
   - /2023/02/18/external-usb-drives-in-linux/
 tags:

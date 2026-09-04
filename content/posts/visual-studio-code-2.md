@@ -2,6 +2,7 @@
 title: "Visual Studio Code"
 date: '2022-12-12'
 slug: visual-studio-code-2
+summary: "I am branching into back-end web development because my planned apps will need a REST API and database, and making the ticket app a web app could simplify Android support. I bought a Udemy web developer course, chose VS Code with plugins over the course's recommended Sublime Text, and compare the course's approach to 100 Days of SwiftUI. I'm undecided whether to document this side project on this blog or a separate one, given my commitment to weekly iOS-related posts."
 aliases:
   - /2022/12/12/visual-studio-code-2/
 tags:

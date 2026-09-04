@@ -2,6 +2,7 @@
 title: "Learning Retention"
 date: '2022-07-14'
 slug: learning-retention
+summary: "I rewrote a Swift checkpoint exercise after the original unsaved code was lost, with the task being to count the unique elements in an array of strings. The solution casts the array to a Set, and I reflect on having encountered sets twice recently, in the 100 days course and a podcast episode, calling that kind of spaced exposure high-quality learning."
 aliases:
   - /2022/07/14/learning-retention/
 tags:
