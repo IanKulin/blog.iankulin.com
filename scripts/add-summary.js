@@ -4,8 +4,7 @@
  * and inserts (or replaces) it in the post's frontmatter.
  *
  * Reads:
- *   scripts/.env       - OPENROUTER_API_KEY and MODEL_NAME
- *   scripts/prompt.md  - prompt template, with {{content}} replaced by the post body
+ *   scripts/.env  - OPENROUTER_API_KEY and MODEL_NAME
  *
  * Posts that already have a summary are skipped unless --force is passed.
  * Pass --all instead of a filename to process every post in content/posts.
@@ -23,7 +22,35 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const POSTS_DIR = path.join(ROOT, 'content', 'posts');
 const ENV_PATH = path.join(__dirname, '.env');
-const PROMPT_PATH = path.join(__dirname, 'prompt.md');
+
+const SUMMARY_PROMPT = `You are writing a one-to-three sentence summary of a blog post, to be shown in the post-listing page of a personal tech blog covering iOS dev, web dev, and homelab topics. The purpose is to enable a reader to determine if this is a post they are interested in.
+
+Rules:
+- 1-3 sentences, no more than about 100 words total. Short posts only need a short summary.
+- Plain prose only — no markdown formatting, no surrounding quotation marks, no leading label like "Summary:".
+- Matter-of-fact tone. Describe what the post covers, don't write it as if it's part of the post itself, and don't try and 'sell' the post.
+- Do not start with "This post" or "In this post".
+- It's a summary, not a blow-by-blow listing. There shouldn't be multiple occurrences of "then..."
+- Base it only on the content below — do not invent details.
+
+Post content:
+
+{{content}}
+`;
+
+const FIRST_PERSON_PROMPT = `You are rewriting the summary of a blog post so that it is written from the author's own point of view, in first person, instead of third person.
+
+Rules:
+- Change only the point of view — e.g. "the author", "he", "she", "they" becomes "I", "my", "me".
+- Do not change any facts, details, or meaning. Do not add or remove information.
+- Adjust grammar as needed so the result reads naturally in first person (e.g. "The author compares X and Y" becomes "I compare X and Y").
+- Plain prose only — no markdown formatting, no surrounding quotation marks, no leading label like "Summary:".
+- Output only the rewritten summary text.
+
+Summary to rewrite:
+
+{{summary}}
+`;
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const FORCE = process.argv.includes('--force');
@@ -47,11 +74,6 @@ try {
 const { OPENROUTER_API_KEY, MODEL_NAME } = process.env;
 if (!OPENROUTER_API_KEY || !MODEL_NAME) {
   console.error('scripts/.env must set both OPENROUTER_API_KEY and MODEL_NAME');
-  process.exit(1);
-}
-
-if (!fs.existsSync(PROMPT_PATH)) {
-  console.error(`Prompt template not found: ${path.relative(ROOT, PROMPT_PATH)}`);
   process.exit(1);
 }
 
@@ -95,10 +117,7 @@ function insertSummary(fmBlock, summaryText) {
   return blocks.map(b => b.lines.join('\n')).join('\n');
 }
 
-async function generateSummary(postBody) {
-  const template = fs.readFileSync(PROMPT_PATH, 'utf-8');
-  const prompt = template.replace('{{content}}', postBody);
-
+async function callLLM(prompt) {
   const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
     headers: {
@@ -120,9 +139,19 @@ async function generateSummary(postBody) {
   const data = await res.json();
   const text = data.choices?.[0]?.message?.content?.trim();
   if (!text) {
-    throw new Error(`No summary in OpenRouter response: ${JSON.stringify(data)}`);
+    throw new Error(`No content in OpenRouter response: ${JSON.stringify(data)}`);
   }
   return text;
+}
+
+async function generateSummary(postBody) {
+  const prompt = SUMMARY_PROMPT.replace('{{content}}', postBody);
+  return callLLM(prompt);
+}
+
+async function toFirstPerson(summary) {
+  const prompt = FIRST_PERSON_PROMPT.replace('{{summary}}', summary);
+  return callLLM(prompt);
 }
 
 async function processPost(postFilename) {
@@ -137,7 +166,11 @@ async function processPost(postFilename) {
   }
 
   console.log(`Generating summary for ${postFilename} (model: ${MODEL_NAME})...`);
-  const summary = await generateSummary(body);
+  const draftSummary = await generateSummary(body);
+  console.log(`Draft summary: ${draftSummary}`);
+
+  console.log(`Rewriting summary in first person...`);
+  const summary = await toFirstPerson(draftSummary);
   console.log(`Summary: ${summary}`);
 
   const newFmBlock = insertSummary(fmBlock, summary);
