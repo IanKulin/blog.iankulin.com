@@ -8,13 +8,13 @@
  *   scripts/prompt.md  - prompt template, with {{content}} replaced by the post body
  *
  * Posts that already have a summary are skipped unless --force is passed.
- * Pass "*" instead of a filename to process every post in content/posts.
+ * Pass --all instead of a filename to process every post in content/posts.
  *
  * Usage:
- *   node scripts/add-summary.js <post-filename|*> [--dry-run] [--force]
+ *   node scripts/add-summary.js <post-filename> [--dry-run] [--force]
+ *   node scripts/add-summary.js --all [--dry-run] [--force]
  *   node scripts/add-summary.js npm-publishing-with-github.md
  *   node scripts/add-summary.js npm-publishing-with-github   (.md is optional)
- *   node scripts/add-summary.js '*'                          (all posts)
  */
 
 const fs = require('fs');
@@ -27,10 +27,12 @@ const PROMPT_PATH = path.join(__dirname, 'prompt.md');
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const FORCE = process.argv.includes('--force');
+const ALL = process.argv.includes('--all');
 const fileArg = process.argv.slice(2).find(a => !a.startsWith('--'));
 
-if (!fileArg) {
-  console.error('Usage: node scripts/add-summary.js <post-filename|*> [--dry-run] [--force]');
+if (!ALL && !fileArg) {
+  console.error('Usage: node scripts/add-summary.js <post-filename> [--dry-run] [--force]');
+  console.error('       node scripts/add-summary.js --all [--dry-run] [--force]');
   process.exit(1);
 }
 
@@ -150,7 +152,7 @@ async function processPost(postFilename) {
 }
 
 async function main() {
-  if (fileArg === '*') {
+  if (ALL) {
     const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md')).sort();
     console.log(`Processing ${files.length} posts (model: ${MODEL_NAME})...\n`);
 
