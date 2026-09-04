@@ -7,8 +7,10 @@
  *   scripts/.env       - OPENROUTER_API_KEY and MODEL_NAME
  *   scripts/prompt.md  - prompt template, with {{content}} replaced by the post body
  *
+ * Posts that already have a summary are skipped unless --force is passed.
+ *
  * Usage:
- *   node scripts/add-summary.js <post-filename> [--dry-run]
+ *   node scripts/add-summary.js <post-filename> [--dry-run] [--force]
  *   node scripts/add-summary.js npm-publishing-with-github.md
  *   node scripts/add-summary.js npm-publishing-with-github   (.md is optional)
  */
@@ -22,10 +24,11 @@ const ENV_PATH = path.join(__dirname, '.env');
 const PROMPT_PATH = path.join(__dirname, 'prompt.md');
 
 const DRY_RUN = process.argv.includes('--dry-run');
+const FORCE = process.argv.includes('--force');
 const fileArg = process.argv.slice(2).find(a => !a.startsWith('--'));
 
 if (!fileArg) {
-  console.error('Usage: node scripts/add-summary.js <post-filename> [--dry-run]');
+  console.error('Usage: node scripts/add-summary.js <post-filename> [--dry-run] [--force]');
   process.exit(1);
 }
 
@@ -129,6 +132,12 @@ async function generateSummary(postBody) {
 async function main() {
   const raw = fs.readFileSync(postPath, 'utf-8');
   const { fmBlock, body } = splitFrontmatter(raw);
+
+  const hasSummary = parseBlocks(fmBlock).some(b => b.key === 'summary');
+  if (hasSummary && !FORCE) {
+    console.log(`Skipping ${postFilename}: already has a summary (use --force to regenerate)`);
+    return;
+  }
 
   console.log(`Generating summary for ${postFilename} (model: ${MODEL_NAME})...`);
   const summary = await generateSummary(body);
