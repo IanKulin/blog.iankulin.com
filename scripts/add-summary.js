@@ -8,11 +8,13 @@
  *   scripts/prompt.md  - prompt template, with {{content}} replaced by the post body
  *
  * Posts that already have a summary are skipped unless --force is passed.
+ * Pass "*" instead of a filename to process every post in content/posts.
  *
  * Usage:
- *   node scripts/add-summary.js <post-filename> [--dry-run] [--force]
+ *   node scripts/add-summary.js <post-filename|*> [--dry-run] [--force]
  *   node scripts/add-summary.js npm-publishing-with-github.md
  *   node scripts/add-summary.js npm-publishing-with-github   (.md is optional)
+ *   node scripts/add-summary.js '*'                          (all posts)
  */
 
 const fs = require('fs');
@@ -28,7 +30,7 @@ const FORCE = process.argv.includes('--force');
 const fileArg = process.argv.slice(2).find(a => !a.startsWith('--'));
 
 if (!fileArg) {
-  console.error('Usage: node scripts/add-summary.js <post-filename> [--dry-run] [--force]');
+  console.error('Usage: node scripts/add-summary.js <post-filename|*> [--dry-run] [--force]');
   process.exit(1);
 }
 
@@ -43,14 +45,6 @@ try {
 const { OPENROUTER_API_KEY, MODEL_NAME } = process.env;
 if (!OPENROUTER_API_KEY || !MODEL_NAME) {
   console.error('scripts/.env must set both OPENROUTER_API_KEY and MODEL_NAME');
-  process.exit(1);
-}
-
-const postFilename = fileArg.endsWith('.md') ? fileArg : `${fileArg}.md`;
-const postPath = path.join(POSTS_DIR, postFilename);
-
-if (!fs.existsSync(postPath)) {
-  console.error(`Post not found: ${path.relative(ROOT, postPath)}`);
   process.exit(1);
 }
 
@@ -129,7 +123,8 @@ async function generateSummary(postBody) {
   return text;
 }
 
-async function main() {
+async function processPost(postFilename) {
+  const postPath = path.join(POSTS_DIR, postFilename);
   const raw = fs.readFileSync(postPath, 'utf-8');
   const { fmBlock, body } = splitFrontmatter(raw);
 
@@ -141,7 +136,7 @@ async function main() {
 
   console.log(`Generating summary for ${postFilename} (model: ${MODEL_NAME})...`);
   const summary = await generateSummary(body);
-  console.log(`\nSummary: ${summary}\n`);
+  console.log(`Summary: ${summary}`);
 
   const newFmBlock = insertSummary(fmBlock, summary);
   const newRaw = `---\n${newFmBlock}\n---\n${body}`;
@@ -152,6 +147,36 @@ async function main() {
     fs.writeFileSync(postPath, newRaw);
     console.log(`Updated ${path.relative(ROOT, postPath)}`);
   }
+}
+
+async function main() {
+  if (fileArg === '*') {
+    const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md')).sort();
+    console.log(`Processing ${files.length} posts (model: ${MODEL_NAME})...\n`);
+
+    let failures = 0;
+    for (const file of files) {
+      try {
+        await processPost(file);
+      } catch (err) {
+        failures++;
+        console.error(`Error processing ${file}: ${err.message}`);
+      }
+    }
+
+    if (failures > 0) {
+      console.error(`\n${failures} of ${files.length} post(s) failed`);
+      process.exit(1);
+    }
+    return;
+  }
+
+  const postFilename = fileArg.endsWith('.md') ? fileArg : `${fileArg}.md`;
+  if (!fs.existsSync(path.join(POSTS_DIR, postFilename))) {
+    console.error(`Post not found: content/posts/${postFilename}`);
+    process.exit(1);
+  }
+  await processPost(postFilename);
 }
 
 main().catch(err => {
