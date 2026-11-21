@@ -27,6 +27,10 @@ buildFuture     = false
   target = "assets/images"
 
 [[module.mounts]]
+  source = "static/og"
+  target = "assets/og"
+
+[[module.mounts]]
   source = "static"
   target = "static"
   excludeFiles = ["images/**"]

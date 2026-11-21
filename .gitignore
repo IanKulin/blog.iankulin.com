@@ -10,3 +10,5 @@ scripts/.env
 import/
 node_modules/
 
+!scripts/package.json
+!scripts/package-lock.json

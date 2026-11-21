@@ -1,12 +1,18 @@
 #!/usr/bin/env node
 /**
- * Generates a "summary" frontmatter field for a post using an LLM via OpenRouter,
- * and inserts (or replaces) it in the post's frontmatter.
+ * Generates "summary" and "description" frontmatter fields for a post using an LLM via
+ * OpenRouter, and inserts (or replaces) them in the post's frontmatter.
+ *
+ * The summary is a first-person 1-3 sentence blurb for the post listing. The description is
+ * a single sentence of about 150 characters condensed from the summary, used for the
+ * meta description and og:description tags.
  *
  * Reads:
  *   scripts/.env  - OPENROUTER_API_KEY and MODEL_NAME
  *
- * Posts that already have a summary are skipped unless --force is passed.
+ * Posts that already have both fields are skipped unless --force is passed (which
+ * regenerates both). A post with a summary but no description keeps its existing summary
+ * (including any hand edits) and only gets a description generated from it.
  * Pass --all instead of a filename to process every post in content/posts.
  *
  * Usage:
@@ -51,6 +57,23 @@ Summary to rewrite:
 
 {{summary}}
 `;
+
+const DESCRIPTION_PROMPT = `You are condensing the summary of a blog post into a meta description, used for search results and social media link previews.
+
+Rules:
+- Exactly one sentence, at most 150 characters. Shorter is fine.
+- Keep the first-person point of view of the summary ("I ...").
+- Keep the most useful specifics (technologies, the problem, the outcome); drop secondary details.
+- Do not change facts or add information that is not in the summary.
+- Plain prose only — no markdown formatting, no surrounding quotation marks, no leading label like "Description:".
+- Output only the description text.
+
+Summary to condense:
+
+{{summary}}
+`;
+
+const MAX_DESCRIPTION_LENGTH = 160;
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const FORCE = process.argv.includes('--force');
@@ -105,15 +128,26 @@ function yamlQuote(text) {
   return `"${escaped}"`;
 }
 
-function insertSummary(fmBlock, summaryText) {
-  const blocks = parseBlocks(fmBlock).filter(b => b.key !== 'summary');
-  const summaryBlock = { key: 'summary', lines: [`summary: ${yamlQuote(summaryText)}`] };
+// Read a top-level frontmatter value written by yamlQuote (a double-quoted scalar on one line).
+function getQuotedValue(fmBlock, key) {
+  const block = parseBlocks(fmBlock).find(b => b.key === key);
+  if (!block) return null;
+  const m = block.lines[0].match(/^[A-Za-z0-9_-]+:\s*"(.*)"\s*$/);
+  if (!m) return null;
+  return m[1].replace(/\\(["\\])/g, '$1');
+}
 
-  let insertAt = blocks.findIndex(b => b.key === 'description');
-  if (insertAt === -1) insertAt = blocks.findIndex(b => b.key === 'slug');
+function insertSummary(fmBlock, summaryText, descriptionText) {
+  const blocks = parseBlocks(fmBlock).filter(b => b.key !== 'summary' && b.key !== 'description');
+  const newBlocks = [
+    { key: 'summary', lines: [`summary: ${yamlQuote(summaryText)}`] },
+    { key: 'description', lines: [`description: ${yamlQuote(descriptionText)}`] },
+  ];
+
+  let insertAt = blocks.findIndex(b => b.key === 'slug');
   insertAt = insertAt === -1 ? blocks.length : insertAt + 1;
 
-  blocks.splice(insertAt, 0, summaryBlock);
+  blocks.splice(insertAt, 0, ...newBlocks);
   return blocks.map(b => b.lines.join('\n')).join('\n');
 }
 
@@ -154,26 +188,48 @@ async function toFirstPerson(summary) {
   return callLLM(prompt);
 }
 
+async function toDescription(summary) {
+  const prompt = DESCRIPTION_PROMPT.replace('{{summary}}', summary);
+  const description = await callLLM(prompt);
+  if (description.length > MAX_DESCRIPTION_LENGTH) {
+    console.warn(`Warning: description is ${description.length} chars (target ~150)`);
+  }
+  return description;
+}
+
 async function processPost(postFilename) {
   const postPath = path.join(POSTS_DIR, postFilename);
   const raw = fs.readFileSync(postPath, 'utf-8');
   const { fmBlock, body } = splitFrontmatter(raw);
 
-  const hasSummary = parseBlocks(fmBlock).some(b => b.key === 'summary');
-  if (hasSummary && !FORCE) {
-    console.log(`Skipping ${postFilename}: already has a summary (use --force to regenerate)`);
+  const keys = parseBlocks(fmBlock).map(b => b.key);
+  const hasSummary = keys.includes('summary');
+  const hasDescription = keys.includes('description');
+  if (hasSummary && hasDescription && !FORCE) {
+    console.log(`Skipping ${postFilename}: already has a summary and description (use --force to regenerate)`);
     return;
   }
 
-  console.log(`Generating summary for ${postFilename} (model: ${MODEL_NAME})...`);
-  const draftSummary = await generateSummary(body);
-  console.log(`Draft summary: ${draftSummary}`);
+  // Reuse the existing summary (it may have been hand-edited) unless --force or it can't be read.
+  let summary = !FORCE && hasSummary ? getQuotedValue(fmBlock, 'summary') : null;
 
-  console.log(`Rewriting summary in first person...`);
-  const summary = await toFirstPerson(draftSummary);
+  if (summary) {
+    console.log(`Using existing summary for ${postFilename}`);
+  } else {
+    console.log(`Generating summary for ${postFilename} (model: ${MODEL_NAME})...`);
+    const draftSummary = await generateSummary(body);
+    console.log(`Draft summary: ${draftSummary}`);
+
+    console.log(`Rewriting summary in first person...`);
+    summary = await toFirstPerson(draftSummary);
+  }
   console.log(`Summary: ${summary}`);
 
-  const newFmBlock = insertSummary(fmBlock, summary);
+  console.log(`Condensing summary into a description...`);
+  const description = await toDescription(summary);
+  console.log(`Description (${description.length} chars): ${description}`);
+
+  const newFmBlock = insertSummary(fmBlock, summary, description);
   const newRaw = `---\n${newFmBlock}\n---\n${body}`;
 
   if (DRY_RUN) {
@@ -186,7 +242,7 @@ async function processPost(postFilename) {
 
 async function main() {
   if (ALL) {
-    const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md')).sort();
+    const files = fs.readdirSync(POSTS_DIR).filter(f => f.endsWith('.md') && !f.startsWith('_')).sort();
     console.log(`Processing ${files.length} posts (model: ${MODEL_NAME})...\n`);
 
     let failures = 0;
@@ -207,6 +263,10 @@ async function main() {
   }
 
   const postFilename = fileArg.endsWith('.md') ? fileArg : `${fileArg}.md`;
+  if (postFilename.startsWith('_')) {
+    console.error(`Skipping ${postFilename}: files starting with an underscore are not posts`);
+    process.exit(1);
+  }
   if (!fs.existsSync(path.join(POSTS_DIR, postFilename))) {
     console.error(`Post not found: content/posts/${postFilename}`);
     process.exit(1);
