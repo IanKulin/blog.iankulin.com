@@ -1,7 +1,10 @@
 {{- $destination := .Destination -}}
 {{- $ext := path.Ext $destination | lower -}}
 {{- if in (slice ".gif" ".svg") $ext -}}
-<img src="{{ $destination | safeURL }}" alt="{{ .Text }}" loading="lazy">
+  {{- $raw := resources.Get (strings.TrimPrefix "/" $destination) -}}
+  {{- $src := $destination -}}
+  {{- with $raw }}{{ $src = .RelPermalink }}{{ end -}}
+<img src="{{ $src | safeURL }}" alt="{{ .Text }}" loading="lazy">
 {{- else -}}
   {{- $image := resources.Get (strings.TrimPrefix "/" $destination) -}}
   {{- if $image -}}
