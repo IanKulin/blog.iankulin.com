@@ -3,6 +3,8 @@ title: "Cloning a Private Repo"
 date: '2026-05-19'
 slug: github-deploy
 summary: "An overview of cloning repositories from git forges, including shallow clones that skip history, and how I keep all my VPS configs and docker compose files in a single private repo for easy migration. Cloning that private repo onto a fresh machine fails with a publickey permission error, since SSH keys aren't set up yet."
+description: "I keep my VPS configs and docker compose files in a private repo; cloning it on a fresh machine fails with a publickey error over missing SSH keys."
+image: /og/github-deploy.png
 tags:
   - git
   - github

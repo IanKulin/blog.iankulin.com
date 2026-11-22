@@ -3,6 +3,8 @@ title: "Sometimes the Gold is in the Comments"
 date: '2022-08-23'
 slug: sometimes-the-gold-is-in-the-comments
 summary: "A SwiftUI tutorial video on @ObservedObject versus @StateObject turns out to be outdated, referencing older APIs like @ObjectBinding and Combine. The experience prompts me to reflect on how technical content should signal its age, such as through version tags, so future readers can judge whether it's still relevant."
+description: "I watched an outdated SwiftUI tutorial on @ObservedObject vs @StateObject, which got me thinking about how technical content should signal its age."
+image: /og/sometimes-the-gold-is-in-the-comments.png
 aliases:
   - /2022/08/23/sometimes-the-gold-is-in-the-comments/
 tags:

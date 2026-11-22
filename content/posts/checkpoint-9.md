@@ -3,6 +3,8 @@ title: "Checkpoint 9"
 date: '2022-08-20'
 slug: checkpoint-9
 summary: "My solution to Hacking with Swift's Checkpoint 9: writing a single-line Swift function that returns a random element from an optional integer array, or a random number from 1 to 100 when the array is nil or empty. I show the challenge, an embedded video, and the finished one-liner."
+description: "I solve Hacking with Swift's Checkpoint 9: a one-line Swift function returning a random element from an optional int array, or 1-100 if nil or empty."
+image: /og/checkpoint-9.png
 aliases:
   - /2022/08/20/checkpoint-9/
 tags:

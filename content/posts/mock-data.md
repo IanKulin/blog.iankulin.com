@@ -3,6 +3,8 @@ title: "Mock Data"
 date: '2022-11-28'
 slug: mock-data
 summary: "Needing mock student data for an iOS app without using real records, I try Mockaroo, a web-based test data generator with configurable field types and download options including JSON and a REST API. My writeup ends with a privacy caution that schemas saved on the service are publicly visible."
+description: "I try Mockaroo to generate mock student data for an iOS app; it offers configurable fields, JSON and a REST API, though saved schemas are public."
+image: /og/mock-data.png
 aliases:
   - /2022/11/28/mock-data/
 tags:

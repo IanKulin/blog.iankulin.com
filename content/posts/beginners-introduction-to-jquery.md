@@ -3,6 +3,8 @@ title: "A Beginner's Introduction to jQuery"
 date: '2026-09-29'
 slug: beginners-introduction-to-jquery
 summary: "An introduction to the Document Object Model and basic page manipulation with JavaScript, worked through with a click-counter button example. We rewrite the same example using jQuery, covering its selector syntax, event handling, chaining, and how it differs from plain DOM methods."
+description: "I introduce the DOM and JavaScript page manipulation with a click-counter example, rewriting it in jQuery to cover selectors, events, and chaining."
+image: /og/beginners-introduction-to-jquery.png
 tags:
   - javascript
   - jquery

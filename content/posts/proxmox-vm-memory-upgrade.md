@@ -3,6 +3,8 @@ title: "Proxmox VM Memory Upgrade"
 date: '2023-03-19'
 slug: proxmox-vm-memory-upgrade
 summary: "After finding that memory, rather than CPU, is the bottleneck on my Proxmox server, I order physical RAM for the host. I also walk through increasing the RAM allocated to a Jellyfin VM from 6GB to 8GB via the Proxmox Hardware settings, noting the change takes effect only after a reboot."
+description: "I find memory, not CPU, is the bottleneck on my Proxmox server, so I order RAM and raise my Jellyfin VM from 6GB to 8GB, effective after a reboot."
+image: /og/proxmox-vm-memory-upgrade.png
 aliases:
   - /2023/03/19/proxmox-vm-memory-upgrade/
 tags:

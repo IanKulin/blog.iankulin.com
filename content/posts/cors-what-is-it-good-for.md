@@ -3,6 +3,8 @@ title: "CORS, What is it good for?"
 date: '2026-06-01'
 slug: cors-what-is-it-good-for
 summary: "I explain the browser's same-origin policy, covering what counts as an origin, why the restriction exists, and how it blocks JavaScript from reading cross-origin responses. I then introduce CORS as the mechanism servers use to permit specific origins via Access-Control-Allow-Origin headers."
+description: "I explain the same-origin policy, why JavaScript can't read cross-origin responses, and how CORS lets servers allow specific origins."
+image: /og/cors-what-is-it-good-for.png
 tags:
   - cors
   - webdev

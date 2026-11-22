@@ -3,6 +3,8 @@ title: "Bookworm Challenges"
 date: '2022-11-06'
 slug: bookworm-challenges
 summary: "My solutions to the Project 11 challenges from the 100 Days of SwiftUI course, applied to Bookworm, a CoreData-based book tracking app. I add validation so books can't be saved without a title or author, highlight one-star ratings in the book list, and add a date attribute to the Book entity that's formatted in the detail view."
+description: "I solve Project 11 of 100 Days of SwiftUI in Bookworm, a CoreData book tracker, adding validation, one-star highlights, and a formatted date field."
+image: /og/bookworm-challenges.png
 aliases:
   - /2022/11/06/bookworm-challenges/
 tags:

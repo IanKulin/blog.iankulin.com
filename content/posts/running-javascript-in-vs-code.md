@@ -3,6 +3,8 @@ title: "Running Javascript in VS Code"
 date: '2022-12-27'
 slug: running-javascript-in-vs-code
 summary: "I share a quick tip on running JavaScript in VS Code: install Node.js, and the editor will offer it as the runtime the first time you execute a JS file. I also note that the Live Server dev server is accessible to other devices on my network via my machine's IP address, which is handy for previewing layouts on phones."
+description: "I share a quick VS Code tip: install Node.js to run JavaScript, and access Live Server from phones on my network via my machine's IP address."
+image: /og/running-javascript-in-vs-code.png
 aliases:
   - /2022/12/27/running-javascript-in-vs-code/
 tags:

@@ -3,6 +3,8 @@ title: "Codewars / reduce"
 date: '2022-08-24'
 slug: codewars-reduce
 summary: "Trying out Codewars, I solve a beginner Swift kata about finding the integer that appears an odd number of times in an array, using a Set to track entries. The top community solution turns out to be a one-liner using reduce and XOR, prompting me to explain how reduce works, why XORing every element leaves the odd-occurring value, and to argue that the longer version is still easier to read."
+description: "I solve a Swift Codewars kata on the odd-occurring integer in an array, then unpack a reduce/XOR one-liner and argue my Set version reads better."
+image: /og/codewars-reduce.png
 aliases:
   - /2022/08/24/codewars-reduce/
 tags:

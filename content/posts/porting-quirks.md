@@ -3,6 +3,8 @@ title: "Porting Quirks"
 date: '2026-11-21'
 slug: porting-quirks
 summary: "Porting the 1979 arcade game Galaxian to Mac means emulating the original hardware (sprite handling, a dedicated scrolling starfield) as well as the Z80 code. I examine quirks rooted in the machine's constraints, such as bullets drawn on alternating frames, a one-frame sprite lag, and invisible re-entering ships. For each, I weigh keeping the hardware artifact for fidelity against simplifying the code."
+description: "I port the 1979 arcade game Galaxian to Mac, emulating its hardware and Z80 code, and weigh quirks like one-frame sprite lag against simpler code."
+image: /og/porting-quirks.png
 tags:
   - porting
   - C
@@ -80,7 +82,7 @@ Although you could see the star field scrolling under the high scores, the retur
 
 Once again, maintaining this behaviour takes more code than eliminating it. I decided to eliminate this behaviour and have them slide in from above to match the stars, but when I did, I found another problem - the sprites x values were wrong for the first frame of their entry so they'd come in then flash across. 
 
-I think the wrong x position was just the one they'd flown off the bottom of the screen with.  It maes sense the programmer hadn't burnt up CPU cycles on updating a value that wasn't being drawn anyway, but I had to go ahead and fix that.
+I think the wrong x position was just the one they'd flown off the bottom of the screen with.  It makes sense the programmer hadn't burnt up CPU cycles on updating a value that wasn't being drawn anyway, but I had to go ahead and fix that.
 
 In the gif above, you can see I still have work to do since the returning ships are still not appearing at the first pixel. Fixing this will require inventing their arriving paths in the cycles before what's currently shown - which looks like just straight down.
 

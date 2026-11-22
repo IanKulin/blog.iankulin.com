@@ -3,6 +3,8 @@ title: "You need to enjoy puzzles"
 date: '2022-10-22'
 slug: you-need-to-enjoy-puzzles
 summary: "After converting a SwiftUI subview from a function to a struct, list items in my habit list app stopped updating correctly. Suspecting a value versus reference type issue, I distilled the problem into a minimal ObservableObject example, only to find that both the example and the original app now worked. The post walks through the code and the debugging process but ends without an explanation of what caused or fixed the bug."
+description: "When I converted a SwiftUI subview from a function to a struct, my list items stopped updating, but the bug vanished in a minimal repro, unexplained."
+image: /og/you-need-to-enjoy-puzzles.png
 aliases:
   - /2022/10/22/you-need-to-enjoy-puzzles/
 tags:

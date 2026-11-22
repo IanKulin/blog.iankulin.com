@@ -3,6 +3,8 @@ title: "Moonshot Challenges"
 date: '2022-10-14'
 slug: moonshot-challenges
 summary: "My solutions to the three wrap-up challenges for the Moonshot app from the 100 Days of SwiftUI course, an information app about the Apollo missions. My work covers displaying formatted launch dates, extracting the crew view and a custom divider into separate structs, and adding a toolbar toggle between grid and list mission layouts, with some notes on the tradeoffs of splitting views out."
+description: "I solve the Moonshot wrap-up challenges from 100 Days of SwiftUI: formatted launch dates, extracted views, and a grid/list layout toggle."
+image: /og/moonshot-challenges.png
 aliases:
   - /2022/10/14/moonshot-challenges/
 tags:

@@ -3,6 +3,8 @@ title: "Due Diligence on a Docker Image"
 date: '2024-04-08'
 slug: due-diligence-on-a-docker-image
 summary: "When setting up self-hosted LimeSurvey, I find no official Docker image, so I work through how to decide which third-party container image to trust. I lay out rough criteria, such as known maintainers, popularity, update frequency, and inspectable build files, then compare several LimeSurvey images on Docker Hub and trace their provenance before settling on one."
+description: "I explain how I chose a trustworthy third-party Docker image for self-hosted LimeSurvey, since none is official, by comparing options on Docker Hub."
+image: /og/due-diligence-on-a-docker-image.png
 aliases:
   - /2024/04/08/due-diligence-on-a-docker-image/
 tags:

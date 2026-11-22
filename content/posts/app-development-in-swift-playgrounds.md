@@ -3,6 +3,8 @@ title: "App Development in Swift Playgrounds"
 date: '2022-07-19'
 slug: app-development-in-swift-playgrounds
 summary: "I give an account of a Swift Playgrounds workshop for teachers, run by Matt Richards with support from Apple staff, which taught by having participants modify an existing app rather than starting from the basics. I relate that top-down approach to my own mix of structured courses (100 Days of SwiftUI, cs193p) and first-app building, noting it is engaging but that problems get complex quickly. I also touch on the value of having expert help on hand when self-teaching, and on borrowing ideas from the Playgrounds App Gallery's example apps."
+description: "I recount a Swift Playgrounds teachers' workshop that taught by modifying an app, and reflect on SwiftUI learning, expert help, and the App Gallery."
+image: /og/app-development-in-swift-playgrounds.png
 aliases:
   - /2022/07/19/app-development-in-swift-playgrounds/
 tags:

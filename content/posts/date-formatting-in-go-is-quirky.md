@@ -3,6 +3,8 @@ title: "Date formatting in Go is quirky"
 date: '2023-12-09'
 slug: date-formatting-in-go-is-quirky
 summary: "I ask ChatGPT for a Go date-formatting example and assume its answer of Format(\"02012006\") is a hallucination, until discovering it was actually correct: Go bases its date format strings on the reference time 1/2 3:04:05 2006, with each number mapping to month, day, hour, minute, second, and year."
+description: "I assume ChatGPT's Go Format(\"02012006\") is a hallucination, until finding it's correct: Go builds date formats from reference time 1/2 3:04:05 2006."
+image: /og/date-formatting-in-go-is-quirky.png
 aliases:
   - /2023/12/09/date-formatting-in-go-is-quirky/
 tags:

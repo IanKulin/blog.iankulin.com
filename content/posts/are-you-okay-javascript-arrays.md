@@ -3,6 +3,8 @@ title: "Are you okay JavaScript arrays?"
 date: '2022-12-31'
 slug: are-you-okay-javascript-arrays
 summary: "A short musing from a developer more used to type-safe languages: I find a JavaScript example uncomfortable and speculate that JavaScript objects may turn out to be just arrays. If so, accessing properties from inside functions would require something like self[2] notation."
+description: "Coming from type-safe languages, I find a JavaScript example uncomfortable and suspect its objects are arrays, so property access would need self[2]."
+image: /og/are-you-okay-javascript-arrays.png
 aliases:
   - /2022/12/31/are-you-okay-javascript-arrays/
 tags:

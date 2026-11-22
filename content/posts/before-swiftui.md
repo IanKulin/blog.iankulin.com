@@ -3,6 +3,8 @@ title: "Before SwiftUI"
 date: '2022-09-14'
 slug: before-swiftui
 summary: "Working through Day 26 of 100 Days of Swift, I watch an iOS Academy video on dates, calendars, and date components. My main observation is how long UIKit and storyboard setup takes before any useful code gets written, prompting my appreciation for SwiftUI and Swift Playgrounds as learning tools."
+description: "On Day 26 of 100 Days of Swift I watch an iOS Academy video on dates, and slow UIKit setup makes me appreciate SwiftUI and Swift Playgrounds."
+image: /og/before-swiftui.png
 aliases:
   - /2022/09/14/before-swiftui/
 tags:

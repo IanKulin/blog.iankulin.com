@@ -3,6 +3,8 @@ title: "Design Help"
 date: '2022-10-03'
 slug: design-help
 summary: "Frustrated with the design of my Times Table app, I hired two UX designers through Fiverr to redesign it with kids in mind. I share both drafts and give feedback on each — layout, colors, how to show right and wrong answers — and consider which elements I could realistically implement with my current iOS skills."
+description: "Frustrated with my Times Table app's design, I hired two Fiverr UX designers to redesign it for kids, then weigh their drafts against my iOS skills."
+image: /og/design-help.png
 aliases:
   - /2022/10/03/design-help/
 tags:

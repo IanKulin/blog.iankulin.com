@@ -3,6 +3,8 @@ title: "Where Do Docker Container Logs Go?"
 date: '2023-04-08'
 slug: where-do-docker-container-logs-go
 summary: "How I use docker logs to find the error when a container exits immediately after starting with no visible message. My walkthrough uses a Filebrowser container that crashed on startup due to a newline character in its JSON config, a typo introduced by the blog post I followed instead of the official instructions."
+description: "I use docker logs to trace a Filebrowser container that crashes silently on startup to a newline typo in its JSON config."
+image: /og/where-do-docker-container-logs-go.png
 aliases:
   - /2023/04/08/where-do-docker-container-logs-go/
 tags:

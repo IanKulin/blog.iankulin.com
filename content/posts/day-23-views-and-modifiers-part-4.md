@@ -3,6 +3,8 @@ title: "Day 23 - Views and Modifiers - Part 4"
 date: '2022-09-03'
 slug: day-23-views-and-modifiers-part-4
 summary: "A SwiftUI tip on decomposing views by extracting them into custom View structs that accept values at initialization, illustrated with a reusable padded green text component. I favor this approach because such building blocks are portable and can be used in other views."
+description: "I extract SwiftUI views into custom View structs that accept values at initialization, since portable building blocks can be reused in other views."
+image: /og/day-23-views-and-modifiers-part-4.png
 aliases:
   - /2022/09/03/day-23-views-and-modifiers-part-4/
 tags:

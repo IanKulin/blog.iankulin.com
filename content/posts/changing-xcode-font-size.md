@@ -3,6 +3,8 @@ title: "Changing Xcode Font Size"
 date: '2022-09-20'
 slug: changing-xcode-font-size
 summary: "Here's a short tip on changing the code font size in Xcode: rather than adjusting each content type manually through the themes preferences, I use Ctrl + Plus and Ctrl + Minus to increase and decrease the font size directly."
+description: "I use Ctrl + Plus and Ctrl + Minus to change Xcode's code font size instead of adjusting each content type manually in themes preferences."
+image: /og/changing-xcode-font-size.png
 aliases:
   - /2022/09/20/changing-xcode-font-size/
 tags:

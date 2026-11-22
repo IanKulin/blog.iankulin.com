@@ -3,6 +3,8 @@ title: "Animating Guess The Flag"
 date: '2022-09-24'
 slug: animating-guess-the-flag
 summary: "This is a write-up of Project 6 of 100 Days of SwiftUI, which adds animations to the earlier Guess the Flag app. The tricky part was that all three flags are built in a ForEach, so animations applied to every button at once; the fix was storing each flag's animation magnitude separately and animating unclicked flags by zero. I also cover re-animating the flags once the alert closes, along with my criticism of the tutorial's alert UI."
+description: "I animate the Guess the Flag app in 100 Days of SwiftUI, fixing a ForEach issue by storing each flag's animation magnitude separately."
+image: /og/animating-guess-the-flag.png
 aliases:
   - /2022/09/24/animating-guess-the-flag/
 tags:

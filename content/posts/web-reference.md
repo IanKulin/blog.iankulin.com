@@ -3,6 +3,8 @@ title: "Web Reference"
 date: '2023-01-03'
 slug: web-reference
 summary: "A rundown of the reference sites I rely on when developing web apps, prompted by how often tutorials I find via search turn out to be outdated. I cover W3Schools' How To section, MDN Web Docs for detailed API references, CSS Tricks for CSS property details, and Can I Use for checking browser compatibility."
+description: "I share the reference sites I rely on for web app development—W3Schools, MDN, CSS Tricks, and Can I Use—because search tutorials are often outdated."
+image: /og/web-reference.png
 aliases:
   - /2023/01/03/web-reference/
 tags:

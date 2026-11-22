@@ -3,6 +3,8 @@ title: "Running Multiple Linux Commands in One Line"
 date: '2023-04-19'
 slug: running-multiple-linux-commands-in-one-line
 summary: "A quick Linux shell tip on chaining commands on a single line. Using apt update && apt upgrade -y as the example, I explain how the double ampersand runs the second command only if the first succeeds, and briefly mention semicolons and double pipes for unconditional or failure-only execution."
+description: "I explain how && runs a second Linux command only if the first succeeds, using apt update && apt upgrade -y, plus semicolons and double pipes."
+image: /og/running-multiple-linux-commands-in-one-line.png
 aliases:
   - /2023/04/19/running-multiple-linux-commands-in-one-line/
 tags:

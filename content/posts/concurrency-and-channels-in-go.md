@@ -3,6 +3,8 @@ title: "Concurrency and channels in Go"
 date: '2023-12-12'
 slug: concurrency-and-channels-in-go
 summary: "I offer a beginner-oriented walkthrough of Go's concurrency basics, built around a small demo program with a worker function that sleeps and reports. I introduce goroutines, then channels for passing values between the worker and the main program, explain why plain channel reads block, and show how a select statement with a default case enables non-blocking checks, finishing with closing the channel to release resources. The sample code is available on GitHub."
+description: "I walk Go beginners through concurrency basics: goroutines, channels, non-blocking select with default, and closing channels; sample code on GitHub."
+image: /og/concurrency-and-channels-in-go.png
 aliases:
   - /2023/12/12/concurrency-and-channels-in-go/
 tags:

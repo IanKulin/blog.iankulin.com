@@ -3,6 +3,8 @@ title: "Tailscale keys expire"
 date: '2023-10-24'
 slug: tailscale-keys-expire
 summary: "My weekend Ansible update run flagged three machines as unreachable, and the culprit turned out to be expired Tailscale keys, which expire by default every 180 days. Re-authenticating remote machines is awkward because force-reauth drops any SSH session running over Tailscale, while reauthorization from the admin page only grants temporary access. Ways around the problem include disabling key expiry per machine in the admin console, and I also note that expiry dates aren't easily visible in the CLI or admin page."
+description: "My Ansible run flagged three unreachable machines: Tailscale keys expire every 180 days; re-auth is awkward, so a workaround is disabling key expiry."
+image: /og/tailscale-keys-expire.png
 aliases:
   - /2023/10/24/tailscale-keys-expire/
 tags:

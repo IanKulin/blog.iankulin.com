@@ -3,6 +3,8 @@ title: "Cookies, Sessions & Tokens"
 date: '2023-09-12'
 slug: cookies-sessions-tokens
 summary: "While getting a web app ready for alpha testing with real user data, I needed to add login authentication. My post is mostly a recommendation for a video by Valentin Despa that explains the big picture of implementing authentication in an Express app with Passport, a gap left by more detailed tutorials."
+description: "I needed login authentication for my web app's alpha test, so I recommend Valentin Despa's video on the big picture of Express auth with Passport."
+image: /og/cookies-sessions-tokens.png
 aliases:
   - /2023/09/12/cookies-sessions-tokens/
 tags:

@@ -3,6 +3,8 @@ title: "Codable when the keys don't match"
 date: '2022-10-31'
 slug: codable-when-the-keys-dont-match
 summary: "How to decode JSON in Swift when the key names don't match your struct's property names. I cover using a CodingKeys enum to map JSON keys to properties manually, and the simpler keyDecodingStrategy option for handling the common snake_case versus camelCase mismatch."
+description: "I show how to decode JSON in Swift when keys don't match struct properties, using a CodingKeys enum or keyDecodingStrategy for snake_case/camelCase."
+image: /og/codable-when-the-keys-dont-match.png
 aliases:
   - /2022/10/31/codable-when-the-keys-dont-match/
 tags:

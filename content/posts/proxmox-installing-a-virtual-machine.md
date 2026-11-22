@@ -3,6 +3,8 @@ title: "Proxmox - Installing a Virtual Machine"
 date: '2023-02-07'
 slug: proxmox-installing-a-virtual-machine
 summary: "A step-by-step walkthrough of creating my first virtual machine in Proxmox 7.3, using Ubuntu Server as the example guest OS. I cover uploading an ISO to local storage, working through the Create VM wizard's choices for VM ID, name, disk size, CPU cores, and memory, then starting the VM and installing the operating system via the console."
+description: "I walk through creating my first virtual machine in Proxmox 7.3, using Ubuntu Server as the guest OS."
+image: /og/proxmox-installing-a-virtual-machine.png
 aliases:
   - /2023/02/07/proxmox-installing-a-virtual-machine/
 tags:

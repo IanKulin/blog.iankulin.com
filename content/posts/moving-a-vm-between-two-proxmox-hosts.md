@@ -3,6 +3,8 @@ title: "Moving a VM between two Proxmox hosts"
 date: '2023-02-16'
 slug: moving-a-vm-between-two-proxmox-hosts
 summary: "After upgrading my homelab with a new HP 800 G2 to run production Docker containers, I migrate my existing VM from an old Proxmox host to the new one. I walk through backing up the VM to a single file, transferring the backup between servers via FileZilla, and restoring it, with everything working after just nine minutes of downtime."
+description: "I migrate my VM from an old Proxmox host to a new HP 800 G2 running production Docker containers, with only nine minutes of downtime."
+image: /og/moving-a-vm-between-two-proxmox-hosts.png
 aliases:
   - /2023/02/16/moving-a-vm-between-two-proxmox-hosts/
 tags:

@@ -3,6 +3,8 @@ title: "Refreshing SwiftUI Views"
 date: '2022-10-23'
 slug: refreshing-swiftui-views
 summary: "Ways to force a SwiftUI view to redraw, demonstrated with a sample app that tracks a list of cars and their counts. The core technique is toggling a @State property that gets passed into subviews, which I then trigger via pull-to-refresh with .refreshable(), on app activation by watching scenePhase with .onChange, and on an interval with a published Timer and .onReceive."
+description: "I force a SwiftUI view to redraw by toggling a @State property, triggered by .refreshable(), .onChange of scenePhase, and a Timer with .onReceive."
+image: /og/refreshing-swiftui-views.png
 aliases:
   - /2022/10/23/refreshing-swiftui-views/
 tags:

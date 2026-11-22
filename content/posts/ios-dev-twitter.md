@@ -3,6 +3,8 @@ title: "iOS Dev Twitter"
 date: '2022-11-18'
 slug: ios-dev-twitter
 summary: "I reflect on following iOS and Swift developers on Twitter, a habit I picked up from Sean Allen's advice that became an enjoyable way to discover resources like iOS Dev Weekly and developers like Erica Sadun. I also consider the sense of community in iOS Dev Twitter, noting that despite Twitter's broader problems, it enabled such groups to form and thrive."
+description: "I reflect on following iOS and Swift developers on Twitter, a habit from Sean Allen's advice that led me to iOS Dev Weekly and a thriving community."
+image: /og/ios-dev-twitter.png
 aliases:
   - /2022/11/18/ios-dev-twitter/
 tags:

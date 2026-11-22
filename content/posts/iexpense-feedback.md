@@ -3,6 +3,8 @@ title: "iExpense Feedback"
 date: '2022-10-12'
 slug: iexpense-feedback
 summary: "I compare my iExpense SwiftUI challenge solutions against Paul Hudson's, covering preferred-currency formatting, styling expense amounts by value, and splitting the list into personal and business sections. After investigating why my ForEach-based split deletes the correct item despite warnings about offset mismatches, I find that SwiftUI's onDelete already passes correct array indexes and conclude that my approach beats Paul's filtered-array solution."
+description: "I compare my iExpense SwiftUI solutions with Paul Hudson's, and my ForEach split beats his filtered arrays since onDelete passes correct indexes."
+image: /og/iexpense-feedback.png
 aliases:
   - /2022/10/12/iexpense-feedback/
 tags:

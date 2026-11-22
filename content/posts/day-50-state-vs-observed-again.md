@@ -3,6 +3,8 @@ title: "Day 50 - @State vs @Observed again"
 date: '2022-10-28'
 slug: day-50-state-vs-observed-again
 summary: "I revisit my ongoing confusion between SwiftUI's @StateObject and @ObservedObject property wrappers. A tutorial video states the standard rule — @StateObject where the object is created, @ObservedObject everywhere else — but I note that my MVVM app still worked with @ObservedObject on the single data model instance. Attempting to resolve this, I use Xcode's jump-to-definition to compare the wrappers and find an extra Wrapper struct in @ObservedObject's implementation, which I set aside to revisit later."
+description: "I revisit my confusion over SwiftUI's @StateObject vs @ObservedObject rule and use Xcode's jump-to-definition to compare the property wrappers."
+image: /og/day-50-state-vs-observed-again.png
 aliases:
   - /2022/10/28/day-50-state-vs-obseved-again/
   - /day-50-state-vs-obseved-again/

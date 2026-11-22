@@ -3,6 +3,8 @@ title: "Fireside Swift"
 date: '2022-07-17'
 slug: fireside-swift
 summary: "A short recommendation of the Fireside Swift podcast, an informal iOS development show where the hosts discuss a Swift topic each week. I prefer the early two-host episodes for getting to the topic faster and find the discussions well suited to listeners who already know other languages."
+description: "I recommend Fireside Swift, an informal iOS podcast on a Swift topic each week; I prefer the early two-host episodes for getting to the topic faster."
+image: /og/fireside-swift.png
 aliases:
   - /2022/07/17/fireside-swift/
 tags:

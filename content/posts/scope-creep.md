@@ -3,6 +3,8 @@ title: "Scope Creep"
 date: '2022-08-14'
 slug: scope-creep
 summary: "Applying the project management concept of scope creep to my iOS learning journey, I describe how an original plan of four goals has grown to include extras like git, HTML, JavaScript, and standing up an SQL server on AWS. The overarching aim remains reaching junior iOS developer competence within a year of part-time study."
+description: "I apply scope creep to my iOS learning, which grew to add git, HTML, JavaScript, and an SQL server on AWS, aiming for junior competence in a year."
+image: /og/scope-creep.png
 aliases:
   - /2022/08/14/scope-creep/
 tags:

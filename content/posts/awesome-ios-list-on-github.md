@@ -3,6 +3,8 @@ title: "awesome-ios list on GitHub"
 date: '2022-07-14'
 slug: awesome-ios-list-on-github
 summary: "While looking for Swift fundamentals podcasts, I came across the community-maintained awesome-ios list on GitHub. It includes several podcasts I hadn't encountered before, which I plan to check out."
+description: "I looked for Swift fundamentals podcasts and found the community-maintained awesome-ios list on GitHub, which includes several I hadn't seen before."
+image: /og/awesome-ios-list-on-github.png
 aliases:
   - /2022/07/14/awesome-ios-list-on-github/
 tags:

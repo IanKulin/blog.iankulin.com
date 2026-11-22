@@ -3,6 +3,8 @@ title: "Create an Empty Folder on GitHub"
 date: '2022-07-15'
 slug: create-an-empty-folder-on-github
 summary: "GitHub's web interface has no way to create an empty folder directly, but adding a file with a slash in its path (such as new-folder/README.md) creates the folder automatically, after which files can be dragged in as normal. The tip comes from a Zack West article on Alpharithms, which I link for a fuller explanation with pictures."
+description: "I can't create empty folders directly on GitHub's web interface, but adding a file with a slash in its path, like new-folder/README.md, creates one."
+image: /og/create-an-empty-folder-on-github.png
 aliases:
   - /2022/07/15/create-an-empty-folder-on-github/
 tags:

@@ -3,6 +3,8 @@ title: "CoreData and the Preview"
 date: '2022-11-04'
 slug: coredata-and-the-preview
 summary: "My CoreData project from Day 53 of the 100 Days of SwiftUI course ran fine in the simulator but crashed in Xcode's SwiftUI preview, which lacked a managed object context. I describe a workaround I found on the Hacking with Swift forums for supplying a context to the preview."
+description: "My Day 53 CoreData project from 100 Days of SwiftUI crashed in Xcode's preview, which lacked a managed object context, so I share a forum workaround."
+image: /og/coredata-and-the-preview.png
 aliases:
   - /2022/11/04/coredata-and-the-preview/
 tags:

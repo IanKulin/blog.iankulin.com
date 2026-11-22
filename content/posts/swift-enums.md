@@ -3,6 +3,8 @@ title: "Swift enums"
 date: '2022-09-12'
 slug: swift-enums
 summary: "In refactoring my rock-paper-scissors project, I replace Int-based hand shape values with a Swift String enum, eliminating the risk of array out-of-bounds errors and allowing switch statements without a default case. I include notes on Swift enums compared to C, enum methods, and my uncertainty about naming the type Shape versus FingerShape."
+description: "I replace my rock-paper-scissors project's Int values with a Swift String enum, removing array out-of-bounds errors and default cases."
+image: /og/swift-enums.png
 aliases:
   - /2022/09/12/swift-enums/
 tags:

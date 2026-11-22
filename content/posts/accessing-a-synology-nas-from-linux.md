@@ -3,6 +3,8 @@ title: "Accessing a Synology NAS from Linux"
 date: '2023-02-20'
 slug: accessing-a-synology-nas-from-linux
 summary: "I set up a secondhand Synology DS216j NAS as homelab storage with RAID 1 and a Samba share, intended for VM backups and eventually a media library. I then mount the share on a privileged Debian LXC container in Proxmox via a cifs entry in /etc/fstab, with a breakdown of the mount options and a note that the setup persists across reboots."
+description: "I set up a Synology DS216j (RAID 1, Samba) and mount the share on a Proxmox Debian LXC via cifs in /etc/fstab for VM backups; it survives reboots."
+image: /og/accessing-a-synology-nas-from-linux.png
 aliases:
   - /2023/02/20/accessing-a-synology-nas-from-linux/
 tags:

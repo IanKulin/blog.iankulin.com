@@ -3,6 +3,8 @@ title: "ViewTube"
 date: '2023-11-27'
 slug: viewtube
 summary: "ViewTube is a self-hosted YouTube front end that strips out ads and tracking, with local accounts for subscribing to channels and keeping video progress. I got it running in a VM with Docker Compose in about five minutes, along with a workaround of using MongoDB 4.4 because newer versions require AVX CPU support my VM didn't expose."
+description: "I self-hosted ViewTube, a YouTube front end without ads or tracking, in a VM via Docker Compose, using MongoDB 4.4 to sidestep AVX CPU requirements."
+image: /og/viewtube.png
 aliases:
   - /2023/11/27/viewtube/
 tags:

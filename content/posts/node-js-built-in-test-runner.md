@@ -3,6 +3,8 @@ title: "Node.js built in test runner"
 date: '2025-03-17'
 slug: node-js-built-in-test-runner
 summary: "A look at Node's built-in test runner from my perspective as a long-time Mocha and Chai user, showing how to write and run basic tests with node:test and node:assert. Coming from Mocha requires few changes, though test files need to live in a test directory to be picked up. I weigh the convenience of a bundled runner against lock-in to a particular runtime."
+description: "As a long-time Mocha and Chai user, I try Node's built-in test runner with node:test and node:assert, weighing bundled convenience against lock-in."
+image: /og/node-js-built-in-test-runner.png
 aliases:
   - /2025/03/17/node-js-built-in-test-runner/
 tags:

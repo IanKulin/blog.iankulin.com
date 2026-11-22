@@ -3,6 +3,8 @@ title: "Testing, testing"
 date: '2022-10-09'
 slug: testing-testing
 summary: "A walkthrough of adding unit tests to an existing Swift project in Xcode, using my CodeTrimmer macOS utility as the example. I cover adding a unit testing target, writing XCTest functions for the stripSpaces() method, and running the tests to see the results."
+description: "I add unit tests to an existing Swift project in Xcode, covering a testing target, XCTest functions for stripSpaces(), and running the tests."
+image: /og/testing-testing.png
 aliases:
   - /2022/10/09/testing-testing/
 tags:

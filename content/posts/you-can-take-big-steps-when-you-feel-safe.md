@@ -3,6 +3,8 @@ title: "You Can Take Big Steps When You Feel Safe"
 date: '2022-11-09'
 slug: you-can-take-big-steps-when-you-feel-safe
 summary: "Day 58 of the 100 Days of SwiftUI series covers one-to-many Core Data relationships, using constraints and merge policies to handle conflicts, and underscore syntax for accessing wrapped properties in dynamic filtering. I reflect on Core Data's pre-SwiftUI complexity, credit Paul Hudson's teaching style with making the difficult material manageable, and consider how much harder the same functionality would be with raw SQLite."
+description: "I cover one-to-many Core Data relationships, constraints, and merge policies on Day 58 of 100 Days of SwiftUI, reflecting on pre-SwiftUI complexity."
+image: /og/you-can-take-big-steps-when-you-feel-safe.png
 aliases:
   - /2022/11/09/you-can-take-big-steps-when-you-feel-safe/
 tags:

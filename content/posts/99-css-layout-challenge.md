@@ -3,6 +3,8 @@ title: "99 CSS Layout challenge"
 date: '2022-12-23'
 slug: 99-css-layout-challenge
 summary: "I write up the first practical challenge in the Zero To Mastery Complete Web Developer course: building a responsive page layout with CSS. Instead of mixing flexbox and grid as the challenge suggested, I used only CSS grid, then walk through the code for each section — nav bar, cover image, project grid, and footer — noting the nav link alignment was the trickiest part."
+description: "I build a responsive CSS layout with grid instead of the suggested flexbox-and-grid mix for a Zero To Mastery challenge, walking through the code."
+image: /og/99-css-layout-challenge.png
 aliases:
   - /2022/12/23/99-css-layout-challenge/
 tags:

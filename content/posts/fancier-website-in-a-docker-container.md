@@ -3,6 +3,8 @@ title: "Fancier Website in a Docker Container"
 date: '2024-11-18'
 slug: fancier-website-in-a-docker-container
 summary: "A follow-up on bundling static sites into BusyBox Docker containers, covering how to handle minor dynamic tasks such as periodically downloading an image into the directory of hosted static files. Rather than using cron, which behaves unexpectedly on BusyBox, my solution is a shell script with a download-and-sleep loop that runs in the background alongside the httpd server. I also note that BusyBox's wget has TLS problems, a topic I defer to a later post."
+description: "I handle periodic image downloads in my BusyBox static site Docker container with a shell loop rather than cron, noting wget's TLS problems."
+image: /og/fancier-website-in-a-docker-container.png
 aliases:
   - /2024/11/18/fancier-website-in-a-docker-container/
 tags:

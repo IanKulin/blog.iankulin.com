@@ -3,6 +3,8 @@ title: "List Apps"
 date: '2022-10-20'
 slug: list-apps
 summary: "Reflecting on the Day 47 habit-tracking milestone challenge, I observe that simple SwiftUI list apps follow a common recipe: Identifiable/Codable structs, an ObservableObject collection with @Published state, and a List inside a NavigationView. I outline that pattern, its benefits for building quality apps quickly while staying HIG-compliant, and the risk that such apps end up looking and feeling like every other list-based offering."
+description: "I outline SwiftUI's list-app recipe—an ObservableObject, a List in a NavigationView—great for quick, HIG-compliant apps, but they can all feel alike."
+image: /og/list-apps.png
 aliases:
   - /2022/10/20/list-apps/
 tags:

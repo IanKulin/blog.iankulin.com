@@ -3,6 +3,8 @@ title: "Oh My Zsh"
 date: '2022-08-06'
 slug: oh-my-zsh
 summary: "While working through the Missing Semester material, I wanted my zsh prompt to display the current git branch name. A bit of searching led me to install Oh My Zsh and enable its git and macos plugins to accomplish it."
+description: "While working through Missing Semester, I installed Oh My Zsh and enabled its git and macos plugins to show the current git branch in my zsh prompt."
+image: /og/oh-my-zsh.png
 aliases:
   - /2022/08/06/oh-my-zsh/
 tags:

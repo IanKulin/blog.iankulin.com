@@ -3,6 +3,8 @@ title: "Gitting Started"
 date: '2022-07-13'
 slug: gitting-started
 summary: "I set up Git and GitHub for the first time by following a video tutorial, working on a Mac. I cover the basic workflow of cloning, staging, committing, and pushing, along with minor troubleshooting around the default branch name, unset git config, and a first encounter with Vim. Generating an SSH key was the only real complexity."
+description: "I set up Git and GitHub on a Mac for the first time via a video tutorial, covering clone-commit-push basics, SSH keys, and some small troubleshooting."
+image: /og/gitting-started.png
 aliases:
   - /2022/07/13/gitting-started/
 tags:

@@ -3,6 +3,8 @@ title: "Word Scramble Feedback"
 date: '2022-09-19'
 slug: word-scramble-feedback
 summary: "After finishing the Word Scramble challenges in Hacking with Swift's 100 Days of SwiftUI, I review Paul Hudson's subscriber-only solution and pick up two improvements. The first is a clearer way of resetting the used-words array; the second replaces my bottom-toolbar score display with a safeAreaInset that initially seemed overcomplicated but looked better in practice."
+description: "I review Paul Hudson's Word Scramble solution in 100 Days of SwiftUI and pick up two improvements: a used-words reset and a safeAreaInset score."
+image: /og/word-scramble-feedback.png
 aliases:
   - /2022/09/19/word-scramble-feedback/
 tags:

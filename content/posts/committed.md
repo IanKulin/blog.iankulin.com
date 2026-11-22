@@ -3,6 +3,8 @@ title: "Committed"
 date: '2022-12-06'
 slug: committed
 summary: "A reflective look at my GitHub commit graph, noting that Tuesday nights are unexpectedly my most productive coding time and expressing my appreciation for git and GitHub's free tier. My first commits date to July 10, the same month I started blogging daily, a streak now at 154 days. I'm on day 64 of 100 Days of SwiftUI, admitting the hour-per-day pace hasn't held, but I'm pleased with my overall commitment."
+description: "I reflect on my GitHub commit graph—Tuesday nights are my most productive time—while on day 64 of 100 Days of SwiftUI and a 154-day blogging streak."
+image: /og/committed.png
 aliases:
   - /2022/12/06/committed/
 tags:

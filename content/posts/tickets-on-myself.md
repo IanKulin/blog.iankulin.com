@@ -3,6 +3,8 @@ title: "Tickets on Myself"
 date: '2022-11-27'
 slug: tickets-on-myself
 summary: "My habit tracker app, built as a JSON tutorial exercise with UserDefaults persistence, has motivated me to tackle a more substantial Core Data app for teachers to record student reward tickets. I outline the planned design with Tickets and Students entities, searchable student records, and categorised ticket types. Outstanding data problems include importing student and category data via JSON from a local school webserver, and exporting records as PDF or text files."
+description: "My JSON tutorial habit tracker with UserDefaults has inspired me to build a Core Data app for teachers to record student reward tickets."
+image: /og/tickets-on-myself.png
 aliases:
   - /2022/11/27/tickets-on-myself/
 tags:

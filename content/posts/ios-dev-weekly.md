@@ -3,6 +3,8 @@ title: "iOS Dev Weekly"
 date: '2022-07-26'
 slug: ios-dev-weekly
 summary: "After hearing Dave Verwer's iOS Dev Weekly newsletter mentioned on a podcast, I subscribed and describe my first issue as short, chatty, and full of useful links on Swift libraries and other topics. Following a link about SwiftUI Split View Configuration led me down a rabbit hole to a WWDC video."
+description: "I subscribed to Dave Verwer's iOS Dev Weekly, found my first issue full of useful Swift links, and followed a SwiftUI Split View link to a WWDC video."
+image: /og/ios-dev-weekly.png
 aliases:
   - /2022/07/26/ios-dev-weekly/
 tags:

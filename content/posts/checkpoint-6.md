@@ -3,6 +3,8 @@ title: "Checkpoint 6"
 date: '2022-07-23'
 slug: checkpoint-6
 summary: "My short Swift exercise solution covers structs and access control: a Car struct stores a model, seat count, and current gear. The gear is protected with private(set) access and can only be changed through my mutating gearUp and gearDown methods that stay within static min and max gear constants."
+description: "I solved a Swift exercise on structs and access control: a Car struct with a private(set) gear changed only via mutating gearUp/gearDown methods."
+image: /og/checkpoint-6.png
 aliases:
   - /2022/07/23/checkpoint-6/
 tags:

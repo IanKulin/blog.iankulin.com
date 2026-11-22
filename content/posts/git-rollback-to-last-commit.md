@@ -3,6 +3,8 @@ title: "git - Rollback to last commit"
 date: '2022-11-08'
 slug: git-rollback-to-last-commit
 summary: "While following a type-along tutorial in the 100 Days of SwiftUI course, I commit the setup code once it's working, then use git reset --hard to discard each technique's changes before moving to the next one. I include the handful of git commands involved, suggesting this simple rollback workflow is a good first use case for anyone new to git."
+description: "In the 100 Days of SwiftUI course, I commit setup code then git reset --hard between techniques—a simple rollback workflow for git beginners."
+image: /og/git-rollback-to-last-commit.png
 aliases:
   - /2022/11/08/git-rollback-to-last-commit/
 tags:

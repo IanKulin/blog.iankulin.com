@@ -3,6 +3,8 @@ title: "Proxmox tags to solve a problem"
 date: '2023-11-02'
 slug: proxmox-tags-to-solve-a-problem
 summary: "I use Proxmox's tagging system to mark which VMs and containers need to be powered on before running my weekend Ansible update script on a dev server. My walkthrough covers applying tags in the web GUI, customizing colors via Tag Style Override, the three display styles available, and sorting machines by tag in the Datacenter search view."
+description: "I use Proxmox tags to mark which VMs and containers to power on before my weekend Ansible update script, and walk through tagging in the web GUI."
+image: /og/proxmox-tags-to-solve-a-problem.png
 aliases:
   - /2023/11/02/proxmox-tags-to-solve-a-problem/
 tags:

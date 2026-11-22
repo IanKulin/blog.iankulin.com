@@ -3,6 +3,8 @@ title: "Rock, Paper, Scissors (1)"
 date: '2022-09-10'
 slug: rock-paper-scissors-1
 summary: "A working SwiftUI version of the Hacking with SwiftUI Day 25 project, a Rock, Paper, Scissors game where the player must randomly try to win or lose each round. I share the full source code and list aspects of the implementation I'm unhappy with, such as the array-and-int game state, duplicated win-checking functions, and a hidden-view layout workaround, and note the scoring deviates from the project brief."
+description: "I share code for Hacking with SwiftUI Day 25's Rock, Paper, Scissors game, where you must randomly try to win or lose, plus what I'm unhappy with."
+image: /og/rock-paper-scissors-1.png
 aliases:
   - /2022/09/10/rock-paper-scissors-1/
 tags:

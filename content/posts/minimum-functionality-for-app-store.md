@@ -3,6 +3,8 @@ title: "Minimum Functionality for App Store"
 date: '2022-07-15'
 slug: minimum-functionality-for-app-store
 summary: "A follow-up on EasterDay, my first iOS app, in which I worry it may be rejected under the App Store's Minimum Functionality guideline for being too trivial. I intend to finish building it anyway for the learning experience, though I might not submit it, and note that my other app ideas are currently beyond my expertise."
+description: "I worry my first iOS app, EasterDay, may be rejected as too trivial under the App Store's Minimum Functionality guideline, but I'll finish it anyway."
+image: /og/minimum-functionality-for-app-store.png
 aliases:
   - /2022/07/15/minimum-functionality-for-app-store/
 tags:

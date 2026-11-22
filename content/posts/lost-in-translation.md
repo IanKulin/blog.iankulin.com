@@ -3,6 +3,8 @@ title: "Lost in Translation"
 date: '2023-01-11'
 slug: lost-in-translation
 summary: "JavaScript is much more consistent across browsers now that Internet Explorer is largely unsupported, but tools for dealing with older browsers still exist. In the post, I cover approaches like libraries, polyfills, and transpilation with Babel, showing examples of arrow functions and backtick templates converted into IE 6-compatible code using Babel's interactive web tool."
+description: "I cover libraries, polyfills, and Babel for older browsers, showing arrow functions and backtick templates transpiled to IE 6-compatible code."
+image: /og/lost-in-translation.png
 aliases:
   - /2023/01/11/lost-in-translation/
 tags:

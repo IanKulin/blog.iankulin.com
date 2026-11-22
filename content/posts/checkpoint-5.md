@@ -3,6 +3,8 @@ title: "Checkpoint 5"
 date: '2022-07-16'
 slug: checkpoint-5
 summary: "My Swift solution to an array-processing exercise: filtering even numbers out of an array of lucky numbers, sorting the remaining values in ascending order, mapping each one to a formatted string, and printing the results one per line using filter, sorted, and map."
+description: "My Swift solution to an array exercise: filter evens from lucky numbers, sort ascending, and print formatted strings using filter, sorted, and map."
+image: /og/checkpoint-5.png
 aliases:
   - /2022/07/16/checkpoint-5/
 tags:

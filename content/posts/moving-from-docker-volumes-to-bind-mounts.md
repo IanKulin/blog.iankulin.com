@@ -3,6 +3,8 @@ title: "Moving from Docker volumes to bind mounts"
 date: '2024-08-05'
 slug: moving-from-docker-volumes-to-bind-mounts
 summary: "I explain why I use Docker bind mounts instead of named Docker volumes in my homelab, keeping each container's compose file and data together in a single directory for easier backups and migration. I weigh the tradeoffs of this approach and walk through migrating an Uptime Kuma container from a named volume to a bind mount by locating the volume's files with docker inspect and copying them directly while the container is stopped, contrary to more complicated methods suggested elsewhere online."
+description: "I use Docker bind mounts over named volumes in my homelab for simpler backups and show how I migrated Uptime Kuma from a volume to a bind mount."
+image: /og/moving-from-docker-volumes-to-bind-mounts.png
 aliases:
   - /2024/08/05/moving-from-docker-volumes-to-bind-mounts/
 tags:

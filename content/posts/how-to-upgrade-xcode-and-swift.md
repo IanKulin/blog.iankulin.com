@@ -3,6 +3,8 @@ title: "How to upgrade XCode and Swift"
 date: '2022-09-18'
 slug: how-to-upgrade-xcode-and-swift
 summary: "A short note on updating to Xcode 14 and Swift 5.7: the update is found in the Mac App Store rather than Xcode's About dialog. I also show how to check your current Xcode and Swift versions, both through Xcode's project settings and via the command line, and link elsewhere for details on what's new in each release."
+description: "I update to Xcode 14 and Swift 5.7 via the Mac App Store, not the About dialog, and show how to check your current Xcode and Swift versions."
+image: /og/how-to-upgrade-xcode-and-swift.png
 aliases:
   - /2022/09/18/how-to-upgrade-xcode-and-swift/
 tags:

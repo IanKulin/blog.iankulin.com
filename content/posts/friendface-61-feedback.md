@@ -3,6 +3,8 @@ title: "FriendFace 61 Feedback"
 date: '2022-11-26'
 slug: friendface-61-feedback
 summary: "I compare my attempt at a Core Data caching challenge—storing fetched user data so the app can still display it after network failures—against Paul's model solution. Differences covered include adding a merge policy for handling constraint conflicts, keeping ids as UUIDs, and placing MainActor.run inside the network fetch rather than after it."
+description: "I compare my Core Data caching solution for showing user data after network failures to Paul's, covering merge policy, UUIDs, and MainActor.run."
+image: /og/friendface-61-feedback.png
 aliases:
   - /2022/11/26/friendface-61-feedback/
 tags:

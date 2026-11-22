@@ -3,6 +3,8 @@ title: "Proxmox Hypervisor"
 date: '2023-02-01'
 slug: proxmox-hypervisor
 summary: "I compare a Raspberry Pi 4 with an HP Elitedesk 800 G1 mini PC as a home server option, noting the HP's better specs and storage for the price, plus a few caveats like its DisplayPort connection. Wanting to build Docker, Linux, and devops experience, I install Proxmox as the hypervisor rather than VMware ESXi and share setup notes for the HP, including BIOS keys, keeping the default storage settings, and reserving the server's IP address on the router."
+description: "I compare a Raspberry Pi 4 and HP Elitedesk 800 G1 as home servers, find the HP better value, and install Proxmox to build Docker and Linux skills."
+image: /og/proxmox-hypervisor.png
 aliases:
   - /2023/02/01/proxmox-hypervisor/
 tags:

@@ -3,6 +3,8 @@ title: "Customizing the default About dialog for MacOS apps"
 date: '2022-10-07'
 slug: customizing-the-default-about-dialog-for-macos-apps
 summary: "A short how-to on how I customize the default About dialog in a macOS app built with Xcode: add a Credits.rtf (or .html or .rtfd) file to the project, and its contents appear in the dialog after a rebuild."
+description: "I customize the default About dialog in my Xcode macOS app by adding a Credits.rtf (or .html/.rtfd) file whose contents appear after a rebuild."
+image: /og/customizing-the-default-about-dialog-for-macos-apps.png
 aliases:
   - /2022/10/07/customizing-the-default-about-dialog-for-macos-apps/
 tags:
