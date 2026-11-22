@@ -27,7 +27,7 @@ If you want it play it legally, okay options are [Steam](https://store.steampowe
 
 ## Back in time
 
-It's fun seeing that the Steam recommended minimum rig is an Intel Core i3 3120M with the Intel on board HD Graphics 4000, since the [arcade machine](https://segaretro.org/Galaxian-based_hardware) was a Zilog Z80 running at 3.072 MHz. Sounds were synthesized in an analog board and the video was a whole thing two - sprites loaded into hardware and pulled in as they were needed, colours separate from the graphics, and a dedicated circuit to make the scrolling starfield background.
+It's fun seeing that the Steam recommended minimum rig is an Intel Core i3 3120M with the Intel on board HD Graphics 4000, since the [arcade machine](https://segaretro.org/Galaxian-based_hardware) was a Zilog Z80 running at 3.072 MHz. Sounds were synthesized in an analog board and the video was a whole thing as well - sprites loaded into hardware and pulled in as they were needed, colours separate from the graphics, and a dedicated circuit to make the scrolling starfield background.
 
 Porting such a thing isn't just decompiling the Z80 ROM code, all that hardware needs emulated in your code as well. In the process of digging into all this I've gained great respect for the people behind the [MAME](https://github.com/mamedev/mame) project that have figured all this out for all the different versions of arcade machines build over the years.
 
