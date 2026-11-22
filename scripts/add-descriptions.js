@@ -2,7 +2,7 @@
 /**
  * Generates the "description" frontmatter field for a post using an LLM via OpenRouter.
  *
- * The description is a single sentence of about 150 characters condensed from the post's
+ * The description is a single sentence of at most 125 characters condensed from the post's
  * existing "summary" field, used for the meta description and og:description tags.
  * Run scripts/add-summary.js first to create the summary.
  *
@@ -36,7 +36,7 @@ const {
 const DESCRIPTION_PROMPT = `You are condensing the summary of a blog post into a meta description, used for search results and social media link previews.
 
 Rules:
-- Exactly one sentence, at most 150 characters. Shorter is fine.
+- Exactly one sentence, at most 125 characters. Shorter is fine.
 - Keep the first-person point of view of the summary ("I ...").
 - Keep the most useful specifics (technologies, the problem, the outcome); drop secondary details.
 - Do not change facts or add information that is not in the summary.
@@ -48,7 +48,7 @@ Summary to condense:
 {{summary}}
 `;
 
-const MAX_DESCRIPTION_LENGTH = 160;
+const MAX_DESCRIPTION_LENGTH = 125;
 
 const DRY_RUN = process.argv.includes('--dry-run');
 const FORCE = process.argv.includes('--force');
@@ -60,7 +60,7 @@ const config = loadConfig();
 async function toDescription(summary) {
   const description = await callLLM(DESCRIPTION_PROMPT.replace('{{summary}}', summary), config);
   if (description.length > MAX_DESCRIPTION_LENGTH) {
-    console.warn(`Warning: description is ${description.length} chars (target ~150)`);
+    console.warn(`Warning: description is ${description.length} chars (max 125)`);
   }
   return description;
 }
