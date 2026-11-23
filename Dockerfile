@@ -9,9 +9,12 @@ WORKDIR /src
 COPY package*.json ./
 RUN npm ci
 COPY --from=hugo-builder /src/public ./public
-RUN npx pagefind --site public --root-selector "main.layout__main"
+RUN npx pagefind --site public --root-selector "main.layout__main" \
+ && rm -rf public/images public/og
 
 FROM nginx:alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY static/images /usr/share/nginx/html/images
+COPY static/og /usr/share/nginx/html/og
 COPY --from=pagefind-builder /src/public /usr/share/nginx/html
 EXPOSE 80
