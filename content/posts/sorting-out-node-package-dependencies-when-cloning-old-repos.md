@@ -3,7 +3,7 @@ title: "Sorting out Node package dependencies when cloning old repos"
 date: '2023-09-06'
 slug: sorting-out-node-package-dependencies-when-cloning-old-repos
 summary: "I add authentication to an old Node.js app by cloning a four-year-old tutorial repo, which produces a flood of npm install errors. I explain how package.json and package-lock.json pin dependency versions (carets, tildes, exact pins, transitive dependencies), then work through escalating fixes in order of risk: deleting the lockfile, loosening version ranges, wildcard updates, and npm audit fix --force, followed by testing."
-description: "I fix npm install errors in an old Node.js app by explaining how package.json and package-lock.json pin versions, then trying escalating fixes."
+description: "Fixing npm install errors in a four-year-old Node.js auth tutorial via package pins and dependency fixes."
 image: /og/sorting-out-node-package-dependencies-when-cloning-old-repos.png
 aliases:
   - /2023/09/06/sorting-out-node-package-dependencies-when-cloning-old-repos/

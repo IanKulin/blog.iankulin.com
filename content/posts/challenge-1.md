@@ -3,7 +3,7 @@ title: "Challenge 1"
 date: '2022-08-29'
 slug: challenge-1
 summary: "I built a simple unit conversion app for Challenge 1 of Day 19 of 100 Days of SwiftUI, deliberately keeping it minimal without MVVM. New techniques I covered include limiting the keyboard to numbers and adding a toolbar to dismiss it. I also note that SwiftUI text fields don't select existing text for overtyping, with no straightforward fix short of a third-party package, and I include full code plus a GitHub link."
-description: "I built a unit conversion app for Day 19 of 100 Days of SwiftUI without MVVM, covering numeric keyboards and a dismiss toolbar, with code on GitHub."
+description: "A minimal SwiftUI unit conversion app from 100 Days of SwiftUI, with numeric keyboard and overtyping tips."
 image: /og/challenge-1.png
 aliases:
   - /2022/08/29/challenge-1/

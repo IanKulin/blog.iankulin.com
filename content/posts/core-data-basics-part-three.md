@@ -3,7 +3,7 @@ title: "Core Data basics – Part Three"
 date: '2022-11-24'
 slug: core-data-basics-part-three
 summary: "In part three of my Core Data basics series, I show how to add a one-to-many relationship so each Garden can have multiple Plants. I cover converting the generated NSSet of related plants into a sorted array via a computed property, displaying the plants in a list in the garden detail view, and linking plant instances to a garden when creating sample data."
-description: "In part three of my Core Data basics series, I add a one-to-many relationship so each Garden can have multiple Plants, sorted and shown in a list."
+description: "Adding a Core Data one-to-many Garden-to-Plants relationship with an NSSet-to-sorted-array computed property."
 image: /og/core-data-basics-part-three.png
 aliases:
   - /2022/11/24/core-data-basics-part-three/

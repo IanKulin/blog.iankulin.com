@@ -3,7 +3,7 @@ title: "How to Have Cooler File Icons in VS Code"
 date: '2024-01-29'
 slug: how-to-have-cooler-file-icons-in-vs-code
 summary: "A short walkthrough of fixing the default VS Code file icons in the explorer view. I explain how to find the File Icon Theme option via the command palette, why a vanilla install requires installing additional themes from the marketplace, and how I settled on the popular VS Code Icons theme."
-description: "I fix VS Code's default file icons by finding the File Icon Theme option via the command palette and installing the popular VS Code Icons theme."
+description: "Fixing default VS Code file icons by finding File Icon Theme in the command palette and installing VS Code Icons."
 image: /og/how-to-have-cooler-file-icons-in-vs-code.png
 aliases:
   - /2024/01/29/how-to-have-cooler-file-icons-in-vs-code/

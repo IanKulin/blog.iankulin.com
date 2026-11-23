@@ -3,7 +3,7 @@ title: "Animations in Views"
 date: '2022-09-23'
 slug: animations-in-views
 summary: "A short walkthrough of three ways to animate SwiftUI views, written as part of my progress through the 100 Days of SwiftUI series: implicit animation via the .animation() modifier, animation bound to controls like sliders, and explicit animation for coordinating simultaneous changes. Each approach is illustrated with example code and a demo video."
-description: "I cover three ways to animate SwiftUI views in 100 Days of SwiftUI: implicit .animation(), bound to controls like sliders, and explicit animation."
+description: "Three SwiftUI animation approaches: implicit .animation(), control-bound animation, and explicit coordinated changes."
 image: /og/animations-in-views.png
 aliases:
   - /2022/09/23/animations-in-views/

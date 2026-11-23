@@ -3,7 +3,7 @@ title: "Bookworm Feedback"
 date: '2022-11-07'
 slug: bookworm-feedback
 summary: "I compare my SwiftUI solutions to a coding challenge series with Paul Hudson's, finding the first two nearly identical and only minor differences on the third. I weigh hiding text with opacity to reserve space against using an if-let, and note that Hudson's abbreviated date formatting handles locale differences my manual approach didn't."
-description: "I compare my SwiftUI solutions to Paul Hudson's coding challenge: first two nearly identical, though his date formatting handles locales mine didn't."
+description: "Comparing SwiftUI coding-challenge solutions to Paul Hudson's, from opacity vs if-let to locale-safe date formatting."
 image: /og/bookworm-feedback.png
 aliases:
   - /2022/11/07/bookworm-feedback/

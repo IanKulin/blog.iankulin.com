@@ -3,7 +3,7 @@ title: "Porting Quirks"
 date: '2026-11-21'
 slug: porting-quirks
 summary: "Porting the 1979 arcade game Galaxian to Mac means emulating the original hardware (sprite handling, a dedicated scrolling starfield) as well as the Z80 code. I examine quirks rooted in the machine's constraints, such as bullets drawn on alternating frames, a one-frame sprite lag, and invisible re-entering ships. For each, I weigh keeping the hardware artifact for fidelity against simplifying the code."
-description: "I port the 1979 arcade game Galaxian to Mac, emulating its hardware and Z80 code, and weigh quirks like one-frame sprite lag against simpler code."
+description: "Porting Galaxian to Mac by emulating its Z80 hardware, quirks and all, while weighing fidelity against simpler code."
 image: /og/porting-quirks.png
 tags:
   - porting

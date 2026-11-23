@@ -3,7 +3,7 @@ title: "Share files securely with Enclosed"
 date: '2025-01-27'
 slug: share-files-securely-with-enclosed
 summary: "I walk through self-hosting Enclosed on a VPS as a secure alternative to emailing password-protected zip files. I cover the Docker Compose setup behind Nginx Proxy Manager, along with configuring authenticated logins, a step the official docs leave under-explained, so only I can upload files while recipients download them without an account."
-description: "I self-host Enclosed on a VPS with Docker Compose behind Nginx Proxy Manager, adding logins so only I can upload—no emailing password-protected zips."
+description: "Self-hosting Enclosed on a VPS via Docker Compose for authenticated file sharing instead of emailed zip files."
 image: /og/share-files-securely-with-enclosed.png
 aliases:
   - /2025/01/27/share-files-securely-with-enclosed/

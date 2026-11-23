@@ -3,7 +3,7 @@ title: "Using LLMs programmatically"
 date: '2026-09-05'
 slug: using-llms-programmatically
 summary: "A minimal JavaScript demo of calling an LLM from your own code using the OpenAI-compatible chat completions endpoint via OpenRouter, covering API keys, model selection, and request structure. It walks through the JSON response, pointing out finish reasons, reasoning tokens, cost fields, and provider routing."
-description: "I demo calling an LLM from JavaScript via OpenRouter's OpenAI-compatible chat completions endpoint, covering API keys, models, and the JSON response."
+description: "A JavaScript demo of calling an LLM via OpenRouter's OpenAI-compatible chat completions API, covering requests and responses."
 image: /og/using-llms-programmatically.png
 tags:
   - llm

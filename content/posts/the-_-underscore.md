@@ -3,7 +3,7 @@ title: "The _ Underscore"
 date: '2022-08-26'
 slug: the-_-underscore
 summary: "I cover two uses of the underscore in Swift: omitting a parameter's external name in function calls, and standing in for an unused loop variable when iterating over a collection. I also question whether the loop usage reads well, floating the idea of a reserved word like \"each\" instead, and note that forEach raises the same naming issue."
-description: "I cover Swift's underscore for omitting parameter names and unused loop variables, question its readability, and note forEach raises the same issue."
+description: "Swift's underscore for omitting parameter names and unused loop variables, and the case for an 'each' keyword."
 image: /og/the-_-underscore.png
 aliases:
   - /2022/08/26/the-_-underscore/

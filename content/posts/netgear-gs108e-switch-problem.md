@@ -3,7 +3,7 @@ title: "Netgear GS108E switch problem"
 date: '2023-02-14'
 slug: netgear-gs108e-switch-problem
 summary: "A newly installed Netgear GS108E managed switch became unreachable a day after going into service, failing to respond to pings and dropping its management interface even though traffic through it still worked. I describe the setup, the symptoms, and why existing search results about VLAN lockouts don't match this failure on a default configuration."
-description: "I describe my new Netgear GS108E going unresponsive a day after install while traffic still flowed, and why VLAN lockout search results don't fit."
+description: "A Netgear GS108E switch becoming unreachable a day after install despite passing traffic, and why VLAN lockout doesn't fit."
 image: /og/netgear-gs108e-switch-problem.png
 aliases:
   - /2023/02/14/netgear-gs108e-switch-problem/

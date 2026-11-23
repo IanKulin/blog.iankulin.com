@@ -3,7 +3,7 @@ title: "Copying a file via SSH"
 date: '2022-11-29'
 slug: copying-a-file-via-ssh
 summary: "I copy a sample JSON file from my Mac to a Raspberry Pi on the home network using the scp command, after noting that drag-and-drop into an SSH session isn't possible. I include the basic command syntax with a brief explanation of its arguments."
-description: "I copy a sample JSON file from my Mac to a Raspberry Pi on my home network using scp, explaining the command syntax and arguments."
+description: "Copying a JSON file from a Mac to a Raspberry Pi over SSH with scp, including basic command syntax."
 image: /og/copying-a-file-via-ssh.png
 aliases:
   - /2022/11/29/copying-a-file-via-ssh/

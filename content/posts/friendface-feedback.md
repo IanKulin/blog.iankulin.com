@@ -3,7 +3,7 @@ title: "FriendFace Feedback"
 date: '2022-11-15'
 slug: friendface-feedback
 summary: "A comparison of my SwiftUI solution to the FriendFace challenge (downloading and displaying user JSON) against Paul Hudson's version from Hacking with Swift. Differences I discuss include handling user IDs, structuring preview data, loading and error handling in fetchUsers(), and UI choices such as colored circles for user status and a grouped list style for the detail view."
-description: "I compare my SwiftUI solution to the FriendFace challenge—downloading and displaying user JSON—against Paul Hudson's Hacking with Swift version."
+description: "Comparing a SwiftUI FriendFace solution with Paul Hudson's: user IDs, preview data, fetch errors, and status/detail UI."
 image: /og/friendface-feedback.png
 aliases:
   - /2022/11/15/friendface-feedback/

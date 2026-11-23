@@ -3,7 +3,7 @@ title: "Learn to Code"
 date: '2022-09-08'
 slug: learn-to-code
 summary: "A short introductory post explaining why my blog exists: I want to publicly track my progress through Paul Hudson's 100 Days of SwiftUI, and I believe that writing about a topic forces a clearer understanding of it, an approach known as the Feynman Technique. A Fireship video on the topic is embedded."
-description: "I'm starting this blog to track my progress through Paul Hudson's 100 Days of SwiftUI, using the Feynman Technique to deepen my understanding."
+description: "Publicly tracking progress through Paul Hudson's 100 Days of SwiftUI with the Feynman Technique."
 image: /og/learn-to-code.png
 aliases:
   - /2022/09/08/learn-to-code/

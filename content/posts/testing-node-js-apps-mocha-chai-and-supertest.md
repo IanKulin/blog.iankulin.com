@@ -3,7 +3,7 @@ title: "Testing Node.js apps - Mocha, Chai, and Supertest"
 date: '2024-01-01'
 slug: testing-node-js-apps-mocha-chai-and-supertest
 summary: "I walk through testing a Node/Express API with mocha, chai, and supertest, using a simple maths-endpoint app as the example. I cover installing the tools as dev dependencies, exporting the app so tests can control it, writing test suites and cases, running tests via an npm script, and the role each tool plays. I had been using Bruno for lightweight endpoint checks and found the full setup trivial to configure."
-description: "I walk through testing a Node/Express API with mocha, chai, and supertest on a simple maths app, and found the setup trivial to configure."
+description: "Testing a Node/Express maths API with Mocha, Chai, and Supertest, exporting the app and running suites via npm."
 image: /og/testing-node-js-apps-mocha-chai-and-supertest.png
 aliases:
   - /2024/01/01/testing-node-js-apps-mocha-chai-and-supertest/

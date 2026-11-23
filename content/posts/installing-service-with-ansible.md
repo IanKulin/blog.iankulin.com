@@ -3,7 +3,7 @@ title: "Installing service with Ansible"
 date: '2023-09-30'
 slug: installing-service-with-ansible
 summary: "I deploy a small Go monitoring endpoint to my homelab servers as a systemd service, using Ansible. I cover the basics of a systemd .service file, including target dependencies like After=network.target, and an Ansible playbook that copies the executable and service file into place, restarting the service via handlers only when files change. I pull my sudo credentials from an encrypted Ansible vault."
-description: "I deploy a Go monitoring endpoint to my homelab servers as a systemd service with Ansible, covering .service files, handlers, and vault credentials."
+description: "Writing and deploying a Go monitoring endpoint as a systemd service on virtual machines."
 image: /og/installing-service-with-ansible.png
 aliases:
   - /2023/09/30/installing-service-with-ansible/

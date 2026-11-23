@@ -3,7 +3,7 @@ title: "User Defaults & Horizontal Pickers"
 date: '2022-09-28'
 slug: user-defaults-horizontal-pickers
 summary: "Day 35 of the 100 Days of SwiftUI challenge, which I spent building a multiplication tables drill app for kids. I cover persisting the user's table selection with UserDefaults (including an enum to avoid hard-coded key strings and a fallback for missing values), plus a Stack Overflow trick for building a compact horizontal wheel picker using paired rotationEffects."
-description: "Day 35 of 100 Days of SwiftUI: I built a multiplication drill app for kids, persisting choices with UserDefaults and a rotationEffects wheel picker."
+description: "A SwiftUI multiplication tables drill app for kids with UserDefaults persistence and a rotationEffects wheel picker."
 image: /og/user-defaults-horizontal-pickers.png
 aliases:
   - /2022/09/28/user-defaults-horizontal-pickers/

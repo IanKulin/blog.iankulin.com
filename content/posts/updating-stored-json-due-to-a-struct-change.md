@@ -3,7 +3,7 @@ title: "Updating stored JSON due to a struct change"
 date: '2022-10-25'
 slug: updating-stored-json-due-to-a-struct-change
 summary: "A short walkthrough of migrating persisted app data in a Swift app after changing a Codable struct: I copy the old struct under a versioned name, and init() attempts to decode saved JSON with the new model first, falling back to the old one and converting items across. I note the migration code is deliberately messy and temporary, since the app only exists on my phone and a couple of simulators."
-description: "I migrated persisted data in my Swift app after changing a Codable struct by decoding with the new model and falling back to the old."
+description: "Migrating persisted Swift app data after a Codable struct change with a versioned fallback."
 image: /og/updating-stored-json-due-to-a-struct-change.png
 aliases:
   - /2022/10/25/updating-stored-json-due-to-a-struct-change/

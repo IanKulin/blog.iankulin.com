@@ -3,7 +3,7 @@ title: "Functions in JavaScript"
 date: '2023-01-09'
 slug: functions-in-javascript
 summary: "I give a tutorial-style explanation of functions in JavaScript, covering scope and pass-by-value arguments, nested functions, and my preference for passing values in explicitly rather than reaching for outer-scope variables. I then cover functions as first-class citizens, including anonymous and arrow function syntax, passing and returning functions, and using map to apply a function to array elements."
-description: "I explain JavaScript functions: scope, pass-by-value args, nested functions, first-class functions, arrows, and map."
+description: "A JavaScript functions tutorial covering scope, pass-by-value arguments, nested and first-class functions, and map."
 image: /og/functions-in-javascript.png
 aliases:
   - /2023/01/09/functions-in-javascript/

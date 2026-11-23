@@ -3,7 +3,7 @@ title: "Checkpoint 7"
 date: '2022-08-15'
 slug: checkpoint-7
 summary: "My solution to Hacking with Swift's Checkpoint 7, which calls for an animal class hierarchy with Animal, Dog, and Cat as superclasses and specific breeds as subclasses. My included Swift code implements the legs property, overridden speak() methods for each breed, and an isTame property set through initializers."
-description: "I share my Swift solution to Hacking with Swift's Checkpoint 7, an Animal, Dog, and Cat class hierarchy with legs, speak() overrides, and isTame."
+description: "Swift solution to Hacking with Swift's Checkpoint 7: Animal/Dog/Cat hierarchy with breed subclasses and overridden speak()."
 image: /og/checkpoint-7.png
 aliases:
   - /2022/08/15/checkpoint-7/

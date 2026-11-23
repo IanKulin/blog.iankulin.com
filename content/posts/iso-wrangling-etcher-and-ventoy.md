@@ -3,7 +3,7 @@ title: "ISO wrangling - Etcher and Ventoy"
 date: '2023-05-01'
 slug: iso-wrangling-etcher-and-ventoy
 summary: "ISO files can't just be copied onto a USB drive; they need to be written with a tool that makes the drive bootable. I describe switching from Balena Etcher, which requires re-flashing the drive for every new ISO, to Ventoy, which installs to a USB stick once and lets you copy multiple ISOs onto it, then choose between them from a boot menu at startup."
-description: "I switched from Balena Etcher, which needs re-flashing for every new ISO, to Ventoy: install once, copy multiple ISOs, choose one from a boot menu."
+description: "Switching from Balena Etcher to Ventoy, an install-once bootable USB tool with a multiple-ISO boot menu."
 image: /og/iso-wrangling-etcher-and-ventoy.png
 aliases:
   - /2023/05/01/iso-wrangling-etcher-and-ventoy/

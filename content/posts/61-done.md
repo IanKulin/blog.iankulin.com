@@ -3,7 +3,7 @@ title: "61 Done"
 date: '2022-11-25'
 slug: 61-done
 summary: "I complete Day 61 of #100DaysOfSwiftUI, decoding JSON and backing it up into a Core Data graph for display. I get stuck on one:many relationships and an id type mismatch, plus some unexplained Core Data console warnings that linger despite the app working."
-description: "I decode JSON into Core Data for #100DaysOfSwiftUI Day 61, stuck on one:many relationships, an id type mismatch, and console warnings, but it works."
+description: "Decoding JSON into a Core Data graph on Day 61 of #100DaysOfSwiftUI, snagged by one-to-many and id-type issues."
 image: /og/61-done.png
 aliases:
   - /2022/11/25/61-done/

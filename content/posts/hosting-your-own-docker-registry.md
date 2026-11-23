@@ -3,7 +3,7 @@ title: "Hosting Your Own Docker Registry"
 date: '2024-03-25'
 slug: hosting-your-own-docker-registry
 summary: "I walk through hosting a private Docker registry on my homelab network using Docker's official registry image, motivated by the free tier's single-repository limit and Docker Hub's pull/push rate limits. I cover setting up the registry with docker-compose, building a small test image, and pushing it to the registry without TLS by adding an insecure-registries exception to daemon.json. A third machine pulls and runs the image to confirm it all works."
-description: "I host a private Docker registry on my homelab with docker-compose, using insecure-registries to skip TLS and avoid Docker Hub rate limits."
+description: "Hosting a private Docker registry on a homelab with docker-compose, an insecure-registries exception, and a test push/pull."
 image: /og/hosting-your-own-docker-registry.png
 aliases:
   - /2024/03/25/hosting-your-own-docker-registry/

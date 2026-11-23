@@ -3,7 +3,7 @@ title: "Controlling Docker container startup order"
 date: '2024-12-02'
 slug: controlling-docker-container-startup-order
 summary: "How I make one Docker Compose service wait for another to be ready, using a healthcheck on the depended-on service and a depends_on condition with service_healthy on the dependent one. The worked example adds InfluxDB to my homelab monitoring stack so a Go metrics collector starts only after the database is up, with sample compose YAML included."
-description: "I make one Docker Compose service wait for another using a healthcheck and depends_on service_healthy, starting my Go collector after InfluxDB is up."
+description: "Making a Docker Compose service wait for another via healthcheck and depends_on service_healthy."
 image: /og/controlling-docker-container-startup-order.png
 aliases:
   - /2024/12/02/controlling-docker-container-startup-order/

@@ -3,7 +3,7 @@ title: "Day 23 - Views and Modifiers - Part 1"
 date: '2022-08-31'
 slug: day-23-views-and-modifiers-part-1
 summary: "I give an introduction to SwiftUI views, explaining that views are immutable structs with a body property that SwiftUI renders automatically rather than being drawn manually. I cover container views like HStack and the use of modifiers such as padding and frame, including how modifiers on a container apply to its children and why their order affects the result."
-description: "I introduce SwiftUI views as immutable structs whose body SwiftUI renders, covering HStack containers and modifiers like padding and frame."
+description: "SwiftUI views as immutable structs with a body property, HStack containers, and padding/frame modifier order."
 image: /og/day-23-views-and-modifiers-part-1.png
 aliases:
   - /2022/08/31/day-23-views-and-modifiers-part-1/

@@ -3,7 +3,7 @@ title: "dockerfile - CMD vs ENTRYPOINT"
 date: '2024-07-22'
 slug: dockerfile-cmd-vs-entrypoint
 summary: "I offer a short explainer on the difference between ENTRYPOINT and CMD at the end of a Dockerfile, with examples showing that command-line arguments replace CMD entirely but are appended to ENTRYPOINT. I also cover combining the two, and note that both execute at container launch, unlike RUN, which happens during the image build."
-description: "I explain ENTRYPOINT vs CMD in a Dockerfile: arguments replace CMD but append to ENTRYPOINT, and both run at container launch, unlike build-time RUN."
+description: "Explaining ENTRYPOINT vs CMD in Dockerfiles: arguments replace CMD but are appended to ENTRYPOINT."
 image: /og/dockerfile-cmd-vs-entrypoint.png
 aliases:
   - /2024/07/22/dockerfile-cmd-vs-entrypoint/

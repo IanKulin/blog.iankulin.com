@@ -3,7 +3,7 @@ title: "Chris Lattner"
 date: '2022-08-03'
 slug: chris-lattner
 summary: "My reflections on a Lex Fridman interview with Chris Lattner, main author of Swift, touching on value versus reference types and how languages deliver their complexity — illustrated with a comparison of hello world in Swift versus C++. I come away convinced Swift plus Playgrounds is a good introduction to programming for kids, with more reservations about SwiftUI."
-description: "After an interview with Chris Lattner, I'm convinced Swift plus Playgrounds is a good intro to programming for kids, with reservations about SwiftUI."
+description: "Lex Fridman's interview with Chris Lattner: Swift, value vs reference types, Playgrounds for kids, SwiftUI caveats."
 image: /og/chris-lattner.png
 aliases:
   - /2022/08/03/chris-lattner/

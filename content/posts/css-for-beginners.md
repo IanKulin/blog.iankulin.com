@@ -3,7 +3,7 @@ title: "CSS for Beginners"
 date: '2022-12-15'
 slug: css-for-beginners
 summary: "I found the ZTM webdev course was skipping ahead too quickly and decided it needed supplementing. For CSS, I've chosen a YouTube series by Dave Gray as the additional material."
-description: "I don't see the blog post summary in your message — could you paste it in? Once you do, I'll condense it into a single first-person sentence of 150 characters or fewer."
+description: "Supplementing the fast-paced ZTM webdev course with Dave Gray's YouTube CSS series."
 image: /og/css-for-beginners.png
 aliases:
   - /2022/12/15/css-for-beginners/

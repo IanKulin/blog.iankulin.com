@@ -3,7 +3,7 @@ title: "Basic VPS disk speed"
 date: '2023-09-09'
 slug: basic-vps-disk-speed
 summary: "My disk benchmark results for a few VPS providers, run with fio. Binary Lane performs well despite only advertising SSD storage, while I find the difference between Digital Ocean's SSD and NVMe offerings disappointing, though contention on shared drives may explain some of that."
-description: "I benchmark VPS disks with fio: Binary Lane performs well despite advertising only SSD, while Digital Ocean's SSD vs NVMe difference disappoints."
+description: "Simple disk benchmarks of VPS providers."
 image: /og/basic-vps-disk-speed.png
 aliases:
   - /2023/09/09/basic-vps-disk-speed/

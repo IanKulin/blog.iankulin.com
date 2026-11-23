@@ -3,7 +3,7 @@ title: "Step Ahead"
 date: '2023-01-04'
 slug: one-step
 summary: "A follow-up on a todo app I built alongside the Complete Web Developer course, in which I replaced right-click deletion and click-to-cross-out behavior with explicit check and delete buttons on each list item, motivated by discoverability and accessibility concerns. My implementation notes cover attaching handlers via onclick versus addEventListener, the fragility of indexing into childNodes, and innerText versus createTextNode for inserting content. I've included links to the source code and a live demo."
-description: "I replaced my todo app's right-click and click-to-cross-out behavior with explicit check and delete buttons for accessibility and discoverability."
+description: "Replacing a todo app's right-click delete and click-to-cross-out with explicit check and delete buttons for accessibility."
 image: /og/one-step.png
 aliases:
   - /2023/01/04/one-step/

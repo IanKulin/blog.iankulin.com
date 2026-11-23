@@ -3,7 +3,7 @@ title: "Closures"
 date: '2022-07-25'
 slug: closures
 summary: "While working through cs193p homework, I praise the Swift book's clear, step-by-step explanation of closures, and by coincidence encounter the same topic twice more that day in a Fireside Swift podcast episode and an iOS Academy video. The post also notes that closures can be challenging without experience passing around function pointers or doing multithreaded programming, and that Swift's ability to cut the syntax down to very little takes getting used to."
-description: "Doing cs193p homework, I praise Swift's clear closures explanation, then encounter the topic again in a Fireside Swift podcast and iOS Academy video."
+description: "Swift closures explained via cs193p, Fireside Swift, and iOS Academy, plus their difficulty and terse syntax."
 image: /og/closures.png
 aliases:
   - /2022/07/25/closures/

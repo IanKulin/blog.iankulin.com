@@ -3,7 +3,7 @@ title: "Configuring Proxmox for Free Use"
 date: '2023-02-16'
 slug: configuring-proxmox-for-free-use
 summary: "I wrote a short how-to for fixing the 401 Unauthorized error that apt update throws on a freshly installed Proxmox server because the enterprise repository requires a paid license. The fix involves commenting out the pve-enterprise.list entry and switching sources.list over to the no-subscription Proxmox repository alongside standard Debian Bullseye repos."
-description: "I wrote a how-to on fixing the 401 Unauthorized error apt update throws on a fresh Proxmox server by switching to the no-subscription repo."
+description: "Fixing apt update's 401 Unauthorized on fresh Proxmox by replacing the paid enterprise repo with no-subscription sources."
 image: /og/configuring-proxmox-for-free-use.png
 aliases:
   - /2023/02/16/configuring-proxmox-for-free-use/

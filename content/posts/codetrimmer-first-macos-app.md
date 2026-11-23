@@ -3,7 +3,7 @@ title: "CodeTrimmer - First MacOS App"
 date: '2022-10-06'
 slug: codetrimmer-first-macos-app
 summary: "Inspired by a StackTrace podcast episode about automating small development tasks, I built my first macOS app with SwiftUI: a utility that strips excess leading indentation from code copied out of Xcode, a chore I previously did by hand before pasting code samples into my blog posts. Screenshots show the paste-and-strip workflow, and I found the move from SwiftUI iOS development to macOS nearly effortless. My source code is linked."
-description: "Inspired by the StackTrace podcast, I built my first macOS app in SwiftUI to strip Xcode's excess indentation before pasting code into my blog posts."
+description: "A SwiftUI macOS utility that strips excess leading indentation from code copied out of Xcode."
 image: /og/codetrimmer-first-macos-app.png
 aliases:
   - /2022/10/06/codetrimmer-first-macos-app/

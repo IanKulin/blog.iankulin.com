@@ -3,7 +3,7 @@ title: "SSH & the scary warning"
 date: '2023-02-08'
 slug: ssh-the-scary-warning
 summary: "When a rebuilt or cloned virtual machine reuses the IP address of a previously connected host, SSH rejects the connection with a \"remote host identification has changed\" warning. I explain why SSH behaves this way and show how to remove the stale entry from the known_hosts file using ssh-keygen -R so the host can be connected to again."
-description: "I explain why SSH flags a changed host key when a rebuilt VM reuses an IP, and how to remove the stale known_hosts entry with ssh-keygen -R."
+description: "Fixing SSH's remote host identification warning by removing a stale known_hosts entry with ssh-keygen -R."
 image: /og/ssh-the-scary-warning.png
 aliases:
   - /2023/02/08/ssh-the-scary-warning/

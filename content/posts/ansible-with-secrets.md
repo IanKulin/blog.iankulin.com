@@ -3,7 +3,7 @@ title: "Ansible with Secrets"
 date: '2023-08-13'
 slug: ansible-with-secrets
 summary: "This is a follow-up to my earlier Ansible playbook post, covering how to handle different sudo passwords across servers. I show how per-host inventory variables work, explain why storing ssh passwords in plaintext is risky, and walk through moving credentials into an external vars file before encrypting it with Ansible Vault, including the create, edit, and ask-vault-pass commands."
-description: "I show how to handle per-host sudo passwords in Ansible, why plaintext credentials are risky, and how to encrypt a vars file with Ansible Vault."
+description: "Handling per-host sudo passwords in Ansible using inventory variables and Vault-encrypted vars files."
 image: /og/ansible-with-secrets.png
 aliases:
   - /2023/08/13/ansible-with-secrets/

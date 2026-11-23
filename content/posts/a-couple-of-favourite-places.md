@@ -3,7 +3,7 @@ title: "A Couple of Favourite Places"
 date: '2022-07-08'
 slug: a-couple-of-favourite-places
 summary: "A roundup of Swift learning resources: the official Swift.org documentation (including the epub edition of The Swift Programming Language book), Stanford's cs193p course for videos and homework assignments, and Paul Hudson's Hacking with Swift, source of the 100 Days of SwiftUI bootcamp I'm working through."
-description: "A roundup of Swift learning resources: Swift.org docs, Stanford's cs193p, Hacking with Swift, whose 100 Days of SwiftUI bootcamp I'm working through."
+description: "Swift learning resources: Swift.org docs, Stanford's cs193p, and Hacking with Swift's 100 Days of SwiftUI."
 image: /og/a-couple-of-favourite-places.png
 aliases:
   - /2022/07/08/a-couple-of-favourite-places/

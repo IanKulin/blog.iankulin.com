@@ -3,7 +3,7 @@ title: "Using Node.js to return a static file"
 date: '2023-07-02'
 slug: using-node-js-to-return-a-static-file
 summary: "In this beginner-level walkthrough, I move a static temperature text file from NGINX to a Node.js server. I introduce NGINX and reverse proxying, explain what Node and Express are, and show a short Express setup that serves the file on localhost port 3000, with deploying it left for later."
-description: "In this beginner walkthrough, I move a static temperature text file from NGINX to Node.js, serving it with Express on localhost port 3000."
+description: "A beginner walkthrough moving a static temperature text file from NGINX to Node.js and Express on localhost:3000."
 image: /og/using-node-js-to-return-a-static-file.png
 aliases:
   - /2023/07/02/using-node-js-to-return-a-static-file/

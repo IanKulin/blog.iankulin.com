@@ -3,7 +3,7 @@ title: "SF Symbols"
 date: '2022-07-21'
 slug: sf-symbols
 summary: "I take a look at SF Symbols in SwiftUI, starting with how Image(systemName:) renders a symbol in code. I cover Apple's SF Symbols app, which provides over 4000 symbols that work with the San Francisco font and can be scaled and coloured, and show how searching and previewing symbols there helps me pick ones that support a consistent, recognisable interface."
-description: "I explore SF Symbols in SwiftUI, from Image(systemName:) to Apple's app of 4000+ scalable, colourable symbols for building a consistent interface."
+description: "Using SF Symbols in SwiftUI: Image(systemName:), Apple's 4,000+ symbol app, and scalable, colourable icons."
 image: /og/sf-symbols.png
 aliases:
   - /2022/07/21/sf-symbols/

@@ -3,7 +3,7 @@ title: "Linux Shell Script for Temperature Logging"
 date: '2023-04-27'
 slug: linux-shell-script-for-temperature-logging
 summary: "Worried about internal temperatures in a stack of HP Elitedesk nodes running Proxmox, and wanting a before-and-after comparison for a planned NVMe upgrade, I set up logging of PCH, CPU, and SSD temperatures. The readings come from the /sys/class/hwmon/ tree, with a drivetemp kernel module needed for the SSD; a shell script appends them to a CSV every five minutes via cron. The collected data is graphed, including during a CPU stress test."
-description: "I logged PCH, CPU, and SSD temperatures on my Proxmox HP Elitedesk nodes via cron to graph and compare before and after a planned NVMe upgrade."
+description: "Logging PCH, CPU, and SSD temperatures on HP Elitedesk Proxmox nodes via hwmon and drivetemp, graphed from cron CSV."
 image: /og/linux-shell-script-for-temperature-logging.png
 aliases:
   - /2023/04/27/linux-shell-script-for-temperature-logging/

@@ -3,7 +3,7 @@ title: "rsync basics"
 date: '2023-03-26'
 slug: rsync-basics
 summary: "I describe setting up a 3-2-1 backup strategy with a local RAID6 NAS, an off-site NAS, and an offline USB drive, and moving away from manually syncing files between them. The post walks through using rsync to sync directories, covering how it copies only changed files, propagates deletions with the --del flag, and works across remote hosts over SSH, with a brief mention of Beyond Compare for manual comparisons."
-description: "I set up a 3-2-1 backup with a local RAID6 NAS, off-site NAS, and offline USB, using rsync over SSH to sync only changed files."
+description: "Setting up a 3-2-1 backup with a local RAID6 NAS, off-site NAS, and offline USB drive using rsync."
 image: /og/rsync-basics.png
 aliases:
   - /2023/03/26/rsync-basics/

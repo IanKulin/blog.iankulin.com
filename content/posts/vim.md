@@ -3,7 +3,7 @@ title: "Vim"
 date: '2022-08-10'
 slug: vim
 summary: "Working through MIT's Missing Semester lecture on Vim, I cover what the editor is, its keyboard-driven approach to editing, and its main modes (normal, insert, and command). I also link to a couple of Vim learning guides and argue that a basic grasp of Vim is a worthwhile requirement for any programmer, since it's available nearly everywhere the command line is."
-description: "I cover MIT's Missing Semester lecture on Vim, its keyboard-driven editing and modes, and argue basic Vim is worthwhile for every programmer."
+description: "Vim's modes and keyboard-driven editing, plus why basic Vim skills matter for programmers, from MIT's Missing Semester."
 image: /og/vim.png
 aliases:
   - /2022/08/10/vim/

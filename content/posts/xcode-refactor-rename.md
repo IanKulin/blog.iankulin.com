@@ -3,7 +3,7 @@ title: "Xcode Refactor/Rename"
 date: '2022-07-30'
 slug: xcode-refactor-rename
 summary: "I share a quick tip on renaming a variable everywhere at once by right-clicking its name, avoiding tedious manual search and replace. I've embedded a short demo video."
-description: "I share a quick tip on renaming a variable everywhere at once by right-clicking its name, avoiding tedious manual search and replace."
+description: "Renaming a variable everywhere at once by right-clicking its name, avoiding manual search and replace."
 image: /og/xcode-refactor-rename.png
 aliases:
   - /2022/07/30/xcode-refactor-rename/

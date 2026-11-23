@@ -3,7 +3,7 @@ title: "Clean Build Folder"
 date: '2022-11-17'
 slug: clean-build-folder
 summary: "A debugging session I had while adding Core Data to the FriendFace app: build errors from re-declared NSManagedObject classes turned out to be caused by CodeGen left enabled on one of two entities, and a later class-not-found error came from stale generated files Xcode had left in its build folders. I walk through both issues and end with a note that switching CodeGen to Manual doesn't delete files Xcode already generated there."
-description: "Debugging Core Data in FriendFace, I hit duplicate NSManagedObject errors from CodeGen left enabled, then class-not-found from stale generated files."
+description: "Debugging Core Data NSManagedObject build errors in FriendFace caused by CodeGen and stale Xcode files."
 image: /og/clean-build-folder.png
 aliases:
   - /2022/11/17/clean-build-folder/

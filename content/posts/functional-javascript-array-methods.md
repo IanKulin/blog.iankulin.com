@@ -3,7 +3,7 @@ title: "Functional Javascript array methods"
 date: '2025-04-14'
 slug: functional-javascript-array-methods
 summary: "I take a look at JavaScript's reduce() method, walking through how the accumulator works with examples like summing and finding the maximum in an array, and explaining why reduce counts as a \"functional\" array method."
-description: "I look at JavaScript's reduce() method, how the accumulator works with summing and finding the maximum, and why it's a functional array method."
+description: "JavaScript's reduce() method: the accumulator, summing and maximum examples, and why it's functional."
 image: /og/functional-javascript-array-methods.png
 aliases:
   - /2025/04/14/functional-javascript-array-methods/

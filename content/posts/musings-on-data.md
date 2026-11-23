@@ -3,7 +3,7 @@ title: "Musings on Data"
 date: '2022-10-16'
 slug: musings-on-data
 summary: "Losing some enthusiasm for my online SwiftUI course, I weigh starting on app ideas from my notebook instead. The main gap in my knowledge is data persistence, so I consider the options: Core Data with CloudKit, Firebase, or simply writing files to the app sandbox, noting that a background in large relational databases means adjusting my thinking for small-scale apps. Whether to push on with the course or start building is left undecided."
-description: "Losing enthusiasm for my SwiftUI course, I debate building apps instead, weighing persistence options: Core Data with CloudKit, Firebase, or files."
+description: "Weighing SwiftUI app ideas from a notebook against a course, with data persistence via Core Data, Firebase, or sandbox files."
 image: /og/musings-on-data.png
 aliases:
   - /2022/10/16/musings-on-data/

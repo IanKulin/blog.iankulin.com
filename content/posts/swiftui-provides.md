@@ -3,7 +3,7 @@ title: "SwiftUI provides"
 date: '2022-12-07'
 slug: swiftui-provides
 summary: "After nearly shelving my SwiftUI tickets app over concerns that exporting tickets was beyond my expertise, I discover an iOS 16 feature that makes the task straightforward, plus existing code examples for rendering SwiftUI views to PDF. The post reflects on the lesson of investigating before assuming something is hard, and notes remaining work on layout and share behaviour."
-description: "I nearly shelved my SwiftUI tickets app over exporting, but an iOS 16 feature and existing code for rendering SwiftUI views to PDF made it easy."
+description: "Exporting tickets from a SwiftUI app to PDF via an iOS 16 feature and existing code examples."
 image: /og/swiftui-provides.png
 aliases:
   - /2022/12/07/swiftui-provides/

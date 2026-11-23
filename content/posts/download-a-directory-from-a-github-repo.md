@@ -3,7 +3,7 @@ title: "Download a Directory from a GitHub Repo"
 date: '2022-08-30'
 slug: download-a-directory-from-a-github-repo
 summary: "While working through the 100 Days of SwiftUI, I needed to download a single directory of flag images from a GitHub repo, but found that neither git nor GitHub's web interface offers a simple way to do that. In this post, I cover a workaround using GitHub's web-based VSCode: change github.com to github.dev in the repo URL, then right-click the folder to download it."
-description: "I show how to download a single folder from a GitHub repo using github.dev: change github.com to github.dev in the URL, then right-click to download."
+description: "Downloading a single GitHub directory via github.dev by changing the URL and right-clicking the folder."
 image: /og/download-a-directory-from-a-github-repo.png
 aliases:
   - /2022/08/30/download-a-directory-from-a-github-repo/

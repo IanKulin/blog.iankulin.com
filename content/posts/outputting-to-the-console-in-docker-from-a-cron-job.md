@@ -3,7 +3,7 @@ title: "Outputting to the console, in Docker, from a cron job"
 date: '2024-07-08'
 slug: outputting-to-the-console-in-docker-from-a-cron-job
 summary: "How to get console output from a cron job running inside a Docker container. I cover running cron in the foreground so the container doesn't exit, and redirecting job output to /proc/1/fd/1 so it appears in the container's stdout, since cron normally sends output to mail. I mention common gotchas like user permissions and file paths, with an example project on GitHub."
-description: "I show how to get cron job output in a Docker container by running cron in the foreground and redirecting job output to /proc/1/fd/1."
+description: "Getting console output from a Docker cron job via foreground cron and /proc/1/fd/1 redirection to container stdout."
 image: /og/outputting-to-the-console-in-docker-from-a-cron-job.png
 aliases:
   - /2024/07/08/outputting-to-the-console-in-docker-from-a-cron-job/

@@ -3,7 +3,7 @@ title: "Simple MVVM"
 date: '2022-08-11'
 slug: simple-mvvm
 summary: "I explain the MVVM architectural pattern using a simple SwiftUI light bulb toggle app as an example. I walk through the Model, View Model, and View components, how they connect through ObservableObject and @Published/@StateObject, and why separating data from the interface matters. I've made the source code available on GitHub."
-description: "I explain MVVM in SwiftUI with a light bulb toggle app, covering ObservableObject, @Published/@StateObject, and why separating data from UI matters."
+description: "A SwiftUI light bulb toggle app demonstrating MVVM with ObservableObject and @Published/@StateObject."
 image: /og/simple-mvvm.png
 aliases:
   - /2022/08/11/simple-mvvm/

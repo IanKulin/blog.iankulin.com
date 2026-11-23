@@ -3,7 +3,7 @@ title: "Mounting one Synology NAS to another one"
 date: '2023-03-21'
 slug: mounting-one-synology-nas-to-another-one
 summary: "A guide to mounting a remote Synology NAS share onto a second Synology NAS using FileStation's Mount Remote Folder feature, allowing large direct NAS-to-NAS transfers without an intermediary laptop. I walk through creating a mount point, connecting via CIFS, and copying 4TB of data, with observed transfer speeds of 30-70 MB/s."
-description: "I mount a remote Synology NAS share via FileStation's Mount Remote Folder over CIFS to copy 4TB NAS-to-NAS at 30-70 MB/s without a laptop."
+description: "Mounting a remote Synology NAS share on a second NAS via FileStation and CIFS for direct 4TB transfers."
 image: /og/mounting-one-synology-nas-to-another-one.png
 aliases:
   - /2023/03/21/mounting-one-synology-nas-to-another-one/

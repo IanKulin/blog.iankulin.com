@@ -3,7 +3,7 @@ title: "Swift Over Coffee"
 date: '2022-07-22'
 slug: swift-over-coffee
 summary: "I take a look at the Swift Over Coffee podcast, hosted by Paul Hudson and Erica Sadun, which covers Swift and iOS development news, weekly topics, and listener questions from Twitter. Despite running for only two seasons, in 2019 and 2020, it's still worthwhile content for a beginning developer."
-description: "I review Swift Over Coffee, Paul Hudson and Erica Sadun's two-season podcast on Swift and iOS development, still worthwhile for beginning developers."
+description: "The two-season Swift Over Coffee podcast with Paul Hudson and Erica Sadun, still useful for beginning developers."
 image: /og/swift-over-coffee.png
 aliases:
   - /2022/07/22/swift-over-coffee/

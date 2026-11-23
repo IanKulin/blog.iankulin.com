@@ -3,7 +3,7 @@ title: "Color Picker (website)"
 date: '2022-10-04'
 slug: color-picker-website
 summary: "A short note on using ImageColorPicker, a browser-based tool for identifying colors in an image, while recreating a designer-provided UI in SwiftUI. The site returns RGB values out of 255, which I divide by 255 to get the CGFloat values required by SwiftUI's Color initializer."
-description: "I use ImageColorPicker while recreating a designer-provided UI in SwiftUI, dividing its 255-scale RGB values by 255 for Color's CGFloat initializer."
+description: "Using ImageColorPicker to identify colors for a SwiftUI interface and divide 0–255 RGB values by 255 for Color."
 image: /og/color-picker-website.png
 aliases:
   - /2022/10/04/color-picker-website/

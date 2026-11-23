@@ -3,7 +3,7 @@ title: "Recording the Simulator"
 date: '2022-09-21'
 slug: recording-the-simulator
 summary: "A short note in which I replace QuickTime-based screen recordings with the iOS simulator's built-in recording, which captures gestures and exports animated GIFs. The technique comes from a linked post by Sarun W."
-description: "I replace QuickTime screen recordings with the iOS simulator's built-in recorder, which captures gestures and exports animated GIFs."
+description: "Replacing QuickTime screen recordings with the iOS simulator's built-in recorder for gestures and animated GIFs."
 image: /og/recording-the-simulator.png
 aliases:
   - /2022/09/21/recording-the-simulator/

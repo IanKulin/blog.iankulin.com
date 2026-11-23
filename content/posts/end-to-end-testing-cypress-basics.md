@@ -3,7 +3,7 @@ title: "End to end testing - Cypress basics"
 date: '2025-05-12'
 slug: end-to-end-testing-cypress-basics
 summary: "A walkthrough of end-to-end testing a web app with Cypress, which I demonstrate against a small Express app with customers and orders. I cover installing Cypress, writing tests for navigation, deletions and cascading deletes, element selection with data-test attributes, custom assertions using invoke and then, running tests in the browser, and handling state resets between runs."
-description: "I demo Cypress end-to-end testing on an Express app: install, navigation, cascading deletes, data-test attributes, custom assertions, state resets."
+description: "End-to-end testing an Express app with Cypress: navigation, cascading deletes, data-test selectors, and state resets."
 image: /og/end-to-end-testing-cypress-basics.png
 aliases:
   - /2025/05/12/end-to-end-testing-cypress-basics/

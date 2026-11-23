@@ -3,7 +3,7 @@ title: "Sharing is caring"
 date: '2022-12-10'
 slug: sharing-is-caring
 summary: "Continuing my SwiftUI demo project, I use ShareLink to let users share a view rendered as an image via the standard share sheet, with SharePreview supplying the thumbnail and title. I also cover adding the Photo Library Additions usage description so a Save Image option appears, along with the permission prompt users see on first use."
-description: "I use SwiftUI ShareLink to share a view as an image, with SharePreview and Photo Library Additions usage description so a Save Image option appears."
+description: "Sharing a SwiftUI view as an image via ShareLink and SharePreview, plus a Photo Library Additions usage description."
 image: /og/sharing-is-caring.png
 aliases:
   - /2022/12/10/sharing-is-caring/

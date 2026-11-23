@@ -3,7 +3,7 @@ title: "Named Loops"
 date: '2022-08-21'
 slug: named-loops
 summary: "Breaking out of nested loops to a specific outer loop has no direct support in C/C++, so the traditional workaround is converting for loops to while loops with a continue flag, which I demonstrate with an example that stops processing a string at a given character. Swift offers a cleaner alternative through labeled loops, where naming a loop lets a break statement exit directly to that level."
-description: "I show the C/C++ workaround of while loops with a continue flag for breaking nested loops, and how Swift's labeled loops do it more cleanly."
+description: "Breaking out of nested C/C++ loops to a specific outer loop using continue flags versus Swift’s labeled loops."
 image: /og/named-loops.png
 aliases:
   - /2022/08/21/named-loops/

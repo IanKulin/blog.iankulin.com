@@ -3,7 +3,7 @@ title: "SDD Wearout numbers"
 date: '2023-04-25'
 slug: sdd-wearout-numbers
 summary: "After reading up on Proxmox's storage setup, I check the Wearout percentages of the SSDs in my second-hand HP Elitedesk nodes and find one no-name drive reporting 100% wearout despite passing its SMART health check. I examine the drive's SMART attributes, attempt a short SMART test that gets aborted, and consider buying new SSDs ahead of a planned move to a high-availability cluster with NAS, Ceph, or ZFS storage."
-description: "In Proxmox I check my HP Elitedesk SSDs' wearout, find a no-name drive at 100% despite passing SMART, and consider new SSDs for an HA cluster."
+description: "Checking Proxmox SSD wearout on HP Elitedesk nodes after a no-name drive reports 100% despite passing SMART health check."
 image: /og/sdd-wearout-numbers.png
 aliases:
   - /2023/04/25/sdd-wearout-numbers/

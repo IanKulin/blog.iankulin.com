@@ -3,7 +3,7 @@ title: "Rock, Paper Scissors (2)"
 date: '2022-09-13'
 slug: rock-paper-scissors-2
 summary: "A follow-up to my SwiftUI rock-paper-scissors app built under deadline, working through the improvements noted at delivery. I replace array-and-int game logic with a Swift enum, consolidate separate win/loss checks into a single gameResult function returning a win/loss/draw type, and swap duplicated .hidden() views for an .opacity modifier with a ternary, cutting the view body from 74 lines to 52."
-description: "I refactor my SwiftUI rock-paper-scissors app, swapping array logic for a Swift enum and one gameResult function, cutting the view body to 52 lines."
+description: "Refactoring a SwiftUI rock-paper-scissors app: enum logic, opacity ternaries, and a view body cut from 74 to 52 lines."
 image: /og/rock-paper-scissors-2.png
 aliases:
   - /2022/09/13/rock-paper-scissors-2/

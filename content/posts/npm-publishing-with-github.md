@@ -3,7 +3,7 @@ title: "npm publishing with GitHub Provenance"
 date: '2026-07-04'
 slug: npm-publishing-with-github
 summary: "How I publish an npm package automatically from GitHub Actions using OIDC trusted publishing, which gives the package npm's provenance badge. After an initial manual publish and configuring the trusted publisher in my package's npm settings, a tag-triggered GitHub workflow handles releases, so users can verify which repository and organisation the published code came from."
-description: "I publish an npm package automatically from GitHub Actions via OIDC trusted publishing, earning npm's provenance badge so users can verify its origin."
+description: "Publishing an npm package from GitHub Actions with OIDC trusted publishing and npm's provenance badge."
 image: /og/npm-publishing-with-github.png
 draft: true
 tags:

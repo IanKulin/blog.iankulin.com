@@ -3,7 +3,7 @@ title: "Visual Studio Code"
 date: '2022-08-19'
 slug: visual-studio-code
 summary: "A short review of Visual Studio Code after trying it for HTML/CSS and C++ work on a Mac. I found the experience smooth across the board, praising the painless extension setup, code completion, debugging with breakpoints, and git integration, though Xcode remains my IDE of choice."
-description: "I tried VS Code for HTML/CSS and C++ on a Mac; smooth with extensions, autocomplete, debugging, and git, but Xcode remains my IDE of choice."
+description: "A Visual Studio Code review for HTML/CSS and C++ on a Mac: smooth extension setup, debugging, and Git, but Xcode preferred."
 image: /og/visual-studio-code.png
 aliases:
   - /2022/08/19/visual-studio-code/

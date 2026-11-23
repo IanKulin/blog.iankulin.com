@@ -3,7 +3,7 @@ title: "Peek inside a Docker image"
 date: '2024-04-29'
 slug: peek-inside-a-docker-image
 summary: "A first-draft Dockerfile for my Node project, and how I keep the resulting image tidy by inspecting its contents with an interactive bash shell and adding entries to .dockerignore. I also explain my preference for copying everything over explicitly listing files, citing debugging time and security."
-description: "I share a first-draft Dockerfile for my Node project, keep the image tidy via bash inspection and .dockerignore, and explain why I copy everything."
+description: "A Node Dockerfile, tidied by inspecting image contents in an interactive bash shell and adding .dockerignore entries."
 image: /og/peek-inside-a-docker-image.png
 aliases:
   - /2024/04/29/peek-inside-a-docker-image/

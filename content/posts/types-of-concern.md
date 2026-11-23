@@ -3,7 +3,7 @@ title: "Types of Concern"
 date: '2023-01-13'
 slug: types-of-concern
 summary: "I reflect on my frustration with JavaScript's dynamic typing, which I see as a source of avoidable errors, and consider defensive type checking and TypeScript as responses. I also weigh Kyle Simpson's argument from a JavaScript Jabber interview that, since JavaScript was designed to be dynamically typed, it's better to embrace that than overlay a type system."
-description: "I weigh JavaScript's dynamic typing as a source of avoidable errors, whether to use TypeScript, and Kyle Simpson's case for embracing dynamic typing."
+description: "Weighing JavaScript's typing, TypeScript, and Kyle Simpson's argument for embracing dynamic typing."
 image: /og/types-of-concern.png
 aliases:
   - /2023/01/13/types-of-concern/

@@ -3,7 +3,7 @@ title: "What's unfinished in your Udemy?"
 date: '2024-01-19'
 slug: whats-unfinished-in-your-udemy
 summary: "A rundown of the tech courses and tutorials I started but never finished, including Udemy purchases, 100 Days of SwiftUI, MIT's Missing Semester lectures, and Stanford's CS193p, with brief notes on why each was abandoned. I argue that quitting a course in favor of building real projects is usually a good trade, since courses are mainly valuable for discovering tools and concepts you didn't know you needed."
-description: "I recap my unfinished tech courses—Udemy, 100 Days of SwiftUI, Missing Semester, CS193p—and argue quitting for real projects is usually a good trade."
+description: "Unfinished Udemy, 100 Days of SwiftUI, MIT Missing Semester, and Stanford CS193p—and why real projects beat finishing them."
 image: /og/whats-unfinished-in-your-udemy.png
 aliases:
   - /2024/01/19/whats-unfinished-in-your-udemy/

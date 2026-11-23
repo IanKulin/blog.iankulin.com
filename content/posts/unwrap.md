@@ -3,7 +3,7 @@ title: "Unwrap"
 date: '2022-07-31'
 slug: unwrap
 summary: "Paul Hudson's Unwrap app for learning Swift is the subject, and I use its short lessons to fill three-minute gaps in the day. I have incorporated it into my goals, and on some days it's the only progress I make."
-description: "I use Paul Hudson's Unwrap app to learn Swift in short lessons that fill three-minute gaps, and some days it's my only progress."
+description: "Using Paul Hudson's Unwrap app for short Swift lessons in three-minute gaps toward personal goals."
 image: /og/unwrap.png
 aliases:
   - /2022/07/31/unwrap/

@@ -3,7 +3,7 @@ title: "100 days of SwiftUI"
 date: '2022-07-05'
 slug: 100-days-of-swiftui
 summary: "I am starting Paul Hudson's 100 Days of SwiftUI course and will write short daily blog entries to stay motivated, mirroring the course's social media posting requirement. I acknowledge a history of abandoned blogs but hope the posts may at least help future searchers. My goal for the course is to get a simple, minimally useful app published on the App Store."
-description: "I'm starting Paul Hudson's 100 Days of SwiftUI course, writing daily posts to stay motivated, aiming to ship a simple app to the App Store."
+description: "Introduction to this blog, we're working through Paul Hudson's 100 Days of SwiftUI, aiming to publish a simple app."
 image: /og/100-days-of-swiftui.png
 aliases:
   - /2022/07/05/100-days-of-swiftui/

@@ -3,7 +3,7 @@ title: "Using the GitHub Container Registry"
 date: '2024-11-04'
 slug: using-the-github-container-registry
 summary: "I explain my move from Docker Hub to GitHub's Container Registry for container images running on my VPSs, motivated by Docker Hub's single-private-image free tier and the eventual possibility of CI/CD rebuilds. It walks through generating a Personal Access Token, logging in to ghcr.io, and pushing and pulling images with the registry included in the container name."
-description: "I move my VPS container images to GitHub's Container Registry to escape Docker Hub's single-private-image free tier, pushing and pulling via ghcr.io."
+description: "Moving container images from Docker Hub to GitHub Container Registry with PAT authentication and ghcr.io push/pull."
 image: /og/using-the-github-container-registry.png
 aliases:
   - /2024/11/04/using-the-github-container-registry/

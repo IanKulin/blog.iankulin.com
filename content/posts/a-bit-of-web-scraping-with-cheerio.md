@@ -3,7 +3,7 @@ title: "A bit of web-scraping with Cheerio"
 date: '2025-02-17'
 slug: a-bit-of-web-scraping-with-cheerio
 summary: "The 'show all' button on The Rest Is History podcast's episodes page is broken, and there's no JSON endpoint behind the player, so the episode list has to be scraped from the page's HTML. Using Cheerio, a jQuery-like library for the server, I show how to select the playlist's list items and extract each episode's title and link, ending with a complete working script."
-description: "I show how to scrape The Rest Is History's episode titles and links with Cheerio because the show-all button is broken, ending with a working script."
+description: "Scraping The Rest Is History podcast episodes from HTML with Cheerio when the show-all button breaks."
 image: /og/a-bit-of-web-scraping-with-cheerio.png
 aliases:
   - /2025/02/17/a-bit-of-web-scraping-with-cheerio/

@@ -3,7 +3,7 @@ title: "Git - pushing to two remotes"
 date: '2023-12-15'
 slug: git-pushing-to-two-remotes
 summary: "A guide to pushing a single git repository to two remotes, prompted by my running a private Gogs instance alongside GitHub. I cover naming remotes meaningfully rather than relying on the convention of origin, pushing to each remote explicitly, and using the -u flag to set a default remote, which becomes the source of truth for both pushing and pulling. My typical setup treats Gogs as the source of truth, with manual pushes to GitHub when code needs to be shared."
-description: "How I push one git repo to two remotes—naming remotes meaningfully, explicit pushes, and -u to make Gogs my default source of truth over GitHub."
+description: "Pushing one Git repo to two remotes, with Gogs as source of truth and manual pushes to GitHub."
 image: /og/git-pushing-to-two-remotes.png
 aliases:
   - /2023/12/15/git-pushing-to-two-remotes/

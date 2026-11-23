@@ -3,7 +3,7 @@ title: "Command chaining with NTFY for long running commands"
 date: '2025-02-03'
 slug: command-chaining-with-ntfy-for-long-running-commands
 summary: "Using ntfy.sh, shell commands can trigger a push notification to a phone or watch via curl when they finish. I demonstrate chaining long-running commands like rsync with && and || to send success or failure messages, running everything in the background with nohup, and redirecting the curl output to a log file."
-description: "I use ntfy.sh and curl to send success or failure push notifications to my phone when long-running shell commands like rsync finish."
+description: "Sending success or failure push notifications for shell commands via ntfy.sh, curl, rsync, &&/||, and nohup."
 image: /og/command-chaining-with-ntfy-for-long-running-commands.png
 aliases:
   - /2025/02/03/command-chaining-with-ntfy-for-long-running-commands/

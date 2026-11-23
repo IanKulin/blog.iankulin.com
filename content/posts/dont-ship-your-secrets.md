@@ -3,7 +3,7 @@ title: "Don't ship your secrets"
 date: '2026-09-09'
 slug: dont-ship-your-secrets
 summary: "The 404 requests I logged on a domain within seconds of Traefik requesting its Let's Encrypt certificate, all from four IP addresses. The list is dominated by bot probes for exposed .env files and git metadata, along with fingerprinting for software like Jira and Exchange."
-description: "I logged 404s from four IPs seconds after Traefik requested its Let's Encrypt cert, mostly .env and git probes, plus Jira/Exchange fingerprinting."
+description: "404 bot probes for exposed .env files and git metadata within seconds of a Traefik Let's Encrypt request."
 image: /og/dont-ship-your-secrets.png
 tags:
   - env

@@ -3,7 +3,7 @@ title: "ImageRenderer()"
 date: '2022-12-08'
 slug: imagerenderer
 summary: "A short SwiftUI example showing how ImageRenderer converts a view into a UIImage or CGImage. I build a simple behaviour ticket view, use a Save button to render it to an image, and display the saved result behind a toggle."
-description: "I build a simple SwiftUI behaviour ticket view and use ImageRenderer with a Save button to render it to a UIImage or CGImage."
+description: "A SwiftUI ImageRenderer example."
 image: /og/imagerenderer.png
 aliases:
   - /2022/12/08/imagerenderer/

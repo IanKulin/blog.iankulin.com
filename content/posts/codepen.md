@@ -3,7 +3,7 @@ title: "CodePen"
 date: '2023-01-29'
 slug: codepen
 summary: "An overview of how I use CodePen as a scratchpad for small front-end experiments, finding it quicker than setting up scratch files in a separate VS Code instance. I cover the free and paid tiers, and mention that pens can be embedded in WordPress blog posts."
-description: "I use CodePen as a scratchpad for small front-end experiments, finding it quicker than setting up scratch files in a separate VS Code instance."
+description: "Using CodePen as a scratchpad for small front-end experiments, with free and paid tiers and WordPress embeds."
 image: /og/codepen.png
 aliases:
   - /2023/01/29/codepen/

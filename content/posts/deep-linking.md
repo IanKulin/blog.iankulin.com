@@ -3,7 +3,7 @@ title: "Deep Linking"
 date: '2022-12-02'
 slug: deep-linking
 summary: "After listening to a podcast episode about NFC tags, I look at using them for home automation but find an iPhone SE2 can only read NFC inside an app rather than in the background. A digression covers my past experience with injectable RFID tags in emus, and I close the post with some resources on deep linking in iOS, covering both UIKit and SwiftUI."
-description: "I explore NFC tags for home automation but find an iPhone SE2 can only read NFC inside an app, not in the background."
+description: "Using NFC tags for home automation, limited by an iPhone SE2 reading them only inside apps."
 image: /og/deep-linking.png
 aliases:
   - /2022/12/02/deep-linking/

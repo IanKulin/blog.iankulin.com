@@ -3,7 +3,7 @@ title: "Who is Emmet?"
 date: '2022-12-14'
 slug: who-is-emmet
 summary: "Emmet is a Visual Studio Code feature that expands short abbreviations into full HTML, using CSS selector syntax. I describe how I discovered it and demonstrate the basics: creating elements with classes and ids, nesting child elements, inserting text, and repeating items such as list entries."
-description: "I show how Emmet in VS Code expands CSS-style abbreviations into full HTML, covering classes, ids, nesting, text, and repeated list entries."
+description: "Using Emmet in VS Code to expand CSS selector abbreviations into HTML with classes, ids, nesting, text, and repeated items."
 image: /og/who-is-emmet.png
 aliases:
   - /2022/12/14/who-is-emmet/

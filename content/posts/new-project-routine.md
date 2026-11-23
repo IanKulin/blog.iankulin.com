@@ -3,7 +3,7 @@ title: "New Project Routine"
 date: '2023-10-21'
 slug: new-project-routine
 summary: "A step-by-step walkthrough of my routine for starting new Node/Express SSR web projects with HTMX, covering directory setup, npm and git initialization, GitHub repo creation, and my ongoing dilemma about committing htmx.min.js versus using a CDN. In the second half, I describe an Express starter skeleton with EJS views and partials, basic routing with 404 handling, and some starter CSS."
-description: "I describe my step-by-step routine for starting Node/Express SSR projects with HTMX, plus an EJS starter skeleton with routing and 404 handling."
+description: "Starting Node/Express SSR projects with HTMX, plus an EJS starter skeleton with views, partials, and 404 routing."
 image: /og/new-project-routine.png
 aliases:
   - /2023/10/21/new-project-routine/

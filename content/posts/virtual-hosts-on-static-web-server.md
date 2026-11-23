@@ -3,7 +3,7 @@ title: "Virtual Hosts on \"Static Web Server\""
 date: '2024-04-22'
 slug: virtual-hosts-on-static-web-server
 summary: "My VPS runs NGINX Proxy Manager, which offers no way to serve static virtual hosts, so I walk through running Static Web Server—a lightweight Rust-based web server—in Docker alongside it. I cover the directory layout, a docker-compose setup, and the config.toml virtual host entries, with the result verified using Tailscale addresses as stand-in hostnames."
-description: "I run Rust-based Static Web Server in Docker alongside NGINX Proxy Manager to serve the static virtual hosts it can't."
+description: "Running the Rust-based Static Web Server in Docker alongside NGINX Proxy Manager for static virtual hosts."
 image: /og/virtual-hosts-on-static-web-server.png
 aliases:
   - /2024/04/22/virtual-hosts-on-static-web-server/

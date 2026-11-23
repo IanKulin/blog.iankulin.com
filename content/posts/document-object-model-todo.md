@@ -3,7 +3,7 @@ title: "Document Object Model - ToDo"
 date: '2023-01-02'
 slug: document-object-model-todo
 summary: "A learning exercise in DOM manipulation: I build a classic todo list web app where users add items via a text input and cross them off by clicking. I move from directly setting textDecoration to toggling a completed CSS class, separating behaviour from presentation, and also discuss element id naming conventions and the risks of hardcoded strings."
-description: "I build a todo list app as a DOM manipulation exercise, replacing textDecoration with a completed CSS class to separate behaviour from presentation."
+description: "A DOM todo list that adds items via input and toggles a completed CSS class instead of setting textDecoration."
 image: /og/document-object-model-todo.png
 aliases:
   - /2023/01/02/document-object-model-todo/

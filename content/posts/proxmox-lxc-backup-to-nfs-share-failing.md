@@ -3,7 +3,7 @@ title: "Proxmox LXC backup to NFS share failing"
 date: '2023-04-12'
 slug: proxmox-lxc-backup-to-nfs-share-failing
 summary: "My Proxmox backup of an unprivileged LXC container to an NFS share failed with tar permission errors, even though privileged container backups to the same share worked. Testing with throwaway containers, I traced the problem to vzdump's temp directory living on the NFS mount, and setting tmpdir to /tmp in /etc/vzdump.conf fixed it. I walk through the error logs and include some skepticism about the common forum explanation."
-description: "I fixed tar permission errors when backing up an unprivileged Proxmox LXC to NFS by moving vzdump's temp dir off the mount via tmpdir in vzdump.conf."
+description: "Fixing unprivileged Proxmox LXC NFS backup tar permission errors."
 image: /og/proxmox-lxc-backup-to-nfs-share-failing.png
 aliases:
   - /2023/04/12/proxmox-lxc-backup-to-nfs-share-failing/

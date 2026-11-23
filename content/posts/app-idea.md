@@ -3,7 +3,7 @@ title: "App Idea"
 date: '2022-07-05'
 slug: app-idea
 summary: "My plan for a simple Easter date calculator app, sketched in GoodNotes. Users pick a year and get the date for Easter Sunday, which can be copied to the clipboard or opened in a calendar. I also raise an accessibility question about the scrolling number picker UI."
-description: "I sketch a GoodNotes plan for an Easter date calculator that gives Easter Sunday for a chosen year, and question the number picker's accessibility."
+description: "A GoodNotes sketch of a simple Easter date calculator app, plus accessibility questions about its scrolling number picker."
 image: /og/app-idea.png
 aliases:
   - /2022/07/05/app-idea/

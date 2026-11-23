@@ -3,7 +3,7 @@ title: "struct"
 date: '2022-07-18'
 slug: struct
 summary: "My notes on day 10 of the 100 Days of SwiftUI course, which covers structs. Having worked in languages where structs are just data containers, I find their methods and properties initially confusing — including a now-resolved question about the purpose of tuples — and demonstrate with sample code how structs are copied as value types while classes are passed by reference. I also note that SwiftUI sample code is built entirely from structs."
-description: "On day 10 of 100 Days of SwiftUI I dig into structs: value-type copies vs reference-passed classes, and why SwiftUI is built entirely from structs."
+description: "Day 10 of 100 Days of SwiftUI: struct methods and properties, value-type copying vs class references."
 image: /og/struct.png
 aliases:
   - /2022/07/18/struct/

@@ -3,7 +3,7 @@ title: "Rust"
 date: '2022-08-12'
 slug: rust
 summary: "Prompted by buzz around Carbon and Rust's frequent appearances in conversation, I, a developer with a Swift background, take a first look at Rust through a video and a couple of articles. I compare Rust's features — optionals, type inference, exhaustive match statements, immutability, traits, and closures — against their Swift counterparts, concluding that Rust feels familiar but less readable than Swift."
-description: "As a Swift developer, I take a first look at Rust, comparing its optionals, traits, and closures to Swift, and find it familiar but less readable."
+description: "A Swift developer's first look at Rust, comparing some language features with Swift and finding it less readable."
 image: /og/rust.png
 aliases:
   - /2022/08/12/rust/

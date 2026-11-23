@@ -3,7 +3,7 @@ title: "Deploying a Node app in Docker"
 date: '2024-03-31'
 slug: deploying-a-node-app-in-docker
 summary: "I walk through turning my small Node.js Markdown server into a Docker image, explaining the Dockerfile line by line, building the image locally, and pushing it to Docker Hub. I finish with a sample docker-compose file so self-hosters can deploy the app with a single command."
-description: "I containerize my Node.js Markdown server, explain the Dockerfile line by line, push to Docker Hub, and share a one-command docker-compose deploy."
+description: "Dockerizing a Node.js Markdown server with a Dockerfile, Docker Hub push, and single-command Compose deployment."
 image: /og/deploying-a-node-app-in-docker.png
 aliases:
   - /2024/03/31/deploying-a-node-app-in-docker/

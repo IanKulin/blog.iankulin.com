@@ -3,7 +3,7 @@ title: "Beginning Node App Security"
 date: '2024-02-16'
 slug: beginning-node-app-security
 summary: "I cover simple steps to secure a Node.js web app exposed to the public internet on a VPS, including putting it behind an Nginx reverse proxy with basic auth, enforcing HTTPS, and using Fail2ban to automatically ban brute-force attempts. I also cover restricting ports via a cloud firewall, disabling root SSH login, using SSH keys, keeping the system updated, and basic monitoring with Uptime Kuma."
-description: "I cover securing a public Node.js web app on a VPS with Nginx, basic auth, HTTPS, Fail2ban, a cloud firewall, SSH keys, and Uptime Kuma monitoring."
+description: "Securing a Node.js app on a VPS with an Nginx reverse proxy, basic auth, HTTPS, Fail2ban, SSH hardening, and Uptime Kuma."
 image: /og/beginning-node-app-security.png
 aliases:
   - /2024/02/16/beginning-node-app-security/

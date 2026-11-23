@@ -3,7 +3,7 @@ title: "Docker volume backup is more complicated than it should be"
 date: '2023-11-17'
 slug: docker-volume-backup-is-more-complicated-than-it-should-be
 summary: "I explain how to back up and migrate a Docker named volume between hosts using the official method: stopping the container, then running a temporary container that mounts the volume and tars its data to a file. I work through an example with Uptime Kuma that covers moving the data to a new VM and restoring it into a fresh install, including a gotcha where restoring to the wrong path leaves the data nested and ignored. I end by questioning why simply copying the volume's files from the local filesystem isn't recommended."
-description: "I explain how to back up and migrate a Docker named volume between hosts via a temporary container, with an Uptime Kuma example and a restore gotcha."
+description: "Migrating a Docker named volume between hosts via a temporary container and tar, with an Uptime Kuma restore gotcha."
 image: /og/docker-volume-backup-is-more-complicated-than-it-should-be.png
 aliases:
   - /2023/11/17/docker-volume-backup-is-more-complicated-than-it-should-be/

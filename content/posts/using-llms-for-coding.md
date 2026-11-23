@@ -3,7 +3,7 @@ title: "Using LLMs for coding"
 date: '2024-07-01'
 slug: using-llms-for-coding
 summary: "I survey the rise of AI coding tools, from ChatGPT and GitHub Copilot to open source ecosystems, alongside skeptic concerns about training data, code quality, model collapse, and code exfiltration. I explain why these assistants suit my situation as an experienced developer new to modern languages, and trace my journey from paid Copilot to the free Codium and finally to running local models via Ollama and the Continue VSCode extension to keep client code private."
-description: "I review AI coding tools like Copilot and ChatGPT, then move to local models via Ollama and Continue to keep client code private."
+description: "AI coding tools from Copilot to local Ollama models with Continue, and the case for code privacy."
 image: /og/using-llms-for-coding.png
 aliases:
   - /2024/07/01/using-llms-for-coding/

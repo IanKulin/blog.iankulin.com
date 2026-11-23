@@ -3,7 +3,7 @@ title: "Moving a Docker image as a file"
 date: '2025-01-20'
 slug: moving-a-docker-image-as-a-file
 summary: "When my home internet connection can't reach DockerHub, I work around it by pulling the Jellyfin image I need on a laptop tethered to a phone hotspot, then moving it to the server as a file using docker save and docker load. The post also includes a short explanation of how container images are built from layers described by a manifest."
-description: "I work around unreachable DockerHub at home by pulling the Jellyfin image on a hotspot-tethered laptop and moving it via docker save and load."
+description: "Moving a Jellyfin image from a phone-tethered laptop to a server with docker save/load when DockerHub is unreachable."
 image: /og/moving-a-docker-image-as-a-file.png
 aliases:
   - /2025/01/20/moving-a-docker-image-as-a-file/

@@ -3,7 +3,7 @@ title: "Pi Server"
 date: '2022-12-04'
 slug: pi-server
 summary: "My two Raspberry Pi 3Bs serve as an AllStar radio node and a small web server running Node.js, PHP, and MySQL, with Pi-hole recently added to block ads network-wide. I also weigh whether the Pi shortage makes a repurposed laptop or refurbished mini PC a better choice, considering setup effort and idle power draw."
-description: "I run two Raspberry Pi 3Bs as an AllStar node, Node.js/PHP/MySQL web server, and Pi-hole ad blocker, weighing laptop vs mini PC amid the Pi shortage."
+description: "Two Raspberry Pi 3Bs running an AllStar node, a web server, and Pi-hole, plus laptop/mini PC alternatives amid the shortage."
 image: /og/pi-server.png
 aliases:
   - /2022/12/04/pi-server/

@@ -3,7 +3,7 @@ title: "Nostalgia"
 date: '2023-03-14'
 slug: nostalgia
 summary: "A Jim Hall video on the history of FreeDOS prompts me to look back at my own experiences with DOS 2.11 through 4.01, moving to Windows 3.1, and using the AsEasyAs shareware spreadsheet. I also muse about tracking down old executables to resurrect a Clipper programming environment and compile my first commercial software, and reflect on wishing I'd kept screenshots from years of computing, including long stretches in the WordPress editor."
-description: "After a FreeDOS history video, I recall DOS 2.11-4.01, Windows 3.1, and reviving a Clipper environment to compile my first commercial software."
+description: "A DOS-to-Windows 3.1 nostalgia trip, from FreeDOS and AsEasyAs to resurrecting Clipper and old screenshots."
 image: /og/nostalgia.png
 aliases:
   - /2023/03/14/nostalgia/

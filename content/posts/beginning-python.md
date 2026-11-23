@@ -3,7 +3,7 @@ title: "Beginning Python"
 date: '2023-05-05'
 slug: beginning-python
 summary: "After adopting Beancount for plain text accounting, I write a Python command-line utility that converts bank CSV statements into Beancount transaction files, including automatic GST calculation for Australian bank data. Notes from the process cover VS Code environment setup, command line arguments, CSV parsing, date string manipulation, and formatted output, aimed at programmers new to Python."
-description: "I write a Python command-line utility that converts bank CSV statements into Beancount transactions, with automatic GST for Australian bank data."
+description: "A Python CLI that converts bank CSV statements into Beancount transactions with automatic GST for Australian banks."
 image: /og/beginning-python.png
 aliases:
   - /2023/05/05/beginning-python/

@@ -3,7 +3,7 @@ title: "Chinese Hackers Want to steal my Hello World container"
 date: '2023-02-06'
 slug: chinese-hackers-want-to-steal-my-hello-world-container
 summary: "I take a look at why leaving SSH password authentication enabled is risky, and why key-based auth with passwords disabled is a sensible setup for any internet-facing server. While reviewing server logs, I noticed sshd timeouts and suspicious kex_exchange_identification messages, and traced the IP address to a host in China flagged by others for brute force attacks."
-description: "I trace suspicious SSH log entries to a brute-force host in China, and explain why key-based auth with passwords disabled is safer for any server."
+description: "Explaining why SSH password auth is risky, and switching servers to key-based auth after spotting brute-force probes."
 image: /og/chinese-hackers-want-to-steal-my-hello-world-container.png
 aliases:
   - /2023/02/06/chinese-hackers-want-to-steal-my-hello-world-container/

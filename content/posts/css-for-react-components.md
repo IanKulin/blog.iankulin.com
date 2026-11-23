@@ -3,7 +3,7 @@ title: "CSS for React Components"
 date: '2024-01-12'
 slug: css-for-react-components
 summary: "I compare approaches to styling React components, including global stylesheets, inline style objects, CSS and component libraries, per-component CSS files, CSS modules, and styled-components. I demonstrate each on a simple card component, noting trade-offs such as name clashes, hover effects, and unused CSS accumulating over time. I find styled-components the most elegant but lean toward per-component CSS files to avoid extra dependencies."
-description: "I compare React styling approaches, finding styled-components most elegant but leaning toward per-component CSS files to avoid extra dependencies."
+description: "Comparing React styling approaches, from global stylesheets to styled-components, favoring per-component CSS files."
 image: /og/css-for-react-components.png
 aliases:
   - /2024/01/12/css-for-react-components/

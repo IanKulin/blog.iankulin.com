@@ -3,7 +3,7 @@ title: "Something weird  'append"
 date: '2022-11-21'
 slug: something-weird-about-append
 summary: "A debugging story about a SwiftUI master/detail list where every row displays the first record's data. While preparing to replicate my app in Core Data, I work through Swift's value-type semantics, a Playground experiment, and print debugging before finding the real cause: mutating and reusing a single struct created duplicate UUIDs that broke ForEach, despite a console warning early on."
-description: "I debug a SwiftUI master/detail list where every row shows the first record's data, finding a mutated, reused struct's duplicate UUIDs broke ForEach."
+description: "A SwiftUI list bug where every row showed the first record's data, caused by duplicate UUIDs from a reused struct."
 image: /og/something-weird-about-append.png
 aliases:
   - /2022/11/21/something-weird-about-append/

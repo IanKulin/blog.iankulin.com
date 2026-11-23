@@ -3,7 +3,7 @@ title: "Use VS Code to work on remote files"
 date: '2023-09-21'
 slug: use-vs-code-to-work-on-remote-files
 summary: "I walk through using VS Code's Remote-SSH extension to edit files on a remote server with a full editor instead of terminal tools like nano or vim. I explain that the plugin works by installing VS Code Server on the remote machine and connecting over SSH, then I cover setup: installing the extension, adding a host via the Remote Explorer, saving the SSH config, and connecting in a new window."
-description: "I use VS Code's Remote-SSH extension to edit files on a remote server instead of nano or vim, covering how it works and setup steps."
+description: "A guide to VS Code Remote-SSH setup for editing remote server files in a full editor instead of nano or vim."
 image: /og/use-vs-code-to-work-on-remote-files.png
 aliases:
   - /2023/09/21/use-vs-code-to-work-on-remote-files/
